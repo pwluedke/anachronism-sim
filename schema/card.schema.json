@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/pwluedke/anachronism-sim/schema/card.schema.json",
+  "title": "Anachronism Card",
+  "description": "Schema for a single Anachronism card object. This same schema validates BOTH scraped cards (from the Heard list and other sources) and user-submitted custom cards. That single contract is what makes the in-app 'add card' feature (Milestone 10) trivial: the creator emits the same object the scraper does. Required fields must always be present; everything else is optional and the parser fills documented self-healing defaults, recording any defaulted/faked field names in needs_review.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source",
+    "name",
+    "card_type",
+    "set",
+    "collector",
+    "parse_confidence",
+    "needs_review",
+    "raw_source_text"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "\"s{set}-{collector}\" for official cards (e.g. \"s1-091\"); \"custom-{uuid}\" for homebrew."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["heard-2007", "tts-mod", "weebly", "custom", "user-import"],
+      "description": "Origin of this card record. This scrape: heard-2007."
+    },
+    "name": {
+      "type": "string",
+      "description": "Card name. Default \"\" + flag when unreadable."
+    },
+    "card_type": {
+      "type": "string",
+      "enum": ["warrior", "inspiration", "weapon", "armor", "special"],
+      "description": "Card type."
+    },
+    "element": {
+      "type": "string",
+      "enum": ["Aether", "Earth", "Fire", "Metal", "Water", "Wind", "Wood", "unknown"],
+      "default": "unknown",
+      "description": "Elemental affiliation. Default \"unknown\" + flag. Support cards may not print an element the same way; record unknown as appropriate."
+    },
+    "set": {
+      "type": "integer",
+      "description": "Set number. Default 0 + flag."
+    },
+    "collector": {
+      "type": "string",
+      "description": "Collector number, preserved verbatim (e.g. \"091\", \"P1/10\"). Default \"\" + flag."
+    },
+    "culture": {
+      "type": "string",
+      "default": "",
+      "description": "Culture. Default \"\" + flag."
+    },
+    "traits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Trait list (e.g. [\"Warrior\",\"Male\"]). Default [] + flag."
+    },
+    "life": {
+      "type": "integer",
+      "default": 0,
+      "description": "WARRIOR-only. Default 0 + flag."
+    },
+    "speed": {
+      "type": "integer",
+      "default": 0,
+      "description": "WARRIOR-only. Default 0 + flag."
+    },
+    "experience": {
+      "type": "integer",
+      "default": 0,
+      "description": "WARRIOR-only. Default 0 + flag."
+    },
+    "damage": {
+      "type": "integer",
+      "default": 0,
+      "description": "WARRIOR-only. Default 0 + flag."
+    },
+    "initiative": {
+      "type": "integer",
+      "default": 0,
+      "description": "SUPPORT-card only (leading \"(N)\"). Default 0 + flag."
+    },
+    "hands": {
+      "type": "integer",
+      "default": 0,
+      "description": "WEAPON-only. Default 0 + flag."
+    },
+    "weapon_damage": {
+      "type": "integer",
+      "default": 0,
+      "description": "WEAPON-only. Default 0 + flag."
+    },
+    "grid_raw": {
+      "type": "string",
+      "default": "",
+      "description": "Unparsed attack-grid modifier substring, verbatim. Default \"\"."
+    },
+    "grid": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "Parsed spatial geometry. ALWAYS null for now (deferred to Milestone 2)."
+    },
+    "abilities": {
+      "type": "array",
+      "default": [],
+      "description": "Card abilities. Default [] + flag if none.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "type", "text"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["action", "reveal", "static", "unknown"]
+          },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "flavor": {
+      "type": "string",
+      "default": "",
+      "description": "Flavor text. Default \"\"."
+    },
+    "illustrator": {
+      "type": "string",
+      "default": "",
+      "description": "Illustrator credit. Default \"\"."
+    },
+    "parse_confidence": {
+      "type": "string",
+      "enum": ["clean", "partial", "suspect"],
+      "description": "Parser's confidence in this record."
+    },
+    "needs_review": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Field names that were defaulted/faked. Empty = clean."
+    },
+    "raw_source_text": {
+      "type": "string",
+      "description": "Full original substring for this card, verbatim. Always populated."
+    }
+  }
+}
