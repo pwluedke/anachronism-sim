@@ -1,15 +1,5 @@
 [
   {
-    "id": "s6-031",
-    "set": 6,
-    "name": "BLACK BART",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "BLACK BART (Fire) 7 Life 3 Speed +1 +2 –1 6 Experience +0 � 1 Damage Welsh � Pirate � Warrior � Male Gwedduster: Dice in attack or defense rolls can not be modified Dapar: At the start of each round, if you revealed an Armor card that round, your defense rolls gain +1 that round. The last great pirate of the Golden Age, the gentlemanly Black Bart captured over 400 ships and 50 million pounds of loot. Illustration: Michel Koch 6 31/100"
-  },
-  {
     "id": "s1-058",
     "set": 1,
     "name": "FREYDIS EIRIKSDOTTIR",
@@ -18,16 +8,6 @@
       "abilities"
     ],
     "raw_source_text": "FREYDIS EIRIKSDOTTIR (Water) 7 Life 4 Speed –2 –2 2 Experience +0 � 1 Damage Norse • Warrior • Female Greenlanders and Icelanders leave their homes in search of Vinland, a land shrouded in myth, yet held to be real. Leading these men and women on the quest for this new land is Freydis, daughter of the infamous Eirik the Red, and her husband Thorvard. Illustration: RK Post 1 58/100"
-  },
-  {
-    "id": "s5-056",
-    "set": 5,
-    "name": "HARUN AL-RASHID",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "HARUN AL-RASHID (Wind) 7 Life 3 Speed +1 +1 8 Experience � –1 1 Damage Saracen • Warrior • Male Ghazu: At the end of each round, choose an opponent. That opponent may choose to get –6 initiative on the next round. If they do not, you gain +1 speed for the next round. “Harun-al-Rashid, Commander of the Faithful to Nicephorus, the Roman dog: I have read thy letter. Thou shalt not hear, thou shalt see my reply.” – Harun al-Rashid Illustration: Jim Pavalec 5 56/100"
   },
   {
     "id": "s3-P12-100",
@@ -42,26 +22,6 @@
     "raw_source_text": "HERAKLES OF THEBES (Earth) 6 Life 3 Speed +1 +1 +0 6 Experience � 1 Damage Ellênikê: When you make a basic attack roll, if you have no item in play, roll three dice and use the sum of all three. If all three of the dice are the same number, the attack deals triple damage. The attack cannot be a critical hit. King Eurystheus sent Herakles to capture a white bull that was terrorizing Crete, after King Minos had offended Poseidon, who cursed the bull with madness. Illustration: James Ryman 3 P12/100"
   },
   {
-    "id": "s1-P2-10",
-    "set": 1,
-    "name": "LEONIDAS I OF SPARTA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "LEONIDAS I OF SPARTA (Wood) 7 Life 3 Speed +0 6 Experience � +0 1 Damage +0 Greek • Warrior • Male Romaleos: Once per round, one of your attack or defense rolls gains a bonus equal to the number of opposing warriors. Improving Odds: When an opposing warrior is defeated, gain 2 life. Leonidas leads his troops against the might of Xerxes at Thermopylae, even though he knows they will all die. Illustration: Steven Beladdin 1 P2/10"
-  },
-  {
-    "id": "s1-039",
-    "set": 1,
-    "name": "MIYAMOTO MUSASHI",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "MIYAMOTO MUSASHI (Fire) 9 Life 3 Speed +1 –1 8 Experience � +0 1 Damage –1 –1 Japanese • Warrior • Male Niten Ichi Ryu – Action: Your next attack this turn deals +1 damage. After killing his first opponent at the age of 13, Musashi remains undefeated through sixty-one duels. Illustration: Sam Wood 1 39/100"
-  },
-  {
     "id": "s1-041",
     "set": 1,
     "name": "NINJA",
@@ -70,26 +30,6 @@
       "flavor"
     ],
     "raw_source_text": "NINJA (Wind) 7 Life 3 Speed –1 –1 –1 2 Experience –1 � –1 1 Damage Japanese • Warrior • Male Ninjutsu: Your attacks deal +1 damage while you are not in the defending opponent’s basic attack grid. Shinobi: This warrior may not use two-handed weapons. Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark. Illustration: William O’Connor 1 41/100"
-  },
-  {
-    "id": "s7-091",
-    "set": 7,
-    "name": "PARIS",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "PARIS (Wind) 7 Life 3 Speed +0 –1 3 Experience +0 � 1 Damage Trojan • Warrior • Male Estiasmeni Skopeusi – Action: Once each round, your next attack with a ranged weapon this round deals +1 damage and that attack roll gains +2. Though Paris was never as renowned or as great a warrior as his brother Hector, he achieved what no other could: he slew the mighty Achilles. Illustration: Alan Pollack 7 91/100"
-  },
-  {
-    "id": "s1-082",
-    "set": 1,
-    "name": "APOLLO",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) APOLLO (Fire) Roman • Inspiration • Deity Cura Dei – Reveal: Your attack rolls gain +1 this round. God of art, light and healing, Apollo pulls the sun across the sky behind his four horse chariot. lllustration: Mark Zug 1 82/100"
   },
   {
     "id": "s3-097",
@@ -102,16 +42,6 @@
     "raw_source_text": "(3) CLUARAN NA H-ALBA (Wood) Scottish • inspiration • Emblem Cha Togar M’ Fhearg Gun Dìoladh: Once per round, after you are hit by an opponent without an Armor in play, your next attack deals +2 damage. It is said that a raiding party of Danes attacking a Scottish castle came by night and took off their shoes to be as quiet as possible. Reaching the castle moat, they jumped in to swim across. To their surprise, the moat held no water but thistles. Their shouts of pain awoke the defenders of the castle, and the Danes fled. Illustration: Hugh Jamieson 3 97/100"
   },
   {
-    "id": "s5-042",
-    "set": 5,
-    "name": "FURINKAZAN",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) FURINKAZAN (Aether) Japanese • Inspiration • Mystic Roukou: Your warrior gains the following ability: “Roukou: You win ties against all warriors without the Roukou ability.” Inspired by the “Art of War,” Furinkazan stands for “Wind, Grove, Fire and Mountain,” and described Takeda’s approach to the ways of war and politics. Illustration: Tyler Walpole 5 42/100"
-  },
-  {
     "id": "s1-P9-10",
     "set": 1,
     "name": "MARS",
@@ -120,76 +50,6 @@
       "source_typo"
     ],
     "raw_source_text": "(4) MARS (Earth) Roman • Inspiration • Diety Concors: If all of your face-up cards are Roman, all of your rolls gain +1. War god and father of Romulus and Remus, Mars one of the most revered and worshipped gods in the Roman pantheon. Illustration: Greg Staples 1 P9/10"
-  },
-  {
-    "id": "s5-017",
-    "set": 5,
-    "name": "QUETZALCOATL",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(3) QUETZALCOATL (Wood) Aztec • Inspiration • Deity Ixnamicealiztli: Ties are won by the warrior with less life instead of by the warrior with higher experience. According to myth, Quetzalcoatl went to Mictlan, the underworld, and created mankind from his own blood and the bones of all previous races. Illustration: RK Post 5 17/100"
-  },
-  {
-    "id": "s3-032",
-    "set": 3,
-    "name": "TIWAZ",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(9) TIWAZ (Earth) Germanic • Inspiration • Deity Freier Himmel: After any player makes a critical hit, you may discard this card. If you do, the hit damages the attacker instead of the defender. God of war and the patron god of justice, Tiwaz is the oldest of the gods, inspiring courage and heroism in battle. He sacrificed his right hand to bind the wolf Fenrir, who, if set free, would devour the sun. At the day of Ragnarok, he will die from his battle wounds, but not before he slays the hound Garm, the guardian of hell. Illustration: Alan Pollack 3 32/100"
-  },
-  {
-    "id": "s3-067",
-    "set": 3,
-    "name": "WAK�Á� T�Á�KA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(6) WAK�Á� T�Á�KA (Wood) Native American • Inspiration • Deity Yuwí�yeyapi: This card’s initiative value cannot be changed. Natá� Hi�glápi – Reveal: Move your warrior up to one space. Turn this card face down and swap it with another of your face-down cards. Turn the other card face up. Sixteen in one, and one in sixteen, the Great Spirit was never born and can never die. Illustration: Greg Staples 3 67/100"
-  },
-  {
-    "id": "s6-012",
-    "set": 6,
-    "name": "WU HU",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(3) WU HU (Wood) Chinese � Inspiration � Ally Zu ai: Once each turn, after an opposing warrior with an Earth card moves, they get –2 to their next roll. Chuan yue: When you make a basic attack, if you are a Wood warrior and if any die of the defense roll is a 1, the attack deals +1 damage. Liu Bei bestowed the title of “Tiger General of Shu” on five men: Guan Yu, Zhang Fei, Zhao Yun, Ma Chao, and Huang Zhong. Illustration: Rick Sardinha 6 12/100"
-  },
-  {
-    "id": "s5-078",
-    "set": 5,
-    "name": "ALABARDA ESPAÑOLA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(7) ALABARDA ESPAÑOLA (2) +1 +0 +0 –1 � Spanish • Weapon • Polearm (2 hands) Perímetro Impenetrable: Once each round, when an opponent moves into a space in this weapon’s attack grid, you may make an attack with this weapon. The halberd consisted of an axe blade mounted on a long shaft and topped with a spike. A hook mounted behind the axe blade was used to topple mounted opponents. Illustration: Christopher Appel 5 78/100"
-  },
-  {
-    "id": "s1-027",
-    "set": 1,
-    "name": "BOKKEN",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(8) BOKKEN (1) +0 +2 � +1 Japanese • Weapon • Sword (1 hand) Precision: Once per turn, you may re-roll one die on an attack roll. Pair: You may use two “Bokken” cards in this game. Victory with a wooden sword demonstrates superior confidence and domination over bladed opponents. Illustration: Ezra Tucker 1 27/100"
-  },
-  {
-    "id": "s3-P19-100",
-    "set": 3,
-    "name": "CHAN ZHANG",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(7) CHAN ZHANG (1) +0 +0 +0 +0 +0 +0 +0 � +0 +0 +0 +0 Chinese • Weapon • Bludgeon/Polearm (2 Hands) Feng Mo Zhang Fa: Twice each turn, after an attack misses you, you may immediately make an attack against the attacker, if possible. The monk cudgel made famous by Lu Zhi Shen, the tattooed monk, is used to disarm opponents or break their weapons while raining blows upon all parts of their body. Illustration: Szucs Gregory 3 P19/100"
   },
   {
     "id": "s7-068",
@@ -222,26 +82,6 @@
     "raw_source_text": "(6) JOHNSON’S ARMY (0) � American Frontiersmen • Weapon • Ally Organized Assault: Once each round, when you make a basic attack, make two attack rolls and compare each against the defender’s defense roll. Deal your warrior’s damage for each attack roll that hits. Well-equipped: You may use another weapon card. After Mormons seized Fort Bridger, Bridger guided Albert Sidney Johnson’s Army to the site in 1857, forcing the Mormons to flee. Illustration: Chris Dien 7 23/100"
   },
   {
-    "id": "s2-058",
-    "set": 2,
-    "name": "KHOPESH",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(3) KHOPESH (2) +0 +0 +1 +0 � Egyptian • Weapon • Sword ( 1 Hand ) Hd ‘s: If the defender has a polearm, your attack rolls with this weapon gain +2 and this weapon deals +1 damage. Edged on the inside or outside curve, or both, the khopesh was a significant development in sword technology. Edged on the outside, the weapon was effective at creating slashing wounds. Edged on the inside, it was used for hacking an opponent. Illustration: Jim Nelson 2 58/100"
-  },
-  {
-    "id": "s4-048",
-    "set": 4,
-    "name": "KOTIATE",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(2) KOTIATE (1) +1 –1 +1 +2 � +0 Maori • Weapon • Bludgeon • Knife (1 Hand) Ápuru: When attacking with this weapon, if the attack roll is odd and the attack hits, the attack is a critical hit. “Kotiate” literally means “cut liver.” The ancestor figure on the butt of the handle symbolizes a guiding force or protective spirit, while the notches were used to trap and break an opponent’s weapon. Illustration: Tyler Walpole 4 48/100"
-  },
-  {
     "id": "s7-073",
     "set": 7,
     "name": "L��Î-��MÔR",
@@ -250,26 +90,6 @@
       "hands"
     ],
     "raw_source_text": "(9) L��Î-��MÔR (1) +1 +0 –1 � –1 Tribes of Israel • Weapon • Bludgeon Hithgann�n: After an opponent makes a critical hit, you may attack that player with this weapon at +3. This attack deals +2 damage. Ma‘���h R�ge‘: You may use another weapon card. “With the jawbone of an ass, heaps upon heaps, with the jawbone of an ass I have slain a thousand men.” – Samson, Judges 15:16 Illustration: William O’Connor 7 73/100"
-  },
-  {
-    "id": "s2-003",
-    "set": 2,
-    "name": "LONGSWORD",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) LONGSWORD (2) +1 +1 –1 � Briton • Weapon • Sword (1 Hand) Angra Feohte: If you hit an opposing warrior with this weapon, that warrior gets –2 experience for the rest of the game. The primary postures or ready positions for long-swords are Ochs, Pflug, Alber and Vom Tag. These are; the Ox, the Plow, the Fool, the Roof. These correspond to: in the middle (“Plow”), outside high/horizontal pointing (“Ox”), low (“Fool”), and high (“Roof”). Illustration: Matthew Armstrong 2 03/100"
-  },
-  {
-    "id": "s5-013",
-    "set": 5,
-    "name": "MACUAHUITL",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(3) MACUAHUITL (2) +1 +2 � +0 –1 Aztec • Weapon • Bludgeon • Sword (1 Hand) Atlacapetlachi: After you miss with this weapon, you may immediately make a basic attack against the same opponent at +1. Made of wood, and edged with wickedly sharp obsidian, the macuahuitl was primarily intended to maim opponents, who could later be captured. Illustration: Alan Pollack 5 13/100"
   },
   {
     "id": "s4-043",
@@ -290,26 +110,6 @@
       "hands"
     ],
     "raw_source_text": "(5) PETRINI MAZA (0) � Greek • Weapon • Bludgeon Terastia Plaka – Reveal: Place this card in an unoccupied space in the arena. Ektoksefsi – Action: Once each round, if you are adjacent to this card, make an attack with this weapon at +0 against any opponent. This attack has a base damage of 4 and cannot deal more than 4 damage. The defender then moves this card to a space adjacent to them. When Hector attacked the Greek camp, Aias hurled a mass of stone at him, wounding him grievously. But for the intervention of Apollo, Hector would have died during this battle. Illustration: Mark Poole 7 43/100"
-  },
-  {
-    "id": "s5-P34-100",
-    "set": 5,
-    "name": "POU WHENUA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(4) POU WHENUA (2) –1 –1 +1 +1 +1 � Maori • Weapon • Bludgeon (2 Hands) Tukituki – Action: Twice each round, if you have not missed with this weapon this round, make an attack with it if possible. Frequently carved from whalebone, the pou whenua is used to mercilessly bludgeon an opponent. Illustration: Matthew Armstrong 5 P34/100"
-  },
-  {
-    "id": "s1-018",
-    "set": 1,
-    "name": "ROPALO",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) ROPALO (1) +0 +1 +3 � Greek • Weapon • Bludgeon (1 Hand) Dinato Xtipima – Reveal: Turn your warrior to face any direction. You may immediately make an attack with this weapon against each warrior in this weapons attack grid. The ropalo, a large club, is used simply to bludgeon opponents into submission. Illustration: Jason Engle 1 18/100"
   },
   {
     "id": "s6-P42-100",
@@ -352,26 +152,6 @@
     "raw_source_text": "(1) SHAN DIAN MAO (2) +2 +2 +0 � Chinese � Weapon � Polearm (2 Hands) Zhou yun: When you attack a rival with this weapon, you may re-roll the attack roll, and the attack deals +1 damage. Ma Chao wielded his weapon with such blinding speed that it became known as “Lightning Spear”. Illustration: Rick Sardinha 6 13/100"
   },
   {
-    "id": "s3-088",
-    "set": 3,
-    "name": "TUAGH-CHATHA ALBANNACH",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(6) TUAGH-CHATHA ALBANNACH (2) +2 +0 –1 � Scottish • Weapon • Axe (1 Hand) Innleachd Chunnartach: After an opponent re-rolls, swaps, increases or decreases the value of any number of dice, your next attack with this weapon deals +1 damage. Favoring the battle axe above all other weapons, Robert the Bruce defeated the English knight Henry de Bohun at the start of the Battle of Bannockburn. Illustration: James Ryman 3 88/100"
-  },
-  {
-    "id": "s5-054",
-    "set": 5,
-    "name": "AL DERRA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) AL DERRA Saracen • Armor • Shield (1 Hand) Darb: When you are hit, if the defense roll plus three is greater than the attack roll, deal 1 damage to the attacker. As well as being more resilient, a shield with a boss could be used to bash an opponent more effectively than one without. Illustration: William O’Connor 5 54/100"
-  },
-  {
     "id": "s7-39-10",
     "set": 7,
     "name": "MAGIKO VOTANI",
@@ -380,16 +160,6 @@
       "collector_format"
     ],
     "raw_source_text": "(7) MAGIKO VOTANI Greek • Armor • Item Ieri Prostasia: Attack rolls against you cannot gain bonuses from non-weapon cards. Attacks against you cannot gain damage bonuses from support cards. When Circe turned Odysseus’ men into swine, Hermes gave him a sprig of moly, to protect him against Circe’s powers, and allow him to broker his men’s release. Illustration: Thomas Denmark 7 39/10"
-  },
-  {
-    "id": "s7-044",
-    "set": 7,
-    "name": "MEGALI ASPIDA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(1) MEGALI ASPIDA Greek • Armor • Shield (1 Hand) Adiatritos: When you are attacked by an opposing warrior who is in a space in any of your attack grids, you may choose for the attack to be made at the corresponding modifier in your attack grid. “So Aias drew near, bearing his shield that was like a city wall: a shield of bronze with sevenfold bull’s-hide,” – Homer, Iliad, 7.215 Illustration: Mark Poole 7 44/100"
   },
   {
     "id": "s7-029",
@@ -402,26 +172,6 @@
     "raw_source_text": "(4) MIKINAIKOS THORAKAS Grek • Armor • Torso Dipsa gia Ekdikisi: After you are hit by an attack with a damage bonus, the attacker becomes your rival until the end of your next turn. Stirixi: Before you are dealt damage from an attack, you may discard this card. If you do, that attack and the next attack against you deal –1 damage, to a minimum of 1. Given to Agamemnon as a gift, his cuirass had ten bands of dark enamel, twelve of gold, and twenty of tin. Dark blue serpents, three on either side, arched toward the neck. Illustration: Jon Hodgson 7 29/100"
   },
   {
-    "id": "s5-009",
-    "set": 5,
-    "name": "OCELOCOLOHTIC",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) OCELOCOLOHTIC Aztec • Armor • Torso • Head • Mystic Tlamatiliztli – Reveal: You gain +2 experience. Oceloaacqui: After you are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next successful attack is a critical hit. Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome Aztec combatants. Illustration: Michael Komarick 5 09/100"
-  },
-  {
-    "id": "s2-044",
-    "set": 2,
-    "name": "SHAN WEN JIA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(2) SHAN WEN JIA Chinese • Armor • Torso Wan qiang di kang: When you roll a 1 on a die in a defense roll, that defense roll gains +3 for each 1 rolled. As each plate is similar in shape to the Chinese character for mountain, this armor was often called mountain pattern armor. Illustration: William O’Connor 2 44/100"
-  },
-  {
     "id": "s7-019",
     "set": 7,
     "name": "THE ALAMO",
@@ -430,16 +180,6 @@
       "flavor"
     ],
     "raw_source_text": "(3) THE ALAMO American Frontiersmen • Armor • Location Fortify: Once this game, at the start of any round, if you have a wood card and an earth card in play, gain 2 life and +4 experience. Command Position: Opposing warriors cannot move outside of their turns. Taken in a 13-day siege, in which all Texan combatants, including Jim Bowie, were killed, the Alamo came to serve as a rallying cry for the Texas Revolution. Illustration: Tyler Walpole 7 19/100"
-  },
-  {
-    "id": "s4-084",
-    "set": 4,
-    "name": "TYEGILYAI",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) TYEGILYAI Russian • Armor • Torso Ustanovlennaya Zaschita: Once each turn, when you are attacked, you may choose to give the attack roll –3. If you do, your next attack roll gets –1. Thickly padded to protect its wearer from the cold as well as the blows of enemies on the battlefield, Ivan took to wearing this armor at almost all times. Illustration: William O’Connor 4 84/100"
   },
   {
     "id": "s6-099",
@@ -452,46 +192,6 @@
     "raw_source_text": "(4) YARIK Turkish � Amor � Torso Gurur: Any opponent who rolls doubles is your rival. Zhatta fit: Your defense rolls gain +1. Once each turn, when you are attacked, each time a die of the attack roll is re-rolled, you may re-roll one die of your defense roll. Made from chain and reinforced with light metal plates, the armor of the Sultan reflected the glory of his mighty empire. Illustration: Drew Baker 6 99/100"
   },
   {
-    "id": "s2-020",
-    "set": 2,
-    "name": "CHIVALRY",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(8) CHIVALRY Briton • Special • Ideal A Cnihte Honur: Each round, if you win initiative, you may choose to go second. If you do, your attack and defense rolls this round gain +1. Thou shalt respect all weaknesses, and shalt constitute thyself the defender of them. Illustration: Greg Staples 2 20/100"
-  },
-  {
-    "id": "s3-095",
-    "set": 3,
-    "name": "CRAOBH NAN CLACH",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(8) CRAOBH NAN CLACH Scottish • Special • Item Binn Ciontaich: At the start of each round, if you win initiative, you may rotate an Aether, Fire, or Metal warrior. Many an interloper was hanged on the Tree of the Stones: “… To see the good fruit that grows on the Tree of Stones. Long, speckled fruit it is, wind-swayed by its yellow roots, And like men they are with their feet dancing in the void air.” Illustration: RK Post 3 95/100"
-  },
-  {
-    "id": "s3-090",
-    "set": 3,
-    "name": "CRÙN NA H-ALBA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(3) CRÙN NA H-ALBA Scottish • Special • Head Tagair Ùghdaras – Action: If you have no Armor in play, reduce all bonuses to your opponent’s rolls this round to 0. You may use another head card. Won through battle and murder, the crown of Scotland represented much more than kingship: it represented freedom gained at terrible cost, the defiance of tyranny, and the reclamation of a nation. Illustration: James Ryman 3 90/100"
-  },
-  {
-    "id": "s6-005",
-    "set": 6,
-    "name": "JUE YING",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(9) JUE YING Chinese � Special � Cavalry Wu zhe bi – Reveal: You may move one space diagonally. Kuai shu jue duan: Once each turn, after you roll a 1, you may move one space. Cao Cao’s horse was said to be able to gallop so quickly that it left no shadow; hence its name: Shadowless. Illustration: Kevin Wadsen 6 5/100"
-  },
-  {
     "id": "s2-100",
     "set": 2,
     "name": "MANGUDAI STEED",
@@ -500,35 +200,5 @@
       "source_typo"
     ],
     "raw_source_text": "(5) MANGUDAI STEED Mongol • Special • Calvary Qayurmay-iyar bayuju ögkü: Once per turn, after you move out of a space in an opposing warrior's attack grid, you may immediately attack that opponent with one of your ranged weapons at +0. The selection process for the elite Mangudai unit was grueling and dangerous. All of its members were superbly disciplined and trained, the perfect spearhead force for the attacking Mongol armies. Illustration: Randy Gallegos 2 100/100"
-  },
-  {
-    "id": "s2-095",
-    "set": 2,
-    "name": "NUM TOM",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(9) NUM TOM Mongol • Special • Ranged Weapon (2 hands ) Mörgöldügen – Reveal: You and a non-adjacent warrior each roll two dice. If your total is greater than their experience, deal 1 damage to their warrior. If their total is less than your experience, deal 1 damage to their warrior. For use at great range, the num tom was the first weapon used in any Mongol cavalry attack, arcing arrows above the open land between the Mongols and their doomed opponents. Illustration: John Donahue 2 95/100"
-  },
-  {
-    "id": "s2-070",
-    "set": 2,
-    "name": "REU NU PERT EM HRU",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(5) REU NU PERT EM HRU Egyptian • Special • Tome Bswt: Warriors cannot gain life. Snb – Reveal: All other warriors with more than their printed life are reduced to their printed life. The Egyptian Book of the Dead was written on papyrus. It was a collection of mystical spells and formulae that ensured an Egyptians’ passage into the afterlife. Illustration: Alan Pollack 2 70/100"
-  },
-  {
-    "id": "s4-020",
-    "set": 4,
-    "name": "SIÚLÓIR NA COSACH CROISE",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "flavor"
-    ],
-    "raw_source_text": "(1) SIÚLÓIR NA COSACH CROISE Irish • Special • Item Ag Siúil ar Chos Chroise: Your warrior is not affected by opposing support cards in spaces in the arena. Abhóg Mór: Once each round, after you roll doubles, you may move one space. With the final collapse of Irish resistance at the end of the sixteenth century, these elite stilt-walking troops left with many of their lords to become mercenaries for France and Spain. Illustration: Raven Mimura 4 20/100"
   }
 ]

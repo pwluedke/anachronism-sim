@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 7,
   "card_count": 100,
-  "review_count": 10,
+  "review_count": 8,
   "cards": [
     {
       "id": "s7-076",
@@ -16,7 +16,6 @@
       "collector": "076",
       "culture": "Trojan",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -51,7 +50,6 @@
       "collector": "026",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -86,7 +84,6 @@
       "collector": "041",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 10,
@@ -126,7 +123,6 @@
       "collector": "051",
       "culture": "Tribes of Israel",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -161,7 +157,6 @@
       "collector": "081",
       "culture": "Trojan",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -201,7 +196,6 @@
       "collector": "001",
       "culture": "American Frontiersmen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -241,7 +235,6 @@
       "collector": "056",
       "culture": "Tribes of Israel",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 6,
@@ -276,7 +269,6 @@
       "collector": "086",
       "culture": "Trojan",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -311,7 +303,6 @@
       "collector": "006",
       "culture": "American Frontiersmen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -346,7 +337,6 @@
       "collector": "011",
       "culture": "American Frontiersmen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -381,7 +371,6 @@
       "collector": "016",
       "culture": "American Frontiersmen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -421,7 +410,6 @@
       "collector": "021",
       "culture": "American Frontiersmen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -461,7 +449,6 @@
       "collector": "061",
       "culture": "Tribes of Israel",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -501,7 +488,6 @@
       "collector": "066",
       "culture": "Tribes of Israel",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -536,7 +522,6 @@
       "collector": "031",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -571,7 +556,6 @@
       "collector": "036",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -611,7 +595,6 @@
       "collector": "091",
       "culture": "Trojan",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -632,10 +615,8 @@
       ],
       "flavor": "Though Paris was never as renowned or as great a warrior as his brother Hector, he achieved what no other could: he slew the mighty Achilles.",
       "illustrator": "Alan Pollack",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "PARIS (Wind) 7 Life 3 Speed +0 –1 3 Experience +0 � 1 Damage Trojan • Warrior • Male Estiasmeni Skopeusi – Action: Once each round, your next attack with a ranged weapon this round deals +1 damage and that attack roll gains +2. Though Paris was never as renowned or as great a warrior as his brother Hector, he achieved what no other could: he slew the mighty Achilles. Illustration: Alan Pollack 7 91/100"
     },
     {
@@ -648,7 +629,6 @@
       "collector": "096",
       "culture": "Trojan",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -688,7 +668,6 @@
       "collector": "071",
       "culture": "Tribes of Israel",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -723,7 +702,6 @@
       "collector": "046",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -758,7 +736,6 @@
       "collector": "077",
       "culture": "Trojan",
       "traits": [
-        "Inspiration",
         "Deity",
         "Female"
       ],
@@ -794,7 +771,6 @@
       "collector": "082",
       "culture": "Trojan",
       "traits": [
-        "Inspiration",
         "Deity",
         "Female"
       ],
@@ -830,7 +806,6 @@
       "collector": "047",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Male"
       ],
       "life": 0,
@@ -870,7 +845,6 @@
       "collector": "037",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Deity",
         "Female"
       ],
@@ -906,7 +880,6 @@
       "collector": "042",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Male",
         "Cavalry"
       ],
@@ -942,7 +915,6 @@
       "collector": "072",
       "culture": "Tribes of Israel",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -977,7 +949,6 @@
       "collector": "052",
       "culture": "Tribes of Israel",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1012,7 +983,6 @@
       "collector": "097",
       "culture": "Trojan",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1047,7 +1017,6 @@
       "collector": "092",
       "culture": "Trojan",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1087,7 +1056,6 @@
       "collector": "007",
       "culture": "American Frontiersmen",
       "traits": [
-        "Inspiration",
         "Location"
       ],
       "life": 0,
@@ -1122,7 +1090,6 @@
       "collector": "057",
       "culture": "Tribes of Israel",
       "traits": [
-        "Inspiration",
         "Male"
       ],
       "life": 0,
@@ -1157,7 +1124,6 @@
       "collector": "002",
       "culture": "American Frontiersmen",
       "traits": [
-        "Inspiration",
         "Location"
       ],
       "life": 0,
@@ -1192,7 +1158,6 @@
       "collector": "027",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1227,7 +1192,6 @@
       "collector": "012",
       "culture": "American Frontiersmen",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1267,7 +1231,6 @@
       "collector": "067",
       "culture": "Tribes of Israel",
       "traits": [
-        "Inspiration",
         "Quest"
       ],
       "life": 0,
@@ -1302,7 +1265,6 @@
       "collector": "022",
       "culture": "American Frontiersmen",
       "traits": [
-        "Inspiration",
         "Item"
       ],
       "life": 0,
@@ -1337,7 +1299,6 @@
       "collector": "087",
       "culture": "Trojan",
       "traits": [
-        "Inspiration",
         "Code"
       ],
       "life": 0,
@@ -1372,7 +1333,6 @@
       "collector": "017",
       "culture": "American Frontiersmen",
       "traits": [
-        "Inspiration",
         "Quest"
       ],
       "life": 0,
@@ -1407,7 +1367,6 @@
       "collector": "032",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Code"
       ],
       "life": 0,
@@ -1447,7 +1406,6 @@
       "collector": "062",
       "culture": "Tribes of Israel",
       "traits": [
-        "Inspiration",
         "Location"
       ],
       "life": 0,
@@ -1487,7 +1445,6 @@
       "collector": "018",
       "culture": "American Frontiersmen",
       "traits": [
-        "Weapon",
         "Knife"
       ],
       "life": 0,
@@ -1522,7 +1479,6 @@
       "collector": "003",
       "culture": "American Frontiersmen",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -1557,7 +1513,6 @@
       "collector": "093",
       "culture": "Trojan",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -1597,7 +1552,6 @@
       "collector": "078",
       "culture": "Trojan",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -1632,7 +1586,6 @@
       "collector": "063",
       "culture": "Tribes of Israel",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1667,7 +1620,6 @@
       "collector": "068",
       "culture": "Tribes of Israel",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1709,7 +1661,6 @@
       "collector": "053",
       "culture": "Tribes of Israel",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1744,7 +1695,6 @@
       "collector": "028",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Item"
       ],
       "life": 0,
@@ -1786,7 +1736,6 @@
       "collector": "023",
       "culture": "American Frontiersmen",
       "traits": [
-        "Weapon",
         "Ally"
       ],
       "life": 0,
@@ -1828,7 +1777,6 @@
       "collector": "048",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Sword",
         "Shield"
       ],
@@ -1864,7 +1812,6 @@
       "collector": "073",
       "culture": "Tribes of Israel",
       "traits": [
-        "Weapon",
         "Bludgeon"
       ],
       "life": 0,
@@ -1906,7 +1853,6 @@
       "collector": "083",
       "culture": "Trojan",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1941,7 +1887,6 @@
       "collector": "043",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Bludgeon"
       ],
       "life": 0,
@@ -1983,7 +1928,6 @@
       "collector": "058",
       "culture": "Tribes of Israel",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -2018,7 +1962,6 @@
       "collector": "088",
       "culture": "Trojan",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2053,7 +1996,6 @@
       "collector": "098",
       "culture": "Trojan",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2088,7 +2030,6 @@
       "collector": "013",
       "culture": "American Frontiersmen",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -2128,7 +2069,6 @@
       "collector": "038",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -2163,7 +2103,6 @@
       "collector": "008",
       "culture": "American Frontiersmen",
       "traits": [
-        "Weapon",
         "Knife"
       ],
       "life": 0,
@@ -2203,7 +2142,6 @@
       "collector": "033",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2238,7 +2176,6 @@
       "collector": "079",
       "culture": "Trojan",
       "traits": [
-        "Armor",
         "Head",
         "Torso",
         "Leg",
@@ -2282,7 +2219,6 @@
       "collector": "009",
       "culture": "American Frontiersmen",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2317,7 +2253,6 @@
       "collector": "004",
       "culture": "American Frontiersmen",
       "traits": [
-        "Armor",
         "Location"
       ],
       "life": 0,
@@ -2357,7 +2292,6 @@
       "collector": "014",
       "culture": "American Frontiersmen",
       "traits": [
-        "Armor",
         "Tome"
       ],
       "life": 0,
@@ -2397,7 +2331,6 @@
       "collector": "024",
       "culture": "American Frontiersmen",
       "traits": [
-        "Armor",
         "Location"
       ],
       "life": 0,
@@ -2432,7 +2365,6 @@
       "collector": "049",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Item"
       ],
       "life": 0,
@@ -2472,7 +2404,6 @@
       "collector": "074",
       "culture": "Tribes of Israel",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2507,7 +2438,6 @@
       "collector": "084",
       "culture": "Trojan",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2542,7 +2472,6 @@
       "collector": "059",
       "culture": "Tribes of Israel",
       "traits": [
-        "Armor",
         "Head",
         "Arm",
         "Torso"
@@ -2584,7 +2513,6 @@
       "collector": "064",
       "culture": "Tribes of Israel",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2619,7 +2547,6 @@
       "collector": "39/10",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Item"
       ],
       "life": 0,
@@ -2656,7 +2583,6 @@
       "collector": "044",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2677,10 +2603,8 @@
       ],
       "flavor": "“So Aias drew near, bearing his shield that was like a city wall: a shield of bronze with sevenfold bull’s-hide,” – Homer, Iliad, 7.215",
       "illustrator": "Mark Poole",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(1) MEGALI ASPIDA Greek • Armor • Shield (1 Hand) Adiatritos: When you are attacked by an opposing warrior who is in a space in any of your attack grids, you may choose for the attack to be made at the corresponding modifier in your attack grid. “So Aias drew near, bearing his shield that was like a city wall: a shield of bronze with sevenfold bull’s-hide,” – Homer, Iliad, 7.215 Illustration: Mark Poole 7 44/100"
     },
     {
@@ -2693,7 +2617,6 @@
       "collector": "029",
       "culture": "Grek",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2735,7 +2658,6 @@
       "collector": "075",
       "culture": "Tribes of Israel",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -2770,7 +2692,6 @@
       "collector": "069",
       "culture": "Tribes of Israel",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2805,7 +2726,6 @@
       "collector": "034",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2845,7 +2765,6 @@
       "collector": "054",
       "culture": "Tribes of Israel",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2880,7 +2799,6 @@
       "collector": "019",
       "culture": "American Frontiersmen",
       "traits": [
-        "Armor",
         "Location"
       ],
       "life": 0,
@@ -2917,7 +2835,6 @@
       "collector": "099",
       "culture": "Trojan",
       "traits": [
-        "Armor",
         "Location"
       ],
       "life": 0,
@@ -2957,7 +2874,6 @@
       "collector": "094",
       "culture": "Trojan",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2992,7 +2908,6 @@
       "collector": "089",
       "culture": "Trojan",
       "traits": [
-        "Armor",
         "Item"
       ],
       "life": 0,
@@ -3032,7 +2947,6 @@
       "collector": "060",
       "culture": "Tribes of Israel",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3072,7 +2986,6 @@
       "collector": "010",
       "culture": "American Frontiersmen",
       "traits": [
-        "Special",
         "Ally"
       ],
       "life": 0,
@@ -3107,7 +3020,6 @@
       "collector": "100",
       "culture": "Trojan",
       "traits": [
-        "Special",
         "Female",
         "Mystic"
       ],
@@ -3143,7 +3055,6 @@
       "collector": "050",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3178,7 +3089,6 @@
       "collector": "040",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3213,7 +3123,6 @@
       "collector": "070",
       "culture": "Tribes of Israel",
       "traits": [
-        "Special",
         "Quest"
       ],
       "life": 0,
@@ -3253,7 +3162,6 @@
       "collector": "030",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Ally"
       ],
       "life": 0,
@@ -3288,7 +3196,6 @@
       "collector": "P55/100",
       "culture": "Pirate",
       "traits": [
-        "Special",
         "Location"
       ],
       "life": 0,
@@ -3328,7 +3235,6 @@
       "collector": "055",
       "culture": "Tribes of Israel",
       "traits": [
-        "Special",
         "Polearm"
       ],
       "life": 0,
@@ -3363,7 +3269,6 @@
       "collector": "065",
       "culture": "Tribes of Israel",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3403,7 +3308,6 @@
       "collector": "035",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Ability",
         "Mystic"
       ],
@@ -3439,7 +3343,6 @@
       "collector": "080",
       "culture": "Trojan",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3479,7 +3382,6 @@
       "collector": "085",
       "culture": "Trojan",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3519,7 +3421,6 @@
       "collector": "045",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3559,7 +3460,6 @@
       "collector": "025",
       "culture": "American Frontiersmen",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3594,7 +3494,6 @@
       "collector": "020",
       "culture": "American Frontiersmen",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3629,7 +3528,6 @@
       "collector": "090",
       "culture": "Trojan",
       "traits": [
-        "Special",
         "Deity"
       ],
       "life": 0,
@@ -3664,7 +3562,6 @@
       "collector": "015",
       "culture": "American Frontiersmen",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3699,7 +3596,6 @@
       "collector": "005",
       "culture": "American Frontiersmen",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,

@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 3,
   "card_count": 110,
-  "review_count": 8,
+  "review_count": 2,
   "cards": [
     {
       "id": "s3-026",
@@ -16,7 +16,6 @@
       "collector": "026",
       "culture": "Germanic",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -51,7 +50,6 @@
       "collector": "031",
       "culture": "Germanic",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -86,7 +84,6 @@
       "collector": "P20/100",
       "culture": "Mongol",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -121,7 +118,6 @@
       "collector": "076",
       "culture": "Scottish",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -156,7 +152,6 @@
       "collector": "001",
       "culture": "French",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -191,7 +186,6 @@
       "collector": "006",
       "culture": "French",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -226,7 +220,6 @@
       "collector": "036",
       "culture": "Germanic",
       "traits": [
-        "Warrior",
         "Female"
       ],
       "life": 8,
@@ -261,7 +254,6 @@
       "collector": "P11/100",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -332,7 +324,6 @@
       "collector": "056",
       "culture": "Native American",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 9,
@@ -367,7 +358,6 @@
       "collector": "051",
       "culture": "Native American",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -402,7 +392,6 @@
       "collector": "086",
       "culture": "Scottish",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -437,7 +426,6 @@
       "collector": "081",
       "culture": "Scottish",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -472,7 +460,6 @@
       "collector": "011",
       "culture": "French",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 6,
@@ -507,7 +494,6 @@
       "collector": "016",
       "culture": "French",
       "traits": [
-        "Warrior",
         "Female"
       ],
       "life": 8,
@@ -542,7 +528,6 @@
       "collector": "091",
       "culture": "Scottish",
       "traits": [
-        "Warrior",
         "Female"
       ],
       "life": 8,
@@ -577,7 +562,6 @@
       "collector": "041",
       "culture": "Germanic",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -612,7 +596,6 @@
       "collector": "071",
       "culture": "Native American",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -647,7 +630,6 @@
       "collector": "061",
       "culture": "Native American",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -682,7 +664,6 @@
       "collector": "066",
       "culture": "Native American",
       "traits": [
-        "Warrior",
         "Male/Cavalry"
       ],
       "life": 7,
@@ -717,7 +698,6 @@
       "collector": "046",
       "culture": "Germanic",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -752,8 +732,7 @@
       "collector": "096",
       "culture": "Scottish",
       "traits": [
-        "Male",
-        "Warrior"
+        "Male"
       ],
       "life": 7,
       "speed": 3,
@@ -787,7 +766,6 @@
       "collector": "021",
       "culture": "French",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -822,7 +800,6 @@
       "collector": "082",
       "culture": "Scottish",
       "traits": [
-        "Inspiration",
         "Quest"
       ],
       "life": 0,
@@ -857,7 +834,6 @@
       "collector": "017",
       "culture": "French",
       "traits": [
-        "Inspiration",
         "Ally"
       ],
       "life": 0,
@@ -892,7 +868,6 @@
       "collector": "P16/100",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Fate"
       ],
       "life": 0,
@@ -927,7 +902,6 @@
       "collector": "047",
       "culture": "Germanic",
       "traits": [
-        "Inspiration",
         "Male"
       ],
       "life": 0,
@@ -962,7 +936,6 @@
       "collector": "022",
       "culture": "French",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1002,7 +975,6 @@
       "collector": "P14/100",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Fate"
       ],
       "life": 0,
@@ -1037,7 +1009,6 @@
       "collector": "097",
       "culture": "Scottish",
       "traits": [
-        "inspiration",
         "Emblem"
       ],
       "life": 0,
@@ -1074,7 +1045,6 @@
       "collector": "012",
       "culture": "French",
       "traits": [
-        "Inspiration",
         "Code"
       ],
       "life": 0,
@@ -1109,7 +1079,6 @@
       "collector": "087",
       "culture": "Scottish",
       "traits": [
-        "Inspiration",
         "Item"
       ],
       "life": 0,
@@ -1144,7 +1113,6 @@
       "collector": "037",
       "culture": "Germanic",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1179,7 +1147,6 @@
       "collector": "072",
       "culture": "Native American",
       "traits": [
-        "Inspiration",
         "Quest"
       ],
       "life": 0,
@@ -1214,7 +1181,6 @@
       "collector": "027",
       "culture": "Germanic",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1249,7 +1215,6 @@
       "collector": "052",
       "culture": "Native American",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1284,7 +1249,6 @@
       "collector": "092",
       "culture": "Scottish",
       "traits": [
-        "Inspiration",
         "Ability"
       ],
       "life": 0,
@@ -1319,7 +1283,6 @@
       "collector": "042",
       "culture": "Germanic",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1354,7 +1317,6 @@
       "collector": "P15/100",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Fate"
       ],
       "life": 0,
@@ -1394,7 +1356,6 @@
       "collector": "077",
       "culture": "Scottish",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1429,7 +1390,6 @@
       "collector": "002",
       "culture": "French",
       "traits": [
-        "Inspiration",
         "Male"
       ],
       "life": 0,
@@ -1464,7 +1424,6 @@
       "collector": "007",
       "culture": "French",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1499,7 +1458,6 @@
       "collector": "P17/100",
       "culture": "Egyptian",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1534,7 +1492,6 @@
       "collector": "032",
       "culture": "Germanic",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1550,15 +1507,13 @@
         {
           "name": "Freier Himmel",
           "type": "static",
-          "text": "After any player makes a critical hit, you may discard this card. If you do, the hit damages the attacker instead of the defender. God of war and the patron god of justice, Tiwaz is the oldest of the gods, inspiring courage and heroism in battle. He sacrificed his right hand to bind the wolf Fenrir, who, if set free, would devour the sun. At the day of Ragnarok, he will die from his battle wounds, but not before he slays the hound Garm, the guardian of hell."
+          "text": "After any player makes a critical hit, you may discard this card. If you do, the hit damages the attacker instead of the defender."
         }
       ],
-      "flavor": "",
+      "flavor": "God of war and the patron god of justice, Tiwaz is the oldest of the gods, inspiring courage and heroism in battle. He sacrificed his right hand to bind the wolf Fenrir, who, if set free, would devour the sun. At the day of Ragnarok, he will die from his battle wounds, but not before he slays the hound Garm, the guardian of hell.",
       "illustrator": "Alan Pollack",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(9) TIWAZ (Earth) Germanic • Inspiration • Deity Freier Himmel: After any player makes a critical hit, you may discard this card. If you do, the hit damages the attacker instead of the defender. God of war and the patron god of justice, Tiwaz is the oldest of the gods, inspiring courage and heroism in battle. He sacrificed his right hand to bind the wolf Fenrir, who, if set free, would devour the sun. At the day of Ragnarok, he will die from his battle wounds, but not before he slays the hound Garm, the guardian of hell. Illustration: Alan Pollack 3 32/100"
     },
     {
@@ -1571,7 +1526,6 @@
       "collector": "067",
       "culture": "Native American",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1592,15 +1546,13 @@
         {
           "name": "Natá� Hi�glápi",
           "type": "reveal",
-          "text": "Move your warrior up to one space. Turn this card face down and swap it with another of your face-down cards. Turn the other card face up. Sixteen in one, and one in sixteen, the Great Spirit was never born and can never die."
+          "text": "Move your warrior up to one space. Turn this card face down and swap it with another of your face-down cards. Turn the other card face up."
         }
       ],
-      "flavor": "",
+      "flavor": "Sixteen in one, and one in sixteen, the Great Spirit was never born and can never die.",
       "illustrator": "Greg Staples",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(6) WAK�Á� T�Á�KA (Wood) Native American • Inspiration • Deity Yuwí�yeyapi: This card’s initiative value cannot be changed. Natá� Hi�glápi – Reveal: Move your warrior up to one space. Turn this card face down and swap it with another of your face-down cards. Turn the other card face up. Sixteen in one, and one in sixteen, the Great Spirit was never born and can never die. Illustration: Greg Staples 3 67/100"
     },
     {
@@ -1613,7 +1565,6 @@
       "collector": "062",
       "culture": "Native American",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1648,7 +1599,6 @@
       "collector": "057",
       "culture": "Native American",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1683,7 +1633,6 @@
       "collector": "033",
       "culture": "Germanic",
       "traits": [
-        "Weapon",
         "Bludgeon"
       ],
       "life": 0,
@@ -1718,7 +1667,6 @@
       "collector": "043",
       "culture": "Germanic",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1753,7 +1701,6 @@
       "collector": "P19/100",
       "culture": "Chinese",
       "traits": [
-        "Weapon",
         "Bludgeon/Polearm"
       ],
       "life": 0,
@@ -1769,15 +1716,13 @@
         {
           "name": "Feng Mo Zhang Fa",
           "type": "static",
-          "text": "Twice each turn, after an attack misses you, you may immediately make an attack against the attacker, if possible. The monk cudgel made famous by Lu Zhi Shen, the tattooed monk, is used to disarm opponents or break their weapons while raining blows upon all parts of their body."
+          "text": "Twice each turn, after an attack misses you, you may immediately make an attack against the attacker, if possible."
         }
       ],
-      "flavor": "",
+      "flavor": "The monk cudgel made famous by Lu Zhi Shen, the tattooed monk, is used to disarm opponents or break their weapons while raining blows upon all parts of their body.",
       "illustrator": "Szucs Gregory",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(7) CHAN ZHANG (1) +0 +0 +0 +0 +0 +0 +0 � +0 +0 +0 +0 Chinese • Weapon • Bludgeon/Polearm (2 Hands) Feng Mo Zhang Fa: Twice each turn, after an attack misses you, you may immediately make an attack against the attacker, if possible. The monk cudgel made famous by Lu Zhi Shen, the tattooed monk, is used to disarm opponents or break their weapons while raining blows upon all parts of their body. Illustration: Szucs Gregory 3 P19/100"
     },
     {
@@ -1790,7 +1735,6 @@
       "collector": "058",
       "culture": "Native American",
       "traits": [
-        "Weapon",
         "Bludgeon"
       ],
       "life": 0,
@@ -1825,7 +1769,6 @@
       "collector": "083",
       "culture": "Scottish",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1860,7 +1803,6 @@
       "collector": "078",
       "culture": "Scottish",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1895,7 +1837,6 @@
       "collector": "098",
       "culture": "Scottish",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1930,7 +1871,6 @@
       "collector": "013",
       "culture": "French",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1965,7 +1905,6 @@
       "collector": "003",
       "culture": "French",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2000,7 +1939,6 @@
       "collector": "023",
       "culture": "French",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2035,7 +1973,6 @@
       "collector": "018",
       "culture": "French",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2070,7 +2007,6 @@
       "collector": "028",
       "culture": "Germanic",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2105,7 +2041,6 @@
       "collector": "053",
       "culture": "Native American",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2140,7 +2075,6 @@
       "collector": "073",
       "culture": "Native American",
       "traits": [
-        "Weapon",
         "Knife"
       ],
       "life": 0,
@@ -2175,7 +2109,6 @@
       "collector": "063",
       "culture": "Native American",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -2210,7 +2143,6 @@
       "collector": "048",
       "culture": "Germanic",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -2245,7 +2177,6 @@
       "collector": "008",
       "culture": "French",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2280,7 +2211,6 @@
       "collector": "P13/100",
       "culture": "Norse",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2315,7 +2245,6 @@
       "collector": "088",
       "culture": "Scottish",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -2331,15 +2260,13 @@
         {
           "name": "Innleachd Chunnartach",
           "type": "static",
-          "text": "After an opponent re-rolls, swaps, increases or decreases the value of any number of dice, your next attack with this weapon deals +1 damage. Favoring the battle axe above all other weapons, Robert the Bruce defeated the English knight Henry de Bohun at the start of the Battle of Bannockburn."
+          "text": "After an opponent re-rolls, swaps, increases or decreases the value of any number of dice, your next attack with this weapon deals +1 damage."
         }
       ],
-      "flavor": "",
+      "flavor": "Favoring the battle axe above all other weapons, Robert the Bruce defeated the English knight Henry de Bohun at the start of the Battle of Bannockburn.",
       "illustrator": "James Ryman",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(6) TUAGH-CHATHA ALBANNACH (2) +2 +0 –1 � Scottish • Weapon • Axe (1 Hand) Innleachd Chunnartach: After an opponent re-rolls, swaps, increases or decreases the value of any number of dice, your next attack with this weapon deals +1 damage. Favoring the battle axe above all other weapons, Robert the Bruce defeated the English knight Henry de Bohun at the start of the Battle of Bannockburn. Illustration: James Ryman 3 88/100"
     },
     {
@@ -2352,7 +2279,6 @@
       "collector": "093",
       "culture": "Scottish",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2387,7 +2313,6 @@
       "collector": "038",
       "culture": "Germanic",
       "traits": [
-        "Weapon",
         "Knife"
       ],
       "life": 0,
@@ -2422,7 +2347,6 @@
       "collector": "068",
       "culture": "Native American",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -2457,7 +2381,6 @@
       "collector": "019",
       "culture": "French",
       "traits": [
-        "Armor",
         "Torso/Legs/Arms"
       ],
       "life": 0,
@@ -2492,7 +2415,6 @@
       "collector": "004",
       "culture": "French",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2527,7 +2449,6 @@
       "collector": "024",
       "culture": "French",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2562,7 +2483,6 @@
       "collector": "009",
       "culture": "French",
       "traits": [
-        "Armor",
         "Torso/Legs/Arms"
       ],
       "life": 0,
@@ -2597,7 +2517,6 @@
       "collector": "094",
       "culture": "Scottish",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2632,7 +2551,6 @@
       "collector": "099",
       "culture": "Scottish",
       "traits": [
-        "Armor",
         "Arms"
       ],
       "life": 0,
@@ -2667,7 +2585,6 @@
       "collector": "079",
       "culture": "Scottish",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2702,7 +2619,6 @@
       "collector": "089",
       "culture": "Scottish",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2737,7 +2653,6 @@
       "collector": "014",
       "culture": "French",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2772,7 +2687,6 @@
       "collector": "049",
       "culture": "Germanic",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2807,7 +2721,6 @@
       "collector": "074",
       "culture": "Native American",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2842,7 +2755,6 @@
       "collector": "059",
       "culture": "Native American",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2877,7 +2789,6 @@
       "collector": "034",
       "culture": "Germanic",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2912,7 +2823,6 @@
       "collector": "039",
       "culture": "Germanic",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2947,7 +2857,6 @@
       "collector": "084",
       "culture": "Scottish",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2982,7 +2891,6 @@
       "collector": "044",
       "culture": "Germanic",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -3017,7 +2925,6 @@
       "collector": "064",
       "culture": "Native American",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -3052,7 +2959,6 @@
       "collector": "054",
       "culture": "Native American",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -3087,7 +2993,6 @@
       "collector": "069",
       "culture": "Native American",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -3122,7 +3027,6 @@
       "collector": "029",
       "culture": "Germanic",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -3157,7 +3061,6 @@
       "collector": "045",
       "culture": "Germanic",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3192,7 +3095,6 @@
       "collector": "085",
       "culture": "Scottish",
       "traits": [
-        "Special",
         "Head"
       ],
       "life": 0,
@@ -3227,7 +3129,6 @@
       "collector": "005",
       "culture": "French",
       "traits": [
-        "Special",
         "Head"
       ],
       "life": 0,
@@ -3262,7 +3163,6 @@
       "collector": "095",
       "culture": "Scottish",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3283,10 +3183,8 @@
       ],
       "flavor": "Many an interloper was hanged on the Tree of the Stones: “… To see the good fruit that grows on the Tree of Stones. Long, speckled fruit it is, wind-swayed by its yellow roots, And like men they are with their feet dancing in the void air.”",
       "illustrator": "RK Post",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(8) CRAOBH NAN CLACH Scottish • Special • Item Binn Ciontaich: At the start of each round, if you win initiative, you may rotate an Aether, Fire, or Metal warrior. Many an interloper was hanged on the Tree of the Stones: “… To see the good fruit that grows on the Tree of Stones. Long, speckled fruit it is, wind-swayed by its yellow roots, And like men they are with their feet dancing in the void air.” Illustration: RK Post 3 95/100"
     },
     {
@@ -3299,7 +3197,6 @@
       "collector": "090",
       "culture": "Scottish",
       "traits": [
-        "Special",
         "Head"
       ],
       "life": 0,
@@ -3320,10 +3217,8 @@
       ],
       "flavor": "Won through battle and murder, the crown of Scotland represented much more than kingship: it represented freedom gained at terrible cost, the defiance of tyranny, and the reclamation of a nation.",
       "illustrator": "James Ryman",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(3) CRÙN NA H-ALBA Scottish • Special • Head Tagair Ùghdaras – Action: If you have no Armor in play, reduce all bonuses to your opponent’s rolls this round to 0. You may use another head card. Won through battle and murder, the crown of Scotland represented much more than kingship: it represented freedom gained at terrible cost, the defiance of tyranny, and the reclamation of a nation. Illustration: James Ryman 3 90/100"
     },
     {
@@ -3336,7 +3231,6 @@
       "collector": "080",
       "culture": "Scottish",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3371,7 +3265,6 @@
       "collector": "025",
       "culture": "French",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3406,7 +3299,6 @@
       "collector": "065",
       "culture": "Native American",
       "traits": [
-        "Special",
         "Allies"
       ],
       "life": 0,
@@ -3441,7 +3333,6 @@
       "collector": "060",
       "culture": "Native American",
       "traits": [
-        "Special",
         "Head"
       ],
       "life": 0,
@@ -3476,7 +3367,6 @@
       "collector": "050",
       "culture": "Germanic",
       "traits": [
-        "Special",
         "Title"
       ],
       "life": 0,
@@ -3511,7 +3401,6 @@
       "collector": "010",
       "culture": "French",
       "traits": [
-        "Special",
         "Item/Bludgeon"
       ],
       "life": 0,
@@ -3546,7 +3435,6 @@
       "collector": "055",
       "culture": "Native American",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3581,7 +3469,6 @@
       "collector": "015",
       "culture": "French",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3616,7 +3503,6 @@
       "collector": "020",
       "culture": "French",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3651,7 +3537,6 @@
       "collector": "030",
       "culture": "Germanic",
       "traits": [
-        "Special",
         "Location"
       ],
       "life": 0,
@@ -3686,7 +3571,6 @@
       "collector": "040",
       "culture": "Germanic",
       "traits": [
-        "Special",
         "Allies"
       ],
       "life": 0,
@@ -3721,7 +3605,6 @@
       "collector": "100",
       "culture": "Scottish",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3756,7 +3639,6 @@
       "collector": "P18/100",
       "culture": "Briton",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3791,7 +3673,6 @@
       "collector": "035",
       "culture": "Germanic",
       "traits": [
-        "Special",
         "Location"
       ],
       "life": 0,
@@ -3826,7 +3707,6 @@
       "collector": "070",
       "culture": "Native American",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3861,7 +3741,6 @@
       "collector": "075",
       "culture": "Native American",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,

@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 5,
   "card_count": 110,
-  "review_count": 8,
+  "review_count": 0,
   "cards": [
     {
       "id": "s5-051",
@@ -16,7 +16,6 @@
       "collector": "051",
       "culture": "Saracen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -56,7 +55,6 @@
       "collector": "001",
       "culture": "Aztec",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -91,7 +89,6 @@
       "collector": "076",
       "culture": "Spanish",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 6,
@@ -126,7 +123,6 @@
       "collector": "006",
       "culture": "Aztec",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -161,7 +157,6 @@
       "collector": "081",
       "culture": "Spanish",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -196,7 +191,6 @@
       "collector": "086",
       "culture": "Spanish",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -231,7 +225,6 @@
       "collector": "P40/100",
       "culture": "Germanic",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -271,7 +264,6 @@
       "collector": "P39/100",
       "culture": "French",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 9,
@@ -306,7 +298,6 @@
       "collector": "056",
       "culture": "Saracen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -327,10 +318,8 @@
       ],
       "flavor": "“Harun-al-Rashid, Commander of the Faithful to Nicephorus, the Roman dog: I have read thy letter. Thou shalt not hear, thou shalt see my reply.” – Harun al-Rashid",
       "illustrator": "Jim Pavalec",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "HARUN AL-RASHID (Wind) 7 Life 3 Speed +1 +1 8 Experience � –1 1 Damage Saracen • Warrior • Male Ghazu: At the end of each round, choose an opponent. That opponent may choose to get –6 initiative on the next round. If they do not, you gain +1 speed for the next round. “Harun-al-Rashid, Commander of the Faithful to Nicephorus, the Roman dog: I have read thy letter. Thou shalt not hear, thou shalt see my reply.” – Harun al-Rashid Illustration: Jim Pavalec 5 56/100"
     },
     {
@@ -343,7 +332,6 @@
       "collector": "091",
       "culture": "Spanish",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -378,7 +366,6 @@
       "collector": "026",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -413,7 +400,6 @@
       "collector": "096",
       "culture": "Spanish",
       "traits": [
-        "Warrior",
         "Female"
       ],
       "life": 6,
@@ -448,7 +434,6 @@
       "collector": "011",
       "culture": "Aztec",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 9,
@@ -483,7 +468,6 @@
       "collector": "061",
       "culture": "Saracen",
       "traits": [
-        "Warrior",
         "Female",
         "Cavalry"
       ],
@@ -519,7 +503,6 @@
       "collector": "031",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 6,
@@ -554,7 +537,6 @@
       "collector": "016",
       "culture": "Aztec",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -589,7 +571,6 @@
       "collector": "066",
       "culture": "Saracen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 9,
@@ -624,7 +605,6 @@
       "collector": "036",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -659,7 +639,6 @@
       "collector": "041",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -694,7 +673,6 @@
       "collector": "071",
       "culture": "Saracen",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 6,
@@ -729,7 +707,6 @@
       "collector": "021",
       "culture": "Aztec",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -764,7 +741,6 @@
       "collector": "046",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -799,7 +775,6 @@
       "collector": "067",
       "culture": "Saracen",
       "traits": [
-        "Inspiration",
         "Location"
       ],
       "life": 0,
@@ -834,7 +809,6 @@
       "collector": "057",
       "culture": "Saracen",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -874,7 +848,6 @@
       "collector": "062",
       "culture": "Saracen",
       "traits": [
-        "Inspiration",
         "Male",
         "Ally"
       ],
@@ -910,7 +883,6 @@
       "collector": "P38/100",
       "culture": "Russian",
       "traits": [
-        "Inspiration",
         "Ally",
         "Female"
       ],
@@ -946,7 +918,6 @@
       "collector": "097",
       "culture": "Spanish",
       "traits": [
-        "Inspiration",
         "Ally",
         "Male"
       ],
@@ -987,7 +958,6 @@
       "collector": "042",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Mystic"
       ],
       "life": 0,
@@ -1018,10 +988,8 @@
       ],
       "flavor": "Inspired by the “Art of War,” Furinkazan stands for “Wind, Grove, Fire and Mountain,” and described Takeda’s approach to the ways of war and politics.",
       "illustrator": "Tyler Walpole",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(5) FURINKAZAN (Aether) Japanese • Inspiration • Mystic Roukou: Your warrior gains the following ability: “Roukou: You win ties against all warriors without the Roukou ability.” Inspired by the “Art of War,” Furinkazan stands for “Wind, Grove, Fire and Mountain,” and described Takeda’s approach to the ways of war and politics. Illustration: Tyler Walpole 5 42/100"
     },
     {
@@ -1034,7 +1002,6 @@
       "collector": "032",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Ally"
       ],
       "life": 0,
@@ -1069,7 +1036,6 @@
       "collector": "072",
       "culture": "Saracen",
       "traits": [
-        "Inspiration",
         "Ability"
       ],
       "life": 0,
@@ -1104,7 +1070,6 @@
       "collector": "P33/100",
       "culture": "Maori",
       "traits": [
-        "Inspiration",
         "Location"
       ],
       "life": 0,
@@ -1139,7 +1104,6 @@
       "collector": "022",
       "culture": "Aztec",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1174,7 +1138,6 @@
       "collector": "047",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Location"
       ],
       "life": 0,
@@ -1214,7 +1177,6 @@
       "collector": "027",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Code"
       ],
       "life": 0,
@@ -1249,7 +1211,6 @@
       "collector": "092",
       "culture": "Spanish",
       "traits": [
-        "Inspiration",
         "Female"
       ],
       "life": 0,
@@ -1284,7 +1245,6 @@
       "collector": "052",
       "culture": "Saracen",
       "traits": [
-        "Inspiration",
         "Location"
       ],
       "life": 0,
@@ -1324,7 +1284,6 @@
       "collector": "077",
       "culture": "Spanish",
       "traits": [
-        "Inspiration",
         "Ally",
         "Male"
       ],
@@ -1360,7 +1319,6 @@
       "collector": "017",
       "culture": "Aztec",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1376,15 +1334,13 @@
         {
           "name": "Ixnamicealiztli",
           "type": "static",
-          "text": "Ties are won by the warrior with less life instead of by the warrior with higher experience. According to myth, Quetzalcoatl went to Mictlan, the underworld, and created mankind from his own blood and the bones of all previous races."
+          "text": "Ties are won by the warrior with less life instead of by the warrior with higher experience."
         }
       ],
-      "flavor": "",
+      "flavor": "According to myth, Quetzalcoatl went to Mictlan, the underworld, and created mankind from his own blood and the bones of all previous races.",
       "illustrator": "RK Post",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(3) QUETZALCOATL (Wood) Aztec • Inspiration • Deity Ixnamicealiztli: Ties are won by the warrior with less life instead of by the warrior with higher experience. According to myth, Quetzalcoatl went to Mictlan, the underworld, and created mankind from his own blood and the bones of all previous races. Illustration: RK Post 5 17/100"
     },
     {
@@ -1397,7 +1353,6 @@
       "collector": "P37/100",
       "culture": "Russian",
       "traits": [
-        "Inspiration",
         "Ally",
         "Male"
       ],
@@ -1433,7 +1388,6 @@
       "collector": "037",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Code"
       ],
       "life": 0,
@@ -1473,7 +1427,6 @@
       "collector": "082",
       "culture": "Spanish",
       "traits": [
-        "Inspiration",
         "Ally",
         "Male"
       ],
@@ -1509,7 +1462,6 @@
       "collector": "012",
       "culture": "Aztec",
       "traits": [
-        "Inspiration",
         "Quest"
       ],
       "life": 0,
@@ -1544,7 +1496,6 @@
       "collector": "007",
       "culture": "Aztec",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1584,7 +1535,6 @@
       "collector": "002",
       "culture": "Aztec",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1619,7 +1569,6 @@
       "collector": "087",
       "culture": "Spanish",
       "traits": [
-        "Inspiration",
         "Title"
       ],
       "life": 0,
@@ -1654,7 +1603,6 @@
       "collector": "078",
       "culture": "Spanish",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -1670,15 +1618,13 @@
         {
           "name": "Perímetro Impenetrable",
           "type": "static",
-          "text": "Once each round, when an opponent moves into a space in this weapon’s attack grid, you may make an attack with this weapon. The halberd consisted of an axe blade mounted on a long shaft and topped with a spike. A hook mounted behind the axe blade was used to topple mounted opponents."
+          "text": "Once each round, when an opponent moves into a space in this weapon’s attack grid, you may make an attack with this weapon."
         }
       ],
-      "flavor": "",
+      "flavor": "The halberd consisted of an axe blade mounted on a long shaft and topped with a spike. A hook mounted behind the axe blade was used to topple mounted opponents.",
       "illustrator": "Christopher Appel",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(7) ALABARDA ESPAÑOLA (2) +1 +0 +0 –1 � Spanish • Weapon • Polearm (2 hands) Perímetro Impenetrable: Once each round, when an opponent moves into a space in this weapon’s attack grid, you may make an attack with this weapon. The halberd consisted of an axe blade mounted on a long shaft and topped with a spike. A hook mounted behind the axe blade was used to topple mounted opponents. Illustration: Christopher Appel 5 78/100"
     },
     {
@@ -1691,7 +1637,6 @@
       "collector": "093",
       "culture": "Spanish",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -1731,7 +1676,6 @@
       "collector": "003",
       "culture": "Aztec",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -1771,7 +1715,6 @@
       "collector": "048",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1806,7 +1749,6 @@
       "collector": "073",
       "culture": "Saracen",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -1846,7 +1788,6 @@
       "collector": "028",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1886,7 +1827,6 @@
       "collector": "043",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1921,7 +1861,6 @@
       "collector": "058",
       "culture": "Saracen",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -1961,7 +1900,6 @@
       "collector": "013",
       "culture": "Aztec",
       "traits": [
-        "Weapon",
         "Bludgeon",
         "Sword"
       ],
@@ -1978,15 +1916,13 @@
         {
           "name": "Atlacapetlachi",
           "type": "static",
-          "text": "After you miss with this weapon, you may immediately make a basic attack against the same opponent at +1. Made of wood, and edged with wickedly sharp obsidian, the macuahuitl was primarily intended to maim opponents, who could later be captured."
+          "text": "After you miss with this weapon, you may immediately make a basic attack against the same opponent at +1."
         }
       ],
-      "flavor": "",
+      "flavor": "Made of wood, and edged with wickedly sharp obsidian, the macuahuitl was primarily intended to maim opponents, who could later be captured.",
       "illustrator": "Alan Pollack",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(3) MACUAHUITL (2) +1 +2 � +0 –1 Aztec • Weapon • Bludgeon • Sword (1 Hand) Atlacapetlachi: After you miss with this weapon, you may immediately make a basic attack against the same opponent at +1. Made of wood, and edged with wickedly sharp obsidian, the macuahuitl was primarily intended to maim opponents, who could later be captured. Illustration: Alan Pollack 5 13/100"
     },
     {
@@ -1999,7 +1935,6 @@
       "collector": "038",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2034,7 +1969,6 @@
       "collector": "088",
       "culture": "Spanish",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2069,7 +2003,6 @@
       "collector": "P34/100",
       "culture": "Maori",
       "traits": [
-        "Weapon",
         "Bludgeon"
       ],
       "life": 0,
@@ -2085,15 +2018,13 @@
         {
           "name": "Tukituki",
           "type": "action",
-          "text": "Twice each round, if you have not missed with this weapon this round, make an attack with it if possible. Frequently carved from whalebone, the pou whenua is used to mercilessly bludgeon an opponent."
+          "text": "Twice each round, if you have not missed with this weapon this round, make an attack with it if possible."
         }
       ],
-      "flavor": "",
+      "flavor": "Frequently carved from whalebone, the pou whenua is used to mercilessly bludgeon an opponent.",
       "illustrator": "Matthew Armstrong",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(4) POU WHENUA (2) –1 –1 +1 +1 +1 � Maori • Weapon • Bludgeon (2 Hands) Tukituki – Action: Twice each round, if you have not missed with this weapon this round, make an attack with it if possible. Frequently carved from whalebone, the pou whenua is used to mercilessly bludgeon an opponent. Illustration: Matthew Armstrong 5 P34/100"
     },
     {
@@ -2106,7 +2037,6 @@
       "collector": "053",
       "culture": "Saracen",
       "traits": [
-        "Weapon",
         "Bludgeon"
       ],
       "life": 0,
@@ -2141,7 +2071,6 @@
       "collector": "098",
       "culture": "Spanish",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2176,7 +2105,6 @@
       "collector": "P36/100",
       "culture": "Persian",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -2211,7 +2139,6 @@
       "collector": "063",
       "culture": "Saracen",
       "traits": [
-        "Weapon",
         "Polearm",
         "Ranged"
       ],
@@ -2247,7 +2174,6 @@
       "collector": "068",
       "culture": "Saracen",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2282,7 +2208,6 @@
       "collector": "018",
       "culture": "Aztec",
       "traits": [
-        "Weapon",
         "Knife"
       ],
       "life": 0,
@@ -2317,7 +2242,6 @@
       "collector": "023",
       "culture": "Aztec",
       "traits": [
-        "Weapon",
         "Ranged",
         "Bludgeon"
       ],
@@ -2358,7 +2282,6 @@
       "collector": "083",
       "culture": "Spanish",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2393,7 +2316,6 @@
       "collector": "008",
       "culture": "Aztec",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2428,7 +2350,6 @@
       "collector": "033",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2463,7 +2384,6 @@
       "collector": "034",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso",
         "Leg",
         "Arm"
@@ -2500,7 +2420,6 @@
       "collector": "039",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso",
         "Leg",
         "Arm"
@@ -2537,7 +2456,6 @@
       "collector": "054",
       "culture": "Saracen",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2553,15 +2471,13 @@
         {
           "name": "Darb",
           "type": "static",
-          "text": "When you are hit, if the defense roll plus three is greater than the attack roll, deal 1 damage to the attacker. As well as being more resilient, a shield with a boss could be used to bash an opponent more effectively than one without."
+          "text": "When you are hit, if the defense roll plus three is greater than the attack roll, deal 1 damage to the attacker."
         }
       ],
-      "flavor": "",
+      "flavor": "As well as being more resilient, a shield with a boss could be used to bash an opponent more effectively than one without.",
       "illustrator": "William O’Connor",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(5) AL DERRA Saracen • Armor • Shield (1 Hand) Darb: When you are hit, if the defense roll plus three is greater than the attack roll, deal 1 damage to the attacker. As well as being more resilient, a shield with a boss could be used to bash an opponent more effectively than one without. Illustration: William O’Connor 5 54/100"
     },
     {
@@ -2574,7 +2490,6 @@
       "collector": "089",
       "culture": "Spanish",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2609,7 +2524,6 @@
       "collector": "069",
       "culture": "Saracen",
       "traits": [
-        "Armor",
         "Cavalry"
       ],
       "life": 0,
@@ -2649,7 +2563,6 @@
       "collector": "004",
       "culture": "Aztec",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2684,7 +2597,6 @@
       "collector": "019",
       "culture": "Aztec",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2719,7 +2631,6 @@
       "collector": "084",
       "culture": "Spanish",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2759,7 +2670,6 @@
       "collector": "014",
       "culture": "Aztec",
       "traits": [
-        "Armor",
         "Torso",
         "Head",
         "Mystic"
@@ -2801,7 +2711,6 @@
       "collector": "079",
       "culture": "Spanish",
       "traits": [
-        "Armor",
         "Shield"
       ],
       "life": 0,
@@ -2836,7 +2745,6 @@
       "collector": "099",
       "culture": "Spanish",
       "traits": [
-        "Armor",
         "Ability"
       ],
       "life": 0,
@@ -2871,7 +2779,6 @@
       "collector": "064",
       "culture": "Saracen",
       "traits": [
-        "Armor",
         "Cavalry"
       ],
       "life": 0,
@@ -2906,7 +2813,6 @@
       "collector": "029",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2946,7 +2852,6 @@
       "collector": "094",
       "culture": "Spanish",
       "traits": [
-        "Armor",
         "Arms"
       ],
       "life": 0,
@@ -2981,7 +2886,6 @@
       "collector": "024",
       "culture": "Aztec",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -3016,7 +2920,6 @@
       "collector": "074",
       "culture": "Saracen",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -3051,7 +2954,6 @@
       "collector": "049",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso",
         "Leg",
         "Arm"
@@ -3093,7 +2995,6 @@
       "collector": "009",
       "culture": "Aztec",
       "traits": [
-        "Armor",
         "Torso",
         "Head",
         "Mystic"
@@ -3116,15 +3017,13 @@
         {
           "name": "Oceloaacqui",
           "type": "static",
-          "text": "After you are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next successful attack is a critical hit. Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome Aztec combatants."
+          "text": "After you are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next successful attack is a critical hit."
         }
       ],
-      "flavor": "",
+      "flavor": "Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome Aztec combatants.",
       "illustrator": "Michael Komarick",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(5) OCELOCOLOHTIC Aztec • Armor • Torso • Head • Mystic Tlamatiliztli – Reveal: You gain +2 experience. Oceloaacqui: After you are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next successful attack is a critical hit. Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome Aztec combatants. Illustration: Michael Komarick 5 09/100"
     },
     {
@@ -3137,7 +3036,6 @@
       "collector": "059",
       "culture": "Saracen",
       "traits": [
-        "Armor",
         "Legs"
       ],
       "life": 0,
@@ -3177,7 +3075,6 @@
       "collector": "044",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso",
         "Leg",
         "Arm"
@@ -3214,7 +3111,6 @@
       "collector": "060",
       "culture": "Saracen",
       "traits": [
-        "Special",
         "Tome"
       ],
       "life": 0,
@@ -3249,7 +3145,6 @@
       "collector": "085",
       "culture": "Spanish",
       "traits": [
-        "Special",
         "Cavalry"
       ],
       "life": 0,
@@ -3284,7 +3179,6 @@
       "collector": "080",
       "culture": "Spanish",
       "traits": [
-        "Special",
         "Ally"
       ],
       "life": 0,
@@ -3324,7 +3218,6 @@
       "collector": "P32/100",
       "culture": "Irish",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3359,7 +3252,6 @@
       "collector": "090",
       "culture": "Spanish",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3399,7 +3291,6 @@
       "collector": "045",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3434,7 +3325,6 @@
       "collector": "050",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3474,7 +3364,6 @@
       "collector": "030",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3509,7 +3398,6 @@
       "collector": "075",
       "culture": "Saracen",
       "traits": [
-        "Special",
         "Location"
       ],
       "life": 0,
@@ -3549,7 +3437,6 @@
       "collector": "070",
       "culture": "Saracen",
       "traits": [
-        "Special",
         "Shield"
       ],
       "life": 0,
@@ -3584,7 +3471,6 @@
       "collector": "100",
       "culture": "Spanish",
       "traits": [
-        "Special",
         "Quest"
       ],
       "life": 0,
@@ -3624,7 +3510,6 @@
       "collector": "005",
       "culture": "Aztec",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3664,7 +3549,6 @@
       "collector": "065",
       "culture": "Saracen",
       "traits": [
-        "Special",
         "Ally",
         "Cavalry"
       ],
@@ -3705,7 +3589,6 @@
       "collector": "010",
       "culture": "Aztec",
       "traits": [
-        "Special",
         "Ally",
         "Male"
       ],
@@ -3746,7 +3629,6 @@
       "collector": "095",
       "culture": "Spanish",
       "traits": [
-        "Special",
         "Quest"
       ],
       "life": 0,
@@ -3781,7 +3663,6 @@
       "collector": "P35/100",
       "culture": "Persian",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3816,7 +3697,6 @@
       "collector": "055",
       "culture": "Saracen",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3851,7 +3731,6 @@
       "collector": "035",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Tome"
       ],
       "life": 0,
@@ -3886,7 +3765,6 @@
       "collector": "040",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Location"
       ],
       "life": 0,
@@ -3921,7 +3799,6 @@
       "collector": "P31/100",
       "culture": "Irish",
       "traits": [
-        "Special",
         "Location"
       ],
       "life": 0,
@@ -3961,7 +3838,6 @@
       "collector": "015",
       "culture": "Aztec",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -4001,7 +3877,6 @@
       "collector": "020",
       "culture": "Aztec",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -4036,7 +3911,6 @@
       "collector": "025",
       "culture": "Aztec",
       "traits": [
-        "Special",
         "Quest"
       ],
       "life": 0,

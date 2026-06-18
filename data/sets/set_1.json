@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 1,
   "card_count": 110,
-  "review_count": 8,
+  "review_count": 3,
   "cards": [
     {
       "id": "s1-091",
@@ -16,7 +16,6 @@
       "collector": "091",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -51,7 +50,6 @@
       "collector": "P1/10",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -86,7 +84,6 @@
       "collector": "001",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -121,7 +118,6 @@
       "collector": "076",
       "culture": "Roman",
       "traits": [
-        "Warrior",
         "Female"
       ],
       "life": 6,
@@ -156,7 +152,6 @@
       "collector": "052",
       "culture": "Norse",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -191,7 +186,6 @@
       "collector": "P6/10",
       "culture": "Norse",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -226,7 +220,6 @@
       "collector": "046",
       "culture": "Norse",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 9,
@@ -261,7 +254,6 @@
       "collector": "058",
       "culture": "Norse",
       "traits": [
-        "Warrior",
         "Female"
       ],
       "life": 7,
@@ -292,7 +284,6 @@
       "collector": "P8/10",
       "culture": "Roman",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 6,
@@ -327,7 +318,6 @@
       "collector": "P7/10",
       "culture": "Norse",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -362,7 +352,6 @@
       "collector": "064",
       "culture": "Norse",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -397,7 +386,6 @@
       "collector": "051",
       "culture": "Norse",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -432,7 +420,6 @@
       "collector": "011",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 6,
@@ -467,7 +454,6 @@
       "collector": "069",
       "culture": "Roman",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -502,7 +488,6 @@
       "collector": "006",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -537,7 +522,6 @@
       "collector": "P2/10",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -558,15 +542,13 @@
         {
           "name": "Improving Odds",
           "type": "static",
-          "text": "When an opposing warrior is defeated, gain 2 life. Leonidas leads his troops against the might of Xerxes at Thermopylae, even though he knows they will all die."
+          "text": "When an opposing warrior is defeated, gain 2 life."
         }
       ],
-      "flavor": "",
+      "flavor": "Leonidas leads his troops against the might of Xerxes at Thermopylae, even though he knows they will all die.",
       "illustrator": "Steven Beladdin",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "LEONIDAS I OF SPARTA (Wood) 7 Life 3 Speed +0 6 Experience � +0 1 Damage +0 Greek • Warrior • Male Romaleos: Once per round, one of your attack or defense rolls gains a bonus equal to the number of opposing warriors. Improving Odds: When an opposing warrior is defeated, gain 2 life. Leonidas leads his troops against the might of Xerxes at Thermopylae, even though he knows they will all die. Illustration: Steven Beladdin 1 P2/10"
     },
     {
@@ -579,7 +561,6 @@
       "collector": "081",
       "culture": "Roman",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -614,7 +595,6 @@
       "collector": "086",
       "culture": "Roman",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -649,7 +629,6 @@
       "collector": "016",
       "culture": "Greek",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -684,7 +663,6 @@
       "collector": "039",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 9,
@@ -700,15 +678,13 @@
         {
           "name": "Niten Ichi Ryu",
           "type": "action",
-          "text": "Your next attack this turn deals +1 damage. After killing his first opponent at the age of 13, Musashi remains undefeated through sixty-one duels."
+          "text": "Your next attack this turn deals +1 damage."
         }
       ],
-      "flavor": "",
+      "flavor": "After killing his first opponent at the age of 13, Musashi remains undefeated through sixty-one duels.",
       "illustrator": "Sam Wood",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "MIYAMOTO MUSASHI (Fire) 9 Life 3 Speed +1 –1 8 Experience � +0 1 Damage –1 –1 Japanese • Warrior • Male Niten Ichi Ryu – Action: Your next attack this turn deals +1 damage. After killing his first opponent at the age of 13, Musashi remains undefeated through sixty-one duels. Illustration: Sam Wood 1 39/100"
     },
     {
@@ -721,7 +697,6 @@
       "collector": "026",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Female"
       ],
       "life": 7,
@@ -756,7 +731,6 @@
       "collector": "041",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -793,7 +767,6 @@
       "collector": "P4/10",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -828,7 +801,6 @@
       "collector": "021",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -863,7 +835,6 @@
       "collector": "033",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -898,7 +869,6 @@
       "collector": "P5/10",
       "culture": "Japanese",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -933,7 +903,6 @@
       "collector": "096",
       "culture": "Roman",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 8,
@@ -968,7 +937,6 @@
       "collector": "P10/10",
       "culture": "Roman",
       "traits": [
-        "Warrior",
         "Male"
       ],
       "life": 7,
@@ -1003,7 +971,6 @@
       "collector": "028",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1038,7 +1005,6 @@
       "collector": "082",
       "culture": "Roman",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1054,15 +1020,13 @@
         {
           "name": "Cura Dei",
           "type": "reveal",
-          "text": "Your attack rolls gain +1 this round. God of art, light and healing, Apollo pulls the sun across the sky behind his four horse chariot."
+          "text": "Your attack rolls gain +1 this round."
         }
       ],
-      "flavor": "lllustration: Mark Zug",
+      "flavor": "God of art, light and healing, Apollo pulls the sun across the sky behind his four horse chariot. lllustration: Mark Zug",
       "illustrator": "",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(5) APOLLO (Fire) Roman • Inspiration • Deity Cura Dei – Reveal: Your attack rolls gain +1 this round. God of art, light and healing, Apollo pulls the sun across the sky behind his four horse chariot. lllustration: Mark Zug 1 82/100"
     },
     {
@@ -1075,7 +1039,6 @@
       "collector": "034",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1110,7 +1073,6 @@
       "collector": "097",
       "culture": "Roman",
       "traits": [
-        "Inspiration",
         "Philosopher"
       ],
       "life": 0,
@@ -1145,7 +1107,6 @@
       "collector": "P3/10",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Code"
       ],
       "life": 0,
@@ -1180,7 +1141,6 @@
       "collector": "060",
       "culture": "Norse",
       "traits": [
-        "Inspiration",
         "Quest"
       ],
       "life": 0,
@@ -1215,7 +1175,6 @@
       "collector": "022",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1250,7 +1209,6 @@
       "collector": "042",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1285,7 +1243,6 @@
       "collector": "070",
       "culture": "Roman",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1320,7 +1277,6 @@
       "collector": "065",
       "culture": "Norse",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1355,7 +1311,6 @@
       "collector": "P9/10",
       "culture": "Roman",
       "traits": [
-        "Inspiration",
         "Diety"
       ],
       "life": 0,
@@ -1392,7 +1347,6 @@
       "collector": "077",
       "culture": "Roman",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1427,7 +1381,6 @@
       "collector": "040",
       "culture": "Japanese",
       "traits": [
-        "Inspiration",
         "Quest"
       ],
       "life": 0,
@@ -1462,7 +1415,6 @@
       "collector": "007",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1497,7 +1449,6 @@
       "collector": "047",
       "culture": "Norse",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1532,7 +1483,6 @@
       "collector": "002",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1567,7 +1517,6 @@
       "collector": "087",
       "culture": "Roman",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1602,7 +1551,6 @@
       "collector": "017",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Philosophy"
       ],
       "life": 0,
@@ -1637,7 +1585,6 @@
       "collector": "092",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1672,7 +1619,6 @@
       "collector": "053",
       "culture": "Norse",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1707,7 +1653,6 @@
       "collector": "059",
       "culture": "Norse",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1742,7 +1687,6 @@
       "collector": "012",
       "culture": "Greek",
       "traits": [
-        "Inspiration",
         "Deity"
       ],
       "life": 0,
@@ -1777,7 +1721,6 @@
       "collector": "027",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1798,15 +1741,13 @@
         {
           "name": "Pair",
           "type": "static",
-          "text": "You may use two “Bokken” cards in this game. Victory with a wooden sword demonstrates superior confidence and domination over bladed opponents."
+          "text": "You may use two “Bokken” cards in this game."
         }
       ],
-      "flavor": "",
+      "flavor": "Victory with a wooden sword demonstrates superior confidence and domination over bladed opponents.",
       "illustrator": "Ezra Tucker",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(8) BOKKEN (1) +0 +2 � +1 Japanese • Weapon • Sword (1 hand) Precision: Once per turn, you may re-roll one die on an attack roll. Pair: You may use two “Bokken” cards in this game. Victory with a wooden sword demonstrates superior confidence and domination over bladed opponents. Illustration: Ezra Tucker 1 27/100"
     },
     {
@@ -1819,7 +1760,6 @@
       "collector": "066",
       "culture": "Norse",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -1854,7 +1794,6 @@
       "collector": "071",
       "culture": "Roman",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1889,7 +1828,6 @@
       "collector": "035",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1924,7 +1862,6 @@
       "collector": "013",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -1959,7 +1896,6 @@
       "collector": "055",
       "culture": "Norse",
       "traits": [
-        "Weapon",
         "Axe"
       ],
       "life": 0,
@@ -1994,7 +1930,6 @@
       "collector": "048",
       "culture": "Norse",
       "traits": [
-        "Weapon",
         "Knife"
       ],
       "life": 0,
@@ -2029,7 +1964,6 @@
       "collector": "030",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2064,7 +1998,6 @@
       "collector": "043",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2099,7 +2032,6 @@
       "collector": "083",
       "culture": "Roman",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2134,7 +2066,6 @@
       "collector": "078",
       "culture": "Roman",
       "traits": [
-        "Weapon",
         "Knife"
       ],
       "life": 0,
@@ -2169,7 +2100,6 @@
       "collector": "018",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Bludgeon"
       ],
       "life": 0,
@@ -2185,15 +2115,13 @@
         {
           "name": "Dinato Xtipima",
           "type": "reveal",
-          "text": "Turn your warrior to face any direction. You may immediately make an attack with this weapon against each warrior in this weapons attack grid. The ropalo, a large club, is used simply to bludgeon opponents into submission."
+          "text": "Turn your warrior to face any direction. You may immediately make an attack with this weapon against each warrior in this weapons attack grid."
         }
       ],
-      "flavor": "",
+      "flavor": "The ropalo, a large club, is used simply to bludgeon opponents into submission.",
       "illustrator": "Jason Engle",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(5) ROPALO (1) +0 +1 +3 � Greek • Weapon • Bludgeon (1 Hand) Dinato Xtipima – Reveal: Turn your warrior to face any direction. You may immediately make an attack with this weapon against each warrior in this weapons attack grid. The ropalo, a large club, is used simply to bludgeon opponents into submission. Illustration: Jason Engle 1 18/100"
     },
     {
@@ -2206,7 +2134,6 @@
       "collector": "093",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2241,7 +2168,6 @@
       "collector": "003",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Polearm"
       ],
       "life": 0,
@@ -2276,7 +2202,6 @@
       "collector": "098",
       "culture": "Roman",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2311,7 +2236,6 @@
       "collector": "061",
       "culture": "Norse",
       "traits": [
-        "Weapon",
         "Axe/Ranged"
       ],
       "life": 0,
@@ -2351,7 +2275,6 @@
       "collector": "008",
       "culture": "Greek",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2386,7 +2309,6 @@
       "collector": "088",
       "culture": "Roman",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2421,7 +2343,6 @@
       "collector": "073",
       "culture": "Norse",
       "traits": [
-        "Weapon",
         "Sword"
       ],
       "life": 0,
@@ -2456,7 +2377,6 @@
       "collector": "023",
       "culture": "Japanese",
       "traits": [
-        "Weapon",
         "Ranged"
       ],
       "life": 0,
@@ -2491,7 +2411,6 @@
       "collector": "094",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2526,7 +2445,6 @@
       "collector": "067",
       "culture": "Norse",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2561,7 +2479,6 @@
       "collector": "054",
       "culture": "Norse",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2596,7 +2513,6 @@
       "collector": "074",
       "culture": "Roman",
       "traits": [
-        "Armor",
         "Legs"
       ],
       "life": 0,
@@ -2631,7 +2547,6 @@
       "collector": "089",
       "culture": "Roman",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2666,7 +2581,6 @@
       "collector": "024",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2701,7 +2615,6 @@
       "collector": "014",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Legs"
       ],
       "life": 0,
@@ -2736,7 +2649,6 @@
       "collector": "037",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Legs"
       ],
       "life": 0,
@@ -2771,7 +2683,6 @@
       "collector": "049",
       "culture": "Norse",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2806,7 +2717,6 @@
       "collector": "056",
       "culture": "Norse",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -2841,7 +2751,6 @@
       "collector": "036",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2876,7 +2785,6 @@
       "collector": "062",
       "culture": "Norse",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2911,7 +2819,6 @@
       "collector": "004",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2946,7 +2853,6 @@
       "collector": "019",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -2981,7 +2887,6 @@
       "collector": "084",
       "culture": "Roman",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -3016,7 +2921,6 @@
       "collector": "031",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Head"
       ],
       "life": 0,
@@ -3051,7 +2955,6 @@
       "collector": "009",
       "culture": "Greek",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -3086,7 +2989,6 @@
       "collector": "099",
       "culture": "Roman",
       "traits": [
-        "Armor",
         "Legs"
       ],
       "life": 0,
@@ -3121,7 +3023,6 @@
       "collector": "079",
       "culture": "Roman",
       "traits": [
-        "Armor",
         "Legs"
       ],
       "life": 0,
@@ -3156,7 +3057,6 @@
       "collector": "044",
       "culture": "Japanese",
       "traits": [
-        "Armor",
         "Torso"
       ],
       "life": 0,
@@ -3191,7 +3091,6 @@
       "collector": "015",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3226,7 +3125,6 @@
       "collector": "068",
       "culture": "Norse",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3261,7 +3159,6 @@
       "collector": "005",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Cavalry"
       ],
       "life": 0,
@@ -3296,7 +3193,6 @@
       "collector": "050",
       "culture": "Norse",
       "traits": [
-        "Special",
         "Head"
       ],
       "life": 0,
@@ -3331,7 +3227,6 @@
       "collector": "075",
       "culture": "Roman",
       "traits": [
-        "Special",
         "Tome"
       ],
       "life": 0,
@@ -3366,7 +3261,6 @@
       "collector": "085",
       "culture": "Roman",
       "traits": [
-        "Special",
         "Tome"
       ],
       "life": 0,
@@ -3401,7 +3295,6 @@
       "collector": "063",
       "culture": "Norse",
       "traits": [
-        "Special",
         "Mystic"
       ],
       "life": 0,
@@ -3436,7 +3329,6 @@
       "collector": "029",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3471,7 +3363,6 @@
       "collector": "010",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Shield"
       ],
       "life": 0,
@@ -3506,7 +3397,6 @@
       "collector": "032",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3541,7 +3431,6 @@
       "collector": "020",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3576,7 +3465,6 @@
       "collector": "025",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Ability"
       ],
       "life": 0,
@@ -3611,7 +3499,6 @@
       "collector": "057",
       "culture": "Norse",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3646,7 +3533,6 @@
       "collector": "100",
       "culture": "Roman",
       "traits": [
-        "Special",
         "Shield"
       ],
       "life": 0,
@@ -3681,7 +3567,6 @@
       "collector": "080",
       "culture": "Roman",
       "traits": [
-        "Special",
         "Shield"
       ],
       "life": 0,
@@ -3716,7 +3601,6 @@
       "collector": "090",
       "culture": "Roman",
       "traits": [
-        "Special",
         "Shield"
       ],
       "life": 0,
@@ -3751,7 +3635,6 @@
       "collector": "095",
       "culture": "Greek",
       "traits": [
-        "Special",
         "Shield"
       ],
       "life": 0,
@@ -3786,7 +3669,6 @@
       "collector": "045",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Item"
       ],
       "life": 0,
@@ -3821,7 +3703,6 @@
       "collector": "072",
       "culture": "Norse",
       "traits": [
-        "Special",
         "Shield"
       ],
       "life": 0,
@@ -3856,7 +3737,6 @@
       "collector": "038",
       "culture": "Japanese",
       "traits": [
-        "Special",
         "Cavalry"
       ],
       "life": 0,

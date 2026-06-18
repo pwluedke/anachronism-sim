@@ -1,0 +1,23 @@
+[
+  {
+    "id": "s3-P12-100",
+    "name": "HERAKLES OF THEBES",
+    "raw_source_text": "HERAKLES OF THEBES (Earth) 6 Life 3 Speed +1 +1 +0 6 Experience � 1 Damage Ellênikê: When you make a basic attack roll, if you have no item in play, roll three dice and use the sum of all three. If all three of the dice are the same number, the attack deals triple damage. The attack cannot be a critical hit. King Eurystheus sent Herakles to capture a white bull that was terrorizing Crete, after King Minos had offended Poseidon, who cursed the bull with madness. Illustration: James Ryman 3 P12/100",
+    "ability_text": "When you make a basic attack roll, if you have no item in play, roll three dice and use the sum of all three. If all three of the dice are the same number, the attack deals triple damage.",
+    "flavor": "The attack cannot be a critical hit. King Eurystheus sent Herakles to capture a white bull that was terrorizing Crete, after King Minos had offended Poseidon, who cursed the bull with madness."
+  },
+  {
+    "id": "s1-041",
+    "name": "NINJA",
+    "raw_source_text": "NINJA (Wind) 7 Life 3 Speed –1 –1 –1 2 Experience –1 � –1 1 Damage Japanese • Warrior • Male Ninjutsu: Your attacks deal +1 damage while you are not in the defending opponent’s basic attack grid. Shinobi: This warrior may not use two-handed weapons. Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark. Illustration: William O’Connor 1 41/100",
+    "ability_text": "Your attacks deal +1 damage while you are not in the defending opponent’s basic attack grid.",
+    "flavor": "Shinobi: This warrior may not use two-handed weapons. Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark."
+  },
+  {
+    "id": "s7-019",
+    "name": "THE ALAMO",
+    "raw_source_text": "(3) THE ALAMO American Frontiersmen • Armor • Location Fortify: Once this game, at the start of any round, if you have a wood card and an earth card in play, gain 2 life and +4 experience. Command Position: Opposing warriors cannot move outside of their turns. Taken in a 13-day siege, in which all Texan combatants, including Jim Bowie, were killed, the Alamo came to serve as a rallying cry for the Texas Revolution. Illustration: Tyler Walpole 7 19/100",
+    "ability_text": "Once this game, at the start of any round, if you have a wood card and an earth card in play, gain 2 life and +4 experience.",
+    "flavor": "Command Position: Opposing warriors cannot move outside of their turns. Taken in a 13-day siege, in which all Texan combatants, including Jim Bowie, were killed, the Alamo came to serve as a rallying cry for the Texas Revolution."
+  }
+]
