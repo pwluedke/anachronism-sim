@@ -1,0 +1,3986 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-17T00:00:00Z",
+  "source": "heard-2007",
+  "set": 4,
+  "card_count": 109,
+  "review_count": 5,
+  "cards": [
+    {
+      "id": "s4-051",
+      "source": "heard-2007",
+      "name": "APRANIK",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 4,
+      "collector": "051",
+      "culture": "Persian",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 –1 +0 � –2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Jang Joy–e Azadi",
+          "type": "static",
+          "text": "At the start of each round, roll two dice. If this roll is odd, gain 1 life. If the roll is doubles, your next attack is a critical hit if it hits."
+        }
+      ],
+      "flavor": "Daughter of the mighty general Peeran, Apranik rose through the ranks of the army on pure merit to become one of the most fearsome, cunning and dedicated Sassanian army commanders.",
+      "illustrator": "Mark Zug",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "APRANIK (Wind) 6 Life 3 Speed +1 –1 7 Experience +0 � –2 1 Damage Persian • Warrior • Female Jang Joy–e Azadi: At the start of each round, roll two dice. If this roll is odd, gain 1 life. If the roll is doubles, your next attack is a critical hit if it hits. Daughter of the mighty general Peeran, Apranik rose through the ranks of the army on pure merit to become one of the most fearsome, cunning and dedicated Sassanian army commanders. Illustration: Mark Zug 4 51/100"
+    },
+    {
+      "id": "s4-026",
+      "source": "heard-2007",
+      "name": "ARIKI TE WHEROWHERO",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 4,
+      "collector": "026",
+      "culture": "Maori",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 +0 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Rehu",
+          "type": "static",
+          "text": "Once each round, when you hit with a bludgeon and the defender has no Armor in play, the defender’s next roll gets –2."
+        },
+        {
+          "name": "Tika",
+          "type": "static",
+          "text": "Your attack rolls with bludgeons gain +1."
+        }
+      ],
+      "flavor": "Descended from Wikato and Ngati Maniapoto chiefs, Te Wherowhero established his status as a legendary battle leader before being declared king in the face of increasing British aggression.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ARIKI TE WHEROWHERO (Earth) 8 Life 3 Speed +1 +0 5 Experience +0 � +0 1 Damage Maori • Warrior • Male Rehu: Once each round, when you hit with a bludgeon and the defender has no Armor in play, the defender’s next roll gets –2. Tika: Your attack rolls with bludgeons gain +1. Descended from Wikato and Ngati Maniapoto chiefs, Te Wherowhero established his status as a legendary battle leader before being declared king in the face of increasing British aggression. Illustration: Drew Baker 4 26/100"
+    },
+    {
+      "id": "s4-001",
+      "source": "heard-2007",
+      "name": "BENRIG MEDB",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 4,
+      "collector": "001",
+      "culture": "Irish",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sláintiúil",
+          "type": "static",
+          "text": "Twice each round, when an opposing player would gain life, you gain the life instead."
+        }
+      ],
+      "flavor": "Queen of Connaught in the first century BC, Medb invaded Ulster to acquire the magnificent bull of Cooley. By doing this, she would outdo the possessions of her husband, King Ailill, and become head of the household.",
+      "illustrator": "R.K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "BENRIG MEDB (Water) 7 Life 3 Speed +2 7 Experience –1 � +0 1 Damage Irish • Warrior • Female Sláintiúil: Twice each round, when an opposing player would gain life, you gain the life instead. Queen of Connaught in the first century BC, Medb invaded Ulster to acquire the magnificent bull of Cooley. By doing this, she would outdo the possessions of her husband, King Ailill, and become head of the household. Illustration: R.K. Post 4 01/100"
+    },
+    {
+      "id": "s4-006",
+      "source": "heard-2007",
+      "name": "BRIAN BORÚ",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 4,
+      "collector": "006",
+      "culture": "Irish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +1 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Díoltas",
+          "type": "static",
+          "text": "You gain +1 speed during the first round of the game if you are opposing a Norse warrior."
+        },
+        {
+          "name": "An Dara Buille",
+          "type": "action",
+          "text": "Once each game, make an attack with one of your weapons, if possible. After the attack, set your experience to 0."
+        }
+      ],
+      "flavor": "Brian, as a child, witnessed the death of most of his Dal Cais tribe, including his mother, at the hands of the Norse. His vengeance set him inexorably on the path towards becoming the first and only true High King of Ireland.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "BRIAN BORÚ (Fire) 7 Life 3 Speed +1 +1 8 Experience –1 � 1 Damage Irish • Warrior • Male Díoltas: You gain +1 speed during the first round of the game if you are opposing a Norse warrior. An Dara Buille – Action: Once each game, make an attack with one of your weapons, if possible. After the attack, set your experience to 0. Brian, as a child, witnessed the death of most of his Dal Cais tribe, including his mother, at the hands of the Norse. His vengeance set him inexorably on the path towards becoming the first and only true High King of Ireland. Illustration: Alan Pollack 4 06/100"
+    },
+    {
+      "id": "s4-076",
+      "source": "heard-2007",
+      "name": "CATHERINE THE GREAT",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 4,
+      "collector": "076",
+      "culture": "Russian",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Diplomaticheskoye Vmeshatelstvo",
+          "type": "static",
+          "text": "At the start of each round, choose an attack grid. Swap that attack grid with this card’s attack grid until the end of the round."
+        }
+      ],
+      "flavor": "Born a German princess, she overthrew her mentally and physically infirm husband to ascend the throne of Russia. Once there, she reformed her country and organized wars of expansion, often commanding from the front.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CATHERINE THE GREAT (Earth) 8 Life 3 Speed –1 –1 5 Experience � +0 1 Damage Russian • Warrior • Female Diplomaticheskoye Vmeshatelstvo: At the start of each round, choose an attack grid. Swap that attack grid with this card’s attack grid until the end of the round. Born a German princess, she overthrew her mentally and physically infirm husband to ascend the throne of Russia. Once there, she reformed her country and organized wars of expansion, often commanding from the front. Illustration: Steven Belledin 4 76/100"
+    },
+    {
+      "id": "s4-011",
+      "source": "heard-2007",
+      "name": "CÚ CHULAINN",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 4,
+      "collector": "011",
+      "culture": "Irish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 –1 +1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Fíoch Fola",
+          "type": "static",
+          "text": "At the start of each of your turns, if any opponent revealed a support card that round with initiative equal to or higher than your life, you may move them to any space in your basic attack grid. If you do, you cannot move more than once during that turn."
+        }
+      ],
+      "flavor": "“It is a wonderful thing if I am but one day and one night in the world, provided that my fame and my deeds live after me.” — Cú Chulainn",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CÚ CHULAINN (Fire) 7 Life 3 Speed +0 +0 –1 7 Experience +1 � +1 1 Damage Irish • Warrior • Male Fíoch Fola: At the start of each of your turns, if any opponent revealed a support card that round with initiative equal to or higher than your life, you may move them to any space in your basic attack grid. If you do, you cannot move more than once during that turn. “It is a wonderful thing if I am but one day and one night in the world, provided that my fame and my deeds live after me.” — Cú Chulainn Illustration: Greg Staples 4 11/100"
+    },
+    {
+      "id": "s4-056",
+      "source": "heard-2007",
+      "name": "CYRUS THE GREAT",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 4,
+      "collector": "056",
+      "culture": "Persian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 –2 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Savarkar-e Chabok",
+          "type": "static",
+          "text": "While you have a cavalry card, you gain +1 speed."
+        }
+      ],
+      "flavor": "The greatest king of the Achaemenid dynasty, Cyrus the Great conquered mighty Babylon, expanded the Persian Empire on all fronts, and is credited with creating the first charter of human rights.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CYRUS THE GREAT (Metal) 7 Life 3 Speed +1 –2 +1 5 Experience � 1 Damage Persian • Warrior • Male Savarkar-e Chabok: While you have a cavalry card, you gain +1 speed. The greatest king of the Achaemenid dynasty, Cyrus the Great conquered mighty Babylon, expanded the Persian Empire on all fronts, and is credited with creating the first charter of human rights. Illustration: Michael Komarck 4 56/100"
+    },
+    {
+      "id": "s4-P22-100",
+      "source": "heard-2007",
+      "name": "D’ARTAGNAN",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 4,
+      "collector": "P22/100",
+      "culture": "French",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +2 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Riposte",
+          "type": "static",
+          "text": "Once each turn, after you make an attack or defense roll, if the attack misses, you may move one space. Your next attack roll with a French sword gains +1."
+        }
+      ],
+      "flavor": "Although immortalized in Dumas' novel The Three Musketeers, the real D'Artagnan was a musketeer proper, and rose to the position of Commander of the King's Grand Musketeers, the most coveted military appointment in France.",
+      "illustrator": "Jim Pavalec",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "D’ARTAGNAN (Water) 8 Life 3 Speed +0 +2 4 Experience +1 � 1 Damage French • Warrior • Male Riposte: Once each turn, after you make an attack or defense roll, if the attack misses, you may move one space. Your next attack roll with a French sword gains +1. Although immortalized in Dumas' novel The Three Musketeers, the real D'Artagnan was a musketeer proper, and rose to the position of Commander of the King's Grand Musketeers, the most coveted military appointment in France. Illustration: Jim Pavalec 4 P22/100"
+    },
+    {
+      "id": "s4-061",
+      "source": "heard-2007",
+      "name": "DARIUS THE GREAT",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 4,
+      "collector": "061",
+      "culture": "Persian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 2,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 –2 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ghahremani",
+          "type": "static",
+          "text": "At the beginning of each round, roll two dice. If this total is even, your attack rolls gain +1 for the rest of the game. If this total is odd, your defense rolls gain +1 this round. If you roll doubles, your next attack deals +1 damage."
+        }
+      ],
+      "flavor": "After putting down revolts in Persia, Media, Babylon, and the East, Darius the Great set about reforming his Empire. He later led campaigns extending into Macedonia, Thrace, and, according to Herodotus, even as far as the river Volga.",
+      "illustrator": "Carl Frank",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "DARIUS THE GREAT (Earth) 7 Life 2 Speed +1 –2 8 Experience � +1 1 Damage Persian • Warrior • Male Ghahremani: At the beginning of each round, roll two dice. If this total is even, your attack rolls gain +1 for the rest of the game. If this total is odd, your defense rolls gain +1 this round. If you roll doubles, your next attack deals +1 damage. After putting down revolts in Persia, Media, Babylon, and the East, Darius the Great set about reforming his Empire. He later led campaigns extending into Macedonia, Thrace, and, according to Herodotus, even as far as the river Volga. Illustration: Carl Frank 4 61/100"
+    },
+    {
+      "id": "s4-016",
+      "source": "heard-2007",
+      "name": "DÓNAL McCARTHAIGH MÓR",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 4,
+      "collector": "016",
+      "culture": "Irish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Iomaíocht",
+          "type": "static",
+          "text": "At the start of this game, choose an opposing warrior. At the end of this game, for the rest of the match, your warrior gains +1 speed against warriors of the chosen warrior’s culture."
+        },
+        {
+          "name": "Aisghairm",
+          "type": "static",
+          "text": "Whenever an opponent reveals a card from a different culture than their warrior, they get –2 experience."
+        }
+      ],
+      "flavor": "Fortis, ferox et celer.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "DÓNAL McCARTHAIGH MÓR (Metal) 8 Life 3 Speed +1 +0 5 Experience � +2 1 Damage Irish • Warrior • Male Iomaíocht: At the start of this game, choose an opposing warrior. At the end of this game, for the rest of the match, your warrior gains +1 speed against warriors of the chosen warrior’s culture. Aisghairm: Whenever an opponent reveals a card from a different culture than their warrior, they get –2 experience. Fortis, ferox et celer. Illustration: Raven Mimura 4 16/100"
+    },
+    {
+      "id": "s4-021",
+      "source": "heard-2007",
+      "name": "FINN MacCUMHAILL",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 4,
+      "collector": "021",
+      "culture": "Irish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +2 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Cairde agus Comhghuaillithe",
+          "type": "static",
+          "text": "At the start of each round, you may discard one of your face-up support cards. If you do, put an ally card in your discard pile into play face-up. If that card has a Reveal ability, use it immediately. This ability cannot return any one ally to play more than once each game."
+        }
+      ],
+      "flavor": "Finn MacCumhaill was the leader of the Fianna, whoe reputedly defeated early Roman landings on Irish shores so savagely that the Romans never returned in numbers.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "FINN MacCUMHAILL (Water) 7 Life 3 Speed +1 +2 5 Experience –1 � 1 Damage Irish • Warrior • Male Cairde agus Comhghuaillithe: At the start of each round, you may discard one of your face-up support cards. If you do, put an ally card in your discard pile into play face-up. If that card has a Reveal ability, use it immediately. This ability cannot return any one ally to play more than once each game. Finn MacCumhaill was the leader of the Fianna, whoe reputedly defeated early Roman landings on Irish shores so savagely that the Romans never returned in numbers. Illustration: Terese Nielsen 4 21/100"
+    },
+    {
+      "id": "s4-031",
+      "source": "heard-2007",
+      "name": "HATUPATU",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 4,
+      "collector": "031",
+      "culture": "Maori",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 5,
+      "speed": 4,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 –1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakahaere",
+          "type": "static",
+          "text": "The first time you make a critical hit, that hit deals normal damage and you gain 4 life and +6 experience."
+        }
+      ],
+      "flavor": "The youngest of four sons, Hatupatu’s elder siblings bullied him remorselessly as a child. However, he grew to become a great warrior of the Arawa tribe, slaying an enemy chief, Raumati, from Tauranga.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "HATUPATU (Wood) 5 Life 4 Speed +1 +0 3 Experience –1 � –1 1 Damage Maori • Warrior • Male Whakahaere: The first time you make a critical hit, that hit deals normal damage and you gain 4 life and +6 experience. The youngest of four sons, Hatupatu’s elder siblings bullied him remorselessly as a child. However, he grew to become a great warrior of the Arawa tribe, slaying an enemy chief, Raumati, from Tauranga. Illustration: Hugh Jamieson 4 31/100"
+    },
+    {
+      "id": "s4-081",
+      "source": "heard-2007",
+      "name": "IVAN THE TERRIBLE",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 4,
+      "collector": "081",
+      "culture": "Russian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Perviy Tzar",
+          "type": "static",
+          "text": "After any player rolls dice, if you have more than 2 experience, you may give your warrior –3 experience. If you do, you may increase or decrease one of the dice by 1."
+        },
+        {
+          "name": "Poslednyaya Slava",
+          "type": "action",
+          "text": "If you are at 1 life, your next roll is a 12."
+        }
+      ],
+      "flavor": "More correctly known as “Ivan the Mighty,” Ivan Grozniy instituted the rule of the Tsars, forging Russia into a powerful nation despite the madness that marred his reign.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "IVAN THE TERRIBLE (Fire) 7 Life 3 Speed +1 7 Experience +0 � +2 1 Damage Russian • Warrior • Male Perviy Tzar: After any player rolls dice, if you have more than 2 experience, you may give your warrior –3 experience. If you do, you may increase or decrease one of the dice by 1. Poslednyaya Slava – Action: If you are at 1 life, your next roll is a 12. More correctly known as “Ivan the Mighty,” Ivan Grozniy instituted the rule of the Tsars, forging Russia into a powerful nation despite the madness that marred his reign. Illustration: William O’Connor 4 81/100"
+    },
+    {
+      "id": "s4-036",
+      "source": "heard-2007",
+      "name": "KUPE",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 4,
+      "collector": "036",
+      "culture": "Maori",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 –1 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakahura",
+          "type": "static",
+          "text": "At the start of each round, choose an opponent. You may use abilities on that player’s warrior or support cards that give damage, attack roll or defense roll bonuses. Your support cards cannot give bonuses to your defense rolls."
+        }
+      ],
+      "flavor": "After murdering his cousin, Kupe left the ancestral homeland of the Maori. He sailed across the ocean until his wife, Hine te Aparangi, sighted the islands of New Zealand, which they called Aotearoa, Land of the Long White Cloud.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "KUPE (Water) 7 Life 3 Speed +1 –1 4 Experience +1 � +0 1 Damage Maori • Warrior • Male Whakahura: At the start of each round, choose an opponent. You may use abilities on that player’s warrior or support cards that give damage, attack roll or defense roll bonuses. Your support cards cannot give bonuses to your defense rolls. After murdering his cousin, Kupe left the ancestral homeland of the Maori. He sailed across the ocean until his wife, Hine te Aparangi, sighted the islands of New Zealand, which they called Aotearoa, Land of the Long White Cloud. Illustration: Szucs Grégory 4 36/100"
+    },
+    {
+      "id": "s4-041",
+      "source": "heard-2007",
+      "name": "MAUI-TIKITIKI",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 4,
+      "collector": "041",
+      "culture": "Maori",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 9,
+      "speed": 4,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mura",
+          "type": "static",
+          "text": "Your attack rolls gain +1 against Fire warriors."
+        },
+        {
+          "name": "Híkaikai",
+          "type": "static",
+          "text": "Your defense rolls get –2."
+        }
+      ],
+      "flavor": "A mighty warrior and fisherman, according to Maori mythology, Maui hauled the North Island of New Zealand from the ocean. He also attempted to win immortality for all men. He failed and, for that reason, all men are mortal.",
+      "illustrator": "Brom",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MAUI-TIKITIKI (Water) 9 Life 4 Speed –1 +1 5 Experience +0 � 1 Damage Maori • Warrior • Male Mura: Your attack rolls gain +1 against Fire warriors. Híkaikai: Your defense rolls get –2. A mighty warrior and fisherman, according to Maori mythology, Maui hauled the North Island of New Zealand from the ocean. He also attempted to win immortality for all men. He failed and, for that reason, all men are mortal. Illustration: Brom 4 41/100"
+    },
+    {
+      "id": "s4-066",
+      "source": "heard-2007",
+      "name": "MITHRADATES VI THE GREAT",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 4,
+      "collector": "066",
+      "culture": "Persian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +2 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Jang Salar",
+          "type": "static",
+          "text": "At the start of each round, roll two dice. If you roll consecutive numbers, move your warrior to any unoccupied space in the arena. If you roll doubles, you may attack twice with one weapon this round."
+        }
+      ],
+      "flavor": "Mithradates VI the Great’s military genius represented such a threat to the Roman Republic that three separate wars against him were required to secure final victory.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MITHRADATES VI THE GREAT (Wind) 7 Life 3 Speed +0 +2 8 Experience � –1 1 Damage Persian • Warrior • Male Jang Salar: At the start of each round, roll two dice. If you roll consecutive numbers, move your warrior to any unoccupied space in the arena. If you roll doubles, you may attack twice with one weapon this round. Mithradates VI the Great’s military genius represented such a threat to the Roman Republic that three separate wars against him were required to secure final victory. Illustration: Matthew Armstrong 4 66/100"
+    },
+    {
+      "id": "s4-086",
+      "source": "heard-2007",
+      "name": "PETER I THE GREAT",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 4,
+      "collector": "086",
+      "culture": "Russian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +1 –1 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Provosglasheniye",
+          "type": "static",
+          "text": "At the start of each round, choose a row or column in the arena. While opposing warriors are in the chosen spaces, they cannot use abilities on armor or special cards."
+        }
+      ],
+      "flavor": "A giant of a man, with boundless energy and ambition, Peter the Great transformed Russia from a backward nation into one of the foremost European military powers in less than thirty years.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "PETER I THE GREAT (Metal) 7 Life 3 Speed +1 +1 7 Experience –1 � +2 1 Damage Russian • Warrior • Male Provosglasheniye: At the start of each round, choose a row or column in the arena. While opposing warriors are in the chosen spaces, they cannot use abilities on armor or special cards. A giant of a man, with boundless energy and ambition, Peter the Great transformed Russia from a backward nation into one of the foremost European military powers in less than thirty years. Illustration: Christopher Appel 4 86/100"
+    },
+    {
+      "id": "s4-091",
+      "source": "heard-2007",
+      "name": "PRINZ MIKHAIL SKOPIN-SHUISKY",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 4,
+      "collector": "091",
+      "culture": "Russian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 +0 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hitrost",
+          "type": "static",
+          "text": "When you reveal a support card, you may choose to give its initiative value +4 or –4. If you do, choose an opponent. Modify that warrior’s first roll of the round by half of the chosen amount."
+        }
+      ],
+      "flavor": "Mikhail’s reputation and ability on the battlefield was such that his enemies often fled at the sight of his approach. His unparalleled success, however, led to him being assassinated by his own wife.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "PRINZ MIKHAIL SKOPIN-SHUISKY (Wind) 8 Life 3 Speed +2 +0 –1 6 Experience � 1 Damage Russian • Warrior • Male Hitrost: When you reveal a support card, you may choose to give its initiative value +4 or –4. If you do, choose an opponent. Modify that warrior’s first roll of the round by half of the chosen amount. Mikhail’s reputation and ability on the battlefield was such that his enemies often fled at the sight of his approach. His unparalleled success, however, led to him being assassinated by his own wife. Illustration: John Donahue 4 91/100"
+    },
+    {
+      "id": "s4-096",
+      "source": "heard-2007",
+      "name": "SAINT ALEXANDER NEVSKY",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 4,
+      "collector": "096",
+      "culture": "Russian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 +1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dukh Tovarischestva",
+          "type": "static",
+          "text": "At the start of each round, if an ally card was revealed that round, you may move one space. Your attack rolls gain +1 for each ally in play."
+        }
+      ],
+      "flavor": "An outstanding military commander, Nevsky took his name from a famous victory against the Swedes on the River Neva, where he halted their expansion into Russia.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SAINT ALEXANDER NEVSKY (Wood) 8 Life 3 Speed +0 +1 5 Experience +1 � –1 1 Damage Russian • Warrior • Male Dukh Tovarischestva: At the start of each round, if an ally card was revealed that round, you may move one space. Your attack rolls gain +1 for each ally in play. An outstanding military commander, Nevsky took his name from a famous victory against the Swedes on the River Neva, where he halted their expansion into Russia. Illustration: James Ryman 4 96/100"
+    },
+    {
+      "id": "s4-071",
+      "source": "heard-2007",
+      "name": "SHAPUR I",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 4,
+      "collector": "071",
+      "culture": "Persian",
+      "traits": [
+        "Warrior",
+        "Male",
+        "Cavalry"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Abdide-ye Jang",
+          "type": "static",
+          "text": "At the start of each round, roll two dice. If this total is greater than your life, you may immediately move your warrior one space or use an action ability on one of your support cards."
+        }
+      ],
+      "flavor": "Waging almost constant war during his reign, Shapur I captured the Roman Emperor Valerian at Edessa, keeping him in humiliating captivity until his death, and creating a landmark in the decline of the Roman Empire.",
+      "illustrator": "Michael Koch",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SHAPUR I (Wind) 7 Life 3 Speed +1 +0 6 Experience � +2 1 Damage Persian • Warrior • Male • Cavalry Abdide-ye Jang: At the start of each round, roll two dice. If this total is greater than your life, you may immediately move your warrior one space or use an action ability on one of your support cards. Waging almost constant war during his reign, Shapur I captured the Roman Emperor Valerian at Edessa, keeping him in humiliating captivity until his death, and creating a landmark in the decline of the Roman Empire. Illustration: Michael Koch 4 71/100"
+    },
+    {
+      "id": "s4-046",
+      "source": "heard-2007",
+      "name": "TE RAUPRAHA",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 4,
+      "collector": "046",
+      "culture": "Maori",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakawhiunga",
+          "type": "static",
+          "text": "At the start of each round, make a basic attack at +2 against each warrior with higher initiative than your initiative for that round."
+        }
+      ],
+      "flavor": "A fierce and gifted war leader, Te Rauparaha’s tactical genius was such that the British came to call him “The Napoleon of the Pacific” out of the respect and fear born of repeated defeat at his hands.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "TE RAUPRAHA (Water) 7 Life 3 Speed +0 +1 6 Experience +1 � 1 Damage Maori • Warrior • Male Whakawhiunga: At the start of each round, make a basic attack at +2 against each warrior with higher initiative than your initiative for that round. A fierce and gifted war leader, Te Rauparaha’s tactical genius was such that the British came to call him “The Napoleon of the Pacific” out of the respect and fear born of repeated defeat at his hands. Illustration: Tyler Walpole 4 46/100"
+    },
+    {
+      "id": "s4-062",
+      "source": "heard-2007",
+      "name": "AHURAMAZDA",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 4,
+      "collector": "062",
+      "culture": "Persian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mojazat",
+          "type": "static",
+          "text": "When you are hit by an attack with a damage bonus, gain +9 initiative next round and +1 speed on your next turn."
+        }
+      ],
+      "flavor": "Ahuramazdah was the supreme god of the Persian pantheon, the creator of the heavens and the earth. Leader of the Heavenly Host, he battles Ahriman to rid the world of evil, darkness, and deceit.",
+      "illustrator": "Carl Frank",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) AHURAMAZDA (Aether) Persian • Inspiration • Deity Mojazat: When you are hit by an attack with a damage bonus, gain +9 initiative next round and +1 speed on your next turn. Ahuramazdah was the supreme god of the Persian pantheon, the creator of the heavens and the earth. Leader of the Heavenly Host, he battles Ahriman to rid the world of evil, darkness, and deceit. Illustration: Carl Frank 4 62/100"
+    },
+    {
+      "id": "s4-022",
+      "source": "heard-2007",
+      "name": "AN BRADÁN FEASA",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 4,
+      "collector": "022",
+      "culture": "Irish",
+      "traits": [
+        "Inspiration",
+        "Mystic"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Eagnaíocht",
+          "type": "static",
+          "text": "At the start of each round, each opponent who reveals a card with higher initiative than this card gets –1 to all their rolls that round. The first person to taste the Salmon of Knowledge would gain enormous wisdom."
+        }
+      ],
+      "flavor": "Finegas the poet caught the fish, but Finn burnt his thumb on the salmon while cooking it. Putting his thumb in his mouth to cool the burn, Finn gained the salmon’s power.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) AN BRADÁN FEASA (Water) Irish • Inspiration • Mystic Eagnaíocht: At the start of each round, each opponent who reveals a card with higher initiative than this card gets –1 to all their rolls that round. The first person to taste the Salmon of Knowledge would gain enormous wisdom. Finegas the poet caught the fish, but Finn burnt his thumb on the salmon while cooking it. Putting his thumb in his mouth to cool the burn, Finn gained the salmon’s power. Illustration: Terese Nielsen 4 22/100"
+    },
+    {
+      "id": "s4-082",
+      "source": "heard-2007",
+      "name": "ANASTASIA ROMANOVA ZAKHARYINA",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 4,
+      "collector": "082",
+      "culture": "Russian",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dragotzennaya I Hrupkaya",
+          "type": "static",
+          "text": "You gain +1 speed and your first weapon attack each round deals +1 damage. After an opponent rolls doubles on an attack roll, discard this card and you get –1 speed on your next turn."
+        }
+      ],
+      "flavor": "Chosen from among the princesses of Europe, Anastasia was the only person who could banish the demons that plagued her husband. After her death, Ivan plunged headlong into the most terrible insanity.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) ANASTASIA ROMANOVA ZAKHARYINA (Water) Russian • Inspiration • Ally • Female Dragotzennaya I Hrupkaya: You gain +1 speed and your first weapon attack each round deals +1 damage. After an opponent rolls doubles on an attack roll, discard this card and you get –1 speed on your next turn. Chosen from among the princesses of Europe, Anastasia was the only person who could banish the demons that plagued her husband. After her death, Ivan plunged headlong into the most terrible insanity. Illustration: William O’Connor 4 82/100"
+    },
+    {
+      "id": "s4-052",
+      "source": "heard-2007",
+      "name": "ANAHITA",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 4,
+      "collector": "052",
+      "culture": "Persian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bar-e Esbat",
+          "type": "reveal",
+          "text": "If you lost the previous game or if an opponent discarded one of your cards this game, you may deal 1 damage to your warrior. If you do, for the rest of the game, your first weapon attack of each round deals +1 damage."
+        }
+      ],
+      "flavor": "Ancient Persian goddess of water, fertility, and war, as well as the patron goddess of women, Anahita embodied every aspect of womanhood, from gentle mother to lethal warrior.",
+      "illustrator": "Mark Zug",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) ANAHITA (Earth) Persian • Inspiration • Deity Bar-e Esbat – Reveal: If you lost the previous game or if an opponent discarded one of your cards this game, you may deal 1 damage to your warrior. If you do, for the rest of the game, your first weapon attack of each round deals +1 damage. Ancient Persian goddess of water, fertility, and war, as well as the patron goddess of women, Anahita embodied every aspect of womanhood, from gentle mother to lethal warrior. Illustration: Mark Zug 4 52/100"
+    },
+    {
+      "id": "s4-002",
+      "source": "heard-2007",
+      "name": "ANÚ",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 4,
+      "collector": "002",
+      "culture": "Irish",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "An Mháthair-Uachtarán",
+          "type": "reveal",
+          "text": "Gain 2 life. Choose an opposing warrior to gain 1 life. All of your rolls during your turn this round gain +1."
+        }
+      ],
+      "flavor": "Anú, goddess of fertility and abundance, birthed the Tuatha dé Danaan, who, in their turn, passed into mythology as the gods and goddesses of the Irish Celts.",
+      "illustrator": "R.K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) ANÚ (Fire) Irish • Inspiration • Deity An Mháthair-Uachtarán – Reveal: Gain 2 life. Choose an opposing warrior to gain 1 life. All of your rolls during your turn this round gain +1. Anú, goddess of fertility and abundance, birthed the Tuatha dé Danaan, who, in their turn, passed into mythology as the gods and goddesses of the Irish Celts. Illustration: R.K. Post 4 02/100"
+    },
+    {
+      "id": "s4-007",
+      "source": "heard-2007",
+      "name": "ÁRD RÍ",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 4,
+      "collector": "007",
+      "culture": "Irish",
+      "traits": [
+        "Inspiration",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Muinteartha le Cath",
+          "type": "static",
+          "text": "Your attack and defense rolls gain +1 against a warrior who has equal or fewer support cards that match their warrior’s culture than you have that match yours."
+        }
+      ],
+      "flavor": "Hopelessly bound up in an honorable code of warfare and a paradoxical tradition of timely betrayal and constant antagonism, the Celts of Ireland seemed almost inured to the possibility of unity under a high king.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) ÁRD RÍ (Earth) Irish • Inspiration • Quest Muinteartha le Cath: Your attack and defense rolls gain +1 against a warrior who has equal or fewer support cards that match their warrior’s culture than you have that match yours. Hopelessly bound up in an honorable code of warfare and a paradoxical tradition of timely betrayal and constant antagonism, the Celts of Ireland seemed almost inured to the possibility of unity under a high king. Illustration: Alan Pollack 4 07/100"
+    },
+    {
+      "id": "s4-067",
+      "source": "heard-2007",
+      "name": "DIONYSUS",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 4,
+      "collector": "067",
+      "culture": "Persian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Efrat Kardan",
+          "type": "reveal",
+          "text": "If the sum of the initiative of all cards revealed this round is even, gain 1 life."
+        },
+        {
+          "name": "Harzegi",
+          "type": "static",
+          "text": "Once each round, after you gain life, your next attack roll gains +2."
+        }
+      ],
+      "flavor": "The god of wine and merriment, Dionysus is also associated with civilizing influences, law and peace. He is also the patron god of agriculture and the theater.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) DIONYSUS (Water) Persian • Inspiration • Deity Efrat Kardan – Reveal: If the sum of the initiative of all cards revealed this round is even, gain 1 life. Harzegi: Once each round, after you gain life, your next attack roll gains +2. The god of wine and merriment, Dionysus is also associated with civilizing influences, law and peace. He is also the patron god of agriculture and the theater. Illustration: Matthew Armstrong 4 67/100"
+    },
+    {
+      "id": "s4-017",
+      "source": "heard-2007",
+      "name": "DLÍ BREITHIM",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 4,
+      "collector": "017",
+      "culture": "Irish",
+      "traits": [
+        "Inspiration",
+        "Code"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Breithiúnas",
+          "type": "static",
+          "text": "After an opponent gains a speed bonus from one of their own card abilities or reveals a support card with an initiative greater than 7, deal 1 damage to that warrior."
+        }
+      ],
+      "flavor": "The Brehon code regulated each rank of society, from king to slave. Many English settlers adopted the Brehon laws in preference to their own, until the code was finally and brutally extinguished.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) DLÍ BREITHIM (Wood) Irish • Inspiration • Code Breithiúnas: After an opponent gains a speed bonus from one of their own card abilities or reveals a support card with an initiative greater than 7, deal 1 damage to that warrior. The Brehon code regulated each rank of society, from king to slave. Many English settlers adopted the Brehon laws in preference to their own, until the code was finally and brutally extinguished. Illustration: Raven Mimura 4 17/100"
+    },
+    {
+      "id": "s4-057",
+      "source": "heard-2007",
+      "name": "MARDUKH",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 4,
+      "collector": "057",
+      "culture": "Persian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Yaghi-e Batel",
+          "type": "static",
+          "text": "When you roll a 2 on any die of an attack or defense roll, you may roll another die and add the value of that die to this roll. If you do, the roll cannot count as doubles."
+        }
+      ],
+      "flavor": "City-god of Babylon, Marduk alone defeated the goddess Tiamat and her army of demons. The Tower of Babel was erected in his honor, intended to reach to the heavens themselves.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) MARDUKH (Fire) Persian • Inspiration • Deity Yaghi-e Batel: When you roll a 2 on any die of an attack or defense roll, you may roll another die and add the value of that die to this roll. If you do, the roll cannot count as doubles. City-god of Babylon, Marduk alone defeated the goddess Tiamat and her army of demons. The Tower of Babel was erected in his honor, intended to reach to the heavens themselves. Illustration: Michael Komarck 4 57/100"
+    },
+    {
+      "id": "s4-097",
+      "source": "heard-2007",
+      "name": "METROPOLITAN KYRILLUS",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 4,
+      "collector": "097",
+      "culture": "Russian",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sankziya",
+          "type": "static",
+          "text": "At the start of each round, if your initiative for that round matches your initiative from a previous round, your attack rolls and defense rolls that round gain +1."
+        }
+      ],
+      "flavor": "Upon hearing of Nevski’s death, Metropolitan Kyrillus finished reciting the liturgy, turned towards his congregation, and said, “Learn, my dear children, that the Sun of Russia is set, is dead.”",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) METROPOLITAN KYRILLUS (Aether) Russian • Inspiration • Ally • Male Sankziya: At the start of each round, if your initiative for that round matches your initiative from a previous round, your attack rolls and defense rolls that round gain +1. Upon hearing of Nevski’s death, Metropolitan Kyrillus finished reciting the liturgy, turned towards his congregation, and said, “Learn, my dear children, that the Sun of Russia is set, is dead.” Illustration: James Ryman 4 97/100"
+    },
+    {
+      "id": "s4-012",
+      "source": "heard-2007",
+      "name": "MOR RIOGHAIN",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 4,
+      "collector": "012",
+      "culture": "Irish",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Plean Cliste",
+          "type": "static",
+          "text": "Once each round, after an opposing warrior gains life, gain +1 speed for the rest of the game."
+        }
+      ],
+      "flavor": "“Over their heads shrieks a lean goddess, Quickly dancing on the points Of weapons and shields. She is the ancient phantom—queen Morrigan.” — Annals of Leinster",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) MOR RIOGHAIN (Fire) Irish • Inspiration • Deity Plean Cliste: Once each round, after an opposing warrior gains life, gain +1 speed for the rest of the game. “Over their heads shrieks a lean goddess, Quickly dancing on the points Of weapons and shields. She is the ancient phantom—queen Morrigan.” — Annals of Leinster Illustration: Greg Staples 4 12/100"
+    },
+    {
+      "id": "s4-047",
+      "source": "heard-2007",
+      "name": "RANGA-NUI ME PAPA-TU-A-NUKU",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 4,
+      "collector": "047",
+      "culture": "Maori",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kite",
+          "type": "static",
+          "text": "This card also counts as a Wind and an Earth card."
+        },
+        {
+          "name": "Koraha",
+          "type": "static",
+          "text": "All of your non-defense rolls gain +2 for each element your cards share with any one opponent’s cards."
+        }
+      ],
+      "flavor": "The Earth Mother and Sky Father, their embrace gave rise to and encloses all life.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) RANGA-NUI ME PAPA-TU-A-NUKU (Aether) Maori • Inspiration • Deity Kite: This card also counts as a Wind and an Earth card. Koraha: All of your non-defense rolls gain +2 for each element your cards share with any one opponent’s cards. The Earth Mother and Sky Father, their embrace gave rise to and encloses all life. Illustration: Tyler Walpole 4 47/100"
+    },
+    {
+      "id": "s4-092",
+      "source": "heard-2007",
+      "name": "SAMOZVANETZ DMITRIY I",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 4,
+      "collector": "092",
+      "culture": "Russian",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tzar Samoavanetz",
+          "type": "static",
+          "text": "After you roll dice, if you have more than 2 experience, you may give your warrior –3 experience. If you do, you may increase one die of the roll by 1."
+        }
+      ],
+      "flavor": "Claiming to be the youngest son of Ivan Grozny, Dmitriy I secured his kingdom after the sudden death of Tsar Boris. His reign lasting only ten months, he was first slandered then ousted by Vasily Shuisky.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) SAMOZVANETZ DMITRIY I (Fire) Russian • Inspiration • Ally • Male Tzar Samoavanetz: After you roll dice, if you have more than 2 experience, you may give your warrior –3 experience. If you do, you may increase one die of the roll by 1. Claiming to be the youngest son of Ivan Grozny, Dmitriy I secured his kingdom after the sudden death of Tsar Boris. His reign lasting only ten months, he was first slandered then ousted by Vasily Shuisky. Illustration: John Donahue 4 92/100"
+    },
+    {
+      "id": "s4-032",
+      "source": "heard-2007",
+      "name": "TANE MAHUTA",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 4,
+      "collector": "032",
+      "culture": "Maori",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kaiwhakangaio",
+          "type": "static",
+          "text": "Once each round, after you and an opponent each roll two dice, if you are a Water, Wind, or Wood warrior, you may deal 1 damage to your warrior. If you do, swap your highest die with the opponent’s highest die."
+        }
+      ],
+      "flavor": "God of trees and birds, he was the first son of Ranga-Nui and Papa-Tu-A-Nuku. Gorwing tired of the darkness in which he lived due to his parents close embrace, he forced them apart, creating the sky and the earth.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) TANE MAHUTA (Wood) Maori • Inspiration • Deity Kaiwhakangaio: Once each round, after you and an opponent each roll two dice, if you are a Water, Wind, or Wood warrior, you may deal 1 damage to your warrior. If you do, swap your highest die with the opponent’s highest die. God of trees and birds, he was the first son of Ranga-Nui and Papa-Tu-A-Nuku. Gorwing tired of the darkness in which he lived due to his parents close embrace, he forced them apart, creating the sky and the earth. Illustration: Hugh Jamieson 4 32/100"
+    },
+    {
+      "id": "s4-037",
+      "source": "heard-2007",
+      "name": "TANGAROA",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 4,
+      "collector": "037",
+      "culture": "Maori",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Miti",
+          "type": "static",
+          "text": "The round this card is revealed, initiative is determined by experience and resolved from lowest to highest."
+        },
+        {
+          "name": "Nga Tai Puhoro",
+          "type": "reveal",
+          "text": "Your attack rolls this round get +1 against warriors with more experience than this card’s initiative."
+        }
+      ],
+      "flavor": "Guardian deity of the oceans and seas, Tangaroa is still honored by fishermen today, who often keep a piece of coral in their boat to maintain the god’s favor.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) TANGAROA (Water) Maori • Inspiration • Deity Miti: The round this card is revealed, initiative is determined by experience and resolved from lowest to highest. Nga Tai Puhoro – Reveal: Your attack rolls this round get +1 against warriors with more experience than this card’s initiative. Guardian deity of the oceans and seas, Tangaroa is still honored by fishermen today, who often keep a piece of coral in their boat to maintain the god’s favor. Illustration: Szucs Grégory 4 37/100"
+    },
+    {
+      "id": "s4-027",
+      "source": "heard-2007",
+      "name": "TREATY OF WAITANGI",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 4,
+      "collector": "027",
+      "culture": "Maori",
+      "traits": [
+        "Inspiration",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakawiri Teka",
+          "type": "reveal",
+          "text": "Choose another warrior. Exchange the experience values of your warrior and the chosen warrior."
+        }
+      ],
+      "flavor": "Despite the controversy that still surrounds it, “The Treaty,” as it is called by many New Zealanders, is regarded as the founding document of New Zealand as a nation.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) TREATY OF WAITANGI (Earth) Maori • Inspiration • Item Whakawiri Teka – Reveal: Choose another warrior. Exchange the experience values of your warrior and the chosen warrior. Despite the controversy that still surrounds it, “The Treaty,” as it is called by many New Zealanders, is regarded as the founding document of New Zealand as a nation. Illustration: Drew Baker 4 27/100"
+    },
+    {
+      "id": "s4-042",
+      "source": "heard-2007",
+      "name": "TU-MATAUENGA",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 4,
+      "collector": "042",
+      "culture": "Maori",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Máia",
+          "type": "reveal",
+          "text": "Place this card in any space in the arena."
+        },
+        {
+          "name": "Whakaekenga",
+          "type": "static",
+          "text": "When you attack, you may attack as though your warrior were in this space and facing any direction."
+        }
+      ],
+      "flavor": "Tu-Matauenga was the god of war, envy, and hatred, who demanded human sacrifice and consumed his own children. Before each battle, generals would pray to him with a special karakia to secure his favor.",
+      "illustrator": "Brom",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) TU-MATAUENGA (Fire) Maori • Inspiration • Deity Máia – Reveal: Place this card in any space in the arena. Whakaekenga: When you attack, you may attack as though your warrior were in this space and facing any direction. Tu-Matauenga was the god of war, envy, and hatred, who demanded human sacrifice and consumed his own children. Before each battle, generals would pray to him with a special karakia to secure his favor. Illustration: Brom 4 42/100"
+    },
+    {
+      "id": "s4-P28-100",
+      "source": "heard-2007",
+      "name": "VÖLKERWANDERUNG",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 4,
+      "collector": "P28/100",
+      "culture": "German",
+      "traits": [
+        "Inspiration",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Aufbruch",
+          "type": "reveal",
+          "text": "Place this card in any unoccupied space in the arena."
+        },
+        {
+          "name": "Ziel der Hoffnung",
+          "type": "static",
+          "text": "Opposing warriors’ defense rolls get –1. Warriors cannot gain life. When any warrior moves into this card’s space, discard this card."
+        }
+      ],
+      "flavor": "The westward migration of Germanic tribes from Indo-Europe strained the Roman Empire beyond the breaking point and set in motion its final collapse.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) VÖLKERWANDERUNG (Earth) German • Inspiration • Quest Aufbruch – Reveal: Place this card in any unoccupied space in the arena. Ziel der Hoffnung: Opposing warriors’ defense rolls get –1. Warriors cannot gain life. When any warrior moves into this card’s space, discard this card. The westward migration of Germanic tribes from Indo-Europe strained the Roman Empire beyond the breaking point and set in motion its final collapse. Illustration: Drew Baker 4 P28/100"
+    },
+    {
+      "id": "s4-077",
+      "source": "heard-2007",
+      "name": "VOLTAIRE",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 4,
+      "collector": "077",
+      "culture": "Russian",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Pontificat",
+          "type": "static",
+          "text": "After you lose a tie, gain +1 speed on your next turn, and gain +3 experience."
+        }
+      ],
+      "flavor": "Subscribing to Enlightenment beliefs, Catherine considered herself a philosopher-queen. She cultivated friendships with Europe’s leading intelligentsia, Voltaire prime among them.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) VOLTAIRE (Wood) Russian • Inspiration • Ally • Male Pontificat: After you lose a tie, gain +1 speed on your next turn, and gain +3 experience. Subscribing to Enlightenment beliefs, Catherine considered herself a philosopher-queen. She cultivated friendships with Europe’s leading intelligentsia, Voltaire prime among them. Illustration: Steven Belledin 4 77/100"
+    },
+    {
+      "id": "s4-087",
+      "source": "heard-2007",
+      "name": "VOZVESHENNIYE POSOLSTVO",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 4,
+      "collector": "087",
+      "culture": "Russian",
+      "traits": [
+        "Inspiration",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Velikoye Posolstvo",
+          "type": "static",
+          "text": "Once each game, at the start of any round, if this card is in play or in your discard pile, you may gain +3 experience and move your warrior up to one space. If this card was in your discard pile, this ability cannot be used again this match."
+        }
+      ],
+      "flavor": "Disguising himself as a common worker, Peter travelled around Europe incognito in order to lure the greatest minds in Europe back to Russia. He met with incredible success.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) VOZVESHENNIYE POSOLSTVO (Earth) Russian • Inspiration • Quest Velikoye Posolstvo: Once each game, at the start of any round, if this card is in play or in your discard pile, you may gain +3 experience and move your warrior up to one space. If this card was in your discard pile, this ability cannot be used again this match. Disguising himself as a common worker, Peter travelled around Europe incognito in order to lure the greatest minds in Europe back to Russia. He met with incredible success. Illustration: Christopher Appel 4 87/100"
+    },
+    {
+      "id": "s4-P29-100",
+      "source": "heard-2007",
+      "name": "WAKÍ�YA�",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 4,
+      "collector": "P29/100",
+      "culture": "Native American",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kap’ó�’i�’iya",
+          "type": "static",
+          "text": "At the start of each round, if you used actions to move and to attack on your previous turn, all of your rolls that round gain +1, and the next support card you reveal gains +5 initiative."
+        }
+      ],
+      "flavor": "When he opens and shuts his eyes, he makes lightning. When he flaps his wings, he makes thunder and the great winds.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) WAKÍ�YA� (Wind) Native American • Inspiration • Deity Kap’ó�’i�’iya: At the start of each round, if you used actions to move and to attack on your previous turn, all of your rolls that round gain +1, and the next support card you reveal gains +5 initiative. When he opens and shuts his eyes, he makes lightning. When he flaps his wings, he makes thunder and the great winds. Illustration: Jim Nelson 4 P29/100"
+    },
+    {
+      "id": "s4-072",
+      "source": "heard-2007",
+      "name": "ZARTOSHT",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 4,
+      "collector": "072",
+      "culture": "Persian",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Aramesh-e Darouni",
+          "type": "static",
+          "text": "At the start of each round, if you did not make an attack last round, your first attack of this round deals +1 damage, and you gain +1 speed this round."
+        }
+      ],
+      "flavor": "Zarathustra founded the religion of Zoroastrianism. According to Zoroastrianism, humans are born with a free will that enables them to choose between Good and Evil.",
+      "illustrator": "Michael Koch",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) ZARTOSHT (Aether) Persian • Inspiration • Ally • Male Aramesh-e Darouni: At the start of each round, if you did not make an attack last round, your first attack of this round deals +1 damage, and you gain +1 speed this round. Zarathustra founded the religion of Zoroastrianism. According to Zoroastrianism, humans are born with a free will that enables them to choose between Good and Evil. Illustration: Michael Koch 4 72/100"
+    },
+    {
+      "id": "s4-053",
+      "source": "heard-2007",
+      "name": "AKINAKA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "053",
+      "culture": "Persian",
+      "traits": [
+        "Weapon",
+        "Knife"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Du Gardeshi",
+          "type": "static",
+          "text": "You may use another weapon this game."
+        }
+      ],
+      "flavor": "Originally of Scythian design, the Persians made extensive use of this wickedly sharp, two-edged dagger. Used as a thrusting weapon, it was typically drawn with the blade facing down, to be used in a stabbing motion.",
+      "illustrator": "Mark Zug",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) AKINAKA (2) +0 –1 � +0 Persian • Weapon • Knife (1 Hand) Du Gardeshi: You may use another weapon this game. Originally of Scythian design, the Persians made extensive use of this wickedly sharp, two-edged dagger. Used as a thrusting weapon, it was typically drawn with the blade facing down, to be used in a stabbing motion. Illustration: Mark Zug 4 53/100"
+    },
+    {
+      "id": "s4-098",
+      "source": "heard-2007",
+      "name": "CHEKAN",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "098",
+      "culture": "Russian",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +1 +0 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Protknut",
+          "type": "static",
+          "text": "When you attack with this weapon, you may choose to spend an additional action. If you do, set the defender’s defense roll bonuses to 0."
+        }
+      ],
+      "flavor": "A form of military hammer and pick combined, the chekam could be swing to pierce armor or crush bone with equal ease.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) CHEKAN (2) +0 +1 +0 � +1 Russian • Weapon • Bludgeon (1 Hand) Protknut: When you attack with this weapon, you may choose to spend an additional action. If you do, set the defender’s defense roll bonuses to 0. A form of military hammer and pick combined, the chekam could be swing to pierce armor or crush bone with equal ease. Illustration: James Ryman 4 98/100"
+    },
+    {
+      "id": "s4-008",
+      "source": "heard-2007",
+      "name": "CLÍABH MÓR",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "008",
+      "culture": "Irish",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Luascadh Trom",
+          "type": "static",
+          "text": "If you hit with this weapon, the defender’s next support card gets –5 initiative."
+        }
+      ],
+      "flavor": "The term “clíabh mór” translates literally to “large sword.” So great an impression did these weapons make on the English that the Gaelic term was anglicized to “claymore.”",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) CLÍABH MÓR (2) +1 +0 –1 � +0 Irish • Weapon • Sword (2 Hands) Luascadh Trom: If you hit with this weapon, the defender’s next support card gets –5 initiative. The term “clíabh mór” translates literally to “large sword.” So great an impression did these weapons make on the English that the Gaelic term was anglicized to “claymore.” Illustration: Alan Pollack 4 08/100"
+    },
+    {
+      "id": "s4-013",
+      "source": "heard-2007",
+      "name": "GAE BOLG",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "013",
+      "culture": "Irish",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +0 +1 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ionsaí",
+          "type": "static",
+          "text": "After you hit with this weapon, your opponent may choose to get –3 on their next roll. If they do not, deal 1 damage to that warrior. “You were my beloved comrade, my kin and kindred. Never found I one dearer. Sad will be your death.”"
+        }
+      ],
+      "flavor": "— Cú Chulainn",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) GAE BOLG (2) +2 +0 +1 –1 � Irish • Weapon • Polearm (2 Hands) Ionsaí: After you hit with this weapon, your opponent may choose to get –3 on their next roll. If they do not, deal 1 damage to that warrior. “You were my beloved comrade, my kin and kindred. Never found I one dearer. Sad will be your death.” — Cú Chulainn Illustration: Greg Staples 4 13/100"
+    },
+    {
+      "id": "s4-038",
+      "source": "heard-2007",
+      "name": "HUAHUA-TE-RANGI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "038",
+      "culture": "Maori",
+      "traits": [
+        "Weapon",
+        "Axe"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 –1 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Pounamu",
+          "type": "static",
+          "text": "If you have a mystic card, increase the modifier of all of the spaces in this card’s attack grid to +2, and when you attack with this weapon, you may re-roll one die of the attack roll."
+        }
+      ],
+      "flavor": "Greenstone was revered among the Maori, and items made from it were often considered to possess mana of their own.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) HUAHUA-TE-RANGI (2) +1 –1 +0 � –1 Maori • Weapon • Axe (2 Hands) Pounamu: If you have a mystic card, increase the modifier of all of the spaces in this card’s attack grid to +2, and when you attack with this weapon, you may re-roll one die of the attack roll. Greenstone was revered among the Maori, and items made from it were often considered to possess mana of their own. Illustration: Szucs Grégory 4 38/100"
+    },
+    {
+      "id": "s4-058",
+      "source": "heard-2007",
+      "name": "KAMAN-E HELAL-E IRANI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "058",
+      "culture": "Persian",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ba Zoor",
+          "type": "static",
+          "text": "Your basic attack rolls gain +1."
+        }
+      ],
+      "flavor": "‘“Such was the number of the barbarians, that when they shot forth their arrows the sun would be darkened by their multitude.” Diences, not at all frightened by these words … answered “Our Persian friend brings us excellent tidings. If they darken the sun, we shall have our fight in the shade.”’ — Herodotus, Histories, Bk 7,227",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) KAMAN-E HELAL-E IRANI (2) +1 +0 +1 � Persian • Weapon • Ranged (2 Hands) Ba Zoor: Your basic attack rolls gain +1. ‘“Such was the number of the barbarians, that when they shot forth their arrows the sun would be darkened by their multitude.” Diences, not at all frightened by these words … answered “Our Persian friend brings us excellent tidings. If they darken the sun, we shall have our fight in the shade.”’ — Herodotus, Histories, Bk 7,227 Illustration: Michael Komarck 4 58/100"
+    },
+    {
+      "id": "s4-073",
+      "source": "heard-2007",
+      "name": "KONTOS",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "073",
+      "culture": "Persian",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +1 +0 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Oqab",
+          "type": "action",
+          "text": "If you have hit an opponent with this weapon this turn, make a basic attack at +2 against that warrior."
+        }
+      ],
+      "flavor": "The kontos was a heavy lance that was employed in initial contact. Its size and weight meant that it inflicted terrible damage upon impact in a charge.",
+      "illustrator": "Michael Koch",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KONTOS (2) +0 +1 +0 +1 � Persian • Weapon • Polearm (2 Hands) Oqab – Action: If you have hit an opponent with this weapon this turn, make a basic attack at +2 against that warrior. The kontos was a heavy lance that was employed in initial contact. Its size and weight meant that it inflicted terrible damage upon impact in a charge. Illustration: Michael Koch 4 73/100"
+    },
+    {
+      "id": "s4-048",
+      "source": "heard-2007",
+      "name": "KOTIATE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "048",
+      "culture": "Maori",
+      "traits": [
+        "Weapon",
+        "Bludgeon",
+        "Knife"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 –1 +1 +2 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ápuru",
+          "type": "static",
+          "text": "When attacking with this weapon, if the attack roll is odd and the attack hits, the attack is a critical hit. “Kotiate” literally means “cut liver.” The ancestor figure on the butt of the handle symbolizes a guiding force or protective spirit, while the notches were used to trap and break an opponent’s weapon."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(2) KOTIATE (1) +1 –1 +1 +2 � +0 Maori • Weapon • Bludgeon • Knife (1 Hand) Ápuru: When attacking with this weapon, if the attack roll is odd and the attack hits, the attack is a critical hit. “Kotiate” literally means “cut liver.” The ancestor figure on the butt of the handle symbolizes a guiding force or protective spirit, while the notches were used to trap and break an opponent’s weapon. Illustration: Tyler Walpole 4 48/100"
+    },
+    {
+      "id": "s4-023",
+      "source": "heard-2007",
+      "name": "MAC AN LUIN",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "023",
+      "culture": "Irish",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +0 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tonn",
+          "type": "static",
+          "text": "If you have a Water inspiration in play, you may use this weapon to attack any adjacent warrior at +2."
+        },
+        {
+          "name": "Múch",
+          "type": "static",
+          "text": "When you attack, if the attack and defense rolls tie, deal 1 damage to the defender."
+        }
+      ],
+      "flavor": "The weapons of all great Irish warriors had names of their own. Mac an Luin “The Son of the Waves”, was no exception.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) MAC AN LUIN (2) +1 +0 +0 � +1 Irish • Weapon • Sword (1 Hand) Tonn: If you have a Water inspiration in play, you may use this weapon to attack any adjacent warrior at +2. Múch: When you attack, if the attack and defense rolls tie, deal 1 damage to the defender. The weapons of all great Irish warriors had names of their own. Mac an Luin “The Son of the Waves”, was no exception. Illustration: Terese Nielsen 4 23/100"
+    },
+    {
+      "id": "s4-043",
+      "source": "heard-2007",
+      "name": "MANAI IKALANAI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "043",
+      "culture": "Maori",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 1,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Matau",
+          "type": "static",
+          "text": "After you make a critical hit with this weapon, deal 2 damage to the defender and place this card in any space in the arena."
+        },
+        {
+          "name": "Kákari",
+          "type": "static",
+          "text": "While you are in or adjacent to this card’s space, your attack rolls gain +2."
+        }
+      ],
+      "flavor": "The jawbone of Maui’s grandmother, he used it both as a fearsome weapon and as a fishing hook, with which he hauled the North Island from the bottom of the sea.",
+      "illustrator": "Brom",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "weapon_damage"
+      ],
+      "raw_source_text": "(6) MANAI IKALANAI +1 +0 � +2 Maori • Weapon • Bludgeon (1 Hand) Matau: After you make a critical hit with this weapon, deal 2 damage to the defender and place this card in any space in the arena. Kákari: While you are in or adjacent to this card’s space, your attack rolls gain +2. The jawbone of Maui’s grandmother, he used it both as a fearsome weapon and as a fishing hook, with which he hauled the North Island from the bottom of the sea. Illustration: Brom 4 43/100"
+    },
+    {
+      "id": "s4-033",
+      "source": "heard-2007",
+      "name": "MERE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "033",
+      "culture": "Maori",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +0 +1 � –1 –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hunga Ora",
+          "type": "static",
+          "text": "After you attack with this weapon, gain +1 speed this round."
+        },
+        {
+          "name": "Mámá",
+          "type": "static",
+          "text": "You may use another weapon."
+        }
+      ],
+      "flavor": "A flat war club measuring about twelve inches in length, the mere had a round, sharpened top and was often decorated with koru patterns.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) MERE (1) +1 +0 +1 � –1 –1 Maori • Weapon • Bludgeon (1 Hand) Hunga Ora: After you attack with this weapon, gain +1 speed this round. Mámá: You may use another weapon. A flat war club measuring about twelve inches in length, the mere had a round, sharpened top and was often decorated with koru patterns. Illustration: Hugh Jamieson 4 33/100"
+    },
+    {
+      "id": "s4-063",
+      "source": "heard-2007",
+      "name": "NEYZE-YE DARRANDE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "063",
+      "culture": "Persian",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +0 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Nagahani",
+          "type": "static",
+          "text": "When attacking with this weapon, you may attack each opponent in this weapon’s attack grid. If there is only one opponent in this weapon’s attack grid, your attack roll gains +2."
+        }
+      ],
+      "flavor": "Roughly 7 feet long, these spears were equipped with a broad iron spearhead, counterbalanced by a round metal counterweight. The peculiar appearance of the counterweight led to Persian soldiers being referred to as “Apple Bearers”.",
+      "illustrator": "Carl Frank",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) NEYZE-YE DARRANDE (2) +1 +0 +0 –1 � Persian • Weapon • Polearm (2 Hands) Nagahani: When attacking with this weapon, you may attack each opponent in this weapon’s attack grid. If there is only one opponent in this weapon’s attack grid, your attack roll gains +2. Roughly 7 feet long, these spears were equipped with a broad iron spearhead, counterbalanced by a round metal counterweight. The peculiar appearance of the counterweight led to Persian soldiers being referred to as “Apple Bearers”. Illustration: Carl Frank 4 63/100"
+    },
+    {
+      "id": "s4-093",
+      "source": "heard-2007",
+      "name": "PALASH",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "093",
+      "culture": "Russian",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 –1 –1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Presledovat",
+          "type": "static",
+          "text": "When you hit with this weapon, you may discard one of your cavalry support cards from play. If you do, the hit is a critical hit and deals an additional +1 damage."
+        },
+        {
+          "name": "Glavnaya Tzel",
+          "type": "static",
+          "text": "If the defender has no torso card, your attack rolls with this weapon gain +1."
+        }
+      ],
+      "flavor": "These heavy, double-edged swords were widely used by the Russian dragoons.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) PALASH (1) +1 –1 –1 � +1 Russian • Weapon • Sword (1 Hand) Presledovat: When you hit with this weapon, you may discard one of your cavalry support cards from play. If you do, the hit is a critical hit and deals an additional +1 damage. Glavnaya Tzel: If the defender has no torso card, your attack rolls with this weapon gain +1. These heavy, double-edged swords were widely used by the Russian dragoons. Illustration: John Donahue 4 93/100"
+    },
+    {
+      "id": "s4-068",
+      "source": "heard-2007",
+      "name": "PALTA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "068",
+      "culture": "Persian",
+      "traits": [
+        "Weapon",
+        "Polearm",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Etteham-e Sahmgin",
+          "type": "static",
+          "text": "Each time you take an action to move, you may choose for your next attack with this weapon this turn to be made at +0 and deal +1 damage."
+        }
+      ],
+      "flavor": "Roughly four feet long, these light javelins often had throwing straps to increase their range and power. Cavalry often used a pair of palta as their main weapons, throwing one and using the other for close combat.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) PALTA (2) +1 +0 � +1 Persian • Weapon • Polearm • Cavalry (1 Hand) Etteham-e Sahmgin: Each time you take an action to move, you may choose for your next attack with this weapon this turn to be made at +0 and deal +1 damage. Roughly four feet long, these light javelins often had throwing straps to increase their range and power. Cavalry often used a pair of palta as their main weapons, throwing one and using the other for close combat. Illustration: Matthew Armstrong 4 68/100"
+    },
+    {
+      "id": "s4-078",
+      "source": "heard-2007",
+      "name": "POLUSABLYA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "078",
+      "culture": "Russian",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +2 +0 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Boyevoy Krik",
+          "type": "action",
+          "text": "You may attack with this weapon twice during this and your next turns."
+        }
+      ],
+      "flavor": "This light “half-sabre” demonstrated clear Moorish and Tartar influences in its design, and was light enough to be wielded by any combatant.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) POLUSABLYA (2) +1 +2 +0 +1 � Russian • Weapon • Sword (1 Hand) Boyevoy Krik – Action: You may attack with this weapon twice during this and your next turns. This light “half-sabre” demonstrated clear Moorish and Tartar influences in its design, and was light enough to be wielded by any combatant. Illustration: Steven Belledin 4 78/100"
+    },
+    {
+      "id": "s4-P26-100",
+      "source": "heard-2007",
+      "name": "RAPIÈRE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "P26/100",
+      "culture": "French",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +2 +0 +1 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Botte",
+          "type": "static",
+          "text": "Once each round, after you move outside of your turn, you may make an attack with this weapon, if possible. This attack deals +1 damage."
+        }
+      ],
+      "flavor": "Appearing in the early Renaissance, the rapier was actually quite a cumbersome weapon, suited far more to attack than defense. Over time, it evolved into a lighter, faster weapon.",
+      "illustrator": "Jim Pavalec",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) RAPIÈRE (1) +0 +2 +0 +1 � +2 French • Weapon • Sword (1 Hand) Botte: Once each round, after you move outside of your turn, you may make an attack with this weapon, if possible. This attack deals +1 damage. Appearing in the early Renaissance, the rapier was actually quite a cumbersome weapon, suited far more to attack than defense. Over time, it evolved into a lighter, faster weapon. Illustration: Jim Pavalec 4 P26/100"
+    },
+    {
+      "id": "s4-P27-100",
+      "source": "heard-2007",
+      "name": "SAN JIE GUN",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "P27/100",
+      "culture": "Chinese",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +2 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Shou",
+          "type": "static",
+          "text": "Once each round, if your attack roll with this weapon is greater than the defense roll plus three, you may immediately make another attack with this weapon, if possible."
+        }
+      ],
+      "flavor": "Devised from a simple farm implement, the san jie gun (threesection staff) requires exceptional skill to use, but is truly devastating in the hands of a master.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) SAN JIE GUN (2) +1 +0 +2 � +1 Chinese • Weapon • Bludgeon (2 Hands) Shou: Once each round, if your attack roll with this weapon is greater than the defense roll plus three, you may immediately make another attack with this weapon, if possible. Devised from a simple farm implement, the san jie gun (threesection staff) requires exceptional skill to use, but is truly devastating in the hands of a master. Illustration: Drew Baker 4 P27/100"
+    },
+    {
+      "id": "s4-083",
+      "source": "heard-2007",
+      "name": "SHESTOPER",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "083",
+      "culture": "Russian",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 –1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Visshaya Vlast",
+          "type": "static",
+          "text": "When attacking with this weapon, make three attack rolls and compare each against the defender’s defense roll. Deal this weapon’s damage for each attack roll that hits."
+        },
+        {
+          "name": "Smertnost",
+          "type": "static",
+          "text": "Warriors cannot gain life. You cannot use another weapon this game."
+        }
+      ],
+      "flavor": "This six-flanged mace saw extensive use in Russian armies.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) SHESTOPER (1) +0 –1 +0 � Russian • Weapon • Bludgeon (1 Hand) Visshaya Vlast: When attacking with this weapon, make three attack rolls and compare each against the defender’s defense roll. Deal this weapon’s damage for each attack roll that hits. Smertnost: Warriors cannot gain life. You cannot use another weapon this game. This six-flanged mace saw extensive use in Russian armies. Illustration: William O’Connor 4 83/100"
+    },
+    {
+      "id": "s4-088",
+      "source": "heard-2007",
+      "name": "SHPAGA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "088",
+      "culture": "Russian",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "–1 +1 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Izyaschestvo",
+          "type": "static",
+          "text": "After an opposing warrior gains life or a speed bonus, the next attack roll with this weapon gains +1 and that attack deals +1 damage."
+        }
+      ],
+      "flavor": "Among the challenges that Peter brought to the army was the replacement of old, out-of-date swords with the shpaga, a heavier sword more suited to the battlefields of the time.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) SHPAGA (2) –1 +1 � +2 Russian • Weapon • Sword (1 Hand) Izyaschestvo: After an opposing warrior gains life or a speed bonus, the next attack roll with this weapon gains +1 and that attack deals +1 damage. Among the challenges that Peter brought to the army was the replacement of old, out-of-date swords with the shpaga, a heavier sword more suited to the battlefields of the time. Illustration: Christopher Appel 4 88/100"
+    },
+    {
+      "id": "s4-003",
+      "source": "heard-2007",
+      "name": "SLEÁ BLADHMADH",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "003",
+      "culture": "Irish",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Gléchlaíomh",
+          "type": "static",
+          "text": "Attacks with this weapon deal +1 damage while you have a Fire Inspiration in play."
+        }
+      ],
+      "flavor": "The spear was the most revered of Celtic weapons, with those belonging to queens and kings often being exceptional works of art as well as instruments of war.",
+      "illustrator": "R.K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) SLEÁ BLADHMADH (2) +2 +1 +0 � Irish • Weapon • Polearm (2 Hands) Gléchlaíomh: Attacks with this weapon deal +1 damage while you have a Fire Inspiration in play. The spear was the most revered of Celtic weapons, with those belonging to queens and kings often being exceptional works of art as well as instruments of war. Illustration: R.K. Post 4 03/100"
+    },
+    {
+      "id": "s4-018",
+      "source": "heard-2007",
+      "name": "SLEÁ LE SCIAN LE CUMA DUILLEOG",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "018",
+      "culture": "Irish",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +2 +1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Créacht a Thaoscadh",
+          "type": "static",
+          "text": "After an opposing warrior gains life from one of their card abilities, you may immediately attack that warrior with this weapon, if possible."
+        }
+      ],
+      "flavor": "The leaf-blade spear is one of the most immediately recognizable Celtic weapons.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "hands"
+      ],
+      "raw_source_text": "(9) SLEÁ LE SCIAN LE CUMA DUILLEOG (2) +0 +2 +1 +1 +0 � Irish • Weapon • Polearm Créacht a Thaoscadh: After an opposing warrior gains life from one of their card abilities, you may immediately attack that warrior with this weapon, if possible. The leaf-blade spear is one of the most immediately recognizable Celtic weapons. Illustration: Raven Mimura 4 18/100"
+    },
+    {
+      "id": "s4-028",
+      "source": "heard-2007",
+      "name": "TAIAHA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 4,
+      "collector": "028",
+      "culture": "Maori",
+      "traits": [
+        "Weapon",
+        "Polearm",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +2 +2 +1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kuruté",
+          "type": "static",
+          "text": "Attacks made with this weapon against adjacent opponents deal –1 damage."
+        }
+      ],
+      "flavor": "The wooden, tongue-shaped blade of the taiaha carries significant meaning in a culture where to stick one’s tongue out at an enemy is a sign of defiance and an implicit challenge.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) TAIAHA (2) +1 +2 +2 +1 � +1 Maori • Weapon • Polearm • Bludgeon (2 Hands) Kuruté: Attacks made with this weapon against adjacent opponents deal –1 damage. The wooden, tongue-shaped blade of the taiaha carries significant meaning in a culture where to stick one’s tongue out at an enemy is a sign of defiance and an implicit challenge. Illustration: Drew Baker 4 28/100"
+    },
+    {
+      "id": "s4-004",
+      "source": "heard-2007",
+      "name": "BRAT DERG",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "004",
+      "culture": "Irish",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Seasamh Uasal",
+          "type": "static",
+          "text": "Attacks against you cannot gain damage bonuses if the attacker has fewer cards that match their warrior’s culture than you have that match yours."
+        }
+      ],
+      "flavor": "Medb accentuated her beauty with the richest of colors and fabrics. Never were men reticent in trying to win her favor.",
+      "illustrator": "R.K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) BRAT DERG Irish • Armor • Torso Seasamh Uasal: Attacks against you cannot gain damage bonuses if the attacker has fewer cards that match their warrior’s culture than you have that match yours. Medb accentuated her beauty with the richest of colors and fabrics. Never were men reticent in trying to win her favor. Illustration: R.K. Post 4 04/100"
+    },
+    {
+      "id": "s4-014",
+      "source": "heard-2007",
+      "name": "DUBÁN",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "014",
+      "culture": "Irish",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Seasamh Ildánach",
+          "type": "static",
+          "text": "If you lost initiative this round, you may re-roll one die of one of your attack rolls and one die of one of your defense rolls this round."
+        }
+      ],
+      "flavor": "“There is not in the world a warrior whom I shall not drive off.” – Cú Chulainn",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) DUBÁN Irish • Armor • Shield (1 Hand) Seasamh Ildánach: If you lost initiative this round, you may re-roll one die of one of your attack rolls and one die of one of your defense rolls this round. “There is not in the world a warrior whom I shall not drive off.” – Cú Chulainn Illustration: Greg Staples 4 14/100"
+    },
+    {
+      "id": "s4-064",
+      "source": "heard-2007",
+      "name": "GERRON",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "064",
+      "culture": "Persian",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bazdarande",
+          "type": "static",
+          "text": "You may use another Armor card this game."
+        },
+        {
+          "name": "Mogheiyat Gereftan",
+          "type": "static",
+          "text": "Once each round, re-roll one die of one of your defense rolls. After you are attacked, if you rolled doubles on the defense roll, you may move up to one space."
+        }
+      ],
+      "flavor": "The traditional shield of Persian infantry, the gerron was made of wicker covered with leather. In later years, it was replaced by shields that more closely resembled the Greek hoplon.",
+      "illustrator": "Carl Frank",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) GERRON Persian • Armor • Shield (1 Hand) Bazdarande: You may use another Armor card this game. Mogheiyat Gereftan: Once each round, re-roll one die of one of your defense rolls. After you are attacked, if you rolled doubles on the defense roll, you may move up to one space. The traditional shield of Persian infantry, the gerron was made of wicker covered with leather. In later years, it was replaced by shields that more closely resembled the Greek hoplon. Illustration: Carl Frank 4 64/100"
+    },
+    {
+      "id": "s4-069",
+      "source": "heard-2007",
+      "name": "GRIWBAN",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "069",
+      "culture": "Persian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Shir",
+          "type": "static",
+          "text": "Your defense rolls gain +1. After you are hit, your next defense roll this round gains an additional +2."
+        },
+        {
+          "name": "Tanumand",
+          "type": "static",
+          "text": "Once each match, at the start of any round, you may discard a face-up Armor card from play to put this card in its place from your discard pile."
+        }
+      ],
+      "flavor": "The Griwban hauberk ensured the fearsome reputation of the Sassanian cavalry as being almost invulnerable on the charge.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) GRIWBAN Persian • Armor • Torso Shir: Your defense rolls gain +1. After you are hit, your next defense roll this round gains an additional +2. Tanumand: Once each match, at the start of any round, you may discard a face-up Armor card from play to put this card in its place from your discard pile. The Griwban hauberk ensured the fearsome reputation of the Sassanian cavalry as being almost invulnerable on the charge. Illustration: Matthew Armstrong 4 69/100"
+    },
+    {
+      "id": "s4-049",
+      "source": "heard-2007",
+      "name": "HAKA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "049",
+      "culture": "Maori",
+      "traits": [
+        "Armor",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kaitaua",
+          "type": "static",
+          "text": "If no other card ability gives you a bonus to your defense rolls, your defense rolls against attacks that would deal more damage than your weapon’s base damage gain +2."
+        }
+      ],
+      "flavor": "Ka mate! Ka mate! Ka ora! Ka ora! Ka mate! Ka mate! Ka ora! Ka ora! Tenei te tangata puhuru huru, Nana nei i tiki mai, Whakawhiti t era A upane! A upane! Ka upane! Whiti te ra! Hi!! — The Te Rauparaha haka",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) HAKA Maori • Armor • Ability Kaitaua: If no other card ability gives you a bonus to your defense rolls, your defense rolls against attacks that would deal more damage than your weapon’s base damage gain +2. Ka mate! Ka mate! Ka ora! Ka ora! Ka mate! Ka mate! Ka ora! Ka ora! Tenei te tangata puhuru huru, Nana nei i tiki mai, Whakawhiti t era A upane! A upane! Ka upane! Whiti te ra! Hi!! — The Te Rauparaha haka Illustration: Tyler Walpole 4 49/100"
+    },
+    {
+      "id": "s4-044",
+      "source": "heard-2007",
+      "name": "KAHU KIWI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "044",
+      "culture": "Maori",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakahí",
+          "type": "static",
+          "text": "Once each turn, after you are hit by a warrior with a higher initiative for this round than your warrior’s experience, you may immediately make a basic attack against the attacker, if possible."
+        }
+      ],
+      "flavor": "Kiwi feather cloaks are symbols of great power and authority in Maori culture, given all the more prestige due to the belief that the gods themselves use the artist as a vehicle for the creation of each object.",
+      "illustrator": "Brom",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) KAHU KIWI Maori • Armor • Torso Whakahí: Once each turn, after you are hit by a warrior with a higher initiative for this round than your warrior’s experience, you may immediately make a basic attack against the attacker, if possible. Kiwi feather cloaks are symbols of great power and authority in Maori culture, given all the more prestige due to the belief that the gods themselves use the artist as a vehicle for the creation of each object. Illustration: Brom 4 44/100"
+    },
+    {
+      "id": "s4-079",
+      "source": "heard-2007",
+      "name": "KIRASA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "079",
+      "culture": "Russian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ustoichevo Derzhat",
+          "type": "static",
+          "text": "Once each round, when you make a non-attack roll, you may choose for the roll to count as doubles. If you do, your next support card gets –3 initiative."
+        }
+      ],
+      "flavor": "Even in an age where gunpowder had come to dominate the battlefield, a solid sheet of metal still offered protection that could mean the difference between life and death.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) KIRASA Russian • Armor • Torso Ustoichevo Derzhat: Once each round, when you make a non-attack roll, you may choose for the roll to count as doubles. If you do, your next support card gets –3 initiative. Even in an age where gunpowder had come to dominate the battlefield, a solid sheet of metal still offered protection that could mean the difference between life and death. Illustration: Steven Belledin 4 79/100"
+    },
+    {
+      "id": "s4-099",
+      "source": "heard-2007",
+      "name": "KOL’CHUGA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "099",
+      "culture": "Russian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Masterstvo",
+          "type": "static",
+          "text": "When you are attacked, if any single die of your defense roll is greater than your life, the roll gains +2."
+        }
+      ],
+      "flavor": "The chain-mail kol’chuga was a tight-fitting shirt with short sleeves extending to just above the elbows. It was worn over clothing or a thick canvas rubakha and was usually secured with a plated belt.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KOL’CHUGA Russian • Armor • Torso Masterstvo: When you are attacked, if any single die of your defense roll is greater than your life, the roll gains +2. The chain-mail kol’chuga was a tight-fitting shirt with short sleeves extending to just above the elbows. It was worn over clothing or a thick canvas rubakha and was usually secured with a plated belt. Illustration: James Ryman 4 99/100"
+    },
+    {
+      "id": "s4-074",
+      "source": "heard-2007",
+      "name": "KOLAH KHOD-E SASANI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "074",
+      "culture": "Persian",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zehn-e Baz",
+          "type": "static",
+          "text": "Once each turn, if you have a cavalry card, and one die of one of your rolls matches your experience, you may give the roll +2."
+        }
+      ],
+      "flavor": "The Sassanian helmet is regarded as providing the prototype design for Roman military helmets of the fourth century AD.",
+      "illustrator": "Michael Koch",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) KOLAH KHOD-E SASANI Persian • Armor • Head Zehn-e Baz: Once each turn, if you have a cavalry card, and one die of one of your rolls matches your experience, you may give the roll +2. The Sassanian helmet is regarded as providing the prototype design for Roman military helmets of the fourth century AD. Illustration: Michael Koch 4 74/100"
+    },
+    {
+      "id": "s4-089",
+      "source": "heard-2007",
+      "name": "KOLONTAR",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "089",
+      "culture": "Russian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Neudivlenniy",
+          "type": "static",
+          "text": "Once each turn, when you are attacked, if you did not win initiative this round, make two defense rolls and choose which one to use."
+        }
+      ],
+      "flavor": "The most exquisite kolontar were reserved for the Tsar, and could fetch a price that was thousands of times more than an ordinary person could expect to earn in a year.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) KOLONTAR Russian • Armor • Torso Neudivlenniy: Once each turn, when you are attacked, if you did not win initiative this round, make two defense rolls and choose which one to use. The most exquisite kolontar were reserved for the Tsar, and could fetch a price that was thousands of times more than an ordinary person could expect to earn in a year. Illustration: Christopher Appel 4 89/100"
+    },
+    {
+      "id": "s4-009",
+      "source": "heard-2007",
+      "name": "MÁILLE NA LÚB",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "009",
+      "culture": "Irish",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sraonadh",
+          "type": "static",
+          "text": "When you are attacked by a sword, axe, or knife, the attacker may choose to reduce their attack roll bonuses to 0. If they do not, the attack deals –1 damage to a minimum of 1."
+        }
+      ],
+      "flavor": "The Norse invaders of Ireland were so well equipped that only the Irish nobility could afford to arm and armor themselves in a similar fashion.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) MÁILLE NA LÚB Irish • Armor • Torso Sraonadh: When you are attacked by a sword, axe, or knife, the attacker may choose to reduce their attack roll bonuses to 0. If they do not, the attack deals –1 damage to a minimum of 1. The Norse invaders of Ireland were so well equipped that only the Irish nobility could afford to arm and armor themselves in a similar fashion. Illustration: Alan Pollack 4 09/100"
+    },
+    {
+      "id": "s4-039",
+      "source": "heard-2007",
+      "name": "MOKO",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "039",
+      "culture": "Maori",
+      "traits": [
+        "Armor",
+        "Ability",
+        "Mystic"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Taitoatanga",
+          "type": "static",
+          "text": "Reduce the damage dealt by each basic attack to 1."
+        }
+      ],
+      "flavor": "Moko tattoos were banned by the British on pain of death. They might have disappeared altogether, had Maori women not secretly incorporated the patterns into everyday objects, guarding these ancestral designs until they day when they could once again be used.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) MOKO Maori • Armor • Ability • Mystic Taitoatanga: Reduce the damage dealt by each basic attack to 1. Moko tattoos were banned by the British on pain of death. They might have disappeared altogether, had Maori women not secretly incorporated the patterns into everyday objects, guarding these ancestral designs until they day when they could once again be used. Illustration: Szucs Grégory 4 39/100"
+    },
+    {
+      "id": "s4-029",
+      "source": "heard-2007",
+      "name": "PA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "029",
+      "culture": "Maori",
+      "traits": [
+        "Armor",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakakaha",
+          "type": "reveal",
+          "text": "Place this card in any unoccupied space in the arena."
+        },
+        {
+          "name": "Whita",
+          "type": "static",
+          "text": "If an opposing warrior ends their turn in this card’s space, deal 1 damage to them. While you are in or adjacent to this card’s space, attacks against you cannot gain damage bonuses."
+        }
+      ],
+      "flavor": "The Maori were able to build these earthen forts almost overnight. By the end of the Maori Wars, the evolution of the pa had made it an almost impregnable defensive structure.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) PA Maori • Armor • Location Whakakaha – Reveal: Place this card in any unoccupied space in the arena. Whita: If an opposing warrior ends their turn in this card’s space, deal 1 damage to them. While you are in or adjacent to this card’s space, attacks against you cannot gain damage bonuses. The Maori were able to build these earthen forts almost overnight. By the end of the Maori Wars, the evolution of the pa had made it an almost impregnable defensive structure. Illustration: Drew Baker 4 29/100"
+    },
+    {
+      "id": "s4-024",
+      "source": "heard-2007",
+      "name": "SGIATH GAILBHINN",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "024",
+      "culture": "Irish",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Cur I dTaca",
+          "type": "static",
+          "text": "Once each round, before you make a defense roll, your roll gains +2."
+        },
+        {
+          "name": "Clifeál",
+          "type": "static",
+          "text": "Once each match, before you make an attack roll, if this card is in your discard pile, that attack roll gains +2."
+        }
+      ],
+      "flavor": "Sgiath Gailbhinn, “Storm Shield”, was as much a weapon in Finn’s hands as it was a means of defense.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) SGIATH GAILBHINN Irish • Armor • Shield (1 Hand) Cur I dTaca: Once each round, before you make a defense roll, your roll gains +2. Clifeál: Once each match, before you make an attack roll, if this card is in your discard pile, that attack roll gains +2. Sgiath Gailbhinn, “Storm Shield”, was as much a weapon in Finn’s hands as it was a means of defense. Illustration: Terese Nielsen 4 24/100"
+    },
+    {
+      "id": "s4-059",
+      "source": "heard-2007",
+      "name": "SPARA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "059",
+      "culture": "Persian",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Moha’jar",
+          "type": "static",
+          "text": "While you have a ranged weapon, this card requires 0 hands to use."
+        },
+        {
+          "name": "Jeld",
+          "type": "static",
+          "text": "When you are attacked, if the attacker has moved this turn, your defense roll gains +2."
+        }
+      ],
+      "flavor": "Carried only by the front line of Persian infantry, the spara was used to form a shield wall, behind which archers could fire in relative safety.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) SPARA Persian • Armor • Shield (1 Hand) Moha’jar: While you have a ranged weapon, this card requires 0 hands to use. Jeld: When you are attacked, if the attacker has moved this turn, your defense roll gains +2. Carried only by the front line of Persian infantry, the spara was used to form a shield wall, behind which archers could fire in relative safety. Illustration: Michael Komarck 4 59/100"
+    },
+    {
+      "id": "s4-034",
+      "source": "heard-2007",
+      "name": "TE KOHATU-O-HATUPATU",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "034",
+      "culture": "Maori",
+      "traits": [
+        "Armor",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Haere Ninihi",
+          "type": "reveal",
+          "text": "Place this card in any space in the arena."
+        },
+        {
+          "name": "Whakapeke",
+          "type": "static",
+          "text": "Once each round, when a warrior in this card’s space is dealt damage, they may reduce that damage by 2 to a minimum of 1. After a warrior in this space is critically hit, discard this card."
+        }
+      ],
+      "flavor": "Pursued by Karungaituku, a vicious bird-woman, Hatupatu pounded on a large rock, crying “Te kohatu n ei-e matiti matata”. The rock immediately split open allowing Hatupatu to leap inside and hide.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) TE KOHATU-O-HATUPATU Maori • Armor • Location Haere Ninihi – Reveal: Place this card in any space in the arena. Whakapeke: Once each round, when a warrior in this card’s space is dealt damage, they may reduce that damage by 2 to a minimum of 1. After a warrior in this space is critically hit, discard this card. Pursued by Karungaituku, a vicious bird-woman, Hatupatu pounded on a large rock, crying “Te kohatu n ei-e matiti matata”. The rock immediately split open allowing Hatupatu to leap inside and hide. Illustration: Hugh Jamieson 4 34/100"
+    },
+    {
+      "id": "s4-P30-100",
+      "source": "heard-2007",
+      "name": "T�AHÉ HUHÚWANAP’I�",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "P30/100",
+      "culture": "Native American",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Waná�i �hiyéyapi Nakí�i�i�pi",
+          "type": "static",
+          "text": "Opposing warriors’ weapon attacks cannot deal more damage than the highest base damage among your weapons, minimum one."
+        }
+      ],
+      "flavor": "For the Native Americans of the Northern and Southern Plains, the possession of a breastplate represented prosperity and standing. As such, it was often worn during traditional ceremonies and social dances.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) T�AHÉ HUHÚWANAP’I� Native American • Armor • Torso Waná�i �hiyéyapi Nakí�i�i�pi: Opposing warriors’ weapon attacks cannot deal more damage than the highest base damage among your weapons, minimum one. For the Native Americans of the Northern and Southern Plains, the possession of a breastplate represented prosperity and standing. As such, it was often worn during traditional ceremonies and social dances. Illustration: Jim Nelson 4 P30/100"
+    },
+    {
+      "id": "s4-054",
+      "source": "heard-2007",
+      "name": "TIARA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "054",
+      "culture": "Persian",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bargasht",
+          "type": "action",
+          "text": "Make a basic attack at +1 into any space in any of your non-ranged weapon attack grids."
+        }
+      ],
+      "flavor": "The many folds of this cloth headpiece provided protection against slashing weapons as well as the searing rays of the Persian sun.",
+      "illustrator": "Mark Zug",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) TIARA Persian • Armor • Head Bargasht – Action: Make a basic attack at +1 into any space in any of your non-ranged weapon attack grids. The many folds of this cloth headpiece provided protection against slashing weapons as well as the searing rays of the Persian sun. Illustration: Mark Zug 4 54/100"
+    },
+    {
+      "id": "s4-019",
+      "source": "heard-2007",
+      "name": "TORC ORGA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "019",
+      "culture": "Irish",
+      "traits": [
+        "Armor",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ór Soilseach",
+          "type": "static",
+          "text": "You gain +1 speed during the fourth and fifth rounds. Opposing cards cannot reduce your attack rolls, defense rolls, speed, or experience."
+        }
+      ],
+      "flavor": "Golden torcs were often worn by Celtic warriors, both for their beauty and as protection against blows to the neck.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) TORC ORGA Irish • Armor • Item Ór Soilseach: You gain +1 speed during the fourth and fifth rounds. Opposing cards cannot reduce your attack rolls, defense rolls, speed, or experience. Golden torcs were often worn by Celtic warriors, both for their beauty and as protection against blows to the neck. Illustration: Raven Mimura 4 19/100"
+    },
+    {
+      "id": "s4-084",
+      "source": "heard-2007",
+      "name": "TYEGILYAI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 4,
+      "collector": "084",
+      "culture": "Russian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ustanovlennaya Zaschita",
+          "type": "static",
+          "text": "Once each turn, when you are attacked, you may choose to give the attack roll –3. If you do, your next attack roll gets –1. Thickly padded to protect its wearer from the cold as well as the blows of enemies on the battlefield, Ivan took to wearing this armor at almost all times."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) TYEGILYAI Russian • Armor • Torso Ustanovlennaya Zaschita: Once each turn, when you are attacked, you may choose to give the attack roll –3. If you do, your next attack roll gets –1. Thickly padded to protect its wearer from the cold as well as the blows of enemies on the battlefield, Ivan took to wearing this armor at almost all times. Illustration: William O’Connor 4 84/100"
+    },
+    {
+      "id": "s4-P21-100",
+      "source": "heard-2007",
+      "name": "A’PHÌOB MHÒR",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "P21/100",
+      "culture": "Scottish",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 10,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dualchas Prìseil",
+          "type": "static",
+          "text": "At the end of each opponent’s turn, if they are in the same space they were at the start of their turn, deal 1 damage to that warrior."
+        }
+      ],
+      "flavor": "Believed to originate in Sumeria, Celtic migrations introduced the bagpipes throughout Europe. Only in Scotland, however, have they become an integral part of the cultural identity of the people.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(10) A’PHÌOB MHÒR Scottish • Special • Item Dualchas Prìseil: At the end of each opponent’s turn, if they are in the same space they were at the start of their turn, deal 1 damage to that warrior. Believed to originate in Sumeria, Celtic migrations introduced the bagpipes throughout Europe. Only in Scotland, however, have they become an integral part of the cultural identity of the people. Illustration: Randy Gallegos 4 P21/100"
+    },
+    {
+      "id": "s4-P23-100",
+      "source": "heard-2007",
+      "name": "ALLT A’BHONNAICH",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "P23/100",
+      "culture": "Scottish",
+      "traits": [
+        "Special",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dìlse",
+          "type": "static",
+          "text": "Opposing cards cannot prevent you from using abilities on your support cards."
+        },
+        {
+          "name": "Cabhag",
+          "type": "static",
+          "text": "At the start of each round, if you have two or more support cards that match your warrior’s element and/or culture, gain +1 speed for that round. Lay the proud Usurpers low! Tyrants fall in every foe! LIBERTY’s in every blow! — Let us Do or Die!"
+        }
+      ],
+      "flavor": "— Robert Burns, Robert Bruce’s March to Bannockburn",
+      "illustrator": "David Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) ALLT A’BHONNAICH Scottish • Special • Location Dìlse: Opposing cards cannot prevent you from using abilities on your support cards. Cabhag: At the start of each round, if you have two or more support cards that match your warrior’s element and/or culture, gain +1 speed for that round. Lay the proud Usurpers low! Tyrants fall in every foe! LIBERTY’s in every blow! — Let us Do or Die! — Robert Burns, Robert Bruce’s March to Bannockburn Illustration: David Gallegos 4 P23/100"
+    },
+    {
+      "id": "s4-065",
+      "source": "heard-2007",
+      "name": "AMRTAKA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "065",
+      "culture": "Persian",
+      "traits": [
+        "Special",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Arayesh Gereftan",
+          "type": "reveal",
+          "text": "Place this card in any space in the arena."
+        },
+        {
+          "name": "Amozesh-e Razmi",
+          "type": "static",
+          "text": "When you attack an opponent who is in or is non-diagonally adjacent to this card’s space, your attack roll gains +2."
+        }
+      ],
+      "flavor": "When one of the ten-thousand strong Immortals fell in battle, another soldier was immediately promoted to take his place. Though each man was mortal, the Amrtaka were undying.",
+      "illustrator": "Carl Frank",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) AMRTAKA Persian • Special • Ally Arayesh Gereftan – Reveal: Place this card in any space in the arena. Amozesh-e Razmi: When you attack an opponent who is in or is non-diagonally adjacent to this card’s space, your attack roll gains +2. When one of the ten-thousand strong Immortals fell in battle, another soldier was immediately promoted to take his place. Though each man was mortal, the Amrtaka were undying. Illustration: Carl Frank 4 65/100"
+    },
+    {
+      "id": "s4-060",
+      "source": "heard-2007",
+      "name": "ARABE HAYE DARRANDE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "060",
+      "culture": "Persian",
+      "traits": [
+        "Special",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Barkhord",
+          "type": "static",
+          "text": "Once each round, after moving into a space adjacent to an opposing warrior, you may immediately make a basic attack against that warrior, if possible."
+        }
+      ],
+      "flavor": "Greatly favored by the Persians in warfare, scythed chariots were used as shock units, often causing enemy soldiers to break from the carnage caused in an initial charge.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) ARABE HAYE DARRANDE Persian • Special • Cavalry Barkhord: Once each round, after moving into a space adjacent to an opposing warrior, you may immediately make a basic attack against that warrior, if possible. Greatly favored by the Persians in warfare, scythed chariots were used as shock units, often causing enemy soldiers to break from the carnage caused in an initial charge. Illustration: Michael Komarck 4 60/100"
+    },
+    {
+      "id": "s4-015",
+      "source": "heard-2007",
+      "name": "BÁS SHEASAMHACH",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "015",
+      "culture": "Irish",
+      "traits": [
+        "Special",
+        "Code"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Comhartha Misneach",
+          "type": "reveal",
+          "text": "If you lost the previous game, gain 2 life and +3 experience. Otherwise, gain 1 life and +1 experience. “… and he went to a pillar-stone that is in the plains, and he put his breast-girdle round it that he might not die seated nor lying down, but that he might die standing up."
+        }
+      ],
+      "flavor": "Then arrived the foe all around him, but they dared not go to him, for they thought he was alive.” – Annals of Ulster",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) BÁS SHEASAMHACH Irish • Special • Code Comhartha Misneach – Reveal: If you lost the previous game, gain 2 life and +3 experience. Otherwise, gain 1 life and +1 experience. “… and he went to a pillar-stone that is in the plains, and he put his breast-girdle round it that he might not die seated nor lying down, but that he might die standing up. Then arrived the foe all around him, but they dared not go to him, for they thought he was alive.” – Annals of Ulster Illustration: Greg Staples 4 15/100"
+    },
+    {
+      "id": "s4-025",
+      "source": "heard-2007",
+      "name": "BRAN AGUS SCEOLANG",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "025",
+      "culture": "Irish",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Conairt Cogaidh",
+          "type": "reveal",
+          "text": "Place this card in any unoccupied space in the arena."
+        },
+        {
+          "name": "Ciap",
+          "type": "static",
+          "text": "At the end of each round, you may make one basic attack at +2 against each opposing warrior in the same square as, or adjacent to this card. This attack deals no more than 1 damage."
+        }
+      ],
+      "flavor": "Bran and Sceolang were Finn’s most faithful companions – intelligent, fierce and loyal.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) BRAN AGUS SCEOLANG Irish • Special • Item Conairt Cogaidh – Reveal: Place this card in any unoccupied space in the arena. Ciap: At the end of each round, you may make one basic attack at +2 against each opposing warrior in the same square as, or adjacent to this card. This attack deals no more than 1 damage. Bran and Sceolang were Finn’s most faithful companions – intelligent, fierce and loyal. Illustration: Terese Nielsen 4 25/100"
+    },
+    {
+      "id": "s4-010",
+      "source": "heard-2007",
+      "name": "CLUAIN TAIRBH",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "010",
+      "culture": "Irish",
+      "traits": [
+        "Special",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "An Stáitse a Réiteach",
+          "type": "reveal",
+          "text": "Place this card in any space in the arena."
+        },
+        {
+          "name": "Buntáiste Bhaile",
+          "type": "static",
+          "text": "The first defense roll made each turn by opposing warriors in or adjacent to this card’s space get –2."
+        }
+      ],
+      "flavor": "On the beaches of Clontarf on Good Friday, April 23rd, 1014, Norse power in Ireland was shattered completely and forever in one of the bloodiest battles ever fought on Irish soil",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) CLUAIN TAIRBH Irish • Special • Location An Stáitse a Réiteach – Reveal: Place this card in any space in the arena. Buntáiste Bhaile: The first defense roll made each turn by opposing warriors in or adjacent to this card’s space get –2. On the beaches of Clontarf on Good Friday, April 23rd, 1014, Norse power in Ireland was shattered completely and forever in one of the bloodiest battles ever fought on Irish soil Illustration: Alan Pollack 4 10/100"
+    },
+    {
+      "id": "s4-P25-100",
+      "source": "heard-2007",
+      "name": "DONAR-EICHE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "P25/100",
+      "culture": "German",
+      "traits": [
+        "Special",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Standfestigkeit",
+          "type": "static",
+          "text": "At the start of each round, if you won initiative, your first attack roll that round gains +2 if the defender has more experience than your warrior. If you lost initiative, you may move one space."
+        }
+      ],
+      "flavor": "Saint Boniface had Thor’s Oak felled to prove the superiority of the Christian god. When Thor did not strike him down, the assembled locals agreed to be baptized.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) DONAR-EICHE German • Special • Location Standfestigkeit: At the start of each round, if you won initiative, your first attack roll that round gains +2 if the defender has more experience than your warrior. If you lost initiative, you may move one space. Saint Boniface had Thor’s Oak felled to prove the superiority of the Christian god. When Thor did not strike him down, the assembled locals agreed to be baptized. Illustration: David Ho 4 P25/100"
+    },
+    {
+      "id": "s4-005",
+      "source": "heard-2007",
+      "name": "DONN CUAILNGE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "005",
+      "culture": "Irish",
+      "traits": [
+        "Special",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sá",
+          "type": "static",
+          "text": "If you hit twice in the same turn, you may immediately make a basic attack, if possible. This attack deals +1 damage."
+        }
+      ],
+      "flavor": "Rucht, the swineherd of King Ochne of the Connaught Sí, fought a bitter rivalry with Friuch, the swineherd of King Bodb, and was eventually transformed into the Donn Cuailnge, the Brown Bull of Cooley.",
+      "illustrator": "R.K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) DONN CUAILNGE Irish • Special • Ally Sá: If you hit twice in the same turn, you may immediately make a basic attack, if possible. This attack deals +1 damage. Rucht, the swineherd of King Ochne of the Connaught Sí, fought a bitter rivalry with Friuch, the swineherd of King Bodb, and was eventually transformed into the Donn Cuailnge, the Brown Bull of Cooley. Illustration: R.K. Post 4 05/100"
+    },
+    {
+      "id": "s4-030",
+      "source": "heard-2007",
+      "name": "HEI-TIKI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "030",
+      "culture": "Maori",
+      "traits": [
+        "Special",
+        "Mystic",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Te Tuatahi Tangata",
+          "type": "static",
+          "text": "At the start of each round, the player who won initiative that round may choose to go last. If they do not, you may turn one of that player’s support cards facedown. Turn that card face-up at the end of the round."
+        }
+      ],
+      "flavor": "In Maori myth, Tiki was the first man. He found the first woman, Marikoriko, in a pond. Marikoriko seduced him, and from their union was born Hine-Kau-Ataata.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) HEI-TIKI Maori • Special • Mystic • Item Te Tuatahi Tangata: At the start of each round, the player who won initiative that round may choose to go last. If they do not, you may turn one of that player’s support cards facedown. Turn that card face-up at the end of the round. In Maori myth, Tiki was the first man. He found the first woman, Marikoriko, in a pond. Marikoriko seduced him, and from their union was born Hine-Kau-Ataata. Illustration: Drew Baker 4 30/100"
+    },
+    {
+      "id": "s4-055",
+      "source": "heard-2007",
+      "name": "JANG O GORIZ",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "055",
+      "culture": "Persian",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hamle-ye Jaheshi",
+          "type": "reveal",
+          "text": "Choose an opponent. At the start of your turn and the end of the chosen opponent’s turn, make a basic or weapon attack against each opposing warrior at the largest bonus in that attack’s grid. These attacks cannot gain damage bonuses. You can take no other actions this round."
+        }
+      ],
+      "flavor": "Despite the success of Arab invaders, Apranik defiantly refused to surrender her homeland. She waged a relentless guerilla war, securing her place as a symbol of Persian freedom.",
+      "illustrator": "Mark Zug",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) JANG O GORIZ Persian • Special • Ability Hamle-ye Jaheshi – Reveal: Choose an opponent. At the start of your turn and the end of the chosen opponent’s turn, make a basic or weapon attack against each opposing warrior at the largest bonus in that attack’s grid. These attacks cannot gain damage bonuses. You can take no other actions this round. Despite the success of Arab invaders, Apranik defiantly refused to surrender her homeland. She waged a relentless guerilla war, securing her place as a symbol of Persian freedom. Illustration: Mark Zug 4 55/100"
+    },
+    {
+      "id": "s4-035",
+      "source": "heard-2007",
+      "name": "KARAKIA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "035",
+      "culture": "Maori",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakatara",
+          "type": "static",
+          "text": "At the start of each round, roll two dice. If this value is odd, your first defense roll this round gains +2. If you roll doubles, each attack against you this round deals 1 less damage, to a minimum of 1."
+        }
+      ],
+      "flavor": "Karakia are the chants and prayers of Maori ritual. They are a means of becoming one with the spirits, gods, ancestors and events of the past that exist in the eternal present of ritual.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) KARAKIA Maori • Special • Ability Whakatara: At the start of each round, roll two dice. If this value is odd, your first defense roll this round gains +2. If you roll doubles, each attack against you this round deals 1 less damage, to a minimum of 1. Karakia are the chants and prayers of Maori ritual. They are a means of becoming one with the spirits, gods, ancestors and events of the past that exist in the eternal present of ritual. Illustration: Hugh Jamieson 4 35/100"
+    },
+    {
+      "id": "s4-045",
+      "source": "heard-2007",
+      "name": "MANA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "045",
+      "culture": "Maori",
+      "traits": [
+        "Special",
+        "Mystic"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mana",
+          "type": "reveal",
+          "text": "For this round, if you have a deity in play, change each die that you roll that is a 1 to a 6. Change each die that an opponent without a deity in play rolls that is a 5 to a 2."
+        }
+      ],
+      "flavor": "A complex concept, mana is seen as a measure of an individual’s power, prestige and spiritual integrity. Mana was passed from generation to generation, and could be invested and derived from artifacts. It is central to the spiritual beliefs of the Maori people.",
+      "illustrator": "Brom",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) MANA Maori • Special • Mystic Mana – Reveal: For this round, if you have a deity in play, change each die that you roll that is a 1 to a 6. Change each die that an opponent without a deity in play rolls that is a 5 to a 2. A complex concept, mana is seen as a measure of an individual’s power, prestige and spiritual integrity. Mana was passed from generation to generation, and could be invested and derived from artifacts. It is central to the spiritual beliefs of the Maori people. Illustration: Brom 4 45/100"
+    },
+    {
+      "id": "s4-095",
+      "source": "heard-2007",
+      "name": "MECHNIK",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "095",
+      "culture": "Russian",
+      "traits": [
+        "Special",
+        "Title"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Oruzhenosetz",
+          "type": "action",
+          "text": "Discard this card to give your next attack roll +2 or to put a weapon card from your discard pile in this card’s place."
+        }
+      ],
+      "flavor": "The mechnik was the Tsar’s sword-carrier, a position of great prestige and honor in the court.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) MECHNIK Russian • Special • Title Oruzhenosetz – Action: Discard this card to give your next attack roll +2 or to put a weapon card from your discard pile in this card’s place. The mechnik was the Tsar’s sword-carrier, a position of great prestige and honor in the court. Illustration: John Donahue 4 95/100"
+    },
+    {
+      "id": "s4-070",
+      "source": "heard-2007",
+      "name": "MITRAY-I",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "070",
+      "culture": "Persian",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ijad Moghavemat",
+          "type": "static",
+          "text": "After you take damage, roll two dice. If this total is less than your experience, the next attack against you deals –1 damage to a minimum of 0."
+        }
+      ],
+      "flavor": "Afraid of being poisoned, Mithradates took non-lethal doses of poison over many years to develop a resistance to their effects.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) MITRAY-I Persian • Special • Ability Ijad Moghavemat: After you take damage, roll two dice. If this total is less than your experience, the next attack against you deals –1 damage to a minimum of 0. Afraid of being poisoned, Mithradates took non-lethal doses of poison over many years to develop a resistance to their effects. Illustration: Matthew Armstrong 4 70/100"
+    },
+    {
+      "id": "s4-085",
+      "source": "heard-2007",
+      "name": "OPRICHNIKI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "085",
+      "culture": "Russian",
+      "traits": [
+        "Special",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Pihl",
+          "type": "reveal",
+          "text": "Place this card in any unoccupied space in your starting row."
+        },
+        {
+          "name": "Presledovaniye",
+          "type": "static",
+          "text": "Whenever you move your warrior, you may move this card one space (not diagonally). If this card moves into a space occupied by an opposing warrior, you may discard this card to deal 2 damage to that warrior."
+        }
+      ],
+      "flavor": "Oscillating between wickedness and repentance, Ivan created the Oprichniki, an order of religious police, to carry out his will, no matter how depraved it might be.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) OPRICHNIKI Russian • Special • Ally Pihl – Reveal: Place this card in any unoccupied space in your starting row. Presledovaniye: Whenever you move your warrior, you may move this card one space (not diagonally). If this card moves into a space occupied by an opposing warrior, you may discard this card to deal 2 damage to that warrior. Oscillating between wickedness and repentance, Ivan created the Oprichniki, an order of religious police, to carry out his will, no matter how depraved it might be. Illustration: William O’Connor 4 85/100"
+    },
+    {
+      "id": "s4-080",
+      "source": "heard-2007",
+      "name": "PROSVESCHENNIY ABSOLUTISM",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "080",
+      "culture": "Russian",
+      "traits": [
+        "Special",
+        "Code"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Deistvitelnost",
+          "type": "static",
+          "text": "Dice and rolls are not affected by card abilities other than attack roll or defense roll bonuses."
+        },
+        {
+          "name": "Naslediye",
+          "type": "static",
+          "text": "Once each match, before dice are rolled, if this card is in your discard pile, prevent the dice or roll from being affected by card abilities other than attack roll or defense roll bonuses."
+        }
+      ],
+      "flavor": "Subscribing to Enlightenment belief, Catherine saw her mandate as descending directly from God in order to improve the lives of her people.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) PROSVESCHENNIY ABSOLUTISM Russian • Special • Code Deistvitelnost: Dice and rolls are not affected by card abilities other than attack roll or defense roll bonuses. Naslediye: Once each match, before dice are rolled, if this card is in your discard pile, prevent the dice or roll from being affected by card abilities other than attack roll or defense roll bonuses. Subscribing to Enlightenment belief, Catherine saw her mandate as descending directly from God in order to improve the lives of her people. Illustration: Steven Belledin 4 80/100"
+    },
+    {
+      "id": "s4-075",
+      "source": "heard-2007",
+      "name": "RHYTON",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "075",
+      "culture": "Persian",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Meygosari",
+          "type": "static",
+          "text": "Once each round, before you are attacked, you may give the attacker the choice to make the attack roll at +0. If they do not, gain 1 life."
+        }
+      ],
+      "flavor": "“… The fruit bubbled out red juice with white foam. They scooped it up with oxhorns, instead of cups, which had not yet been seen, so that ever after the cup of mixed wine took this divine name of rhyton.” — Dionysiaca, XII 361–362",
+      "illustrator": "Michael Koch",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) RHYTON Persian • Special • Item Meygosari: Once each round, before you are attacked, you may give the attacker the choice to make the attack roll at +0. If they do not, gain 1 life. “… The fruit bubbled out red juice with white foam. They scooped it up with oxhorns, instead of cups, which had not yet been seen, so that ever after the cup of mixed wine took this divine name of rhyton.” — Dionysiaca, XII 361–362 Illustration: Michael Koch 4 75/100"
+    },
+    {
+      "id": "s4-090",
+      "source": "heard-2007",
+      "name": "RINDI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "090",
+      "culture": "Russian",
+      "traits": [
+        "Special",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Prevsoiti Chislennostyu",
+          "type": "static",
+          "text": "At the start of each round, choose an opposing warrior and roll two dice. If this total is less than the chosen warrior’s experience, that warrior’s attacks cannot deal more than base damage this round. Otherwise, your attack rolls against them gain +1 this round."
+        }
+      ],
+      "flavor": "The Tsar’s bodyguards were never far from his person.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) RINDI Russian • Special • Ally Prevsoiti Chislennostyu: At the start of each round, choose an opposing warrior and roll two dice. If this total is less than the chosen warrior’s experience, that warrior’s attacks cannot deal more than base damage this round. Otherwise, your attack rolls against them gain +1 this round. The Tsar’s bodyguards were never far from his person. Illustration: Christopher Appel 4 90/100"
+    },
+    {
+      "id": "s4-100",
+      "source": "heard-2007",
+      "name": "SHLEM",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "100",
+      "culture": "Russian",
+      "traits": [
+        "Special",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Uklonitsya",
+          "type": "static",
+          "text": "When you are attacked by an attack with a damage bonus or an attack roll bonus greater than +2, you may discard this card. If you do, the attack misses."
+        }
+      ],
+      "flavor": "The pointed iron helmet was typically Russian, with the top of the helm varying between conical, conical-spherical, and oniondomed in shape.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) SHLEM Russian • Special • Head Uklonitsya: When you are attacked by an attack with a damage bonus or an attack roll bonus greater than +2, you may discard this card. If you do, the attack misses. The pointed iron helmet was typically Russian, with the top of the helm varying between conical, conical-spherical, and oniondomed in shape. Illustration: James Ryman 4 100/100"
+    },
+    {
+      "id": "s4-020",
+      "source": "heard-2007",
+      "name": "SIÚLÓIR NA COSACH CROISE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "020",
+      "culture": "Irish",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ag Siúil ar Chos Chroise",
+          "type": "static",
+          "text": "Your warrior is not affected by opposing support cards in spaces in the arena."
+        },
+        {
+          "name": "Abhóg Mór",
+          "type": "static",
+          "text": "Once each round, after you roll doubles, you may move one space. With the final collapse of Irish resistance at the end of the sixteenth century, these elite stilt-walking troops left with many of their lords to become mercenaries for France and Spain."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(1) SIÚLÓIR NA COSACH CROISE Irish • Special • Item Ag Siúil ar Chos Chroise: Your warrior is not affected by opposing support cards in spaces in the arena. Abhóg Mór: Once each round, after you roll doubles, you may move one space. With the final collapse of Irish resistance at the end of the sixteenth century, these elite stilt-walking troops left with many of their lords to become mercenaries for France and Spain. Illustration: Raven Mimura 4 20/100"
+    },
+    {
+      "id": "s4-P24-100",
+      "source": "heard-2007",
+      "name": "�SPW",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "P24/100",
+      "culture": "Egyptian",
+      "traits": [
+        "Special",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tst",
+          "type": "static",
+          "text": "Before you make an attack roll, choose “odd” or “even.” If your attack roll matches your choice and the defense roll does not, this and your next attack deal +1 damage. You cannot use this ability again this round."
+        }
+      ],
+      "flavor": "One of ancient Egypt’s most mysterious artifacts, the most popular current theory holds that the Sphinx was built by the fourth-dynasty king, Khafre (2558–2532 BC).",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) �SPW Egyptian • Special • Location Tst: Before you make an attack roll, choose “odd” or “even.” If your attack roll matches your choice and the defense roll does not, this and your next attack deal +1 damage. You cannot use this ability again this round. One of ancient Egypt’s most mysterious artifacts, the most popular current theory holds that the Sphinx was built by the fourth-dynasty king, Khafre (2558–2532 BC). Illustration: David Ho 4 P24/100"
+    },
+    {
+      "id": "s4-050",
+      "source": "heard-2007",
+      "name": "TAPU",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "050",
+      "culture": "Maori",
+      "traits": [
+        "Special",
+        "Code"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Whakakore",
+          "type": "reveal",
+          "text": "The next time this game that an opponent hits you with an attack that deals more than its base damage, you may discard this card and one of that opponent’s non-weapon support cards."
+        }
+      ],
+      "flavor": "All objects and actions contained tapu, as they are all linked in some way to a god. At certain times, however, the tapu for a given thing or action became so great that failure to give proper respect can have the most dire consequences.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) TAPU Maori • Special • Code Whakakore – Reveal: The next time this game that an opponent hits you with an attack that deals more than its base damage, you may discard this card and one of that opponent’s non-weapon support cards. All objects and actions contained tapu, as they are all linked in some way to a god. At certain times, however, the tapu for a given thing or action became so great that failure to give proper respect can have the most dire consequences. Illustration: Tyler Walpole 4 50/100"
+    },
+    {
+      "id": "s4-040",
+      "source": "heard-2007",
+      "name": "WAKA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 4,
+      "collector": "040",
+      "culture": "Maori",
+      "traits": [
+        "Special",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Amatiatia",
+          "type": "action",
+          "text": "Once each round, if there is a Water card in play, move to any space in your warrior’s column or row."
+        }
+      ],
+      "flavor": "The great, carved canoes of the Maori were used for ocean voyaging as well as carrying raiding parties of warriors into enemy territory.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) WAKA Maori • Special • Cavalry Amatiatia – Action: Once each round, if there is a Water card in play, move to any space in your warrior’s column or row. The great, carved canoes of the Maori were used for ocean voyaging as well as carrying raiding parties of warriors into enemy territory. Illustration: Szucs Grégory 4 40/100"
+    }
+  ]
+}

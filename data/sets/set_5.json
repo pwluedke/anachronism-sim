@@ -1,0 +1,4065 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-17T00:00:00Z",
+  "source": "heard-2007",
+  "set": 5,
+  "card_count": 110,
+  "review_count": 8,
+  "cards": [
+    {
+      "id": "s5-051",
+      "source": "heard-2007",
+      "name": "AMR IBN AL-A’AS",
+      "card_type": "warrior",
+      "element": "Aether",
+      "set": 5,
+      "collector": "051",
+      "culture": "Saracen",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+3 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Musaada",
+          "type": "static",
+          "text": "At the start of each round, you may choose another warrior. That warrior’s defense rolls gain +1 that round."
+        },
+        {
+          "name": "Motatarref",
+          "type": "static",
+          "text": "Once each round, if you have an Inspiration in play, you may re-roll one of your defense rolls."
+        }
+      ],
+      "flavor": "Amr ibn al-Aas was converted to the Muslim faith by An- Najaashiy in Abyssinia, and subsequently became on of the greatest warriors and generals of his day.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "AMR IBN AL-A’AS (Aether) 7 Life 3 Speed +3 6 Experience –1 � 1 Damage Saracen • Warrior • Male Musaada: At the start of each round, you may choose another warrior. That warrior’s defense rolls gain +1 that round. Motatarref: Once each round, if you have an Inspiration in play, you may re-roll one of your defense rolls. Amr ibn al-Aas was converted to the Muslim faith by An- Najaashiy in Abyssinia, and subsequently became on of the greatest warriors and generals of his day. Illustration: William O’Connor 5 51/100"
+    },
+    {
+      "id": "s5-001",
+      "source": "heard-2007",
+      "name": "AUÍTZOTL",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 5,
+      "collector": "001",
+      "culture": "Aztec",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 6,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +2 � +0 +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Cocoxcamanilia",
+          "type": "static",
+          "text": "After you hit with a basic attack, when you make your next attack and defense rolls, roll one additional die and choose one die to exclude from the roll."
+        }
+      ],
+      "flavor": "Arguably the greatest military leader of pre-Columbian Mesoamerica, Auítzotl more than doubled the size of the Aztec empire during his reign.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "AUÍTZOTL (Wood) 8 Life 3 Speed +1 +2 6 Experience � +0 0 Damage +1 Aztec • Warrior • Male Cocoxcamanilia: After you hit with a basic attack, when you make your next attack and defense rolls, roll one additional die and choose one die to exclude from the roll. Arguably the greatest military leader of pre-Columbian Mesoamerica, Auítzotl more than doubled the size of the Aztec empire during his reign. Illustration: Randy Gallegos 5 01/100"
+    },
+    {
+      "id": "s5-076",
+      "source": "heard-2007",
+      "name": "CARLOS V",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 5,
+      "collector": "076",
+      "culture": "Spanish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Posición Legítima",
+          "type": "static",
+          "text": "At the start of each round, if you lose initiative, gain 1 life."
+        }
+      ],
+      "flavor": "Holy Roman Emperor and the first King of Spain, Charles V waged extensive wars against France and Italy, as well as the Ottoman Empire.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CARLOS V (Wood) 6 Life 3 Speed +1 4 Experience +0 � +0 1 Damage Spanish • Warrior • Male Posición Legítima: At the start of each round, if you lose initiative, gain 1 life. Holy Roman Emperor and the first King of Spain, Charles V waged extensive wars against France and Italy, as well as the Ottoman Empire. Illustration: Christopher Appel 5 76/100"
+    },
+    {
+      "id": "s5-006",
+      "source": "heard-2007",
+      "name": "CUITLÁHUAC",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 5,
+      "collector": "006",
+      "culture": "Aztec",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 3,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +2 +1 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Amana",
+          "type": "static",
+          "text": "Once each round, after you hit with a basic attack, you may immediately make an attack with one of your weapons, if possible. This attack cannot deal more than the weapon’s base damage."
+        }
+      ],
+      "flavor": "Succeeding his brother Moctezuma II, Cuitláhuac led a major Aztec victory against the Spanish, in which 400 conquistadors and thousands of their Mesoamerican allies were slain.",
+      "illustrator": "Michael Komarick",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CUITLÁHUAC (Fire) 8 Life 3 Speed +1 +2 +1 3 Experience +0 � –1 0 Damage Aztec • Warrior • Male Amana: Once each round, after you hit with a basic attack, you may immediately make an attack with one of your weapons, if possible. This attack cannot deal more than the weapon’s base damage. Succeeding his brother Moctezuma II, Cuitláhuac led a major Aztec victory against the Spanish, in which 400 conquistadors and thousands of their Mesoamerican allies were slain. Illustration: Michael Komarick 5 06/100"
+    },
+    {
+      "id": "s5-081",
+      "source": "heard-2007",
+      "name": "EL CID",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 5,
+      "collector": "081",
+      "culture": "Spanish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +2 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Maniobra Estrategica",
+          "type": "static",
+          "text": "Once each round, before you make an attack or use an action ability, you may move one space."
+        }
+      ],
+      "flavor": "One of the leading generals in the Reconquista, El Cid became a mercenary for both sides after the jealous King Alfonso VI exiled him. El Cid later captured the city of Valencia, ruling it until his death in 1099.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "EL CID (Wind) 7 Life 3 Speed +0 +2 8 Experience –1 � 1 Damage Spanish • Warrior • Male Maniobra Estrategica: Once each round, before you make an attack or use an action ability, you may move one space. One of the leading generals in the Reconquista, El Cid became a mercenary for both sides after the jealous King Alfonso VI exiled him. El Cid later captured the city of Valencia, ruling it until his death in 1099. Illustration: Hugh Jamieson 5 81/100"
+    },
+    {
+      "id": "s5-086",
+      "source": "heard-2007",
+      "name": "EL GRAN CAPITÁN",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 5,
+      "collector": "086",
+      "culture": "Spanish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Maestro de Armas",
+          "type": "static",
+          "text": "Your attack and defense rolls gain +2 against an opponent with a weapon of the same type as your weapon."
+        }
+      ],
+      "flavor": "A general, statesman, and flamboyant warrior, Gonzalo Fernández de Córdoba is known as “the father of trench warfare” and is regarded as one of the first modern generals.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "EL GRAN CAPITÁN (Metal) 7 Life 3 Speed +1 +1 5 Experience +0 � 1 Damage Spanish • Warrior • Male Maestro de Armas: Your attack and defense rolls gain +2 against an opponent with a weapon of the same type as your weapon. A general, statesman, and flamboyant warrior, Gonzalo Fernández de Córdoba is known as “the father of trench warfare” and is regarded as one of the first modern generals. Illustration: Drew Baker 5 86/100"
+    },
+    {
+      "id": "s5-P40-100",
+      "source": "heard-2007",
+      "name": "GAISERIC",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 5,
+      "collector": "P40/100",
+      "culture": "Germanic",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bewaffnet",
+          "type": "static",
+          "text": "If you ever have a weapon card in play, discard it immediately."
+        },
+        {
+          "name": "Angriff",
+          "type": "action",
+          "text": "Once each round, make an attack against an adjacent opponent. This attack counts as an attack with a weapon and has a base damage of 2. The attack roll gains +2."
+        }
+      ],
+      "flavor": "A brilliant military leader, Gaiseric captured Hippo Regius and Carthage. Later, taking advantage of political unrest, he attacked and sacked Rome itself.",
+      "illustrator": "Miguel Coimbra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "GAISERIC (Metal) 7 Life 3 Speed +2 +0 5 Experience � –1 1 Damage Germanic • Warrior • Male Bewaffnet: If you ever have a weapon card in play, discard it immediately. Angriff – Action: Once each round, make an attack against an adjacent opponent. This attack counts as an attack with a weapon and has a base damage of 2. The attack roll gains +2. A brilliant military leader, Gaiseric captured Hippo Regius and Carthage. Later, taking advantage of political unrest, he attacked and sacked Rome itself. Illustration: Miguel Coimbra 5 P40/100"
+    },
+    {
+      "id": "s5-P39-100",
+      "source": "heard-2007",
+      "name": "GODFREY OF BOUILLON",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 5,
+      "collector": "P39/100",
+      "culture": "French",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 9,
+      "speed": 3,
+      "experience": 2,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Retournement",
+          "type": "static",
+          "text": "Each round, initiative is resolved from lowest to highest."
+        }
+      ],
+      "flavor": "A leader of the First Crusade, Godfrey was among the first to enter Jerusalem, amid the general slaughter of Muslims and Jews. He refused to be crowned King of Jerusalem, instead taking the title of Advocatus Sancti Sepulchri, Advocate of the Holy Sepulcher.",
+      "illustrator": "Ben Thompson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "GODFREY OF BOUILLON (Water) 9 Life 3 Speed +1 –1 2 Experience � +0 1 Damage French • Warrior • Male Retournement: Each round, initiative is resolved from lowest to highest. A leader of the First Crusade, Godfrey was among the first to enter Jerusalem, amid the general slaughter of Muslims and Jews. He refused to be crowned King of Jerusalem, instead taking the title of Advocatus Sancti Sepulchri, Advocate of the Holy Sepulcher. Illustration: Ben Thompson 5 P39/100"
+    },
+    {
+      "id": "s5-056",
+      "source": "heard-2007",
+      "name": "HARUN AL-RASHID",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 5,
+      "collector": "056",
+      "culture": "Saracen",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ghazu",
+          "type": "static",
+          "text": "At the end of each round, choose an opponent. That opponent may choose to get –6 initiative on the next round. If they do not, you gain +1 speed for the next round."
+        }
+      ],
+      "flavor": "“Harun-al-Rashid, Commander of the Faithful to Nicephorus, the Roman dog: I have read thy letter. Thou shalt not hear, thou shalt see my reply.” – Harun al-Rashid",
+      "illustrator": "Jim Pavalec",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "HARUN AL-RASHID (Wind) 7 Life 3 Speed +1 +1 8 Experience � –1 1 Damage Saracen • Warrior • Male Ghazu: At the end of each round, choose an opponent. That opponent may choose to get –6 initiative on the next round. If they do not, you gain +1 speed for the next round. “Harun-al-Rashid, Commander of the Faithful to Nicephorus, the Roman dog: I have read thy letter. Thou shalt not hear, thou shalt see my reply.” – Harun al-Rashid Illustration: Jim Pavalec 5 56/100"
+    },
+    {
+      "id": "s5-091",
+      "source": "heard-2007",
+      "name": "HERNÁN CORTÉS",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 5,
+      "collector": "091",
+      "culture": "Spanish",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 +0 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Reflejos Rápidos",
+          "type": "static",
+          "text": "Your attack and defense rolls gain +1 against warriors with more speed than your warrior."
+        }
+      ],
+      "flavor": "Initially taking part in the conquests of Hispaniola and Cuba, Cortés famously went on to conquer Mexico and the Aztec Empire in the name of Spain.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "HERNÁN CORTÉS (Earth) 8 Life 3 Speed +2 +0 5 Experience � +1 1 Damage Spanish • Warrior • Male Reflejos Rápidos: Your attack and defense rolls gain +1 against warriors with more speed than your warrior. Initially taking part in the conquests of Hispaniola and Cuba, Cortés famously went on to conquer Mexico and the Aztec Empire in the name of Spain. Illustration: Szucs Grégory 5 91/100"
+    },
+    {
+      "id": "s5-026",
+      "source": "heard-2007",
+      "name": "HIJIKATA TOSHIZO",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 5,
+      "collector": "026",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 +0 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Taikyuuryoku",
+          "type": "static",
+          "text": "At the start of each round, if you won initiative, attacks against you that round cannot be critical hits or deal more than their base damage."
+        }
+      ],
+      "flavor": "Though my body may decay on the island of Ezo, My spirit guards my lord in the east – death poem of Hijikata Toshizo",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "HIJIKATA TOSHIZO (Fire) 7 Life 3 Speed +2 +0 6 Experience +1 � 1 Damage Japanese • Warrior • Male Taikyuuryoku: At the start of each round, if you won initiative, attacks against you that round cannot be critical hits or deal more than their base damage. Though my body may decay on the island of Ezo, My spirit guards my lord in the east – death poem of Hijikata Toshizo Illustration: Miguel Combra 5 26/100"
+    },
+    {
+      "id": "s5-096",
+      "source": "heard-2007",
+      "name": "ISABELLA I OF CASTILE",
+      "card_type": "warrior",
+      "element": "Aether",
+      "set": 5,
+      "collector": "096",
+      "culture": "Spanish",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 6,
+      "speed": 4,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sanción",
+          "type": "static",
+          "text": "Players cannot use abilities on weapon cards. At the start of each round, if you did not win initiative and have less life than all opponents, this ability affects only your opponents that round."
+        }
+      ],
+      "flavor": "Ruling in Spain with her husband, Ferdinand II of Aragon, Isabella re-conquered Granada, funded Columbus’ expedition and established the Spanish Inquisition.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ISABELLA I OF CASTILE (Aether) 6 Life 4 Speed +1 +1 3 Experience +0 � 1 Damage Spanish • Warrior • Female Sanción: Players cannot use abilities on weapon cards. At the start of each round, if you did not win initiative and have less life than all opponents, this ability affects only your opponents that round. Ruling in Spain with her husband, Ferdinand II of Aragon, Isabella re-conquered Granada, funded Columbus’ expedition and established the Spanish Inquisition. Illustration: David Ho 5 96/100"
+    },
+    {
+      "id": "s5-011",
+      "source": "heard-2007",
+      "name": "ITZCÓATL",
+      "card_type": "warrior",
+      "element": "Aether",
+      "set": 5,
+      "collector": "011",
+      "culture": "Aztec",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 9,
+      "speed": 4,
+      "experience": 5,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 +3 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ixhuacayotlani",
+          "type": "static",
+          "text": "After you hit with a basic attack, gain +2 experience."
+        }
+      ],
+      "flavor": "The first Aztec Emperor, Itzcoatl re-wrote the Aztec social, religious and governmental hierarchies, making military prowess the greatest route to power.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ITZCÓATL (Aether) 9 Life 4 Speed +1 +0 +3 5 Experience +2 � 0 Damage Aztec • Warrior • Male Ixhuacayotlani: After you hit with a basic attack, gain +2 experience. The first Aztec Emperor, Itzcoatl re-wrote the Aztec social, religious and governmental hierarchies, making military prowess the greatest route to power. Illustration: Alan Pollack 5 11/100"
+    },
+    {
+      "id": "s5-061",
+      "source": "heard-2007",
+      "name": "MAOWVIA",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 5,
+      "collector": "061",
+      "culture": "Saracen",
+      "traits": [
+        "Warrior",
+        "Female",
+        "Cavalry"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mutauag",
+          "type": "static",
+          "text": "When you are attacked, you may reduce the value of a die in the attack roll by 1."
+        }
+      ],
+      "flavor": "Reigning as Queen of the Bedouin Saracens, Maowvia led her armies to victory after victory over Roman armies, forcing the Emperor Valens to seek peace.",
+      "illustrator": "Chris Seaman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MAOWVIA (Water) 6 Life 3 Speed +0 +1 +0 6 Experience � 1 Damage Saracen • Warrior • Female • Cavalry Mutauag: When you are attacked, you may reduce the value of a die in the attack roll by 1. Reigning as Queen of the Bedouin Saracens, Maowvia led her armies to victory after victory over Roman armies, forcing the Emperor Valens to seek peace. Illustration: Chris Seaman 5 61/100"
+    },
+    {
+      "id": "s5-031",
+      "source": "heard-2007",
+      "name": "MINAMOTO NO YOSHITSUNE",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 5,
+      "collector": "031",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mukouryokuka",
+          "type": "static",
+          "text": "At the start of each round, if you won initiative, opponents cannot attack you with weapons that round."
+        }
+      ],
+      "flavor": "Yoshitsune battled alongside his elder brother Yoritomo in the name of the Genji family. When Yoritomo later moved to usurp Imperial power, Yoshitshune fought against him, only to come to a tragic end.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MINAMOTO NO YOSHITSUNE (Earth) 6 Life 3 Speed +2 –1 6 Experience � 1 Damage Japanese • Warrior • Male Mukouryokuka: At the start of each round, if you won initiative, opponents cannot attack you with weapons that round. Yoshitsune battled alongside his elder brother Yoritomo in the name of the Genji family. When Yoritomo later moved to usurp Imperial power, Yoshitshune fought against him, only to come to a tragic end. Illustration: Ezra Tucker 5 31/100"
+    },
+    {
+      "id": "s5-016",
+      "source": "heard-2007",
+      "name": "MOCTEZUMA II",
+      "card_type": "warrior",
+      "element": "Aether",
+      "set": 5,
+      "collector": "016",
+      "culture": "Aztec",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 2,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tezcatiliztli",
+          "type": "static",
+          "text": "At the start of each round, if you did not win initiative, gain +1 speed for that round."
+        }
+      ],
+      "flavor": "Despite extending the power of Tenochtitlán to dominate its sister cities of Texcoco and Tlacopan, Moctezuma’s supernatural fear and respect for the Spanish led to the downfall of his empire.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MOCTEZUMA II (Aether) 8 Life 3 Speed +1 +0 +1 2 Experience � +0 1 Damage Aztec • Warrior • Male Tezcatiliztli: At the start of each round, if you did not win initiative, gain +1 speed for that round. Despite extending the power of Tenochtitlán to dominate its sister cities of Texcoco and Tlacopan, Moctezuma’s supernatural fear and respect for the Spanish led to the downfall of his empire. Illustration: RK Post 5 16/100"
+    },
+    {
+      "id": "s5-066",
+      "source": "heard-2007",
+      "name": "SALAH AD-DIN",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 5,
+      "collector": "066",
+      "culture": "Saracen",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 9,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Saria",
+          "type": "action",
+          "text": "Once each round, move two spaces. Saladin was an honorable yet implacable opponent, who elicited the highest respect from friend and foe alike."
+        }
+      ],
+      "flavor": "He recaptured Jerusalem after 88 years of Crusader rule.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SALAH AD-DIN (Wind) 9 Life 3 Speed +1 +1 5 Experience � 1 Damage Saracen • Warrior • Male Saria – Action: Once each round, move two spaces. Saladin was an honorable yet implacable opponent, who elicited the highest respect from friend and foe alike. He recaptured Jerusalem after 88 years of Crusader rule. Illustration: Miguel Combra 5 66/100"
+    },
+    {
+      "id": "s5-036",
+      "source": "heard-2007",
+      "name": "SANADA NOBUSHIGE",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 5,
+      "collector": "036",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 –1 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kandai na Bougyo",
+          "type": "static",
+          "text": "When you hit an opponent, you may choose for the attack to deal –1 damage, to a minimum of 0. If you do, reduce the damage of the next attack that hits you by 2, to a minimum of 0."
+        }
+      ],
+      "flavor": "Sanada Nobushige was the last and greatest threat to Tokugawa Ieyasu. Despite being his enemy, Ieyasu respected Nobushige’s abilities enormously, and praised his great worth as an adversary.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SANADA NOBUSHIGE (Wood) 7 Life 3 Speed +0 –1 8 Experience +2 � 1 Damage Japanese • Warrior • Male Kandai na Bougyo: When you hit an opponent, you may choose for the attack to deal –1 damage, to a minimum of 0. If you do, reduce the damage of the next attack that hits you by 2, to a minimum of 0. Sanada Nobushige was the last and greatest threat to Tokugawa Ieyasu. Despite being his enemy, Ieyasu respected Nobushige’s abilities enormously, and praised his great worth as an adversary. Illustration: Matthew Armstrong 5 36/100"
+    },
+    {
+      "id": "s5-041",
+      "source": "heard-2007",
+      "name": "TAKEDA SHINGEN",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 5,
+      "collector": "041",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 9,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Saisho no Ichigeki",
+          "type": "static",
+          "text": "If you make the first attack of the game and that attack hits, you gain 2 life and your attack rolls gain +1 for the rest of the game."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "TAKEDA SHINGEN (Fire) 7 Life 3 Speed +1 +0 –1 9 Experience � 1 Damage Japanese • Warrior • Male Saisho no Ichigeki: If you make the first attack of the game and that attack hits, you gain 2 life and your attack rolls gain +1 for the rest of the game. Illustration: Tyler Walpole 5 41/100"
+    },
+    {
+      "id": "s5-071",
+      "source": "heard-2007",
+      "name": "TARIQ IBN ZIYAD",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 5,
+      "collector": "071",
+      "culture": "Saracen",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Takawa",
+          "type": "static",
+          "text": "All of your rolls get –1. Reduce all damage you take by 1, to a minimum of 1."
+        }
+      ],
+      "flavor": "Leading the conquest of Visigothic Hispania in 711, Tariq, a Berber Muslim and Umayyad general, came to be known as Taric el Tuerto (Tariq the one-eyed).",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "TARIQ IBN ZIYAD (Earth) 6 Life 3 Speed +1 +0 7 Experience � +2 1 Damage Saracen • Warrior • Male Takawa: All of your rolls get –1. Reduce all damage you take by 1, to a minimum of 1. Leading the conquest of Visigothic Hispania in 711, Tariq, a Berber Muslim and Umayyad general, came to be known as Taric el Tuerto (Tariq the one-eyed). Illustration: James Ryman 5 71/100"
+    },
+    {
+      "id": "s5-021",
+      "source": "heard-2007",
+      "name": "TLACAELEL",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 5,
+      "collector": "021",
+      "culture": "Aztec",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +2 +2 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ohuipetlachiuh",
+          "type": "static",
+          "text": "When you hit with a basic attack, the defender chooses to either get –1 to all of their rolls on their next turn or for you to gain 1 life."
+        }
+      ],
+      "flavor": "If the attack was a critical hit, apply both options. Inexorable and cruel, Tlacaelel elevated the bloodthirsty cult of Huitzilopochtli by dedicating the seventh reconstruction of the Templo Mayor to him.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "TLACAELEL (Metal) 7 Life 3 Speed +0 +2 7 Experience +2 � 0 Damage –1 Aztec • Warrior • Male Ohuipetlachiuh: When you hit with a basic attack, the defender chooses to either get –1 to all of their rolls on their next turn or for you to gain 1 life. If the attack was a critical hit, apply both options. Inexorable and cruel, Tlacaelel elevated the bloodthirsty cult of Huitzilopochtli by dedicating the seventh reconstruction of the Templo Mayor to him. Illustration: Jim Nelson 5 21/100"
+    },
+    {
+      "id": "s5-046",
+      "source": "heard-2007",
+      "name": "UESUGI KENSHIN",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 5,
+      "collector": "046",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ikusa-Gami",
+          "type": "static",
+          "text": "If the first attack against you this game hits, you gain +4 experience and +1 speed for the rest of the game."
+        }
+      ],
+      "flavor": "A warlord of the Sengoku Era, Uesugi Kenshin was called the “God of War” and “The Dragon of Echigo,” due to his mastery of strategy, combat, and his great personal charisma.",
+      "illustrator": "John Matson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "UESUGI KENSHIN (Wind) 7 Life 3 Speed –1 +1 4 Experience +0 � 1 Damage Japanese • Warrior • Male Ikusa-Gami: If the first attack against you this game hits, you gain +4 experience and +1 speed for the rest of the game. A warlord of the Sengoku Era, Uesugi Kenshin was called the “God of War” and “The Dragon of Echigo,” due to his mastery of strategy, combat, and his great personal charisma. Illustration: John Matson 5 46/100"
+    },
+    {
+      "id": "s5-067",
+      "source": "heard-2007",
+      "name": "AL MADINA AL MOKADASSA",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 5,
+      "collector": "067",
+      "culture": "Saracen",
+      "traits": [
+        "Inspiration",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bait El Arwah",
+          "type": "static",
+          "text": "All players’ attacks deal +1 damage. All players’ defense rolls gain +2 and may gain no other bonuses."
+        }
+      ],
+      "flavor": "Over three millennia old, Jerusalem is sacred to the world’s three major monotheistic religions, and has been fought over almost since its founding.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) AL MADINA AL MOKADASSA (Earth) Saracen • Inspiration • Location Bait El Arwah: All players’ attacks deal +1 damage. All players’ defense rolls gain +2 and may gain no other bonuses. Over three millennia old, Jerusalem is sacred to the world’s three major monotheistic religions, and has been fought over almost since its founding. Illustration: Miguel Combra 5 67/100"
+    },
+    {
+      "id": "s5-057",
+      "source": "heard-2007",
+      "name": "AL-KHAYZURAN",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 5,
+      "collector": "057",
+      "culture": "Saracen",
+      "traits": [
+        "Inspiration",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Reaaia",
+          "type": "static",
+          "text": "Once this game, before initiative is determined for a round, if you revealed a support card that round, set your opponent’s initiative for that round to your life."
+        },
+        {
+          "name": "Thanaa",
+          "type": "static",
+          "text": "If you are a Wind warrior, your first roll of each turn gains +1."
+        }
+      ],
+      "flavor": "A slave girl born in Yemen, Al-Khayzuran rose to power through strength of personality, and exerted great influence during the reigns of her husband and sons.",
+      "illustrator": "Jim Pavalec",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) AL-KHAYZURAN (Wind) Saracen • Inspiration • Female Reaaia: Once this game, before initiative is determined for a round, if you revealed a support card that round, set your opponent’s initiative for that round to your life. Thanaa: If you are a Wind warrior, your first roll of each turn gains +1. A slave girl born in Yemen, Al-Khayzuran rose to power through strength of personality, and exerted great influence during the reigns of her husband and sons. Illustration: Jim Pavalec 5 57/100"
+    },
+    {
+      "id": "s5-062",
+      "source": "heard-2007",
+      "name": "ALNABI MOSA",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 5,
+      "collector": "062",
+      "culture": "Saracen",
+      "traits": [
+        "Inspiration",
+        "Male",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Nasiha",
+          "type": "static",
+          "text": "Each roll, change each die that is a 1 to a 3, and each die that is a 6 to a 4."
+        }
+      ],
+      "flavor": "Chosen by Maowvia to preach to her people, Moses was conveyed by order of Emperor Valens from his hermit life to the city of Alexandria, where he received Episcopal grace.",
+      "illustrator": "Chris Seaman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) ALNABI MOSA (Earth) Saracen • Inspiration • Male • Ally Nasiha: Each roll, change each die that is a 1 to a 3, and each die that is a 6 to a 4. Chosen by Maowvia to preach to her people, Moses was conveyed by order of Emperor Valens from his hermit life to the city of Alexandria, where he received Episcopal grace. Illustration: Chris Seaman 5 62/100"
+    },
+    {
+      "id": "s5-P38-100",
+      "source": "heard-2007",
+      "name": "BABA YAGA",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 5,
+      "collector": "P38/100",
+      "culture": "Russian",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Skrytaya",
+          "type": "static",
+          "text": "Opponents cannot attack you with weapons more than once each round. If any opponent has more than one weapon in play, you may attack with one of your weapons twice each round."
+        }
+      ],
+      "flavor": "Baba Yaga is a cannibalistic witch. She is often called “bone legs”, as she is very skinny. She rides in a huge mortar, using the pestle to steer, and is often referred to as “the devil’s own grandmother”.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) BABA YAGA (Wood) Russian • Inspiration • Ally • Female Skrytaya: Opponents cannot attack you with weapons more than once each round. If any opponent has more than one weapon in play, you may attack with one of your weapons twice each round. Baba Yaga is a cannibalistic witch. She is often called “bone legs”, as she is very skinny. She rides in a huge mortar, using the pestle to steer, and is often referred to as “the devil’s own grandmother”. Illustration: Tyler Walpole 5 P38/100"
+    },
+    {
+      "id": "s5-097",
+      "source": "heard-2007",
+      "name": "FERNANDO II DE ARAGÓN",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 5,
+      "collector": "097",
+      "culture": "Spanish",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Pasión",
+          "type": "static",
+          "text": "If you have a female card in play, your attack rolls gain +2 and critical hits against you deal +1 damage."
+        },
+        {
+          "name": "Piedad",
+          "type": "static",
+          "text": "You may play another Inspiration card in this game."
+        }
+      ],
+      "flavor": "The co-rule of Ferdinand II of Aragon and Isabella I of Castile made their kingdoms the most powerful in Europe.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) FERNANDO II DE ARAGÓN (Water) Spanish • Inspiration • Ally • Male Pasión: If you have a female card in play, your attack rolls gain +2 and critical hits against you deal +1 damage. Piedad: You may play another Inspiration card in this game. The co-rule of Ferdinand II of Aragon and Isabella I of Castile made their kingdoms the most powerful in Europe. Illustration: David Ho 5 97/100"
+    },
+    {
+      "id": "s5-042",
+      "source": "heard-2007",
+      "name": "FURINKAZAN",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 5,
+      "collector": "042",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Mystic"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Roukou",
+          "type": "static",
+          "text": "Your warrior gains the following ability"
+        },
+        {
+          "name": "",
+          "type": "static",
+          "text": "“Roukou"
+        },
+        {
+          "name": "",
+          "type": "static",
+          "text": "You win ties against all warriors without the Roukou ability.”"
+        }
+      ],
+      "flavor": "Inspired by the “Art of War,” Furinkazan stands for “Wind, Grove, Fire and Mountain,” and described Takeda’s approach to the ways of war and politics.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) FURINKAZAN (Aether) Japanese • Inspiration • Mystic Roukou: Your warrior gains the following ability: “Roukou: You win ties against all warriors without the Roukou ability.” Inspired by the “Art of War,” Furinkazan stands for “Wind, Grove, Fire and Mountain,” and described Takeda’s approach to the ways of war and politics. Illustration: Tyler Walpole 5 42/100"
+    },
+    {
+      "id": "s5-032",
+      "source": "heard-2007",
+      "name": "GENJI",
+      "card_type": "inspiration",
+      "element": "Metal",
+      "set": 5,
+      "collector": "032",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hangeki",
+          "type": "static",
+          "text": "If you are hit twice in one round, during the next round, you gain +1 speed and your attack rolls gain +1."
+        }
+      ],
+      "flavor": "The royal family granted the Genji name, which became one of the most important factions of the Heian era.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) GENJI (Metal) Japanese • Inspiration • Ally Hangeki: If you are hit twice in one round, during the next round, you gain +1 speed and your attack rolls gain +1. The royal family granted the Genji name, which became one of the most important factions of the Heian era. Illustration: Ezra Tucker 5 32/100"
+    },
+    {
+      "id": "s5-072",
+      "source": "heard-2007",
+      "name": "HADIS KAIIM",
+      "card_type": "inspiration",
+      "element": "Metal",
+      "set": 5,
+      "collector": "072",
+      "culture": "Saracen",
+      "traits": [
+        "Inspiration",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Khauf Aledrab",
+          "type": "static",
+          "text": "Before initiative is determined each round, roll two dice. If this value is greater than any opponent’s experience, that opponent gets –2 initiative each round while this card is in play. Otherwise, you gain +3 experience. “Where would you flee? The sea waits behind you, and the enemy before you; so, by God, all that is left to you is forthright determination, and you have no minister now but your swords,”"
+        }
+      ],
+      "flavor": "— Tariq ibn Ziyad, recounted by al-Maqqari.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) HADIS KAIIM (Metal) Saracen • Inspiration • Ability Khauf Aledrab: Before initiative is determined each round, roll two dice. If this value is greater than any opponent’s experience, that opponent gets –2 initiative each round while this card is in play. Otherwise, you gain +3 experience. “Where would you flee? The sea waits behind you, and the enemy before you; so, by God, all that is left to you is forthright determination, and you have no minister now but your swords,” — Tariq ibn Ziyad, recounted by al-Maqqari. Illustration: James Ryman 5 72/100"
+    },
+    {
+      "id": "s5-P33-100",
+      "source": "heard-2007",
+      "name": "HAWAIKI",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 5,
+      "collector": "P33/100",
+      "culture": "Maori",
+      "traits": [
+        "Inspiration",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Iwi Whánui",
+          "type": "static",
+          "text": "If all of your face-up cards are Maori, your rolls gain +1."
+        }
+      ],
+      "flavor": "Hawaiki is the mythical island from which the Maori trace their origins. Polynesian peoples believe that their souls return there upon death.",
+      "illustrator": "Kurt Miller",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) HAWAIKI (Earth) Maori • Inspiration • Location Iwi Whánui: If all of your face-up cards are Maori, your rolls gain +1. Hawaiki is the mythical island from which the Maori trace their origins. Polynesian peoples believe that their souls return there upon death. Illustration: Kurt Miller 5 P33/100"
+    },
+    {
+      "id": "s5-022",
+      "source": "heard-2007",
+      "name": "HUITZILOPOCHTLI",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 5,
+      "collector": "022",
+      "culture": "Aztec",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Axittomoctli",
+          "type": "static",
+          "text": "At the end of each round, deal 1 damage to all adjacent non-Fire warriors."
+        }
+      ],
+      "flavor": "God of war, sun and death, he allowed the bravest men who had fallen in battle, and the bravest women, who had died in childbirth, to return to earth as butterflies.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) HUITZILOPOCHTLI (Fire) Aztec • Inspiration • Deity Axittomoctli: At the end of each round, deal 1 damage to all adjacent non-Fire warriors. God of war, sun and death, he allowed the bravest men who had fallen in battle, and the bravest women, who had died in childbirth, to return to earth as butterflies. Illustration: Jim Nelson 5 22/100"
+    },
+    {
+      "id": "s5-047",
+      "source": "heard-2007",
+      "name": "KAWANAKAJIMA",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 5,
+      "collector": "047",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ittei no Shouri",
+          "type": "static",
+          "text": "If you did not win initiative for the current round, your attack rolls gain +2."
+        },
+        {
+          "name": "Tatakai ni Fukki",
+          "type": "static",
+          "text": "Once each match, after one of your other cards is discarded, you may put this card into play from your discard pile."
+        }
+      ],
+      "flavor": "The Kawanakajima-no-Tatakai was a series of five wars fought between Uesugi Kenshin and Takeda Shingen, in which both warlords fought each other to a stalemate.",
+      "illustrator": "John Matson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) KAWANAKAJIMA (Earth) Japanese • Inspiration • Location Ittei no Shouri: If you did not win initiative for the current round, your attack rolls gain +2. Tatakai ni Fukki: Once each match, after one of your other cards is discarded, you may put this card into play from your discard pile. The Kawanakajima-no-Tatakai was a series of five wars fought between Uesugi Kenshin and Takeda Shingen, in which both warlords fought each other to a stalemate. Illustration: John Matson 5 47/100"
+    },
+    {
+      "id": "s5-027",
+      "source": "heard-2007",
+      "name": "KYOKUCHU-HATTO",
+      "card_type": "inspiration",
+      "element": "Metal",
+      "set": 5,
+      "collector": "027",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Code"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Chuusei",
+          "type": "static",
+          "text": "Warriors cannot gain speed. Each time an opposing warrior reveals a support card of a type that they already have in play, they get –1 speed that round."
+        }
+      ],
+      "flavor": "Hijikata Toshizo helped found the Shinsengumi organization. Anyone who performed any action contrary to the way of the samurai, or who attempted to leave the group, was forced to commit seppuku.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) KYOKUCHU-HATTO (Metal) Japanese • Inspiration • Code Chuusei: Warriors cannot gain speed. Each time an opposing warrior reveals a support card of a type that they already have in play, they get –1 speed that round. Hijikata Toshizo helped found the Shinsengumi organization. Anyone who performed any action contrary to the way of the samurai, or who attempted to leave the group, was forced to commit seppuku. Illustration: Miguel Combra 5 27/100"
+    },
+    {
+      "id": "s5-092",
+      "source": "heard-2007",
+      "name": "LA MALINCHE",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 5,
+      "collector": "092",
+      "culture": "Spanish",
+      "traits": [
+        "Inspiration",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Negociar",
+          "type": "static",
+          "text": "Once each round, when you make a roll, if no opponent has a card that matches your warrior’s culture, you may re-roll one die of any player’s attack or defense roll. If you are an Earth or Metal warrior, you may give the re-roll +1 or –1."
+        }
+      ],
+      "flavor": "A native Mesoamerican woman, La Malinche accompanied Cortés on his conquest of Mexico and bore him a son. The term “La Malinche” lives on today as a byword for treachery.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) LA MALINCHE (Water) Spanish • Inspiration • Female Negociar: Once each round, when you make a roll, if no opponent has a card that matches your warrior’s culture, you may re-roll one die of any player’s attack or defense roll. If you are an Earth or Metal warrior, you may give the re-roll +1 or –1. A native Mesoamerican woman, La Malinche accompanied Cortés on his conquest of Mexico and bore him a son. The term “La Malinche” lives on today as a byword for treachery. Illustration: Szucs Grégory 5 92/100"
+    },
+    {
+      "id": "s5-052",
+      "source": "heard-2007",
+      "name": "MASJID AHL AR-RAYAH",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 5,
+      "collector": "052",
+      "culture": "Saracen",
+      "traits": [
+        "Inspiration",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Taabbud",
+          "type": "reveal",
+          "text": "Gain 1 life."
+        },
+        {
+          "name": "Adfaa Ehtramat",
+          "type": "static",
+          "text": "Once each match, at the start of a round, if this card is in your discard pile and you have less life than any opponent, gain 1 life."
+        }
+      ],
+      "flavor": "Erected on the spot where Amr ibn al-A’as pitched his tent at Fustat, this mosque was the first to be built, not just in Egypt, but on the entire African continent.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) MASJID AHL AR-RAYAH (Earth) Saracen • Inspiration • Location Taabbud – Reveal: Gain 1 life. Adfaa Ehtramat: Once each match, at the start of a round, if this card is in your discard pile and you have less life than any opponent, gain 1 life. Erected on the spot where Amr ibn al-A’as pitched his tent at Fustat, this mosque was the first to be built, not just in Egypt, but on the entire African continent. Illustration: William O’Connor 5 52/100"
+    },
+    {
+      "id": "s5-077",
+      "source": "heard-2007",
+      "name": "MERCURINO GATTINARA",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 5,
+      "collector": "077",
+      "culture": "Spanish",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Incitar Asalto",
+          "type": "reveal",
+          "text": "Your defense rolls this round get – 1. Your attack rolls this round gain +3."
+        }
+      ],
+      "flavor": "An Italian statesman and jurist, Gattinara served as a legal advisor, a counselor to Margaret of Austria, a chancellor to Charles V and a Roman Catholic <strong>Card</strong>inal.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) MERCURINO GATTINARA (Fire) Spanish • Inspiration • Ally • Male Incitar Asalto – Reveal: Your defense rolls this round get – 1. Your attack rolls this round gain +3. An Italian statesman and jurist, Gattinara served as a legal advisor, a counselor to Margaret of Austria, a chancellor to Charles V and a Roman Catholic <strong>Card</strong>inal. Illustration: Christopher Appel 5 77/100"
+    },
+    {
+      "id": "s5-017",
+      "source": "heard-2007",
+      "name": "QUETZALCOATL",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 5,
+      "collector": "017",
+      "culture": "Aztec",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ixnamicealiztli",
+          "type": "static",
+          "text": "Ties are won by the warrior with less life instead of by the warrior with higher experience. According to myth, Quetzalcoatl went to Mictlan, the underworld, and created mankind from his own blood and the bones of all previous races."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "RK Post",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(3) QUETZALCOATL (Wood) Aztec • Inspiration • Deity Ixnamicealiztli: Ties are won by the warrior with less life instead of by the warrior with higher experience. According to myth, Quetzalcoatl went to Mictlan, the underworld, and created mankind from his own blood and the bones of all previous races. Illustration: RK Post 5 17/100"
+    },
+    {
+      "id": "s5-P37-100",
+      "source": "heard-2007",
+      "name": "RASPUTIN",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 5,
+      "collector": "P37/100",
+      "culture": "Russian",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ne’ukrotimiy",
+          "type": "static",
+          "text": "Before you take damage, if you are an Earth warrior and the damage would reduce your life below 1, you may discard one of your other face-up support cards to reduce the damage to 0."
+        }
+      ],
+      "flavor": "Though he exerted tremendous power over the Tsar and Tsarina, Rasputin’s reputation for debauchery led to his assassination by members of the royal family. He was poisoned, shot three times and finally drowned.",
+      "illustrator": "Ralph Horsely",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) RASPUTIN (Earth) Russian • Inspiration • Ally • Male Ne’ukrotimiy: Before you take damage, if you are an Earth warrior and the damage would reduce your life below 1, you may discard one of your other face-up support cards to reduce the damage to 0. Though he exerted tremendous power over the Tsar and Tsarina, Rasputin’s reputation for debauchery led to his assassination by members of the royal family. He was poisoned, shot three times and finally drowned. Illustration: Ralph Horsely 5 P37/100"
+    },
+    {
+      "id": "s5-037",
+      "source": "heard-2007",
+      "name": "ROKUMONSENMON",
+      "card_type": "inspiration",
+      "element": "Metal",
+      "set": 5,
+      "collector": "037",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Code"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Rokumonsen",
+          "type": "static",
+          "text": "You cannot discard this card."
+        },
+        {
+          "name": "Kesshi no Kakugo",
+          "type": "static",
+          "text": "Your attack rolls gain +1 and your attacks deal +1 damage. After you make an attack, add a counter to this card. When you place the sixth counter on this card, you lose the game."
+        }
+      ],
+      "flavor": "The Sanada family crest is derived from a Buddhist story, describing why one should take six coins to go through hell. It warned all enemies that no Sanada feared death.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) ROKUMONSENMON (Metal) Japanese • Inspiration • Code Rokumonsen: You cannot discard this card. Kesshi no Kakugo: Your attack rolls gain +1 and your attacks deal +1 damage. After you make an attack, add a counter to this card. When you place the sixth counter on this card, you lose the game. The Sanada family crest is derived from a Buddhist story, describing why one should take six coins to go through hell. It warned all enemies that no Sanada feared death. Illustration: Matthew Armstrong 5 37/100"
+    },
+    {
+      "id": "s5-082",
+      "source": "heard-2007",
+      "name": "SANTIAGO MATAMOROS",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 5,
+      "collector": "082",
+      "culture": "Spanish",
+      "traits": [
+        "Inspiration",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Confesión",
+          "type": "static",
+          "text": "Once each round, when you are attacked and the attacker rolls doubles, the attack deals –1 damage, to a minimum of 1, and you gain 1 life."
+        }
+      ],
+      "flavor": "St. James is said to have preached in Spain before returning to Judea, where he was executed. Tradition holds that, during the Reconquista, he miraculously appeared to lead the Christian army to victory at the Battle of Clavijo.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) SANTIAGO MATAMOROS (Wood) Spanish • Inspiration • Ally • Male Confesión: Once each round, when you are attacked and the attacker rolls doubles, the attack deals –1 damage, to a minimum of 1, and you gain 1 life. St. James is said to have preached in Spain before returning to Judea, where he was executed. Tradition holds that, during the Reconquista, he miraculously appeared to lead the Christian army to victory at the Battle of Clavijo. Illustration: Hugh Jamieson 5 82/100"
+    },
+    {
+      "id": "s5-012",
+      "source": "heard-2007",
+      "name": "TEYAOTENYILIZTLI",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 5,
+      "collector": "012",
+      "culture": "Aztec",
+      "traits": [
+        "Inspiration",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Patiyotl",
+          "type": "static",
+          "text": "Twice each round, if you are an Earth or Aether warrior, when you hit an adjacent opponent who is not in your basic attack grid with a basic attack, deal 1 damage to the defender."
+        }
+      ],
+      "flavor": "Due to Itzcóatl’s reforms, a warrior’s prestige was tied directly to his achievemenets. Only by taking captives or defeating a great for could a warrior improve his lot.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) TEYAOTENYILIZTLI (Fire) Aztec • Inspiration • Quest Patiyotl: Twice each round, if you are an Earth or Aether warrior, when you hit an adjacent opponent who is not in your basic attack grid with a basic attack, deal 1 damage to the defender. Due to Itzcóatl’s reforms, a warrior’s prestige was tied directly to his achievemenets. Only by taking captives or defeating a great for could a warrior improve his lot. Illustration: Alan Pollack 5 12/100"
+    },
+    {
+      "id": "s5-007",
+      "source": "heard-2007",
+      "name": "TEZCATLIPOCA",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 5,
+      "collector": "007",
+      "culture": "Aztec",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Teochihua",
+          "type": "static",
+          "text": "Your first attack roll each round gains +1."
+        },
+        {
+          "name": "Telchihua",
+          "type": "static",
+          "text": "After an opponent makes a roll, if the roll is less than that player’s initiative for the round, you may discard this card. If you do, that player must discard one of their non-weapon support cards."
+        }
+      ],
+      "flavor": "The god of beauty, might and war, his smoking mirror killed all who inhaled its fumes. The twin of Quetzalcoatl, together they captured the great monster Cipatli and created the lands from her body.",
+      "illustrator": "Michael Komarick",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) TEZCATLIPOCA (Aether) Aztec • Inspiration • Deity Teochihua: Your first attack roll each round gains +1. Telchihua: After an opponent makes a roll, if the roll is less than that player’s initiative for the round, you may discard this card. If you do, that player must discard one of their non-weapon support cards. The god of beauty, might and war, his smoking mirror killed all who inhaled its fumes. The twin of Quetzalcoatl, together they captured the great monster Cipatli and created the lands from her body. Illustration: Michael Komarick 5 07/100"
+    },
+    {
+      "id": "s5-002",
+      "source": "heard-2007",
+      "name": "TLALOC",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 5,
+      "collector": "002",
+      "culture": "Aztec",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tlacelmilhuiliztli",
+          "type": "reveal",
+          "text": "At the end of this round, if you took more damage from opponents than you dealt, your attacks deal +1 damage for the rest of the game."
+        }
+      ],
+      "flavor": "Rain god and ruler over the third of five worlds, Tlaloc was greatly feared as the bearer of drought and flood, despite his associations with fertility and life.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) TLALOC (Water) Aztec • Inspiration • Deity Tlacelmilhuiliztli – Reveal: At the end of this round, if you took more damage from opponents than you dealt, your attacks deal +1 damage for the rest of the game. Rain god and ruler over the third of five worlds, Tlaloc was greatly feared as the bearer of drought and flood, despite his associations with fertility and life. Illustration: Randy Gallegos 5 02/100"
+    },
+    {
+      "id": "s5-087",
+      "source": "heard-2007",
+      "name": "VASALLO DE LA REINA",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 5,
+      "collector": "087",
+      "culture": "Spanish",
+      "traits": [
+        "Inspiration",
+        "Title"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Decreto Imperial",
+          "type": "reveal",
+          "text": "Roll one die. If it is equal to or greater than your life, move an opposing warrior one space. If this moves them into a space in any of your attack grids, you may immediately make an attack against them."
+        }
+      ],
+      "flavor": "After the death of Don Alfonso, the king’s brother, Córdoba dedicated his service to Isabella of Castile. He commanded her escort and, at Granada, defeated an enemy sortie before her eyes.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) VASALLO DE LA REINA (Wind) Spanish • Inspiration • Title Decreto Imperial – Reveal: Roll one die. If it is equal to or greater than your life, move an opposing warrior one space. If this moves them into a space in any of your attack grids, you may immediately make an attack against them. After the death of Don Alfonso, the king’s brother, Córdoba dedicated his service to Isabella of Castile. He commanded her escort and, at Granada, defeated an enemy sortie before her eyes. Illustration: Drew Baker 5 87/100"
+    },
+    {
+      "id": "s5-078",
+      "source": "heard-2007",
+      "name": "ALABARDA ESPAÑOLA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "078",
+      "culture": "Spanish",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +0 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Perímetro Impenetrable",
+          "type": "static",
+          "text": "Once each round, when an opponent moves into a space in this weapon’s attack grid, you may make an attack with this weapon. The halberd consisted of an axe blade mounted on a long shaft and topped with a spike. A hook mounted behind the axe blade was used to topple mounted opponents."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(7) ALABARDA ESPAÑOLA (2) +1 +0 +0 –1 � Spanish • Weapon • Polearm (2 hands) Perímetro Impenetrable: Once each round, when an opponent moves into a space in this weapon’s attack grid, you may make an attack with this weapon. The halberd consisted of an axe blade mounted on a long shaft and topped with a spike. A hook mounted behind the axe blade was used to topple mounted opponents. Illustration: Christopher Appel 5 78/100"
+    },
+    {
+      "id": "s5-093",
+      "source": "heard-2007",
+      "name": "ARCABUZ",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "093",
+      "culture": "Spanish",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Abrir Fuego",
+          "type": "static",
+          "text": "Attacking with this weapon requires an additional action."
+        },
+        {
+          "name": "Diana",
+          "type": "static",
+          "text": "When you attack with this weapon, if the attack roll is even and the attack hits, it deals +2 damage."
+        }
+      ],
+      "flavor": "A smoothbore, matchlock firearm, the harquebus was usually fired with the barrel hooked on a raised, fork-like stand.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) ARCABUZ (2) +2 +0 +0 � Spanish • Weapon • Ranged (2 Hands) Abrir Fuego: Attacking with this weapon requires an additional action. Diana: When you attack with this weapon, if the attack roll is even and the attack hits, it deals +2 damage. A smoothbore, matchlock firearm, the harquebus was usually fired with the barrel hooked on a raised, fork-like stand. Illustration: Szucs Grégory 5 93/100"
+    },
+    {
+      "id": "s5-003",
+      "source": "heard-2007",
+      "name": "ATLATL",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "003",
+      "culture": "Aztec",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +2 –1 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Iciuhcac",
+          "type": "static",
+          "text": "You may use another weapon."
+        },
+        {
+          "name": "Tlacahuatiliztli",
+          "type": "static",
+          "text": "When you hit an opponent with this weapon, the defender’s support cards get –3 initiative for the rest of the game."
+        }
+      ],
+      "flavor": "By compressing a wave of energy along the length of a wooden dart, the atlatl could hurl its missile over great distance and with exceptional power.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) ATLATL (1) +0 +2 –1 +1 � Aztec • Weapon • Ranged (1 Hand) Iciuhcac: You may use another weapon. Tlacahuatiliztli: When you hit an opponent with this weapon, the defender’s support cards get –3 initiative for the rest of the game. By compressing a wave of energy along the length of a wooden dart, the atlatl could hurl its missile over great distance and with exceptional power. Illustration: Randy Gallegos 5 03/100"
+    },
+    {
+      "id": "s5-048",
+      "source": "heard-2007",
+      "name": "AZUKINAGAMITSU",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "048",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kyouiteki na Surudosa",
+          "type": "static",
+          "text": "When you attack with this weapon, if the attack roll is greater than the higher of the defender’s experience or the defense roll without bonuses, deal 1 damage to the defender."
+        }
+      ],
+      "flavor": "Azukinagamitsu was so sharp that it was said to be able to cut an azuki beam in half just by touching it.",
+      "illustrator": "John Matson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) AZUKINAGAMITSU (2) +1 +0 +0 � Japanese • Weapon • Sword (2 Hands) Kyouiteki na Surudosa: When you attack with this weapon, if the attack roll is greater than the higher of the defender’s experience or the defense roll without bonuses, deal 1 damage to the defender. Azukinagamitsu was so sharp that it was said to be able to cut an azuki beam in half just by touching it. Illustration: John Matson 5 48/100"
+    },
+    {
+      "id": "s5-073",
+      "source": "heard-2007",
+      "name": "BALLTAT HARB",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "073",
+      "culture": "Saracen",
+      "traits": [
+        "Weapon",
+        "Axe"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +1 +1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "La Mubalie",
+          "type": "static",
+          "text": "You may attack twice each round with this weapon if the defender has no support cards that require hands to use."
+        },
+        {
+          "name": "Kataa",
+          "type": "static",
+          "text": "The second attack made with this weapon each round deals +1 damage."
+        }
+      ],
+      "flavor": "Almost five feet (150 cm) long, this heavy, two-handed war axe was a lethal weapon in the hands of a trained warrior.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) BALLTAT HARB (2) +0 +1 +1 � +1 Saracen • Weapon • Axe (2 Hands) La Mubalie: You may attack twice each round with this weapon if the defender has no support cards that require hands to use. Kataa: The second attack made with this weapon each round deals +1 damage. Almost five feet (150 cm) long, this heavy, two-handed war axe was a lethal weapon in the hands of a trained warrior. Illustration: James Ryman 5 73/100"
+    },
+    {
+      "id": "s5-028",
+      "source": "heard-2007",
+      "name": "IZUMINOKAMI-KANESADA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "028",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ryuudouteki na Kougeki",
+          "type": "static",
+          "text": "After you miss with this weapon, you may move one space."
+        },
+        {
+          "name": "Hayauchi",
+          "type": "static",
+          "text": "The next card you reveal gains +5 initiative."
+        }
+      ],
+      "flavor": "Among the many katana that Toshizo wielded, this one he used the longest, finally giving it to a servant three months before his death.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) IZUMINOKAMI-KANESADA (2) +2 +0 � –1 Japanese • Weapon • Sword (2 Hands) Ryuudouteki na Kougeki: After you miss with this weapon, you may move one space. Hayauchi: The next card you reveal gains +5 initiative. Among the many katana that Toshizo wielded, this one he used the longest, finally giving it to a servant three months before his death. Illustration: Miguel Combra 5 28/100"
+    },
+    {
+      "id": "s5-043",
+      "source": "heard-2007",
+      "name": "JIN-DACHI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "043",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +1 –2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sinchou na Kougeki",
+          "type": "static",
+          "text": "When you hit with this weapon, the attacker and defender each roll one die and add his or her warrior’s experience. If your total is higher, your attack rolls gain +1 for the rest of the game."
+        }
+      ],
+      "flavor": "The jin-dachi was a type of katana that saw common use during the Sengoku Era. Over two meters in length, it was used both on foot and while mounted.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) JIN-DACHI (2) +2 +1 –2 � Japanese • Weapon • Sword (2 Hands) Sinchou na Kougeki: When you hit with this weapon, the attacker and defender each roll one die and add his or her warrior’s experience. If your total is higher, your attack rolls gain +1 for the rest of the game. The jin-dachi was a type of katana that saw common use during the Sengoku Era. Over two meters in length, it was used both on foot and while mounted. Illustration: Tyler Walpole 5 43/100"
+    },
+    {
+      "id": "s5-058",
+      "source": "heard-2007",
+      "name": "KAWS",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "058",
+      "culture": "Saracen",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 2,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +2 +2 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Galied",
+          "type": "action",
+          "text": "Once each round, if you have a cavalry card in play, make an attack with this weapon at +2."
+        },
+        {
+          "name": "Pasche",
+          "type": "static",
+          "text": "Critical hits with this weapon deal +1 damage."
+        }
+      ],
+      "flavor": "The use of the bow by Muslim cavalry was rooted in the antecedent tactics of raiding desert nomads.",
+      "illustrator": "Jim Pavalec",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) KAWS (1) +0 +2 +2 +1 � Saracen • Weapon • Ranged (2 Hands) Galied – Action: Once each round, if you have a cavalry card in play, make an attack with this weapon at +2. Pasche: Critical hits with this weapon deal +1 damage. The use of the bow by Muslim cavalry was rooted in the antecedent tactics of raiding desert nomads. Illustration: Jim Pavalec 5 58/100"
+    },
+    {
+      "id": "s5-013",
+      "source": "heard-2007",
+      "name": "MACUAHUITL",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "013",
+      "culture": "Aztec",
+      "traits": [
+        "Weapon",
+        "Bludgeon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +2 � +0 –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Atlacapetlachi",
+          "type": "static",
+          "text": "After you miss with this weapon, you may immediately make a basic attack against the same opponent at +1. Made of wood, and edged with wickedly sharp obsidian, the macuahuitl was primarily intended to maim opponents, who could later be captured."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(3) MACUAHUITL (2) +1 +2 � +0 –1 Aztec • Weapon • Bludgeon • Sword (1 Hand) Atlacapetlachi: After you miss with this weapon, you may immediately make a basic attack against the same opponent at +1. Made of wood, and edged with wickedly sharp obsidian, the macuahuitl was primarily intended to maim opponents, who could later be captured. Illustration: Alan Pollack 5 13/100"
+    },
+    {
+      "id": "s5-038",
+      "source": "heard-2007",
+      "name": "MURAMASA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "038",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 2,
+      "weapon_damage": 3,
+      "grid_raw": "+1 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Densetsuteki",
+          "type": "static",
+          "text": "This weapon’s damage cannot be increased or reduced by card abilities."
+        }
+      ],
+      "flavor": "Tradition holds that this katana was cursed. Certainly, it brought nothing but woe to the Tokugawa family.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) MURAMASA (3) +1 +0 � –1 Japanese • Weapon • Sword (2 Hands) Densetsuteki: This weapon’s damage cannot be increased or reduced by card abilities. Tradition holds that this katana was cursed. Certainly, it brought nothing but woe to the Tokugawa family. Illustration: Matthew Armstrong 5 38/100"
+    },
+    {
+      "id": "s5-088",
+      "source": "heard-2007",
+      "name": "PICA DE INFANTE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "088",
+      "culture": "Spanish",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +1 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Desgarrar",
+          "type": "static",
+          "text": "Once each round, after an opponent uses an action to move into a space in this weapon’s attack grid, roll two dice. If the total is less than the opponent’s experience, they must discard one of their non-weapon support cards."
+        }
+      ],
+      "flavor": "Fighting against the French in Calabria, Córdoba rearmed many of his troops with pikes after it became apparent that a heavier punch was needed on the battlefield.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) PICA DE INFANTE (2) +1 +0 +1 +0 +0 � Spanish • Weapon • Polearm (2 Hands) Desgarrar: Once each round, after an opponent uses an action to move into a space in this weapon’s attack grid, roll two dice. If the total is less than the opponent’s experience, they must discard one of their non-weapon support cards. Fighting against the French in Calabria, Córdoba rearmed many of his troops with pikes after it became apparent that a heavier punch was needed on the battlefield. Illustration: Drew Baker 5 88/100"
+    },
+    {
+      "id": "s5-P34-100",
+      "source": "heard-2007",
+      "name": "POU WHENUA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "P34/100",
+      "culture": "Maori",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "–1 –1 +1 +1 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tukituki",
+          "type": "action",
+          "text": "Twice each round, if you have not missed with this weapon this round, make an attack with it if possible. Frequently carved from whalebone, the pou whenua is used to mercilessly bludgeon an opponent."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(4) POU WHENUA (2) –1 –1 +1 +1 +1 � Maori • Weapon • Bludgeon (2 Hands) Tukituki – Action: Twice each round, if you have not missed with this weapon this round, make an attack with it if possible. Frequently carved from whalebone, the pou whenua is used to mercilessly bludgeon an opponent. Illustration: Matthew Armstrong 5 P34/100"
+    },
+    {
+      "id": "s5-053",
+      "source": "heard-2007",
+      "name": "RAS AL ASAD",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "053",
+      "culture": "Saracen",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 –1 +1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mukhief",
+          "type": "static",
+          "text": "Attack rolls with this weapon that are less than the defender’s initiative are set to the defender’s initiative."
+        }
+      ],
+      "flavor": "The lion was a symbol of courage and power, and adorned the heads of many Muslim maces.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) RAS AL ASAD (2) +0 –1 +1 � –1 Saracen • Weapon • Bludgeon (1 Hand) Mukhief: Attack rolls with this weapon that are less than the defender’s initiative are set to the defender’s initiative. The lion was a symbol of courage and power, and adorned the heads of many Muslim maces. Illustration: William O’Connor 5 53/100"
+    },
+    {
+      "id": "s5-098",
+      "source": "heard-2007",
+      "name": "ROPERA TOLEDANA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "098",
+      "culture": "Spanish",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +2 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Impulso",
+          "type": "action",
+          "text": "Make an attack with this weapon, if possible."
+        }
+      ],
+      "flavor": "From the falcata blades of the fifth century BC to the rapiers of the sixteenth century AD, Toledan steel was renowned across the world for its incredible quality.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) ROPERA TOLEDANA (1) +0 +2 +2 � Spanish • Weapon • Sword (1 Hand) Impulso – Action: Make an attack with this weapon, if possible. From the falcata blades of the fifth century BC to the rapiers of the sixteenth century AD, Toledan steel was renowned across the world for its incredible quality. Illustration: David Ho 5 98/100"
+    },
+    {
+      "id": "s5-P36-100",
+      "source": "heard-2007",
+      "name": "SAGARIS",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "P36/100",
+      "culture": "Persian",
+      "traits": [
+        "Weapon",
+        "Axe"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Shiveshodan",
+          "type": "static",
+          "text": "When you attack with this weapon, if you have less experience than the defender, the attack roll gains +2 and the attack deals +1 damage."
+        }
+      ],
+      "flavor": "Scythian in origin, the sagaris nonetheless became a very popular weapon among Persian armies.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) SAGARIS (2) +0 � –1 Persian • Weapon • Axe (1 Hand) Shiveshodan: When you attack with this weapon, if you have less experience than the defender, the attack roll gains +2 and the attack deals +1 damage. Scythian in origin, the sagaris nonetheless became a very popular weapon among Persian armies. Illustration: David Ho 5 P36/100"
+    },
+    {
+      "id": "s5-063",
+      "source": "heard-2007",
+      "name": "SAHM",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "063",
+      "culture": "Saracen",
+      "traits": [
+        "Weapon",
+        "Polearm",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Taan",
+          "type": "static",
+          "text": "When you attack with this weapon, you may choose to roll one less die. If you do, add your initiative to the attack roll."
+        }
+      ],
+      "flavor": "Valuing mobility over weighty physical defenses, the Bedouins employed the javelin extensively in all aspects of their warfare.",
+      "illustrator": "Chris Seaman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) SAHM (2) +0 +1 +1 +0 � Saracen • Weapon • Polearm • Ranged (1 Hand) Taan: When you attack with this weapon, you may choose to roll one less die. If you do, add your initiative to the attack roll. Valuing mobility over weighty physical defenses, the Bedouins employed the javelin extensively in all aspects of their warfare. Illustration: Chris Seaman 5 63/100"
+    },
+    {
+      "id": "s5-068",
+      "source": "heard-2007",
+      "name": "SAIF DAMASHKI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "068",
+      "culture": "Saracen",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +0 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hadid Malfuf",
+          "type": "static",
+          "text": "When you attack with this weapon, the defender rolls one extra die. You choose one die to exclude from the defense roll."
+        }
+      ],
+      "flavor": "The beautiful, rippling patterns that typify the Damascene forging technique belie the deadly effectiveness of these folded steel blades.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) SAIF DAMASHKI (2) +0 +0 � +1 Saracen • Weapon • Sword (1 Hand) Hadid Malfuf: When you attack with this weapon, the defender rolls one extra die. You choose one die to exclude from the defense roll. The beautiful, rippling patterns that typify the Damascene forging technique belie the deadly effectiveness of these folded steel blades. Illustration: Miguel Combra 5 68/100"
+    },
+    {
+      "id": "s5-018",
+      "source": "heard-2007",
+      "name": "TECPATL",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "018",
+      "culture": "Aztec",
+      "traits": [
+        "Weapon",
+        "Knife"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+2 +0 � –1 +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mictilia",
+          "type": "static",
+          "text": "When you hit with this weapon, if the defender has more life than your warrior, this attack deals +2 damage."
+        }
+      ],
+      "flavor": "Painstakingly chipped from obsidian glass and often decorated with religious symbols, the edge of the tecpatl knife could cut like a razorblade.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) TECPATL (1) +2 +0 � –1 +0 Aztec • Weapon • Knife (1 Hand) Mictilia: When you hit with this weapon, if the defender has more life than your warrior, this attack deals +2 damage. Painstakingly chipped from obsidian glass and often decorated with religious symbols, the edge of the tecpatl knife could cut like a razorblade. Illustration: RK Post 5 18/100"
+    },
+    {
+      "id": "s5-023",
+      "source": "heard-2007",
+      "name": "TEMATLATL",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "023",
+      "culture": "Aztec",
+      "traits": [
+        "Weapon",
+        "Ranged",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +1 +1 +2 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Quilitli",
+          "type": "static",
+          "text": "You may use another weapon."
+        },
+        {
+          "name": "Zotlahuaxoxoliztli",
+          "type": "static",
+          "text": "If you hit with this weapon, the defender’s next defense roll gets –2."
+        }
+      ],
+      "flavor": "Aztec warriors used to heat the stones hurled by these slings to a scalding temperature so that the missiles would burn through enemies upon impact.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) TEMATLATL (1) +0 +1 +1 +2 –1 � Aztec • Weapon • Ranged • Bludgeon (1 Hand) Quilitli: You may use another weapon. Zotlahuaxoxoliztli: If you hit with this weapon, the defender’s next defense roll gets –2. Aztec warriors used to heat the stones hurled by these slings to a scalding temperature so that the missiles would burn through enemies upon impact. Illustration: Jim Nelson 5 23/100"
+    },
+    {
+      "id": "s5-083",
+      "source": "heard-2007",
+      "name": "TIZONA Y COLADA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "083",
+      "culture": "Spanish",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ataque en Pareja",
+          "type": "action",
+          "text": "Once each round, if you have attacked with this weapon and moved this turn, make an attack with this weapon against an adjacent opponent at +2."
+        }
+      ],
+      "flavor": "A metallurgical analysis of El Cid’s sword “Tizona” showed that the blade was probably made in Moorish Cordoba. It can be seen today in the Museo del Ejército, Madrid.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) TIZONA Y COLADA (2) +2 +1 � –1 Spanish • Weapon • Sword (2 Hands) Ataque en Pareja – Action: Once each round, if you have attacked with this weapon and moved this turn, make an attack with this weapon against an adjacent opponent at +2. A metallurgical analysis of El Cid’s sword “Tizona” showed that the blade was probably made in Moorish Cordoba. It can be seen today in the Museo del Ejército, Madrid. Illustration: Hugh Jamieson 5 83/100"
+    },
+    {
+      "id": "s5-008",
+      "source": "heard-2007",
+      "name": "TLACOCHTLI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "008",
+      "culture": "Aztec",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 +0 –2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mina",
+          "type": "static",
+          "text": "Before you make an attack roll with this weapon, you may discard this card. If you do, your attack roll gains +3, or the roll counts as doubles."
+        }
+      ],
+      "flavor": "Tipped with stone, copper or obsidian, these short spears were preferred in close combat, where longer weapons proved less effective.",
+      "illustrator": "Michael Komarick",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) TLACOCHTLI (2) +1 +0 +0 –2 � Aztec • Weapon • Polearm (1 Hand) Mina: Before you make an attack roll with this weapon, you may discard this card. If you do, your attack roll gains +3, or the roll counts as doubles. Tipped with stone, copper or obsidian, these short spears were preferred in close combat, where longer weapons proved less effective. Illustration: Michael Komarick 5 08/100"
+    },
+    {
+      "id": "s5-033",
+      "source": "heard-2007",
+      "name": "USUMIDORI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 5,
+      "collector": "033",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Subayai Kougeki",
+          "type": "static",
+          "text": "When you hit with this weapon, the attacker and defender each roll one die and add his or her warrior’s experience. If your total is higher, you gain +1 speed on your next turn."
+        }
+      ],
+      "flavor": "Yoritomo gave Usumidori to his brother, Yoshitsune, at a time when katana had just started to become popular among the samurai.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) USUMIDORI (2) +2 +0 � –1 Japanese • Weapon • Sword (2 Hands) Subayai Kougeki: When you hit with this weapon, the attacker and defender each roll one die and add his or her warrior’s experience. If your total is higher, you gain +1 speed on your next turn. Yoritomo gave Usumidori to his brother, Yoshitsune, at a time when katana had just started to become popular among the samurai. Illustration: Ezra Tucker 5 33/100"
+    },
+    {
+      "id": "s5-034",
+      "source": "heard-2007",
+      "name": "AKAITOODOSHI-YOROI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "034",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso",
+        "Leg",
+        "Arm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Seikaku na Soubi",
+          "type": "static",
+          "text": "If you have a sword in play, your attack and defense rolls gain +1."
+        }
+      ],
+      "flavor": "It was said that Yoshitsune wore this yoroi at the battle of Danno-Ura, where he performed the famous “hassotobi”, a great leap over 8 boats.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) AKAITOODOSHI-YOROI Japanese • Armor • Torso • Leg • Arm Seikaku na Soubi: If you have a sword in play, your attack and defense rolls gain +1. It was said that Yoshitsune wore this yoroi at the battle of Danno-Ura, where he performed the famous “hassotobi”, a great leap over 8 boats. Illustration: Ezra Tucker 5 34/100"
+    },
+    {
+      "id": "s5-039",
+      "source": "heard-2007",
+      "name": "AKAZONAE",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "039",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso",
+        "Leg",
+        "Arm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Azayaka na Aka",
+          "type": "static",
+          "text": "At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round."
+        }
+      ],
+      "flavor": "The soldiers of Sanada Nobushige’s army armored themselves entirely in red during their war against Tokugawa Ieyasu.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) AKAZONAE Japanese • Armor • Torso • Leg • Arm Azayaka na Aka: At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round. The soldiers of Sanada Nobushige’s army armored themselves entirely in red during their war against Tokugawa Ieyasu. Illustration: Matthew Armstrong 5 39/100"
+    },
+    {
+      "id": "s5-054",
+      "source": "heard-2007",
+      "name": "AL DERRA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "054",
+      "culture": "Saracen",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Darb",
+          "type": "static",
+          "text": "When you are hit, if the defense roll plus three is greater than the attack roll, deal 1 damage to the attacker. As well as being more resilient, a shield with a boss could be used to bash an opponent more effectively than one without."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) AL DERRA Saracen • Armor • Shield (1 Hand) Darb: When you are hit, if the defense roll plus three is greater than the attack roll, deal 1 damage to the attacker. As well as being more resilient, a shield with a boss could be used to bash an opponent more effectively than one without. Illustration: William O’Connor 5 54/100"
+    },
+    {
+      "id": "s5-089",
+      "source": "heard-2007",
+      "name": "ARMADURA COMPLETA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "089",
+      "culture": "Spanish",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Irrompible",
+          "type": "reveal",
+          "text": "For this round, weapon attacks made against you deal –2 damage, to a minimum of 0."
+        }
+      ],
+      "flavor": "The Grand Master of Santiago, Alonso de Cárdenas, praised the splendor of Córdoba’s armor, saying he was conspicuous on the field due both to his bravery and the armor’s magnificence.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) ARMADURA COMPLETA Spanish • Armor • Torso Irrompible – Reveal: For this round, weapon attacks made against you deal –2 damage, to a minimum of 0. The Grand Master of Santiago, Alonso de Cárdenas, praised the splendor of Córdoba’s armor, saying he was conspicuous on the field due both to his bravery and the armor’s magnificence. Illustration: Drew Baker 5 89/100"
+    },
+    {
+      "id": "s5-069",
+      "source": "heard-2007",
+      "name": "BARGUSTUWAN",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "069",
+      "culture": "Saracen",
+      "traits": [
+        "Armor",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Derra Elhosan",
+          "type": "static",
+          "text": "Your cavalry cards cannot be discarded by an opponent’s card abilities."
+        },
+        {
+          "name": "Amr Belmotarada",
+          "type": "static",
+          "text": "Once each round, after an opponent uses an action ability, or moves out of a space in your warrior’s basic attack grid, you may move one space."
+        }
+      ],
+      "flavor": "A simple, quilted covering, the bargustuwan provided protection for a mount while remaining sufficiently light as to leave the horse’s maneuverability unhindered.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) BARGUSTUWAN Saracen • Armor • Cavalry Derra Elhosan: Your cavalry cards cannot be discarded by an opponent’s card abilities. Amr Belmotarada: Once each round, after an opponent uses an action ability, or moves out of a space in your warrior’s basic attack grid, you may move one space. A simple, quilted covering, the bargustuwan provided protection for a mount while remaining sufficiently light as to leave the horse’s maneuverability unhindered. Illustration: Miguel Combra 5 69/100"
+    },
+    {
+      "id": "s5-004",
+      "source": "heard-2007",
+      "name": "CHIMALLI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "004",
+      "culture": "Aztec",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Machtitenahuatiliztli",
+          "type": "static",
+          "text": "When you are attacked, if you are in the attacker’s basic attack grid, add the modifier from your space in the attacker’s basic attack grid to your defense roll."
+        }
+      ],
+      "flavor": "Aztec shields grew in beauty and extravagance with military rank. Of the eight surviving pieces of Aztec featherwork, five are chimalli.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) CHIMALLI Aztec • Armor • Shield (1 Hand) Machtitenahuatiliztli: When you are attacked, if you are in the attacker’s basic attack grid, add the modifier from your space in the attacker’s basic attack grid to your defense roll. Aztec shields grew in beauty and extravagance with military rank. Of the eight surviving pieces of Aztec featherwork, five are chimalli. Illustration: Randy Gallegos 5 04/100"
+    },
+    {
+      "id": "s5-019",
+      "source": "heard-2007",
+      "name": "COPILLI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "019",
+      "culture": "Aztec",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ixcuepa",
+          "type": "static",
+          "text": "Twice each turn, if you have previously been hit this turn, you may re-roll your defense roll."
+        }
+      ],
+      "flavor": "This feather crown, made of gold and over 400 quetzal feathers, was a symbol of kingship that bore strong spiritual significance.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) COPILLI Aztec • Armor • Head Ixcuepa: Twice each turn, if you have previously been hit this turn, you may re-roll your defense roll. This feather crown, made of gold and over 400 quetzal feathers, was a symbol of kingship that bore strong spiritual significance. Illustration: RK Post 5 19/100"
+    },
+    {
+      "id": "s5-084",
+      "source": "heard-2007",
+      "name": "COTA CORTA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "084",
+      "culture": "Spanish",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Afortunado",
+          "type": "static",
+          "text": "When you are attacked with a weapon, if you have less experience than the attacker, your defense roll gains +1."
+        },
+        {
+          "name": "Malla Resistente",
+          "type": "static",
+          "text": "While you are in an opponent’s basic attack grid and he or she is not in your basic attack grid, your defense rolls gain +2."
+        }
+      ],
+      "flavor": "“El Cid Campeador” is derived from the Andalusi-Arabic term “al-sidi,” meaning “sir” or “lord” and the Spanish “el campeador”, meaning “army champion”.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) COTA CORTA Spanish • Armor • Torso Afortunado: When you are attacked with a weapon, if you have less experience than the attacker, your defense roll gains +1. Malla Resistente: While you are in an opponent’s basic attack grid and he or she is not in your basic attack grid, your defense rolls gain +2. “El Cid Campeador” is derived from the Andalusi-Arabic term “al-sidi,” meaning “sir” or “lord” and the Spanish “el campeador”, meaning “army champion”. Illustration: Hugh Jamieson 5 84/100"
+    },
+    {
+      "id": "s5-014",
+      "source": "heard-2007",
+      "name": "CUAUHCUACHIMALLI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "014",
+      "culture": "Aztec",
+      "traits": [
+        "Armor",
+        "Torso",
+        "Head",
+        "Mystic"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tlamatiliztli",
+          "type": "reveal",
+          "text": "You gain +2 experience."
+        },
+        {
+          "name": "Cuauhchicauhtiliztli",
+          "type": "static",
+          "text": "If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn."
+        }
+      ],
+      "flavor": "Worn by the Cuauhcuauhtin, or Eagle Warriors, these helmets denoted a warrior of great prowess - and high social and military rank – who had captured many enemies.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) CUAUHCUACHIMALLI Aztec • Armor • Torso • Head • Mystic Tlamatiliztli – Reveal: You gain +2 experience. Cuauhchicauhtiliztli: If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn. Worn by the Cuauhcuauhtin, or Eagle Warriors, these helmets denoted a warrior of great prowess - and high social and military rank – who had captured many enemies. Illustration: Alan Pollack 5 14/100"
+    },
+    {
+      "id": "s5-079",
+      "source": "heard-2007",
+      "name": "ESCUDO DE CARLOS V",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "079",
+      "culture": "Spanish",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mantener Terreno",
+          "type": "static",
+          "text": "When you are attacked, the attacker cannot re-roll any die. Reduce the damage of all critical hits made against you to 1."
+        }
+      ],
+      "flavor": "Since 1438, and with the exception of Charles VII in 1742, the electors of the Holy Roman Empire always chose an emperor from the Hapsburg dynasty, to the extent that the title became akin to a family fiefdom.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) ESCUDO DE CARLOS V Spanish • Armor • Shield (1 Hand) Mantener Terreno: When you are attacked, the attacker cannot re-roll any die. Reduce the damage of all critical hits made against you to 1. Since 1438, and with the exception of Charles VII in 1742, the electors of the Holy Roman Empire always chose an emperor from the Hapsburg dynasty, to the extent that the title became akin to a family fiefdom. Illustration: Christopher Appel 5 79/100"
+    },
+    {
+      "id": "s5-099",
+      "source": "heard-2007",
+      "name": "FERVOR RELIGIOSO",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "099",
+      "culture": "Spanish",
+      "traits": [
+        "Armor",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Impulso Vital",
+          "type": "static",
+          "text": "Opponents may not use abilities on items or mystic cards."
+        }
+      ],
+      "flavor": "Devout in the extreme, Isabella and Ferdinand embarked on the spiritual unification of Spain, garnering the title of “Catholic Monarchs” from Pope Alexander VI.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) FERVOR RELIGIOSO Spanish • Armor • Ability Impulso Vital: Opponents may not use abilities on items or mystic cards. Devout in the extreme, Isabella and Ferdinand embarked on the spiritual unification of Spain, garnering the title of “Catholic Monarchs” from Pope Alexander VI. Illustration: David Ho 5 99/100"
+    },
+    {
+      "id": "s5-064",
+      "source": "heard-2007",
+      "name": "GABAL EL TAUR",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "064",
+      "culture": "Saracen",
+      "traits": [
+        "Armor",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Lammah",
+          "type": "static",
+          "text": "Once each turn, you may re-roll one die of one of your defense rolls. If you have another cavalry card in play, once each round, you may re-roll an opponent’s defense roll. If you have two cards of the same type in play, discard this card."
+        }
+      ],
+      "flavor": "To be as swift as the wind was to be equally as uncatchable.",
+      "illustrator": "Chris Seaman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) GABAL EL TAUR Saracen • Armor • Cavalry Lammah: Once each turn, you may re-roll one die of one of your defense rolls. If you have another cavalry card in play, once each round, you may re-roll an opponent’s defense roll. If you have two cards of the same type in play, discard this card. To be as swift as the wind was to be equally as uncatchable. Illustration: Chris Seaman 5 64/100"
+    },
+    {
+      "id": "s5-029",
+      "source": "heard-2007",
+      "name": "HAORI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "029",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Gishiki",
+          "type": "reveal",
+          "text": "Gain +3 experience."
+        },
+        {
+          "name": "Dentou",
+          "type": "static",
+          "text": "Your other support cards gain +2 initiative. Opponents cannot reduce damage from your basic attacks."
+        }
+      ],
+      "flavor": "All the men of Shinsengumi wore this robe as a uniform. So terrifying was the reputation of the group that even the sight of the uniform was enough to cause fear.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) HAORI Japanese • Armor • Torso Gishiki – Reveal: Gain +3 experience. Dentou: Your other support cards gain +2 initiative. Opponents cannot reduce damage from your basic attacks. All the men of Shinsengumi wore this robe as a uniform. So terrifying was the reputation of the group that even the sight of the uniform was enough to cause fear. Illustration: Miguel Combra 5 29/100"
+    },
+    {
+      "id": "s5-094",
+      "source": "heard-2007",
+      "name": "HOMBRERAS",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "094",
+      "culture": "Spanish",
+      "traits": [
+        "Armor",
+        "Arms"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Desviar",
+          "type": "static",
+          "text": "When you make an attack roll, if any die is a 1, your defense rolls on the defender’s next turn gain +1."
+        }
+      ],
+      "flavor": "Pauldrons were a development of earlier plate spaulders. Pauldrons tended to extend below the line of the armpit, and could cover areas of the back and chest as well.",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) HOMBRERAS Spanish • Armor • Arms Desviar: When you make an attack roll, if any die is a 1, your defense rolls on the defender’s next turn gain +1. Pauldrons were a development of earlier plate spaulders. Pauldrons tended to extend below the line of the armpit, and could cover areas of the back and chest as well. Illustration: Szucs Grégory 5 94/100"
+    },
+    {
+      "id": "s5-024",
+      "source": "heard-2007",
+      "name": "ICHCAHUIPILLI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "024",
+      "culture": "Aztec",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Cuachicpalli",
+          "type": "static",
+          "text": "Once each round, after you hit a warrior with a basic attack, your defense rolls against that warrior gain +2 until the start of your next turn."
+        }
+      ],
+      "flavor": "Ichcahuipilli armor was constructed from linen and was usually soaked in brine, which toughened it significantly against the blows of an enemy.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) ICHCAHUIPILLI Aztec • Armor • Torso Cuachicpalli: Once each round, after you hit a warrior with a basic attack, your defense rolls against that warrior gain +2 until the start of your next turn. Ichcahuipilli armor was constructed from linen and was usually soaked in brine, which toughened it significantly against the blows of an enemy. Illustration: Jim Nelson 5 24/100"
+    },
+    {
+      "id": "s5-074",
+      "source": "heard-2007",
+      "name": "KHAUZA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "074",
+      "culture": "Saracen",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Harab",
+          "type": "static",
+          "text": "When you would take damage from an opponent's card ability, if you have that amount or more experience, you may lose that much experience. If you do, reduce the damage to 0."
+        }
+      ],
+      "flavor": "Muslim armor continued to be primarily constructed from mail right up to the nineteenth century. The helmet was one of the few pieces, along with greaves and vambraces, where plate was preferred.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) KHAUZA Saracen • Armor • Head Harab: When you would take damage from an opponent's card ability, if you have that amount or more experience, you may lose that much experience. If you do, reduce the damage to 0. Muslim armor continued to be primarily constructed from mail right up to the nineteenth century. The helmet was one of the few pieces, along with greaves and vambraces, where plate was preferred. Illustration: James Ryman 5 74/100"
+    },
+    {
+      "id": "s5-049",
+      "source": "heard-2007",
+      "name": "KUSUBEKAWASUGAKEODOSHI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "049",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso",
+        "Leg",
+        "Arm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Juusoubi",
+          "type": "static",
+          "text": "Reduce the damage you take from opposing card abilities by 1, to a minimum of 0."
+        },
+        {
+          "name": "Fukushuu",
+          "type": "static",
+          "text": "After you are damaged by an opponent’s nonweapon support card, you may discard this card to discard the opposing card."
+        }
+      ],
+      "flavor": "Uesugi Kenshin’s armor was made from the most rare and precious materials, some of which were provided by Oda Nobunaga himself.",
+      "illustrator": "John Matson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KUSUBEKAWASUGAKEODOSHI Japanese • Armor • Torso • Leg • Arm Juusoubi: Reduce the damage you take from opposing card abilities by 1, to a minimum of 0. Fukushuu: After you are damaged by an opponent’s nonweapon support card, you may discard this card to discard the opposing card. Uesugi Kenshin’s armor was made from the most rare and precious materials, some of which were provided by Oda Nobunaga himself. Illustration: John Matson 5 49/100"
+    },
+    {
+      "id": "s5-009",
+      "source": "heard-2007",
+      "name": "OCELOCOLOHTIC",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "009",
+      "culture": "Aztec",
+      "traits": [
+        "Armor",
+        "Torso",
+        "Head",
+        "Mystic"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tlamatiliztli",
+          "type": "reveal",
+          "text": "You gain +2 experience."
+        },
+        {
+          "name": "Oceloaacqui",
+          "type": "static",
+          "text": "After you are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next successful attack is a critical hit. Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome Aztec combatants."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Michael Komarick",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) OCELOCOLOHTIC Aztec • Armor • Torso • Head • Mystic Tlamatiliztli – Reveal: You gain +2 experience. Oceloaacqui: After you are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next successful attack is a critical hit. Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome Aztec combatants. Illustration: Michael Komarick 5 09/100"
+    },
+    {
+      "id": "s5-059",
+      "source": "heard-2007",
+      "name": "RAN",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "059",
+      "culture": "Saracen",
+      "traits": [
+        "Armor",
+        "Legs"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Talik",
+          "type": "static",
+          "text": "You may use an another Armor card in this game. While you have two Armor cards, your attack rolls gain +1."
+        },
+        {
+          "name": "Anied",
+          "type": "static",
+          "text": "If you have less speed than the attacker, attacks against you deal –1 damage, to a minimum of 1."
+        }
+      ],
+      "flavor": "Ran were cavalry leggings, worn over or above boots and tied to a belt fastened around the waist. Although usually made of leather, iron ran were not unheard of.",
+      "illustrator": "Jim Pavalec",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) RAN Saracen • Armor • Legs Talik: You may use an another Armor card in this game. While you have two Armor cards, your attack rolls gain +1. Anied: If you have less speed than the attacker, attacks against you deal –1 damage, to a minimum of 1. Ran were cavalry leggings, worn over or above boots and tied to a belt fastened around the waist. Although usually made of leather, iron ran were not unheard of. Illustration: Jim Pavalec 5 59/100"
+    },
+    {
+      "id": "s5-044",
+      "source": "heard-2007",
+      "name": "TOUSEIGUSOKU",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 5,
+      "collector": "044",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso",
+        "Leg",
+        "Arm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Danryosukei",
+          "type": "static",
+          "text": "After you are hit, your defense rolls gain +1 to a maximum of a +3 bonus from this card."
+        }
+      ],
+      "flavor": "The Sengoku Era saw great strides in the production of effective armor. Touseigusoku armor was lighter than previous armors and covered the entire body.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) TOUSEIGUSOKU Japanese • Armor • Torso • Leg • Arm Danryosukei: After you are hit, your defense rolls gain +1 to a maximum of a +3 bonus from this card. The Sengoku Era saw great strides in the production of effective armor. Touseigusoku armor was lighter than previous armors and covered the entire body. Illustration: Tyler Walpole 5 44/100"
+    },
+    {
+      "id": "s5-060",
+      "source": "heard-2007",
+      "name": "ALF LAYLA WA-LAYLA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "060",
+      "culture": "Saracen",
+      "traits": [
+        "Special",
+        "Tome"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hekaiat Kabl Elnaum",
+          "type": "static",
+          "text": "At the end of each round, name a card type. After initiative is determined next round, any opponent who revealed a card of the named type chooses to either discard the card or get –2 to all rolls that round."
+        }
+      ],
+      "flavor": "“The Thousand and One Nights” is the greatest collection of Arabian tales. With stories ranging from King Solomon to the kings of ancient Persia, from Alexander the Great to the great caliphs, wonders drip from its every page.",
+      "illustrator": "Jim Pavalec",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) ALF LAYLA WA-LAYLA Saracen • Special • Tome Hekaiat Kabl Elnaum: At the end of each round, name a card type. After initiative is determined next round, any opponent who revealed a card of the named type chooses to either discard the card or get –2 to all rolls that round. “The Thousand and One Nights” is the greatest collection of Arabian tales. With stories ranging from King Solomon to the kings of ancient Persia, from Alexander the Great to the great caliphs, wonders drip from its every page. Illustration: Jim Pavalec 5 60/100"
+    },
+    {
+      "id": "s5-085",
+      "source": "heard-2007",
+      "name": "BABIECA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "085",
+      "culture": "Spanish",
+      "traits": [
+        "Special",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Galope",
+          "type": "static",
+          "text": "Once each round, if you are a Wind warrior, after you are hit with an attack, you may move to any unoccupied space adjacent to the attacker."
+        }
+      ],
+      "flavor": "Pedro El Grande, El Cid’s godfather, gifted El Cid with his choice of horse. Upon choosing what seemed a weak and unsuitable stallion, Pedro exclaimed “Babieca!” meaning “Stupid!”",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) BABIECA Spanish • Special • Cavalry Galope: Once each round, if you are a Wind warrior, after you are hit with an attack, you may move to any unoccupied space adjacent to the attacker. Pedro El Grande, El Cid’s godfather, gifted El Cid with his choice of horse. Upon choosing what seemed a weak and unsuitable stallion, Pedro exclaimed “Babieca!” meaning “Stupid!” Illustration: Hugh Jamieson 5 85/100"
+    },
+    {
+      "id": "s5-080",
+      "source": "heard-2007",
+      "name": "BALLESTERO VASCO",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "080",
+      "culture": "Spanish",
+      "traits": [
+        "Special",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Desplegar",
+          "type": "reveal",
+          "text": "Place this card in any space in the arena. If an opposing warrior ever moves into this card’s space, discard this card."
+        },
+        {
+          "name": "Disparar",
+          "type": "action",
+          "text": "Once each round, make a basic attack at +2 against any opposing warrior not adjacent to this card’s space."
+        }
+      ],
+      "flavor": "The deployment of Basque crossbowmen proved decisive in many of Charles V’s battles against the French and Italians.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) BALLESTERO VASCO Spanish • Special • Ally Desplegar – Reveal: Place this card in any space in the arena. If an opposing warrior ever moves into this card’s space, discard this card. Disparar – Action: Once each round, make a basic attack at +2 against any opposing warrior not adjacent to this card’s space. The deployment of Basque crossbowmen proved decisive in many of Charles V’s battles against the French and Italians. Illustration: Christopher Appel 5 80/100"
+    },
+    {
+      "id": "s5-P32-100",
+      "source": "heard-2007",
+      "name": "CLÁIRSEACH BHORÚ",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "P32/100",
+      "culture": "Irish",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Comhcheol",
+          "type": "static",
+          "text": "If all of your face-up cards are Irish, your rolls gain +1."
+        }
+      ],
+      "flavor": "Although this harp was crafted in the fifteenth century, long after Ború died, the association between the two has been reinforced by hundreds of years of tradition. It is the national symbol of Ireland.",
+      "illustrator": "Michel Koch",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) CLÁIRSEACH BHORÚ Irish • Special • Item Comhcheol: If all of your face-up cards are Irish, your rolls gain +1. Although this harp was crafted in the fifteenth century, long after Ború died, the association between the two has been reinforced by hundreds of years of tradition. It is the national symbol of Ireland. Illustration: Michel Koch 5 P32/100"
+    },
+    {
+      "id": "s5-090",
+      "source": "heard-2007",
+      "name": "FORMACIÓN DE PIQUEROS",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "090",
+      "culture": "Spanish",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Piquero",
+          "type": "static",
+          "text": "Your attack rolls with polearms gain +2."
+        },
+        {
+          "name": "Trabajo en Equipo",
+          "type": "reveal",
+          "text": "You may choose another warrior. That warrior’s attacks with polearms deal +1 damage."
+        }
+      ],
+      "flavor": "The veterans of Córdoba’s Granadine campaign were used to fighting in loose formation. Retraining with pikes entailed a change in formation and tactics.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) FORMACIÓN DE PIQUEROS Spanish • Special • Ability Piquero: Your attack rolls with polearms gain +2. Trabajo en Equipo – Reveal: You may choose another warrior. That warrior’s attacks with polearms deal +1 damage. The veterans of Córdoba’s Granadine campaign were used to fighting in loose formation. Retraining with pikes entailed a change in formation and tactics. Illustration: Drew Baker 5 90/100"
+    },
+    {
+      "id": "s5-045",
+      "source": "heard-2007",
+      "name": "GUNPAI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "045",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Senjutsu",
+          "type": "static",
+          "text": "If you have an Armor card in play, your rolls that are doubles gain +2, and your opponent’s rolls that are doubles get –2."
+        }
+      ],
+      "flavor": "Samurai war leaders used the gunpai to direct their forces on the battlefield.",
+      "illustrator": "Tyler Walpole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) GUNPAI Japanese • Special • Item Senjutsu: If you have an Armor card in play, your rolls that are doubles gain +2, and your opponent’s rolls that are doubles get –2. Samurai war leaders used the gunpai to direct their forces on the battlefield. Illustration: Tyler Walpole 5 45/100"
+    },
+    {
+      "id": "s5-050",
+      "source": "heard-2007",
+      "name": "HATA BI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "050",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Senshi no Inori",
+          "type": "reveal",
+          "text": "If you took the last turn of the previous round and won initiative this round, your attack rolls this round that are less than 9 are set to 9."
+        },
+        {
+          "name": "Netsujou",
+          "type": "static",
+          "text": "You may use another Special card in this game."
+        }
+      ],
+      "flavor": "People thought of Uesugi Kenshin as a reincarnation of Bishamonten, from which the word “Bi” was derived.",
+      "illustrator": "John Matson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) HATA BI Japanese • Special • Item Senshi no Inori – Reveal: If you took the last turn of the previous round and won initiative this round, your attack rolls this round that are less than 9 are set to 9. Netsujou: You may use another Special card in this game. People thought of Uesugi Kenshin as a reincarnation of Bishamonten, from which the word “Bi” was derived. Illustration: John Matson 5 50/100"
+    },
+    {
+      "id": "s5-030",
+      "source": "heard-2007",
+      "name": "ISHIDA-SANYAKU",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "030",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Doutei",
+          "type": "static",
+          "text": "If your first action on any of your turns is to move, your attack rolls that turn gain +2."
+        }
+      ],
+      "flavor": "Toshizo sold medicine called “ishida-sanyaku” in his early days, and later used this trade as a disguise to cover his espionage activities.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) ISHIDA-SANYAKU Japanese • Special • Ability Doutei: If your first action on any of your turns is to move, your attack rolls that turn gain +2. Toshizo sold medicine called “ishida-sanyaku” in his early days, and later used this trade as a disguise to cover his espionage activities. Illustration: Miguel Combra 5 30/100"
+    },
+    {
+      "id": "s5-075",
+      "source": "heard-2007",
+      "name": "JABAL TARIQ",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "075",
+      "culture": "Saracen",
+      "traits": [
+        "Special",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mohattem Elamwag",
+          "type": "reveal",
+          "text": "Place this card in your warrior’s space."
+        },
+        {
+          "name": "Maazul",
+          "type": "static",
+          "text": "Attack rolls made against a warrior in this space cannot gain a larger bonus than the defender’s bonus to the defense roll."
+        }
+      ],
+      "flavor": "Tariq Ibn Ziyad began his conquest of Spain from this small mountain. Today, Jabal Tariq, the “Rock of Tariq,” is better known as Gibraltar.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) JABAL TARIQ Saracen • Special • Location Mohattem Elamwag – Reveal: Place this card in your warrior’s space. Maazul: Attack rolls made against a warrior in this space cannot gain a larger bonus than the defender’s bonus to the defense roll. Tariq Ibn Ziyad began his conquest of Spain from this small mountain. Today, Jabal Tariq, the “Rock of Tariq,” is better known as Gibraltar. Illustration: James Ryman 5 75/100"
+    },
+    {
+      "id": "s5-070",
+      "source": "heard-2007",
+      "name": "KHAIMAT HEMAYA MEN ALRAML",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "070",
+      "culture": "Saracen",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ghadab",
+          "type": "static",
+          "text": "Your attack rolls gain +2. When you attack, if the defense roll is doubles, discard this card after the attack."
+        }
+      ],
+      "flavor": "Adorned with his personal emblem, Saladin’s shield was as much a metaphor for the defense of his kingdom and Islam as it was a means of personal protection.",
+      "illustrator": "Miguel Combra",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) KHAIMAT HEMAYA MEN ALRAML Saracen • Special • Shield (1 Hand) Ghadab: Your attack rolls gain +2. When you attack, if the defense roll is doubles, discard this card after the attack. Adorned with his personal emblem, Saladin’s shield was as much a metaphor for the defense of his kingdom and Islam as it was a means of personal protection. Illustration: Miguel Combra 5 70/100"
+    },
+    {
+      "id": "s5-100",
+      "source": "heard-2007",
+      "name": "LA INQUISICIÓN ESPAÑOLA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "100",
+      "culture": "Spanish",
+      "traits": [
+        "Special",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Confiscar",
+          "type": "reveal",
+          "text": "You may discard a tome."
+        },
+        {
+          "name": "Perseguir",
+          "type": "static",
+          "text": "Once each turn, after an opposing warrior uses an ability on a Deity card, you may make a basic attack on that warrior at +2."
+        }
+      ],
+      "flavor": "Although the Treaty of Granada assured religious tolerance for Muslims, it was not long before they, along with the Jews, were persecuted for their beliefs and forced to convert or flee Spain.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) LA INQUISICIÓN ESPAÑOLA Spanish • Special • Quest Confiscar – Reveal: You may discard a tome. Perseguir: Once each turn, after an opposing warrior uses an ability on a Deity card, you may make a basic attack on that warrior at +2. Although the Treaty of Granada assured religious tolerance for Muslims, it was not long before they, along with the Jews, were persecuted for their beliefs and forced to convert or flee Spain. Illustration: David Ho 5 100/100"
+    },
+    {
+      "id": "s5-005",
+      "source": "heard-2007",
+      "name": "MECTAL",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "005",
+      "culture": "Aztec",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tlatzoyotiliztli",
+          "type": "static",
+          "text": "If an opponent has more than one card that requires hands to use, that player must discard one of those cards."
+        },
+        {
+          "name": "Tetzicoliztli",
+          "type": "static",
+          "text": "When any opponent attacks with a twohanded weapon, their attack roll gets –2."
+        }
+      ],
+      "flavor": "The number of captured enemies a warrior had accrued determined his military rank. Mectal were used to bind captives who had been immobilized during battle.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) MECTAL Aztec • Special • Item Tlatzoyotiliztli: If an opponent has more than one card that requires hands to use, that player must discard one of those cards. Tetzicoliztli: When any opponent attacks with a twohanded weapon, their attack roll gets –2. The number of captured enemies a warrior had accrued determined his military rank. Mectal were used to bind captives who had been immobilized during battle. Illustration: Randy Gallegos 5 05/100"
+    },
+    {
+      "id": "s5-065",
+      "source": "heard-2007",
+      "name": "MESBAH",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "065",
+      "culture": "Saracen",
+      "traits": [
+        "Special",
+        "Ally",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tassannut",
+          "type": "static",
+          "text": "When you attack, the total defense roll bonus cannot be greater than +1."
+        },
+        {
+          "name": "Sharr",
+          "type": "static",
+          "text": "When you roll doubles on any roll, your next roll gains +2."
+        }
+      ],
+      "flavor": "The “ships of the desert” were also put to more bellicose use. Against enemy cavalry, their smell and size often panicked enemy horses.",
+      "illustrator": "Chris Seaman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) MESBAH Saracen • Special • Ally • Cavalry Tassannut: When you attack, the total defense roll bonus cannot be greater than +1. Sharr: When you roll doubles on any roll, your next roll gains +2. The “ships of the desert” were also put to more bellicose use. Against enemy cavalry, their smell and size often panicked enemy horses. Illustration: Chris Seaman 5 65/100"
+    },
+    {
+      "id": "s5-010",
+      "source": "heard-2007",
+      "name": "OCELOMEH",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "010",
+      "culture": "Aztec",
+      "traits": [
+        "Special",
+        "Ally",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Necalilizicniuhtli",
+          "type": "action",
+          "text": "Once each turn, your next basic attack deals +2 damage."
+        },
+        {
+          "name": "Altepecaconeteyaotlani",
+          "type": "static",
+          "text": "If you are an Aztec warrior, your first attack roll each round gains +1."
+        }
+      ],
+      "flavor": "One of the two elite schools of Aztec warriors, only a soldier who had captured four enemies could become a Jaguar Warrior.",
+      "illustrator": "Michael Komarick",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) OCELOMEH Aztec • Special • Ally • Male Necalilizicniuhtli – Action: Once each turn, your next basic attack deals +2 damage. Altepecaconeteyaotlani: If you are an Aztec warrior, your first attack roll each round gains +1. One of the two elite schools of Aztec warriors, only a soldier who had captured four enemies could become a Jaguar Warrior. Illustration: Michael Komarick 5 10/100"
+    },
+    {
+      "id": "s5-095",
+      "source": "heard-2007",
+      "name": "ORO AZTECA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "095",
+      "culture": "Spanish",
+      "traits": [
+        "Special",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tentar",
+          "type": "static",
+          "text": "At the start of each round, roll one die. If the result is greater than the number of your face-down support cards, your attacks deal +1 damage that round."
+        }
+      ],
+      "flavor": "We wander here and there in our desolate poverty. We are mortal men. We have seen bloodshed and pain Where once we saw beauty and valor–Cantares Mexicanos",
+      "illustrator": "Szucs Grégory",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) ORO AZTECA Spanish • Special • Quest Tentar: At the start of each round, roll one die. If the result is greater than the number of your face-down support cards, your attacks deal +1 damage that round. We wander here and there in our desolate poverty. We are mortal men. We have seen bloodshed and pain Where once we saw beauty and valor–Cantares Mexicanos Illustration: Szucs Grégory 5 95/100"
+    },
+    {
+      "id": "s5-P35-100",
+      "source": "heard-2007",
+      "name": "OSTOVANY KHOUROSH",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "P35/100",
+      "culture": "Persian",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dod",
+          "type": "static",
+          "text": "Opponent’s weapon attacks use their warrior’s basic attack grid instead of the weapon’s attack grid."
+        }
+      ],
+      "flavor": "Mesopotamian kings traditionally enacted reforms upon taking power. This cylinder is the first written example, and so is often referred to as the first charter of human rights.",
+      "illustrator": "Michel Koch",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) OSTOVANY KHOUROSH Persian • Special • Item Dod: Opponent’s weapon attacks use their warrior’s basic attack grid instead of the weapon’s attack grid. Mesopotamian kings traditionally enacted reforms upon taking power. This cylinder is the first written example, and so is often referred to as the first charter of human rights. Illustration: Michel Koch 5 P35/100"
+    },
+    {
+      "id": "s5-055",
+      "source": "heard-2007",
+      "name": "REAAIA ELAHIIA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "055",
+      "culture": "Saracen",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Saleh",
+          "type": "static",
+          "text": "After you make a defense roll, you may discard this card or one of your Inspiration cards. If you do, set one die of the defense roll to any number. “Allah, I am not innocent, so forgive me. I am not mighty, so help me. And if Your mercy does not come to me, I will surely be of those destroyed.”"
+        }
+      ],
+      "flavor": "– Amr ibn al-A’as",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) REAAIA ELAHIIA Saracen • Special • Ability Saleh: After you make a defense roll, you may discard this card or one of your Inspiration cards. If you do, set one die of the defense roll to any number. “Allah, I am not innocent, so forgive me. I am not mighty, so help me. And if Your mercy does not come to me, I will surely be of those destroyed.” – Amr ibn al-A’as Illustration: William O’Connor 5 55/100"
+    },
+    {
+      "id": "s5-035",
+      "source": "heard-2007",
+      "name": "RIKUTOSANRYAKU",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "035",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Tome"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mittsu no Himtsu",
+          "type": "static",
+          "text": "After an attack or defense roll is made, you may discard this card. If you do, that player’s next roll of the same type is set to the value of the current roll –1."
+        }
+      ],
+      "flavor": "Derived from the Liutao Sanlue, a famous Zhou Dynasty book of Chinese political and military strategy, every word of the Rikutosanryaku was embedded in Yoshitsune’s mind.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) RIKUTOSANRYAKU Japanese • Special • Tome Mittsu no Himtsu: After an attack or defense roll is made, you may discard this card. If you do, that player’s next roll of the same type is set to the value of the current roll –1. Derived from the Liutao Sanlue, a famous Zhou Dynasty book of Chinese political and military strategy, every word of the Rikutosanryaku was embedded in Yoshitsune’s mind. Illustration: Ezra Tucker 5 35/100"
+    },
+    {
+      "id": "s5-040",
+      "source": "heard-2007",
+      "name": "SANADAMARU",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "040",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Toride",
+          "type": "static",
+          "text": "Once each game, after you are hit, if this card is in play or in your discard pile, you may have the hit deal –1 damage, to a minimum of 0. If this card is in your discard pile, you may not use this ability again this match."
+        }
+      ],
+      "flavor": "Sanadamaru was an invincible fort, built by Nobushige to the south of Osaka Castle. The Tokugawa army met defeat in every attempt to capture it.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) SANADAMARU Japanese • Special • Location Toride: Once each game, after you are hit, if this card is in play or in your discard pile, you may have the hit deal –1 damage, to a minimum of 0. If this card is in your discard pile, you may not use this ability again this match. Sanadamaru was an invincible fort, built by Nobushige to the south of Osaka Castle. The Tokugawa army met defeat in every attempt to capture it. Illustration: Matthew Armstrong 5 40/100"
+    },
+    {
+      "id": "s5-P31-100",
+      "source": "heard-2007",
+      "name": "SÍ AN BHRÚ",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "P31/100",
+      "culture": "Irish",
+      "traits": [
+        "Special",
+        "Location"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Éiric",
+          "type": "static",
+          "text": "After any other card is discarded, you may discard this card. If you do, your next attack roll is considered doubles."
+        },
+        {
+          "name": "Oidhreacht",
+          "type": "static",
+          "text": "Once each match, at the start of a game, if this card is in your discard pile, your warrior gains +2 experience."
+        }
+      ],
+      "flavor": "Built in around 3200 BC, this megalithic tomb only admits the light of the sun to its furthest depths at the dawn of each winter solstice.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) SÍ AN BHRÚ Irish • Special • Location Éiric: After any other card is discarded, you may discard this card. If you do, your next attack roll is considered doubles. Oidhreacht: Once each match, at the start of a game, if this card is in your discard pile, your warrior gains +2 experience. Built in around 3200 BC, this megalithic tomb only admits the light of the sun to its furthest depths at the dawn of each winter solstice. Illustration: Matthew Armstrong 5 P31/100"
+    },
+    {
+      "id": "s5-015",
+      "source": "heard-2007",
+      "name": "TEPONAZTLI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "015",
+      "culture": "Aztec",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Amoixnahuamiquitlalhuacuicatl",
+          "type": "static",
+          "text": "If you are not a Fire or Metal warrior, damage from attacks cannot be reduced."
+        },
+        {
+          "name": "Teoyohtica",
+          "type": "static",
+          "text": "You may use another Special card in this game."
+        }
+      ],
+      "flavor": "Made from the hollowed section of a hardwood tree, the Aztec war drum bore carvings of mystical symbols and was respected as a spiritual being exiled to earth.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) TEPONAZTLI Aztec • Special • Item (1 hand) Amoixnahuamiquitlalhuacuicatl: If you are not a Fire or Metal warrior, damage from attacks cannot be reduced. Teoyohtica: You may use another Special card in this game. Made from the hollowed section of a hardwood tree, the Aztec war drum bore carvings of mystical symbols and was respected as a spiritual being exiled to earth. Illustration: Alan Pollack 5 15/100"
+    },
+    {
+      "id": "s5-020",
+      "source": "heard-2007",
+      "name": "TLIMATLI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "020",
+      "culture": "Aztec",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Cempacca",
+          "type": "static",
+          "text": "Once each turn, after one or more of your dice are re-rolled, the roll gains +2."
+        }
+      ],
+      "flavor": "The tlimatli was a blue and white mantle that denoted the highranking status of its wearer. It was folded over the shoulders and fastened by a green clasp called a chalchivitl.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) TLIMATLI Aztec • Special • Item Cempacca: Once each turn, after one or more of your dice are re-rolled, the roll gains +2. The tlimatli was a blue and white mantle that denoted the highranking status of its wearer. It was folded over the shoulders and fastened by a green clasp called a chalchivitl. Illustration: RK Post 5 20/100"
+    },
+    {
+      "id": "s5-025",
+      "source": "heard-2007",
+      "name": "XOCHIVAOVOTL",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 5,
+      "collector": "025",
+      "culture": "Aztec",
+      "traits": [
+        "Special",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Aacquicualnezcayotl",
+          "type": "action",
+          "text": "Once each round, make a basic attack against an adjacent opponent at +1. If the attack hits, gain 1 life. Otherwise, your attack rolls this round gain +1. Instituted as a kind of ritual warfare, the “Flower Wars” were waged to gain captives, whose blood would fuel the sun and postpone the end of the world."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) XOCHIVAOVOTL Aztec • Special • Quest Aacquicualnezcayotl – Action: Once each round, make a basic attack against an adjacent opponent at +1. If the attack hits, gain 1 life. Otherwise, your attack rolls this round gain +1. Instituted as a kind of ritual warfare, the “Flower Wars” were waged to gain captives, whose blood would fuel the sun and postpone the end of the world. Illustration: Jim Nelson 5 25/100"
+    }
+  ]
+}

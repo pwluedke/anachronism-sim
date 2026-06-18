@@ -1,0 +1,4 @@
+# Runtime deps for scraper/parse_cards.py
+# The parser itself is stdlib-only; jsonschema is used only for the post-parse
+# validation pass (Issue #3 dependency) that asserts every emitted card is valid.
+jsonschema>=4.0

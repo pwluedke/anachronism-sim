@@ -1,0 +1,3579 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-17T00:00:00Z",
+  "source": "heard-2007",
+  "set": 2,
+  "card_count": 100,
+  "review_count": 7,
+  "cards": [
+    {
+      "id": "s2-001",
+      "source": "heard-2007",
+      "name": "ALFRED THE GREAT",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 2,
+      "collector": "001",
+      "culture": "Briton",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Scelden Feohte",
+          "type": "static",
+          "text": "At the start of each round, name an ability that gives you a bonus to an attack roll. For that round, that ability gives all of your defense rolls a +1 bonus instead of the attack roll bonus."
+        }
+      ],
+      "flavor": "In addition to repeatedly defeating the invading Danish Vikings, King Alfred the Great pushed for better education and help to make learning important in the lives of his people. He is the only English king to ever be given the title of “the Great.”",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ALFRED THE GREAT (Earth) 8 Life 3 Speed +0 4 Experience +0 � +0 1 Damage Briton • Warrior • Male Scelden Feohte: At the start of each round, name an ability that gives you a bonus to an attack roll. For that round, that ability gives all of your defense rolls a +1 bonus instead of the attack roll bonus. In addition to repeatedly defeating the invading Danish Vikings, King Alfred the Great pushed for better education and help to make learning important in the lives of his people. He is the only English king to ever be given the title of “the Great.” Illustration: Matthew Armstrong 2 01/100"
+    },
+    {
+      "id": "s2-076",
+      "source": "heard-2007",
+      "name": "ATTILA THE HUN",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 2,
+      "collector": "076",
+      "culture": "Mongol",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Noyarqal",
+          "type": "static",
+          "text": "After any player attacks, your attack rolls this round gain +1, to a maximum of +6."
+        }
+      ],
+      "flavor": "Merciless leader of the Huns against the Romans, Visigoths and all who stood before them, Attila was known as the Scourge of God.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ATTILA THE HUN (Metal) 7 Life 3 Speed +0 +1 5 Experience � +0 1 Damage Mongol • Warrior • Male Noyarqal: After any player attacks, your attack rolls this round gain +1, to a maximum of +6. Merciless leader of the Huns against the Romans, Visigoths and all who stood before them, Attila was known as the Scourge of God. Illustration: Hugh Jamieson 2 76/100"
+    },
+    {
+      "id": "s2-006",
+      "source": "heard-2007",
+      "name": "BOUDICCA",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 2,
+      "collector": "006",
+      "culture": "Briton",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Swift Swidnes",
+          "type": "static",
+          "text": "While you have a face-up cavalry card, your attack rolls gain +1 and your support cards gain +2 initiative."
+        }
+      ],
+      "flavor": "After she and her two daughters were gravely humiliated by the Romans, Boudicca led a revolt of the Iceni and several other Celtic tribes against the Roman empire. Her forces burned and destroyed the three major towns of Londinium, Verulamium and Camulodunum before being defeated by the Roman military governor, Suetonius Paullinus.",
+      "illustrator": "R. K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "BOUDICCA (Fire) 8 Life 3 Speed +0 +1 4 Experience +0 � 1 Damage Briton • Warrior • Female Swift Swidnes: While you have a face-up cavalry card, your attack rolls gain +1 and your support cards gain +2 initiative. After she and her two daughters were gravely humiliated by the Romans, Boudicca led a revolt of the Iceni and several other Celtic tribes against the Roman empire. Her forces burned and destroyed the three major towns of Londinium, Verulamium and Camulodunum before being defeated by the Roman military governor, Suetonius Paullinus. Illustration: R. K. Post 2 06/100"
+    },
+    {
+      "id": "s2-051",
+      "source": "heard-2007",
+      "name": "CLEOPATRA VII",
+      "card_type": "warrior",
+      "element": "Aether",
+      "set": 2,
+      "collector": "051",
+      "culture": "Egyptian",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 � +2",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "‘fd",
+          "type": "static",
+          "text": "At the start of each round, if there is an opposing male warrior, you may move one space."
+        }
+      ],
+      "flavor": "Born into a crumbling Egypt slowly losing ground to the expanding Roman Empire, Cleopatra used every tool at her disposal to maintain independence and return her nation to the glory that it once held.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CLEOPATRA VII (Aether) 6 Life 3 Speed +2 8 Experience � 1 Damage +2 Egyptian • Warrior • Female ‘fd: At the start of each round, if there is an opposing male warrior, you may move one space. Born into a crumbling Egypt slowly losing ground to the expanding Roman Empire, Cleopatra used every tool at her disposal to maintain independence and return her nation to the glory that it once held. Illustration: Terese Nielsen 2 51/100"
+    },
+    {
+      "id": "s2-081",
+      "source": "heard-2007",
+      "name": "GENGHIS KHAN",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 2,
+      "collector": "081",
+      "culture": "Mongol",
+      "traits": [
+        "Warrior",
+        "Male/Cavalry"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+2 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Erkesiyekü ary-a",
+          "type": "static",
+          "text": "Your attack rolls gain +1 when attacking an opponent without a face-up cavalry card."
+        }
+      ],
+      "flavor": "Genghis Khan, the inspired leader of a tribe of steppe nomads, led his people to establish the Mongol Empire, the largest land empire in the history of mankind.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "GENGHIS KHAN (Metal) 7 Life 3 Speed +2 +2 6 Experience � 1 Damage Mongol • Warrior • Male/Cavalry Erkesiyekü ary-a: Your attack rolls gain +1 when attacking an opponent without a face-up cavalry card. Genghis Khan, the inspired leader of a tribe of steppe nomads, led his people to establish the Mongol Empire, the largest land empire in the history of mankind. Illustration: Raven Mimura 2 81/100"
+    },
+    {
+      "id": "s2-026",
+      "source": "heard-2007",
+      "name": "GUAN YU",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 2,
+      "collector": "026",
+      "culture": "Chinese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Shen su",
+          "type": "static",
+          "text": "If you hit with two basic attacks in a single turn, you immediately gain +1 speed for the rest of the game."
+        }
+      ],
+      "flavor": "Born a commoner, Guan Yu rose by sheer ability to become one of the most revered military figures in Chinese history. He was instrumental in helping his friend Liu Bei, establish the Su Han kingdom in the province of Schuan.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "GUAN YU (Wood) 7 Life 3 Speed +0 +0 6 Experience +0 � 1 Damage Chinese • Warrior • Male Shen su: If you hit with two basic attacks in a single turn, you immediately gain +1 speed for the rest of the game. Born a commoner, Guan Yu rose by sheer ability to become one of the most revered military figures in Chinese history. He was instrumental in helping his friend Liu Bei, establish the Su Han kingdom in the province of Schuan. Illustration: Rob Alexander 2 26/100"
+    },
+    {
+      "id": "s2-056",
+      "source": "heard-2007",
+      "name": "HOREMHEB THE RESTORER",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 2,
+      "collector": "056",
+      "culture": "Egyptian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Pr‘’",
+          "type": "static",
+          "text": "For each Aether card in play, your attack and defense rolls gain +1 and your weapon attacks deal +1 damage."
+        }
+      ],
+      "flavor": "Ascending to become pharaoh after Tutankhamun’s death, Horemheb returned the old gods to their rightful place of worship.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "HOREMHEB THE RESTORER (Metal) 7 Life 3 Speed +0 +0 6 Experience � +0 1 Damage Egyptian • Warrior • Male Pr‘’: For each Aether card in play, your attack and defense rolls gain +1 and your weapon attacks deal +1 damage. Ascending to become pharaoh after Tutankhamun’s death, Horemheb returned the old gods to their rightful place of worship. Illustration: Jim Nelson 2 56/100"
+    },
+    {
+      "id": "s2-031",
+      "source": "heard-2007",
+      "name": "HUA MULAN",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 2,
+      "collector": "031",
+      "culture": "Chinese",
+      "traits": [
+        "Warrior",
+        "Female/Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 � +1 +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Jing tong qiang",
+          "type": "static",
+          "text": "While you have a polearm, your attack rolls gain +1."
+        },
+        {
+          "name": "Su Di",
+          "type": "static",
+          "text": "At the start of the game, if there is an opposing Mongol warrior, gain 2 life and +6 experience."
+        }
+      ],
+      "flavor": "Famous for disguising herself as a man, Mulan distinguished herself as a soldier and was summoned to court by the emperor. Though he wished to appoint her to high office as a reward, Mulan asked only for a horse to return home.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "HUA MULAN (Water) 7 Life 3 Speed +0 4 Experience � +1 1 Damage +0 Chinese • Warrior • Female/Male Jing tong qiang: While you have a polearm, your attack rolls gain +1. Su Di: At the start of the game, if there is an opposing Mongol warrior, gain 2 life and +6 experience. Famous for disguising herself as a man, Mulan distinguished herself as a soldier and was summoned to court by the emperor. Though he wished to appoint her to high office as a reward, Mulan asked only for a horse to return home. Illustration: James Ryman 2 31/100"
+    },
+    {
+      "id": "s2-036",
+      "source": "heard-2007",
+      "name": "JIE THE TYRANT",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 2,
+      "collector": "036",
+      "culture": "Chinese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 4,
+      "damage": 2,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 � +0 +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ba nue zhi li",
+          "type": "static",
+          "text": "After you hit a warrior with a critical basic attack, take 1 damage."
+        }
+      ],
+      "flavor": "The last king of the Xia dynasty and originally a great king and conqueror, Jie allowed extravagance and decadance to bring about the ruin of his entire kingdom.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "JIE THE TYRANT (Fire) 6 Life 3 Speed 4 Experience +0 � +0 2 Damage +0 Chinese • Warrior • Male Ba nue zhi li: After you hit a warrior with a critical basic attack, take 1 damage. The last king of the Xia dynasty and originally a great king and conqueror, Jie allowed extravagance and decadance to bring about the ruin of his entire kingdom. Illustration: David Ho 2 36/100"
+    },
+    {
+      "id": "s2-086",
+      "source": "heard-2007",
+      "name": "KHUTULUN",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 2,
+      "collector": "086",
+      "culture": "Mongol",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +2 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Itegel",
+          "type": "static",
+          "text": "After you are missed by a basic attack, gain 1 life."
+        }
+      ],
+      "flavor": "The niece of Kublai Khan, Khutulun never gave her hand in marriage, insisting that each suitor best her in a wrestling match to win her affections.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "KHUTULUN (Fire) 6 Life 3 Speed +0 8 Experience +2 � –1 1 Damage Mongol • Warrior • Female Itegel: After you are missed by a basic attack, gain 1 life. The niece of Kublai Khan, Khutulun never gave her hand in marriage, insisting that each suitor best her in a wrestling match to win her affections. Illustration: Steven Belledin 2 86/100"
+    },
+    {
+      "id": "s2-011",
+      "source": "heard-2007",
+      "name": "KING ARTHUR",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 2,
+      "collector": "011",
+      "culture": "Briton",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Poer of de Stan",
+          "type": "static",
+          "text": "During the first round of the game, your attack rolls gain +3."
+        }
+      ],
+      "flavor": "The personality of Arthur is unknown and unknowable. But he was a real as Alfred the Great or William the Conqueror; his impact upon future ages mattered as much, or more so. -John Morris/The Age of Arthur",
+      "illustrator": "Michael Komark",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "KING ARTHUR (Metal) 8 Life 3 Speed +0 +1 3 Experience � +0 1 Damage Briton • Warrior • Male Poer of de Stan: During the first round of the game, your attack rolls gain +3. The personality of Arthur is unknown and unknowable. But he was a real as Alfred the Great or William the Conqueror; his impact upon future ages mattered as much, or more so. -John Morris/The Age of Arthur Illustration: Michael Komark 2 11/100"
+    },
+    {
+      "id": "s2-091",
+      "source": "heard-2007",
+      "name": "KUBLAI KHAN",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 2,
+      "collector": "091",
+      "culture": "Mongol",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Jabsartabal labtai ilaydan-a",
+          "type": "static",
+          "text": "Your attack rolls gain +1 for each of the defender’s support cards that are a different culture than the defender."
+        }
+      ],
+      "flavor": "Grandson of Genghis Khan, Kublai established the foundations of a grand empire in China and Mongolia. He hosted Marco Polo, who returned to Europe with amazing stories of the mysterious East.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "KUBLAI KHAN (Wood) 8 Life 3 Speed +0 +0 7 Experience +0 � 1 Damage Mongol • Warrior • Male Jabsartabal labtai ilaydan-a: Your attack rolls gain +1 for each of the defender’s support cards that are a different culture than the defender. Grandson of Genghis Khan, Kublai established the foundations of a grand empire in China and Mongolia. He hosted Marco Polo, who returned to Europe with amazing stories of the mysterious East. Illustration: John Donahue 2 91/100"
+    },
+    {
+      "id": "s2-061",
+      "source": "heard-2007",
+      "name": "RAMSES II",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 2,
+      "collector": "061",
+      "culture": "Egyptian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+3 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Xdb",
+          "type": "action",
+          "text": "If you have not made an attack this turn, make an attack with double the bonus from the appropriate attack grid. Your other attack rolls this round may not be increased by abilities or attack grids."
+        }
+      ],
+      "flavor": "Ramses the Great ruled Egypt for over 60 years, building temples all along the Nile and creating statues that have stood for thousands of years.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "RAMSES II (Fire) 7 Life 3 Speed +3 +2 7 Experience � 1 Damage Egyptian • Warrior • Male Xdb – Action: If you have not made an attack this turn, make an attack with double the bonus from the appropriate attack grid. Your other attack rolls this round may not be increased by abilities or attack grids. Ramses the Great ruled Egypt for over 60 years, building temples all along the Nile and creating statues that have stood for thousands of years. Illustration: Michael Komarck 2 61/100"
+    },
+    {
+      "id": "s2-016",
+      "source": "heard-2007",
+      "name": "RICHARD THE LIONHEART",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 2,
+      "collector": "016",
+      "culture": "Briton",
+      "traits": [
+        "Warrior",
+        "Male/Cavalry"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Fixe Strican",
+          "type": "static",
+          "text": "After you miss an attack, your next attack roll gains +2."
+        }
+      ],
+      "flavor": "Also know as “The Absent King,” during Richard the Lionheart’s ten year reign as the King of England, he spent less than six months in England. The rest of his reign was spent fighting in France, Cyprus and in the Third Crusade against the Sarcacen leader Saladin.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "RICHARD THE LIONHEART (Earth) 8 Life 3 Speed +0 5 Experience +1 � +0 1 Damage Briton • Warrior • Male/Cavalry Fixe Strican: After you miss an attack, your next attack roll gains +2. Also know as “The Absent King,” during Richard the Lionheart’s ten year reign as the King of England, he spent less than six months in England. The rest of his reign was spent fighting in France, Cyprus and in the Third Crusade against the Sarcacen leader Saladin. Illustration: Greg Staples 2 16/100"
+    },
+    {
+      "id": "s2-021",
+      "source": "heard-2007",
+      "name": "ROBIN HOOD",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 2,
+      "collector": "021",
+      "culture": "Briton",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 +1 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Treowe Ame",
+          "type": "static",
+          "text": "You gain +3 experience and your attack rolls gain +1 if you have a ranged weapon."
+        }
+      ],
+      "flavor": "Becoming the basis of many legends, the earliest Robin Hood was a yeoman, not a wronged nobleman, who haunted Barnsdale Forest.",
+      "illustrator": "Jeremy Jarvis",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ROBIN HOOD (Wind) 7 Life 3 Speed –1 +1 –1 4 Experience � 1 Damage Briton • Warrior • Male Treowe Ame: You gain +3 experience and your attack rolls gain +1 if you have a ranged weapon. Becoming the basis of many legends, the earliest Robin Hood was a yeoman, not a wronged nobleman, who haunted Barnsdale Forest. Illustration: Jeremy Jarvis 2 21/100"
+    },
+    {
+      "id": "s2-066",
+      "source": "heard-2007",
+      "name": "SETI I",
+      "card_type": "warrior",
+      "element": "Aether",
+      "set": 2,
+      "collector": "066",
+      "culture": "Egyptian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 +1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mnch n",
+          "type": "static",
+          "text": "You may have two inspirations in play. While you do, your basic attacks deal +1 damage."
+        }
+      ],
+      "flavor": "Seti I waged aggressive campaigns against the Hittites and Libyans, reclaiming much of Egypt’s prestige abroad. He was eventually succeeded by his son, Ramses II.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SETI I (Aether) 7 Life 3 Speed +0 +0 6 Experience +1 � –1 1 Damage Egyptian • Warrior • Male Mnch n: You may have two inspirations in play. While you do, your basic attacks deal +1 damage. Seti I waged aggressive campaigns against the Hittites and Libyans, reclaiming much of Egypt’s prestige abroad. He was eventually succeeded by his son, Ramses II. Illustration: Alan Pollack 2 66/100"
+    },
+    {
+      "id": "s2-071",
+      "source": "heard-2007",
+      "name": "SRQT, THE SCORPION KING",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 2,
+      "collector": "071",
+      "culture": "Egyptian",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 +0 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sh’w r wrt",
+          "type": "static",
+          "text": "Once per game, after you make a roll, you may change one of the dice to a six."
+        }
+      ],
+      "flavor": "Legendary even to the pharaohs of the old kingdoms, Srqt conquered all of Egypt centuries before the great dynasties",
+      "illustrator": "Thomas M. Baxa",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SRQT, THE SCORPION KING (Earth) 7 Life 3 Speed –1 +0 7 Experience +1 � 1 Damage Egyptian • Warrior • Male Sh’w r wrt: Once per game, after you make a roll, you may change one of the dice to a six. Legendary even to the pharaohs of the old kingdoms, Srqt conquered all of Egypt centuries before the great dynasties Illustration: Thomas M. Baxa 2 71/100"
+    },
+    {
+      "id": "s2-096",
+      "source": "heard-2007",
+      "name": "SUBEDEI",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 2,
+      "collector": "096",
+      "culture": "Mongol",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sain-tai tal-a-yi erikü",
+          "type": "static",
+          "text": "Once per round, when making an attack roll, you may re-roll one die of the attack roll. If the new result of the die is the same as the old result, deal one damage to the defending warrior."
+        }
+      ],
+      "flavor": "Genghis Khan's most brilliant general, the renowned Subedei crushed the Kwarazmian Empire and moved on to subjugate the Russians and the Cumans.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SUBEDEI (Fire) 7 Life 3 Speed –1 +1 7 Experience +0 � 1 Damage Mongol • Warrior • Male Sain-tai tal-a-yi erikü: Once per round, when making an attack roll, you may re-roll one die of the attack roll. If the new result of the die is the same as the old result, deal one damage to the defending warrior. Genghis Khan's most brilliant general, the renowned Subedei crushed the Kwarazmian Empire and moved on to subjugate the Russians and the Cumans. Illustration: Randy Gallegos 2 96/100"
+    },
+    {
+      "id": "s2-041",
+      "source": "heard-2007",
+      "name": "SUN TZU",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 2,
+      "collector": "041",
+      "culture": "Chinese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 � +0 +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Wu xing de si lue",
+          "type": "action",
+          "text": "Gain +1 speed on your next turn."
+        }
+      ],
+      "flavor": "Author of The Art of War, Sun Tzu’s military genius has lived on for over 2 millennia.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SUN TZU (Wind) 8 Life 3 Speed –1 7 Experience � 1 Damage +0 +0 Chinese • Warrior • Male Wu xing de si lue – Action: Gain +1 speed on your next turn. Author of The Art of War, Sun Tzu’s military genius has lived on for over 2 millennia. Illustration: William O’Connor 2 41/100"
+    },
+    {
+      "id": "s2-046",
+      "source": "heard-2007",
+      "name": "YUE FEI",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 2,
+      "collector": "046",
+      "culture": "Chinese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 1,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 � +1 +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Han dong shan feng",
+          "type": "static",
+          "text": "You gain +1 speed for each of your face-up support cards."
+        }
+      ],
+      "flavor": "During the Song-Dynasty, Yue Fei achieved national warriorhero status in fighting back the invasion of the Jin Tribe. After is death, the Song Dynasty abandoned all territory north of the Huai river and fell into a state of weakness and decline.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "YUE FEI (Water) 8 Life 1 Speed +1 3 Experience � 1 Damage +1 +0 Chinese • Warrior • Male Han dong shan feng: You gain +1 speed for each of your face-up support cards. During the Song-Dynasty, Yue Fei achieved national warriorhero status in fighting back the invasion of the Jin Tribe. After is death, the Song Dynasty abandoned all territory north of the Huai river and fell into a state of weakness and decline. Illustration: Christopher Appel 2 46/100"
+    },
+    {
+      "id": "s2-052",
+      "source": "heard-2007",
+      "name": "AST",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 2,
+      "collector": "052",
+      "culture": "Egyptian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Nfr",
+          "type": "static",
+          "text": "Opposing cards cannot discard your support cards."
+        },
+        {
+          "name": "Xwi",
+          "type": "static",
+          "text": "After you hit an opponent, you may discard this card to gain 1 life and deal 1 damage to the defending warrior. By tricking Ra, the great mother-goddess Ast was able to gain his powers."
+        }
+      ],
+      "flavor": "She was a healer and the great magician of the gods.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) AST (Aether) Egyptian • Inspiration • Deity Nfr: Opposing cards cannot discard your support cards. Xwi: After you hit an opponent, you may discard this card to gain 1 life and deal 1 damage to the defending warrior. By tricking Ra, the great mother-goddess Ast was able to gain his powers. She was a healer and the great magician of the gods. Illustration: Terese Nielsen 2 52/100"
+    },
+    {
+      "id": "s2-017",
+      "source": "heard-2007",
+      "name": "BERENGARIA",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 2,
+      "collector": "017",
+      "culture": "Briton",
+      "traits": [
+        "Inspiration",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Latost Freondlufu",
+          "type": "reveal",
+          "text": "At the end of this round, gain an amount of life equal to the number of times you hit another warrior this round."
+        }
+      ],
+      "flavor": "Though Richard refused marriage for many years, he relented to Beregnaria after conquering the isle of Cyprus. They were wed there, making Berengaria Queen of England and Cyprus, Duchess of Normandy, and Countess of Anjou.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) BERENGARIA (Water) Briton • Inspiration • Female Latost Freondlufu – Reveal: At the end of this round, gain an amount of life equal to the number of times you hit another warrior this round. Though Richard refused marriage for many years, he relented to Beregnaria after conquering the isle of Cyprus. They were wed there, making Berengaria Queen of England and Cyprus, Duchess of Normandy, and Countess of Anjou. Illustration: Greg Staples 2 17/100"
+    },
+    {
+      "id": "s2-087",
+      "source": "heard-2007",
+      "name": "BURQAN-QALDUN",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 2,
+      "collector": "087",
+      "culture": "Mongol",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tuil-un qurdu�a",
+          "type": "static",
+          "text": "At the start of each round, all warriors whose initiative values for this round are odd gain +1 speed for this round."
+        }
+      ],
+      "flavor": "The sacred mountain has seen the launch of epic invasions that have conquered nations from one end of Asia to the other.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) BURQAN-QALDUN (Earth) Mongol • Inspiration • Deity Tuil-un qurdu�a: At the start of each round, all warriors whose initiative values for this round are odd gain +1 speed for this round. The sacred mountain has seen the launch of epic invasions that have conquered nations from one end of Asia to the other. Illustration: Steven Belledin 2 87/100"
+    },
+    {
+      "id": "s2-002",
+      "source": "heard-2007",
+      "name": "EALSWITH",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 2,
+      "collector": "002",
+      "culture": "Briton",
+      "traits": [
+        "Inspiration",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "For d� Cwen",
+          "type": "static",
+          "text": "Your attack rolls gain +1 for each point of damage dealt to you during the last round."
+        }
+      ],
+      "flavor": "Married to King Alfred in Winchester, she ruled by his side until his death, after which she took holy vows and became a nun. Her son, Edward, went on to rule England.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) EALSWITH (Water) Briton • Inspiration • Female For d� Cwen: Your attack rolls gain +1 for each point of damage dealt to you during the last round. Married to King Alfred in Winchester, she ruled by his side until his death, after which she took holy vows and became a nun. Her son, Edward, went on to rule England. Illustration: Matthew Armstrong 2 02/100"
+    },
+    {
+      "id": "s2-027",
+      "source": "heard-2007",
+      "name": "GUAN DI",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 2,
+      "collector": "027",
+      "culture": "Chinese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zhan shi zhi guang",
+          "type": "reveal",
+          "text": "Choose either attack or defense. For this round, your rolls of that type gain +2 and your opponent’s rolls of that type gain +1."
+        }
+      ],
+      "flavor": "Patron god of the Chinese martial arts, Guan Di symbolizes justice, loyalty, righteousness and humility, as well as military and fighting prowess.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) GUAN DI (Aether) Chinese • Inspiration • Deity Zhan shi zhi guang – Reveal: Choose either attack or defense. For this round, your rolls of that type gain +2 and your opponent’s rolls of that type gain +1. Patron god of the Chinese martial arts, Guan Di symbolizes justice, loyalty, righteousness and humility, as well as military and fighting prowess. Illustration: Rob Alexander 2 27/100"
+    },
+    {
+      "id": "s2-057",
+      "source": "heard-2007",
+      "name": "HORUS",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 2,
+      "collector": "057",
+      "culture": "Egyptian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ib ‘nch",
+          "type": "static",
+          "text": "Once per roll, after dice are rolled, you may deal one damage to your warrior. If you do, force any one die to be re-rolled."
+        }
+      ],
+      "flavor": "Son of Ast (or Isis) and Osiris, Horus fought against his uncle Seth for control of Egypt. Eventually, he won and exiled Seth to the Sahara Desert, but not before his eye was destroyed by Seth.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) HORUS (Aether) Egyptian • Inspiration • Deity Ib ‘nch: Once per roll, after dice are rolled, you may deal one damage to your warrior. If you do, force any one die to be re-rolled. Son of Ast (or Isis) and Osiris, Horus fought against his uncle Seth for control of Egypt. Eventually, he won and exiled Seth to the Sahara Desert, but not before his eye was destroyed by Seth. Illustration: Jim Nelson 2 57/100"
+    },
+    {
+      "id": "s2-047",
+      "source": "heard-2007",
+      "name": "JIN CHENG BAO GUO",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 2,
+      "collector": "047",
+      "culture": "Chinese",
+      "traits": [
+        "Inspiration",
+        "Tattoo"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zuo yue zhi xin",
+          "type": "static",
+          "text": "At the start of each round, you gain +1 speed this round for each player’s initiative for this round that matches your experience."
+        }
+      ],
+      "flavor": "“Be loyal and pure to serve your country.” -Tattoo on the back of Yue Fei",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) JIN CHENG BAO GUO (Water) Chinese • Inspiration • Tattoo Zuo yue zhi xin: At the start of each round, you gain +1 speed this round for each player’s initiative for this round that matches your experience. “Be loyal and pure to serve your country.” -Tattoo on the back of Yue Fei Illustration: Christopher Appel 2 47/100"
+    },
+    {
+      "id": "s2-072",
+      "source": "heard-2007",
+      "name": "KHNUM",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 2,
+      "collector": "072",
+      "culture": "Egyptian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "M’ ‘n",
+          "type": "reveal",
+          "text": "Your next attack deals +1 damage. ’"
+        },
+        {
+          "name": "r hnn",
+          "type": "static",
+          "text": "When you are hit, the next support card you reveal gains +3 initiative."
+        }
+      ],
+      "flavor": "The progenitor god of Egypt, he created all of the gods and the lands. He ruled the waters, both of the rivers and of the sea.",
+      "illustrator": "Thomas M Baxa",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) KHNUM (Aether) Egyptian • Inspiration • Deity M’ ‘n – Reveal: Your next attack deals +1 damage. ’ r hnn: When you are hit, the next support card you reveal gains +3 initiative. The progenitor god of Egypt, he created all of the gods and the lands. He ruled the waters, both of the rivers and of the sea. Illustration: Thomas M Baxa 2 72/100"
+    },
+    {
+      "id": "s2-082",
+      "source": "heard-2007",
+      "name": "KOEKE MOENGKE TENGRI",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 2,
+      "collector": "082",
+      "culture": "Mongol",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Egüride-yin köke tngri",
+          "type": "static",
+          "text": "After you make an attack roll, you may discard this card to set the attack roll equal to your experience."
+        }
+      ],
+      "flavor": "Eternal Blue Heaven is the foremost of the spirits of heaven.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) KOEKE MOENGKE TENGRI (Wind) Mongol • Inspiration • Deity Egüride-yin köke tngri: After you make an attack roll, you may discard this card to set the attack roll equal to your experience. Eternal Blue Heaven is the foremost of the spirits of heaven. Illustration: Raven Mimura 2 82/100"
+    },
+    {
+      "id": "s2-012",
+      "source": "heard-2007",
+      "name": "LADY OF THE LAKE",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 2,
+      "collector": "012",
+      "culture": "Briton",
+      "traits": [
+        "Inspiration",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Epiphanes",
+          "type": "reveal",
+          "text": "Name a reveal ability on any other face-up card. Use that ability as if you had just revealed that card."
+        }
+      ],
+      "flavor": "Known for presenting the gleaming Excalibur to Arthur, the Lady of the Lake, Vivienne, was also a student and lover of Arthur’s mentor, Merlin.",
+      "illustrator": "Michael Komark",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) LADY OF THE LAKE (Water) Briton • Inspiration • Female Epiphanes – Reveal: Name a reveal ability on any other face-up card. Use that ability as if you had just revealed that card. Known for presenting the gleaming Excalibur to Arthur, the Lady of the Lake, Vivienne, was also a student and lover of Arthur’s mentor, Merlin. Illustration: Michael Komark 2 12/100"
+    },
+    {
+      "id": "s2-022",
+      "source": "heard-2007",
+      "name": "MAID MARION",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 2,
+      "collector": "022",
+      "culture": "Briton",
+      "traits": [
+        "Inspiration",
+        "Female"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kidnapen",
+          "type": "reveal",
+          "text": "Place this card in any space in the arena."
+        },
+        {
+          "name": "Rescue",
+          "type": "action",
+          "text": "Move to this card’s space."
+        }
+      ],
+      "flavor": "“A bonny fine maid of noble degree, Maid Marion callled by name, Did live in the North, of excellent worth, For she was a gallant dame.” -Traditional Folk Song",
+      "illustrator": "Jeremy Jarvis",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) MAID MARION (Water) Briton • Inspiration • Female Kidnapen – Reveal: Place this card in any space in the arena. Rescue – Action: Move to this card’s space. “A bonny fine maid of noble degree, Maid Marion callled by name, Did live in the North, of excellent worth, For she was a gallant dame.” -Traditional Folk Song Illustration: Jeremy Jarvis 2 22/100"
+    },
+    {
+      "id": "s2-077",
+      "source": "heard-2007",
+      "name": "NEMERE",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 2,
+      "collector": "077",
+      "culture": "Mongol",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Qaugiqu salkin",
+          "type": "static",
+          "text": "At the start of each round, choose a direction. At the start of each player's turn, move their warrior one space in the chosen direction if possible."
+        }
+      ],
+      "flavor": "Nemere is the Hunnish god of war and the raging southern wind.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) NEMERE (Wind) Mongol • Inspiration • Deity Qaugiqu salkin: At the start of each round, choose a direction. At the start of each player's turn, move their warrior one space in the chosen direction if possible. Nemere is the Hunnish god of war and the raging southern wind. Illustration: Hugh Jamieson 2 77/100"
+    },
+    {
+      "id": "s2-067",
+      "source": "heard-2007",
+      "name": "OSIRIS",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 2,
+      "collector": "067",
+      "culture": "Egyptian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "S’nch",
+          "type": "static",
+          "text": "When your are reduced to less than 1 life, instead of defeating your warrior, discard this card to set your life to 1."
+        }
+      ],
+      "flavor": "The god of death and the underworld, Osiris also presided over growth and vegetation. He was married to Ast (or Isis). Osiris was killed by his brother, Seth, who tricked him into a coffin before casting it into the Nile river.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) OSIRIS (Earth) Egyptian • Inspiration • Deity S’nch: When your are reduced to less than 1 life, instead of defeating your warrior, discard this card to set your life to 1. The god of death and the underworld, Osiris also presided over growth and vegetation. He was married to Ast (or Isis). Osiris was killed by his brother, Seth, who tricked him into a coffin before casting it into the Nile river. Illustration: Alan Pollack 2 67/100"
+    },
+    {
+      "id": "s2-062",
+      "source": "heard-2007",
+      "name": "RA",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 2,
+      "collector": "062",
+      "culture": "Egyptian",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ri’",
+          "type": "static",
+          "text": "At the start of each round, if you have less life than all opponents and a special card in play, gain 1 life and deal 1 damage to an opposing warrior. You may use another inspiration this game."
+        }
+      ],
+      "flavor": "Born every morning, dying every night, Ra the sun god traveled the heavens each day, fighting his great enemy Apep, the snake.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) RA (Fire) Egyptian • Inspiration • Deity Ri’: At the start of each round, if you have less life than all opponents and a special card in play, gain 1 life and deal 1 damage to an opposing warrior. You may use another inspiration this game. Born every morning, dying every night, Ra the sun god traveled the heavens each day, fighting his great enemy Apep, the snake. Illustration: Michael Komarck 2 62/100"
+    },
+    {
+      "id": "s2-007",
+      "source": "heard-2007",
+      "name": "RHIANNON",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 2,
+      "collector": "007",
+      "culture": "Briton",
+      "traits": [
+        "Inspiration",
+        "Deity/Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Wintsang",
+          "type": "static",
+          "text": "Each time a cavalry card is revealed (including this one), gain 1 life."
+        }
+      ],
+      "flavor": "Goddess of birds and horses, Rhiannon was unjustly accused of killing her newborn son. She silently accepted her punishment to carry guests from the gate into the castle on her back. When the fiend that had kidnapped her son was killed and her son returned, she was returned her place as queen.",
+      "illustrator": "R. K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) RHIANNON (Wind) Briton • Inspiration • Deity/Cavalry Wintsang: Each time a cavalry card is revealed (including this one), gain 1 life. Goddess of birds and horses, Rhiannon was unjustly accused of killing her newborn son. She silently accepted her punishment to carry guests from the gate into the castle on her back. When the fiend that had kidnapped her son was killed and her son returned, she was returned her place as queen. Illustration: R. K. Post 2 07/100"
+    },
+    {
+      "id": "s2-092",
+      "source": "heard-2007",
+      "name": "XANADU",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 2,
+      "collector": "092",
+      "culture": "Mongol",
+      "traits": [
+        "Inspiration",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Debajan",
+          "type": "static",
+          "text": "At the end of each round, if you dealt damage to another warrior, gain 1 life."
+        }
+      ],
+      "flavor": "During Kublai's reign, the summer capitol of the great Mongol empire was Xanadu, while the winter capitol was Dadu, which is modern-day Beijing.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) XANADU (Wood) Mongol • Inspiration • Item Debajan: At the end of each round, if you dealt damage to another warrior, gain 1 life. During Kublai's reign, the summer capitol of the great Mongol empire was Xanadu, while the winter capitol was Dadu, which is modern-day Beijing. Illustration: John Donahue 2 92/100"
+    },
+    {
+      "id": "s2-097",
+      "source": "heard-2007",
+      "name": "YEKE MONGGHUL ULUS",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 2,
+      "collector": "097",
+      "culture": "Mongol",
+      "traits": [
+        "Inspiration",
+        "Dynasty"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kü�ürkeg türimekei ulus",
+          "type": "action",
+          "text": "If you you have a faceup ranged card and you won initiative this turn, move an opposing warrior one space."
+        }
+      ],
+      "flavor": "The Mongol Empire is the largest recorded land empire in the history of mankind. It stretched from the Pacific Ocean to the Black Sea and was created from a single family of Mongol nomads in just 25 years.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) YEKE MONGGHUL ULUS (Wood) Mongol • Inspiration • Dynasty Kü�ürkeg türimekei ulus – Action: If you you have a faceup ranged card and you won initiative this turn, move an opposing warrior one space. The Mongol Empire is the largest recorded land empire in the history of mankind. It stretched from the Pacific Ocean to the Black Sea and was created from a single family of Mongol nomads in just 25 years. Illustration: Randy Gallegos 2 97/100"
+    },
+    {
+      "id": "s2-037",
+      "source": "heard-2007",
+      "name": "YENG WANG YE",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 2,
+      "collector": "037",
+      "culture": "Chinese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Si shen zhi hu",
+          "type": "static",
+          "text": "After any other card is discarded, discard this card to deal 2 damage to an opponent."
+        }
+      ],
+      "flavor": "Greatest of the Lords of Death, Yeng Wang Ye judges all souls newly arrived in the land of the dead. He then decides whether to send to a special court for punishment or to put them back on the Wheel of Transmigration.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) YENG WANG YE (Aether) Chinese • Inspiration • Deity Si shen zhi hu: After any other card is discarded, discard this card to deal 2 damage to an opponent. Greatest of the Lords of Death, Yeng Wang Ye judges all souls newly arrived in the land of the dead. He then decides whether to send to a special court for punishment or to put them back on the Wheel of Transmigration. Illustration: David Ho 2 37/100"
+    },
+    {
+      "id": "s2-042",
+      "source": "heard-2007",
+      "name": "YU HUANG SHANG DI",
+      "card_type": "inspiration",
+      "element": "Aether",
+      "set": 2,
+      "collector": "042",
+      "culture": "Chinese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ming si",
+          "type": "static",
+          "text": "At the start of the round, if you did not make any attacks last round, your attack rolls gain +2 and you gain +4 experience for this round."
+        }
+      ],
+      "flavor": "Yu Huang Shang Di is the crown prince of the kingdom of Pure Felicity and Majestic Heavenly Lights and Ornaments and is known as the Pure August Jade Emperor.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) YU HUANG SHANG DI (Aether) Chinese • Inspiration • Deity Ming si: At the start of the round, if you did not make any attacks last round, your attack rolls gain +2 and you gain +4 experience for this round. Yu Huang Shang Di is the crown prince of the kingdom of Pure Felicity and Majestic Heavenly Lights and Ornaments and is known as the Pure August Jade Emperor. Illustration: William O’Connor 2 42/100"
+    },
+    {
+      "id": "s2-032",
+      "source": "heard-2007",
+      "name": "ZHU RONG",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 2,
+      "collector": "032",
+      "culture": "Chinese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zheng yi de tu xi",
+          "type": "reveal",
+          "text": "Deal 3 damage to all warriors with face-up cavalry cards; deal 1 damage to all other warriors."
+        }
+      ],
+      "flavor": "God of fire and the Heavenly Executioner, his domain is the southern quarter of Heaven, where he rides a tiger and presides over universal order.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) ZHU RONG (Fire) Chinese • Inspiration • Deity Zheng yi de tu xi – Reveal: Deal 3 damage to all warriors with face-up cavalry cards; deal 1 damage to all other warriors. God of fire and the Heavenly Executioner, his domain is the southern quarter of Heaven, where he rides a tiger and presides over universal order. Illustration: James Ryman 2 32/100"
+    },
+    {
+      "id": "s2-083",
+      "source": "heard-2007",
+      "name": "ALMAN SUKH",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "083",
+      "culture": "Mongol",
+      "traits": [
+        "Weapon",
+        "Axe"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "�ab�iqu",
+          "type": "static",
+          "text": "Attacks with this weapon deal +1 damage when attacking an opponent without a face-up cavalry card."
+        }
+      ],
+      "flavor": "Each Mongol warrior carried a battle axe (alman sukh), a curved sword (tomor scimitar), a lance (zhad), and two recurved bows (num mor and num tom).",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) ALMAN SUKH (2) +1 +2 � Mongol • Weapon • Axe ( 2 Hands ) �ab�iqu: Attacks with this weapon deal +1 damage when attacking an opponent without a face-up cavalry card. Each Mongol warrior carried a battle axe (alman sukh), a curved sword (tomor scimitar), a lance (zhad), and two recurved bows (num mor and num tom). Illustration: Raven Mimura 2 83/100"
+    },
+    {
+      "id": "s2-053",
+      "source": "heard-2007",
+      "name": "B’GSW",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "053",
+      "culture": "Egyptian",
+      "traits": [
+        "Weapon",
+        "Knife"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sft m s’",
+          "type": "static",
+          "text": "This weapon deals +2 damage while you are in a space directly or diagonally behind your opponent. You may have another weapon."
+        }
+      ],
+      "flavor": "Easily concealed in the linen and silk robes of Cleopatra’s time, the dagger was a deadly close-ranged weapon, capable of striking with very little warning.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) B’GSW (1) +1 +0 � –1 Egyptian • Weapon • Knife ( 1 Hand ) Sft m s’: This weapon deals +2 damage while you are in a space directly or diagonally behind your opponent. You may have another weapon. Easily concealed in the linen and silk robes of Cleopatra’s time, the dagger was a deadly close-ranged weapon, capable of striking with very little warning. Illustration: Terese Nielsen 2 53/100"
+    },
+    {
+      "id": "s2-048",
+      "source": "heard-2007",
+      "name": "DAO",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "048",
+      "culture": "Chinese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tan xing ren",
+          "type": "static",
+          "text": "This weapon can attack any space in your basic attack grid at +0."
+        }
+      ],
+      "flavor": "Used in many styles of kung fu, the dao is often considered the root of short weapons in China.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) DAO (2) +1 � +1 Chinese • Weapon • Sword ( 1 Hand ) Tan xing ren: This weapon can attack any space in your basic attack grid at +0. Used in many styles of kung fu, the dao is often considered the root of short weapons in China. Illustration: Christopher Appel 2 48/100"
+    },
+    {
+      "id": "s2-013",
+      "source": "heard-2007",
+      "name": "EXCALIBUR",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "013",
+      "culture": "Briton",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mirouren Blæd",
+          "type": "reveal",
+          "text": "For this round, this weapon deals additional damage equal to the base damage of an opponent’s weapon."
+        }
+      ],
+      "flavor": "Sword of legend and kings, whoever held Excalibur ruled supreme.",
+      "illustrator": "Michael Komark",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) EXCALIBUR (2) +1 +1 � +0 Briton • Weapon • Sword (1 Hand) Mirouren Blæd – Reveal: For this round, this weapon deals additional damage equal to the base damage of an opponent’s weapon. Sword of legend and kings, whoever held Excalibur ruled supreme. Illustration: Michael Komark 2 13/100"
+    },
+    {
+      "id": "s2-008",
+      "source": "heard-2007",
+      "name": "GOAF",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "008",
+      "culture": "Briton",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hæft Strican",
+          "type": "static",
+          "text": "After you make a basic attack, you may move one space."
+        }
+      ],
+      "flavor": "One of the oldest and most important of all hand weapons, the Celts of Britain favored the spear as their main armament. The goaf was primarily used from the back of a chariot.",
+      "illustrator": "R. K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) GOAF (2) +1 +1 +0 � Briton • Weapon • Polearm ( 2 Hands ) Hæft Strican: After you make a basic attack, you may move one space. One of the oldest and most important of all hand weapons, the Celts of Britain favored the spear as their main armament. The goaf was primarily used from the back of a chariot. Illustration: R. K. Post 2 08/100"
+    },
+    {
+      "id": "s2-018",
+      "source": "heard-2007",
+      "name": "GREATSWORD",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "018",
+      "culture": "Briton",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "–2 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ridon dem Dune",
+          "type": "static",
+          "text": "This weapon deals +1 damage while you have a face-up cavalry card."
+        }
+      ],
+      "flavor": "The English greatsword was heavy and difficult to maneuver, though with the distinct advantage of crushing anything it hit. When pitted against the scimitars of the Saracens in the Crusades it was found to be slow and easily evaded by the more lightly clad knights of the desert.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) GREATSWORD (2) –2 +2 � Briton • Weapon • Sword ( 2 Hands) Ridon dem Dune: This weapon deals +1 damage while you have a face-up cavalry card. The English greatsword was heavy and difficult to maneuver, though with the distinct advantage of crushing anything it hit. When pitted against the scimitars of the Saracens in the Crusades it was found to be slow and easily evaded by the more lightly clad knights of the desert. Illustration: Greg Staples 2 18/100"
+    },
+    {
+      "id": "s2-068",
+      "source": "heard-2007",
+      "name": "HORN BOW",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "068",
+      "culture": "Egyptian",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 2,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +3 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Nis",
+          "type": "action",
+          "text": "You may discard a face-up non-ranged weapon you own to put this card into play from your discard pile."
+        },
+        {
+          "name": "Shw",
+          "type": "static",
+          "text": "This weapon deals +1 damage if you have not moved this turn."
+        }
+      ],
+      "flavor": "Made by joining two pieces of antelope horn with a center piece of wood, the earliest horn bows fired arrows tipped with flint or hardwood and fletched with three feathers.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) HORN BOW (1) +1 +3 +1 � Egyptian • Weapon • Ranged ( 2 Hands ) Nis – Action: You may discard a face-up non-ranged weapon you own to put this card into play from your discard pile. Shw: This weapon deals +1 damage if you have not moved this turn. Made by joining two pieces of antelope horn with a center piece of wood, the earliest horn bows fired arrows tipped with flint or hardwood and fletched with three feathers. Illustration: Alan Pollack 2 68/100"
+    },
+    {
+      "id": "s2-058",
+      "source": "heard-2007",
+      "name": "KHOPESH",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "058",
+      "culture": "Egyptian",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +0 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hd ‘s",
+          "type": "static",
+          "text": "If the defender has a polearm, your attack rolls with this weapon gain +2 and this weapon deals +1 damage. Edged on the inside or outside curve, or both, the khopesh was a significant development in sword technology. Edged on the outside, the weapon was effective at creating slashing wounds. Edged on the inside, it was used for hacking an opponent."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(3) KHOPESH (2) +0 +0 +1 +0 � Egyptian • Weapon • Sword ( 1 Hand ) Hd ‘s: If the defender has a polearm, your attack rolls with this weapon gain +2 and this weapon deals +1 damage. Edged on the inside or outside curve, or both, the khopesh was a significant development in sword technology. Edged on the outside, the weapon was effective at creating slashing wounds. Edged on the inside, it was used for hacking an opponent. Illustration: Jim Nelson 2 58/100"
+    },
+    {
+      "id": "s2-088",
+      "source": "heard-2007",
+      "name": "KHUTGA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "088",
+      "culture": "Mongol",
+      "traits": [
+        "Weapon",
+        "Knife"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +0 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Könggen boloqu",
+          "type": "static",
+          "text": "You may use another weapon in this game."
+        },
+        {
+          "name": "Amua ezex",
+          "type": "action",
+          "text": "Discard this card and gain 2 life."
+        }
+      ],
+      "flavor": "Although mainly used for personal defense, the khutga played an important role in the cermonial lives of the Mongols.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) KHUTGA (1) +0 +0 +2 � Mongol • Weapon • Knife ( 1 Hand ) Könggen boloqu: You may use another weapon in this game. Amua ezex – Action: Discard this card and gain 2 life. Although mainly used for personal defense, the khutga played an important role in the cermonial lives of the Mongols. Illustration: Steven Belledin 2 88/100"
+    },
+    {
+      "id": "s2-023",
+      "source": "heard-2007",
+      "name": "LONGBOW",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "023",
+      "culture": "Briton",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 2,
+      "weapon_damage": 1,
+      "grid_raw": "+3 +3 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Percen Feohte",
+          "type": "static",
+          "text": "If there are two empty ranks or columns between you and the defending warrior, this weapon deals +1 damage. During the Middle Ages, the national weapon of the English army was the longbow. It was this weapon which conquered Wales and Scotland, gave the English their victories in the Hundred Years War and permitted England to replace France as the foremost military power in Europe."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Jeremy Jarvis",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) LONGBOW (1) +3 +3 +2 � Briton • Weapon • Ranged ( 2 Hands ) Percen Feohte: If there are two empty ranks or columns between you and the defending warrior, this weapon deals +1 damage. During the Middle Ages, the national weapon of the English army was the longbow. It was this weapon which conquered Wales and Scotland, gave the English their victories in the Hundred Years War and permitted England to replace France as the foremost military power in Europe. Illustration: Jeremy Jarvis 2 23/100"
+    },
+    {
+      "id": "s2-003",
+      "source": "heard-2007",
+      "name": "LONGSWORD",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "003",
+      "culture": "Briton",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Angra Feohte",
+          "type": "static",
+          "text": "If you hit an opposing warrior with this weapon, that warrior gets –2 experience for the rest of the game. The primary postures or ready positions for long-swords are Ochs, Pflug, Alber and Vom Tag. These are; the Ox, the Plow, the Fool, the Roof."
+        }
+      ],
+      "flavor": "These correspond to: in the middle (“Plow”), outside high/horizontal pointing (“Ox”), low (“Fool”), and high (“Roof”).",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) LONGSWORD (2) +1 +1 –1 � Briton • Weapon • Sword (1 Hand) Angra Feohte: If you hit an opposing warrior with this weapon, that warrior gets –2 experience for the rest of the game. The primary postures or ready positions for long-swords are Ochs, Pflug, Alber and Vom Tag. These are; the Ox, the Plow, the Fool, the Roof. These correspond to: in the middle (“Plow”), outside high/horizontal pointing (“Ox”), low (“Fool”), and high (“Roof”). Illustration: Matthew Armstrong 2 03/100"
+    },
+    {
+      "id": "s2-063",
+      "source": "heard-2007",
+      "name": "MINB",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "063",
+      "culture": "Egyptian",
+      "traits": [
+        "Weapon",
+        "Ax"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+2 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mnmn",
+          "type": "static",
+          "text": "If you miss an attack with this weapon, the next hit you make with this weapon deals +1 damage."
+        }
+      ],
+      "flavor": "Infantry armed with battle axes were typically deployed after the enemy had been weakened by archers. The axe was more effective in cutting wounded or fleeing enemies to pieces than it was in breaking an intact battle line.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) MINB (2) +2 +1 � Egyptian • Weapon • Ax ( 2 Hands ) Mnmn: If you miss an attack with this weapon, the next hit you make with this weapon deals +1 damage. Infantry armed with battle axes were typically deployed after the enemy had been weakened by archers. The axe was more effective in cutting wounded or fleeing enemies to pieces than it was in breaking an intact battle line. Illustration: Michael Komarck 2 63/100"
+    },
+    {
+      "id": "s2-073",
+      "source": "heard-2007",
+      "name": "NSYWT",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "073",
+      "culture": "Egyptian",
+      "traits": [
+        "Weapon",
+        "Polearm/Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +1 +1 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Weapon Qm’",
+          "type": "static",
+          "text": "When you are hit by a non-adjacent opponent, deal 1 damage to the attacker. You may use another weapon."
+        }
+      ],
+      "flavor": "One of the earliest types of weapon invented by man, the nsywt, a javelin, was little more than a sharpened stick in its earliest incarnation.",
+      "illustrator": "Thomas M Baxa",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) NSYWT (1) +1 +1 +1 +1 � Egyptian • Weapon • Polearm/Ranged Weapon ( 1 Hand ) Qm’: When you are hit by a non-adjacent opponent, deal 1 damage to the attacker. You may use another weapon. One of the earliest types of weapon invented by man, the nsywt, a javelin, was little more than a sharpened stick in its earliest incarnation. Illustration: Thomas M Baxa 2 73/100"
+    },
+    {
+      "id": "s2-043",
+      "source": "heard-2007",
+      "name": "NU GONG",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "043",
+      "culture": "Chinese",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 2,
+      "weapon_damage": 1,
+      "grid_raw": "+2 +2 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zhong chuang shang kou",
+          "type": "static",
+          "text": "If you hit an opponent with this weapon, deal 1 damage to that opponent at the start of the next round."
+        }
+      ],
+      "flavor": "Designed as an alternative to the bow over 2,500 years ago, a crossbow required less skill to use and could be effectively deployed by newly trained troops.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) NU GONG (1) +2 +2 +1 � Chinese • Weapon • Ranged (2 Hands) Zhong chuang shang kou: If you hit an opponent with this weapon, deal 1 damage to that opponent at the start of the next round. Designed as an alternative to the bow over 2,500 years ago, a crossbow required less skill to use and could be effectively deployed by newly trained troops. Illustration: William O’Connor 2 43/100"
+    },
+    {
+      "id": "s2-098",
+      "source": "heard-2007",
+      "name": "NUM MOR",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "098",
+      "culture": "Mongol",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Qaralta-ban todolaqu",
+          "type": "static",
+          "text": "After an opponent moves for the second time in a turn, you may immediately make a basic attack against that warrior at +0."
+        }
+      ],
+      "flavor": "While harrying enemy ranks, the num mor could be used with speed and efficiency from horseback while the warrior used his legs to control his well-trained steed.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) NUM MOR (2) +1 +1 +0 � Mongol • Weapon • Ranged ( 2 Hands ) Qaralta-ban todolaqu: After an opponent moves for the second time in a turn, you may immediately make a basic attack against that warrior at +0. While harrying enemy ranks, the num mor could be used with speed and efficiency from horseback while the warrior used his legs to control his well-trained steed. Illustration: Randy Gallegos 2 98/100"
+    },
+    {
+      "id": "s2-033",
+      "source": "heard-2007",
+      "name": "QIANG",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "033",
+      "culture": "Chinese",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 2,
+      "weapon_damage": 1,
+      "grid_raw": "+2 –1 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Xuan feng",
+          "type": "static",
+          "text": "When you are attacked by an adjacent warrior, your defense roll gains +2."
+        }
+      ],
+      "flavor": "Hua Mulan was a spear-master, trained in the use of the long and supple qiang, which was the primary weapon of the Chinese infantry for centuries.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) QIANG (1) +2 –1 +0 +0 � Chinese • Weapon • Polearm ( 2 Hands ) Xuan feng: When you are attacked by an adjacent warrior, your defense roll gains +2. Hua Mulan was a spear-master, trained in the use of the long and supple qiang, which was the primary weapon of the Chinese infantry for centuries. Illustration: James Ryman 2 33/100"
+    },
+    {
+      "id": "s2-028",
+      "source": "heard-2007",
+      "name": "QING LONG YAN YUE DAO",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "028",
+      "culture": "Chinese",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +2 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Puo sui gong ji",
+          "type": "static",
+          "text": "After you hit with this weapon, roll two dice. If that total is greater than the defender’s experience, discard one of the defender’s cavalry or armor support cards."
+        }
+      ],
+      "flavor": "Wielding this Guan Dao, Green Dragon Sable, Guan Yu fought alongside Liu Bei and Zhang Fei during the late Eastern Han Dynasty to found one of the three kingdoms of China.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) QING LONG YAN YUE DAO (2) +0 +2 +1 � Chinese • Weapon • Polearm ( 2 Hands ) Puo sui gong ji: After you hit with this weapon, roll two dice. If that total is greater than the defender’s experience, discard one of the defender’s cavalry or armor support cards. Wielding this Guan Dao, Green Dragon Sable, Guan Yu fought alongside Liu Bei and Zhang Fei during the late Eastern Han Dynasty to found one of the three kingdoms of China. Illustration: Rob Alexander 2 28/100"
+    },
+    {
+      "id": "s2-078",
+      "source": "heard-2007",
+      "name": "SWORD OF MARS",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "078",
+      "culture": "Mongol",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +0 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Amin-tu kürkü qoorlal",
+          "type": "static",
+          "text": "If you have less than 3 life and hit your opponent with this weapon, that opponent is reduced to one life after the attack."
+        }
+      ],
+      "flavor": "Found by Attila on a forgotten battlefield, he claimed it to be the invincible sword of Mars, Roman god of war, and took it for himself.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) SWORD OF MARS (2) +1 +0 � +0 Mongol • Weapon • Sword ( 1 Hand ) Amin-tu kürkü qoorlal: If you have less than 3 life and hit your opponent with this weapon, that opponent is reduced to one life after the attack. Found by Attila on a forgotten battlefield, he claimed it to be the invincible sword of Mars, Roman god of war, and took it for himself. Illustration: Hugh Jamieson 2 78/100"
+    },
+    {
+      "id": "s2-093",
+      "source": "heard-2007",
+      "name": "TOMOR SCIMITAR",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "093",
+      "culture": "Mongol",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dutaydal-i ni bai�ayaqu",
+          "type": "static",
+          "text": "Once per game, before you make an attack roll, gain a damage bonus equal to your opponent's largest defense bonus +1."
+        }
+      ],
+      "flavor": "Curved to slice through men while riding past, the tomor scimitar was used by mounted warriors for man-to-man fighting once ranks broke.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) TOMOR SCIMITAR (2) +1 +2 � Mongol • Weapon • Sword ( 1 Hand ) Dutaydal-i ni bai�ayaqu: Once per game, before you make an attack roll, gain a damage bonus equal to your opponent's largest defense bonus +1. Curved to slice through men while riding past, the tomor scimitar was used by mounted warriors for man-to-man fighting once ranks broke. Illustration: John Donahue 2 93/100"
+    },
+    {
+      "id": "s2-038",
+      "source": "heard-2007",
+      "name": "YUE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 2,
+      "collector": "038",
+      "culture": "Chinese",
+      "traits": [
+        "Weapon",
+        "Axe"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Unknown",
+          "type": "static",
+          "text": "If you hit with this weapon as your first attack of your turn, discard one of the defender’s non-weapon support cards."
+        }
+      ],
+      "flavor": "Both ceremonial and functional, the yue axe originated in southern China and was in use for thousands of years.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) YUE (2) +1 +1 � +0 Chinese • Weapon • Axe ( 1 Hand ) Unknown: If you hit with this weapon as your first attack of your turn, discard one of the defender’s non-weapon support cards. Both ceremonial and functional, the yue axe originated in southern China and was in use for thousands of years. Illustration: David Ho 2 38/100"
+    },
+    {
+      "id": "s2-039",
+      "source": "heard-2007",
+      "name": "BO XIONG JIA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "039",
+      "culture": "Chinese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zu dang",
+          "type": "static",
+          "text": "If you are attacked and missed, the attacking opponent cannot attack you with their next action this turn."
+        }
+      ],
+      "flavor": "Lamellar armor is made by binding together metal scales into a small plate, which is then covered with lacquer to make it waterproof. These small, light plates are fastened together with cords of leather, each plate slightly overlapping the other.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) BO XIONG JIA Chinese • Armor • Torso Zu dang: If you are attacked and missed, the attacking opponent cannot attack you with their next action this turn. Lamellar armor is made by binding together metal scales into a small plate, which is then covered with lacquer to make it waterproof. These small, light plates are fastened together with cords of leather, each plate slightly overlapping the other. Illustration: David Ho 2 39/100"
+    },
+    {
+      "id": "s2-009",
+      "source": "heard-2007",
+      "name": "BRATT",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "009",
+      "culture": "Briton",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tangilen",
+          "type": "static",
+          "text": "Your defense rolls gain +2 against polearm and ranged weapons."
+        }
+      ],
+      "flavor": "A coarse woolen cloak, the bratt was an indispensable garment to any northern Celt. Large enough to double as a blanket when sleeping outdoors, it could be worn long and sweeping for warmth and could be folded and draped for ease of movement.",
+      "illustrator": "R. K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) BRATT Briton • Armor • Torso Tangilen: Your defense rolls gain +2 against polearm and ranged weapons. A coarse woolen cloak, the bratt was an indispensable garment to any northern Celt. Large enough to double as a blanket when sleeping outdoors, it could be worn long and sweeping for warmth and could be folded and draped for ease of movement. Illustration: R. K. Post 2 09/100"
+    },
+    {
+      "id": "s2-014",
+      "source": "heard-2007",
+      "name": "CHAINMAIL SHIRT",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "014",
+      "culture": "Briton",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Weardian de Ende",
+          "type": "static",
+          "text": "Your defense rolls gain +2 against sword and ranged weapons."
+        }
+      ],
+      "flavor": "Interlocking iron or steel rings easily turned aside the edge or point of any bladed weapon, Instead of slicing the skin, the wearer would often escape with little more than a bruise.",
+      "illustrator": "Michael Komark",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) CHAINMAIL SHIRT Briton • Armor • Torso Weardian de Ende: Your defense rolls gain +2 against sword and ranged weapons. Interlocking iron or steel rings easily turned aside the edge or point of any bladed weapon, Instead of slicing the skin, the wearer would often escape with little more than a bruise. Illustration: Michael Komark 2 14/100"
+    },
+    {
+      "id": "s2-079",
+      "source": "heard-2007",
+      "name": "DUULGA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "079",
+      "culture": "Mongol",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mön �inar-un tusqal",
+          "type": "static",
+          "text": "Once per round, after making a defense roll, you may set the roll equal to the attacking warrior's initiative for this round."
+        }
+      ],
+      "flavor": "Worn for centuries among the nomadic barbarians of central and western Asia, helmets of this type protected their wearers against the depredations of both battle and climate.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) DUULGA Mongol • Armor • Head Mön �inar-un tusqal: Once per round, after making a defense roll, you may set the roll equal to the attacking warrior's initiative for this round. Worn for centuries among the nomadic barbarians of central and western Asia, helmets of this type protected their wearers against the depredations of both battle and climate. Illustration: Hugh Jamieson 2 79/100"
+    },
+    {
+      "id": "s2-019",
+      "source": "heard-2007",
+      "name": "FULL MAIL HAUBERK",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "019",
+      "culture": "Briton",
+      "traits": [
+        "Armor",
+        "Torso/Head/Legs/Arms"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mast Laestan",
+          "type": "static",
+          "text": "You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
+        }
+      ],
+      "flavor": "Developed to withstand blows from a charging knight, full mail was cumbersome and unweildy, but effective.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) FULL MAIL HAUBERK Briton • Armor • Torso/Head/Legs/Arms Mast Laestan: You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage. Developed to withstand blows from a charging knight, full mail was cumbersome and unweildy, but effective. Illustration: Greg Staples 2 19/100"
+    },
+    {
+      "id": "s2-004",
+      "source": "heard-2007",
+      "name": "GAMBESON",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "004",
+      "culture": "Briton",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Strican Helpe",
+          "type": "static",
+          "text": "Your defense rolls gain +2 against bludgeon weapons and basic attacks."
+        }
+      ],
+      "flavor": "Serving as a support, the gambeson spreads the weight of the overlaying hauberk much more evenly on the shoulders. The gambeson also assures that the rings of the hauberk stay at a safe distance from the skin, avoiding nasty wounds in combat. Finally, the gambeson acts as a cushion to absorb blows.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) GAMBESON Briton • Armor • Torso Strican Helpe: Your defense rolls gain +2 against bludgeon weapons and basic attacks. Serving as a support, the gambeson spreads the weight of the overlaying hauberk much more evenly on the shoulders. The gambeson also assures that the rings of the hauberk stay at a safe distance from the skin, avoiding nasty wounds in combat. Finally, the gambeson acts as a cushion to absorb blows. Illustration: Matthew Armstrong 2 04/100"
+    },
+    {
+      "id": "s2-054",
+      "source": "heard-2007",
+      "name": "GOLDEN CORSELET",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "054",
+      "culture": "Egyptian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Nw",
+          "type": "static",
+          "text": "Your defense rolls gain +3. If you are hit, discard this card."
+        }
+      ],
+      "flavor": "After befriending Julius Caesar, Cleopatra was taken to Rome. She stayed at the house of Caesar and took an active part in the social politics of Rome until he was murdered on the steps of the senate.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) GOLDEN CORSELET Egyptian • Armor • Torso Nw: Your defense rolls gain +3. If you are hit, discard this card. After befriending Julius Caesar, Cleopatra was taken to Rome. She stayed at the house of Caesar and took an active part in the social politics of Rome until he was murdered on the steps of the senate. Illustration: Terese Nielsen 2 54/100"
+    },
+    {
+      "id": "s2-089",
+      "source": "heard-2007",
+      "name": "GUTAL",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "089",
+      "culture": "Mongol",
+      "traits": [
+        "Armor",
+        "Legs"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ködelgegentü �inar",
+          "type": "static",
+          "text": "After you gain life from another card, you may move one space."
+        }
+      ],
+      "flavor": "Boots, as with all Mongol clothing, were heavily constructed to withstand long journies and arduous conditions.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) GUTAL Mongol • Armor • Legs Ködelgegentü �inar: After you gain life from another card, you may move one space. Boots, as with all Mongol clothing, were heavily constructed to withstand long journies and arduous conditions. Illustration: Steven Belledin 2 89/100"
+    },
+    {
+      "id": "s2-049",
+      "source": "heard-2007",
+      "name": "HU XION JIA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "049",
+      "culture": "Chinese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Gang tie zhi fu",
+          "type": "action",
+          "text": "Your defense rolls gain +2 until the next time you attack or use this action."
+        }
+      ],
+      "flavor": "Form-fitted to each user, the breastplate could deflect spear and arrow blows to the chest while remaining light enough to allow easy movement for attacking.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) HU XION JIA Chinese • Armor • Torso Gang tie zhi fu – Action: Your defense rolls gain +2 until the next time you attack or use this action. Form-fitted to each user, the breastplate could deflect spear and arrow blows to the chest while remaining light enough to allow easy movement for attacking. Illustration: Christopher Appel 2 49/100"
+    },
+    {
+      "id": "s2-064",
+      "source": "heard-2007",
+      "name": "IKM ‘’T",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "064",
+      "culture": "Egyptian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "’ r hnn",
+          "type": "static",
+          "text": "When you are hit, the next support card you reveal gains +3 initiative."
+        },
+        {
+          "name": "Mn",
+          "type": "static",
+          "text": "At the start of each round, if you won initiative, your defense rolls this round gain +2."
+        }
+      ],
+      "flavor": "Used sparingly and only by those who could afford its great cost, scale armor was worn by attackers in chariots to protect their torso from projectile weapons.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) IKM ‘’T Egyptian • Armor • Torso ’ r hnn: When you are hit, the next support card you reveal gains +3 initiative. Mn: At the start of each round, if you won initiative, your defense rolls this round gain +2. Used sparingly and only by those who could afford its great cost, scale armor was worn by attackers in chariots to protect their torso from projectile weapons. Illustration: Michael Komarck 2 64/100"
+    },
+    {
+      "id": "s2-074",
+      "source": "heard-2007",
+      "name": "IKM MSKW",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "074",
+      "culture": "Egyptian",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ysh’",
+          "type": "static",
+          "text": "Your defense rolls gain +1 while you have more life than the attacking warrior."
+        },
+        {
+          "name": "Dnd",
+          "type": "static",
+          "text": "At the start of any round, you may discard this card and deal 1 damage to your warrior. If you do, your attacks this round deal +1 damage."
+        }
+      ],
+      "flavor": "Made from thick antelope hide and held together with sinew and bone, this seemingly makeshift armor offered protection from early piercing weapons.",
+      "illustrator": "Thomas M. Baxa",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) IKM MSKW Egyptian • Armor • Torso Ysh’: Your defense rolls gain +1 while you have more life than the attacking warrior. Dnd: At the start of any round, you may discard this card and deal 1 damage to your warrior. If you do, your attacks this round deal +1 damage. Made from thick antelope hide and held together with sinew and bone, this seemingly makeshift armor offered protection from early piercing weapons. Illustration: Thomas M. Baxa 2 74/100"
+    },
+    {
+      "id": "s2-029",
+      "source": "heard-2007",
+      "name": "JLANG JUN ZHIL KAI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "029",
+      "culture": "Chinese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Chuan qi zhi kai",
+          "type": "static",
+          "text": "At the start of each round, roll two dice. If that total is even, your defense rolls this round gain +2. If you roll doubles, your attack rolls this round gain +1."
+        }
+      ],
+      "flavor": "Sturdy and supple, the armor of the elite of China could withstand nearly any blow from a common foot soldier’s weapon.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) JLANG JUN ZHIL KAI Chinese • Armor • Torso Chuan qi zhi kai: At the start of each round, roll two dice. If that total is even, your defense rolls this round gain +2. If you roll doubles, your attack rolls this round gain +1. Sturdy and supple, the armor of the elite of China could withstand nearly any blow from a common foot soldier’s weapon. Illustration: Rob Alexander 2 29/100"
+    },
+    {
+      "id": "s2-099",
+      "source": "heard-2007",
+      "name": "KHATANGU",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "099",
+      "culture": "Mongol",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Caexu",
+          "type": "static",
+          "text": "Your defense rolls gain +1 if your experience is odd."
+        },
+        {
+          "name": "Tailqu",
+          "type": "static",
+          "text": "When you take damage from something other than an attack, you may discard this card to prevent the damage."
+        }
+      ],
+      "flavor": "A woven shirt covered with a layer of hardened leather plates, the khatangu was flexible to ease horseback riding while still providing protection from arrows and upward-directed spears.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KHATANGU Mongol • Armor • Torso Caexu: Your defense rolls gain +1 if your experience is odd. Tailqu: When you take damage from something other than an attack, you may discard this card to prevent the damage. A woven shirt covered with a layer of hardened leather plates, the khatangu was flexible to ease horseback riding while still providing protection from arrows and upward-directed spears. Illustration: Randy Gallegos 2 99/100"
+    },
+    {
+      "id": "s2-069",
+      "source": "heard-2007",
+      "name": "KHEPRESH",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "069",
+      "culture": "Egyptian",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Xq’t m‘’t",
+          "type": "static",
+          "text": "Opposing warriors cannot use abilities on inspiration cards. An opposing warrior may spend an action to discard this card. Your cards cannot prevent this card from being discarded."
+        }
+      ],
+      "flavor": "This ceremonial bright crown made of cloth and adorned with golden disks was known as the blue or war-crown and was easily recognizable, even during battle.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KHEPRESH Egyptian • Armor • Head Xq’t m‘’t: Opposing warriors cannot use abilities on inspiration cards. An opposing warrior may spend an action to discard this card. Your cards cannot prevent this card from being discarded. This ceremonial bright crown made of cloth and adorned with golden disks was known as the blue or war-crown and was easily recognizable, even during battle. Illustration: Alan Pollack 2 69/100"
+    },
+    {
+      "id": "s2-084",
+      "source": "heard-2007",
+      "name": "KHURIM",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "084",
+      "culture": "Mongol",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Küiten-i sergeilekü",
+          "type": "reveal",
+          "text": "For this round, opponent’s attacks cannot deal more than the attack's base damage."
+        }
+      ],
+      "flavor": "The design of the khurim jacket has been virtually unchanged for over a thousand years. It is traditionally worn by horsemen to protect them from the fierce Mongolian winters.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KHURIM Mongol • Armor • Torso Küiten-i sergeilekü – Reveal: For this round, opponent’s attacks cannot deal more than the attack's base damage. The design of the khurim jacket has been virtually unchanged for over a thousand years. It is traditionally worn by horsemen to protect them from the fierce Mongolian winters. Illustration: Raven Mimura 2 84/100"
+    },
+    {
+      "id": "s2-024",
+      "source": "heard-2007",
+      "name": "LEATHER JERKIN",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "024",
+      "culture": "Briton",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tohte Hyd",
+          "type": "static",
+          "text": "Your defense roll against the first attack against you each round gains +1. Before you make a defense roll, you may discard this card. If you do, your defense roll gains +4."
+        }
+      ],
+      "flavor": "The leather Jerkin, a military garment adapted for civilian use, was also known as buff jerkin, as it was made of buff, an oxhide dressed with oil.",
+      "illustrator": "Jeremy Jarvis",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) LEATHER JERKIN Briton • Armor • Torso Tohte Hyd: Your defense roll against the first attack against you each round gains +1. Before you make a defense roll, you may discard this card. If you do, your defense roll gains +4. The leather Jerkin, a military garment adapted for civilian use, was also known as buff jerkin, as it was made of buff, an oxhide dressed with oil. Illustration: Jeremy Jarvis 2 24/100"
+    },
+    {
+      "id": "s2-059",
+      "source": "heard-2007",
+      "name": "MAN-HIGH SHIELD",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "059",
+      "culture": "Egyptian",
+      "traits": [
+        "Armor",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Wch’",
+          "type": "static",
+          "text": "Your defense rolls gain +1 against 1-handed weapons."
+        },
+        {
+          "name": "Ikr",
+          "type": "static",
+          "text": "At the start of any round, you may discard this card. If you do, your defense rolls get –1 and you gain +1 speed for this round."
+        }
+      ],
+      "flavor": "With the bow dominating tactical considerations on the Egyptian battlefield, the extreme size and bulk of these shields was borne out of necessity.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) MAN-HIGH SHIELD Egyptian • Armor • Shield ( 1 Hand ) Wch’: Your defense rolls gain +1 against 1-handed weapons. Ikr: At the start of any round, you may discard this card. If you do, your defense rolls get –1 and you gain +1 speed for this round. With the bow dominating tactical considerations on the Egyptian battlefield, the extreme size and bulk of these shields was borne out of necessity. Illustration: Jim Nelson 2 59/100"
+    },
+    {
+      "id": "s2-044",
+      "source": "heard-2007",
+      "name": "SHAN WEN JIA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "044",
+      "culture": "Chinese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Wan qiang di kang",
+          "type": "static",
+          "text": "When you roll a 1 on a die in a defense roll, that defense roll gains +3 for each 1 rolled. As each plate is similar in shape to the Chinese character for mountain, this armor was often called mountain pattern armor."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(2) SHAN WEN JIA Chinese • Armor • Torso Wan qiang di kang: When you roll a 1 on a die in a defense roll, that defense roll gains +3 for each 1 rolled. As each plate is similar in shape to the Chinese character for mountain, this armor was often called mountain pattern armor. Illustration: William O’Connor 2 44/100"
+    },
+    {
+      "id": "s2-094",
+      "source": "heard-2007",
+      "name": "TSAMTS TORGO",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "094",
+      "culture": "Mongol",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "On�oyoi qamayalalta",
+          "type": "static",
+          "text": "You may discard this card before an attack roll is made. If you do, the attack deals one less damage and the attacker may not use any card abilities for this attack."
+        }
+      ],
+      "flavor": "Originating in China, these undergarments made the rigors of distance riding in full battle gear bearable and offered unparalleled protection against arrow wounds.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) TSAMTS TORGO Mongol • Armor • Torso On�oyoi qamayalalta: You may discard this card before an attack roll is made. If you do, the attack deals one less damage and the attacker may not use any card abilities for this attack. Originating in China, these undergarments made the rigors of distance riding in full battle gear bearable and offered unparalleled protection against arrow wounds. Illustration: John Donahue 2 94/100"
+    },
+    {
+      "id": "s2-034",
+      "source": "heard-2007",
+      "name": "ZHOU",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 2,
+      "collector": "034",
+      "culture": "Chinese",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Xue xin",
+          "type": "static",
+          "text": "Your defense rolls gain +1 against non-Chinese warriors. Opposing cards cannot move you or change your facing."
+        }
+      ],
+      "flavor": "Elegant in its simplicity, the helmet of Hua Mulan’s time was a simple skull-cap that provided protection from swords and thrown spears.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) ZHOU Chinese • Armor • Head Xue xin: Your defense rolls gain +1 against non-Chinese warriors. Opposing cards cannot move you or change your facing. Elegant in its simplicity, the helmet of Hua Mulan’s time was a simple skull-cap that provided protection from swords and thrown spears. Illustration: James Ryman 2 34/100"
+    },
+    {
+      "id": "s2-090",
+      "source": "heard-2007",
+      "name": "100 ADUU BOOTSOO",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "090",
+      "culture": "Mongol",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Urid�ilan medegsen tegüskel",
+          "type": "static",
+          "text": "If you are the first player to deal damage after this card is revealed, your basic attacks deal +1 damage for the rest of the game."
+        }
+      ],
+      "flavor": "Each man who chose to vie for the hand of Khutulun had to bet 100 steeds on the outcome of their wrestling match. No man ever walked away with a wife or his horses.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) 100 ADUU BOOTSOO Mongol • Special • Item Urid�ilan medegsen tegüskel: If you are the first player to deal damage after this card is revealed, your basic attacks deal +1 damage for the rest of the game. Each man who chose to vie for the hand of Khutulun had to bet 100 steeds on the outcome of their wrestling match. No man ever walked away with a wife or his horses. Illustration: Steven Belledin 2 90/100"
+    },
+    {
+      "id": "s2-050",
+      "source": "heard-2007",
+      "name": "BA DUAN JIN",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "050",
+      "culture": "Chinese",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Jun shi xun lian",
+          "type": "static",
+          "text": "If your inspiration and warrior are the same element, you can attack with your weapon a second time each round."
+        }
+      ],
+      "flavor": "The Eight-Section Brocade is an ideal lifetime exercise and was used by the troops of Yue Fie to condition themselves for battle.",
+      "illustrator": "Christopher Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) BA DUAN JIN Chinese • Special • Ability Jun shi xun lian: If your inspiration and warrior are the same element, you can attack with your weapon a second time each round. The Eight-Section Brocade is an ideal lifetime exercise and was used by the troops of Yue Fie to condition themselves for battle. Illustration: Christopher Appel 2 50/100"
+    },
+    {
+      "id": "s2-025",
+      "source": "heard-2007",
+      "name": "BAND OF MERRIE MEN",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "025",
+      "culture": "Briton",
+      "traits": [
+        "Special",
+        "Ally"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Freonden Oder",
+          "type": "static",
+          "text": "Before initiative is determined each round, roll one die. If the result is less than 4, add that amount to your first attack roll of the round. If the result is 4 or greater, add that amount to your initiative for the round."
+        }
+      ],
+      "flavor": "Brought together by common cause, groups of outlaws and rogues were a common occurence in England during the Middle Ages.",
+      "illustrator": "Jeremy Jarvis",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) BAND OF MERRIE MEN Briton • Special • Ally Freonden Oder: Before initiative is determined each round, roll one die. If the result is less than 4, add that amount to your first attack roll of the round. If the result is 4 or greater, add that amount to your initiative for the round. Brought together by common cause, groups of outlaws and rogues were a common occurence in England during the Middle Ages. Illustration: Jeremy Jarvis 2 25/100"
+    },
+    {
+      "id": "s2-045",
+      "source": "heard-2007",
+      "name": "BING FA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "045",
+      "culture": "Chinese",
+      "traits": [
+        "Special",
+        "Tome"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Gong qi suo bu shou ye",
+          "type": "static",
+          "text": "Once per attack, before your attack roll, you may choose to reduce the roll by 3. If you do, that attack deals +1 damage."
+        }
+      ],
+      "flavor": "“The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected. -Sun Tzu, The Art of War",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) BING FA Chinese • Special • Tome Gong qi suo bu shou ye: Once per attack, before your attack roll, you may choose to reduce the roll by 3. If you do, that attack deals +1 damage. “The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected. -Sun Tzu, The Art of War Illustration: William O’Connor 2 45/100"
+    },
+    {
+      "id": "s2-010",
+      "source": "heard-2007",
+      "name": "CARPAT",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "010",
+      "culture": "Briton",
+      "traits": [
+        "Special",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Si�e",
+          "type": "action",
+          "text": "Once per round, if you are adjacent to an opposing warrior and there is an empty space on the opposite side of them, move to that space and deal 2 damage to them. With its scythed wheels and light, fast build, the Carpat was capable of causing great damage to infantry."
+        }
+      ],
+      "flavor": "It was Boudicca’s greatest weapon against the Roman soldiers.",
+      "illustrator": "R. K. Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) CARPAT Briton • Special • Cavalry Si�e - 2 Actions: Once per round, if you are adjacent to an opposing warrior and there is an empty space on the opposite side of them, move to that space and deal 2 damage to them. With its scythed wheels and light, fast build, the Carpat was capable of causing great damage to infantry. It was Boudicca’s greatest weapon against the Roman soldiers. Illustration: R. K. Post 2 10/100"
+    },
+    {
+      "id": "s2-020",
+      "source": "heard-2007",
+      "name": "CHIVALRY",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "020",
+      "culture": "Briton",
+      "traits": [
+        "Special",
+        "Ideal"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "A Cnihte Honur",
+          "type": "static",
+          "text": "Each round, if you win initiative, you may choose to go second. If you do, your attack and defense rolls this round gain +1. Thou shalt respect all weaknesses, and shalt constitute thyself the defender of them."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(8) CHIVALRY Briton • Special • Ideal A Cnihte Honur: Each round, if you win initiative, you may choose to go second. If you do, your attack and defense rolls this round gain +1. Thou shalt respect all weaknesses, and shalt constitute thyself the defender of them. Illustration: Greg Staples 2 20/100"
+    },
+    {
+      "id": "s2-080",
+      "source": "heard-2007",
+      "name": "GÄITÄY GEPRECH",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "080",
+      "culture": "Mongol",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Emiyel",
+          "type": "static",
+          "text": "When an opponent attacks you and misses, they take 1 damage if their experience is less than 2. Otherwise, they get –2 experience for the rest of the game."
+        }
+      ],
+      "flavor": "In the reign of Attila, the Huns became the terror of the world, slaughtering cities and destroying civilizations.",
+      "illustrator": "Hugh Jamieson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) GÄITÄY GEPRECH Mongol • Special • Ability Emiyel: When an opponent attacks you and misses, they take 1 damage if their experience is less than 2. Otherwise, they get –2 experience for the rest of the game. In the reign of Attila, the Huns became the terror of the world, slaughtering cities and destroying civilizations. Illustration: Hugh Jamieson 2 80/100"
+    },
+    {
+      "id": "s2-055",
+      "source": "heard-2007",
+      "name": "HEQA AND WAS SCEPTERS",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "055",
+      "culture": "Egyptian",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Xq’t inqt",
+          "type": "static",
+          "text": "Before you make an attack roll, you may discard this card. If you do, and the attack hits, the attack is a critical hit."
+        }
+      ],
+      "flavor": "Scepters offered and represent power and protection. They also set the king apart from everyone else and conveyed his authority, both secular and religious.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) HEQA AND WAS SCEPTERS Egyptian • Special • Item ( 1 Hand ) Xq’t inqt: Before you make an attack roll, you may discard this card. If you do, and the attack hits, the attack is a critical hit. Scepters offered and represent power and protection. They also set the king apart from everyone else and conveyed his authority, both secular and religious. Illustration: Terese Nielsen 2 55/100"
+    },
+    {
+      "id": "s2-075",
+      "source": "heard-2007",
+      "name": "MACE OF THE SCORPION KING",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "075",
+      "culture": "Egyptian",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sncht nbt",
+          "type": "static",
+          "text": "When you make an attack roll, if any of the dice are a six, the attack deals +1 damage."
+        }
+      ],
+      "flavor": "This mace was created for ceremonial duties and to record the actions of Srqt. It told the stories of his conquests and of his patronage, as king, of agricultural development.",
+      "illustrator": "Thomas M. Baxa",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) MACE OF THE SCORPION KING Egyptian • Special • Item ( 1 Hand ) Sncht nbt: When you make an attack roll, if any of the dice are a six, the attack deals +1 damage. This mace was created for ceremonial duties and to record the actions of Srqt. It told the stories of his conquests and of his patronage, as king, of agricultural development. Illustration: Thomas M. Baxa 2 75/100"
+    },
+    {
+      "id": "s2-100",
+      "source": "heard-2007",
+      "name": "MANGUDAI STEED",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "100",
+      "culture": "Mongol",
+      "traits": [
+        "Special",
+        "Calvary"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Qayurmay-iyar bayuju ögkü",
+          "type": "static",
+          "text": "Once per turn, after you move out of a space in an opposing warrior's attack grid, you may immediately attack that opponent with one of your ranged weapons at +0."
+        }
+      ],
+      "flavor": "The selection process for the elite Mangudai unit was grueling and dangerous. All of its members were superbly disciplined and trained, the perfect spearhead force for the attacking Mongol armies.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "source_typo"
+      ],
+      "raw_source_text": "(5) MANGUDAI STEED Mongol • Special • Calvary Qayurmay-iyar bayuju ögkü: Once per turn, after you move out of a space in an opposing warrior's attack grid, you may immediately attack that opponent with one of your ranged weapons at +0. The selection process for the elite Mangudai unit was grueling and dangerous. All of its members were superbly disciplined and trained, the perfect spearhead force for the attacking Mongol armies. Illustration: Randy Gallegos 2 100/100"
+    },
+    {
+      "id": "s2-015",
+      "source": "heard-2007",
+      "name": "MERLIN THE WISE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "015",
+      "culture": "Briton",
+      "traits": [
+        "Special",
+        "Male"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Æcter of �e Drakon",
+          "type": "static",
+          "text": "Before rolling, discard this card and another face-up, non-weapon support cards. If you do, that roll gains +3."
+        }
+      ],
+      "flavor": "Attributed with deeds ranging from elevating Arthur to kingship to the construction of Stonehenge, Merlin presided over King Arthur’s kingdom.",
+      "illustrator": "Michael Komark",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) MERLIN THE WISE Briton • Special • Male Æcter of �e Drakon: Before rolling, discard this card and another face-up, non-weapon support cards. If you do, that roll gains +3. Attributed with deeds ranging from elevating Arthur to kingship to the construction of Stonehenge, Merlin presided over King Arthur’s kingdom. Illustration: Michael Komark 2 15/100"
+    },
+    {
+      "id": "s2-095",
+      "source": "heard-2007",
+      "name": "NUM TOM",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "095",
+      "culture": "Mongol",
+      "traits": [
+        "Special",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Weapon Mörgöldügen",
+          "type": "reveal",
+          "text": "You and a non-adjacent warrior each roll two dice. If your total is greater than their experience, deal 1 damage to their warrior. If their total is less than your experience, deal 1 damage to their warrior. For use at great range, the num tom was the first weapon used in any Mongol cavalry attack, arcing arrows above the open land between the Mongols and their doomed opponents."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "John Donahue",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(9) NUM TOM Mongol • Special • Ranged Weapon (2 hands ) Mörgöldügen – Reveal: You and a non-adjacent warrior each roll two dice. If your total is greater than their experience, deal 1 damage to their warrior. If their total is less than your experience, deal 1 damage to their warrior. For use at great range, the num tom was the first weapon used in any Mongol cavalry attack, arcing arrows above the open land between the Mongols and their doomed opponents. Illustration: John Donahue 2 95/100"
+    },
+    {
+      "id": "s2-040",
+      "source": "heard-2007",
+      "name": "QING GONG PALACE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "040",
+      "culture": "Chinese",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dao ta de huang gong",
+          "type": "reveal",
+          "text": "Discard this card to play a card from any discard pile in its place. If that card has a reveal ability, use it immediately. Discard that card at the end of this round to its original discard pile."
+        }
+      ],
+      "flavor": "Jie’s palace almost exceeded the technology of his day and, it is said, was built so high that it seemed on the verge of collapsing. It was called Qing Gong - the Tottering Palace.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) QING GONG PALACE Chinese • Special • Item Dao ta de huang gong – Reveal: Discard this card to play a card from any discard pile in its place. If that card has a reveal ability, use it immediately. Discard that card at the end of this round to its original discard pile. Jie’s palace almost exceeded the technology of his day and, it is said, was built so high that it seemed on the verge of collapsing. It was called Qing Gong - the Tottering Palace. Illustration: David Ho 2 40/100"
+    },
+    {
+      "id": "s2-070",
+      "source": "heard-2007",
+      "name": "REU NU PERT EM HRU",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "070",
+      "culture": "Egyptian",
+      "traits": [
+        "Special",
+        "Tome"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bswt",
+          "type": "static",
+          "text": "Warriors cannot gain life."
+        },
+        {
+          "name": "Snb",
+          "type": "reveal",
+          "text": "All other warriors with more than their printed life are reduced to their printed life. The Egyptian Book of the Dead was written on papyrus. It was a collection of mystical spells and formulae that ensured an Egyptians’ passage into the afterlife."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) REU NU PERT EM HRU Egyptian • Special • Tome Bswt: Warriors cannot gain life. Snb – Reveal: All other warriors with more than their printed life are reduced to their printed life. The Egyptian Book of the Dead was written on papyrus. It was a collection of mystical spells and formulae that ensured an Egyptians’ passage into the afterlife. Illustration: Alan Pollack 2 70/100"
+    },
+    {
+      "id": "s2-035",
+      "source": "heard-2007",
+      "name": "SHENG KAI DE MU LAN HUA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "035",
+      "culture": "Chinese",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Nu xing zhi mei",
+          "type": "static",
+          "text": "Before a tied roll is broken by experience, you may discard this card. If you do, your roll gains +1 and you gain 2 life."
+        }
+      ],
+      "flavor": "The magnolia blossom is the Chinese symbol of feminine beauty.",
+      "illustrator": "James Ryman",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) SHENG KAI DE MU LAN HUA Chinese • Special • Item Nu xing zhi mei: Before a tied roll is broken by experience, you may discard this card. If you do, your roll gains +1 and you gain 2 life. The magnolia blossom is the Chinese symbol of feminine beauty. Illustration: James Ryman 2 35/100"
+    },
+    {
+      "id": "s2-030",
+      "source": "heard-2007",
+      "name": "TAO YUAN SAN JIE YI",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "030",
+      "culture": "Chinese",
+      "traits": [
+        "Special",
+        "Allies"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bai ba xiong di",
+          "type": "reveal",
+          "text": "Choose attack roll, defense roll, or speed. Your opponent loses all bonuses of the chosen type from card abilities for this round."
+        }
+      ],
+      "flavor": "Liu Bei, Guan Yu and Zhang Fei, appreciating each other’s talents and goals, vowed brotherhood in Zhang Fei’s peach orchard, swearing to protect each other unto death.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) TAO YUAN SAN JIE YI Chinese • Special • Allies Bai ba xiong di – Reveal: Choose attack roll, defense roll, or speed. Your opponent loses all bonuses of the chosen type from card abilities for this round. Liu Bei, Guan Yu and Zhang Fei, appreciating each other’s talents and goals, vowed brotherhood in Zhang Fei’s peach orchard, swearing to protect each other unto death. Illustration: Rob Alexander 2 30/100"
+    },
+    {
+      "id": "s2-005",
+      "source": "heard-2007",
+      "name": "TARGE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "005",
+      "culture": "Briton",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Agænes-feohte",
+          "type": "static",
+          "text": "When you are attacked and missed, your next attack roll gains +2."
+        }
+      ],
+      "flavor": "The targe, or target, was a traditional, round shield, made of wood and covered in leather. Later versions combined steel with wood. It was primarily used to parry attacks aimed at the body.",
+      "illustrator": "Matthew Armstrong",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) TARGE Briton • Special • Shield (1 Hand ) Agænes-feohte: When you are attacked and missed, your next attack roll gains +2. The targe, or target, was a traditional, round shield, made of wood and covered in leather. Later versions combined steel with wood. It was primarily used to parry attacks aimed at the body. Illustration: Matthew Armstrong 2 05/100"
+    },
+    {
+      "id": "s2-060",
+      "source": "heard-2007",
+      "name": "UDJAT EYE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "060",
+      "culture": "Egyptian",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Xk’",
+          "type": "static",
+          "text": "Each time you roll a 1 on any die, gain 1 life."
+        }
+      ],
+      "flavor": "The eye of the god Hurus, Udjat means “whole” or “undamaged” and was reputed to have great healing and protective power.",
+      "illustrator": "Jim Nelson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) UDJAT EYE Egyptian • Special • Item Xk’: Each time you roll a 1 on any die, gain 1 life. The eye of the god Hurus, Udjat means “whole” or “undamaged” and was reputed to have great healing and protective power. Illustration: Jim Nelson 2 60/100"
+    },
+    {
+      "id": "s2-065",
+      "source": "heard-2007",
+      "name": "WERERYET",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "065",
+      "culture": "Egyptian",
+      "traits": [
+        "Special",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hdhd chbn",
+          "type": "static",
+          "text": "At the start of the round, if you won initiative, you may move one space."
+        }
+      ],
+      "flavor": "Used by the Egyptian military for hundreds of years, the wereryet chariot could travel the desert with great speed and it provided an excellent platform from which to launch spears and arrows.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) WERERYET Egyptian • Special • Cavalry Hdhd chbn: At the start of the round, if you won initiative, you may move one space. Used by the Egyptian military for hundreds of years, the wereryet chariot could travel the desert with great speed and it provided an excellent platform from which to launch spears and arrows. Illustration: Michael Komarck 2 65/100"
+    },
+    {
+      "id": "s2-085",
+      "source": "heard-2007",
+      "name": "ZHAD",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 2,
+      "collector": "085",
+      "culture": "Mongol",
+      "traits": [
+        "Special",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Am önggerekü",
+          "type": "action",
+          "text": "Once per round, roll two dice. If the total is greater than an adjacent warrior’s initiative for this round, deal 2 damage to that warrior or 3 damage if you have a face-up cavalry card. You may use another special card in this game."
+        }
+      ],
+      "flavor": "After using num mor and num tom to soften the enemy ranks, the zhad was employed to break the formations of opposing foot soldiers.",
+      "illustrator": "Raven Mimura",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) ZHAD Mongol • Special • Polearm ( 2 Hand ) Am önggerekü – Action: Once per round, roll two dice. If the total is greater than an adjacent warrior’s initiative for this round, deal 2 damage to that warrior or 3 damage if you have a face-up cavalry card. You may use another special card in this game. After using num mor and num tom to soften the enemy ranks, the zhad was employed to break the formations of opposing foot soldiers. Illustration: Raven Mimura 2 85/100"
+    }
+  ]
+}

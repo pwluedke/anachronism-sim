@@ -1,0 +1,3885 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-17T00:00:00Z",
+  "source": "heard-2007",
+  "set": 1,
+  "card_count": 110,
+  "review_count": 8,
+  "cards": [
+    {
+      "id": "s1-091",
+      "source": "heard-2007",
+      "name": "ACHILLES",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 1,
+      "collector": "091",
+      "culture": "Greek",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 9,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 –1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Iroiki Taxitita",
+          "type": "action",
+          "text": "Move one space diagonally."
+        }
+      ],
+      "flavor": "Achilles stands as the greatest and most feared warrior of the Trojan War.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ACHILLES (Fire) 8 Life 3 Speed +0 9 Experience –1 � –1 1 Damage Greek • Warrior • Male Iroiki Taxitita – Action: Move one space diagonally. Achilles stands as the greatest and most feared warrior of the Trojan War. Illustration: Chris Appel 1 91/100"
+    },
+    {
+      "id": "s1-P1-10",
+      "source": "heard-2007",
+      "name": "ALEXANDER III OF MACEDON",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 1,
+      "collector": "P1/10",
+      "culture": "Greek",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kalutera einai na kaeis para na argosviseis",
+          "type": "static",
+          "text": "If you do not win initiative, take 1 damage. You always take the first turn each round."
+        }
+      ],
+      "flavor": "Alexander has been wounded in battle several times, but that never prevents him from leading his troops from the front.",
+      "illustrator": "Randy Gallegos",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ALEXANDER III OF MACEDON (Water) 8 Life 3 Speed 5 Experience +1 � +1 1 Damage Greek • Warrior • Male Kalutera einai na kaeis para na argosviseis: If you do not win initiative, take 1 damage. You always take the first turn each round. Alexander has been wounded in battle several times, but that never prevents him from leading his troops from the front. Illustration: Randy Gallegos 1 P1/10"
+    },
+    {
+      "id": "s1-001",
+      "source": "heard-2007",
+      "name": "ALEXANDER THE GREAT",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 1,
+      "collector": "001",
+      "culture": "Greek",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kataktas",
+          "type": "static",
+          "text": "Your attacks deal +1 damage against warriors with more life than you."
+        }
+      ],
+      "flavor": "Driven to surpass his father, Alexander’s ambition extends to the ends of the world.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ALEXANDER THE GREAT (Fire) 8 Life 3 Speed +0 –1 4 Experience � 1 Damage Greek • Warrior • Male Kataktas: Your attacks deal +1 damage against warriors with more life than you. Driven to surpass his father, Alexander’s ambition extends to the ends of the world. Illustration: Chris Appel 1 01/100"
+    },
+    {
+      "id": "s1-076",
+      "source": "heard-2007",
+      "name": "AMAZONIA",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 1,
+      "collector": "076",
+      "culture": "Roman",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 9,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–2 –1 –2 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Utriusque Manus Compos",
+          "type": "static",
+          "text": "You may use up to two weapons."
+        }
+      ],
+      "flavor": "Amazonia is the most famous gladiatrix of her time.",
+      "illustrator": "Steven Belledin",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "AMAZONIA (Water) 6 Life 3 Speed –2 –1 –2 9 Experience +0 � 1 Damage Roman • Warrior • Female Utriusque Manus Compos: You may use up to two weapons. Amazonia is the most famous gladiatrix of her time. Illustration: Steven Belledin 1 76/100"
+    },
+    {
+      "id": "s1-052",
+      "source": "heard-2007",
+      "name": "BEOWULF",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 1,
+      "collector": "052",
+      "culture": "Norse",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 –2 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tenacity",
+          "type": "static",
+          "text": "During their turns, opposing warriors must spend an additional action to move out of a space in any of your attack grids."
+        }
+      ],
+      "flavor": "Sixth century Geat King Beowulf rides the waves in search of a worthy challenge.",
+      "illustrator": "Sam Wood",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "BEOWULF (Metal) 7 Life 3 Speed +0 –2 6 Experience � +0 1 Damage Norse • Warrior • Male Tenacity: During their turns, opposing warriors must spend an additional action to move out of a space in any of your attack grids. Sixth century Geat King Beowulf rides the waves in search of a worthy challenge. Illustration: Sam Wood 1 52/100"
+    },
+    {
+      "id": "s1-P6-10",
+      "source": "heard-2007",
+      "name": "CANUTE I OF DENMARK",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 1,
+      "collector": "P6/10",
+      "culture": "Norse",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 –1 –1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ydmyk",
+          "type": "static",
+          "text": "Once per challenge, at the beginning of a round, replace all modifiers on all attack grids with “+0”"
+        }
+      ],
+      "flavor": "modifiers for that round. A humble and wise man, Danish King Canute demonstrates the limits of his power by vainly ordering the sea to retreat.",
+      "illustrator": "Terese Nielsen",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CANUTE I OF DENMARK (Water) 7 Life 3 Speed –1 –1 –1 4 Experience –1 � –1 1 Damage Norse • Warrior • Male Ydmyk: Once per challenge, at the beginning of a round, replace all modifiers on all attack grids with “+0” modifiers for that round. A humble and wise man, Danish King Canute demonstrates the limits of his power by vainly ordering the sea to retreat. Illustration: Terese Nielsen 1 P6/10"
+    },
+    {
+      "id": "s1-046",
+      "source": "heard-2007",
+      "name": "CANUTE THE GREAT",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 1,
+      "collector": "046",
+      "culture": "Norse",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 9,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 +0 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "En",
+          "type": "static",
+          "text": "This card count as all elements."
+        }
+      ],
+      "flavor": "Danish King and legendary member of the Jomsvikings, Canute wears three crowns, including the Crown of England.",
+      "illustrator": "Kev Walker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "CANUTE THE GREAT (Wood) 9 Life 3 Speed +0 +0 6 Experience +0 � +1 1 Damage Norse • Warrior • Male En: This card count as all elements. Danish King and legendary member of the Jomsvikings, Canute wears three crowns, including the Crown of England. Illustration: Kev Walker 1 46/100"
+    },
+    {
+      "id": "s1-058",
+      "source": "heard-2007",
+      "name": "FREYDIS EIRIKSDOTTIR",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 1,
+      "collector": "058",
+      "culture": "Norse",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 7,
+      "speed": 4,
+      "experience": 2,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–2 –2 +0 �",
+      "grid": null,
+      "abilities": [],
+      "flavor": "Greenlanders and Icelanders leave their homes in search of Vinland, a land shrouded in myth, yet held to be real. Leading these men and women on the quest for this new land is Freydis, daughter of the infamous Eirik the Red, and her husband Thorvard.",
+      "illustrator": "RK Post",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "abilities"
+      ],
+      "raw_source_text": "FREYDIS EIRIKSDOTTIR (Water) 7 Life 4 Speed –2 –2 2 Experience +0 � 1 Damage Norse • Warrior • Female Greenlanders and Icelanders leave their homes in search of Vinland, a land shrouded in myth, yet held to be real. Leading these men and women on the quest for this new land is Freydis, daughter of the infamous Eirik the Red, and her husband Thorvard. Illustration: RK Post 1 58/100"
+    },
+    {
+      "id": "s1-P8-10",
+      "source": "heard-2007",
+      "name": "GAIUS JULIUS",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 1,
+      "collector": "P8/10",
+      "culture": "Roman",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 10,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Veni, Vidi, Vici",
+          "type": "static",
+          "text": "Once per turn, when you hit a warrior with a basic attack, turn that warrior to face any direction."
+        }
+      ],
+      "flavor": "Ordered by the Senate to conquer Gaul, Gaius Julius will return to Rome to proclaim himself Emperor.",
+      "illustrator": "Jeremy Jarvis",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "GAIUS JULIUS (Fire) 6 Life 3 Speed +0 10 Experience +0 � 1 Damage +0 Roman • Warrior • Male Veni, Vidi, Vici: Once per turn, when you hit a warrior with a basic attack, turn that warrior to face any direction. Ordered by the Senate to conquer Gaul, Gaius Julius will return to Rome to proclaim himself Emperor. Illustration: Jeremy Jarvis 1 P8/10"
+    },
+    {
+      "id": "s1-P7-10",
+      "source": "heard-2007",
+      "name": "GEAT KING BEOWULF",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 1,
+      "collector": "P7/10",
+      "culture": "Norse",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Erfaren",
+          "type": "static",
+          "text": "Each round, if you win initiative, your attack rolls gain +1 for that round. If you do not win initiative, your defense rolls gain +1 for that round."
+        }
+      ],
+      "flavor": "After mortally wounding Grendel, Beowulf goes after the creature's mother as well.",
+      "illustrator": "Hugh Jameson",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "GEAT KING BEOWULF (Earth) 7 Life 3 Speed +1 4 Experience +0 � 1 Damage –1 Norse • Warrior • Male Erfaren: Each round, if you win initiative, your attack rolls gain +1 for that round. If you do not win initiative, your defense rolls gain +1 for that round. After mortally wounding Grendel, Beowulf goes after the creature's mother as well. Illustration: Hugh Jameson 1 P7/10"
+    },
+    {
+      "id": "s1-064",
+      "source": "heard-2007",
+      "name": "GRETTIR THE STRONG",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 1,
+      "collector": "064",
+      "culture": "Norse",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sterk",
+          "type": "static",
+          "text": "Your attacks with axes deal +1 damage. Your attack rolls that are doubles do not count as critical hits."
+        }
+      ],
+      "flavor": "Grettir, outlaw son of Asmund, is the epitome of the warrior poet. However, ill luck stalks him all his life as does a bad reputation.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "GRETTIR THE STRONG (Metal) 7 Life 3 Speed –1 –1 5 Experience � 1 Damage Norse • Warrior • Male Sterk: Your attacks with axes deal +1 damage. Your attack rolls that are doubles do not count as critical hits. Grettir, outlaw son of Asmund, is the epitome of the warrior poet. However, ill luck stalks him all his life as does a bad reputation. Illustration: David Ho 1 64/100"
+    },
+    {
+      "id": "s1-051",
+      "source": "heard-2007",
+      "name": "HARALD HARDRADA",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 1,
+      "collector": "051",
+      "culture": "Norse",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hardfør",
+          "type": "static",
+          "text": "Once per turn, when you take damage, you may roll two dice. If that total is less than 7, you take 1 less damage to a minimum of 1."
+        }
+      ],
+      "flavor": "A renowned warrior and Norwegian king, Harald is famed for his ability to take castles and for his love of plunder.",
+      "illustrator": "Alan Pollock",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "HARALD HARDRADA (Metal) 7 Life 3 Speed –1 –1 8 Experience � +0 1 Damage Norse • Warrior • Male Hardfør: Once per turn, when you take damage, you may roll two dice. If that total is less than 7, you take 1 less damage to a minimum of 1. A renowned warrior and Norwegian king, Harald is famed for his ability to take castles and for his love of plunder. Illustration: Alan Pollock 1 51/100"
+    },
+    {
+      "id": "s1-011",
+      "source": "heard-2007",
+      "name": "HERAKLES",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 1,
+      "collector": "011",
+      "culture": "Greek",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 6,
+      "speed": 3,
+      "experience": 4,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 –1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kairdoskopos",
+          "type": "static",
+          "text": "Once per round, after an enemy warrior moves into your basic attack grid, you may immediately make a basic attack against that warrior."
+        }
+      ],
+      "flavor": "Herakles’ boundless strength and courage eventually earn him a place among the gods on Mount Olympus.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "HERAKLES (Earth) 6 Life 3 Speed +0 –1 4 Experience � –1 1 Damage Greek • Warrior • Male Kairdoskopos: Once per round, after an enemy warrior moves into your basic attack grid, you may immediately make a basic attack against that warrior. Herakles’ boundless strength and courage eventually earn him a place among the gods on Mount Olympus. Illustration: Greg Staples 1 11/100"
+    },
+    {
+      "id": "s1-069",
+      "source": "heard-2007",
+      "name": "JULIUS CAESAR",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 1,
+      "collector": "069",
+      "culture": "Roman",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Alea Iacta Est",
+          "type": "static",
+          "text": "Once per turn, before you roll the dice, the roll is considered to be a 7."
+        }
+      ],
+      "flavor": "As a priest, lawyer, warrior, general and Caesar, Gaius Julius leaves his mark both with his mind and with his sword.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "JULIUS CAESAR (Earth) 7 Life 3 Speed +0 –1 3 Experience � +0 1 Damage Roman • Warrior • Male Alea Iacta Est: Once per turn, before you roll the dice, the roll is considered to be a 7. As a priest, lawyer, warrior, general and Caesar, Gaius Julius leaves his mark both with his mind and with his sword. Illustration: Michael Komarck 1 69/100"
+    },
+    {
+      "id": "s1-006",
+      "source": "heard-2007",
+      "name": "LEONIDAS",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 1,
+      "collector": "006",
+      "culture": "Greek",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 +0 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Molon Lave",
+          "type": "static",
+          "text": "Once per round, after you deal damage to an enemy warrior, gain 1 life."
+        }
+      ],
+      "flavor": "Against overwhelming odds, Spartan Kink Leonidas and his brave 300 fight to the death so that others may live.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "LEONIDAS (Wood) 8 Life 3 Speed –1 +0 3 Experience � –1 1 Damage Greek • Warrior • Male Molon Lave: Once per round, after you deal damage to an enemy warrior, gain 1 life. Against overwhelming odds, Spartan Kink Leonidas and his brave 300 fight to the death so that others may live. Illustration: Drew Baker 1 06/100"
+    },
+    {
+      "id": "s1-P2-10",
+      "source": "heard-2007",
+      "name": "LEONIDAS I OF SPARTA",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 1,
+      "collector": "P2/10",
+      "culture": "Greek",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 � +0 +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Romaleos",
+          "type": "static",
+          "text": "Once per round, one of your attack or defense rolls gains a bonus equal to the number of opposing warriors."
+        },
+        {
+          "name": "Improving Odds",
+          "type": "static",
+          "text": "When an opposing warrior is defeated, gain 2 life. Leonidas leads his troops against the might of Xerxes at Thermopylae, even though he knows they will all die."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Steven Beladdin",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "LEONIDAS I OF SPARTA (Wood) 7 Life 3 Speed +0 6 Experience � +0 1 Damage +0 Greek • Warrior • Male Romaleos: Once per round, one of your attack or defense rolls gains a bonus equal to the number of opposing warriors. Improving Odds: When an opposing warrior is defeated, gain 2 life. Leonidas leads his troops against the might of Xerxes at Thermopylae, even though he knows they will all die. Illustration: Steven Beladdin 1 P2/10"
+    },
+    {
+      "id": "s1-081",
+      "source": "heard-2007",
+      "name": "MARCUS CLAUDIUS MARCELLUS",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 1,
+      "collector": "081",
+      "culture": "Roman",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 1,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "�",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Gladius Romae",
+          "type": "action",
+          "text": "If you are in another warrior’s attack grid, make a basic attack on that warrior. Your attack roll gains +1 and this attack deals no more than one damage."
+        }
+      ],
+      "flavor": "Known as \"The Sword of Rome\", Marcellus conquers Syracuse, as well as securing innumerable other military victories for the Republic.",
+      "illustrator": "Mark Zug",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MARCUS CLAUDIUS MARCELLUS (Earth) 8 Life 3 Speed 1 Experience � 1 Damage Roman • Warrior • Male Gladius Romae – Action: If you are in another warrior’s attack grid, make a basic attack on that warrior. Your attack roll gains +1 and this attack deals no more than one damage. Known as \"The Sword of Rome\", Marcellus conquers Syracuse, as well as securing innumerable other military victories for the Republic. Illustration: Mark Zug 1 81/100"
+    },
+    {
+      "id": "s1-086",
+      "source": "heard-2007",
+      "name": "MAXIMINUS",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 1,
+      "collector": "086",
+      "culture": "Roman",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 –1 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ardor Deorum",
+          "type": "static",
+          "text": "Your attack rolls gain +1 while you have an inspiration in play."
+        }
+      ],
+      "flavor": "A giant of a man at over 2.6 meters tall, Maximinus is as unforgiving of his subjects as he is of his enemies.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MAXIMINUS (Earth) 8 Life 3 Speed +0 –1 3 Experience –1 � 1 Damage Roman • Warrior • Male Ardor Deorum: Your attack rolls gain +1 while you have an inspiration in play. A giant of a man at over 2.6 meters tall, Maximinus is as unforgiving of his subjects as he is of his enemies. Illustration: Alan Pollack 1 86/100"
+    },
+    {
+      "id": "s1-016",
+      "source": "heard-2007",
+      "name": "MILO OF CROTON",
+      "card_type": "warrior",
+      "element": "Wood",
+      "set": 1,
+      "collector": "016",
+      "culture": "Greek",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Xoris Fragmo",
+          "type": "static",
+          "text": "Your base attacks deal +1 damage while you have no face-up weapon cards."
+        }
+      ],
+      "flavor": "Milo’s amazing strength and indomitable pride help him win six Olympic wrestling tournaments.",
+      "illustrator": "Jason Engle",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "MILO OF CROTON (Wood) 8 Life 3 Speed –1 8 Experience –1 � –1 1 Damage Greek • Warrior • Male Xoris Fragmo: Your base attacks deal +1 damage while you have no face-up weapon cards. Milo’s amazing strength and indomitable pride help him win six Olympic wrestling tournaments. Illustration: Jason Engle 1 16/100"
+    },
+    {
+      "id": "s1-039",
+      "source": "heard-2007",
+      "name": "MIYAMOTO MUSASHI",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 1,
+      "collector": "039",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 9,
+      "speed": 3,
+      "experience": 8,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+1 –1 � +0 –1 –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Niten Ichi Ryu",
+          "type": "action",
+          "text": "Your next attack this turn deals +1 damage. After killing his first opponent at the age of 13, Musashi remains undefeated through sixty-one duels."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Sam Wood",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "MIYAMOTO MUSASHI (Fire) 9 Life 3 Speed +1 –1 8 Experience � +0 1 Damage –1 –1 Japanese • Warrior • Male Niten Ichi Ryu – Action: Your next attack this turn deals +1 damage. After killing his first opponent at the age of 13, Musashi remains undefeated through sixty-one duels. Illustration: Sam Wood 1 39/100"
+    },
+    {
+      "id": "s1-026",
+      "source": "heard-2007",
+      "name": "NAKANO TAKEKO",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 1,
+      "collector": "026",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Female"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Roshui-gun",
+          "type": "static",
+          "text": "After you hit a warrior with a weapon attack, you may move one space."
+        }
+      ],
+      "flavor": "As head of the roshui-gun, weapon master Nakano Takeko leads her female samurai into battle.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "NAKANO TAKEKO (Fire) 7 Life 3 Speed +0 +0 6 Experience +0 � 1 Damage Japanese • Warrior • Female Roshui-gun: After you hit a warrior with a weapon attack, you may move one space. As head of the roshui-gun, weapon master Nakano Takeko leads her female samurai into battle. Illustration: Drew Baker 1 26/100"
+    },
+    {
+      "id": "s1-041",
+      "source": "heard-2007",
+      "name": "NINJA",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 1,
+      "collector": "041",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 2,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 –1 –1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ninjutsu",
+          "type": "static",
+          "text": "Your attacks deal +1 damage while you are not in the defending opponent’s basic attack grid."
+        }
+      ],
+      "flavor": "Shinobi: This warrior may not use two-handed weapons. Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "NINJA (Wind) 7 Life 3 Speed –1 –1 –1 2 Experience –1 � –1 1 Damage Japanese • Warrior • Male Ninjutsu: Your attacks deal +1 damage while you are not in the defending opponent’s basic attack grid. Shinobi: This warrior may not use two-handed weapons. Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark. Illustration: William O’Connor 1 41/100"
+    },
+    {
+      "id": "s1-P4-10",
+      "source": "heard-2007",
+      "name": "NOBUNAGA",
+      "card_type": "warrior",
+      "element": "Water",
+      "set": 1,
+      "collector": "P4/10",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 5,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +1 � –1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Houtan",
+          "type": "static",
+          "text": "Every time a reveal ability is used, gain 1 life."
+        }
+      ],
+      "flavor": "Nobunaga never ceases to surprise his enemies with new and daring tactics.",
+      "illustrator": "Chris Mobler",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "NOBUNAGA (Water) 8 Life 3 Speed +0 5 Experience +1 � 1 Damage –1 Japanese • Warrior • Male Houtan: Every time a reveal ability is used, gain 1 life. Nobunaga never ceases to surprise his enemies with new and daring tactics. Illustration: Chris Mobler 1 P4/10"
+    },
+    {
+      "id": "s1-021",
+      "source": "heard-2007",
+      "name": "ODA NOBUNAGA",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 1,
+      "collector": "021",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 1,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Roukou",
+          "type": "static",
+          "text": "You win ties with warriors that do not have the Roukou ability, regardless of experience."
+        }
+      ],
+      "flavor": "Nobunaga’s battlefield brilliance has secured his place as one of the most brutally effective military leaders of all time.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "ODA NOBUNAGA (Fire) 8 Life 3 Speed +0 +0 1 Experience � 1 Damage Japanese • Warrior • Male Roukou: You win ties with warriors that do not have the Roukou ability, regardless of experience. Nobunaga’s battlefield brilliance has secured his place as one of the most brutally effective military leaders of all time. Illustration: Rob Alexander 1 21/100"
+    },
+    {
+      "id": "s1-033",
+      "source": "heard-2007",
+      "name": "SAITO MUSASHIBO BENKEI",
+      "card_type": "warrior",
+      "element": "Fire",
+      "set": 1,
+      "collector": "033",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Toushimanman",
+          "type": "static",
+          "text": "After you hit an opponent with a basic attack, they cannot attack you with a weapon this round."
+        }
+      ],
+      "flavor": "A giant of a man, with legendary strength and skill, warrior monk Benkei of the Yamabushi comes to embody some of the greatest qualities of the Japanese warrior.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SAITO MUSASHIBO BENKEI (Fire) 8 Life 3 Speed –1 –1 6 Experience � +0 1 Damage Japanese • Warrior • Male Toushimanman: After you hit an opponent with a basic attack, they cannot attack you with a weapon this round. A giant of a man, with legendary strength and skill, warrior monk Benkei of the Yamabushi comes to embody some of the greatest qualities of the Japanese warrior. Illustration: Ezra Tucker 1 33/100"
+    },
+    {
+      "id": "s1-P5-10",
+      "source": "heard-2007",
+      "name": "SHINMEN TAKEZO",
+      "card_type": "warrior",
+      "element": "Wind",
+      "set": 1,
+      "collector": "P5/10",
+      "culture": "Japanese",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 2,
+      "experience": 7,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 +2 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kyougou",
+          "type": "static",
+          "text": "Your attack rolls gain +2. Your attacks with swords deal +1 damage."
+        }
+      ],
+      "flavor": "Towards the end of his life, Miyamoto Mushashi retires to a cave to perfect his understandings of strategy and to scribe the Gorin No Sho.",
+      "illustrator": "Carl Frank",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SHINMEN TAKEZO (Wind) 7 Life 2 Speed –1 +2 –1 7 Experience � 1 Damage Japanese • Warrior • Male Kyougou: Your attack rolls gain +2. Your attacks with swords deal +1 damage. Towards the end of his life, Miyamoto Mushashi retires to a cave to perfect his understandings of strategy and to scribe the Gorin No Sho. Illustration: Carl Frank 1 P5/10"
+    },
+    {
+      "id": "s1-096",
+      "source": "heard-2007",
+      "name": "SPARTACUS",
+      "card_type": "warrior",
+      "element": "Metal",
+      "set": 1,
+      "collector": "096",
+      "culture": "Roman",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 8,
+      "speed": 3,
+      "experience": 6,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "–1 –1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ars Gladiatoria",
+          "type": "action",
+          "text": "If you have an inspiration in play, make an extra attack with one of your weapons."
+        }
+      ],
+      "flavor": "Thracian gladiator, slave and rebel leader, Spartacus emancipates himself and wreaks havoc on the Roman Empire.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SPARTACUS (Metal) 8 Life 3 Speed –1 –1 6 Experience � 1 Damage Roman • Warrior • Male Ars Gladiatoria - 2 Actions: If you have an inspiration in play, make an extra attack with one of your weapons. Thracian gladiator, slave and rebel leader, Spartacus emancipates himself and wreaks havoc on the Roman Empire. Illustration: Mark Poole 1 96/100"
+    },
+    {
+      "id": "s1-P10-10",
+      "source": "heard-2007",
+      "name": "SPARTACUS OF THRACE",
+      "card_type": "warrior",
+      "element": "Earth",
+      "set": 1,
+      "collector": "P10/10",
+      "culture": "Roman",
+      "traits": [
+        "Warrior",
+        "Male"
+      ],
+      "life": 7,
+      "speed": 3,
+      "experience": 3,
+      "damage": 1,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Rebellis",
+          "type": "static",
+          "text": "Your critical hits deal +2 damage instead of doubling base damage."
+        }
+      ],
+      "flavor": "Before he ever leads a slave revolt against Rome, Spartacus is one of the most feared gladiators in the coliseum.",
+      "illustrator": "John Donahue",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "SPARTACUS OF THRACE (Earth) 7 Life 3 Speed +0 +0 3 Experience +1 � 1 Damage Roman • Warrior • Male Rebellis: Your critical hits deal +2 damage instead of doubling base damage. Before he ever leads a slave revolt against Rome, Spartacus is one of the most feared gladiators in the coliseum. Illustration: John Donahue 1 P10/10"
+    },
+    {
+      "id": "s1-028",
+      "source": "heard-2007",
+      "name": "AMATERASU",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 1,
+      "collector": "028",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hikarimono",
+          "type": "reveal",
+          "text": "At the beginning of this round, if you have less life than all other warriors, you gain +1 speed for this round."
+        }
+      ],
+      "flavor": "Amaterasu rules the Shinto religion as supreme goddess of the sun and queen of the kami.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) AMATERASU (Wind) Japanese • Inspiration • Deity Hikarimono – Reveal: At the beginning of this round, if you have less life than all other warriors, you gain +1 speed for this round. Amaterasu rules the Shinto religion as supreme goddess of the sun and queen of the kami. Illustration: Drew Baker 1 28/100"
+    },
+    {
+      "id": "s1-082",
+      "source": "heard-2007",
+      "name": "APOLLO",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 1,
+      "collector": "082",
+      "culture": "Roman",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Cura Dei",
+          "type": "reveal",
+          "text": "Your attack rolls gain +1 this round. God of art, light and healing, Apollo pulls the sun across the sky behind his four horse chariot."
+        }
+      ],
+      "flavor": "lllustration: Mark Zug",
+      "illustrator": "",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) APOLLO (Fire) Roman • Inspiration • Deity Cura Dei – Reveal: Your attack rolls gain +1 this round. God of art, light and healing, Apollo pulls the sun across the sky behind his four horse chariot. lllustration: Mark Zug 1 82/100"
+    },
+    {
+      "id": "s1-034",
+      "source": "heard-2007",
+      "name": "BISHAMON-TEN",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 1,
+      "collector": "034",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hogosha",
+          "type": "static",
+          "text": "All warriors’ attack rolls gain +1."
+        }
+      ],
+      "flavor": "Shinto god of war and happiness, as well as one of the seven kami of luck, Bishamon protects the cardinal north and the Japanese people from danger.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) BISHAMON-TEN (Fire) Japanese • Inspiration • Deity Hogosha: All warriors’ attack rolls gain +1. Shinto god of war and happiness, as well as one of the seven kami of luck, Bishamon protects the cardinal north and the Japanese people from danger. Illustration: Ezra Tucker 1 34/100"
+    },
+    {
+      "id": "s1-097",
+      "source": "heard-2007",
+      "name": "BLOSSIUS OF CUMAE",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 1,
+      "collector": "097",
+      "culture": "Roman",
+      "traits": [
+        "Inspiration",
+        "Philosopher"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Primus ultimus erit, atque ultimus primus",
+          "type": "static",
+          "text": "If you are a metal warrior, resolve initiative from lowest to highest this challenge."
+        }
+      ],
+      "flavor": "Stoic philosopher Blossius of Cumae stirs the soul to action, regardless of the Empire and its laws.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) BLOSSIUS OF CUMAE (Water) Roman • Inspiration • Philosopher Primus ultimus erit, atque ultimus primus: If you are a metal warrior, resolve initiative from lowest to highest this challenge. Stoic philosopher Blossius of Cumae stirs the soul to action, regardless of the Empire and its laws. Illustration: Mark Poole 1 97/100"
+    },
+    {
+      "id": "s1-P3-10",
+      "source": "heard-2007",
+      "name": "BUSHIDO",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 1,
+      "collector": "P3/10",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Code"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Soujoukouka",
+          "type": "static",
+          "text": "If all of your face-up cards are Japanese, all of your rolls gain +1."
+        }
+      ],
+      "flavor": "The seven tenets of bushido are Yuki (valor), Jin (benevolence), Gi (rectitude), Rei (etiquette), Makoto (honesty), Chugi (loyalty) and Meiyo (honor).",
+      "illustrator": "Brad Williams",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) BUSHIDO (Fire) Japanese • Inspiration • Code Soujoukouka: If all of your face-up cards are Japanese, all of your rolls gain +1. The seven tenets of bushido are Yuki (valor), Jin (benevolence), Gi (rectitude), Rei (etiquette), Makoto (honesty), Chugi (loyalty) and Meiyo (honor). Illustration: Brad Williams 1 P3/10"
+    },
+    {
+      "id": "s1-060",
+      "source": "heard-2007",
+      "name": "GRENDEL",
+      "card_type": "inspiration",
+      "element": "Wood",
+      "set": 1,
+      "collector": "060",
+      "culture": "Norse",
+      "traits": [
+        "Inspiration",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Intimidation",
+          "type": "reveal",
+          "text": "Choose an opposing warrior and roll two dice. If the total is greater than that warrior’s experience, that warrior must spend an additional action to attack this round."
+        }
+      ],
+      "flavor": "Grendel the giant will dine with anyone who enters \"his\" hall after dark.",
+      "illustrator": "Sam Wood",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) GRENDEL (Wood) Norse • Inspiration • Quest Intimidation – Reveal: Choose an opposing warrior and roll two dice. If the total is greater than that warrior’s experience, that warrior must spend an additional action to attack this round. Grendel the giant will dine with anyone who enters \"his\" hall after dark. Illustration: Sam Wood 1 60/100"
+    },
+    {
+      "id": "s1-022",
+      "source": "heard-2007",
+      "name": "IZANAGI",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 1,
+      "collector": "022",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zonrei",
+          "type": "reveal",
+          "text": "Roll two dice. If the total is less than your experience, gain 2 life."
+        }
+      ],
+      "flavor": "Izanagi, god of the life and all that is heavenly, creates the Japanese islands with his sister and wife, Izanami.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) IZANAGI (Earth) Japanese • Inspiration • Deity Zonrei – Reveal: Roll two dice. If the total is less than your experience, gain 2 life. Izanagi, god of the life and all that is heavenly, creates the Japanese islands with his sister and wife, Izanami. Illustration: Rob Alexander 1 22/100"
+    },
+    {
+      "id": "s1-042",
+      "source": "heard-2007",
+      "name": "IZANAMI",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 1,
+      "collector": "042",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ma",
+          "type": "reveal",
+          "text": "Roll 2 dice. If the total is greater than 7, (or greater than 5 if you are a wind warrior), then move to any empty space in the arena."
+        }
+      ],
+      "flavor": "Izanami, sister and wife of Izanagi, rules the underworld as the goddess of death and all things dark.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) IZANAMI (Wind) Japanese • Inspiration • Deity Ma – Reveal: Roll 2 dice. If the total is greater than 7, (or greater than 5 if you are a wind warrior), then move to any empty space in the arena. Izanami, sister and wife of Izanagi, rules the underworld as the goddess of death and all things dark. Illustration: William O’Connor 1 42/100"
+    },
+    {
+      "id": "s1-070",
+      "source": "heard-2007",
+      "name": "JUPITER",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 1,
+      "collector": "070",
+      "culture": "Roman",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Vis lovis",
+          "type": "static",
+          "text": "Each round, if you win initiative, your attacks deal +1 damage that round."
+        }
+      ],
+      "flavor": "As supreme god of the Roman pantheon, Jupiter rules the gods, the skies and the weather.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) JUPITER (Earth) Roman • Inspiration • Deity Vis lovis: Each round, if you win initiative, your attacks deal +1 damage that round. As supreme god of the Roman pantheon, Jupiter rules the gods, the skies and the weather. Illustration: Michael Komarck 1 70/100"
+    },
+    {
+      "id": "s1-065",
+      "source": "heard-2007",
+      "name": "LOKI",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 1,
+      "collector": "065",
+      "culture": "Norse",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kneb",
+          "type": "reveal",
+          "text": "Choose an opposing warrior’s face-up weapon. If you have a face-up weapon, exchange that card for your opponent’s weapon until the end of the round."
+        }
+      ],
+      "flavor": "God of trickery and mischief, Loki plagues the Aesir with his crafty, often malicious pranks.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) LOKI (Wind) Norse • Inspiration • Deity Kneb – Reveal: Choose an opposing warrior’s face-up weapon. If you have a face-up weapon, exchange that card for your opponent’s weapon until the end of the round. God of trickery and mischief, Loki plagues the Aesir with his crafty, often malicious pranks. Illustration: David Ho 1 65/100"
+    },
+    {
+      "id": "s1-P9-10",
+      "source": "heard-2007",
+      "name": "MARS",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 1,
+      "collector": "P9/10",
+      "culture": "Roman",
+      "traits": [
+        "Inspiration",
+        "Diety"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Concors",
+          "type": "static",
+          "text": "If all of your face-up cards are Roman, all of your rolls gain +1."
+        }
+      ],
+      "flavor": "War god and father of Romulus and Remus, Mars one of the most revered and worshipped gods in the Roman pantheon.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "source_typo"
+      ],
+      "raw_source_text": "(4) MARS (Earth) Roman • Inspiration • Diety Concors: If all of your face-up cards are Roman, all of your rolls gain +1. War god and father of Romulus and Remus, Mars one of the most revered and worshipped gods in the Roman pantheon. Illustration: Greg Staples 1 P9/10"
+    },
+    {
+      "id": "s1-077",
+      "source": "heard-2007",
+      "name": "MERCURY",
+      "card_type": "inspiration",
+      "element": "Fire",
+      "set": 1,
+      "collector": "077",
+      "culture": "Roman",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Nuntius",
+          "type": "reveal",
+          "text": "All warriors gain +2 speed this round."
+        }
+      ],
+      "flavor": "Running on winged heels, Mercury, the god of speed, delivers messages for the immortals.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) MERCURY (Fire) Roman • Inspiration • Deity Nuntius – Reveal: All warriors gain +2 speed this round. Running on winged heels, Mercury, the god of speed, delivers messages for the immortals. Illustration: Mark Poole 1 77/100"
+    },
+    {
+      "id": "s1-040",
+      "source": "heard-2007",
+      "name": "MUSHA-SHUGYO",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 1,
+      "collector": "040",
+      "culture": "Japanese",
+      "traits": [
+        "Inspiration",
+        "Quest"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sho Shin",
+          "type": "reveal",
+          "text": "For this round, all hits for all players are critical hits."
+        }
+      ],
+      "flavor": "Surviving the warrior pilgimage signifies the birth of a true samurai.",
+      "illustrator": "Sam Wood",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) MUSHA-SHUGYO (Earth) Japanese • Inspiration • Quest Sho Shin – Reveal: For this round, all hits for all players are critical hits. Surviving the warrior pilgimage signifies the birth of a true samurai. Illustration: Sam Wood 1 40/100"
+    },
+    {
+      "id": "s1-007",
+      "source": "heard-2007",
+      "name": "NEMESIS",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 1,
+      "collector": "007",
+      "culture": "Greek",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ekdikisi",
+          "type": "static",
+          "text": "The next card you reveal gains +10 initiative."
+        }
+      ],
+      "flavor": "The goddess of retribution, Nemesis punishes excessive pride and undeserved happiness.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) NEMESIS (Wind) Greek • Inspiration • Deity Ekdikisi: The next card you reveal gains +10 initiative. The goddess of retribution, Nemesis punishes excessive pride and undeserved happiness. Illustration: Drew Baker 1 07/100"
+    },
+    {
+      "id": "s1-047",
+      "source": "heard-2007",
+      "name": "ODIN",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 1,
+      "collector": "047",
+      "culture": "Norse",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Innsikt",
+          "type": "static",
+          "text": "When making attack or defense rolls, only roll one die. Your roll is equal to the die roll plus the attacking or defending opponent’s intiative for this round."
+        }
+      ],
+      "flavor": "One-eyed Odin leads the Aesir as the supreme god of the Norse pantheon.",
+      "illustrator": "Kev Walker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) ODIN (Earth) Norse • Inspiration • Deity Innsikt: When making attack or defense rolls, only roll one die. Your roll is equal to the die roll plus the attacking or defending opponent’s intiative for this round. One-eyed Odin leads the Aesir as the supreme god of the Norse pantheon. Illustration: Kev Walker 1 47/100"
+    },
+    {
+      "id": "s1-002",
+      "source": "heard-2007",
+      "name": "ORACLE OF DELPHI",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 1,
+      "collector": "002",
+      "culture": "Greek",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Propheteia",
+          "type": "reveal",
+          "text": "Look at all face-down cards. You may trade the placement of two of your face-down cards."
+        }
+      ],
+      "flavor": "At his temple in Delphi, Apollo speaks of the fate of the world through his Oracle, Pythia.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) ORACLE OF DELPHI (Water) Greek • Inspiration • Deity Propheteia – Reveal: Look at all face-down cards. You may trade the placement of two of your face-down cards. At his temple in Delphi, Apollo speaks of the fate of the world through his Oracle, Pythia. Illustration: Chris Appel 1 02/100"
+    },
+    {
+      "id": "s1-087",
+      "source": "heard-2007",
+      "name": "PLUTO",
+      "card_type": "inspiration",
+      "element": "Metal",
+      "set": 1,
+      "collector": "087",
+      "culture": "Roman",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mors Venit",
+          "type": "static",
+          "text": "At the end of each player’s turn, that player’s warrior takes 1 damage if they did not hit another warrior this turn."
+        }
+      ],
+      "flavor": "Lord of the underworld, Pluto rules over the souls of those fallen in battle.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) PLUTO (Metal) Roman • Inspiration • Deity Mors Venit: At the end of each player’s turn, that player’s warrior takes 1 damage if they did not hit another warrior this turn. Lord of the underworld, Pluto rules over the souls of those fallen in battle. Illustration: Alan Pollack 1 87/100"
+    },
+    {
+      "id": "s1-017",
+      "source": "heard-2007",
+      "name": "PYTHAGORAS",
+      "card_type": "inspiration",
+      "element": "Wind",
+      "set": 1,
+      "collector": "017",
+      "culture": "Greek",
+      "traits": [
+        "Inspiration",
+        "Philosophy"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sintomotera Odos",
+          "type": "action",
+          "text": "Move one space diagonally."
+        }
+      ],
+      "flavor": "A philosopher and mathematician, Pythagoras challenges thought with his insight and understanding.",
+      "illustrator": "Jason Engle",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) PYTHAGORAS (Wind) Greek • Inspiration • Philosophy Sintomotera Odos – Action: Move one space diagonally. A philosopher and mathematician, Pythagoras challenges thought with his insight and understanding. Illustration: Jason Engle 1 17/100"
+    },
+    {
+      "id": "s1-092",
+      "source": "heard-2007",
+      "name": "THETIS",
+      "card_type": "inspiration",
+      "element": "Water",
+      "set": 1,
+      "collector": "092",
+      "culture": "Greek",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mitriki Agapi",
+          "type": "static",
+          "text": "Once per game, re-roll any one die or make your opponent re-roll any one die."
+        }
+      ],
+      "flavor": "Daughter of Nereus and Doris, Thetis is the queen of the sea nymphs and mother of Achilles.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) THETIS (Water) Greek • Inspiration • Deity Mitriki Agapi: Once per game, re-roll any one die or make your opponent re-roll any one die. Daughter of Nereus and Doris, Thetis is the queen of the sea nymphs and mother of Achilles. Illustration: Chris Appel 1 92/100"
+    },
+    {
+      "id": "s1-053",
+      "source": "heard-2007",
+      "name": "THOR",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 1,
+      "collector": "053",
+      "culture": "Norse",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Torden",
+          "type": "static",
+          "text": "After you roll doubles on a defense roll, deal 1 damage to the attacking warrior."
+        }
+      ],
+      "flavor": "Thor, the Norse god of thunder, protects human and god alike from the forces of evil.",
+      "illustrator": "Alan Pollock",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) THOR (Earth) Norse • Inspiration • Deity Torden: After you roll doubles on a defense roll, deal 1 damage to the attacking warrior. Thor, the Norse god of thunder, protects human and god alike from the forces of evil. Illustration: Alan Pollock 1 53/100"
+    },
+    {
+      "id": "s1-059",
+      "source": "heard-2007",
+      "name": "TYR",
+      "card_type": "inspiration",
+      "element": "Metal",
+      "set": 1,
+      "collector": "059",
+      "culture": "Norse",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mot",
+          "type": "static",
+          "text": "After you make a roll, if any of your dice is a 1, the roll is considered doubles, even if the dice are different."
+        }
+      ],
+      "flavor": "Boldest of the Norse gods, Tyr inspires heroism and courage in battle.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) TYR (Metal) Norse • Inspiration • Deity Mot: After you make a roll, if any of your dice is a 1, the roll is considered doubles, even if the dice are different. Boldest of the Norse gods, Tyr inspires heroism and courage in battle. Illustration: RK Post 1 59/100"
+    },
+    {
+      "id": "s1-012",
+      "source": "heard-2007",
+      "name": "ZEUS",
+      "card_type": "inspiration",
+      "element": "Earth",
+      "set": 1,
+      "collector": "012",
+      "culture": "Greek",
+      "traits": [
+        "Inspiration",
+        "Deity"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Diatagma tou Olimpou",
+          "type": "static",
+          "text": "At the beginning of any round, you may name an ability. That ability has no effect that round. After you name an ability, discard this card."
+        }
+      ],
+      "flavor": "Zeus rules Mount Olympus and all the Greek gods who dwell there.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) ZEUS (Earth) Greek • Inspiration • Deity Diatagma tou Olimpou: At the beginning of any round, you may name an ability. That ability has no effect that round. After you name an ability, discard this card. Zeus rules Mount Olympus and all the Greek gods who dwell there. Illustration: Greg Staples 1 12/100"
+    },
+    {
+      "id": "s1-027",
+      "source": "heard-2007",
+      "name": "BOKKEN",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "027",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +2 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Precision",
+          "type": "static",
+          "text": "Once per turn, you may re-roll one die on an attack roll."
+        },
+        {
+          "name": "Pair",
+          "type": "static",
+          "text": "You may use two “Bokken” cards in this game. Victory with a wooden sword demonstrates superior confidence and domination over bladed opponents."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(8) BOKKEN (1) +0 +2 � +1 Japanese • Weapon • Sword (1 hand) Precision: Once per turn, you may re-roll one die on an attack roll. Pair: You may use two “Bokken” cards in this game. Victory with a wooden sword demonstrates superior confidence and domination over bladed opponents. Illustration: Ezra Tucker 1 27/100"
+    },
+    {
+      "id": "s1-066",
+      "source": "heard-2007",
+      "name": "DANE AXE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "066",
+      "culture": "Norse",
+      "traits": [
+        "Weapon",
+        "Axe"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 2,
+      "weapon_damage": 0,
+      "grid_raw": "+0 +0 +2 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hogge",
+          "type": "static",
+          "text": "This weapon deals +1 damage for each of your other face-up support cards."
+        }
+      ],
+      "flavor": "The six-foot broadax can shear the head from a horse in a single blow.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) DANE AXE (0) +0 +0 +2 +0 � Norse • Weapon • Axe (2 Hands) Hogge: This weapon deals +1 damage for each of your other face-up support cards. The six-foot broadax can shear the head from a horse in a single blow. Illustration: David Ho 1 66/100"
+    },
+    {
+      "id": "s1-071",
+      "source": "heard-2007",
+      "name": "GLADIUS",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "071",
+      "culture": "Roman",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +1 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Lamina Acuta",
+          "type": "static",
+          "text": "Attacks with this weapon deal +1 damage if you have a face up shield card. Attacks with this weapon deal +1 damage if the defender has no face-up armor card."
+        }
+      ],
+      "flavor": "Known as \"the sword that conquered the world\", the gladius is a remarkably balanced thrusting sword.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) GLADIUS (1) +1 +1 +0 � Roman • Weapon • Sword (1 Hand) Lamina Acuta: Attacks with this weapon deal +1 damage if you have a face up shield card. Attacks with this weapon deal +1 damage if the defender has no face-up armor card. Known as \"the sword that conquered the world\", the gladius is a remarkably balanced thrusting sword. Illustration: Michael Komarck 1 71/100"
+    },
+    {
+      "id": "s1-035",
+      "source": "heard-2007",
+      "name": "KATANA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "035",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ki ken tai itchi",
+          "type": "static",
+          "text": "When you hit with this weapon, the attacker and the defender each roll one die and add his or her warior’s experience. If your total is higher, you deal +1 damage this attack."
+        }
+      ],
+      "flavor": "The katana represents the heart and soul of the samurai; together, they cut down all who stand in the way of its curved blade.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) KATANA (2) +1 � +1 Japanese • Weapon • Sword (2 Hands) Ki ken tai itchi: When you hit with this weapon, the attacker and the defender each roll one die and add his or her warior’s experience. If your total is higher, you deal +1 damage this attack. The katana represents the heart and soul of the samurai; together, they cut down all who stand in the way of its curved blade. Illustration: Ezra Tucker 1 35/100"
+    },
+    {
+      "id": "s1-013",
+      "source": "heard-2007",
+      "name": "KOPIS",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "013",
+      "culture": "Greek",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+2 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Epithesi!",
+          "type": "static",
+          "text": "Attacks with this weapon deal +1 damage if you have moved this turn."
+        }
+      ],
+      "flavor": "Curved blades like the kopis make excellent slashing weapons.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) KOPIS (1) +2 +1 � +0 Greek • Weapon • Sword (1 Hand) Epithesi!: Attacks with this weapon deal +1 damage if you have moved this turn. Curved blades like the kopis make excellent slashing weapons. Illustration: Greg Staples 1 13/100"
+    },
+    {
+      "id": "s1-055",
+      "source": "heard-2007",
+      "name": "LANGOX",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "055",
+      "culture": "Norse",
+      "traits": [
+        "Weapon",
+        "Axe"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 2,
+      "weapon_damage": 3,
+      "grid_raw": "+0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tung",
+          "type": "static",
+          "text": "Your other cards get –2 intiative."
+        }
+      ],
+      "flavor": "A lethal offensive choice, the langox leaves its wielder vulnerable on defense.",
+      "illustrator": "Alan Pollock",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) LANGOX (3) +0 � Norse • Weapon • Axe (2 Hands) Tung: Your other cards get –2 intiative. A lethal offensive choice, the langox leaves its wielder vulnerable on defense. Illustration: Alan Pollock 1 55/100"
+    },
+    {
+      "id": "s1-048",
+      "source": "heard-2007",
+      "name": "LANGSEAX",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "048",
+      "culture": "Norse",
+      "traits": [
+        "Weapon",
+        "Knife"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +0 +0 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hurtig",
+          "type": "static",
+          "text": "Your attack rolls with this weapon get +1 for each of your other face-up support cards."
+        }
+      ],
+      "flavor": "The langseax doubles as a long knife and short sword for Norse warriors.",
+      "illustrator": "Kev Walker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) LANGSEAX (2) +0 +0 +0 � Norse • Weapon • Knife (1 Hand) Hurtig: Your attack rolls with this weapon get +1 for each of your other face-up support cards. The langseax doubles as a long knife and short sword for Norse warriors. Illustration: Kev Walker 1 48/100"
+    },
+    {
+      "id": "s1-030",
+      "source": "heard-2007",
+      "name": "NAGINATA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "030",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 +1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Sune-Uchi",
+          "type": "reveal",
+          "text": "Choose an opposing warrior and roll two dice. If the total is more than your opponent’s experience, the opposing warrior gets –2 initiative for the next round."
+        }
+      ],
+      "flavor": "Sweeping movements make this curved blade, mounted on the end of a long, wooden pole, devastating against both infantry and cavalry.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) NAGINATA (2) +1 +1 +1 � +1 Japanese • Weapon • Polearm (2 Hands) Sune-Uchi – Reveal: Choose an opposing warrior and roll two dice. If the total is more than your opponent’s experience, the opposing warrior gets –2 initiative for the next round. Sweeping movements make this curved blade, mounted on the end of a long, wooden pole, devastating against both infantry and cavalry. Illustration: Drew Baker 1 30/100"
+    },
+    {
+      "id": "s1-043",
+      "source": "heard-2007",
+      "name": "NINJA-TO",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "043",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +1 +0 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tamokuteki",
+          "type": "static",
+          "text": "When making attacks rolls with this weapon, roll three dice and choose which two to use. Many samurai meet their end at the short, straight blade of this weapon."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) NINJA-TO (1) +1 +1 +0 � +0 Japanese • Weapon • Sword (1 Hand) Tamokuteki: When making attacks rolls with this weapon, roll three dice and choose which two to use. Many samurai meet their end at the short, straight blade of this weapon. Illustration: William O’Connor 1 43/100"
+    },
+    {
+      "id": "s1-083",
+      "source": "heard-2007",
+      "name": "PILUM",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "083",
+      "culture": "Roman",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+2 +1 +0 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Perutilis",
+          "type": "action",
+          "text": "Discard this card to deal 1 damage to another warrior and discard that warrior’s face up shield card, if any."
+        }
+      ],
+      "flavor": "This metal-tipped javelin bends on impact, disabling shields and making it impossible to throw back.",
+      "illustrator": "Brad Williams",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) PILUM (1) +2 +1 +0 +1 � Roman • Weapon • Polearm (1 Hand) Perutilis – Action: Discard this card to deal 1 damage to another warrior and discard that warrior’s face up shield card, if any. This metal-tipped javelin bends on impact, disabling shields and making it impossible to throw back. Illustration: Brad Williams 1 83/100"
+    },
+    {
+      "id": "s1-078",
+      "source": "heard-2007",
+      "name": "PUGIO",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "078",
+      "culture": "Roman",
+      "traits": [
+        "Weapon",
+        "Knife"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +1 +1 +1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Turbare",
+          "type": "action",
+          "text": "Attack with this weapon."
+        }
+      ],
+      "flavor": "For the Roman Republican or Empirical warrior, the pugio is a favorite tool and backup weapon.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) PUGIO (1) +1 +1 +1 +1 � +1 Roman • Weapon • Knife (1 Hand) Turbare – Action: Attack with this weapon. For the Roman Republican or Empirical warrior, the pugio is a favorite tool and backup weapon. Illustration: Mark Poole 1 78/100"
+    },
+    {
+      "id": "s1-018",
+      "source": "heard-2007",
+      "name": "ROPALO",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "018",
+      "culture": "Greek",
+      "traits": [
+        "Weapon",
+        "Bludgeon"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+0 +1 +3 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dinato Xtipima",
+          "type": "reveal",
+          "text": "Turn your warrior to face any direction. You may immediately make an attack with this weapon against each warrior in this weapons attack grid. The ropalo, a large club, is used simply to bludgeon opponents into submission."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Jason Engle",
+      "parse_confidence": "partial",
+      "needs_review": [
+        "flavor"
+      ],
+      "raw_source_text": "(5) ROPALO (1) +0 +1 +3 � Greek • Weapon • Bludgeon (1 Hand) Dinato Xtipima – Reveal: Turn your warrior to face any direction. You may immediately make an attack with this weapon against each warrior in this weapons attack grid. The ropalo, a large club, is used simply to bludgeon opponents into submission. Illustration: Jason Engle 1 18/100"
+    },
+    {
+      "id": "s1-093",
+      "source": "heard-2007",
+      "name": "SARISSA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "093",
+      "culture": "Greek",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "–1 +0 +2 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Katastrofi panoplias",
+          "type": "static",
+          "text": "Opponents’ armor cards produce no effects during the round they are revealed."
+        }
+      ],
+      "flavor": "This broad-leaf, 2.5-meter spear strikes fear into the hearts of those who oppose the Greek hoplite.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) SARISSA (1) –1 +0 +2 +2 � Greek • Weapon • Polearm (1 Hand) Katastrofi panoplias: Opponents’ armor cards produce no effects during the round they are revealed. This broad-leaf, 2.5-meter spear strikes fear into the hearts of those who oppose the Greek hoplite. Illustration: Chris Appel 1 93/100"
+    },
+    {
+      "id": "s1-003",
+      "source": "heard-2007",
+      "name": "SARISSAE",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "003",
+      "culture": "Greek",
+      "traits": [
+        "Weapon",
+        "Polearm"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 2,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 +2 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Phalanx",
+          "type": "static",
+          "text": "When a warrior moves into a space on this weapon’s attack grid, deal 1 damage to that warrior."
+        }
+      ],
+      "flavor": "The success of the Macedonian phalanx rests with these 6.3meter pikes.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) SARISSAE (2) +1 +1 +2 � Greek • Weapon • Polearm ( 2 Hands) Phalanx: When a warrior moves into a space on this weapon’s attack grid, deal 1 damage to that warrior. The success of the Macedonian phalanx rests with these 6.3meter pikes. Illustration: Chris Appel 1 03/100"
+    },
+    {
+      "id": "s1-098",
+      "source": "heard-2007",
+      "name": "SICA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "098",
+      "culture": "Roman",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+0 +1 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Lamani Incurvata",
+          "type": "static",
+          "text": "Attacks with this weapon deal +1 damage if the defending warrior has a face-up shield card. Thracian gladiators use this curved, short sword to inflict damage around their opponents’"
+        }
+      ],
+      "flavor": "shields.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) SICA (2) +0 +1 +1 � Roman • Weapon • Sword (1 Hand) Lamani Incurvata: Attacks with this weapon deal +1 damage if the defending warrior has a face-up shield card. Thracian gladiators use this curved, short sword to inflict damage around their opponents’ shields. Illustration: Mark Poole 1 98/100"
+    },
+    {
+      "id": "s1-061",
+      "source": "heard-2007",
+      "name": "SKEGOX FRANCISCA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "061",
+      "culture": "Norse",
+      "traits": [
+        "Weapon",
+        "Axe/Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kaste",
+          "type": "reveal",
+          "text": "Deal 1 damage to all warriors not adjacent to your warrior."
+        },
+        {
+          "name": "Liten",
+          "type": "static",
+          "text": "You may use another weapon in this game."
+        }
+      ],
+      "flavor": "This throwing axe doubles as an excellent close-range weapon.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) SKEGOX FRANCISCA (1) +1 � +1 Norse • Weapon • Axe/Ranged (1 Hand) Kaste – Reveal: Deal 1 damage to all warriors not adjacent to your warrior. Liten: You may use another weapon in this game. This throwing axe doubles as an excellent close-range weapon. Illustration: RK Post 1 61/100"
+    },
+    {
+      "id": "s1-008",
+      "source": "heard-2007",
+      "name": "SPARTAN LAKONIAN",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "008",
+      "culture": "Greek",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Epithetiko Pleonektima",
+          "type": "static",
+          "text": "Your attack rolls gain +1 and your attacks with this weapon deal +1 damage while your opponent has no weapon. When the battle draws to close quarters, this short sword allows the Spartan hoplite to efficiently deal death."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) SPARTAN LAKONIAN (2) +1 +1 � Greek • Weapon • Sword (1 Hand) Epithetiko Pleonektima: Your attack rolls gain +1 and your attacks with this weapon deal +1 damage while your opponent has no weapon. When the battle draws to close quarters, this short sword allows the Spartan hoplite to efficiently deal death. Illustration: Drew Baker 1 08/100"
+    },
+    {
+      "id": "s1-088",
+      "source": "heard-2007",
+      "name": "SPATHA",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "088",
+      "culture": "Roman",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 1,
+      "weapon_damage": 1,
+      "grid_raw": "+1 +1 � +0",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Caedo",
+          "type": "static",
+          "text": "After you hit another warrior with this weapon, your basic attacks against that warrior deal +1 damage this round."
+        }
+      ],
+      "flavor": "The spatha is the favorite slashing sword of the Roman cavalry and barbarian auxiliary.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) SPATHA (1) +1 +1 � +0 Roman • Weapon • Sword (1 Hand) Caedo: After you hit another warrior with this weapon, your basic attacks against that warrior deal +1 damage this round. The spatha is the favorite slashing sword of the Roman cavalry and barbarian auxiliary. Illustration: Alan Pollack 1 88/100"
+    },
+    {
+      "id": "s1-073",
+      "source": "heard-2007",
+      "name": "SVERD",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "073",
+      "culture": "Norse",
+      "traits": [
+        "Weapon",
+        "Sword"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 1,
+      "weapon_damage": 2,
+      "grid_raw": "+1 +2 � +1",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Decisive Blow",
+          "type": "static",
+          "text": "Once per turn, after one of your attacks with this weapon is a critical hit, you may attack again with this weapon without spending an additional action."
+        }
+      ],
+      "flavor": "Forged twisted rods of hard and soft iron make this sword flexible and highly durable.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) SVERD (2) +1 +2 � +1 Norse • Weapon • Sword (1 Hand) Decisive Blow: Once per turn, after one of your attacks with this weapon is a critical hit, you may attack again with this weapon without spending an additional action. Forged twisted rods of hard and soft iron make this sword flexible and highly durable. Illustration: Alan Pollack 1 73/100"
+    },
+    {
+      "id": "s1-023",
+      "source": "heard-2007",
+      "name": "YUMI",
+      "card_type": "weapon",
+      "element": "unknown",
+      "set": 1,
+      "collector": "023",
+      "culture": "Japanese",
+      "traits": [
+        "Weapon",
+        "Ranged"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 2,
+      "weapon_damage": 1,
+      "grid_raw": "+2 +2 +2 +1 �",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zanshin",
+          "type": "reveal",
+          "text": "Attacks with this weapon deal +1 damage this round."
+        }
+      ],
+      "flavor": "The Japanese bow is unique in every sense. It is asymmetrical, over 2 meters in length and fatally accurate.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) YUMI (1) +2 +2 +2 +1 � Japanese • Weapon • Ranged (2 Hands) Zanshin – Reveal: Attacks with this weapon deal +1 damage this round. The Japanese bow is unique in every sense. It is asymmetrical, over 2 meters in length and fatally accurate. Illustration: Rob Alexander 1 23/100"
+    },
+    {
+      "id": "s1-094",
+      "source": "heard-2007",
+      "name": "ARMOR OF HEPHAESTUS",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "094",
+      "culture": "Greek",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Eulogimeni Panoplia",
+          "type": "static",
+          "text": "Once per round, when you attack, you may make your enemy re-roll their defense roll. Discard this card if the result is lower than their original roll."
+        }
+      ],
+      "flavor": "After Hector takes Achilles’ armor, Hephaestus forges a replacement panoply like nothing ever seen.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) ARMOR OF HEPHAESTUS Greek • Armor • Torso Eulogimeni Panoplia: Once per round, when you attack, you may make your enemy re-roll their defense roll. Discard this card if the result is lower than their original roll. After Hector takes Achilles’ armor, Hephaestus forges a replacement panoply like nothing ever seen. Illustration: Chris Appel 1 94/100"
+    },
+    {
+      "id": "s1-067",
+      "source": "heard-2007",
+      "name": "BEAR SARK",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "067",
+      "culture": "Norse",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Bjorn",
+          "type": "static",
+          "text": "Once per round, when you are attacked, force the attacker to re-roll their attack roll. Discard this card if the result is lower than the original roll."
+        }
+      ],
+      "flavor": "Wearing this pelt gives the Norse warrior the strength, stamina and power of the bear itself.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) BEAR SARK Norse • Armor • Head Bjorn: Once per round, when you are attacked, force the attacker to re-roll their attack roll. Discard this card if the result is lower than the original roll. Wearing this pelt gives the Norse warrior the strength, stamina and power of the bear itself. Illustration: David Ho 1 67/100"
+    },
+    {
+      "id": "s1-054",
+      "source": "heard-2007",
+      "name": "BYRNIES",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "054",
+      "culture": "Norse",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Stalwart",
+          "type": "reveal",
+          "text": "Add +2 to your defensive rolls for this round."
+        }
+      ],
+      "flavor": "Thousands of interlocking rings make this chain mail count worth its weight in protection.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) BYRNIES Norse • Armor • Torso Stalwart – Reveal: Add +2 to your defensive rolls for this round. Thousands of interlocking rings make this chain mail count worth its weight in protection. Illustration: Alan Pollack 1 54/100"
+    },
+    {
+      "id": "s1-074",
+      "source": "heard-2007",
+      "name": "CAESAR’S GREAVES",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "074",
+      "culture": "Roman",
+      "traits": [
+        "Armor",
+        "Legs"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tutela Crusibus",
+          "type": "static",
+          "text": "After you roll doubles on a defense roll, gain 1 life."
+        }
+      ],
+      "flavor": "Shin guards protect warriors, especially mounted troops, from attacks against their legs.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) CAESAR’S GREAVES Roman • Armor • Legs Tutela Crusibus: After you roll doubles on a defense roll, gain 1 life. Shin guards protect warriors, especially mounted troops, from attacks against their legs. Illustration: Michael Komarck 1 74/100"
+    },
+    {
+      "id": "s1-089",
+      "source": "heard-2007",
+      "name": "CASSIS",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "089",
+      "culture": "Roman",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Galeatur",
+          "type": "static",
+          "text": "Your defense rolls gain +1 if you are a metal or water warrior. You gain +1 experience if you are an earth or fire warrior."
+        }
+      ],
+      "flavor": "Roman smiths crafted the cassis to be the most advanced, comfortable and functional helmet in the Roman Empire.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) CASSIS Roman • Armor • Head Galeatur: Your defense rolls gain +1 if you are a metal or water warrior. You gain +1 experience if you are an earth or fire warrior. Roman smiths crafted the cassis to be the most advanced, comfortable and functional helmet in the Roman Empire. Illustration: Alan Pollack Post 1 89/100"
+    },
+    {
+      "id": "s1-024",
+      "source": "heard-2007",
+      "name": "DO",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "024",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Yae",
+          "type": "static",
+          "text": "Once per turn, you may re-roll your defense roll."
+        }
+      ],
+      "flavor": "Eleven to thirteen overlapping plates make the do a very effective and flexible piece of body armor.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) DO Japanese • Armor • Torso Yae: Once per turn, you may re-roll your defense roll. Eleven to thirteen overlapping plates make the do a very effective and flexible piece of body armor. Illustration: Rob Alexander 1 24/100"
+    },
+    {
+      "id": "s1-014",
+      "source": "heard-2007",
+      "name": "GREAVES",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "014",
+      "culture": "Greek",
+      "traits": [
+        "Armor",
+        "Legs"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Exostrakismos",
+          "type": "static",
+          "text": "Once per round, you may re-roll one die of one of your defense rolls."
+        }
+      ],
+      "flavor": "These lace-able shin guards protect the wearer against missile and melee blows to the lower legs.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) GREAVES Greek • Armor • Legs Exostrakismos: Once per round, you may re-roll one die of one of your defense rolls. These lace-able shin guards protect the wearer against missile and melee blows to the lower legs. Illustration: Greg Staples 1 14/100"
+    },
+    {
+      "id": "s1-037",
+      "source": "heard-2007",
+      "name": "HAIDATE",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "037",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Legs"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Shinogeru",
+          "type": "static",
+          "text": "When you are attacked, your defense roll gain +1 if you have more experience than the attacker."
+        }
+      ],
+      "flavor": "Thigh plates protect the upper legs with reinforced strips of leather.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) HAIDATE Japanese • Armor • Legs Shinogeru: When you are attacked, your defense roll gain +1 if you have more experience than the attacker. Thigh plates protect the upper legs with reinforced strips of leather. Illustration: Ezra Tucker 1 37/100"
+    },
+    {
+      "id": "s1-049",
+      "source": "heard-2007",
+      "name": "HEALSBEORGS",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "049",
+      "culture": "Norse",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Beskyttelse",
+          "type": "static",
+          "text": "After you are hit by a critical hit, reduce all damage from that attack to 0 and discard this card."
+        }
+      ],
+      "flavor": "Interlocking rings woven into the mail coif protect the head and neck.",
+      "illustrator": "Kev Walker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) HEALSBEORGS Norse • Armor • Head Beskyttelse: After you are hit by a critical hit, reduce all damage from that attack to 0 and discard this card. Interlocking rings woven into the mail coif protect the head and neck. Illustration: Kev Walker 1 49/100"
+    },
+    {
+      "id": "s1-056",
+      "source": "heard-2007",
+      "name": "HJELM",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "056",
+      "culture": "Norse",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Beskyttelsebriller",
+          "type": "static",
+          "text": "When you roll two dice for anything other than attack or defense, you may choose to add or subtract 2 from the roll."
+        }
+      ],
+      "flavor": "The Norse helmet is famous for its metal \"goggles\", which protect the eyes, nose and cheekbones.",
+      "illustrator": "Alan Pollock",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) HJELM Norse • Armor • Head Beskyttelsebriller: When you roll two dice for anything other than attack or defense, you may choose to add or subtract 2 from the roll. The Norse helmet is famous for its metal \"goggles\", which protect the eyes, nose and cheekbones. Illustration: Alan Pollock 1 56/100"
+    },
+    {
+      "id": "s1-036",
+      "source": "heard-2007",
+      "name": "KIMONO",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "036",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Unrestricted",
+          "type": "static",
+          "text": "Once per turn, after an opponent attacks you and misses, roll two dice. If that total is less than your experience you may move one space."
+        }
+      ],
+      "flavor": "The nearly weightless kimono robe allows swift movement and is a great place to conceal weapons.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KIMONO Japanese • Armor • Torso Unrestricted: Once per turn, after an opponent attacks you and misses, roll two dice. If that total is less than your experience you may move one space. The nearly weightless kimono robe allows swift movement and is a great place to conceal weapons. Illustration: Ezra Tucker 1 36/100"
+    },
+    {
+      "id": "s1-062",
+      "source": "heard-2007",
+      "name": "LEITER",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "062",
+      "culture": "Norse",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Naturlig",
+          "type": "static",
+          "text": "Your defense rolls gain +1 if you are a water warrior."
+        }
+      ],
+      "flavor": "Leather armor is relatively inexpensive and is the most common of the Norse armors.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) LEITER Norse • Armor • Torso Naturlig: Your defense rolls gain +1 if you are a water warrior. Leather armor is relatively inexpensive and is the most common of the Norse armors. Illustration: RK Post 1 62/100"
+    },
+    {
+      "id": "s1-004",
+      "source": "heard-2007",
+      "name": "LINEN CUIRASS",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "004",
+      "culture": "Greek",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Linothorax",
+          "type": "static",
+          "text": "Your defense rolls gain +1 while you have lower life than the attacking warrior."
+        }
+      ],
+      "flavor": "Glued linen forms the shell of this lightweight breastplate.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) LINEN CUIRASS Greek • Armor • Torso Linothorax: Your defense rolls gain +1 while you have lower life than the attacking warrior. Glued linen forms the shell of this lightweight breastplate. Illustration: Chris Appel 1 04/100"
+    },
+    {
+      "id": "s1-019",
+      "source": "heard-2007",
+      "name": "LIONTARI",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "019",
+      "culture": "Greek",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Apotropi",
+          "type": "static",
+          "text": "When you roll doubles on a defense roll, the attack misses."
+        }
+      ],
+      "flavor": "The spirit of the Lion courses through the body of whomever wears its skin.",
+      "illustrator": "Jason Engle",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) LIONTARI Greek • Armor • Torso Apotropi: When you roll doubles on a defense roll, the attack misses. The spirit of the Lion courses through the body of whomever wears its skin. Illustration: Jason Engle 1 19/100"
+    },
+    {
+      "id": "s1-084",
+      "source": "heard-2007",
+      "name": "LORICAE SEGMENTATA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "084",
+      "culture": "Roman",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Mobilis",
+          "type": "static",
+          "text": "When you take more than 2 damage, reduce that damage to 2."
+        }
+      ],
+      "flavor": "This segmented armor, lightweight and flexible, revolutionizes chest protection.",
+      "illustrator": "Brad Williams",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) LORICAE SEGMENTATA Roman • Armor • Torso Mobilis: When you take more than 2 damage, reduce that damage to 2. This segmented armor, lightweight and flexible, revolutionizes chest protection. Illustration: Brad Williams 1 84/100"
+    },
+    {
+      "id": "s1-031",
+      "source": "heard-2007",
+      "name": "MEMPO",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "031",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ojikedzuku",
+          "type": "action",
+          "text": "Once per turn, choose an opposing warrior and roll two dice. If that total is greater than or equal to their experience, you may move that warrior up to 2 spaces and change their facing."
+        }
+      ],
+      "flavor": "Samurai use these terrifying armored facemasks to shake the will of their enemies.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) MEMPO Japanese • Armor • Head Ojikedzuku – Action: Once per turn, choose an opposing warrior and roll two dice. If that total is greater than or equal to their experience, you may move that warrior up to 2 spaces and change their facing. Samurai use these terrifying armored facemasks to shake the will of their enemies. Illustration: Drew Baker 1 31/100"
+    },
+    {
+      "id": "s1-009",
+      "source": "heard-2007",
+      "name": "MUSCLE CUIRASS",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "009",
+      "culture": "Greek",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Tutlela",
+          "type": "static",
+          "text": "After you make a roll that is not an attack roll, the result is considered doubles. Discard this card after use."
+        }
+      ],
+      "flavor": "Weighing up to 3.3 kilograms, this sculpted bronze breastplate provides excellent protection.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) MUSCLE CUIRASS Greek • Armor • Torso Tutlela: After you make a roll that is not an attack roll, the result is considered doubles. Discard this card after use. Weighing up to 3.3 kilograms, this sculpted bronze breastplate provides excellent protection. Illustration: Drew Baker 1 09/100"
+    },
+    {
+      "id": "s1-099",
+      "source": "heard-2007",
+      "name": "OCREA",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "099",
+      "culture": "Roman",
+      "traits": [
+        "Armor",
+        "Legs"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Armatura",
+          "type": "static",
+          "text": "Your defense rolls gain +1 if you are a metal warrior."
+        }
+      ],
+      "flavor": "This combination of shin and thigh guards protects the gladiator’s legs and ensures vital and continued mobility.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) OCREA Roman • Armor • Legs Armatura: Your defense rolls gain +1 if you are a metal warrior. This combination of shin and thigh guards protects the gladiator’s legs and ensures vital and continued mobility. Illustration: Mark Poole 1 99/100"
+    },
+    {
+      "id": "s1-079",
+      "source": "heard-2007",
+      "name": "PTERYGES",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "079",
+      "culture": "Roman",
+      "traits": [
+        "Armor",
+        "Legs"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Servata Tergi",
+          "type": "static",
+          "text": "Your defense rolls gain +1 if the attacker is in any of your attack grids."
+        }
+      ],
+      "flavor": "These hanging leather straps protect the upper legs and thighs.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) PTERYGES Roman • Armor • Legs Servata Tergi: Your defense rolls gain +1 if the attacker is in any of your attack grids. These hanging leather straps protect the upper legs and thighs. Illustration: Mark Poole 1 79/100"
+    },
+    {
+      "id": "s1-044",
+      "source": "heard-2007",
+      "name": "SHINOBO SHOZOKU",
+      "card_type": "armor",
+      "element": "unknown",
+      "set": 1,
+      "collector": "044",
+      "culture": "Japanese",
+      "traits": [
+        "Armor",
+        "Torso"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Kosokoso",
+          "type": "static",
+          "text": "Attack rolls against you that are doubles do not count as critical hits."
+        }
+      ],
+      "flavor": "As black as midnight, the loose fitting pants and overlapping layered jacket of this outfit allow the ninja to blend into the shadows while concealing a host of weapons.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) SHINOBO SHOZOKU Japanese • Armor • Torso Kosokoso: Attack rolls against you that are doubles do not count as critical hits. As black as midnight, the loose fitting pants and overlapping layered jacket of this outfit allow the ninja to blend into the shadows while concealing a host of weapons. Illustration: William O’Connor 1 44/100"
+    },
+    {
+      "id": "s1-015",
+      "source": "heard-2007",
+      "name": "BELT OF HIPPOLYTE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "015",
+      "culture": "Greek",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Zoni Dexiotexnias",
+          "type": "static",
+          "text": "You gain +4 Experience."
+        }
+      ],
+      "flavor": "During Herakles’ ninth labor, he is forced to kill Amazonian Queen Hippolyte to take her belt back to Eurytheus.",
+      "illustrator": "Greg Staples",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) BELT OF HIPPOLYTE Greek • Special • Item Zoni Dexiotexnias: You gain +4 Experience. During Herakles’ ninth labor, he is forced to kill Amazonian Queen Hippolyte to take her belt back to Eurytheus. Illustration: Greg Staples 1 15/100"
+    },
+    {
+      "id": "s1-068",
+      "source": "heard-2007",
+      "name": "BERSERKERGANGR",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "068",
+      "culture": "Norse",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Vrede",
+          "type": "static",
+          "text": "Your attacks deal +1 damage. You take 1 damage after each of your attacks."
+        }
+      ],
+      "flavor": "In fits of rage, beserkers and ulfheonars tear through enemy lines with inhuman strength and ferocity.",
+      "illustrator": "David Ho",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) BERSERKERGANGR Norse • Special • Ability Vrede: Your attacks deal +1 damage. You take 1 damage after each of your attacks. In fits of rage, beserkers and ulfheonars tear through enemy lines with inhuman strength and ferocity. Illustration: David Ho 1 68/100"
+    },
+    {
+      "id": "s1-005",
+      "source": "heard-2007",
+      "name": "BUCEPHALUS",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "005",
+      "culture": "Greek",
+      "traits": [
+        "Special",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Strategike Thesis",
+          "type": "static",
+          "text": "Once per round, after you make an attack, you may move one space."
+        }
+      ],
+      "flavor": "\"Ox Head\", Alexander the Great’s faithful horse, carries him proudly into many battles.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) BUCEPHALUS Greek • Special • Cavalry Strategike Thesis: Once per round, after you make an attack, you may move one space. \"Ox Head\", Alexander the Great’s faithful horse, carries him proudly into many battles. Illustration: Chris Appel 1 05/100"
+    },
+    {
+      "id": "s1-050",
+      "source": "heard-2007",
+      "name": "CROWN OF ENGLAND",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "050",
+      "culture": "Norse",
+      "traits": [
+        "Special",
+        "Head"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Konge",
+          "type": "static",
+          "text": "Your attack rolls gain +1 if you are a metal warrior. Your defense rolls get –1 and your attacks deal +1 damage if you are a fire warrior."
+        }
+      ],
+      "flavor": "The king wears this crown as a symbol of power and dominance over the English isles.",
+      "illustrator": "Kev Walker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) CROWN OF ENGLAND Norse • Special • Head Konge: Your attack rolls gain +1 if you are a metal warrior. Your defense rolls get –1 and your attacks deal +1 damage if you are a fire warrior. The king wears this crown as a symbol of power and dominance over the English isles. Illustration: Kev Walker 1 50/100"
+    },
+    {
+      "id": "s1-075",
+      "source": "heard-2007",
+      "name": "DE BELLO GALLICO",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "075",
+      "culture": "Roman",
+      "traits": [
+        "Special",
+        "Tome"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Gallia est omnis divisa in partes tres",
+          "type": "static",
+          "text": "Your attack rolls gain +1 while the total initiative of all of your cards is greater than the total initiative of any other warrior’s cards."
+        }
+      ],
+      "flavor": "Caesar’s scrolls outline his successes and experiences during the nine-year long Gallic campaigns.",
+      "illustrator": "Michael Komarck",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) DE BELLO GALLICO Roman • Special • Tome Gallia est omnis divisa in partes tres: Your attack rolls gain +1 while the total initiative of all of your cards is greater than the total initiative of any other warrior’s cards. Caesar’s scrolls outline his successes and experiences during the nine-year long Gallic campaigns. Illustration: Michael Komarck 1 75/100"
+    },
+    {
+      "id": "s1-085",
+      "source": "heard-2007",
+      "name": "DISCIPLINA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "085",
+      "culture": "Roman",
+      "traits": [
+        "Special",
+        "Tome"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Si vis pacem, para bellum",
+          "type": "static",
+          "text": "After you make an attack roll, you may increase the value of one of the dice by 1 if you won initiative this turn. If the dice are now doubles, the attack may result in a critical hit."
+        }
+      ],
+      "flavor": "The exceptional discipline of the Roman troops ensures their success across hundreds of battlefields.",
+      "illustrator": "Mark Zug",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) DISCIPLINA Roman • Special • Tome Si vis pacem, para bellum: After you make an attack roll, you may increase the value of one of the dice by 1 if you won initiative this turn. If the dice are now doubles, the attack may result in a critical hit. The exceptional discipline of the Roman troops ensures their success across hundreds of battlefields. Illustration: Mark Zug 1 85/100"
+    },
+    {
+      "id": "s1-063",
+      "source": "heard-2007",
+      "name": "ELHAZ RUNE",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "063",
+      "culture": "Norse",
+      "traits": [
+        "Special",
+        "Mystic"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 5,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Hellig",
+          "type": "action",
+          "text": "Choose a warrior with more life that you. Move to any space in that warriors attack grid."
+        }
+      ],
+      "flavor": "Norse warriors bear the Elhaz rune as a symbol of protection.",
+      "illustrator": "RK Post",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(5) ELHAZ RUNE Norse • Special • Mystic Hellig – Action: Choose a warrior with more life that you. Move to any space in that warriors attack grid. Norse warriors bear the Elhaz rune as a symbol of protection. Illustration: RK Post 1 63/100"
+    },
+    {
+      "id": "s1-029",
+      "source": "heard-2007",
+      "name": "GORIN NO SHO",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "029",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Heiho",
+          "type": "static",
+          "text": "Once per turn, when you make an attack roll, you may reduce the value of one of your dice by 1. If the dice become doubles, this may result in a critical hit."
+        }
+      ],
+      "flavor": "The Book of Five Elements represents Musashi’s thoughts on how to win in every possible situation.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) GORIN NO SHO Japanese • Special • Item Heiho: Once per turn, when you make an attack roll, you may reduce the value of one of your dice by 1. If the dice become doubles, this may result in a critical hit. The Book of Five Elements represents Musashi’s thoughts on how to win in every possible situation. Illustration: Ezra Tucker 1 29/100"
+    },
+    {
+      "id": "s1-010",
+      "source": "heard-2007",
+      "name": "HOPLON",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "010",
+      "culture": "Greek",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "I tan i epi tas",
+          "type": "static",
+          "text": "Your defense rolls gain +1 while you have a face-up weapon card."
+        }
+      ],
+      "flavor": "These round, reinforced shields are the best protection wielded by the Greek Hoplites.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) HOPLON Greek • Special • Shield (1 Hand) I tan i epi tas: Your defense rolls gain +1 while you have a face-up weapon card. These round, reinforced shields are the best protection wielded by the Greek Hoplites. Illustration: Drew Baker 1 10/100"
+    },
+    {
+      "id": "s1-032",
+      "source": "heard-2007",
+      "name": "KEMURI-KONA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "032",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Enmaku",
+          "type": "reveal",
+          "text": "You may move to any space in your starting row."
+        }
+      ],
+      "flavor": "These smoke grenades produce clouds of noxious, burning gas and make for very effective distractions.",
+      "illustrator": "Drew Baker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) KEMURI-KONA Japanese • Special • Item Enmaku – Reveal: You may move to any space in your starting row. These smoke grenades produce clouds of noxious, burning gas and make for very effective distractions. Illustration: Drew Baker 1 32/100"
+    },
+    {
+      "id": "s1-020",
+      "source": "heard-2007",
+      "name": "KOTYNOS",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "020",
+      "culture": "Greek",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 0,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "O Draskelismos Tou Protathliti",
+          "type": "static",
+          "text": "Once per round, you may re-roll your attack roll."
+        }
+      ],
+      "flavor": "The olive wreath symbolizes victory for the fastest, bravest and strongest.",
+      "illustrator": "Jason Engle",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(0) KOTYNOS Greek • Special • Item O Draskelismos Tou Protathliti: Once per round, you may re-roll your attack roll. The olive wreath symbolizes victory for the fastest, bravest and strongest. Illustration: Jason Engle 1 20/100"
+    },
+    {
+      "id": "s1-025",
+      "source": "heard-2007",
+      "name": "KYUDO",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "025",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Ability"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 9,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Shuuchuu",
+          "type": "static",
+          "text": "Your attack rolls with ranged weapons gain +1."
+        }
+      ],
+      "flavor": "Japanese archery, known as kyudo or “the way of the bow”, uses Zen meditation as part of the technique.",
+      "illustrator": "Rob Alexander",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(9) KYUDO Japanese • Special • Ability Shuuchuu: Your attack rolls with ranged weapons gain +1. Japanese archery, known as kyudo or “the way of the bow”, uses Zen meditation as part of the technique. Illustration: Rob Alexander 1 25/100"
+    },
+    {
+      "id": "s1-057",
+      "source": "heard-2007",
+      "name": "MJOLLNIR",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "057",
+      "culture": "Norse",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Slegge",
+          "type": "static",
+          "text": "After you are hit by a basic attack, roll two dice. If that total is greater than the attacker’s experience, deal 1 damage to that warrior."
+        }
+      ],
+      "flavor": "Mjollnir, Thor’s golden hammer, is so powerful that even Thor himself must wear magical iron gauntlets to wield it.",
+      "illustrator": "Alan Pollock",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) MJOLLNIR Norse • Special • Item Slegge: After you are hit by a basic attack, roll two dice. If that total is greater than the attacker’s experience, deal 1 damage to that warrior. Mjollnir, Thor’s golden hammer, is so powerful that even Thor himself must wear magical iron gauntlets to wield it. Illustration: Alan Pollock 1 57/100"
+    },
+    {
+      "id": "s1-100",
+      "source": "heard-2007",
+      "name": "PARMA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "100",
+      "culture": "Roman",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 4,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "In Vicem Oppugnare",
+          "type": "static",
+          "text": "Your attack rolls gain +1 while you are not in an opponents basic attack grid Lightweight, small, round or square shields are well suited for arena and melee combat."
+        }
+      ],
+      "flavor": "",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(4) PARMA Roman • Special • Shield (1 Hand) In Vicem Oppugnare: Your attack rolls gain +1 while you are not in an opponents basic attack grid Lightweight, small, round or square shields are well suited for arena and melee combat. Illustration: Mark Poole 1 100/100"
+    },
+    {
+      "id": "s1-080",
+      "source": "heard-2007",
+      "name": "SCUTULUM",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "080",
+      "culture": "Roman",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 3,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Clipeus",
+          "type": "static",
+          "text": "Your attack and defense rolls gain +1 while you have another face-up support card that adds a bonus to your defense rolls."
+        }
+      ],
+      "flavor": "Gladiators and Roman auxiliary troops wield the scutulum as a superior melee shield to the scutum.",
+      "illustrator": "Mark Poole",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(3) SCUTULUM Roman • Special • Shield (1 Hand) Clipeus: Your attack and defense rolls gain +1 while you have another face-up support card that adds a bonus to your defense rolls. Gladiators and Roman auxiliary troops wield the scutulum as a superior melee shield to the scutum. Illustration: Mark Poole 1 80/100"
+    },
+    {
+      "id": "s1-090",
+      "source": "heard-2007",
+      "name": "SCUTUM",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "090",
+      "culture": "Roman",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 2,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Scutatus",
+          "type": "static",
+          "text": "Once per round, after you make a successful attack, roll two dice. If that total is less than or equal to your experience, move the defending warrior one space."
+        }
+      ],
+      "flavor": "This convex, reinforced shield protects the legionary and doubles as a ram with its metal shield boss.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(2) SCUTUM Roman • Special • Shield (1 Hand) Scutatus: Once per round, after you make a successful attack, roll two dice. If that total is less than or equal to your experience, move the defending warrior one space. This convex, reinforced shield protects the legionary and doubles as a ram with its metal shield boss. Illustration: Alan Pollack Post 1 90/100"
+    },
+    {
+      "id": "s1-095",
+      "source": "heard-2007",
+      "name": "SHIELD OF HEPHAESTUS",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "095",
+      "culture": "Greek",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 1,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Dia Tis Pistis Aminomenos",
+          "type": "static",
+          "text": "Your defense rolls gain +1 while you have a face-up inspiration card."
+        }
+      ],
+      "flavor": "After Achilles’ death, Ajax and Odysseus fight for possession of this five-layered shield.",
+      "illustrator": "Chris Appel",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(1) SHIELD OF HEPHAESTUS Greek • Special • Shield (1 Hand) Dia Tis Pistis Aminomenos: Your defense rolls gain +1 while you have a face-up inspiration card. After Achilles’ death, Ajax and Odysseus fight for possession of this five-layered shield. Illustration: Chris Appel 1 95/100"
+    },
+    {
+      "id": "s1-045",
+      "source": "heard-2007",
+      "name": "SHURIKEN",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "045",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Item"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 8,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ningu",
+          "type": "action",
+          "text": "Make a basic attack at +0 against any warrior that is not adjacent to your warrior."
+        }
+      ],
+      "flavor": "These razor-sharp throwing stars cut through the air with great accuracy, dealing silent death from the shadows.",
+      "illustrator": "William O’Connor",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(8) SHURIKEN Japanese • Special • Item Ningu – Action: Make a basic attack at +0 against any warrior that is not adjacent to your warrior. These razor-sharp throwing stars cut through the air with great accuracy, dealing silent death from the shadows. Illustration: William O’Connor 1 45/100"
+    },
+    {
+      "id": "s1-072",
+      "source": "heard-2007",
+      "name": "SKJOLD",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "072",
+      "culture": "Norse",
+      "traits": [
+        "Special",
+        "Shield"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 6,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Ward",
+          "type": "reveal",
+          "text": "Once this round, before an opposing warrior attacks you, you may reduce all of their attack bonuses to zero."
+        }
+      ],
+      "flavor": "These flat, round, single-layered shields line the gunwales of long ships and accompany Norse warriors into battle.",
+      "illustrator": "Alan Pollack",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(6) SKJOLD Norse • Special • Shield (1 Hand) Ward – Reveal: Once this round, before an opposing warrior attacks you, you may reduce all of their attack bonuses to zero. These flat, round, single-layered shields line the gunwales of long ships and accompany Norse warriors into battle. Illustration: Alan Pollack 1 72/100"
+    },
+    {
+      "id": "s1-038",
+      "source": "heard-2007",
+      "name": "UMA",
+      "card_type": "special",
+      "element": "unknown",
+      "set": 1,
+      "collector": "038",
+      "culture": "Japanese",
+      "traits": [
+        "Special",
+        "Cavalry"
+      ],
+      "life": 0,
+      "speed": 0,
+      "experience": 0,
+      "damage": 0,
+      "initiative": 7,
+      "hands": 0,
+      "weapon_damage": 0,
+      "grid_raw": "",
+      "grid": null,
+      "abilities": [
+        {
+          "name": "Subayai",
+          "type": "action",
+          "text": "Once per round, move two spaces."
+        }
+      ],
+      "flavor": "Native Japanese horses stand stout and short, allowing them to maneuver with great agility.",
+      "illustrator": "Ezra Tucker",
+      "parse_confidence": "clean",
+      "needs_review": [],
+      "raw_source_text": "(7) UMA Japanese • Special • Cavalry Subayai – Action: Once per round, move two spaces. Native Japanese horses stand stout and short, allowing them to maneuver with great agility. Illustration: Ezra Tucker 1 38/100"
+    }
+  ]
+}
