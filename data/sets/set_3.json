@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 3,
   "card_count": 110,
-  "review_count": 2,
+  "review_count": 1,
   "cards": [
     {
       "id": "s3-026",
@@ -301,17 +301,13 @@
         {
           "name": "Ellênikê",
           "type": "static",
-          "text": "When you make a basic attack roll, if you have no item in play, roll three dice and use the sum of all three. If all three of the dice are the same number, the attack deals triple damage."
+          "text": "When you make a basic attack roll, if you have no item in play, roll three dice and use the sum of all three. If all three of the dice are the same number, the attack deals triple damage. The attack cannot be a critical hit."
         }
       ],
-      "flavor": "The attack cannot be a critical hit. King Eurystheus sent Herakles to capture a white bull that was terrorizing Crete, after King Minos had offended Poseidon, who cursed the bull with madness.",
+      "flavor": "King Eurystheus sent Herakles to capture a white bull that was terrorizing Crete, after King Minos had offended Poseidon, who cursed the bull with madness.",
       "illustrator": "James Ryman",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor",
-        "culture",
-        "traits"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "HERAKLES OF THEBES (Earth) 6 Life 3 Speed +1 +1 +0 6 Experience � 1 Damage Ellênikê: When you make a basic attack roll, if you have no item in play, roll three dice and use the sum of all three. If all three of the dice are the same number, the attack deals triple damage. The attack cannot be a critical hit. King Eurystheus sent Herakles to capture a white bull that was terrorizing Crete, after King Minos had offended Poseidon, who cursed the bull with madness. Illustration: James Ryman 3 P12/100"
     },
     {

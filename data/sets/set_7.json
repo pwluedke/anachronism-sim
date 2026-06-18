@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 7,
   "card_count": 100,
-  "review_count": 8,
+  "review_count": 7,
   "cards": [
     {
       "id": "s7-076",
@@ -2815,14 +2815,17 @@
           "name": "Fortify",
           "type": "static",
           "text": "Once this game, at the start of any round, if you have a wood card and an earth card in play, gain 2 life and +4 experience."
+        },
+        {
+          "name": "Command Position",
+          "type": "static",
+          "text": "Opposing warriors cannot move outside of their turns."
         }
       ],
-      "flavor": "Command Position: Opposing warriors cannot move outside of their turns. Taken in a 13-day siege, in which all Texan combatants, including Jim Bowie, were killed, the Alamo came to serve as a rallying cry for the Texas Revolution.",
+      "flavor": "Taken in a 13-day siege, in which all Texan combatants, including Jim Bowie, were killed, the Alamo came to serve as a rallying cry for the Texas Revolution.",
       "illustrator": "Tyler Walpole",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "(3) THE ALAMO American Frontiersmen • Armor • Location Fortify: Once this game, at the start of any round, if you have a wood card and an earth card in play, gain 2 life and +4 experience. Command Position: Opposing warriors cannot move outside of their turns. Taken in a 13-day siege, in which all Texan combatants, including Jim Bowie, were killed, the Alamo came to serve as a rallying cry for the Texas Revolution. Illustration: Tyler Walpole 7 19/100"
     },
     {

@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 1,
   "card_count": 110,
-  "review_count": 3,
+  "review_count": 2,
   "cards": [
     {
       "id": "s1-091",
@@ -747,14 +747,17 @@
           "name": "Ninjutsu",
           "type": "static",
           "text": "Your attacks deal +1 damage while you are not in the defending opponent’s basic attack grid."
+        },
+        {
+          "name": "Shinobi",
+          "type": "static",
+          "text": "This warrior may not use two-handed weapons."
         }
       ],
-      "flavor": "Shinobi: This warrior may not use two-handed weapons. Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark.",
+      "flavor": "Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark.",
       "illustrator": "William O’Connor",
-      "parse_confidence": "partial",
-      "needs_review": [
-        "flavor"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "NINJA (Wind) 7 Life 3 Speed –1 –1 –1 2 Experience –1 � –1 1 Damage Japanese • Warrior • Male Ninjutsu: Your attacks deal +1 damage while you are not in the defending opponent’s basic attack grid. Shinobi: This warrior may not use two-handed weapons. Ninja assassins, \"those who move in secrecy\", travel through the shadows towards their mark. Illustration: William O’Connor 1 41/100"
     },
     {
