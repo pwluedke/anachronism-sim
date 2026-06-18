@@ -1,13 +1,16 @@
 # Roadmap
 
-## Milestone 1 (CURRENT): Card Database
+## Milestone 1 (DONE): Card Database
 
 Scrape the Heard list → per-set JSON + combined index + CSV + review queue.
 Self-healing parse (every card validates; defaults are flagged into the review queue).
 
 **DONE =** every card loads, zero hard failures, the review queue is the punch list.
 
-## Milestone 2: Attack-grid geometry
+**Outcome:** 749 cards, 730 clean / 19 flagged / 0 suspect. All 19 flags are documented
+source facts (zero parse defects); all ids unique; schema-valid; custom-card contract verified.
+
+## Milestone 2 (CURRENT): Attack-grid geometry
 
 Reconcile `grid_raw` against card images; populate `grid` objects; visually verify against the art.
 
