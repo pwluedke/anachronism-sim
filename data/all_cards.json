@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": null,
   "card_count": 749,
-  "review_count": 17,
+  "review_count": 19,
   "cards": [
     {
       "id": "s1-091",
@@ -11399,7 +11399,7 @@
       "raw_source_text": "(7) BOWIE KNIFE (2) +0 +1 � American Frontiersmen • Weapon • Knife (1 Hand) Sharpen: Once each round, after you are hit by a basic attack, attacks with this weapon deal +1 damage for the rest of the game. The Bowie knife sported an exceptionally large blade, up to 12 inches long and 3 inches wide. It was equally effective in a fight or as a tool. Illustration: Tyler Walpole 7 18/100"
     },
     {
-      "id": "s6-084",
+      "id": "s6-084-weapon",
       "source": "heard-2007",
       "name": "BUZDOVAN",
       "card_type": "weapon",
@@ -11433,8 +11433,10 @@
       ],
       "flavor": "The flanged maces wielded by Ottoman troops were notable for their long metal sheath, which covered much of the upper part of the weapon’s haft.",
       "illustrator": "Szucs Grégory",
-      "parse_confidence": "clean",
-      "needs_review": [],
+      "parse_confidence": "partial",
+      "needs_review": [
+        "shared_collector"
+      ],
       "raw_source_text": "(6) BUZDOVAN (2) +0 +1 +0 � Turkish • Weapon • Bludgeon (1 Hand) Zalim salidirma: When you attack a rival, you may re-roll one die of the attack roll. Serit vzakta: When you hit a rival with this weapon, you may discard one of that warrior’s non-weapon support cards. The flanged maces wielded by Ottoman troops were notable for their long metal sheath, which covered much of the upper part of the weapon’s haft. Illustration: Szucs Grégory 6 84/100"
     },
     {
@@ -14808,7 +14810,7 @@
       "raw_source_text": "(7) SARISSAE (2) +1 +1 +2 � Greek • Weapon • Polearm ( 2 Hands) Phalanx: When a warrior moves into a space on this weapon’s attack grid, deal 1 damage to that warrior. The success of the Macedonian phalanx rests with these 6.3meter pikes. Illustration: Chris Appel 1 03/100"
     },
     {
-      "id": "s6-013",
+      "id": "s6-013-1",
       "source": "heard-2007",
       "name": "SHAN DIAN MAO",
       "card_type": "weapon",
@@ -15060,7 +15062,7 @@
       "raw_source_text": "(9) SLEÁ LE SCIAN LE CUMA DUILLEOG (2) +0 +2 +1 +1 +0 � Irish • Weapon • Polearm Créacht a Thaoscadh: After an opposing warrior gains life from one of their card abilities, you may immediately attack that warrior with this weapon, if possible. The leaf-blade spear is one of the most immediately recognizable Celtic weapons. Illustration: Raven Mimura 4 18/100"
     },
     {
-      "id": "s6-013",
+      "id": "s6-013-2",
       "source": "heard-2007",
       "name": "SHAN DIAN MAO",
       "card_type": "weapon",
@@ -19764,7 +19766,7 @@
       "raw_source_text": "(3) RAN Saracen • Armor • Legs Talik: You may use an another Armor card in this game. While you have two Armor cards, your attack rolls gain +1. Anied: If you have less speed than the attacker, attacks against you deal –1 damage, to a minimum of 1. Ran were cavalry leggings, worn over or above boots and tied to a belt fastened around the waist. Although usually made of leather, iron ran were not unheard of. Illustration: Jim Pavalec 5 59/100"
     },
     {
-      "id": "s6-084",
+      "id": "s6-084-armor",
       "source": "heard-2007",
       "name": "RUMELI HISARI",
       "card_type": "armor",
@@ -19793,8 +19795,10 @@
       ],
       "flavor": "Mehmed II built the Rumeli Hisari castle to provide a secure base of operations, where he could prepare for the siege of Constantinople in safety.",
       "illustrator": "Szucs Grégory",
-      "parse_confidence": "clean",
-      "needs_review": [],
+      "parse_confidence": "partial",
+      "needs_review": [
+        "shared_collector"
+      ],
       "raw_source_text": "(0) RUMELI HISARI Turkish • Armor • Location Ara: When you hit with a basic attack, if the total of your life and experience is less than the defender’s initiative for the current round, gain 1 life. Mehmed II built the Rumeli Hisari castle to provide a secure base of operations, where he could prepare for the siege of Constantinople in safety. Illustration: Szucs Grégory 6 84/100"
     },
     {

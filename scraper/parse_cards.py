@@ -721,19 +721,63 @@ def write_outputs(cards):
 # --------------------------------------------------------------------------- #
 # Anomalies & validation
 # --------------------------------------------------------------------------- #
-def flag_duplicates(cards):
-    """Add a 'possible_duplicate' review note to cards sharing (set, collector, name)."""
-    seen = {}
+def _recompute_confidence(card):
+    critical = {"name", "set", "collector"}
+    if critical & set(card["needs_review"]):
+        card["parse_confidence"] = "suspect"
+    elif card["needs_review"]:
+        card["parse_confidence"] = "partial"
+    else:
+        card["parse_confidence"] = "clean"
+
+
+def resolve_collisions(cards):
+    """Detect cards sharing (set, collector) and guarantee unique ids.
+
+    The "s{set}-{collector}" id scheme assumes (set, collector) is unique, but the
+    source occasionally prints the same collector number on two cards (e.g. set 6
+    "84/100" is shared by the weapon BUZDOVAN and the armor RUMELI HISARI). We key
+    on (set, collector) regardless of name and disambiguate:
+
+      * Same card_type AND name  -> a true duplicate (e.g. SHAN DIAN MAO x2). Keep
+        the 'possible_duplicate' flag and append a numeric suffix: -1, -2, ...
+      * Different cards (different card_type and/or name) -> append the card_type:
+        s6-084-weapon / s6-084-armor. Flag both 'shared_collector' to record that
+        the source prints one collector number for two distinct cards. (If two
+        share a card_type but differ otherwise, a numeric suffix is added too.)
+    """
+    from collections import Counter, defaultdict
+    groups = defaultdict(list)
     for c in cards:
-        key = (c["set"], c["collector"], c["name"])
-        seen.setdefault(key, []).append(c)
-    for key, group in seen.items():
-        if len(group) > 1 and key[2]:
-            for c in group:
+        groups[(c["set"], c["collector"])].append(c)
+
+    for (setv, coll), group in groups.items():
+        if len(group) < 2:
+            continue
+        safe = coll.replace("/", "-").replace(" ", "")
+        base = f"s{setv}-{safe}" if (coll and setv) else group[0]["id"]
+        identities = {(c["card_type"], c["name"]) for c in group}
+        if len(identities) == 1:
+            # true duplicate: same card, printed twice
+            for n, c in enumerate(group, 1):
                 if "possible_duplicate" not in c["needs_review"]:
                     c["needs_review"].append("possible_duplicate")
-                if c["parse_confidence"] == "clean":
-                    c["parse_confidence"] = "partial"
+                c["id"] = f"{base}-{n}"
+        else:
+            # distinct cards that happen to share a collector number in the source
+            tcount = Counter(c["card_type"] for c in group)
+            seen = Counter()
+            for c in group:
+                t = c["card_type"]
+                if tcount[t] == 1:
+                    c["id"] = f"{base}-{t}"
+                else:
+                    seen[t] += 1
+                    c["id"] = f"{base}-{t}-{seen[t]}"
+                if "shared_collector" not in c["needs_review"]:
+                    c["needs_review"].append("shared_collector")
+        for c in group:
+            _recompute_confidence(c)
 
 
 def validate(cards):
@@ -765,7 +809,7 @@ def main():
             cards.append(rec)
             idx += 1
 
-    flag_duplicates(cards)
+    resolve_collisions(cards)
     by_set, rq = write_outputs(cards)
 
     # ---- summary ----

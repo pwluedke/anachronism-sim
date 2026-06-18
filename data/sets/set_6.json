@@ -4,7 +4,7 @@
   "source": "heard-2007",
   "set": 6,
   "card_count": 110,
-  "review_count": 4,
+  "review_count": 6,
   "cards": [
     {
       "id": "s6-026",
@@ -1736,7 +1736,7 @@
       "raw_source_text": "(3) BOARDING AXE (2) +0 +1 +1 � Irish � Pirate � Weapon � Axe (1 Hand) Mionghearr: Attacks with this weapon deal +1 damage against warriors with a Wood card. Stop: When you are attacked with a weapon, if you are a Metal warrior, you may re-roll your defense roll. Thought to originate with the Vikings, the boarding axe became a staple for maritime warfare due to its versatility, and has since developed into the fireman’s axe of today. Illustration: Rick Sardinha 6 43/100"
     },
     {
-      "id": "s6-084",
+      "id": "s6-084-weapon",
       "source": "heard-2007",
       "name": "BUZDOVAN",
       "card_type": "weapon",
@@ -1770,8 +1770,10 @@
       ],
       "flavor": "The flanged maces wielded by Ottoman troops were notable for their long metal sheath, which covered much of the upper part of the weapon’s haft.",
       "illustrator": "Szucs Grégory",
-      "parse_confidence": "clean",
-      "needs_review": [],
+      "parse_confidence": "partial",
+      "needs_review": [
+        "shared_collector"
+      ],
       "raw_source_text": "(6) BUZDOVAN (2) +0 +1 +0 � Turkish • Weapon • Bludgeon (1 Hand) Zalim salidirma: When you attack a rival, you may re-roll one die of the attack roll. Serit vzakta: When you hit a rival with this weapon, you may discard one of that warrior’s non-weapon support cards. The flanged maces wielded by Ottoman troops were notable for their long metal sheath, which covered much of the upper part of the weapon’s haft. Illustration: Szucs Grégory 6 84/100"
     },
     {
@@ -2168,7 +2170,7 @@
       "raw_source_text": "(6) SAIF +1 +1 –1 � Saracen • Weapon • Sword (1 Hand) Yendafae Besarah: When you attack with this weapon, if the defense roll is less than this card’s initiative, the attack deals +1 damage. Dokha: If you revealed a ranged weapon this game, your attack rolls gain +1. Generally very similar to the Persian shamshir, some Arabian saif more closely resembled Turkish kilij swords. Illustration: Raven Mimura 6 P42/100"
     },
     {
-      "id": "s6-013",
+      "id": "s6-013-1",
       "source": "heard-2007",
       "name": "SHAN DIAN MAO",
       "card_type": "weapon",
@@ -2204,7 +2206,7 @@
       "raw_source_text": "(1) SHAN DIAN MAO (2) +2 +2 +0 � Chinese � Weapon � Polearm (2 Hands) Zhou yun: When you attack a rival with this weapon, you may re-roll the attack roll, and the attack deals +1 damage. Ma Chao wielded his weapon with such blinding speed that it became known as “Lightning Spear”. Illustration: Rick Sardinha 6 13/100"
     },
     {
-      "id": "s6-013",
+      "id": "s6-013-2",
       "source": "heard-2007",
       "name": "SHAN DIAN MAO",
       "card_type": "weapon",
@@ -2826,7 +2828,7 @@
       "raw_source_text": "(4) PLEADING THE BELLY Irish � Pirate � Armor � Ability Tearmann: Before an opponent uses a card ability, if you have a female warrior, you may discard this card and allow that opponent to examine your face-down support cards. If you do, that use of the card ability has no effect. After their capture, Anne Bonny and Mary Read escaped the gallows by virtue of the fact that they were pregnant. Illustration: Steven Belledin 6 29/100"
     },
     {
-      "id": "s6-084",
+      "id": "s6-084-armor",
       "source": "heard-2007",
       "name": "RUMELI HISARI",
       "card_type": "armor",
@@ -2855,8 +2857,10 @@
       ],
       "flavor": "Mehmed II built the Rumeli Hisari castle to provide a secure base of operations, where he could prepare for the siege of Constantinople in safety.",
       "illustrator": "Szucs Grégory",
-      "parse_confidence": "clean",
-      "needs_review": [],
+      "parse_confidence": "partial",
+      "needs_review": [
+        "shared_collector"
+      ],
       "raw_source_text": "(0) RUMELI HISARI Turkish • Armor • Location Ara: When you hit with a basic attack, if the total of your life and experience is less than the defender’s initiative for the current round, gain 1 life. Mehmed II built the Rumeli Hisari castle to provide a secure base of operations, where he could prepare for the siege of Constantinople in safety. Illustration: Szucs Grégory 6 84/100"
     },
     {

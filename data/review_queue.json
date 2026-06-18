@@ -30,6 +30,16 @@
     "raw_source_text": "(4) MARS (Earth) Roman • Inspiration • Diety Concors: If all of your face-up cards are Roman, all of your rolls gain +1. War god and father of Romulus and Remus, Mars one of the most revered and worshipped gods in the Roman pantheon. Illustration: Greg Staples 1 P9/10"
   },
   {
+    "id": "s6-084-weapon",
+    "set": 6,
+    "name": "BUZDOVAN",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "shared_collector"
+    ],
+    "raw_source_text": "(6) BUZDOVAN (2) +0 +1 +0 � Turkish • Weapon • Bludgeon (1 Hand) Zalim salidirma: When you attack a rival, you may re-roll one die of the attack roll. Serit vzakta: When you hit a rival with this weapon, you may discard one of that warrior’s non-weapon support cards. The flanged maces wielded by Ottoman troops were notable for their long metal sheath, which covered much of the upper part of the weapon’s haft. Illustration: Szucs Grégory 6 84/100"
+  },
+  {
     "id": "s7-068",
     "set": 7,
     "name": "�EREV APPOLONIUS",
@@ -100,7 +110,7 @@
     "raw_source_text": "(6) SAIF +1 +1 –1 � Saracen • Weapon • Sword (1 Hand) Yendafae Besarah: When you attack with this weapon, if the defense roll is less than this card’s initiative, the attack deals +1 damage. Dokha: If you revealed a ranged weapon this game, your attack rolls gain +1. Generally very similar to the Persian shamshir, some Arabian saif more closely resembled Turkish kilij swords. Illustration: Raven Mimura 6 P42/100"
   },
   {
-    "id": "s6-013",
+    "id": "s6-013-1",
     "set": 6,
     "name": "SHAN DIAN MAO",
     "parse_confidence": "partial",
@@ -120,7 +130,7 @@
     "raw_source_text": "(9) SLEÁ LE SCIAN LE CUMA DUILLEOG (2) +0 +2 +1 +1 +0 � Irish • Weapon • Polearm Créacht a Thaoscadh: After an opposing warrior gains life from one of their card abilities, you may immediately attack that warrior with this weapon, if possible. The leaf-blade spear is one of the most immediately recognizable Celtic weapons. Illustration: Raven Mimura 4 18/100"
   },
   {
-    "id": "s6-013",
+    "id": "s6-013-2",
     "set": 6,
     "name": "SHAN DIAN MAO",
     "parse_confidence": "partial",
@@ -148,6 +158,16 @@
       "source_typo"
     ],
     "raw_source_text": "(4) MIKINAIKOS THORAKAS Grek • Armor • Torso Dipsa gia Ekdikisi: After you are hit by an attack with a damage bonus, the attacker becomes your rival until the end of your next turn. Stirixi: Before you are dealt damage from an attack, you may discard this card. If you do, that attack and the next attack against you deal –1 damage, to a minimum of 1. Given to Agamemnon as a gift, his cuirass had ten bands of dark enamel, twelve of gold, and twenty of tin. Dark blue serpents, three on either side, arched toward the neck. Illustration: Jon Hodgson 7 29/100"
+  },
+  {
+    "id": "s6-084-armor",
+    "set": 6,
+    "name": "RUMELI HISARI",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "shared_collector"
+    ],
+    "raw_source_text": "(0) RUMELI HISARI Turkish • Armor • Location Ara: When you hit with a basic attack, if the total of your life and experience is less than the defender’s initiative for the current round, gain 1 life. Mehmed II built the Rumeli Hisari castle to provide a secure base of operations, where he could prepare for the siege of Constantinople in safety. Illustration: Szucs Grégory 6 84/100"
   },
   {
     "id": "s6-099",
