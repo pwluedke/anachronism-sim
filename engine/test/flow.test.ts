@@ -113,3 +113,57 @@ describe("5-round structure (both players PASS every turn)", () => {
     expect(roundStarts).toEqual([2, 3, 4, 5]);
   });
 });
+
+describe("basic attacks: cost 1 action, NOT capped per turn (rulebook p11)", () => {
+  it("a Speed-3 warrior makes 3 basic attacks in one turn, then the turn ends", () => {
+    // Achilles (P0) at (1,1) facing S; defender at (1,2) is the +0 front cell... use
+    // the front cell directly south: defender at (2,1). High life so it survives 3 hits.
+    const { state } = init(ACHILLES, AJAX, 4);
+    const s: GameState = structuredClone(state);
+    s.currentPlayer = 0;
+    s.turnOrder = [0, 1];
+    s.turnIndex = 0;
+    s.actionsRemaining = 3; // Speed 3
+    s.warriors[0].position = { row: 1, col: 1 };
+    s.warriors[0].facing = "S";
+    s.warriors[0].damage = 1;
+    s.warriors[1].position = { row: 2, col: 1 }; // Achilles front (+0) cell
+    s.warriors[1].life = 50; // survives all three attacks (no early kill)
+
+    let cur = s;
+    const budgets: number[] = [];
+    const attacks: number[] = [];
+    let turnEndedOnThird = false;
+    for (let i = 0; i < 3; i++) {
+      const r = applyAction(cur, { type: "ATTACK" });
+      attacks.push(r.events.filter((e) => e.type === "attacked").length);
+      if (i === 2) turnEndedOnThird = r.events.some((e) => e.type === "turnEnded");
+      cur = r.state;
+      budgets.push(cur.actionsRemaining);
+    }
+
+    // each ATTACK resolved exactly once and cost exactly one action (no 1/turn cap)
+    expect(attacks).toEqual([1, 1, 1]);
+    // first two attacks decrement 3 -> 2 -> 1; the 3rd spends the last action and
+    // auto-ends the turn (so the reading after it is the NEXT turn's fresh budget)
+    expect(budgets[0]).toBe(2);
+    expect(budgets[1]).toBe(1);
+    expect(turnEndedOnThird).toBe(true);
+    expect(cur.currentPlayer).toBe(1);
+    expect(cur.warriors[1].life).toBeGreaterThan(0); // survived all three
+    expect(cur.warriors[1].life).toBeLessThanOrEqual(50);
+  });
+
+  it("an ATTACK with no actions left is a no-op (budget gates attacks)", () => {
+    const { state } = init(ACHILLES, AJAX, 4);
+    const s: GameState = structuredClone(state);
+    s.currentPlayer = 0;
+    s.actionsRemaining = 0;
+    s.warriors[0].position = { row: 1, col: 1 };
+    s.warriors[0].facing = "S";
+    s.warriors[1].position = { row: 2, col: 1 };
+    const r = applyAction(s, { type: "ATTACK" });
+    expect(r.events).toHaveLength(0);
+    expect(r.state).toBe(s);
+  });
+});

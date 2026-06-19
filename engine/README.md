@@ -81,11 +81,13 @@ A turn ends when `actionsRemaining` hits 0 or on `PASS`. Illegal actions (off-gr
 the foe out of range, acting with no budget) are **no-ops**: the same state is returned with an empty
 event list.
 
-> **Rules-reconciliation note.** The Set-7 rulebook PDF was not present in the repo at build time, so
-> this spine follows the written task summary. One deliberate, documented interpretation: a basic
-> **ATTACK costs one action**, so the turn loop matches "up to *speed* actions; turn ends at 0 actions
-> or PASS" exactly. Physical Anachronism may treat basic attacks as free/unlimited — revisit against
-> the rulebook (`docs/`), it's an isolated change in `applyAction`.
+> **Basic-attack metering — matches the rulebook (Set 7 Basic Rulebook, p11).** A basic **ATTACK
+> costs one action** (one of the warrior's Speed actions) and is **not capped per turn**: a Speed-3
+> warrior may spend all three actions on three basic attacks. This is exactly the printed rule
+> ("Basic Attacks are not limited to one per Turn"), so the turn loop also satisfies "up to *speed*
+> actions; turn ends at 0 actions or PASS". (Weapon attacks ARE limited to one per weapon per turn —
+> but there are no weapons in the spine, so that cap is not carried over to basic attacks.)
+> The rulebook lives at [`data/raw/anachronism_rulebook_set_7.pdf`](../data/raw/anachronism_rulebook_set_7.pdf).
 
 ## GameState shape
 

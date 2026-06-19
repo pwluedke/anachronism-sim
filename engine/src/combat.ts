@@ -4,8 +4,8 @@
 // projected grid. Both warriors roll 2d6 simultaneously; the attacker adds the
 // grid modifier for the defender's cell. Higher total hits. A tie is broken by
 // Experience, then by an unmodified dice-off. Attacker doubles = critical hit
-// (doubles the base damage). Basic attacks have no per-turn cap (the engine's
-// action economy gates them, not a special limit).
+// (doubles the base damage). A basic attack costs one action but is NOT limited
+// to one per turn (Set 7 Basic Rulebook, p11) — the action budget gates them.
 
 import type { Warrior } from "./types";
 import { roll2d6, rollDie } from "./rng";

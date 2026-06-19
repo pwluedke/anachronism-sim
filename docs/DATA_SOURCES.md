@@ -1,6 +1,15 @@
 # Data Sources
 
-## PRIMARY (current source of truth)
+## RULES AUTHORITY
+
+- **`data/raw/anachronism_rulebook_set_7.pdf`** — the *Anachronism Basic Rulebook* (Set 7). This is
+  the **rules source of truth** for the game engine (`engine/`); it governs on any conflict with
+  prose summaries. Key citations used by the engine spine: turn sequence and action economy (p7,
+  p10–11) — a warrior spends actions to Move / Attack / use an Action ability / Pass until actions
+  used ≥ Speed; **basic attacks cost 1 action and are not capped per turn** (p11: "Basic Attacks are
+  not limited to one per Turn"), whereas a Weapon may attack only once per weapon per turn.
+
+## PRIMARY (current source of truth — card data)
 
 - **`Anachronism Cards Spreadsheet.xls`** (in `data/raw/`, source tag `spreadsheet-2007`) — a
   community-compiled workbook (single sheet `A7`, 868 data rows) covering all numbered sets 1–7

@@ -33,10 +33,10 @@ basic attack resolution (2d6 + grid mods, crit-on-doubles, experience/dice-off t
 5-round loop with initiative and all 4 win conditions, seeded-RNG determinism, and the 14 ability
 hook-points fired (empty) at the correct points. Warriors only; abilities inert.
 
-**DONE =** `tsc` clean, **69 vitest tests** green, ~99% statement coverage on the core, one full
-scripted game's event log prints start-to-finish. (Built from the written rules summary — the
-Set-7 rulebook PDF was not in the repo; one documented interpretation: basic attacks are metered as
-1 action. See the engine README.)
+**DONE =** `tsc` clean, **71 vitest tests** green, ~99% statement coverage on the core, one full
+scripted game's event log prints start-to-finish. Built against the Set-7 Basic Rulebook (committed at
+`data/raw/anachronism_rulebook_set_7.pdf`): a basic attack costs 1 action and is **not capped per
+turn** (p11). See the engine README.
 
 ## Milestone 5 (CURRENT): Bot opponent
 
