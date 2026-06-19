@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": "P",
-  "card_count": 66,
-  "review_count": 12,
+  "card_count": 60,
+  "review_count": 0,
   "cards": [
     {
       "id": "s1-P001",
@@ -15,6 +15,9 @@
       "set": 1,
       "collector": "001",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -108,6 +111,9 @@
       "set": 1,
       "collector": "002",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -206,6 +212,9 @@
       "set": 1,
       "collector": "003",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Philosophy"
       ],
@@ -286,6 +295,9 @@
       "set": 1,
       "collector": "004",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -379,6 +391,9 @@
       "set": 1,
       "collector": "005",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -472,6 +487,9 @@
       "set": 1,
       "collector": "006",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Male"
       ],
@@ -565,6 +583,9 @@
       "set": 1,
       "collector": "007",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Male"
       ],
@@ -658,6 +679,9 @@
       "set": 1,
       "collector": "008",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Male"
       ],
@@ -751,6 +775,9 @@
       "set": 1,
       "collector": "009",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Deity"
       ],
@@ -831,6 +858,9 @@
       "set": 1,
       "collector": "010",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Male"
       ],
@@ -924,6 +954,9 @@
       "set": 3,
       "collector": "011",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -1017,6 +1050,9 @@
       "set": 3,
       "collector": "012",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -1110,6 +1146,9 @@
       "set": 3,
       "collector": "013",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1203,6 +1242,9 @@
       "set": 3,
       "collector": "014",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Fate"
       ],
@@ -1283,6 +1325,9 @@
       "set": 3,
       "collector": "015",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Fate"
       ],
@@ -1368,6 +1413,9 @@
       "set": 3,
       "collector": "016",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Fate"
       ],
@@ -1448,6 +1496,9 @@
       "set": 3,
       "collector": "017",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -1528,6 +1579,9 @@
       "set": 3,
       "collector": "018",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Item"
       ],
@@ -1600,7 +1654,7 @@
       "set_label": "P3"
     },
     {
-      "id": "s3-P019-1",
+      "id": "s3-P019",
       "source": "spreadsheet-2007",
       "name": "Chan Zhang",
       "card_type": "weapon",
@@ -1608,102 +1662,11 @@
       "set": 3,
       "collector": "019",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
-        "Bludgeon"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 1,
-      "initiative": 7,
-      "hands": 2,
-      "salary": null,
-      "grid_raw": "+0 +0 +0 +0 +0 +0 +0 ▲ +0 +0 +0 +0",
-      "grid": {
-        "1A": "+0",
-        "1B": "+0",
-        "1C": "+0",
-        "2A": "+0",
-        "2B": "+0",
-        "2C": "+0",
-        "3A": "+0",
-        "3B": "marker",
-        "3C": "+0",
-        "4A": "+0",
-        "4B": "+0",
-        "4C": "+0"
-      },
-      "abilities": [
-        {
-          "name": "Feng Mo Zhang Fa",
-          "type": "static",
-          "text": "Twice each turn, after and attack misses you, you may immediately make an attack against the attacker if possible."
-        }
-      ],
-      "flavor": "The monk cudgel made famous by Lu Zhi Shen, the tattooed monk, is used to disarm opponents or break their weapons while raining blows upon all parts of their body.",
-      "illustrator": "Szucs Gregory",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Feng Mo Zhang Fa: Twice each turn, after and attack misses you, you may immediately make an attack against the attacker if possible.",
-      "set_label": "P3"
-    },
-    {
-      "id": "s3-P019-2",
-      "source": "spreadsheet-2007",
-      "name": "Chan Zhang",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 3,
-      "collector": "019",
-      "culture": "Chinese",
-      "traits": [
+        "Bludgeon",
         "Polearm"
       ],
       "life": null,
@@ -1782,10 +1745,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Feng Mo Zhang Fa: Twice each turn, after and attack misses you, you may immediately make an attack against the attacker if possible.",
       "set_label": "P3"
     },
@@ -1798,6 +1759,9 @@
       "set": 3,
       "collector": "020",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Male"
       ],
@@ -1891,6 +1855,9 @@
       "set": 4,
       "collector": "021",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Item"
       ],
@@ -1971,6 +1938,9 @@
       "set": 4,
       "collector": "022",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Male"
       ],
@@ -2064,6 +2034,9 @@
       "set": 4,
       "collector": "023",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Location"
       ],
@@ -2149,6 +2122,9 @@
       "set": 4,
       "collector": "024",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Location"
       ],
@@ -2229,6 +2205,9 @@
       "set": 4,
       "collector": "025",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Location"
       ],
@@ -2309,6 +2288,9 @@
       "set": 4,
       "collector": "026",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Sword"
       ],
@@ -2402,6 +2384,9 @@
       "set": 4,
       "collector": "027",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -2495,6 +2480,9 @@
       "set": 4,
       "collector": "028",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Quest"
       ],
@@ -2580,6 +2568,9 @@
       "set": 4,
       "collector": "029",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2660,6 +2651,9 @@
       "set": 4,
       "collector": "030",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Torso"
       ],
@@ -2740,6 +2734,9 @@
       "set": 5,
       "collector": "031",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Location"
       ],
@@ -2825,6 +2822,9 @@
       "set": 5,
       "collector": "032",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Item"
       ],
@@ -2905,6 +2905,9 @@
       "set": 5,
       "collector": "033",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Location"
       ],
@@ -2985,6 +2988,9 @@
       "set": 5,
       "collector": "034",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -3078,6 +3084,9 @@
       "set": 5,
       "collector": "035",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Item"
       ],
@@ -3158,6 +3167,9 @@
       "set": 5,
       "collector": "036",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Axe"
       ],
@@ -3243,7 +3255,7 @@
       "set_label": "P5"
     },
     {
-      "id": "s5-P037-1",
+      "id": "s5-P037",
       "source": "spreadsheet-2007",
       "name": "Rasputin",
       "card_type": "inspiration",
@@ -3251,89 +3263,11 @@
       "set": 5,
       "collector": "037",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Ne'ukrotimiy",
-          "type": "static",
-          "text": "Before you take damage, if you are an Earth warrior and the damage would reduce your life below 1, you may discard one of your other face-up support cards to reduce the damage to 0."
-        }
-      ],
-      "flavor": "Though he exerted tremendous personal power over the Tsar and Tsarina, Rasputin's reputations for debauchery led to his assassination by members of the royal family.  He was poisoned, shot three times, and finally drowned.",
-      "illustrator": "Ralph Horsley",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": true,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Ne'ukrotimiy: Before you take damage, if you are an Earth warrior and the damage would reduce your life below 1, you may discard one of your other face-up support cards to reduce the damage to 0.",
-      "set_label": "P5"
-    },
-    {
-      "id": "s5-P037-2",
-      "source": "spreadsheet-2007",
-      "name": "Rasputin",
-      "card_type": "inspiration",
-      "element": "Earth",
-      "set": 5,
-      "collector": "037",
-      "culture": "Russian",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -3399,15 +3333,13 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Ne'ukrotimiy: Before you take damage, if you are an Earth warrior and the damage would reduce your life below 1, you may discard one of your other face-up support cards to reduce the damage to 0.",
       "set_label": "P5"
     },
     {
-      "id": "s5-P038-1",
+      "id": "s5-P038",
       "source": "spreadsheet-2007",
       "name": "Baba Yaga",
       "card_type": "inspiration",
@@ -3415,89 +3347,11 @@
       "set": 5,
       "collector": "038",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 9,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Skrytaya",
-          "type": "static",
-          "text": "Opponents cannot attack you with weapons more than once each round. If any opponent has more than one weapon in play, you may attack with one of your weapons twice each round."
-        }
-      ],
-      "flavor": "Baba Yaga is a cannibalistic witch. She is often called \"bone legs\", as she is very skinny. She rides in a huge mortar, using the pestle to steer, and is often referred to as \"the devil's own grandmother\".",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Skrytaya: Opponents cannot attack you with weapons more than once each round. If any opponent has more than one weapon in play, you may attack with one of your weapons twice each round.",
-      "set_label": "P5"
-    },
-    {
-      "id": "s5-P038-2",
-      "source": "spreadsheet-2007",
-      "name": "Baba Yaga",
-      "card_type": "inspiration",
-      "element": "Wood",
-      "set": 5,
-      "collector": "038",
-      "culture": "Russian",
-      "traits": [
+        "Ally",
         "Female"
       ],
       "life": null,
@@ -3563,10 +3417,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Skrytaya: Opponents cannot attack you with weapons more than once each round. If any opponent has more than one weapon in play, you may attack with one of your weapons twice each round.",
       "set_label": "P5"
     },
@@ -3579,6 +3431,9 @@
       "set": 5,
       "collector": "039",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Male"
       ],
@@ -3672,6 +3527,9 @@
       "set": 5,
       "collector": "040",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Male"
       ],
@@ -3770,6 +3628,9 @@
       "set": 6,
       "collector": "041",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -3863,6 +3724,9 @@
       "set": 6,
       "collector": "042",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Sword"
       ],
@@ -3961,6 +3825,9 @@
       "set": 6,
       "collector": "043",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Quest"
       ],
@@ -4033,7 +3900,7 @@
       "set_label": "P6"
     },
     {
-      "id": "s6-P044-1",
+      "id": "s6-P044",
       "source": "spreadsheet-2007",
       "name": "Cuauhxicalli",
       "card_type": "special",
@@ -4041,89 +3908,11 @@
       "set": 6,
       "collector": "044",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
-        "Item"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Motemachia",
-          "type": "static",
-          "text": "Whenever you reveal a card (including this one), put a counter on this card. At the start of each round, you may remove a counter from this card. If you do, your rolls for that round gain +1 for each counter on this card."
-        }
-      ],
-      "flavor": "This stone calendar, carved during the riegn of Axayacatl, weighs almost 25 tons and has a diameter of just less than 12 feet.",
-      "illustrator": "Dave Kendall",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Motemachia: Whenever you reveal a card (including this one), put a counter on this card. At the start of each round, you may remove a counter from this card. If you do, your rolls for that round gain +1 for each counter on this card. ",
-      "set_label": "P6"
-    },
-    {
-      "id": "s6-P044-2",
-      "source": "spreadsheet-2007",
-      "name": "Cuauhxicalli",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "044",
-      "culture": "Aztec",
-      "traits": [
+        "Item",
         "Mystic"
       ],
       "life": null,
@@ -4189,10 +3978,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Motemachia: Whenever you reveal a card (including this one), put a counter on this card. At the start of each round, you may remove a counter from this card. If you do, your rolls for that round gain +1 for each counter on this card. ",
       "set_label": "P6"
     },
@@ -4205,6 +3992,9 @@
       "set": 6,
       "collector": "045",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Location"
       ],
@@ -4285,6 +4075,9 @@
       "set": 6,
       "collector": "046",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Quest"
       ],
@@ -4357,7 +4150,7 @@
       "set_label": "P6"
     },
     {
-      "id": "s6-P047-1",
+      "id": "s6-P047",
       "source": "spreadsheet-2007",
       "name": "Tomas de Torquemada",
       "card_type": "special",
@@ -4365,89 +4158,11 @@
       "set": 6,
       "collector": "047",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Oprimir",
-          "type": "static",
-          "text": "When an opponent reveals a deity, tome, or mystic support card, they may chose to discard it and set their initiative for that round to 0. If they do not, deal 3 damage to that opponent."
-        }
-      ],
-      "flavor": "\"The hammer of heretics, the light of Spain, the savior of his country, the honor of his order.\" – Sebastián de Olmedo",
-      "illustrator": "Chris Seaman",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": true,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Oprimir: When an opponent reveals a deity, tome, or mystic support card, they may chose to discard it and set their initiative for that round to 0. If they do not, deal 3 damage to that opponent.",
-      "set_label": "P6"
-    },
-    {
-      "id": "s6-P047-2",
-      "source": "spreadsheet-2007",
-      "name": "Tomas de Torquemada",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "047",
-      "culture": "Spainish",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -4513,10 +4228,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Oprimir: When an opponent reveals a deity, tome, or mystic support card, they may chose to discard it and set their initiative for that round to 0. If they do not, deal 3 damage to that opponent.",
       "set_label": "P6"
     },
@@ -4529,6 +4242,9 @@
       "set": 6,
       "collector": "048",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Male"
       ],
@@ -4622,6 +4338,9 @@
       "set": 6,
       "collector": "049",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Mystic"
       ],
@@ -4707,6 +4426,9 @@
       "set": 6,
       "collector": "050",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Location"
       ],
@@ -4792,6 +4514,9 @@
       "set": 7,
       "collector": "051",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -4877,6 +4602,9 @@
       "set": 7,
       "collector": "052",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -4962,6 +4690,9 @@
       "set": 7,
       "collector": "053",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Item"
       ],
@@ -5034,7 +4765,7 @@
       "set_label": "P7"
     },
     {
-      "id": "s7-P054-1",
+      "id": "s7-P054",
       "source": "spreadsheet-2007",
       "name": "Queen Anne's Revenge",
       "card_type": "special",
@@ -5042,6 +4773,10 @@
       "set": 7,
       "collector": "054",
       "culture": "Pirate",
+      "cultures": [
+        "Pirate",
+        "Briton"
+      ],
       "traits": [
         "Item"
       ],
@@ -5113,97 +4848,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Pillage: You may use abilities on any support card in the arena.\nChoice of Battles ~ Action: Discard this card. Move you warrior to any unoccupied space in the arena. Your next defense roll gains +4.",
-      "set_label": "P7"
-    },
-    {
-      "id": "s7-P054-2",
-      "source": "spreadsheet-2007",
-      "name": "Queen Anne's Revenge",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 7,
-      "collector": "054",
-      "culture": "Briton",
-      "traits": [
-        "Item"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Pillage",
-          "type": "static",
-          "text": "You may use abilities on any support card in the arena."
-        },
-        {
-          "name": "Choice of Battles ~ Action",
-          "type": "static",
-          "text": "Discard this card. Move you warrior to any unoccupied space in the arena. Your next defense roll gains +4."
-        }
-      ],
-      "flavor": "After losing The Adventure in an attempt to free her from the sands of the coast off North Carolina, Blackbeard abandoned the Queen Anne's Revenge and disbanded his flotilla.",
-      "illustrator": "Klaus Scherwinksi",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": true,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": true,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Pillage: You may use abilities on any support card in the arena.\nChoice of Battles ~ Action: Discard this card. Move you warrior to any unoccupied space in the arena. Your next defense roll gains +4.",
       "set_label": "P7"
     },
@@ -5216,6 +4862,9 @@
       "set": 7,
       "collector": "055",
       "culture": "Pirate",
+      "cultures": [
+        "Pirate"
+      ],
       "traits": [
         "Location"
       ],
@@ -5301,6 +4950,9 @@
       "set": 7,
       "collector": "056",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -5394,6 +5046,9 @@
       "set": 7,
       "collector": "057",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Location"
       ],
@@ -5479,6 +5134,9 @@
       "set": 7,
       "collector": "058",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Code"
       ],
@@ -5559,6 +5217,9 @@
       "set": 7,
       "collector": "059",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Male"
       ],
@@ -5652,6 +5313,9 @@
       "set": 7,
       "collector": "060",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Mystic"
       ],

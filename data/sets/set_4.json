@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": 4,
-  "card_count": 111,
-  "review_count": 23,
+  "card_count": 100,
+  "review_count": 2,
   "cards": [
     {
       "id": "s4-001",
@@ -15,6 +15,9 @@
       "set": 4,
       "collector": "001",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Female"
       ],
@@ -107,6 +110,9 @@
       "set": 4,
       "collector": "002",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Deity"
       ],
@@ -186,6 +192,9 @@
       "set": 4,
       "collector": "003",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -278,6 +287,9 @@
       "set": 4,
       "collector": "004",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Torso"
       ],
@@ -357,6 +369,9 @@
       "set": 4,
       "collector": "005",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Ally"
       ],
@@ -436,6 +451,9 @@
       "set": 4,
       "collector": "006",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Male"
       ],
@@ -533,6 +551,9 @@
       "set": 4,
       "collector": "007",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Quest"
       ],
@@ -612,6 +633,9 @@
       "set": 4,
       "collector": "008",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -704,6 +728,9 @@
       "set": 4,
       "collector": "009",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Torso"
       ],
@@ -783,6 +810,9 @@
       "set": 4,
       "collector": "010",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Location"
       ],
@@ -867,6 +897,9 @@
       "set": 4,
       "collector": "011",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Male"
       ],
@@ -959,6 +992,9 @@
       "set": 4,
       "collector": "012",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Deity"
       ],
@@ -1038,6 +1074,9 @@
       "set": 4,
       "collector": "013",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -1130,6 +1169,9 @@
       "set": 4,
       "collector": "014",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Shield"
       ],
@@ -1209,6 +1251,9 @@
       "set": 4,
       "collector": "015",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Code"
       ],
@@ -1288,6 +1333,9 @@
       "set": 4,
       "collector": "016",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Male"
       ],
@@ -1385,6 +1433,9 @@
       "set": 4,
       "collector": "017",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Code"
       ],
@@ -1464,6 +1515,9 @@
       "set": 4,
       "collector": "018",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -1556,6 +1610,9 @@
       "set": 4,
       "collector": "019",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Item"
       ],
@@ -1635,6 +1692,9 @@
       "set": 4,
       "collector": "020",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Item"
       ],
@@ -1719,6 +1779,9 @@
       "set": 4,
       "collector": "021",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Male"
       ],
@@ -1811,6 +1874,9 @@
       "set": 4,
       "collector": "022",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Mystic"
       ],
@@ -1890,6 +1956,9 @@
       "set": 4,
       "collector": "023",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1987,6 +2056,9 @@
       "set": 4,
       "collector": "024",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Shield"
       ],
@@ -2071,6 +2143,9 @@
       "set": 4,
       "collector": "025",
       "culture": "Irish",
+      "cultures": [
+        "Irish"
+      ],
       "traits": [
         "Ally"
       ],
@@ -2155,6 +2230,9 @@
       "set": 4,
       "collector": "026",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Male"
       ],
@@ -2252,6 +2330,9 @@
       "set": 4,
       "collector": "027",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Item"
       ],
@@ -2323,7 +2404,7 @@
       "raw_source_text": "Whakawiri Teka - Reveal: Choose another warrior. Exchange the experience values of your warrior and the chosen warrior."
     },
     {
-      "id": "s4-028-1",
+      "id": "s4-028",
       "source": "spreadsheet-2007",
       "name": "Taiaha",
       "card_type": "weapon",
@@ -2331,101 +2412,11 @@
       "set": 4,
       "collector": "028",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
-        "Polearm"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 2,
-      "hands": 2,
-      "salary": null,
-      "grid_raw": "+1 +2 +2 +1 ▲ +1",
-      "grid": {
-        "1A": "+1",
-        "1B": null,
-        "1C": "+2",
-        "2A": "+2",
-        "2B": "+1",
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Kuruté",
-          "type": "static",
-          "text": "Attacks made with this weapon against adjacent opponents deal -1 damage."
-        }
-      ],
-      "flavor": "The wooden, tongue-shaped blade of the taiaha carries significant meaning in a culture where to stick one's tongue  out at an enemy is a sign of defiance and an implicit challenge.",
-      "illustrator": "Drew Baker",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Kuruté: Attacks made with this weapon against adjacent opponents deal -1 damage."
-    },
-    {
-      "id": "s4-028-2",
-      "source": "spreadsheet-2007",
-      "name": "Taiaha",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 4,
-      "collector": "028",
-      "culture": "Maori",
-      "traits": [
+        "Polearm",
         "Bludgeon"
       ],
       "life": null,
@@ -2504,10 +2495,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Kuruté: Attacks made with this weapon against adjacent opponents deal -1 damage."
     },
     {
@@ -2519,6 +2508,9 @@
       "set": 4,
       "collector": "029",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Location"
       ],
@@ -2595,7 +2587,7 @@
       "raw_source_text": "Whakakaha - Reveal: Place this card in any unoccupied space in the arena.\nWhita: If an opposing warrior ends their turn in this card's space, deal 1 damage to them. While you are in or adjacent to this card's space, attacks against you cannot gain damage bonuses."
     },
     {
-      "id": "s4-030-1",
+      "id": "s4-030",
       "source": "spreadsheet-2007",
       "name": "Hei-Tiki",
       "card_type": "special",
@@ -2603,88 +2595,11 @@
       "set": 4,
       "collector": "030",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
-        "Mystic"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Te Tuatahi Tangata",
-          "type": "static",
-          "text": "At the start of each round, the player who won initiative that round may choose to go last. If they do not, you may turn one of that player's support cards face-down. Turn that card face-up at the end of the round."
-        }
-      ],
-      "flavor": "In Maori myth, Tiki was  the first man. He found the first woman, Marikoriko, in a pond.  Marikoriko seduced him, and from their union was born Hine-Kau-Ataata.",
-      "illustrator": "Drew Baker",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Te Tuatahi Tangata: At the start of each round, the player who won initiative that round may choose to go last. If they do not, you may turn one of that player's support cards face-down. Turn that card face-up at the end of the round."
-    },
-    {
-      "id": "s4-030-2",
-      "source": "spreadsheet-2007",
-      "name": "Hei-Tiki",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 4,
-      "collector": "030",
-      "culture": "Maori",
-      "traits": [
+        "Mystic",
         "Item"
       ],
       "life": null,
@@ -2750,10 +2665,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Te Tuatahi Tangata: At the start of each round, the player who won initiative that round may choose to go last. If they do not, you may turn one of that player's support cards face-down. Turn that card face-up at the end of the round."
     },
     {
@@ -2765,6 +2678,9 @@
       "set": 4,
       "collector": "031",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Male"
       ],
@@ -2857,6 +2773,9 @@
       "set": 4,
       "collector": "032",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2936,6 +2855,9 @@
       "set": 4,
       "collector": "033",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -3033,6 +2955,9 @@
       "set": 4,
       "collector": "034",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Location"
       ],
@@ -3117,6 +3042,9 @@
       "set": 4,
       "collector": "035",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Ability"
       ],
@@ -3196,6 +3124,9 @@
       "set": 4,
       "collector": "036",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Male"
       ],
@@ -3288,6 +3219,9 @@
       "set": 4,
       "collector": "037",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3372,6 +3306,9 @@
       "set": 4,
       "collector": "038",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Axe"
       ],
@@ -3456,7 +3393,7 @@
       "raw_source_text": "Pounamu:If you have a mystic card increase the modifier of all the spaces in this card's attack grid to +2 and when you attack with this weapon you may re-roll one die of the attack roll."
     },
     {
-      "id": "s4-039-1",
+      "id": "s4-039",
       "source": "spreadsheet-2007",
       "name": "Moko",
       "card_type": "armor",
@@ -3464,88 +3401,11 @@
       "set": 4,
       "collector": "039",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
-        "Ability"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 7,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Taitoatanga",
-          "type": "static",
-          "text": "Reduce the damage dealt by each basic attack to 1."
-        }
-      ],
-      "flavor": "Moko tattoos were banned by British on pain of death. They might have dissapeared all together, had Maori women not secretly incorporated the patterns into everyday objects, guarding these ancestral designs until the day when they could once again be used.",
-      "illustrator": "Szucs Gregory",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Taitoatanga:Reduce the damage dealt by each basic attack to 1."
-    },
-    {
-      "id": "s4-039-2",
-      "source": "spreadsheet-2007",
-      "name": "Moko",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 4,
-      "collector": "039",
-      "culture": "Maori",
-      "traits": [
+        "Ability",
         "Mystic"
       ],
       "life": null,
@@ -3611,10 +3471,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Taitoatanga:Reduce the damage dealt by each basic attack to 1."
     },
     {
@@ -3626,6 +3484,9 @@
       "set": 4,
       "collector": "040",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -3705,6 +3566,9 @@
       "set": 4,
       "collector": "041",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Male"
       ],
@@ -3802,6 +3666,9 @@
       "set": 4,
       "collector": "042",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3886,6 +3753,9 @@
       "set": 4,
       "collector": "043",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -3983,6 +3853,9 @@
       "set": 4,
       "collector": "044",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Torso"
       ],
@@ -4062,6 +3935,9 @@
       "set": 4,
       "collector": "045",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Mystic"
       ],
@@ -4141,6 +4017,9 @@
       "set": 4,
       "collector": "046",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Male"
       ],
@@ -4233,6 +4112,9 @@
       "set": 4,
       "collector": "047",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Deity"
       ],
@@ -4309,7 +4191,7 @@
       "raw_source_text": "Kite: This card also counts as a Wind and an Earth card.\nKoraha: All of your non-defense rolls gain +2 for each element your cards share with any one opponent's cards."
     },
     {
-      "id": "s4-048-1",
+      "id": "s4-048",
       "source": "spreadsheet-2007",
       "name": "Kotiate",
       "card_type": "weapon",
@@ -4317,101 +4199,11 @@
       "set": 4,
       "collector": "048",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
-        "Bludgeon"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 1,
-      "initiative": 2,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+1 -1 +1 +2 ▲ +0",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+1",
-        "2B": "-1",
-        "2C": "+1",
-        "3A": "+2",
-        "3B": "marker",
-        "3C": "+0",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Apuru",
-          "type": "static",
-          "text": "When attacking with this weapon, if the attack roll is odd and the attack hits, the attack is a critical hit."
-        }
-      ],
-      "flavor": "\"Kotiate\" literally means \"cut liver.\" The ancestor figure on the butt of the handle symbolizes a guiding force or protective spirit, while the notches were used to trap and break an opponent's weapon.",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": true,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Apuru: When attacking with this weapon, if the attack roll is odd and the attack hits, the attack is a critical hit."
-    },
-    {
-      "id": "s4-048-2",
-      "source": "spreadsheet-2007",
-      "name": "Kotiate",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 4,
-      "collector": "048",
-      "culture": "Maori",
-      "traits": [
+        "Bludgeon",
         "Knife"
       ],
       "life": null,
@@ -4490,10 +4282,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Apuru: When attacking with this weapon, if the attack roll is odd and the attack hits, the attack is a critical hit."
     },
     {
@@ -4505,6 +4295,9 @@
       "set": 4,
       "collector": "049",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Ability"
       ],
@@ -4584,6 +4377,9 @@
       "set": 4,
       "collector": "050",
       "culture": "Maori",
+      "cultures": [
+        "Maori"
+      ],
       "traits": [
         "Code"
       ],
@@ -4663,6 +4459,9 @@
       "set": 4,
       "collector": "051",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Female"
       ],
@@ -4755,6 +4554,9 @@
       "set": 4,
       "collector": "052",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -4834,6 +4636,9 @@
       "set": 4,
       "collector": "053",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Knife"
       ],
@@ -4926,6 +4731,9 @@
       "set": 4,
       "collector": "054",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Head"
       ],
@@ -5005,6 +4813,9 @@
       "set": 4,
       "collector": "055",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Ability"
       ],
@@ -5084,6 +4895,9 @@
       "set": 4,
       "collector": "056",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Male"
       ],
@@ -5176,6 +4990,9 @@
       "set": 4,
       "collector": "057",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -5255,6 +5072,9 @@
       "set": 4,
       "collector": "058",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -5349,6 +5169,9 @@
       "set": 4,
       "collector": "059",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Shield"
       ],
@@ -5433,6 +5256,9 @@
       "set": 4,
       "collector": "060",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -5512,6 +5338,9 @@
       "set": 4,
       "collector": "061",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Male"
       ],
@@ -5604,6 +5433,9 @@
       "set": 4,
       "collector": "062",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -5683,6 +5515,9 @@
       "set": 4,
       "collector": "063",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -5775,6 +5610,9 @@
       "set": 4,
       "collector": "064",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Shield"
       ],
@@ -5859,6 +5697,9 @@
       "set": 4,
       "collector": "065",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Ally"
       ],
@@ -5943,6 +5784,9 @@
       "set": 4,
       "collector": "066",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Male"
       ],
@@ -6035,6 +5879,9 @@
       "set": 4,
       "collector": "067",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -6111,7 +5958,7 @@
       "raw_source_text": "Efrat Kardan - Reveal: If the sum of the initiative of all cards revealed this round is even, gain 1 life.\nHarzegi: Once each round, after you gain life, your next attack roll gains +2."
     },
     {
-      "id": "s4-068-1",
+      "id": "s4-068",
       "source": "spreadsheet-2007",
       "name": "Palta",
       "card_type": "weapon",
@@ -6119,8 +5966,12 @@
       "set": 4,
       "collector": "068",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
-        "Polearm"
+        "Polearm",
+        "Cavalry"
       ],
       "life": null,
       "speed": null,
@@ -6200,101 +6051,7 @@
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Etteham-e Sahmgin: Each time you take an action to move, you may choose for your next attack with this weapon this turn to be made at +0 and deal +1 damage."
-    },
-    {
-      "id": "s4-068-2",
-      "source": "spreadsheet-2007",
-      "name": "Palta",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 4,
-      "collector": "068",
-      "culture": "Persian",
-      "traits": [
-        "Cavalry"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 2,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+1 +0 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+1",
-        "2B": "+0",
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Etteham-e Sahmgin",
-          "type": "static",
-          "text": "Each time you take an action to move, you may choose for your next attack with this weapon this turn to be made at +0 and deal +1 damage."
-        }
-      ],
-      "flavor": "Roughly four feet long, these light javelins often had throwing straps to increase their range and power. Cavalry often used a pair of palta as their main weapons, throwing one and using the other for close combat.",
-      "illustrator": "Matthew Armstrong",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
+        "merge_conflict"
       ],
       "raw_source_text": "Etteham-e Sahmgin: Each time you take an action to move, you may choose for your next attack with this weapon this turn to be made at +0 and deal +1 damage."
     },
@@ -6307,6 +6064,9 @@
       "set": 4,
       "collector": "069",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -6391,6 +6151,9 @@
       "set": 4,
       "collector": "070",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Ability"
       ],
@@ -6462,7 +6225,7 @@
       "raw_source_text": "Ijad Moghavemat: After you take damage, roll two dice. If the total is less than your experience, the next attack against you deals -1 damage to a minimum of 0."
     },
     {
-      "id": "s4-071-1",
+      "id": "s4-071",
       "source": "spreadsheet-2007",
       "name": "Shapur I",
       "card_type": "warrior",
@@ -6470,101 +6233,11 @@
       "set": 4,
       "collector": "071",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
-        "Male"
-      ],
-      "life": 7,
-      "speed": 3,
-      "experience": 6,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 17,
-      "grid_raw": "+1 +0 ▲ +2",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+1",
-        "2B": "+0",
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": "+2",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Abdide-ye Jang",
-          "type": "static",
-          "text": "At the start of each round roll two dice. If the roll is greater than your life you may immediately move your warrior one space or use an action ability on one of your support cards."
-        }
-      ],
-      "flavor": "Waging almost constant war during his reign, Shapur I captured Roman Emperor Valerian at Edessa, keeping him in humiliating captivity until his death, and creating a landmark in the decline of the Roman Empire.",
-      "illustrator": "Michael Koch",
-      "background": "An inheritor of Mithridates the Great’s unending war against Rome, Shapur I renewed conflict with the Empire. Shapur’s most notable success was the capture of the Roman Emperor Valerian, whom he humiliated and then executed in captivity. Valerian’s capture is widely considered a landmark event in the decline of the Roman Empire. A devout follower of Zoroastrianism, Shapur was nonetheless extremely tolerant of all religions, going so far as to provide money for holy men to spread their word.\n\nThe only ruler in history to enslave and execute a Roman Emperor, use Shapur I of the Persian Empire to show your opponents in the Anachronism arena that nobody is beyond your grasp, and that even the mightiest will fall by your hand.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": true,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Abdide-ye Jang:At the start of each round roll two dice. If the roll is greater than your life you may immediately move your warrior one space or use an action ability on one of your support cards."
-    },
-    {
-      "id": "s4-071-2",
-      "source": "spreadsheet-2007",
-      "name": "Shapur I",
-      "card_type": "warrior",
-      "element": "Wind",
-      "set": 4,
-      "collector": "071",
-      "culture": "Persian",
-      "traits": [
+        "Male",
         "Cavalry"
       ],
       "life": 7,
@@ -6643,14 +6316,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Abdide-ye Jang:At the start of each round roll two dice. If the roll is greater than your life you may immediately move your warrior one space or use an action ability on one of your support cards."
     },
     {
-      "id": "s4-072-1",
+      "id": "s4-072",
       "source": "spreadsheet-2007",
       "name": "Zartosht",
       "card_type": "inspiration",
@@ -6658,88 +6329,11 @@
       "set": 4,
       "collector": "072",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 9,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Aramesh-e Darouni",
-          "type": "static",
-          "text": "At the start of each round, if you did not make an attack last round, your first attack of this round deals +1 damage, and you gain +1 speed this round."
-        }
-      ],
-      "flavor": "Zarathustra founded the religion of Zoroastrianism. According to Zorostrianism, humans are born with a free will that enables them to choose beteen Good and Evil.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Aramesh-e Darouni: At the start of each round, if you did not make an attack last round, your first attack of this round deals +1 damage, and you gain +1 speed this round."
-    },
-    {
-      "id": "s4-072-2",
-      "source": "spreadsheet-2007",
-      "name": "Zartosht",
-      "card_type": "inspiration",
-      "element": "Aether",
-      "set": 4,
-      "collector": "072",
-      "culture": "Persian",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -6805,10 +6399,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Aramesh-e Darouni: At the start of each round, if you did not make an attack last round, your first attack of this round deals +1 damage, and you gain +1 speed this round."
     },
     {
@@ -6820,6 +6412,9 @@
       "set": 4,
       "collector": "073",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -6912,6 +6507,9 @@
       "set": 4,
       "collector": "074",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Head"
       ],
@@ -6991,6 +6589,9 @@
       "set": 4,
       "collector": "075",
       "culture": "Persian",
+      "cultures": [
+        "Persian"
+      ],
       "traits": [
         "Item"
       ],
@@ -7070,6 +6671,9 @@
       "set": 4,
       "collector": "076",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Female"
       ],
@@ -7154,7 +6758,7 @@
       "raw_source_text": "Diplomaticheskoye Vmeshatelstvo: At the start of each round, choose an attack grid. Swap that attack grid with this card's attack grid until the end of the round."
     },
     {
-      "id": "s4-077-1",
+      "id": "s4-077",
       "source": "spreadsheet-2007",
       "name": "Voltaire",
       "card_type": "inspiration",
@@ -7162,88 +6766,11 @@
       "set": 4,
       "collector": "077",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Pontificat",
-          "type": "static",
-          "text": "After you lose a tie, gain +1 speed on your next turn, and gain +3 experience."
-        }
-      ],
-      "flavor": "Subsciribing to Enlightenment beliefs, Catherine considered herself a philosopher-queen. She culitvated freindships with Europe's leading intellegentsia, Voltaire prime among them.",
-      "illustrator": "Steven Belledin",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": true,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": true,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Pontificat: After you lose a tie, gain +1 speed on your next turn, and gain +3 experience."
-    },
-    {
-      "id": "s4-077-2",
-      "source": "spreadsheet-2007",
-      "name": "Voltaire",
-      "card_type": "inspiration",
-      "element": "Wood",
-      "set": 4,
-      "collector": "077",
-      "culture": "Russian",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -7309,10 +6836,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Pontificat: After you lose a tie, gain +1 speed on your next turn, and gain +3 experience."
     },
     {
@@ -7324,6 +6849,9 @@
       "set": 4,
       "collector": "078",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Sword"
       ],
@@ -7416,6 +6944,9 @@
       "set": 4,
       "collector": "079",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -7495,6 +7026,9 @@
       "set": 4,
       "collector": "080",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Code"
       ],
@@ -7579,6 +7113,9 @@
       "set": 4,
       "collector": "081",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "male"
       ],
@@ -7668,7 +7205,7 @@
       "raw_source_text": "Perviy Tzar: After any player rolls dice, if you have more than 2 experience, you may give your warrior -3 experience. If you do, you may increase or decrease one of the dice by 1.\nPoslednyaya Slava--Action: If you are at 1 life, your next roll is a 12."
     },
     {
-      "id": "s4-082-1",
+      "id": "s4-082",
       "source": "spreadsheet-2007",
       "name": "Anastasia Romanova Zakharyina",
       "card_type": "inspiration",
@@ -7676,88 +7213,11 @@
       "set": 4,
       "collector": "082",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 8,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Dragotzennaya I Hrupkaya",
-          "type": "static",
-          "text": "You gain +1 speed and your first weapon attack each round deals +1 damage. After an opponent rolls doubles on an attack roll, discard this card and you get -1 speed on your next turn."
-        }
-      ],
-      "flavor": "Chosen from among the princesses of Europe, Anastasia was the only person who could banish the demons that plauged her husband. After her death, Ivan plunged headlong into a most terrible insanity.",
-      "illustrator": "William O'Connor",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": true,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Dragotzennaya I Hrupkaya: You gain +1 speed and your first weapon attack each round deals +1 damage. After an opponent rolls doubles on an attack roll, discard this card and you get -1 speed on your next turn."
-    },
-    {
-      "id": "s4-082-2",
-      "source": "spreadsheet-2007",
-      "name": "Anastasia Romanova Zakharyina",
-      "card_type": "inspiration",
-      "element": "Water",
-      "set": 4,
-      "collector": "082",
-      "culture": "Russian",
-      "traits": [
+        "Ally",
         "Female"
       ],
       "life": null,
@@ -7823,10 +7283,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Dragotzennaya I Hrupkaya: You gain +1 speed and your first weapon attack each round deals +1 damage. After an opponent rolls doubles on an attack roll, discard this card and you get -1 speed on your next turn."
     },
     {
@@ -7838,6 +7296,9 @@
       "set": 4,
       "collector": "083",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -7935,6 +7396,9 @@
       "set": 4,
       "collector": "084",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -8014,6 +7478,9 @@
       "set": 4,
       "collector": "085",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Ally"
       ],
@@ -8098,6 +7565,9 @@
       "set": 4,
       "collector": "086",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Male"
       ],
@@ -8190,6 +7660,9 @@
       "set": 4,
       "collector": "087",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Quest"
       ],
@@ -8269,6 +7742,9 @@
       "set": 4,
       "collector": "088",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8361,6 +7837,9 @@
       "set": 4,
       "collector": "089",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -8440,6 +7919,9 @@
       "set": 4,
       "collector": "090",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Ally"
       ],
@@ -8519,6 +8001,9 @@
       "set": 4,
       "collector": "091",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Male"
       ],
@@ -8603,7 +8088,7 @@
       "raw_source_text": "Hitrost: When you reveal a support card, you may choose to give it its initiative value +4 or -4. If you do, choose an opponent. Modify that warrior's first roll of the round by half of the chosen amount."
     },
     {
-      "id": "s4-092-1",
+      "id": "s4-092",
       "source": "spreadsheet-2007",
       "name": "Samozvantez Dmitry",
       "card_type": "inspiration",
@@ -8611,88 +8096,11 @@
       "set": 4,
       "collector": "092",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tzar Samozvanteatz",
-          "type": "static",
-          "text": "After you roll dice, if you have more than 2 experience, you may give your warrior -3 experience. If you do, you may increase one die of the roll by 1."
-        }
-      ],
-      "flavor": "Claiming to be the youngest son of Ivan Grozny, Dmitry I secured his kingdom after the sudden death of Tsar Boris. His reign lasted only ten months, he was first slandered then ousted by Vasily Shuisky.",
-      "illustrator": "John Donahue",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": true,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tzar Samozvanteatz: After you roll dice, if you have more than 2 experience, you may give your warrior -3 experience. If you do, you may increase one die of the roll by 1."
-    },
-    {
-      "id": "s4-092-2",
-      "source": "spreadsheet-2007",
-      "name": "Samozvantez Dmitry",
-      "card_type": "inspiration",
-      "element": "Fire",
-      "set": 4,
-      "collector": "092",
-      "culture": "Russian",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -8758,10 +8166,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Tzar Samozvanteatz: After you roll dice, if you have more than 2 experience, you may give your warrior -3 experience. If you do, you may increase one die of the roll by 1."
     },
     {
@@ -8773,6 +8179,9 @@
       "set": 4,
       "collector": "093",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8870,6 +8279,9 @@
       "set": 4,
       "collector": "094",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -8949,6 +8361,9 @@
       "set": 4,
       "collector": "095",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Title"
       ],
@@ -9028,6 +8443,9 @@
       "set": 4,
       "collector": "096",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Male"
       ],
@@ -9112,7 +8530,7 @@
       "raw_source_text": "Dukh Tovarischestva: At the start of each round, if an ally card was revealed that round, you may move one space. Your attack rolls gain +1 for each ally in play."
     },
     {
-      "id": "s4-097-1",
+      "id": "s4-097",
       "source": "spreadsheet-2007",
       "name": "Metropolitan Kyrillus",
       "card_type": "inspiration",
@@ -9120,88 +8538,11 @@
       "set": 4,
       "collector": "097",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Sankziya",
-          "type": "static",
-          "text": "At the start of each round, if your initiative for that round matches your initiative from a previous round, your attack rolls and defense rolls that round gain +1."
-        }
-      ],
-      "flavor": "Upon hearing news of Nevski's death, Metropolitan Kyrillus finished reciting the liturgy, turned towards his congregation and said, \"Learn, my dear children, that the Sun of Russia is set, is dead.\"",
-      "illustrator": "James Ryman",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Sankziya: At the start of each round, if your initiative for that round matches your initiative from a previous round, your attack rolls and defense rolls that round gain +1."
-    },
-    {
-      "id": "s4-097-2",
-      "source": "spreadsheet-2007",
-      "name": "Metropolitan Kyrillus",
-      "card_type": "inspiration",
-      "element": "Aether",
-      "set": 4,
-      "collector": "097",
-      "culture": "Russian",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -9267,10 +8608,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Sankziya: At the start of each round, if your initiative for that round matches your initiative from a previous round, your attack rolls and defense rolls that round gain +1."
     },
     {
@@ -9282,6 +8621,9 @@
       "set": 4,
       "collector": "098",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -9374,6 +8716,9 @@
       "set": 4,
       "collector": "099",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -9453,6 +8798,9 @@
       "set": 4,
       "collector": "100",
       "culture": "Russian",
+      "cultures": [
+        "Russian"
+      ],
       "traits": [
         "Head"
       ],

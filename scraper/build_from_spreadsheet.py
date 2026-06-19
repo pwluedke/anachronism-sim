@@ -189,6 +189,7 @@ def build_record(row, headers):
         flags.append("grid_marker_anomaly")
 
     abilities = parse_abilities(row[11])
+    culture = str_or_blank(row[1])
 
     rec = {
         "id": "",  # assigned after collision resolution
@@ -198,7 +199,8 @@ def build_record(row, headers):
         "element": element,
         "set": set_int,
         "collector": collector,
-        "culture": str_or_blank(row[1]),
+        "culture": culture,
+        "cultures": [culture] if culture else [],
         "traits": split_traits(row[4]),
         "life": int_or_null(row[6]),
         "speed": int_or_null(row[7]),
@@ -240,26 +242,118 @@ def recompute_confidence(rec):
         rec["parse_confidence"] = "clean"
 
 
-def assign_ids(cards):
-    """Assign unique ids; disambiguate clashes (same as parse_cards.resolve_collisions)."""
+def _union_preserve(lists):
+    out = []
+    for lst in lists:
+        for x in lst:
+            if x not in out:
+                out.append(x)
+    return out
+
+
+def _reconcile(key, values):
+    """Pick a canonical value for a single-valued field that differs across rows."""
+    non_none = [v for v in values if v is not None]
+    if key == "tags":  # OR each tag key across rows
+        merged, allkeys = {}, set()
+        for v in values:
+            allkeys |= set(v.keys())
+        for k in sorted(allkeys):
+            vals = [v.get(k) for v in values]
+            merged[k] = True if any(x is True for x in vals) else (
+                False if any(x is False for x in vals) else None)
+        return merged
+    if not non_none:
+        return None
+    if all(isinstance(v, int) and not isinstance(v, bool) for v in non_none):
+        return max(non_none)                          # e.g. hands -> max
+    if all(isinstance(v, str) for v in non_none):
+        best = ""                                     # longest non-empty, tie -> first
+        for v in values:
+            if isinstance(v, str) and v and len(v) > len(best):
+                best = v
+        return best or non_none[0]
+    if all(isinstance(v, (list, dict)) for v in non_none):  # abilities / grid -> most complete
+        return max(values, key=lambda v: len(json.dumps(v, ensure_ascii=False)) if v is not None else -1)
+    return non_none[0]
+
+
+GENERIC_SKIP = {"id", "needs_review", "parse_confidence", "traits", "culture", "cultures"}
+
+
+def _merge_subgroup(rows):
+    """Merge field-identical-or-multivalued rows for one (card_type, name) card.
+
+    Returns (canonical_card, conflicts) where conflicts is a list of (field, values).
+    """
+    if len(rows) == 1:
+        return rows[0], []
+    canonical = dict(rows[0])
+    conflicts = []
+
+    canonical["traits"] = _union_preserve([r["traits"] for r in rows])
+    cultures = _union_preserve([r.get("cultures", []) for r in rows])
+    canonical["cultures"] = cultures
+    canonical["culture"] = cultures[0] if cultures else ""
+
+    keys = set()
+    for r in rows:
+        keys |= set(r.keys())
+    for k in sorted(keys - GENERIC_SKIP):
+        vals = [r.get(k) for r in rows]
+        distinct = {json.dumps(v, ensure_ascii=False, sort_keys=True) for v in vals}
+        if len(distinct) == 1:
+            canonical[k] = vals[0]
+        else:
+            canonical[k] = _reconcile(k, vals)
+            if k == "tags":
+                allk = set().union(*[set(v.keys()) for v in vals])
+                diff = sorted(kk for kk in allk if len({v.get(kk) for v in vals}) > 1)
+                conflicts.append((k, diff))
+            else:
+                conflicts.append((k, [v for v in vals]))
+
+    flags = _union_preserve([r["needs_review"] for r in rows])
+    flags = [f for f in flags if f not in ("possible_duplicate", "shared_collector")]
+    if conflicts and "merge_conflict" not in flags:
+        flags.append("merge_conflict")
+    canonical["needs_review"] = flags
+    return canonical, conflicts
+
+
+def resolve_and_merge(cards):
+    """Collapse duplicate rows into canonical cards; disambiguate genuinely distinct
+    cards that share a collector. Returns (merged_cards, collisions, merge_conflicts)."""
     groups = defaultdict(list)
     for c in cards:
         groups[base_id(c)].append(c)
-    handled = []
-    for bid, grp in groups.items():
-        if len(grp) == 1:
-            grp[0]["id"] = bid
-            continue
-        identities = {(c["card_type"], c["name"].lower()) for c in grp}
-        if len(identities) == 1:  # true duplicate row
-            for n, c in enumerate(grp, 1):
-                c["id"] = f"{bid}-{n}"
-                if "possible_duplicate" not in c["needs_review"]:
-                    c["needs_review"].append("possible_duplicate")
-        else:  # distinct cards sharing an id
-            tcount = Counter(c["card_type"] for c in grp)
+
+    out, collisions, merge_conflicts = [], [], []
+    for bid in groups:
+        grp = groups[bid]
+        # sub-group rows of the SAME card (card_type + normalized name)
+        subs = defaultdict(list)
+        order = []
+        for c in grp:
+            key = (c["card_type"], c["name"].lower())
+            if key not in subs:
+                order.append(key)
+            subs[key].append(c)
+
+        merged_subs = []
+        for key in order:
+            card, conflicts = _merge_subgroup(subs[key])
+            merged_subs.append(card)
+            if conflicts:
+                merge_conflicts.append((bid, card["name"], conflicts))
+
+        if len(merged_subs) == 1:
+            merged_subs[0]["id"] = bid
+            out.append(merged_subs[0])
+        else:  # distinct cards sharing a collector number
+            tcount = Counter(c["card_type"] for c in merged_subs)
             seen = Counter()
-            for c in grp:
+            for c in merged_subs:
                 t = c["card_type"]
                 if tcount[t] == 1:
                     c["id"] = f"{bid}-{t}"
@@ -268,10 +362,9 @@ def assign_ids(cards):
                     c["id"] = f"{bid}-{t}-{seen[t]}"
                 if "shared_collector" not in c["needs_review"]:
                     c["needs_review"].append("shared_collector")
-        for c in grp:
-            recompute_confidence(c)
-        handled.append((bid, [c["id"] for c in grp], [c["name"] for c in grp]))
-    return handled
+                out.append(c)
+            collisions.append((bid, [c["id"] for c in merged_subs], [c["name"] for c in merged_subs]))
+    return out, collisions, merge_conflicts
 
 
 # --------------------------------------------------------------------------- #
@@ -293,7 +386,7 @@ CSV_SCALARS = ["id", "source", "name", "card_type", "element", "set", "set_label
                "collector", "culture", "initiative", "life", "speed", "experience",
                "damage", "hands", "salary", "grid_raw", "flavor", "illustrator",
                "background", "parse_confidence"]
-CSV_JSON = ["traits", "abilities", "grid", "tags", "needs_review"]
+CSV_JSON = ["traits", "cultures", "abilities", "grid", "tags", "needs_review"]
 
 
 def write_outputs(cards):
@@ -351,9 +444,9 @@ def main():
     sh = wb.sheet_by_name("A7")
     headers = sh.row_values(0)
 
-    cards = [build_record(sh.row_values(r), headers) for r in range(1, sh.nrows)]
-    handled = assign_ids(cards)
-    for c in cards:               # recompute for non-collision flagged cards too
+    rows = [build_record(sh.row_values(r), headers) for r in range(1, sh.nrows)]
+    cards, collisions, merge_conflicts = resolve_and_merge(rows)
+    for c in cards:
         recompute_confidence(c)
     rq = write_outputs(cards)
     fails = validate(cards)
@@ -362,23 +455,36 @@ def main():
     by_type = Counter(c["card_type"] for c in cards)
     by_set = Counter(c.get("set_label") or c["set"] for c in cards)
     by_conf = Counter(c["parse_confidence"] for c in cards)
+    reasons = Counter()
+    for c in cards:
+        for f in c["needs_review"]:
+            reasons[f] += 1
     gridded = sum(1 for c in cards if c["grid"] is not None)
     ids = [c["id"] for c in cards]
 
     print("=" * 60)
-    print("SPREADSHEET REBUILD SUMMARY")
+    print("SPREADSHEET REBUILD + MERGE SUMMARY")
     print("=" * 60)
-    print(f"total cards : {len(cards)}")
+    print(f"source rows : {len(rows)}")
+    print(f"distinct cards after merge: {len(cards)}")
     print(f"per type    : {dict(sorted(by_type.items()))}")
     print(f"per set     : {dict(sorted(by_set.items(), key=lambda x: str(x[0])))}")
     print(f"confidence  : {dict(sorted(by_conf.items()))}")
-    print(f"review_count: {len(rq)}")
+    print(f"review_count: {len(rq)}  reasons: {dict(reasons)}")
     print(f"grids populated: {gridded}")
     print(f"ids unique  : {len(ids) == len(set(ids))} ({len(set(ids))}/{len(ids)})")
-    print(f"collisions handled: {len(handled)}")
-    for bid, newids, names in handled:
+    # a clean id is s{set}-{collector} or s{set}-P{collector}; anything else carries a suffix
+    suffixed = [i for i in ids if not re.match(r'^s\d+-(?:P\d+|\d+)$', i)]
+    print(f"ids with disambiguation suffix: {len(suffixed)} {suffixed}")
+    print(f"\nshared_collector (distinct cards kept separate): {len(collisions)}")
+    for bid, newids, names in collisions:
         print(f"   {bid} -> {newids}  {names}")
-    print(f"schema failures: {len(fails)}")
+    print(f"\nmerge_conflict groups (human review): {len(merge_conflicts)}")
+    for bid, name, conf in merge_conflicts:
+        print(f"   {bid} {name!r}:")
+        for field, vals in conf:
+            print(f"       {field}: {vals}")
+    print(f"\nschema failures: {len(fails)}")
     for fid, m in fails[:25]:
         print(f"   FAIL {fid}: {m}")
     if fails:

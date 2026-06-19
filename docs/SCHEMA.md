@@ -22,7 +22,8 @@ to fix.
 | `set` | integer | **required** | — |
 | `set_label` | string | optional (promos only) | omitted |
 | `collector` | string | **required** | `""` + flag |
-| `culture` | string | optional | `""` |
+| `culture` | string | optional | `""` (primary; first of `cultures`) |
+| `cultures` | string[] | optional | `[]` (authoritative list) |
 | `traits` | string[] | optional | `[]` |
 | `life` | integer \| null | warrior stat | `null` (NA) |
 | `speed` | integer \| null | warrior stat | `null` (NA) |
@@ -53,7 +54,8 @@ to fix.
 - **`set`** — integer 1–7. For promo cards this is the **parent** set; the promo label lives in `set_label`.
 - **`set_label`** — `"P1"`..`"P7"`. Present **only** on promo cards; numbered cards omit it.
 - **`collector`** — string; preserve leading zeros (`"001"`).
-- **`culture`** — string. `""` when absent.
+- **`culture`** — string. The primary culture (first of `cultures`), kept for backward compat. `""` when absent.
+- **`cultures`** — string array; the authoritative culture list. Usually one value; pirate-set cards carry two (e.g. `["Pirate","Welsh"]`), merged from the spreadsheet's multi-row encoding.
 - **`traits`** — string array (the card's Subtype/Traits, e.g. `["Male"]`, `["Polearm"]`).
 - **`life`, `speed`, `experience`, `damage`** — integer or `null`. `null` when the source value is `NA` (e.g. warriors have no `damage`-less... support cards leave the warrior stats `NA`).
 - **`initiative`** — integer or `null`. Support-card initiative; `null` (NA) for warriors.
@@ -68,7 +70,7 @@ to fix.
 - **`background`** — string. Warrior background / historical prose; often `""` for support cards.
 - **`tags`** — object mapping snake_cased mechanical-taxonomy columns (e.g. `reveal`, `attack_bonus`, `cavalry_dependant`) to `boolean` (or `null` if the source value is NA). Populated for every card.
 - **`parse_confidence`** — enum: `clean` | `partial` | `suspect`.
-- **`needs_review`** — string array of flags. Empty = clean. Spreadsheet flags: `possible_duplicate`, `shared_collector`, `grid_marker_anomaly`.
+- **`needs_review`** — string array of flags. Empty = clean. Spreadsheet flags: `merge_conflict` (duplicate rows merged but a single-valued field — tags/hands/flavor/name — differed; canonical value chosen, kept for human review), `shared_collector` (two distinct cards share a collector number), `grid_marker_anomaly` (warrior marker not at 3B — ranged weapons mark at 4B).
 - **`raw_source_text`** — string. The verbatim source Text-column value for this card. Always populated.
 
 ## File wrapper

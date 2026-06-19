@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": 1,
-  "card_count": 101,
-  "review_count": 3,
+  "card_count": 100,
+  "review_count": 1,
   "cards": [
     {
       "id": "s1-001",
@@ -15,6 +15,9 @@
       "set": 1,
       "collector": "001",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -107,6 +110,9 @@
       "set": 1,
       "collector": "002",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Deity"
       ],
@@ -186,6 +192,9 @@
       "set": 1,
       "collector": "003",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -278,6 +287,9 @@
       "set": 1,
       "collector": "004",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Torso"
       ],
@@ -357,6 +369,9 @@
       "set": 1,
       "collector": "005",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -436,6 +451,9 @@
       "set": 1,
       "collector": "006",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -528,6 +546,9 @@
       "set": 1,
       "collector": "007",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Deity"
       ],
@@ -607,6 +628,9 @@
       "set": 1,
       "collector": "008",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Sword"
       ],
@@ -699,6 +723,9 @@
       "set": 1,
       "collector": "009",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Torso"
       ],
@@ -778,6 +805,9 @@
       "set": 1,
       "collector": "010",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Shield"
       ],
@@ -857,6 +887,9 @@
       "set": 1,
       "collector": "011",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -949,6 +982,9 @@
       "set": 1,
       "collector": "012",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Deity"
       ],
@@ -1028,6 +1064,9 @@
       "set": 1,
       "collector": "013",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1120,6 +1159,9 @@
       "set": 1,
       "collector": "014",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Legs"
       ],
@@ -1199,6 +1241,9 @@
       "set": 1,
       "collector": "015",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Item"
       ],
@@ -1278,6 +1323,9 @@
       "set": 1,
       "collector": "016",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -1370,6 +1418,9 @@
       "set": 1,
       "collector": "017",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Philosophy"
       ],
@@ -1449,6 +1500,9 @@
       "set": 1,
       "collector": "018",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -1541,6 +1595,9 @@
       "set": 1,
       "collector": "019",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Torso"
       ],
@@ -1620,6 +1677,9 @@
       "set": 1,
       "collector": "020",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Item"
       ],
@@ -1699,6 +1759,9 @@
       "set": 1,
       "collector": "021",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -1791,6 +1854,9 @@
       "set": 1,
       "collector": "022",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -1870,6 +1936,9 @@
       "set": 1,
       "collector": "023",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -1964,6 +2033,9 @@
       "set": 1,
       "collector": "024",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -2043,6 +2115,9 @@
       "set": 1,
       "collector": "025",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Ability"
       ],
@@ -2122,6 +2197,9 @@
       "set": 1,
       "collector": "026",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Female"
       ],
@@ -2214,6 +2292,9 @@
       "set": 1,
       "collector": "027",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -2311,6 +2392,9 @@
       "set": 1,
       "collector": "028",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2390,6 +2474,9 @@
       "set": 1,
       "collector": "029",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Item"
       ],
@@ -2469,6 +2556,9 @@
       "set": 1,
       "collector": "030",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -2561,6 +2651,9 @@
       "set": 1,
       "collector": "031",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Head"
       ],
@@ -2640,6 +2733,9 @@
       "set": 1,
       "collector": "032",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Item"
       ],
@@ -2719,6 +2815,9 @@
       "set": 1,
       "collector": "033",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -2811,6 +2910,9 @@
       "set": 1,
       "collector": "034",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2890,6 +2992,9 @@
       "set": 1,
       "collector": "035",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -2982,6 +3087,9 @@
       "set": 1,
       "collector": "036",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -3061,6 +3169,9 @@
       "set": 1,
       "collector": "037",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Legs"
       ],
@@ -3140,6 +3251,9 @@
       "set": 1,
       "collector": "038",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -3219,6 +3333,9 @@
       "set": 1,
       "collector": "039",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -3311,6 +3428,9 @@
       "set": 1,
       "collector": "040",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Quest"
       ],
@@ -3390,6 +3510,9 @@
       "set": 1,
       "collector": "041",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -3487,6 +3610,9 @@
       "set": 1,
       "collector": "042",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3566,6 +3692,9 @@
       "set": 1,
       "collector": "043",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -3658,6 +3787,9 @@
       "set": 1,
       "collector": "044",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -3737,6 +3869,9 @@
       "set": 1,
       "collector": "045",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Item"
       ],
@@ -3816,6 +3951,9 @@
       "set": 1,
       "collector": "046",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Male"
       ],
@@ -3908,6 +4046,9 @@
       "set": 1,
       "collector": "047",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3987,6 +4128,9 @@
       "set": 1,
       "collector": "048",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Knife"
       ],
@@ -4079,6 +4223,9 @@
       "set": 1,
       "collector": "049",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Head"
       ],
@@ -4158,6 +4305,9 @@
       "set": 1,
       "collector": "050",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Head"
       ],
@@ -4237,6 +4387,9 @@
       "set": 1,
       "collector": "051",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Male"
       ],
@@ -4329,6 +4482,9 @@
       "set": 1,
       "collector": "052",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Male"
       ],
@@ -4421,6 +4577,9 @@
       "set": 1,
       "collector": "053",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Deity"
       ],
@@ -4500,6 +4659,9 @@
       "set": 1,
       "collector": "054",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Torso"
       ],
@@ -4579,6 +4741,9 @@
       "set": 1,
       "collector": "055",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Axe"
       ],
@@ -4671,6 +4836,9 @@
       "set": 1,
       "collector": "056",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Head"
       ],
@@ -4750,6 +4918,9 @@
       "set": 1,
       "collector": "057",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Item"
       ],
@@ -4829,6 +5000,9 @@
       "set": 1,
       "collector": "058",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Female"
       ],
@@ -4915,6 +5089,9 @@
       "set": 1,
       "collector": "059",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Deity"
       ],
@@ -4994,6 +5171,9 @@
       "set": 1,
       "collector": "060",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Quest"
       ],
@@ -5065,7 +5245,7 @@
       "raw_source_text": "Intimidation - Reveal: Choose an opposing warrior and roll two dice. If the total is greater than that warrior's experience, that warrior must spend an additional action to attack this round."
     },
     {
-      "id": "s1-061-1",
+      "id": "s1-061",
       "source": "spreadsheet-2007",
       "name": "Skegox Francisca",
       "card_type": "weapon",
@@ -5073,106 +5253,11 @@
       "set": 1,
       "collector": "061",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
-        "Axe"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 1,
-      "initiative": 5,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+1 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": null,
-        "2B": null,
-        "2C": "+1",
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Kaste",
-          "type": "reveal",
-          "text": "Deal 1 damage to all warriors not adjacent to your warrior."
-        },
-        {
-          "name": "Liten",
-          "type": "static",
-          "text": "You may use another weapon in this game."
-        }
-      ],
-      "flavor": "Boldest of the Norse gods, Tyr inspires heroism and courage in battle.",
-      "illustrator": "RK Post",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": false,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": true,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Kaste - Reveal: Deal 1 damage to all warriors not adjacent to your warrior.\nLiten: You may use another weapon in this game."
-    },
-    {
-      "id": "s1-061-2",
-      "source": "spreadsheet-2007",
-      "name": "Skegox Francisca",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 1,
-      "collector": "061",
-      "culture": "Norse",
-      "traits": [
+        "Axe",
         "Ranged"
       ],
       "life": null,
@@ -5256,10 +5341,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Kaste - Reveal: Deal 1 damage to all warriors not adjacent to your warrior.\nLiten: You may use another weapon in this game."
     },
     {
@@ -5271,6 +5354,9 @@
       "set": 1,
       "collector": "062",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Torso"
       ],
@@ -5350,6 +5436,9 @@
       "set": 1,
       "collector": "063",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Mystic"
       ],
@@ -5429,6 +5518,9 @@
       "set": 1,
       "collector": "064",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Male"
       ],
@@ -5521,6 +5613,9 @@
       "set": 1,
       "collector": "065",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Deity"
       ],
@@ -5600,6 +5695,9 @@
       "set": 1,
       "collector": "066",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Axe"
       ],
@@ -5692,6 +5790,9 @@
       "set": 1,
       "collector": "067",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Torso"
       ],
@@ -5771,6 +5872,9 @@
       "set": 1,
       "collector": "068",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Ability"
       ],
@@ -5850,6 +5954,9 @@
       "set": 1,
       "collector": "069",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Male"
       ],
@@ -5942,6 +6049,9 @@
       "set": 1,
       "collector": "070",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Deity"
       ],
@@ -6021,6 +6131,9 @@
       "set": 1,
       "collector": "071",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Sword"
       ],
@@ -6113,6 +6226,9 @@
       "set": 1,
       "collector": "072",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Shield"
       ],
@@ -6192,6 +6308,9 @@
       "set": 1,
       "collector": "073",
       "culture": "Norse",
+      "cultures": [
+        "Norse"
+      ],
       "traits": [
         "Sword"
       ],
@@ -6284,6 +6403,9 @@
       "set": 1,
       "collector": "074",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Legs"
       ],
@@ -6363,6 +6485,9 @@
       "set": 1,
       "collector": "075",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Tome"
       ],
@@ -6442,6 +6567,9 @@
       "set": 1,
       "collector": "076",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Female"
       ],
@@ -6534,6 +6662,9 @@
       "set": 1,
       "collector": "077",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Deity"
       ],
@@ -6613,6 +6744,9 @@
       "set": 1,
       "collector": "078",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Knife"
       ],
@@ -6705,6 +6839,9 @@
       "set": 1,
       "collector": "079",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Legs"
       ],
@@ -6784,6 +6921,9 @@
       "set": 1,
       "collector": "080",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Shield"
       ],
@@ -6863,6 +7003,9 @@
       "set": 1,
       "collector": "081",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Male"
       ],
@@ -6955,6 +7098,9 @@
       "set": 1,
       "collector": "082",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Deity"
       ],
@@ -7034,6 +7180,9 @@
       "set": 1,
       "collector": "083",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -7126,6 +7275,9 @@
       "set": 1,
       "collector": "084",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Torso"
       ],
@@ -7205,6 +7357,9 @@
       "set": 1,
       "collector": "085",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Tome"
       ],
@@ -7284,6 +7439,9 @@
       "set": 1,
       "collector": "086",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Male"
       ],
@@ -7376,6 +7534,9 @@
       "set": 1,
       "collector": "087",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Deity"
       ],
@@ -7455,6 +7616,9 @@
       "set": 1,
       "collector": "088",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Sword"
       ],
@@ -7547,6 +7711,9 @@
       "set": 1,
       "collector": "089",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Head"
       ],
@@ -7626,6 +7793,9 @@
       "set": 1,
       "collector": "090",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Shield"
       ],
@@ -7705,6 +7875,9 @@
       "set": 1,
       "collector": "091",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -7797,6 +7970,9 @@
       "set": 1,
       "collector": "092",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Deity"
       ],
@@ -7876,6 +8052,9 @@
       "set": 1,
       "collector": "093",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -7968,6 +8147,9 @@
       "set": 1,
       "collector": "094",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Torso"
       ],
@@ -8047,6 +8229,9 @@
       "set": 1,
       "collector": "095",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Shield"
       ],
@@ -8126,6 +8311,9 @@
       "set": 1,
       "collector": "096",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Male"
       ],
@@ -8218,6 +8406,9 @@
       "set": 1,
       "collector": "097",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Philosophy"
       ],
@@ -8297,6 +8488,9 @@
       "set": 1,
       "collector": "098",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8389,6 +8583,9 @@
       "set": 1,
       "collector": "099",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Legs"
       ],
@@ -8468,6 +8665,9 @@
       "set": 1,
       "collector": "100",
       "culture": "Roman",
+      "cultures": [
+        "Roman"
+      ],
       "traits": [
         "Shield"
       ],

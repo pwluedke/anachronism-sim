@@ -4,7 +4,7 @@ A digital simulator for *Anachronism*, the tactical CCG published 2004–2007 by
 
 ## Status: Milestone 3 — Data cross-check (in progress)
 
-Milestones 1 + 2 complete: the card database was rebuilt from `Anachronism Cards Spreadsheet.xls` (`spreadsheet-2007`), the new source of truth — 868 schema-valid cards (sets 1–7 + promos P1, P3–P7) with attack-grid geometry, a mechanical `tags` taxonomy, and warrior backgrounds. 663 clean / 205 flagged source facts / 0 suspect.
+Milestones 1 + 2 complete: the card database was rebuilt from `Anachronism Cards Spreadsheet.xls` (`spreadsheet-2007`), the new source of truth — 868 source rows merged to **761 distinct cards** (sets 1–7 + promos P1, P3–P7) with attack-grid geometry, multi-valued `traits`/`cultures`, a mechanical `tags` taxonomy, and warrior backgrounds. 740 clean / 21 flagged source facts / 0 suspect.
 
 ## Project Structure
 

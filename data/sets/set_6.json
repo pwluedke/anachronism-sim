@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": 6,
-  "card_count": 142,
-  "review_count": 76,
+  "card_count": 101,
+  "review_count": 5,
   "cards": [
     {
       "id": "s6-001",
@@ -15,6 +15,9 @@
       "set": 6,
       "collector": "001",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -107,6 +110,9 @@
       "set": 6,
       "collector": "002",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Quest"
       ],
@@ -191,6 +197,9 @@
       "set": 6,
       "collector": "003",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -283,6 +292,9 @@
       "set": 6,
       "collector": "004",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Location"
       ],
@@ -362,6 +374,9 @@
       "set": 6,
       "collector": "005",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -446,6 +461,9 @@
       "set": 6,
       "collector": "006",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -535,7 +553,7 @@
       "raw_source_text": "Fei jiang:  While you have a ranged weapon, you may use another 1 handed weapon. You may ignore hand requirements for this extra weapon.\nJun xie ku: When you attack with a ranged weapon, you may use your basic attack grid for that attack. "
     },
     {
-      "id": "s6-007-1",
+      "id": "s6-007",
       "source": "spreadsheet-2007",
       "name": "Diao Chan",
       "card_type": "inspiration",
@@ -543,88 +561,11 @@
       "set": 6,
       "collector": "007",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Nu yi",
-          "type": "reveal",
-          "text": "Deal 2 damage to your warrior. While this card is in play, your attacks deal +1 damage."
-        }
-      ],
-      "flavor": "Wang Yun used the beautiful Diao Chan to drive a wedge between Lü Bu and his master, Dong Zhuo.",
-      "illustrator": "Jeff Laubenstein",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Nu yi - Reveal: Deal 2 damage to your warrior. While this card is in play, your attacks deal +1 damage."
-    },
-    {
-      "id": "s6-007-2",
-      "source": "spreadsheet-2007",
-      "name": "Diao Chan",
-      "card_type": "inspiration",
-      "element": "Wood",
-      "set": 6,
-      "collector": "007",
-      "culture": "Chinese",
-      "traits": [
+        "Ally",
         "Female"
       ],
       "life": null,
@@ -690,10 +631,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Nu yi - Reveal: Deal 2 damage to your warrior. While this card is in play, your attacks deal +1 damage."
     },
     {
@@ -705,6 +644,9 @@
       "set": 6,
       "collector": "008",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -797,6 +739,9 @@
       "set": 6,
       "collector": "009",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -881,6 +826,9 @@
       "set": 6,
       "collector": "010",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -960,6 +908,9 @@
       "set": 6,
       "collector": "011",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -1057,6 +1008,9 @@
       "set": 6,
       "collector": "012",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Ally"
       ],
@@ -1141,6 +1095,9 @@
       "set": 6,
       "collector": "013",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -1233,6 +1190,9 @@
       "set": 6,
       "collector": "014",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Head"
       ],
@@ -1309,7 +1269,7 @@
       "raw_source_text": "Jing ti:  When an opponent rolls a 6 on an attack roll, they become your rival until the end of the next round.\nFang fan: When you are attacked, if your defense roll is less than the attacker's experience, the attack deals -1 damage, to a minimum of 1."
     },
     {
-      "id": "s6-015-1",
+      "id": "s6-015",
       "source": "spreadsheet-2007",
       "name": "Biao Qi Jiangjun",
       "card_type": "special",
@@ -1317,93 +1277,11 @@
       "set": 6,
       "collector": "015",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tong da",
-          "type": "static",
-          "text": "If you take more than one damage from basic attacks from the same warrior in a single turn, that warrior is your rival."
-        },
-        {
-          "name": "Zhong ji",
-          "type": "action",
-          "text": "Once each round, make a basic attack, if possible. For each cavalry card you have in play, the attack roll gets -1 and deals +1 damage."
-        }
-      ],
-      "flavor": "In 221 AD, Ma Chao was appointed as Biao Qi Jiangjun (the General of the Agile Calvary), governor of the Province of Liang and Marquis of Li Xiang.",
-      "illustrator": "Rick Sardinha",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": true,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": true,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": true,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tong da: If you take more than one damage from basic attacks from the same warrior in a single turn, that warrior is your rival.\nZhong ji - Action: Once each round, make a basic attack, if possible. For each cavalry card you have in play, the attack roll gets -1 and deals +1 damage."
-    },
-    {
-      "id": "s6-015-2",
-      "source": "spreadsheet-2007",
-      "name": "Biao Qi Jiangjun",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "015",
-      "culture": "Chinese",
-      "traits": [
+        "Ally",
         "Cavalry"
       ],
       "life": null,
@@ -1474,10 +1352,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Tong da: If you take more than one damage from basic attacks from the same warrior in a single turn, that warrior is your rival.\nZhong ji - Action: Once each round, make a basic attack, if possible. For each cavalry card you have in play, the attack roll gets -1 and deals +1 damage."
     },
     {
@@ -1489,6 +1365,9 @@
       "set": 6,
       "collector": "016",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -1586,6 +1465,9 @@
       "set": 6,
       "collector": "017",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Location"
       ],
@@ -1670,6 +1552,9 @@
       "set": 6,
       "collector": "018",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -1767,6 +1652,9 @@
       "set": 6,
       "collector": "019",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Arms"
       ],
@@ -1851,6 +1739,9 @@
       "set": 6,
       "collector": "020",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Location"
       ],
@@ -1927,7 +1818,7 @@
       "raw_source_text": "Mai fu: Opponents with Wood or Earth cards get -1 to all of their rolls.\nChong zheng: Once each round, when you make a roll, if you are a Wind warrior, you may re-roll up to two dice of that roll."
     },
     {
-      "id": "s6-021-1",
+      "id": "s6-021",
       "source": "spreadsheet-2007",
       "name": "Zhang Jiao",
       "card_type": "warrior",
@@ -1935,106 +1826,11 @@
       "set": 6,
       "collector": "021",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
-        "Male"
-      ],
-      "life": 7,
-      "speed": 3,
-      "experience": 3,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 14,
-      "grid_raw": "+0 +2 ▲ -1 +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": null,
-        "2C": "+2",
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": "-1",
-        "4B": null,
-        "4C": "+1"
-      },
-      "abilities": [
-        {
-          "name": "Xin lin de",
-          "type": "static",
-          "text": "You may have 2 Inspirations in play"
-        },
-        {
-          "name": "You dong ji de",
-          "type": "static",
-          "text": "At the start of each round, if an inspiration was revealed that round, you may move one space and then immediatly make a basic attack, if possible."
-        }
-      ],
-      "flavor": "A Taoist, and rumored to be a sorcerer, Zhang Jiao fomented revolution and led the peasant uprising called \"The Yellow Turban Rebellion.\"",
-      "illustrator": "Kurt Miller",
-      "background": "N/A Promo Warrior",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": true,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": true,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Xin lin de:  You may have 2 Inspirations in play\nYou dong ji de: At the start of each round, if an inspiration was revealed that round, you may move one space and then immediatly make a basic attack, if possible."
-    },
-    {
-      "id": "s6-021-2",
-      "source": "spreadsheet-2007",
-      "name": "Zhang Jiao",
-      "card_type": "warrior",
-      "element": "Fire",
-      "set": 6,
-      "collector": "021",
-      "culture": "Chinese",
-      "traits": [
+        "Male",
         "Mystic"
       ],
       "life": 7,
@@ -2118,10 +1914,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Xin lin de:  You may have 2 Inspirations in play\nYou dong ji de: At the start of each round, if an inspiration was revealed that round, you may move one space and then immediatly make a basic attack, if possible."
     },
     {
@@ -2133,6 +1927,9 @@
       "set": 6,
       "collector": "022",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2204,7 +2001,7 @@
       "raw_source_text": "Tai Ping Yao Shu: After you make a roll, if the difference between any two of the dice was greater than 3, your next successful attacks deals +1 damage."
     },
     {
-      "id": "s6-023-1",
+      "id": "s6-023",
       "source": "spreadsheet-2007",
       "name": "Tai Chi Gun",
       "card_type": "weapon",
@@ -2212,101 +2009,11 @@
       "set": 6,
       "collector": "023",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
-        "Polearm"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 0,
-      "hands": 2,
-      "salary": null,
-      "grid_raw": "-1 +2 +1 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": "-1",
-        "2A": null,
-        "2B": "+2",
-        "2C": "+1",
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Nei bu de he ping",
-          "type": "static",
-          "text": "At the start of each round, roll two dice. Once each turn this round, after you make an attack or defense roll, you may set the roll to the value of this roll."
-        }
-      ],
-      "flavor": "Tai Chi practitioners generate wave motions in their bodies that can deliver devastating blows with almost no apparent movement.",
-      "illustrator": "Kurt Miller",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": true,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Nei bu de he ping: At the start of each round, roll two dice. Once each turn this round, after you make an attack or defense roll, you may set the roll to the value of this roll."
-    },
-    {
-      "id": "s6-023-2",
-      "source": "spreadsheet-2007",
-      "name": "Tai Chi Gun",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 6,
-      "collector": "023",
-      "culture": "Chinese",
-      "traits": [
+        "Polearm",
         "Bludgeon"
       ],
       "life": null,
@@ -2385,10 +2092,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Nei bu de he ping: At the start of each round, roll two dice. Once each turn this round, after you make an attack or defense roll, you may set the roll to the value of this roll."
     },
     {
@@ -2400,6 +2105,9 @@
       "set": 6,
       "collector": "024",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Ability"
       ],
@@ -2484,6 +2192,9 @@
       "set": 6,
       "collector": "025",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Quest"
       ],
@@ -2560,7 +2271,7 @@
       "raw_source_text": "Gu dong: Abilities on armor cards played by warriors with a metal card in play have no effect.\nChong zhu: Once this game, after you are attacked by a weapon, if you are a fire warrior, gain +1 speed for the rest of the game."
     },
     {
-      "id": "s6-026-1",
+      "id": "s6-026",
       "source": "spreadsheet-2007",
       "name": "Anne Bonney",
       "card_type": "warrior",
@@ -2568,196 +2279,13 @@
       "set": 6,
       "collector": "026",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
-        "Female"
-      ],
-      "life": 8,
-      "speed": 3,
-      "experience": 6,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 18,
-      "grid_raw": "+2 -1 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+2",
-        "2B": null,
-        "2C": "-1",
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Stráitéis Glic",
-          "type": "static",
-          "text": "At the start of each round, if you revealed a special, choose a warrior. The chosen warrior's next roll is set to the initiative of the special card you revealed that round."
-        }
-      ],
-      "flavor": "Disowned by her family, Anne Bonny turned to piracy and lawbreaking. Joing with Calico Jack Rackham and Mary Read, she plundered along the New Providence coast.",
-      "illustrator": "Steven Belledin",
-      "background": "Anne Bonny (née Cormac) took up with the pirates after her father disowned her. Meeting with Calico Jack Rackham in New Providence, mutual attraction and a lust for adventure led them both to break Governor Rogers' pirate amnesty. A fierce fighter, skilled with rapier and pistol, and with a temper to match (she reputedly killed a serving girl, and later knocked two teeth out of a noblewoman’s mouth at a ball), Anne was very much at home on the seas, though she had to keep the fact she was a woman hidden at all times. Eventually captured, Anne escaped execution because she was pregnant, and soon after disappeared from official records forever.\n\nWith a temper as fierce and dangerous as her skill at arms, use Anne Bonny to seize victory in the Anachronism arena from any craven swab born without the bravery to hold onto it.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Stráitéis Glic: At the start of each round, if you revealed a special, choose a warrior. The chosen warrior's next roll is set to the initiative of the special card you revealed that round."
-    },
-    {
-      "id": "s6-026-2",
-      "source": "spreadsheet-2007",
-      "name": "Anne Bonney",
-      "card_type": "warrior",
-      "element": "Wind",
-      "set": 6,
-      "collector": "026",
-      "culture": "Irish",
-      "traits": [
+        "Female",
         "Male"
-      ],
-      "life": 8,
-      "speed": 3,
-      "experience": 6,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 18,
-      "grid_raw": "+2 -1 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+2",
-        "2B": null,
-        "2C": "-1",
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Stráitéis Glic",
-          "type": "static",
-          "text": "At the start of each round, if you revealed a special, choose a warrior. The chosen warrior's next roll is set to the initiative of the special card you revealed that round."
-        }
-      ],
-      "flavor": "Disowned by her family, Anne Bonny turned to piracy and lawbreaking. Joing with Calico Jack Rackham and Mary Read, she plundered along the New Providence coast.",
-      "illustrator": "Steven Belledin",
-      "background": "Anne Bonny (née Cormac) took up with the pirates after her father disowned her. Meeting with Calico Jack Rackham in New Providence, mutual attraction and a lust for adventure led them both to break Governor Rogers' pirate amnesty. A fierce fighter, skilled with rapier and pistol, and with a temper to match (she reputedly killed a serving girl, and later knocked two teeth out of a noblewoman’s mouth at a ball), Anne was very much at home on the seas, though she had to keep the fact she was a woman hidden at all times. Eventually captured, Anne escaped execution because she was pregnant, and soon after disappeared from official records forever.\n\nWith a temper as fierce and dangerous as her skill at arms, use Anne Bonny to seize victory in the Anachronism arena from any craven swab born without the bravery to hold onto it.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Stráitéis Glic: At the start of each round, if you revealed a special, choose a warrior. The chosen warrior's next roll is set to the initiative of the special card you revealed that round."
-    },
-    {
-      "id": "s6-026-3",
-      "source": "spreadsheet-2007",
-      "name": "Anne Bonney",
-      "card_type": "warrior",
-      "element": "Wind",
-      "set": 6,
-      "collector": "026",
-      "culture": "Pirate",
-      "traits": [
-        "Female"
       ],
       "life": 8,
       "speed": 3,
@@ -2837,106 +2365,12 @@
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "possible_duplicate"
+        "merge_conflict"
       ],
       "raw_source_text": "Stráitéis Glic: At the start of each round, if you revealed a special, choose a warrior. The chosen warrior's next roll is set to the initiative of the special card you revealed that round."
     },
     {
-      "id": "s6-026-4",
-      "source": "spreadsheet-2007",
-      "name": "Anne Bonney",
-      "card_type": "warrior",
-      "element": "Wind",
-      "set": 6,
-      "collector": "026",
-      "culture": "Pirate",
-      "traits": [
-        "Male"
-      ],
-      "life": 8,
-      "speed": 3,
-      "experience": 6,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 18,
-      "grid_raw": "+2 -1 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+2",
-        "2B": null,
-        "2C": "-1",
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Stráitéis Glic",
-          "type": "static",
-          "text": "At the start of each round, if you revealed a special, choose a warrior. The chosen warrior's next roll is set to the initiative of the special card you revealed that round."
-        }
-      ],
-      "flavor": "Disowned by her family, Anne Bonny turned to piracy and lawbreaking. Joing with Calico Jack Rackham and Mary Read, she plundered along the New Providence coast.",
-      "illustrator": "Steven Belledin",
-      "background": "Anne Bonny (née Cormac) took up with the pirates after her father disowned her. Meeting with Calico Jack Rackham in New Providence, mutual attraction and a lust for adventure led them both to break Governor Rogers' pirate amnesty. A fierce fighter, skilled with rapier and pistol, and with a temper to match (she reputedly killed a serving girl, and later knocked two teeth out of a noblewoman’s mouth at a ball), Anne was very much at home on the seas, though she had to keep the fact she was a woman hidden at all times. Eventually captured, Anne escaped execution because she was pregnant, and soon after disappeared from official records forever.\n\nWith a temper as fierce and dangerous as her skill at arms, use Anne Bonny to seize victory in the Anachronism arena from any craven swab born without the bravery to hold onto it.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Stráitéis Glic: At the start of each round, if you revealed a special, choose a warrior. The chosen warrior's next roll is set to the initiative of the special card you revealed that round."
-    },
-    {
-      "id": "s6-027-1",
+      "id": "s6-027",
       "source": "spreadsheet-2007",
       "name": "Calico Jack Rackham",
       "card_type": "inspiration",
@@ -2944,88 +2378,12 @@
       "set": 6,
       "collector": "027",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 7,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Fealltach",
-          "type": "static",
-          "text": "When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience."
-        }
-      ],
-      "flavor": "\"Oh, Jack. If ye had fought like a man then, ye needn't die like a dog now. Straighten yourself up!\" -Anne Bonny",
-      "illustrator": "Steven Belledin",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Fealltach: When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience."
-    },
-    {
-      "id": "s6-027-2",
-      "source": "spreadsheet-2007",
-      "name": "Calico Jack Rackham",
-      "card_type": "inspiration",
-      "element": "Water",
-      "set": 6,
-      "collector": "027",
-      "culture": "Irish",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -3091,176 +2449,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Fealltach: When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience."
     },
     {
-      "id": "s6-027-3",
-      "source": "spreadsheet-2007",
-      "name": "Calico Jack Rackham",
-      "card_type": "inspiration",
-      "element": "Water",
-      "set": 6,
-      "collector": "027",
-      "culture": "Pirate",
-      "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 7,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Fealltach",
-          "type": "static",
-          "text": "When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience."
-        }
-      ],
-      "flavor": "\"Oh, Jack. If ye had fought like a man then, ye needn't die like a dog now. Straighten yourself up!\" -Anne Bonny",
-      "illustrator": "Steven Belledin",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Fealltach: When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience."
-    },
-    {
-      "id": "s6-027-4",
-      "source": "spreadsheet-2007",
-      "name": "Calico Jack Rackham",
-      "card_type": "inspiration",
-      "element": "Water",
-      "set": 6,
-      "collector": "027",
-      "culture": "Pirate",
-      "traits": [
-        "Male"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 7,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Fealltach",
-          "type": "static",
-          "text": "When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience."
-        }
-      ],
-      "flavor": "\"Oh, Jack. If ye had fought like a man then, ye needn't die like a dog now. Straighten yourself up!\" -Anne Bonny",
-      "illustrator": "Steven Belledin",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Fealltach: When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience."
-    },
-    {
-      "id": "s6-028-1",
+      "id": "s6-028",
       "source": "spreadsheet-2007",
       "name": "Flintlock Pistol",
       "card_type": "weapon",
@@ -3268,6 +2462,10 @@
       "set": 6,
       "collector": "028",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -3347,108 +2545,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Urchar Maith - Reveal: Choose an opponent. You and the chosen opponent each roll two dice and add the total initiative of your respective cards to your rolls. If your total is higher, discard this card and deal 2 damage to the opponent."
     },
     {
-      "id": "s6-028-2",
-      "source": "spreadsheet-2007",
-      "name": "Flintlock Pistol",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 6,
-      "collector": "028",
-      "culture": "Pirate",
-      "traits": [
-        "Ranged"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 0,
-      "initiative": 9,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": null,
-        "2B": null,
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Urchar Maith",
-          "type": "reveal",
-          "text": "Choose an opponent. You and the chosen opponent each roll two dice and add the total initiative of your respective cards to your rolls. If your total is higher, discard this card and deal 2 damage to the opponent."
-        }
-      ],
-      "flavor": "Coming under attack from Captain Barnet, a pirate turned pirate-hunter, Calico Jack and his men cowered below decks while Anne Bonny and Mary Read fought.",
-      "illustrator": "Steven Belledin",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Urchar Maith - Reveal: Choose an opponent. You and the chosen opponent each roll two dice and add the total initiative of your respective cards to your rolls. If your total is higher, discard this card and deal 2 damage to the opponent."
-    },
-    {
-      "id": "s6-029-1",
+      "id": "s6-029",
       "source": "spreadsheet-2007",
       "name": "Pleading the Belly",
       "card_type": "armor",
@@ -3456,6 +2558,10 @@
       "set": 6,
       "collector": "029",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Ability"
       ],
@@ -3522,95 +2628,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Tearmann: Before an opponent uses a card ability, if you have a female warrior, you may discard this card and allow that opponent to examine your face-down support cards. If you do, that use of the card ability has no effect.\n"
     },
     {
-      "id": "s6-029-2",
-      "source": "spreadsheet-2007",
-      "name": "Pleading the Belly",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 6,
-      "collector": "029",
-      "culture": "Pirate",
-      "traits": [
-        "Ability"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tearmann",
-          "type": "static",
-          "text": "Before an opponent uses a card ability, if you have a female warrior, you may discard this card and allow that opponent to examine your face-down support cards. If you do, that use of the card ability has no effect."
-        }
-      ],
-      "flavor": "After their capture, Anne Bonny and Mary Read escaped the gallows by virtue of the fact that they were pregnant.",
-      "illustrator": "Steven Belledin",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tearmann: Before an opponent uses a card ability, if you have a female warrior, you may discard this card and allow that opponent to examine your face-down support cards. If you do, that use of the card ability has no effect.\n"
-    },
-    {
-      "id": "s6-030-1",
+      "id": "s6-030",
       "source": "spreadsheet-2007",
       "name": "Ye Dirty Swabs",
       "card_type": "special",
@@ -3618,6 +2641,10 @@
       "set": 6,
       "collector": "030",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Quest"
       ],
@@ -3689,100 +2716,12 @@
         "multiple_armors": false,
         "multiple_specials": true
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Misneach: At the start of each of your turns, if you have less life than each opponent, you gain +1 speed and your attack rolls gain +1 that turn.\nCalmacht: You may use another special card."
     },
     {
-      "id": "s6-030-2",
-      "source": "spreadsheet-2007",
-      "name": "Ye Dirty Swabs",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "030",
-      "culture": "Pirate",
-      "traits": [
-        "Quest"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 7,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Misneach",
-          "type": "static",
-          "text": "At the start of each of your turns, if you have less life than each opponent, you gain +1 speed and your attack rolls gain +1 that turn."
-        },
-        {
-          "name": "Calmacht",
-          "type": "static",
-          "text": "You may use another special card."
-        }
-      ],
-      "flavor": "\"If there's a man among ye, ye'll come out and fight like the men ye are thought to be.\" -Anne Bonny",
-      "illustrator": "Steven Belledin",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": true
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Misneach: At the start of each of your turns, if you have less life than each opponent, you gain +1 speed and your attack rolls gain +1 that turn.\nCalmacht: You may use another special card."
-    },
-    {
-      "id": "s6-031-1",
+      "id": "s6-031",
       "source": "spreadsheet-2007",
       "name": "Black Bart",
       "card_type": "warrior",
@@ -3790,6 +2729,10 @@
       "set": 6,
       "collector": "031",
       "culture": "Pirate",
+      "cultures": [
+        "Pirate",
+        "Welsh"
+      ],
       "traits": [
         "Male"
       ],
@@ -3874,113 +2817,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Gwedduster:  Dice in attack or defense rolls can not be modified\nDapar: At the start of each round, if you revealed an armor card that round, your defense rolls gain +1 that round."
     },
     {
-      "id": "s6-031-2",
-      "source": "spreadsheet-2007",
-      "name": "Black Bart",
-      "card_type": "warrior",
-      "element": "Fire",
-      "set": 6,
-      "collector": "031",
-      "culture": "Welsh",
-      "traits": [
-        "Male"
-      ],
-      "life": 7,
-      "speed": 3,
-      "experience": 6,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 17,
-      "grid_raw": "+1 +2 -1 +0 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+1",
-        "2B": "+2",
-        "2C": "-1",
-        "3A": "+0",
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Gwedduster",
-          "type": "static",
-          "text": "Dice in attack or defense rolls can not be modified"
-        },
-        {
-          "name": "Dapar",
-          "type": "static",
-          "text": "At the start of each round, if you revealed an armor card that round, your defense rolls gain +1 that round."
-        }
-      ],
-      "flavor": "The last great pirate of the Golden Age, the gentlemanly Black Bart captured over 400 ships and 50 million pounds of loot.",
-      "illustrator": "Michael Koch",
-      "background": "Bartholomew Roberts, born in Casnewydd-Bach in Wales, was one of the most successful pirates in history. Called the \"Gentleman Pirate\" by many, Black Bart was always clean and well dressed, demonstrated excellent manners, and kept musicians on board. He forbade gambling and alcohol on his ships, and encouraged regular prayer. Despite these affectations, Bart was immensely capable, capturing over 400 ships and 50 million pounds of loot in his career. Black Bart was killed while fighting against the man o’ war HMS Swallow, when he was struck in the neck by grapeshot. According to his wishes, his crew committed his remains to the depths before finally surrendering.\n\nUse Black Bart, the Gentleman Pirate, to show that dignified comportment and a clean wardrobe are no impediment to victory in the Anachronism arena. If one cannot win in style, can one say that one has really won at all?",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Gwedduster:  Dice in attack or defense rolls can not be modified\nDapar: At the start of each round, if you revealed an armor card that round, your defense rolls gain +1 that round."
-    },
-    {
-      "id": "s6-032-1",
+      "id": "s6-032",
       "source": "spreadsheet-2007",
       "name": "Davy Jones' Locker",
       "card_type": "inspiration",
@@ -3988,6 +2830,10 @@
       "set": 6,
       "collector": "032",
       "culture": "Pirate",
+      "cultures": [
+        "Pirate",
+        "Welsh"
+      ],
       "traits": [
         "Quest"
       ],
@@ -4059,100 +2905,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Dyfndra: Players can not use abilities on cards in discard piles. Cards in discard piles can not come into play.\nEbwch:  At the start of each of your turns, if you have less than 4 life, gain +1 speed for that turn."
     },
     {
-      "id": "s6-032-2",
-      "source": "spreadsheet-2007",
-      "name": "Davy Jones' Locker",
-      "card_type": "inspiration",
-      "element": "Water",
-      "set": 6,
-      "collector": "032",
-      "culture": "Welsh",
-      "traits": [
-        "Quest"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 7,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Dyfndra",
-          "type": "static",
-          "text": "Players can not use abilities on cards in discard piles. Cards in discard piles can not come into play."
-        },
-        {
-          "name": "Ebwch",
-          "type": "static",
-          "text": "At the start of each of your turns, if you have less than 4 life, gain +1 speed for that turn."
-        }
-      ],
-      "flavor": "Killed in battle with the warship HMS Swallow on February 10th, 1722, Black Bart's corpse was cast into the depths by his crew as he had always requested.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Dyfndra: Players can not use abilities on cards in discard piles. Cards in discard piles can not come into play.\nEbwch:  At the start of each of your turns, if you have less than 4 life, gain +1 speed for that turn."
-    },
-    {
-      "id": "s6-033-1",
+      "id": "s6-033",
       "source": "spreadsheet-2007",
       "name": "Small Sword",
       "card_type": "weapon",
@@ -4160,6 +2918,10 @@
       "set": 6,
       "collector": "033",
       "culture": "Pirate",
+      "cultures": [
+        "Pirate",
+        "Welsh"
+      ],
       "traits": [
         "Sword"
       ],
@@ -4244,113 +3006,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Diball: Twice each round, after you roll doubles on an attack roll, gain +1 speed for the rest of the game. \nEbrwydd: You may use another weapon."
     },
     {
-      "id": "s6-033-2",
-      "source": "spreadsheet-2007",
-      "name": "Small Sword",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 6,
-      "collector": "033",
-      "culture": "Welsh",
-      "traits": [
-        "Sword"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 1,
-      "initiative": 5,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+0 +2 +1 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": "+2",
-        "2C": "+1",
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Diball",
-          "type": "static",
-          "text": "Twice each round, after you roll doubles on an attack roll, gain +1 speed for the rest of the game."
-        },
-        {
-          "name": "Ebrwydd",
-          "type": "static",
-          "text": "You may use another weapon."
-        }
-      ],
-      "flavor": "A development of the rapier, the small-sword was intended for combat in close spaces. With its triangular cross section, its blad was extremely stiff and strong.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": true,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Diball: Twice each round, after you roll doubles on an attack roll, gain +1 speed for the rest of the game. \nEbrwydd: You may use another weapon."
-    },
-    {
-      "id": "s6-034-1",
+      "id": "s6-034",
       "source": "spreadsheet-2007",
       "name": "Plumed Hat",
       "card_type": "armor",
@@ -4358,6 +3019,10 @@
       "set": 6,
       "collector": "034",
       "culture": "Pirate",
+      "cultures": [
+        "Pirate",
+        "Welsh"
+      ],
       "traits": [
         "Head"
       ],
@@ -4429,100 +3094,12 @@
         "multiple_armors": true,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Ymafael: Your rivals' attacks can not gain bonuses larger than +0 from their attack grids.\nCoegfalch:  If you are a Pirate, your rolls gain +1. You may use another armor card."
     },
     {
-      "id": "s6-034-2",
-      "source": "spreadsheet-2007",
-      "name": "Plumed Hat",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 6,
-      "collector": "034",
-      "culture": "Welsh",
-      "traits": [
-        "Head"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Ymafael",
-          "type": "static",
-          "text": "Your rivals' attacks can not gain bonuses larger than +0 from their attack grids."
-        },
-        {
-          "name": "Coegfalch",
-          "type": "static",
-          "text": "If you are a Pirate, your rolls gain +1. You may use another armor card."
-        }
-      ],
-      "flavor": "Black Bart never went into battle without a tricorn hat decorated with a huge, scarlet feather.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": true,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": true,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": true,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Ymafael: Your rivals' attacks can not gain bonuses larger than +0 from their attack grids.\nCoegfalch:  If you are a Pirate, your rolls gain +1. You may use another armor card."
-    },
-    {
-      "id": "s6-035-1",
+      "id": "s6-035",
       "source": "spreadsheet-2007",
       "name": "A Straight Ship",
       "card_type": "special",
@@ -4530,6 +3107,10 @@
       "set": 6,
       "collector": "035",
       "culture": "Pirate",
+      "cultures": [
+        "Pirate",
+        "Welsh"
+      ],
       "traits": [
         "Code"
       ],
@@ -4603,98 +3184,12 @@
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "possible_duplicate"
+        "merge_conflict"
       ],
       "raw_source_text": "Herian - Reveal: Choose an opponent. They may choose to set their experience to 0. If they do not, they are your rival.\nSicrwydd - Reveal: You may move your warrior up to two spaces."
     },
     {
-      "id": "s6-035-2",
-      "source": "spreadsheet-2007",
-      "name": "A straight Ship",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "035",
-      "culture": "Welsh",
-      "traits": [
-        "Code"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Herian",
-          "type": "reveal",
-          "text": "Choose an opponent. They may choose to set their experience to 0. If they do not, they are your rival."
-        },
-        {
-          "name": "Sicrwydd",
-          "type": "reveal",
-          "text": "You may move your warrior up to two spaces."
-        }
-      ],
-      "flavor": "Black Bart encourage prayer among his men, drank tea, and forbade gambling and alcohol.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": true,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Herian - Reveal: Choose an opponent. They may choose to set their experience to 0. If they do not, they are your rival.\nSicrwydd - Reveal: You may move your warrior up to two spaces."
-    },
-    {
-      "id": "s6-036-1",
+      "id": "s6-036",
       "source": "spreadsheet-2007",
       "name": "Blackbeard",
       "card_type": "warrior",
@@ -4702,6 +3197,10 @@
       "set": 6,
       "collector": "036",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Male"
       ],
@@ -4781,108 +3280,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Opportunist: At the end of each round, if you revealed a weapon that round and it is still in play, you may immediately make an attack with that weapon at +0."
     },
     {
-      "id": "s6-036-2",
-      "source": "spreadsheet-2007",
-      "name": "Blackbeard",
-      "card_type": "warrior",
-      "element": "Water",
-      "set": 6,
-      "collector": "036",
-      "culture": "Pirate",
-      "traits": [
-        "Male"
-      ],
-      "life": 6,
-      "speed": 3,
-      "experience": 8,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 18,
-      "grid_raw": "+0 +1 +1 ▲ +0",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": null,
-        "2C": "+1",
-        "3A": "+1",
-        "3B": "marker",
-        "3C": "+0",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Opportunist",
-          "type": "static",
-          "text": "At the end of each round, if you revealed a weapon that round and it is still in play, you may immediately make an attack with that weapon at +0."
-        }
-      ],
-      "flavor": "Serving as a privateer for Queen Anne, Edward Teach later set up base in the Outer Banks as the dreaded Blackbeard, piratical scourge of the seas.",
-      "illustrator": "Tyler Walpole",
-      "background": "N/A Promo Warrior",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Opportunist: At the end of each round, if you revealed a weapon that round and it is still in play, you may immediately make an attack with that weapon at +0."
-    },
-    {
-      "id": "s6-037-1",
+      "id": "s6-037",
       "source": "spreadsheet-2007",
       "name": "Blackbeard's Jolly Roger",
       "card_type": "inspiration",
@@ -4890,6 +3293,10 @@
       "set": 6,
       "collector": "037",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Item"
       ],
@@ -4918,143 +3325,57 @@
       "illustrator": "Tyler Walpole",
       "background": "",
       "tags": {
-        "reveal": true,
         "action": false,
-        "life_gain": true,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
         "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
         "attack_bonus": false,
         "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
         "card_recycle": false,
-        "usable_from_discard": false,
+        "cavalry_dependant": false,
+        "conditional": true,
+        "continuous": true,
+        "create_negate_critical": false,
         "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Douse - Reveal: Set the experience of all  opponents with a Fire card to 0.\nReplenish: At the end of each round, if you are a Water warrior, gain 1 life.  You can not gain life from other card abilities"
-    },
-    {
-      "id": "s6-037-2",
-      "source": "spreadsheet-2007",
-      "name": "Blackbeard's Jolly Roger",
-      "card_type": "inspiration",
-      "element": "Water",
-      "set": 6,
-      "collector": "037",
-      "culture": "Pirate",
-      "traits": [
-        "Item"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Douse",
-          "type": "reveal",
-          "text": "Set the experience of all opponents with a Fire card to 0."
-        },
-        {
-          "name": "Replenish",
-          "type": "static",
-          "text": "At the end of each round, if you are a Water warrior, gain 1 life. You can not gain life from other card abilities"
-        }
-      ],
-      "flavor": "A horned skelton represented death and the devil, a spear threatened a violent end, and a bloodied heart promised an agonising fate.",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": true,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
+        "culture_dependant": false,
+        "damage_bonus": false,
+        "damage_reduction": false,
         "defense_bonus": false,
         "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
+        "dice_manipulation": false,
+        "discards": false,
         "element_dependant": true,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
+        "experience_bonus": false,
+        "experience_dependant": false,
+        "experience_penalty": true,
+        "free_attack": false,
+        "free_damage": false,
+        "free_move": false,
+        "initiative_bonus": false,
+        "initiative_dependant": false,
+        "initiative_penalty": false,
+        "life_dependant": false,
+        "life_gain": true,
         "multiple_armors": false,
-        "multiple_specials": false
+        "multiple_inspirations": false,
+        "multiple_specials": false,
+        "multiple_weapon_attacks": false,
+        "multiple_weapons": false,
+        "plays_to_arena": false,
+        "prevents_discards": false,
+        "reveal": true,
+        "rivalry": false,
+        "speed_bonus": false,
+        "speed_penalty": false,
+        "triggers_on_ties": false,
+        "usable_from_discard": false
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "possible_duplicate"
+        "merge_conflict"
       ],
       "raw_source_text": "Douse - Reveal: Set the experience of all  opponents with a Fire card to 0.\nReplenish: At the end of each round, if you are a Water warrior, gain 1 life.  You can not gain life from other card abilities"
     },
     {
-      "id": "s6-038-1",
+      "id": "s6-038",
       "source": "spreadsheet-2007",
       "name": "Pair o' Cutlasses",
       "card_type": "weapon",
@@ -5062,6 +3383,10 @@
       "set": 6,
       "collector": "038",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Sword"
       ],
@@ -5146,113 +3471,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Versatile Stance: At the start of each round, you may choose to have your attack rolls with this weapon this round gain +2.  Otherwise, you defense rolls for this round gain +1.\nBarrage - Action: Attack a rival with this weapon, if possible."
     },
     {
-      "id": "s6-038-2",
-      "source": "spreadsheet-2007",
-      "name": "Pair o' Cutlasses",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 6,
-      "collector": "038",
-      "culture": "Pirate",
-      "traits": [
-        "Sword"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 5,
-      "hands": 2,
-      "salary": null,
-      "grid_raw": "+0 +0 +1 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": null,
-        "2C": "+0",
-        "3A": "+1",
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Versatile Stance",
-          "type": "static",
-          "text": "At the start of each round, you may choose to have your attack rolls with this weapon this round gain +2. Otherwise, you defense rolls for this round gain +1."
-        },
-        {
-          "name": "Barrage",
-          "type": "action",
-          "text": "Attack a rival with this weapon, if possible."
-        }
-      ],
-      "flavor": "Blackbeard went into battle festooned with pistols and wielding a pair of savage cutlasses.",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": true,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Versatile Stance: At the start of each round, you may choose to have your attack rolls with this weapon this round gain +2.  Otherwise, you defense rolls for this round gain +1.\nBarrage - Action: Attack a rival with this weapon, if possible."
-    },
-    {
-      "id": "s6-039-1",
+      "id": "s6-039",
       "source": "spreadsheet-2007",
       "name": "Fearsome Reputation",
       "card_type": "armor",
@@ -5260,6 +3484,10 @@
       "set": 6,
       "collector": "039",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Ability"
       ],
@@ -5326,95 +3554,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Strike Fear: At the start of each round, each of your opponents rolls 2 dice. If the result is less than their life or if they are your rival, their rolls this round get -2.\n"
     },
     {
-      "id": "s6-039-2",
-      "source": "spreadsheet-2007",
-      "name": "Fearsome Reputation",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 6,
-      "collector": "039",
-      "culture": "Pirate",
-      "traits": [
-        "Ability"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Strike Fear",
-          "type": "static",
-          "text": "At the start of each round, each of your opponents rolls 2 dice. If the result is less than their life or if they are your rival, their rolls this round get -2."
-        }
-      ],
-      "flavor": "So terrifying was Blackbeard's reputation that merchant ships were known to lose the will to fight the instant they recognized his flag",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": true,
-        "attack_bonus": false,
-        "attack_penalty": true,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Strike Fear: At the start of each round, each of your opponents rolls 2 dice. If the result is less than their life or if they are your rival, their rolls this round get -2.\n"
-    },
-    {
-      "id": "s6-040-1",
+      "id": "s6-040",
       "source": "spreadsheet-2007",
       "name": "Pieces of Eight",
       "card_type": "special",
@@ -5422,93 +3567,12 @@
       "set": 6,
       "collector": "040",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
-        "Item"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Treasure Hunt",
-          "type": "static",
-          "text": "Each time you tie a roll with an opponent, place a counter on this card. While this card has any counters, you attack rolls gain +1."
-        },
-        {
-          "name": "Greed",
-          "type": "static",
-          "text": "At the start of any round, you may remove one counter from ths card. If you do, an opponent of your choice is your rival for that round."
-        }
-      ],
-      "flavor": "Asked by one of his crew where his treasure hoard was buried, Blackbeard bellowed that only he \"… and the devil know where it is, and the longest liver shall take it.\"",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": true,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Treasure Hunt: Each time you tie a roll with an opponent, place a counter on this card. While this card has any counters, you attack rolls gain +1.\nGreed: At the start of any round, you may remove one counter from ths card.  If you do, an opponent of your choice is your rival for that round."
-    },
-    {
-      "id": "s6-040-2",
-      "source": "spreadsheet-2007",
-      "name": "Pieces of Eight",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "040",
-      "culture": "Briton",
-      "traits": [
+        "Item",
         "Quest"
       ],
       "life": null,
@@ -5579,186 +3643,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Treasure Hunt: Each time you tie a roll with an opponent, place a counter on this card. While this card has any counters, you attack rolls gain +1.\nGreed: At the start of any round, you may remove one counter from ths card.  If you do, an opponent of your choice is your rival for that round."
     },
     {
-      "id": "s6-040-3",
-      "source": "spreadsheet-2007",
-      "name": "Pieces of Eight",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "040",
-      "culture": "Pirate",
-      "traits": [
-        "Item"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Treasure Hunt",
-          "type": "static",
-          "text": "Each time you tie a roll with an opponent, place a counter on this card. While this card has any counters, you attack rolls gain +1."
-        },
-        {
-          "name": "Greed",
-          "type": "static",
-          "text": "At the start of any round, you may remove one counter from ths card. If you do, an opponent of your choice is your rival for that round."
-        }
-      ],
-      "flavor": "Asked by one of his crew where his treasure hoard was buried, Blackbeard bellowed that only he \"… and the devil know where it is, and the longest liver shall take it.\"",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": true,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Treasure Hunt: Each time you tie a roll with an opponent, place a counter on this card. While this card has any counters, you attack rolls gain +1.\nGreed: At the start of any round, you may remove one counter from ths card.  If you do, an opponent of your choice is your rival for that round."
-    },
-    {
-      "id": "s6-040-4",
-      "source": "spreadsheet-2007",
-      "name": "Pieces of Eight",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "040",
-      "culture": "Pirate",
-      "traits": [
-        "Quest"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Treasure Hunt",
-          "type": "static",
-          "text": "Each time you tie a roll with an opponent, place a counter on this card. While this card has any counters, you attack rolls gain +1."
-        },
-        {
-          "name": "Greed",
-          "type": "static",
-          "text": "At the start of any round, you may remove one counter from ths card. If you do, an opponent of your choice is your rival for that round."
-        }
-      ],
-      "flavor": "Asked by one of his crew where his treasure hoard was buried, Blackbeard bellowed that only he \"… and the devil know where it is, and the longest liver shall take it.\"",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": true,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Treasure Hunt: Each time you tie a roll with an opponent, place a counter on this card. While this card has any counters, you attack rolls gain +1.\nGreed: At the start of any round, you may remove one counter from ths card.  If you do, an opponent of your choice is your rival for that round."
-    },
-    {
-      "id": "s6-041-1",
+      "id": "s6-041",
       "source": "spreadsheet-2007",
       "name": "Grainne Ni Mhaille",
       "card_type": "warrior",
@@ -5766,6 +3656,10 @@
       "set": 6,
       "collector": "041",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Female"
       ],
@@ -5845,108 +3739,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Rud a Fháil:  After an opposing card is discarded, you may discard one of your face-up support cards and put the opposing card into play in its place."
     },
     {
-      "id": "s6-041-2",
-      "source": "spreadsheet-2007",
-      "name": "Grainne Ni Mhaille",
-      "card_type": "warrior",
-      "element": "Metal",
-      "set": 6,
-      "collector": "041",
-      "culture": "Pirate",
-      "traits": [
-        "Female"
-      ],
-      "life": 8,
-      "speed": 3,
-      "experience": 4,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 16,
-      "grid_raw": "+1 +1 +2 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": null,
-        "2B": "+1",
-        "2C": "+1",
-        "3A": "+2",
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Rud a Fháil",
-          "type": "static",
-          "text": "After an opposing card is discarded, you may discard one of your face-up support cards and put the opposing card into play in its place."
-        }
-      ],
-      "flavor": "Pirate, trader, and chieftain, Gráinne Ní Mháaille fought against fleets from England, Turkey, and Spain, and was given an audience with Queen Elizabeth I herself.",
-      "illustrator": "Rick Sardinha",
-      "background": "Born to a seafaring family, Gráinne demonstrated her headstrong tendencies at a young age, when she shaved ehr head in order to embarrass her father into letting her sail to Spain with him. This earned her the nickname Gráinne Mhaol (\"Bald Grace\") which stuck with her through her life. Gráinne’s piracy, and numerous clashes with English authority, led to her sons and brother being taken prisoner. She determined to plead with Queen Elizabeth I herself for their freedom, and was granted an audience where she secured their release. In return, Gráinne pledged to attack only the enemies of England, though it is by no means clear that she kept to her word.\n\nUse Gráinne Ní Mháille, proud, fearless and canny, to outwit and outmaneuver your opponents in the Anachronism arena, negotiating the fickle currents of chance to secure victory.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Rud a Fháil:  After an opposing card is discarded, you may discard one of your face-up support cards and put the opposing card into play in its place."
-    },
-    {
-      "id": "s6-042-1",
+      "id": "s6-042",
       "source": "spreadsheet-2007",
       "name": "Pirate Legacy",
       "card_type": "inspiration",
@@ -5954,6 +3752,10 @@
       "set": 6,
       "collector": "042",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Ability"
       ],
@@ -6020,95 +3822,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Stoirm: If an opponent with a fire or water card rolls doubles, your next attack roll is considered doubles."
     },
     {
-      "id": "s6-042-2",
-      "source": "spreadsheet-2007",
-      "name": "Pirate Legacy",
-      "card_type": "inspiration",
-      "element": "Wind",
-      "set": 6,
-      "collector": "042",
-      "culture": "Pirate",
-      "traits": [
-        "Ability"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Stoirm",
-          "type": "static",
-          "text": "If an opponent with a fire or water card rolls doubles, your next attack roll is considered doubles."
-        }
-      ],
-      "flavor": "Born to a proud, maritime family, Gráinne shaved her head and later saved her father's life to prove that she was the seafaring equal of any man.",
-      "illustrator": "Rick Sardinha",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": true,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": true,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Stoirm: If an opponent with a fire or water card rolls doubles, your next attack roll is considered doubles."
-    },
-    {
-      "id": "s6-043-1",
+      "id": "s6-043",
       "source": "spreadsheet-2007",
       "name": "Boarding Axe",
       "card_type": "weapon",
@@ -6116,6 +3835,10 @@
       "set": 6,
       "collector": "043",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Axe"
       ],
@@ -6200,113 +3923,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Mionghearr: Attacks with this weapon deal +1 damage against warriors with a wood card.\nStop: When you are attacked with a weapon, if you are a metal warrior, you may re-roll your defense roll."
     },
     {
-      "id": "s6-043-2",
-      "source": "spreadsheet-2007",
-      "name": "Boarding Axe",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 6,
-      "collector": "043",
-      "culture": "Pirate",
-      "traits": [
-        "Axe"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 3,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+0 +1 +1 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": null,
-        "2C": "+1",
-        "3A": "+1",
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Mionghearr",
-          "type": "static",
-          "text": "Attacks with this weapon deal +1 damage against warriors with a wood card."
-        },
-        {
-          "name": "Stop",
-          "type": "static",
-          "text": "When you are attacked with a weapon, if you are a metal warrior, you may re-roll your defense roll."
-        }
-      ],
-      "flavor": "Thought to originate with the Vikings, the boarding axe became a staple for maritime warfare due to its versatility, and has since deeloped into the fireman's axe of today.",
-      "illustrator": "Rick Sardinha",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": true,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": true,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Mionghearr: Attacks with this weapon deal +1 damage against warriors with a wood card.\nStop: When you are attacked with a weapon, if you are a metal warrior, you may re-roll your defense roll."
-    },
-    {
-      "id": "s6-044-1",
+      "id": "s6-044",
       "source": "spreadsheet-2007",
       "name": "Articles of Interrogatory",
       "card_type": "armor",
@@ -6314,6 +3936,10 @@
       "set": 6,
       "collector": "044",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Code"
       ],
@@ -6380,95 +4006,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Taispeáin Meon: If the total initiative of your cards is less than 18, your rolls gain +1. At the start of any round, if the total initiative of your cards is 18, discard this card and gain +2 speed for that round."
     },
     {
-      "id": "s6-044-2",
-      "source": "spreadsheet-2007",
-      "name": "Articles of Interrogatory",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 6,
-      "collector": "044",
-      "culture": "Pirate",
-      "traits": [
-        "Code"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 9,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Taispeáin Meon",
-          "type": "static",
-          "text": "If the total initiative of your cards is less than 18, your rolls gain +1. At the start of any round, if the total initiative of your cards is 18, discard this card and gain +2 speed for that round."
-        }
-      ],
-      "flavor": "Queen Elizabeth I sent 18 questions to Gráinne. Her answers guaranteed her safe passage, where otherwise she might have been arrested and summarily executed.",
-      "illustrator": "Rick Sardinha",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Taispeáin Meon: If the total initiative of your cards is less than 18, your rolls gain +1. At the start of any round, if the total initiative of your cards is 18, discard this card and gain +2 speed for that round."
-    },
-    {
-      "id": "s6-045-1",
+      "id": "s6-045",
       "source": "spreadsheet-2007",
       "name": "Pirate Stronghold",
       "card_type": "special",
@@ -6476,6 +4019,10 @@
       "set": 6,
       "collector": "045",
       "culture": "Irish",
+      "cultures": [
+        "Irish",
+        "Pirate"
+      ],
       "traits": [
         "Location"
       ],
@@ -6547,100 +4094,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Farraige Fiáin: After an opponent re-rolls one or more dice of one of their rolls, that roll gets -2.\nBaile - Reveal: Gain 2 life. If this card leaves play, deal 3 damage to your warrior."
     },
     {
-      "id": "s6-045-2",
-      "source": "spreadsheet-2007",
-      "name": "Pirate Stronghold",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "045",
-      "culture": "Pirate",
-      "traits": [
-        "Location"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Farraige Fiáin",
-          "type": "static",
-          "text": "After an opponent re-rolls one or more dice of one of their rolls, that roll gets -2."
-        },
-        {
-          "name": "Baile",
-          "type": "reveal",
-          "text": "Gain 2 life. If this card leaves play, deal 3 damage to your warrior."
-        }
-      ],
-      "flavor": "Gráinne controlled several coastal castles at the height of her power. These strongholds served as bases from which her ships 'taxed' merchant vessels.",
-      "illustrator": "Rick Sardinha",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": true,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": true,
-        "attack_bonus": false,
-        "attack_penalty": true,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Farraige Fiáin: After an opponent re-rolls one or more dice of one of their rolls, that roll gets -2.\nBaile - Reveal: Gain 2 life. If this card leaves play, deal 3 damage to your warrior."
-    },
-    {
-      "id": "s6-046-1",
+      "id": "s6-046",
       "source": "spreadsheet-2007",
       "name": "Sir Francis Drake",
       "card_type": "warrior",
@@ -6648,6 +4107,10 @@
       "set": 6,
       "collector": "046",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Male"
       ],
@@ -6727,108 +4190,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Ocean Hunter - Action: Choose an opponent and roll two dice. If your total is less than the opponent's life, you may move to any unoccupied space adjacent to them. Otherwise, you may immediately make an attack against them, if possible. "
     },
     {
-      "id": "s6-046-2",
-      "source": "spreadsheet-2007",
-      "name": "Sir Francis Drake",
-      "card_type": "warrior",
-      "element": "Earth",
-      "set": 6,
-      "collector": "046",
-      "culture": "Pirate",
-      "traits": [
-        "Male"
-      ],
-      "life": 7,
-      "speed": 3,
-      "experience": 5,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 16,
-      "grid_raw": "+0 +1 +2 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": null,
-        "2B": "+0",
-        "2C": "+1",
-        "3A": "+2",
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Ocean Hunter",
-          "type": "action",
-          "text": "Choose an opponent and roll two dice. If your total is less than the opponent's life, you may move to any unoccupied space adjacent to them. Otherwise, you may immediately make an attack against them, if possible."
-        }
-      ],
-      "flavor": "The first Englishman to circumnavigate the world, Sir Francis Drake began his career as a smuggler and privateer for the English navy.",
-      "illustrator": "Alan Pollack",
-      "background": "A privateer, pirate, navigator, politician, and civil engineer, Sir Francis Drake first sailed west in about 1563. Drawn to the Spanish Main by the promise of unimaginable wealth from Spain’s silver monopoly, Drake was himself first attacked by the Spanish. Turning the full weight of his ambition against them, his name soon became synonymous with cunning and daring, earning him respect and fear. El Draco, as the Spanish called him, returned to the Spanish Main again, capturing and looting towns, and sinking Spanish ships. Drake was the first Englishman to circumnavigate the globe, and was Vice Admiral of Her Majesty’s Navy during the English defeat of the Spanish Armada in 1588.\n\nUse Sir Francis Drake, resourceful, bold, and daring, to earn victory after victory in the Anachronism arena, in the name of queen and country!",
-      "tags": {
-        "reveal": false,
-        "action": true,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": true,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Ocean Hunter - Action: Choose an opponent and roll two dice. If your total is less than the opponent's life, you may move to any unoccupied space adjacent to them. Otherwise, you may immediately make an attack against them, if possible. "
-    },
-    {
-      "id": "s6-047-1",
+      "id": "s6-047",
       "source": "spreadsheet-2007",
       "name": "Good Queen Bess",
       "card_type": "inspiration",
@@ -6836,93 +4203,12 @@
       "set": 6,
       "collector": "047",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Royal Favor",
-          "type": "reveal",
-          "text": "All of your rolls this round gain +1."
-        },
-        {
-          "name": "Dire Need",
-          "type": "static",
-          "text": "If you have less than 4 life, all of your non-defense rolls gain +2."
-        }
-      ],
-      "flavor": "\"You are like my little dog; when people see you, they know I am nearby.\" -Queen Elizabeth I to Robert Dudley, the Earl of Leicester",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Royal Favor - Reveal: All of your rolls this round gain +1.\nDire Need: If you have less than 4 life, all of your non-defense rolls gain +2."
-    },
-    {
-      "id": "s6-047-2",
-      "source": "spreadsheet-2007",
-      "name": "Good Queen Bess",
-      "card_type": "inspiration",
-      "element": "Wind",
-      "set": 6,
-      "collector": "047",
-      "culture": "Briton",
-      "traits": [
+        "Ally",
         "Female"
       ],
       "life": null,
@@ -6993,186 +4279,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Royal Favor - Reveal: All of your rolls this round gain +1.\nDire Need: If you have less than 4 life, all of your non-defense rolls gain +2."
     },
     {
-      "id": "s6-047-3",
-      "source": "spreadsheet-2007",
-      "name": "Good Queen Bess",
-      "card_type": "inspiration",
-      "element": "Wind",
-      "set": 6,
-      "collector": "047",
-      "culture": "Pirate",
-      "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Royal Favor",
-          "type": "reveal",
-          "text": "All of your rolls this round gain +1."
-        },
-        {
-          "name": "Dire Need",
-          "type": "static",
-          "text": "If you have less than 4 life, all of your non-defense rolls gain +2."
-        }
-      ],
-      "flavor": "\"You are like my little dog; when people see you, they know I am nearby.\" -Queen Elizabeth I to Robert Dudley, the Earl of Leicester",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Royal Favor - Reveal: All of your rolls this round gain +1.\nDire Need: If you have less than 4 life, all of your non-defense rolls gain +2."
-    },
-    {
-      "id": "s6-047-4",
-      "source": "spreadsheet-2007",
-      "name": "Good Queen Bess",
-      "card_type": "inspiration",
-      "element": "Wind",
-      "set": 6,
-      "collector": "047",
-      "culture": "Pirate",
-      "traits": [
-        "Female"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Royal Favor",
-          "type": "reveal",
-          "text": "All of your rolls this round gain +1."
-        },
-        {
-          "name": "Dire Need",
-          "type": "static",
-          "text": "If you have less than 4 life, all of your non-defense rolls gain +2."
-        }
-      ],
-      "flavor": "\"You are like my little dog; when people see you, they know I am nearby.\" -Queen Elizabeth I to Robert Dudley, the Earl of Leicester",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": true,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Royal Favor - Reveal: All of your rolls this round gain +1.\nDire Need: If you have less than 4 life, all of your non-defense rolls gain +2."
-    },
-    {
-      "id": "s6-048-1",
+      "id": "s6-048",
       "source": "spreadsheet-2007",
       "name": "Swept-Hilt Rapier",
       "card_type": "weapon",
@@ -7180,6 +4292,10 @@
       "set": 6,
       "collector": "048",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Sword"
       ],
@@ -7259,108 +4375,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Parry: When you are attacked, if you have another weapon and your defense roll is greater than the attacker's experience, the attack can not deal more than base damage."
     },
     {
-      "id": "s6-048-2",
-      "source": "spreadsheet-2007",
-      "name": "Swept-Hilt Rapier",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 6,
-      "collector": "048",
-      "culture": "Pirate",
-      "traits": [
-        "Sword"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 4,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+0 +1 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": "+1",
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Parry",
-          "type": "static",
-          "text": "When you are attacked, if you have another weapon and your defense roll is greater than the attacker's experience, the attack can not deal more than base damage."
-        }
-      ],
-      "flavor": "Typically forged in Toledo or Solingen, swept-hilt rapiers were an essential part of any gentleman's wardrobe during the 17th century.",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": true,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Parry: When you are attacked, if you have another weapon and your defense roll is greater than the attacker's experience, the attack can not deal more than base damage."
-    },
-    {
-      "id": "s6-049-1",
+      "id": "s6-049",
       "source": "spreadsheet-2007",
       "name": "El Draco",
       "card_type": "armor",
@@ -7368,6 +4388,10 @@
       "set": 6,
       "collector": "049",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Title"
       ],
@@ -7439,100 +4463,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Imposing Visage: You do not take damage from opponents with a water card until the end of each round that the damage was dealt.\nIncur Wrath: After you lose an initiative tie or a tied roll, if you are an Earth warrior, you may immediatly make an attack with one of your weapons, if possible."
     },
     {
-      "id": "s6-049-2",
-      "source": "spreadsheet-2007",
-      "name": "El Draco",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 6,
-      "collector": "049",
-      "culture": "Pirate",
-      "traits": [
-        "Title"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 0,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Imposing Visage",
-          "type": "static",
-          "text": "You do not take damage from opponents with a water card until the end of each round that the damage was dealt."
-        },
-        {
-          "name": "Incur Wrath",
-          "type": "static",
-          "text": "After you lose an initiative tie or a tied roll, if you are an Earth warrior, you may immediatly make an attack with one of your weapons, if possible."
-        }
-      ],
-      "flavor": "Drake's attacks on Cadiz and the Spanish Main earned him such respect and fear among the Spanish that they were reticent in taking any hasty action against him.",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": true,
-        "culture_dependant": false,
-        "element_dependant": true,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Imposing Visage: You do not take damage from opponents with a water card until the end of each round that the damage was dealt.\nIncur Wrath: After you lose an initiative tie or a tied roll, if you are an Earth warrior, you may immediatly make an attack with one of your weapons, if possible."
-    },
-    {
-      "id": "s6-050-1",
+      "id": "s6-050",
       "source": "spreadsheet-2007",
       "name": "Letter of Marque",
       "card_type": "special",
@@ -7540,6 +4476,10 @@
       "set": 6,
       "collector": "050",
       "culture": "Briton",
+      "cultures": [
+        "Briton",
+        "Pirate"
+      ],
       "traits": [
         "Item"
       ],
@@ -7611,96 +4551,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Encouraged Assault - Reveal: Choose an opponent. While your total initiative is less than the chosen opponent's, they are your rival.\nConquest: While you have a rival, your defense rolls gain +1."
-    },
-    {
-      "id": "s6-050-2",
-      "source": "spreadsheet-2007",
-      "name": "Letter of Marque",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 6,
-      "collector": "050",
-      "culture": "Pirate",
-      "traits": [
-        "Item"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Encouraged Assault",
-          "type": "reveal",
-          "text": "Choose an opponent. While your total initiative is less than the chosen opponent's, they are your rival."
-        },
-        {
-          "name": "Conquest",
-          "type": "static",
-          "text": "While you have a rival, your defense rolls gain +1."
-        }
-      ],
-      "flavor": "Governments used Letters of Marque to encourage officially unsanctioned attacks against enemy shipping by excusing legal responsibility and promising great reward.",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Encouraged Assault - Reveal: Choose an opponent. While your total initiative is less than the chosen opponent's, they are your rival.\nConquest: While you have a rival, your defense rolls gain +1."
     },
     {
@@ -7712,6 +4564,9 @@
       "set": 6,
       "collector": "051",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Male"
       ],
@@ -7801,7 +4656,7 @@
       "raw_source_text": "Pe spaÞiu restrîns: At the start of the game, you may move to any space in the arena.\nRetragere strategicã: After you take damage from an opponent, if you have less than 3 life, move to any space in the arena."
     },
     {
-      "id": "s6-052-1",
+      "id": "s6-052",
       "source": "spreadsheet-2007",
       "name": "Zamolxis",
       "card_type": "inspiration",
@@ -7809,93 +4664,11 @@
       "set": 6,
       "collector": "052",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Ocãrât",
-          "type": "static",
-          "text": "Once each turn, after an opponent makes a roll, you may decrease the value of one die in the roll by one."
-        },
-        {
-          "name": "Acuzare",
-          "type": "static",
-          "text": "At the start of each round, if an opponent revealed an inspiration, discard this card. For the rest of the game, that warrior is your rival."
-        }
-      ],
-      "flavor": "\"They believe that they do not die, but that he who perishes goes to the god Zamolxis of Gebelezis, as some of them call him.\" - Herodotus, Histories, Book IV, 94",
-      "illustrator": "Nick Percival",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Ocãrât: Once each turn, after an opponent makes a roll, you may decrease the value of one die in the roll by one.\nAcuzare: At the start of each round, if an opponent revealed an inspiration, discard this card. For the rest of the game, that warrior is your rival."
-    },
-    {
-      "id": "s6-052-2",
-      "source": "spreadsheet-2007",
-      "name": "Zamolxis",
-      "card_type": "inspiration",
-      "element": "Earth",
-      "set": 6,
-      "collector": "052",
-      "culture": "Romanian",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -7966,10 +4739,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Ocãrât: Once each turn, after an opponent makes a roll, you may decrease the value of one die in the roll by one.\nAcuzare: At the start of each round, if an opponent revealed an inspiration, discard this card. For the rest of the game, that warrior is your rival."
     },
     {
@@ -7981,6 +4752,9 @@
       "set": 6,
       "collector": "053",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8073,6 +4847,9 @@
       "set": 6,
       "collector": "054",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Head"
       ],
@@ -8157,6 +4934,9 @@
       "set": 6,
       "collector": "055",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Location"
       ],
@@ -8236,6 +5016,9 @@
       "set": 6,
       "collector": "056",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Male"
       ],
@@ -8328,6 +5111,9 @@
       "set": 6,
       "collector": "057",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Ally"
       ],
@@ -8412,6 +5198,9 @@
       "set": 6,
       "collector": "058",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -8504,6 +5293,9 @@
       "set": 6,
       "collector": "059",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Legs"
       ],
@@ -8588,6 +5380,9 @@
       "set": 6,
       "collector": "060",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Quest"
       ],
@@ -8667,6 +5462,9 @@
       "set": 6,
       "collector": "061",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Male"
       ],
@@ -8764,6 +5562,9 @@
       "set": 6,
       "collector": "062",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Location"
       ],
@@ -8843,6 +5644,9 @@
       "set": 6,
       "collector": "063",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -8940,6 +5744,9 @@
       "set": 6,
       "collector": "064",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -9019,6 +5826,9 @@
       "set": 6,
       "collector": "065",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Item"
       ],
@@ -9103,6 +5913,9 @@
       "set": 6,
       "collector": "066",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Male"
       ],
@@ -9187,7 +6000,7 @@
       "raw_source_text": "Rãzbunare: After you are hit by a weapon, you may immediatly make a basic attack at +2."
     },
     {
-      "id": "s6-067-1",
+      "id": "s6-067",
       "source": "spreadsheet-2007",
       "name": "Papa Sixtus Al IV-Lea",
       "card_type": "inspiration",
@@ -9195,93 +6008,11 @@
       "set": 6,
       "collector": "067",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Blestem",
-          "type": "static",
-          "text": "Any opponent without an inspiration is your rival."
-        },
-        {
-          "name": "Furie sfântã",
-          "type": "static",
-          "text": "Your first attack roll each turn against a rival gains +3."
-        }
-      ],
-      "flavor": "Stephen's unyielding promise \"to cut off the pagan's right hand\" earned him the title of Athleta Christi, \"Champion of Christ,\" from Pope Sixtus IV.",
-      "illustrator": "Miguel Coimbra",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Blestem: Any opponent without an inspiration is your rival.\nFurie sfântã: Your first attack roll each turn against a rival gains +3."
-    },
-    {
-      "id": "s6-067-2",
-      "source": "spreadsheet-2007",
-      "name": "Papa Sixtus Al IV-Lea",
-      "card_type": "inspiration",
-      "element": "Aether",
-      "set": 6,
-      "collector": "067",
-      "culture": "Romanian",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -9352,10 +6083,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Blestem: Any opponent without an inspiration is your rival.\nFurie sfântã: Your first attack roll each turn against a rival gains +3."
     },
     {
@@ -9367,6 +6096,9 @@
       "set": 6,
       "collector": "068",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Sword"
       ],
@@ -9459,6 +6191,9 @@
       "set": 6,
       "collector": "069",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Arms"
       ],
@@ -9543,6 +6278,9 @@
       "set": 6,
       "collector": "070",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Title"
       ],
@@ -9622,6 +6360,9 @@
       "set": 6,
       "collector": "071",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Male"
       ],
@@ -9714,6 +6455,9 @@
       "set": 6,
       "collector": "072",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Item"
       ],
@@ -9793,6 +6537,9 @@
       "set": 6,
       "collector": "073",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Sword"
       ],
@@ -9885,6 +6632,9 @@
       "set": 6,
       "collector": "074",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -9969,6 +6719,9 @@
       "set": 6,
       "collector": "075",
       "culture": "Romanian",
+      "cultures": [
+        "Romanian"
+      ],
       "traits": [
         "Location"
       ],
@@ -10053,6 +6806,9 @@
       "set": 6,
       "collector": "076",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Male"
       ],
@@ -10150,6 +6906,9 @@
       "set": 6,
       "collector": "077",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Location"
       ],
@@ -10229,6 +6988,9 @@
       "set": 6,
       "collector": "078",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -10321,6 +7083,9 @@
       "set": 6,
       "collector": "079",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Shield"
       ],
@@ -10400,6 +7165,9 @@
       "set": 6,
       "collector": "080",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Quest"
       ],
@@ -10479,6 +7247,9 @@
       "set": 6,
       "collector": "081",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Male"
       ],
@@ -10571,6 +7342,9 @@
       "set": 6,
       "collector": "082",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Location"
       ],
@@ -10650,6 +7424,9 @@
       "set": 6,
       "collector": "083",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -10747,6 +7524,9 @@
       "set": 6,
       "collector": "084",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Location"
       ],
@@ -10826,6 +7606,9 @@
       "set": 6,
       "collector": "085",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Item"
       ],
@@ -10910,6 +7693,9 @@
       "set": 6,
       "collector": "086",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Male"
       ],
@@ -11002,6 +7788,9 @@
       "set": 6,
       "collector": "087",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Female"
       ],
@@ -11088,6 +7877,9 @@
       "set": 6,
       "collector": "087",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Ally"
       ],
@@ -11174,6 +7966,9 @@
       "set": 6,
       "collector": "088",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -11271,6 +8066,9 @@
       "set": 6,
       "collector": "089",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Head"
       ],
@@ -11355,6 +8153,9 @@
       "set": 6,
       "collector": "090",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Ally"
       ],
@@ -11439,6 +8240,9 @@
       "set": 6,
       "collector": "091",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Male"
       ],
@@ -11528,7 +8332,7 @@
       "raw_source_text": "Ithafolunmuş: While you have no rivals, you can not win initiative.\nKizgin: Your attack rolls gain +2 against opponents whose initiative for the current round is greater than 6."
     },
     {
-      "id": "s6-092-1",
+      "id": "s6-092",
       "source": "spreadsheet-2007",
       "name": "Qubbat Al-Nabi",
       "card_type": "inspiration",
@@ -11536,88 +8340,11 @@
       "set": 6,
       "collector": "092",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
-        "Mystic"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Saygili",
-          "type": "reveal",
-          "text": "Gain 1 life for each mystic card in play."
-        }
-      ],
-      "flavor": "The Mosque of the Prophet is in Medina, the second holiest city of Islam.",
-      "illustrator": "Jason Engle",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": true,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Saygili - Reveal: Gain 1 life for each mystic card in play."
-    },
-    {
-      "id": "s6-092-2",
-      "source": "spreadsheet-2007",
-      "name": "Qubbat Al-Nabi",
-      "card_type": "inspiration",
-      "element": "Aether",
-      "set": 6,
-      "collector": "092",
-      "culture": "Turkish",
-      "traits": [
+        "Mystic",
         "Location"
       ],
       "life": null,
@@ -11683,10 +8410,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Saygili - Reveal: Gain 1 life for each mystic card in play."
     },
     {
@@ -11698,6 +8423,9 @@
       "set": 6,
       "collector": "093",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -11790,6 +8518,9 @@
       "set": 6,
       "collector": "094",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Torso"
       ],
@@ -11874,6 +8605,9 @@
       "set": 6,
       "collector": "095",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Title"
       ],
@@ -11958,6 +8692,9 @@
       "set": 6,
       "collector": "096",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Male"
       ],
@@ -12042,7 +8779,7 @@
       "raw_source_text": "Yilmaz: Each time you are hit, reduce the damage to 0. Deal 2 damage to your warrior that can not be modified."
     },
     {
-      "id": "s6-097-1",
+      "id": "s6-097",
       "source": "spreadsheet-2007",
       "name": "Roxelana",
       "card_type": "inspiration",
@@ -12050,88 +8787,11 @@
       "set": 6,
       "collector": "097",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Komplocu",
-          "type": "static",
-          "text": "Your attack rolls against rivals gain +2. At the start of each round, if you lost intiative, deal 1 damage to each of your rivals."
-        }
-      ],
-      "flavor": "Suleiman I married Anastasiya Lisovska, the captured daughter of a Ukrainian priest, in a formal ceremony. She was the first former slave to become the Sultan's legal wife.",
-      "illustrator": "Drew Baker",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": true,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Komplocu: Your attack rolls against rivals gain +2. At the start of each round, if you lost intiative, deal 1 damage to each of your rivals. "
-    },
-    {
-      "id": "s6-097-2",
-      "source": "spreadsheet-2007",
-      "name": "Roxelana",
-      "card_type": "inspiration",
-      "element": "Wood",
-      "set": 6,
-      "collector": "097",
-      "culture": "Turkish",
-      "traits": [
+        "Ally",
         "Female"
       ],
       "life": null,
@@ -12197,10 +8857,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Komplocu: Your attack rolls against rivals gain +2. At the start of each round, if you lost intiative, deal 1 damage to each of your rivals. "
     },
     {
@@ -12212,6 +8870,9 @@
       "set": 6,
       "collector": "098",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -12304,6 +8965,9 @@
       "set": 6,
       "collector": "099",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Torso"
       ],
@@ -12388,6 +9052,9 @@
       "set": 6,
       "collector": "100",
       "culture": "Turkish",
+      "cultures": [
+        "Turkish"
+      ],
       "traits": [
         "Ranged"
       ],

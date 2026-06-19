@@ -8,11 +8,13 @@ attack-grid geometry, so M1 (data) and M2 (grids) are satisfied by the same rebu
 
 **DONE =** every card loads, zero schema failures, grids populated, the review queue is the punch list.
 
-**Outcome:** 868 cards (numbered sets 1–7 + promo sets P1, P3–P7), schema-valid, all ids unique.
-663 clean / 205 flagged / 0 suspect. Flags are source facts: `possible_duplicate` (duplicate rows
-in the sheet, preserved not dropped), `grid_marker_anomaly` (ranged weapons mark the warrior at 4B),
-and `shared_collector`. Flat 12-key `grid` populated for all 334 warriors/weapons; `tags` taxonomy,
-`salary`, and `background` added. Custom-card contract re-verified against the updated schema.
+**Outcome:** 868 source rows merged to **761 distinct cards** (numbered sets 1–7 + promo sets P1,
+P3–P7), schema-valid, all ids unique. 740 clean / 21 flagged / 0 suspect. The sheet's denormalized
+duplicate rows were merged (unioning `traits` and the new `cultures` array). Flags are source facts:
+`merge_conflict` (7 — a single-valued field differed across merged rows), `grid_marker_anomaly` (12 —
+ranged weapons mark the warrior at 4B), `shared_collector` (2 — Kösem/Kosem Sultan). Flat 12-key
+`grid` for all warriors/weapons; `tags` taxonomy, `salary`, `background`, `cultures` added.
+Custom-card contract re-verified against the updated schema.
 
 The earlier Heard-list build (749 cards, `heard-2007`) is retained only as `scraper/parse_cards.py`
 + the raw page text in `data/raw/` for provenance.

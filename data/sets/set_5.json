@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": 5,
-  "card_count": 121,
-  "review_count": 38,
+  "card_count": 100,
+  "review_count": 4,
   "cards": [
     {
       "id": "s5-001",
@@ -15,6 +15,9 @@
       "set": 5,
       "collector": "001",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Male"
       ],
@@ -107,6 +110,9 @@
       "set": 5,
       "collector": "002",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Deity"
       ],
@@ -186,6 +192,9 @@
       "set": 5,
       "collector": "003",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -283,6 +292,9 @@
       "set": 5,
       "collector": "004",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Shield"
       ],
@@ -362,6 +374,9 @@
       "set": 5,
       "collector": "005",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Item"
       ],
@@ -446,6 +461,9 @@
       "set": 5,
       "collector": "006",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Male"
       ],
@@ -538,6 +556,9 @@
       "set": 5,
       "collector": "007",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Deity"
       ],
@@ -622,6 +643,9 @@
       "set": 5,
       "collector": "008",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -706,7 +730,7 @@
       "raw_source_text": "Mina: Before you make an attack with this weapon, you may discard this card. If you do, your attack roll gains +3 or the roll counts as doubles."
     },
     {
-      "id": "s5-009-1",
+      "id": "s5-009",
       "source": "spreadsheet-2007",
       "name": "Ocelocolohtic",
       "card_type": "armor",
@@ -714,179 +738,12 @@
       "set": 5,
       "collector": "009",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tlamatiliztili",
-          "type": "reveal",
-          "text": "You gain +2 experience."
-        },
-        {
-          "name": "Oceloaacqui",
-          "type": "static",
-          "text": "After your are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next succesful attack is a critical hit."
-        }
-      ],
-      "flavor": "Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome of Aztec combatants.",
-      "illustrator": "Michael Komarck",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": true,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": true,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tlamatiliztili - Reveal: You gain +2 experience.\nOceloaacqui: After your are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next succesful attack is a critical hit."
-    },
-    {
-      "id": "s5-009-2",
-      "source": "spreadsheet-2007",
-      "name": "Ocelocolohtic",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "009",
-      "culture": "Aztec",
-      "traits": [
-        "Head"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tlamatiliztili",
-          "type": "reveal",
-          "text": "You gain +2 experience."
-        },
-        {
-          "name": "Oceloaacqui",
-          "type": "static",
-          "text": "After your are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next succesful attack is a critical hit."
-        }
-      ],
-      "flavor": "Worn by the Ocelomeh, or Jaguar Warriors, this armor marked its bearer out as one of the most fearsome of Aztec combatants.",
-      "illustrator": "Michael Komarck",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": true,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": true,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tlamatiliztili - Reveal: You gain +2 experience.\nOceloaacqui: After your are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next succesful attack is a critical hit."
-    },
-    {
-      "id": "s5-009-3",
-      "source": "spreadsheet-2007",
-      "name": "Ocelocolohtic",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "009",
-      "culture": "Aztec",
-      "traits": [
+        "Torso",
+        "Head",
         "Mystic"
       ],
       "life": null,
@@ -959,12 +816,12 @@
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "possible_duplicate"
+        "merge_conflict"
       ],
       "raw_source_text": "Tlamatiliztili - Reveal: You gain +2 experience.\nOceloaacqui: After your are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next succesful attack is a critical hit."
     },
     {
-      "id": "s5-010-1",
+      "id": "s5-010",
       "source": "spreadsheet-2007",
       "name": "Ocelomeh",
       "card_type": "special",
@@ -972,93 +829,11 @@
       "set": 5,
       "collector": "010",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Necalilizicniuhtli",
-          "type": "action",
-          "text": "Once each turn, your next basic attack deals +2 damage."
-        },
-        {
-          "name": "Altepecaconeteyaotlani",
-          "type": "static",
-          "text": "If you are an Aztec warrior, your first attack roll each round gains +1."
-        }
-      ],
-      "flavor": "One of the two elite schools of Aztec warriors, only a soldier who had captured four enemies could become a Jaguar Warrior.",
-      "illustrator": "Michael Komarck",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": true,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": true,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Necalilizicniuhtli - Action: Once each turn, your next basic attack deals +2 damage.\nAltepecaconeteyaotlani: If you are an Aztec warrior, your first attack roll each round gains +1."
-    },
-    {
-      "id": "s5-010-2",
-      "source": "spreadsheet-2007",
-      "name": "Ocelomeh",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 5,
-      "collector": "010",
-      "culture": "Aztec",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -1129,10 +904,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Necalilizicniuhtli - Action: Once each turn, your next basic attack deals +2 damage.\nAltepecaconeteyaotlani: If you are an Aztec warrior, your first attack roll each round gains +1."
     },
     {
@@ -1144,6 +917,9 @@
       "set": 5,
       "collector": "011",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Male"
       ],
@@ -1236,6 +1012,9 @@
       "set": 5,
       "collector": "012",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Quest"
       ],
@@ -1315,6 +1094,9 @@
       "set": 5,
       "collector": "013",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1399,7 +1181,7 @@
       "raw_source_text": "Atlacapetlachi: After you miss with this weapon, you may immediately make a basic attack against the same opponent at +1."
     },
     {
-      "id": "s5-014-1",
+      "id": "s5-014",
       "source": "spreadsheet-2007",
       "name": "Cuauhcuachimalli",
       "card_type": "armor",
@@ -1407,179 +1189,12 @@
       "set": 5,
       "collector": "014",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tlamatiliztli – Reveal",
-          "type": "static",
-          "text": "You gain +2 Experience."
-        },
-        {
-          "name": "Cuauhchicauhtiliztli",
-          "type": "static",
-          "text": "If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn."
-        }
-      ],
-      "flavor": "Worn by the Cuauhcuauhtin, or Eagle Warriors, these helmets denoted a warrior of great prowess - and high social and military rank - who had captured many enemies.",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": true,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tlamatiliztli – Reveal: You gain +2 Experience.\nCuauhchicauhtiliztli: If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn."
-    },
-    {
-      "id": "s5-014-2",
-      "source": "spreadsheet-2007",
-      "name": "Cuauhcuachimalli",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "014",
-      "culture": "Aztec",
-      "traits": [
-        "Head"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tlamatiliztli – Reveal",
-          "type": "static",
-          "text": "You gain +2 Experience."
-        },
-        {
-          "name": "Cuauhchicauhtiliztli",
-          "type": "static",
-          "text": "If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn."
-        }
-      ],
-      "flavor": "Worn by the Cuauhcuauhtin, or Eagle Warriors, these helmets denoted a warrior of great prowess - and high social and military rank - who had captured many enemies.",
-      "illustrator": "Alan Pollack",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": true,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tlamatiliztli – Reveal: You gain +2 Experience.\nCuauhchicauhtiliztli: If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn."
-    },
-    {
-      "id": "s5-014-3",
-      "source": "spreadsheet-2007",
-      "name": "Cuauhcuachimalli",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "014",
-      "culture": "Aztec",
-      "traits": [
+        "Torso",
+        "Head",
         "Mystic"
       ],
       "life": null,
@@ -1650,10 +1265,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Tlamatiliztli – Reveal: You gain +2 Experience.\nCuauhchicauhtiliztli: If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn."
     },
     {
@@ -1665,6 +1278,9 @@
       "set": 5,
       "collector": "015",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Item"
       ],
@@ -1749,6 +1365,9 @@
       "set": 5,
       "collector": "016",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Male"
       ],
@@ -1841,6 +1460,9 @@
       "set": 5,
       "collector": "017",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Deity"
       ],
@@ -1920,6 +1542,9 @@
       "set": 5,
       "collector": "018",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Knife"
       ],
@@ -2012,6 +1637,9 @@
       "set": 5,
       "collector": "019",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Head"
       ],
@@ -2091,6 +1719,9 @@
       "set": 5,
       "collector": "020",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Item"
       ],
@@ -2170,6 +1801,9 @@
       "set": 5,
       "collector": "021",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Male"
       ],
@@ -2262,6 +1896,9 @@
       "set": 5,
       "collector": "022",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2333,7 +1970,7 @@
       "raw_source_text": "Axittomoctli: At the end of each round, deal 1 damage to all adjacent non-Fire warriors."
     },
     {
-      "id": "s5-023-1",
+      "id": "s5-023",
       "source": "spreadsheet-2007",
       "name": "Tematlatl",
       "card_type": "weapon",
@@ -2341,107 +1978,11 @@
       "set": 5,
       "collector": "023",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
-        "Ranged"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 1,
-      "initiative": 9,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+0 +1 +1 +2 -1 ▲",
-      "grid": {
-        "1A": "+0",
-        "1B": "+1",
-        "1C": "+1",
-        "2A": null,
-        "2B": "+2",
-        "2C": "-1",
-        "3A": null,
-        "3B": null,
-        "3C": null,
-        "4A": null,
-        "4B": "marker",
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Quilitli",
-          "type": "static",
-          "text": "You may use another weapon."
-        },
-        {
-          "name": "Zotlahuaxoxoliztli",
-          "type": "static",
-          "text": "If you hit with this weapon, the defenders next defense roll gets –2."
-        }
-      ],
-      "flavor": "Aztec warriors used to heat the stones hurled by these slings to a scalding temperature so that the missiles would burn through enemies upon impact.",
-      "illustrator": "Jim Nelson",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": true,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": true,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "grid_marker_anomaly",
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Quilitli: You may use another weapon.\nZotlahuaxoxoliztli: If you hit with this weapon, the defenders next defense roll gets –2."
-    },
-    {
-      "id": "s5-023-2",
-      "source": "spreadsheet-2007",
-      "name": "Tematlatl",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 5,
-      "collector": "023",
-      "culture": "Aztec",
-      "traits": [
+        "Ranged",
         "Bludgeon"
       ],
       "life": null,
@@ -2527,8 +2068,7 @@
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "grid_marker_anomaly",
-        "possible_duplicate"
+        "grid_marker_anomaly"
       ],
       "raw_source_text": "Quilitli: You may use another weapon.\nZotlahuaxoxoliztli: If you hit with this weapon, the defenders next defense roll gets –2."
     },
@@ -2541,6 +2081,9 @@
       "set": 5,
       "collector": "024",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Torso"
       ],
@@ -2620,6 +2163,9 @@
       "set": 5,
       "collector": "025",
       "culture": "Aztec",
+      "cultures": [
+        "Aztec"
+      ],
       "traits": [
         "Quest"
       ],
@@ -2699,6 +2245,9 @@
       "set": 5,
       "collector": "026",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -2791,6 +2340,9 @@
       "set": 5,
       "collector": "027",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Code"
       ],
@@ -2870,6 +2422,9 @@
       "set": 5,
       "collector": "028",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -2967,6 +2522,9 @@
       "set": 5,
       "collector": "029",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -3051,6 +2609,9 @@
       "set": 5,
       "collector": "030",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Ability"
       ],
@@ -3130,6 +2691,9 @@
       "set": 5,
       "collector": "031",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -3222,6 +2786,9 @@
       "set": 5,
       "collector": "032",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Ally"
       ],
@@ -3301,6 +2868,9 @@
       "set": 5,
       "collector": "033",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -3385,7 +2955,7 @@
       "raw_source_text": "Subayai Kougeki: When you hit with this weapon, the attack and defender both roll one die and add his or her warrior's experience. If your total is higher, gain +1 speed on your next turn."
     },
     {
-      "id": "s5-034-1",
+      "id": "s5-034",
       "source": "spreadsheet-2007",
       "name": "Akaitoodoshi-Yoroi",
       "card_type": "armor",
@@ -3393,169 +2963,12 @@
       "set": 5,
       "collector": "034",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Saikaku na Soubi",
-          "type": "static",
-          "text": "If you have a sword in play, your attack and defense rolls gain +1."
-        }
-      ],
-      "flavor": "It was said that Yoshitsune wore this yoroi at the battle of Dan-no-Ura, where he performed the famous \"hassotobi,\" a great leap over 8 boats.",
-      "illustrator": "Ezra Tucker",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Saikaku na Soubi: If you have a sword in play, your attack and defense rolls gain +1."
-    },
-    {
-      "id": "s5-034-2",
-      "source": "spreadsheet-2007",
-      "name": "Akaitoodoshi-Yoroi",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "034",
-      "culture": "Japanese",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Saikaku na Soubi",
-          "type": "static",
-          "text": "If you have a sword in play, your attack and defense rolls gain +1."
-        }
-      ],
-      "flavor": "It was said that Yoshitsune wore this yoroi at the battle of Dan-no-Ura, where he performed the famous \"hassotobi,\" a great leap over 8 boats.",
-      "illustrator": "Ezra Tucker",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Saikaku na Soubi: If you have a sword in play, your attack and defense rolls gain +1."
-    },
-    {
-      "id": "s5-034-3",
-      "source": "spreadsheet-2007",
-      "name": "Akaitoodoshi-Yoroi",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "034",
-      "culture": "Japanese",
-      "traits": [
+        "Torso",
+        "Legs",
         "Arms"
       ],
       "life": null,
@@ -3621,10 +3034,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Saikaku na Soubi: If you have a sword in play, your attack and defense rolls gain +1."
     },
     {
@@ -3636,6 +3047,9 @@
       "set": 5,
       "collector": "035",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Tome"
       ],
@@ -3715,6 +3129,9 @@
       "set": 5,
       "collector": "036",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -3807,6 +3224,9 @@
       "set": 5,
       "collector": "037",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Code"
       ],
@@ -3891,6 +3311,9 @@
       "set": 5,
       "collector": "038",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -3975,7 +3398,7 @@
       "raw_source_text": "Densetsuteki: This weapon's damage cannot be increased or reduced by card abilities."
     },
     {
-      "id": "s5-039-1",
+      "id": "s5-039",
       "source": "spreadsheet-2007",
       "name": "Akazonae",
       "card_type": "armor",
@@ -3983,169 +3406,12 @@
       "set": 5,
       "collector": "039",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Azayaka na Aka",
-          "type": "static",
-          "text": "At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round."
-        }
-      ],
-      "flavor": "The soldiers of Sanada Nobushige's army armored themselves entirely in red during their war against Tokugawa Ieyasu.",
-      "illustrator": "Matthew Armstrong",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": true,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Azayaka na Aka: At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round."
-    },
-    {
-      "id": "s5-039-2",
-      "source": "spreadsheet-2007",
-      "name": "Akazonae",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "039",
-      "culture": "Japanese",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Azayaka na Aka",
-          "type": "static",
-          "text": "At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round."
-        }
-      ],
-      "flavor": "The soldiers of Sanada Nobushige's army armored themselves entirely in red during their war against Tokugawa Ieyasu.",
-      "illustrator": "Matthew Armstrong",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": true,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Azayaka na Aka: At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round."
-    },
-    {
-      "id": "s5-039-3",
-      "source": "spreadsheet-2007",
-      "name": "Akazonae",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "039",
-      "culture": "Japanese",
-      "traits": [
+        "Torso",
+        "Legs",
         "Arms"
       ],
       "life": null,
@@ -4211,10 +3477,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Azayaka na Aka: At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round."
     },
     {
@@ -4226,6 +3490,9 @@
       "set": 5,
       "collector": "040",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Location"
       ],
@@ -4305,6 +3572,9 @@
       "set": 5,
       "collector": "041",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -4397,6 +3667,9 @@
       "set": 5,
       "collector": "042",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Mystic"
       ],
@@ -4476,6 +3749,9 @@
       "set": 5,
       "collector": "043",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -4560,7 +3836,7 @@
       "raw_source_text": "Sinchou na Kougeki: When you hit with this weapon, the attacker and defender each roll one die and add his or her experience. If your total is higher, your attack rolls gain +1 for the rest of the game."
     },
     {
-      "id": "s5-044-1",
+      "id": "s5-044",
       "source": "spreadsheet-2007",
       "name": "Touseigusoku",
       "card_type": "armor",
@@ -4568,169 +3844,12 @@
       "set": 5,
       "collector": "044",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Danryokusei",
-          "type": "static",
-          "text": "After you are hit, your defense rolls gain +1 to a maximum of a +3 bonus from this card."
-        }
-      ],
-      "flavor": "The Sengoku Era saw great strides in the production of effective armor. Touseigusoku armor was lighter than previous armors and covered the entire body.",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Danryokusei: After you are hit, your defense rolls gain +1 to a maximum of a +3 bonus from this card."
-    },
-    {
-      "id": "s5-044-2",
-      "source": "spreadsheet-2007",
-      "name": "Touseigusoku",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "044",
-      "culture": "Japanese",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Danryokusei",
-          "type": "static",
-          "text": "After you are hit, your defense rolls gain +1 to a maximum of a +3 bonus from this card."
-        }
-      ],
-      "flavor": "The Sengoku Era saw great strides in the production of effective armor. Touseigusoku armor was lighter than previous armors and covered the entire body.",
-      "illustrator": "Tyler Walpole",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Danryokusei: After you are hit, your defense rolls gain +1 to a maximum of a +3 bonus from this card."
-    },
-    {
-      "id": "s5-044-3",
-      "source": "spreadsheet-2007",
-      "name": "Touseigusoku",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "044",
-      "culture": "Japanese",
-      "traits": [
+        "Torso",
+        "Legs",
         "Arms"
       ],
       "life": null,
@@ -4796,10 +3915,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Danryokusei: After you are hit, your defense rolls gain +1 to a maximum of a +3 bonus from this card."
     },
     {
@@ -4811,6 +3928,9 @@
       "set": 5,
       "collector": "045",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Item"
       ],
@@ -4890,6 +4010,9 @@
       "set": 5,
       "collector": "046",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Male"
       ],
@@ -4982,6 +4105,9 @@
       "set": 5,
       "collector": "047",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Location"
       ],
@@ -5066,6 +4192,9 @@
       "set": 5,
       "collector": "048",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -5150,7 +4279,7 @@
       "raw_source_text": "Kyouiteki na Surudosa: When you attack with this weapon, if the attack roll is greater than the higher of the defender's experience or the defense roll without bonuses, deal 1 damage to the defender."
     },
     {
-      "id": "s5-049-1",
+      "id": "s5-049",
       "source": "spreadsheet-2007",
       "name": "Kusubekawasugakeodoshi",
       "card_type": "armor",
@@ -5158,179 +4287,12 @@
       "set": 5,
       "collector": "049",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Juusoubi",
-          "type": "static",
-          "text": "Reduce the damage you take from opposing card abilities by 1, to a minimum of 0."
-        },
-        {
-          "name": "Fukushuu",
-          "type": "static",
-          "text": "After you are damaged by an opponent’s non–weapon support card, you may discard this card to discard the opposing card."
-        }
-      ],
-      "flavor": "Uesugi Kenshin’s armor was made from the most rare and precious materials, some of which were provided by Oda Nobunaga himself.",
-      "illustrator": "John Matson",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Juusoubi: Reduce the damage you take from opposing card abilities by 1, to a minimum of 0. \nFukushuu: After you are damaged by an opponent’s non–weapon support card, you may discard this card to discard the opposing card."
-    },
-    {
-      "id": "s5-049-2",
-      "source": "spreadsheet-2007",
-      "name": "Kusubekawasugakeodoshi",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "049",
-      "culture": "Japanese",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Juusoubi",
-          "type": "static",
-          "text": "Reduce the damage you take from opposing card abilities by 1, to a minimum of 0."
-        },
-        {
-          "name": "Fukushuu",
-          "type": "static",
-          "text": "After you are damaged by an opponent’s non–weapon support card, you may discard this card to discard the opposing card."
-        }
-      ],
-      "flavor": "Uesugi Kenshin’s armor was made from the most rare and precious materials, some of which were provided by Oda Nobunaga himself.",
-      "illustrator": "John Matson",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Juusoubi: Reduce the damage you take from opposing card abilities by 1, to a minimum of 0. \nFukushuu: After you are damaged by an opponent’s non–weapon support card, you may discard this card to discard the opposing card."
-    },
-    {
-      "id": "s5-049-3",
-      "source": "spreadsheet-2007",
-      "name": "Kusubekawasugakeodoshi",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 5,
-      "collector": "049",
-      "culture": "Japanese",
-      "traits": [
+        "Torso",
+        "Legs",
         "Arms"
       ],
       "life": null,
@@ -5401,10 +4363,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Juusoubi: Reduce the damage you take from opposing card abilities by 1, to a minimum of 0. \nFukushuu: After you are damaged by an opponent’s non–weapon support card, you may discard this card to discard the opposing card."
     },
     {
@@ -5416,6 +4376,9 @@
       "set": 5,
       "collector": "050",
       "culture": "Japanese",
+      "cultures": [
+        "Japanese"
+      ],
       "traits": [
         "Item"
       ],
@@ -5500,6 +4463,9 @@
       "set": 5,
       "collector": "051",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Male"
       ],
@@ -5597,6 +4563,9 @@
       "set": 5,
       "collector": "052",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Location"
       ],
@@ -5681,6 +4650,9 @@
       "set": 5,
       "collector": "053",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -5773,6 +4745,9 @@
       "set": 5,
       "collector": "054",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Shield"
       ],
@@ -5852,6 +4827,9 @@
       "set": 5,
       "collector": "055",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Ability"
       ],
@@ -5931,6 +4909,9 @@
       "set": 5,
       "collector": "056",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Male"
       ],
@@ -6023,6 +5004,9 @@
       "set": 5,
       "collector": "057",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Female"
       ],
@@ -6107,6 +5091,9 @@
       "set": 5,
       "collector": "058",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -6206,6 +5193,9 @@
       "set": 5,
       "collector": "059",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Legs"
       ],
@@ -6290,6 +5280,9 @@
       "set": 5,
       "collector": "060",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Tome"
       ],
@@ -6361,7 +5354,7 @@
       "raw_source_text": "Hekaiat Kabl Elnaum: At the end of each round, name a card type. After initiative is determined next round, any opponent who revealed a card of the named type chooses to either discard the card or get -2 to all rolls that round."
     },
     {
-      "id": "s5-061-1",
+      "id": "s5-061",
       "source": "spreadsheet-2007",
       "name": "Maowvia",
       "card_type": "warrior",
@@ -6369,101 +5362,11 @@
       "set": 5,
       "collector": "061",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
-        "Female"
-      ],
-      "life": 6,
-      "speed": 3,
-      "experience": 6,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 16,
-      "grid_raw": "▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": null,
-        "2B": null,
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Mutauag",
-          "type": "static",
-          "text": "When you are attacked, you may reduce the value of a die in the attack by 1."
-        }
-      ],
-      "flavor": "Reigning as Queen in the Bedouin Saracens, Maowvia led her armies to victory after victory over Roman armies, forcing the Emperor Valens to seek peace.",
-      "illustrator": "Chris Seaman",
-      "background": "Syrian Queen of the Bedouin Saracens, Maowvia rebelled repeatedly against Rome. Over the course of seven years, she led her armies to victories in Palestine, Phoenicia and Egypt. Despite Roman reinforcements, Maowvia continued to outmaneuver and defeat the Roman legions that marched against her. Eventually, Valens, Emperor of the Eastern Roman Empire, sought peace with her. Later, when the Goths began their attacks on the Roman frontier, she sent an army of cavalry to assist those who had been her enemy. By marrying her daughter to the Supreme Commander of the Eastern Roman army, and with the aid of St. Moses, “the Apostle of the Saracens”, Maowvia established stability for her people, which lasted long after her death. Use Maowvia, queen of the desert, to punish all those who would dare underestimate your ability in the Anachronism arena, and to achieve victory with the speed of the wind.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Mutauag: When you are attacked, you may reduce the value of a die in the attack by 1."
-    },
-    {
-      "id": "s5-061-2",
-      "source": "spreadsheet-2007",
-      "name": "Maowvia",
-      "card_type": "warrior",
-      "element": "Water",
-      "set": 5,
-      "collector": "061",
-      "culture": "Saracen",
-      "traits": [
+        "Female",
         "Cavalry"
       ],
       "life": 6,
@@ -6542,14 +5445,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Mutauag: When you are attacked, you may reduce the value of a die in the attack by 1."
     },
     {
-      "id": "s5-062-1",
+      "id": "s5-062",
       "source": "spreadsheet-2007",
       "name": "Alnabi Mosa",
       "card_type": "inspiration",
@@ -6557,88 +5458,11 @@
       "set": 5,
       "collector": "062",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Nasiha",
-          "type": "static",
-          "text": "Each roll, change each die that is a 1 to a 3, and each die that is a 6 to a 4."
-        }
-      ],
-      "flavor": "Chosen by Maowiva to preach to her people, Moses was conveyed by order of Emperor Valens from his hermit life to the city of Alexandria, where he received Episcopal grace.",
-      "illustrator": "Chris Seaman",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Nasiha: Each roll, change each die that is a 1 to a 3, and each die that is a 6 to a 4."
-    },
-    {
-      "id": "s5-062-2",
-      "source": "spreadsheet-2007",
-      "name": "Alnabi Mosa",
-      "card_type": "inspiration",
-      "element": "Earth",
-      "set": 5,
-      "collector": "062",
-      "culture": "Saracen",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -6704,14 +5528,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Nasiha: Each roll, change each die that is a 1 to a 3, and each die that is a 6 to a 4."
     },
     {
-      "id": "s5-063-1",
+      "id": "s5-063",
       "source": "spreadsheet-2007",
       "name": "Sahm",
       "card_type": "weapon",
@@ -6719,101 +5541,11 @@
       "set": 5,
       "collector": "063",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
-        "Polearm"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 5,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+0 +1 +1 +0 ▲",
-      "grid": {
-        "1A": null,
-        "1B": "+0",
-        "1C": "+1",
-        "2A": "+1",
-        "2B": null,
-        "2C": null,
-        "3A": "+0",
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Taan",
-          "type": "static",
-          "text": "When you attack with this weapon, you may choose to roll one less die, If you do, add your initiative to the attack roll."
-        }
-      ],
-      "flavor": "Valuing mobility over weighty physical defenses, the Bedouins employed the javelin extensively in all aspects of their warfare.",
-      "illustrator": "Chris Seaman",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": true,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Taan: When you attack with this weapon, you may choose to roll one less die, If you do, add your initiative to the attack roll."
-    },
-    {
-      "id": "s5-063-2",
-      "source": "spreadsheet-2007",
-      "name": "Sahm",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 5,
-      "collector": "063",
-      "culture": "Saracen",
-      "traits": [
+        "Polearm",
         "Ranged"
       ],
       "life": null,
@@ -6892,10 +5624,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Taan: When you attack with this weapon, you may choose to roll one less die, If you do, add your initiative to the attack roll."
     },
     {
@@ -6907,6 +5637,9 @@
       "set": 5,
       "collector": "064",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -6978,7 +5711,7 @@
       "raw_source_text": "Lammah: Once each turn, you may re-roll one die of one of your defense rolls. If you have another cavalry card in play, once each round, you may re-roll an opponent's defense roll. If you have two cards of the same type in play, discard this card."
     },
     {
-      "id": "s5-065-1",
+      "id": "s5-065",
       "source": "spreadsheet-2007",
       "name": "Mesbah",
       "card_type": "special",
@@ -6986,93 +5719,11 @@
       "set": 5,
       "collector": "065",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Tassannut",
-          "type": "static",
-          "text": "When you attack, the total defense roll bonus cannot be greater than +1."
-        },
-        {
-          "name": "Sharr",
-          "type": "static",
-          "text": "When you roll doubles on any roll, your next roll gains +2."
-        }
-      ],
-      "flavor": "The “ships of the desert” were also put to more bellicose use. Against enemy cavalry, their smell and size often panicked enemy horses.",
-      "illustrator": "Chris Seaman",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Tassannut: When you attack, the total defense roll bonus cannot be greater than +1. \nSharr: When you roll doubles on any roll, your next roll gains +2."
-    },
-    {
-      "id": "s5-065-2",
-      "source": "spreadsheet-2007",
-      "name": "Mesbah",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 5,
-      "collector": "065",
-      "culture": "Saracen",
-      "traits": [
+        "Ally",
         "Cavalry"
       ],
       "life": null,
@@ -7143,10 +5794,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Tassannut: When you attack, the total defense roll bonus cannot be greater than +1. \nSharr: When you roll doubles on any roll, your next roll gains +2."
     },
     {
@@ -7158,6 +5807,9 @@
       "set": 5,
       "collector": "066",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Male"
       ],
@@ -7250,6 +5902,9 @@
       "set": 5,
       "collector": "067",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Location"
       ],
@@ -7329,6 +5984,9 @@
       "set": 5,
       "collector": "068",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Sword"
       ],
@@ -7421,6 +6079,9 @@
       "set": 5,
       "collector": "069",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -7505,6 +6166,9 @@
       "set": 5,
       "collector": "070",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Shield"
       ],
@@ -7584,6 +6248,9 @@
       "set": 5,
       "collector": "071",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Male"
       ],
@@ -7676,6 +6343,9 @@
       "set": 5,
       "collector": "072",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Ability"
       ],
@@ -7755,6 +6425,9 @@
       "set": 5,
       "collector": "073",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Axe"
       ],
@@ -7852,6 +6525,9 @@
       "set": 5,
       "collector": "074",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Head"
       ],
@@ -7931,6 +6607,9 @@
       "set": 5,
       "collector": "075",
       "culture": "Saracen",
+      "cultures": [
+        "Saracen"
+      ],
       "traits": [
         "Location"
       ],
@@ -8015,6 +6694,9 @@
       "set": 5,
       "collector": "076",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Male"
       ],
@@ -8099,7 +6781,7 @@
       "raw_source_text": "Posición Legítima: At the start of each round, if you lose initiative, gain 1 life."
     },
     {
-      "id": "s5-077-1",
+      "id": "s5-077",
       "source": "spreadsheet-2007",
       "name": "Mercurino Gattinara",
       "card_type": "inspiration",
@@ -8107,88 +6789,11 @@
       "set": 5,
       "collector": "077",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Incitar Asalto – Reveal",
-          "type": "static",
-          "text": "Your defense rolls this round get –1. Your attack rolls this round gain +3."
-        }
-      ],
-      "flavor": "An Italian statesman and jurist, Gattinara served as a legal advisor, a counselor to Margaret of Austria, a chancellor to Charles V and a Roman Catholic Cardinal.",
-      "illustrator": "Christopher Appel",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": true,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": false,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Incitar Asalto – Reveal: Your defense rolls this round get –1. Your attack rolls this round gain +3."
-    },
-    {
-      "id": "s5-077-2",
-      "source": "spreadsheet-2007",
-      "name": "Mercurino Gattinara",
-      "card_type": "inspiration",
-      "element": "Fire",
-      "set": 5,
-      "collector": "077",
-      "culture": "Spainish",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -8254,10 +6859,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Incitar Asalto – Reveal: Your defense rolls this round get –1. Your attack rolls this round gain +3."
     },
     {
@@ -8269,6 +6872,9 @@
       "set": 5,
       "collector": "078",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -8361,6 +6967,9 @@
       "set": 5,
       "collector": "079",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Shield"
       ],
@@ -8440,6 +7049,9 @@
       "set": 5,
       "collector": "080",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Ally"
       ],
@@ -8524,6 +7136,9 @@
       "set": 5,
       "collector": "081",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Male"
       ],
@@ -8608,7 +7223,7 @@
       "raw_source_text": "Maniobra Estratégica: Once each round, before you make an attack or use an action ability, you may move one space."
     },
     {
-      "id": "s5-082-1",
+      "id": "s5-082",
       "source": "spreadsheet-2007",
       "name": "Santiago Matamoros",
       "card_type": "inspiration",
@@ -8616,88 +7231,11 @@
       "set": 5,
       "collector": "082",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Confesión",
-          "type": "static",
-          "text": "Once each round, when you are attacked and the attacker rolls doubles, the attack deals –1 damage, to a minimum of 1, and you gain 1 life."
-        }
-      ],
-      "flavor": "St. James is said to have preached in Spain before returning to Judea, where he was executed. Tradition holds that, during the Reconquista, he miraculously appeared to lead the Christian army to victory at the Battle of Clavijo.",
-      "illustrator": "Hugh Jamieson",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": true,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Confesión: Once each round, when you are attacked and the attacker rolls doubles, the attack deals –1 damage, to a minimum of 1, and you gain 1 life."
-    },
-    {
-      "id": "s5-082-2",
-      "source": "spreadsheet-2007",
-      "name": "Santiago Matamoros",
-      "card_type": "inspiration",
-      "element": "Wood",
-      "set": 5,
-      "collector": "082",
-      "culture": "Spainish",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -8763,10 +7301,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Confesión: Once each round, when you are attacked and the attacker rolls doubles, the attack deals –1 damage, to a minimum of 1, and you gain 1 life."
     },
     {
@@ -8778,6 +7314,9 @@
       "set": 5,
       "collector": "083",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8870,6 +7409,9 @@
       "set": 5,
       "collector": "084",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Torso"
       ],
@@ -8954,6 +7496,9 @@
       "set": 5,
       "collector": "085",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -9033,6 +7578,9 @@
       "set": 5,
       "collector": "086",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Male"
       ],
@@ -9125,6 +7673,9 @@
       "set": 5,
       "collector": "087",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Title"
       ],
@@ -9204,6 +7755,9 @@
       "set": 5,
       "collector": "088",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -9296,6 +7850,9 @@
       "set": 5,
       "collector": "089",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Torso"
       ],
@@ -9375,6 +7932,9 @@
       "set": 5,
       "collector": "090",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Ability"
       ],
@@ -9459,6 +8019,9 @@
       "set": 5,
       "collector": "091",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Male"
       ],
@@ -9551,6 +8114,9 @@
       "set": 5,
       "collector": "092",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Female"
       ],
@@ -9630,6 +8196,9 @@
       "set": 5,
       "collector": "093",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -9729,6 +8298,9 @@
       "set": 5,
       "collector": "094",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Arms"
       ],
@@ -9808,6 +8380,9 @@
       "set": 5,
       "collector": "095",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Quest"
       ],
@@ -9887,6 +8462,9 @@
       "set": 5,
       "collector": "096",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Female"
       ],
@@ -9971,7 +8549,7 @@
       "raw_source_text": "Sanción: Players cannot use abilities on weapon cards. At the start of each round, if you did not win initiative and have less life than all opponents, this ability affects only your opponents that round."
     },
     {
-      "id": "s5-097-1",
+      "id": "s5-097",
       "source": "spreadsheet-2007",
       "name": "Fernando II de Aragon",
       "card_type": "inspiration",
@@ -9979,93 +8557,11 @@
       "set": 5,
       "collector": "097",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
-        "Ally"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 7,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Pasión",
-          "type": "static",
-          "text": "If you have a female card in play, your attack rolls gain +2 and critical hits against you deal +1 damage."
-        },
-        {
-          "name": "Piedad",
-          "type": "static",
-          "text": "You may play another Inspiration card in this game."
-        }
-      ],
-      "flavor": "The co–rule of Ferdinand II of Aragon and Isabella I of Castile made their kingdoms the most powerful in Europe.",
-      "illustrator": "David Ho",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": true,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Pasión: If you have a female card in play, your attack rolls gain +2 and critical hits against you deal +1 damage. \nPiedad: You may play another Inspiration card in this game."
-    },
-    {
-      "id": "s5-097-2",
-      "source": "spreadsheet-2007",
-      "name": "Fernando II de Aragon",
-      "card_type": "inspiration",
-      "element": "Water",
-      "set": 5,
-      "collector": "097",
-      "culture": "Spainish",
-      "traits": [
+        "Ally",
         "Male"
       ],
       "life": null,
@@ -10136,10 +8632,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Pasión: If you have a female card in play, your attack rolls gain +2 and critical hits against you deal +1 damage. \nPiedad: You may play another Inspiration card in this game."
     },
     {
@@ -10151,6 +8645,9 @@
       "set": 5,
       "collector": "098",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -10243,6 +8740,9 @@
       "set": 5,
       "collector": "099",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Ability"
       ],
@@ -10322,6 +8822,9 @@
       "set": 5,
       "collector": "100",
       "culture": "Spainish",
+      "cultures": [
+        "Spainish"
+      ],
       "traits": [
         "Quest"
       ],

@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": 7,
-  "card_count": 113,
-  "review_count": 25,
+  "card_count": 100,
+  "review_count": 3,
   "cards": [
     {
       "id": "s7-001",
@@ -15,6 +15,9 @@
       "set": 7,
       "collector": "001",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Male"
       ],
@@ -112,6 +115,9 @@
       "set": 7,
       "collector": "002",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Location"
       ],
@@ -191,6 +197,9 @@
       "set": 7,
       "collector": "003",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -283,6 +292,9 @@
       "set": 7,
       "collector": "004",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Location"
       ],
@@ -367,6 +379,9 @@
       "set": 7,
       "collector": "005",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Ability"
       ],
@@ -451,6 +466,9 @@
       "set": 7,
       "collector": "006",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Male"
       ],
@@ -543,6 +561,9 @@
       "set": 7,
       "collector": "007",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Location"
       ],
@@ -622,6 +643,9 @@
       "set": 7,
       "collector": "008",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Knife"
       ],
@@ -719,6 +743,9 @@
       "set": 7,
       "collector": "009",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Torso"
       ],
@@ -798,6 +825,9 @@
       "set": 7,
       "collector": "010",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Ally"
       ],
@@ -877,6 +907,9 @@
       "set": 7,
       "collector": "011",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Male"
       ],
@@ -969,6 +1002,9 @@
       "set": 7,
       "collector": "012",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Female"
       ],
@@ -1053,6 +1089,9 @@
       "set": 7,
       "collector": "013",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Axe"
       ],
@@ -1150,6 +1189,9 @@
       "set": 7,
       "collector": "014",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Tome"
       ],
@@ -1234,6 +1276,9 @@
       "set": 7,
       "collector": "015",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Ability"
       ],
@@ -1313,6 +1358,9 @@
       "set": 7,
       "collector": "016",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Male"
       ],
@@ -1410,6 +1458,9 @@
       "set": 7,
       "collector": "017",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Quest"
       ],
@@ -1489,6 +1540,9 @@
       "set": 7,
       "collector": "018",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Knife"
       ],
@@ -1581,6 +1635,9 @@
       "set": 7,
       "collector": "019",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Location"
       ],
@@ -1665,6 +1722,9 @@
       "set": 7,
       "collector": "020",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Ability"
       ],
@@ -1744,6 +1804,9 @@
       "set": 7,
       "collector": "021",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Male"
       ],
@@ -1841,6 +1904,9 @@
       "set": 7,
       "collector": "022",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Item"
       ],
@@ -1920,6 +1986,9 @@
       "set": 7,
       "collector": "023",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Ally"
       ],
@@ -2017,6 +2086,9 @@
       "set": 7,
       "collector": "024",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Location"
       ],
@@ -2096,6 +2168,9 @@
       "set": 7,
       "collector": "025",
       "culture": "Frontier Americans",
+      "cultures": [
+        "Frontier Americans"
+      ],
       "traits": [
         "Ability"
       ],
@@ -2175,6 +2250,9 @@
       "set": 7,
       "collector": "026",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -2267,6 +2345,9 @@
       "set": 7,
       "collector": "027",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Female"
       ],
@@ -2346,6 +2427,9 @@
       "set": 7,
       "collector": "028",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Item"
       ],
@@ -2443,6 +2527,9 @@
       "set": 7,
       "collector": "029",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Torso"
       ],
@@ -2527,6 +2614,9 @@
       "set": 7,
       "collector": "030",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Ally"
       ],
@@ -2606,6 +2696,9 @@
       "set": 7,
       "collector": "031",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -2698,6 +2791,9 @@
       "set": 7,
       "collector": "032",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Code"
       ],
@@ -2782,6 +2878,9 @@
       "set": 7,
       "collector": "033",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Sword"
       ],
@@ -2874,6 +2973,9 @@
       "set": 7,
       "collector": "034",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Head"
       ],
@@ -2950,7 +3052,7 @@
       "raw_source_text": "Exagriomenos: Once each round, after you are hit by an attack that does more than its base damage, the attacker gets -1 speed on their next turn.\nGialismeno - Reveal: Gain +2 experience."
     },
     {
-      "id": "s7-035-1",
+      "id": "s7-035",
       "source": "spreadsheet-2007",
       "name": "Orgi Tou Posidona",
       "card_type": "special",
@@ -2958,88 +3060,11 @@
       "set": 7,
       "collector": "035",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
-        "Ability"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 8,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Thalassia Erpeta",
-          "type": "reveal",
-          "text": "Your first attack this round deals +1 damage for each water card in play. Your attack rolls this round cannot be modified by card abilities."
-        }
-      ],
-      "flavor": "When Laocoon warned the Trojans about accepting the Trojan Horse, Poseidon, who had sided with the Greeks in the war, sent sea serpents to devour him and his sons.",
-      "illustrator": "John Donahue",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": true,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Thalassia Erpeta - Reveal: Your first attack this round deals +1 damage for each water card in play. Your attack rolls this round cannot be modified by card abilities. "
-    },
-    {
-      "id": "s7-035-2",
-      "source": "spreadsheet-2007",
-      "name": "Orgi Tou Posidona",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 7,
-      "collector": "035",
-      "culture": "Greek",
-      "traits": [
+        "Ability",
         "Mystic"
       ],
       "life": null,
@@ -3105,10 +3130,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Thalassia Erpeta - Reveal: Your first attack this round deals +1 damage for each water card in play. Your attack rolls this round cannot be modified by card abilities. "
     },
     {
@@ -3120,6 +3143,9 @@
       "set": 7,
       "collector": "036",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -3209,7 +3235,7 @@
       "raw_source_text": "Diasimos Toxotis - 2 Actions: Make an attack with a ranged weapon, if possible.\nEfstoxia: When you attack with a ranged weapon, you may roll three dice and choose which two to use. If you do, the attack can not deal more than its base damage. "
     },
     {
-      "id": "s7-037-1",
+      "id": "s7-037",
       "source": "spreadsheet-2007",
       "name": "Athina",
       "card_type": "inspiration",
@@ -3217,88 +3243,11 @@
       "set": 7,
       "collector": "037",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
-        "Deity"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Evlogimeni Stratigiki",
-          "type": "static",
-          "text": "At the end of each opponent's turn, if you won initiative that round, you may take one action. If you attack with this action, the attack deals +1 damage."
-        }
-      ],
-      "flavor": "The virgin goddess of wisdom, strategy, and war, Athena was the patron deity of Athens. She was attended by Nike, the goddess of victory, and the Parthenon was her greatest shrine.",
-      "illustrator": "Thomas Denmark",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": true,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Evlogimeni Stratigiki: At the end of each opponent's turn, if you won initiative that round, you may take one action. If you attack with this action, the attack deals +1 damage."
-    },
-    {
-      "id": "s7-037-2",
-      "source": "spreadsheet-2007",
-      "name": "Athina",
-      "card_type": "inspiration",
-      "element": "Metal",
-      "set": 7,
-      "collector": "037",
-      "culture": "Greek",
-      "traits": [
+        "Deity",
         "Female"
       ],
       "life": null,
@@ -3364,10 +3313,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Evlogimeni Stratigiki: At the end of each opponent's turn, if you won initiative that round, you may take one action. If you attack with this action, the attack deals +1 damage."
     },
     {
@@ -3379,6 +3326,9 @@
       "set": 7,
       "collector": "038",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -3473,6 +3423,9 @@
       "set": 7,
       "collector": "039",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Item"
       ],
@@ -3552,6 +3505,9 @@
       "set": 7,
       "collector": "040",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Item"
       ],
@@ -3631,6 +3587,9 @@
       "set": 7,
       "collector": "041",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -3720,7 +3679,7 @@
       "raw_source_text": "Avoithitos: You cannot gain life from your card abilities. You cannot use abilities on deity cards. \nSinthlipsi: When you hit, if any of the dice of the attack roll are a 1, deal 1 damage to the attacker and defender."
     },
     {
-      "id": "s7-042-1",
+      "id": "s7-042",
       "source": "spreadsheet-2007",
       "name": "Chiron",
       "card_type": "inspiration",
@@ -3728,88 +3687,11 @@
       "set": 7,
       "collector": "042",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
-        "Male"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Didaskalia",
-          "type": "reveal",
-          "text": "For this round, your attack and defense rolls against each opponent gain +1 for each of that opponent's support cards with higher initiative than your experience. This round, your defense rolls cannot gain bonuses from other card abilities."
-        }
-      ],
-      "flavor": "An astrologer, a healer, and an oracle, Chiron taught Achilles, Aias, Herakles, Jason, and Theseus. He was gifted with being able to uncover his students' highest potential.",
-      "illustrator": "Mark Poole",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": true,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Didaskalia - Reveal: For this round, your attack and defense rolls against each opponent gain +1 for each of that opponent's support cards with higher initiative than your experience. This round, your defense rolls cannot gain bonuses from other card abilities."
-    },
-    {
-      "id": "s7-042-2",
-      "source": "spreadsheet-2007",
-      "name": "Chiron",
-      "card_type": "inspiration",
-      "element": "Earth",
-      "set": 7,
-      "collector": "042",
-      "culture": "Greek",
-      "traits": [
+        "Male",
         "Cavalry"
       ],
       "life": null,
@@ -3875,10 +3757,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Didaskalia - Reveal: For this round, your attack and defense rolls against each opponent gain +1 for each of that opponent's support cards with higher initiative than your experience. This round, your defense rolls cannot gain bonuses from other card abilities."
     },
     {
@@ -3890,6 +3770,9 @@
       "set": 7,
       "collector": "043",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -3987,6 +3870,9 @@
       "set": 7,
       "collector": "044",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Shield"
       ],
@@ -4066,6 +3952,9 @@
       "set": 7,
       "collector": "045",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Ability"
       ],
@@ -4150,6 +4039,9 @@
       "set": 7,
       "collector": "046",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -4242,6 +4134,9 @@
       "set": 7,
       "collector": "047",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Male"
       ],
@@ -4318,7 +4213,7 @@
       "raw_source_text": "Axios Antipalos: After you are hit or you miss an attack, place a counter on this card.\nIpsisti Dinatotita: Twice each turn, you may remove a counter from this card to re-roll one of your rolls. \n"
     },
     {
-      "id": "s7-048-1",
+      "id": "s7-048",
       "source": "spreadsheet-2007",
       "name": "Klironomimena Opla",
       "card_type": "weapon",
@@ -4326,101 +4221,11 @@
       "set": 7,
       "collector": "048",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
-        "Sword"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 2,
-      "initiative": 7,
-      "hands": 2,
-      "salary": null,
-      "grid_raw": "+2 +2 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": null,
-        "2B": "+2",
-        "2C": "+2",
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Teleti tis Analipsis",
-          "type": "static",
-          "text": "Your defense rolls gain +1."
-        }
-      ],
-      "flavor": "King Aegeus buried his sandals, shield, and sword under a boulder, with indtructions that, when his son grew up, he should move the rock and take the implements as evidence of his royal parentage.",
-      "illustrator": "Michael Komarck",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": false,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Teleti tis Analipsis: Your defense rolls gain +1."
-    },
-    {
-      "id": "s7-048-2",
-      "source": "spreadsheet-2007",
-      "name": "Klironomimena Opla",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 7,
-      "collector": "048",
-      "culture": "Greek",
-      "traits": [
+        "Sword",
         "Shield"
       ],
       "life": null,
@@ -4499,10 +4304,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Teleti tis Analipsis: Your defense rolls gain +1."
     },
     {
@@ -4514,6 +4317,9 @@
       "set": 7,
       "collector": "049",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Item"
       ],
@@ -4598,6 +4404,9 @@
       "set": 7,
       "collector": "050",
       "culture": "Greek",
+      "cultures": [
+        "Greek"
+      ],
       "traits": [
         "Item"
       ],
@@ -4677,6 +4486,9 @@
       "set": 7,
       "collector": "051",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Male"
       ],
@@ -4769,6 +4581,9 @@
       "set": 7,
       "collector": "052",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Female"
       ],
@@ -4848,6 +4663,9 @@
       "set": 7,
       "collector": "053",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Sword"
       ],
@@ -4940,6 +4758,9 @@
       "set": 7,
       "collector": "054",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Torso"
       ],
@@ -5019,6 +4840,9 @@
       "set": 7,
       "collector": "055",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -5098,6 +4922,9 @@
       "set": 7,
       "collector": "056",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Male"
       ],
@@ -5190,6 +5017,9 @@
       "set": 7,
       "collector": "057",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Male"
       ],
@@ -5269,6 +5099,9 @@
       "set": 7,
       "collector": "058",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -5355,7 +5188,7 @@
       "raw_source_text": "Haslek: When you attack with this weapon, if the defender has more experience than your warrior, the attack roll is considered doubles."
     },
     {
-      "id": "s7-059-1",
+      "id": "s7-059",
       "source": "spreadsheet-2007",
       "name": "Maddai Sa'ul Hammelek",
       "card_type": "armor",
@@ -5363,179 +5196,12 @@
       "set": 7,
       "collector": "059",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
-        "Head"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Sel 'adam",
-          "type": "static",
-          "text": "When you are attacked, if a card ability gives a bonus to the attack roll, your defense roll gains +2."
-        },
-        {
-          "name": "Bitha",
-          "type": "static",
-          "text": "When you are attacked, before rolls are made, you may choose to discard this card. If you do, the attack deals -2 damage, to a minimum of 0."
-        }
-      ],
-      "flavor": "When David went to fight Goliath, King Saul offered David his armor. It was too large then, so David did not take it.",
-      "illustrator": "Ted Pendergraft",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Sel 'adam: When you are attacked, if a card ability gives a bonus to the attack roll, your defense roll gains +2.\nBitha: When you are attacked, before rolls are made, you may choose to discard this card. If you do, the attack deals -2 damage, to a minimum of 0.\n"
-    },
-    {
-      "id": "s7-059-2",
-      "source": "spreadsheet-2007",
-      "name": "Maddai Sa'ul Hammelek",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 7,
-      "collector": "059",
-      "culture": "Tribes of Israel",
-      "traits": [
-        "Arms"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 3,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Sel 'adam",
-          "type": "static",
-          "text": "When you are attacked, if a card ability gives a bonus to the attack roll, your defense roll gains +2."
-        },
-        {
-          "name": "Bitha",
-          "type": "static",
-          "text": "When you are attacked, before rolls are made, you may choose to discard this card. If you do, the attack deals -2 damage, to a minimum of 0."
-        }
-      ],
-      "flavor": "When David went to fight Goliath, King Saul offered David his armor. It was too large then, so David did not take it.",
-      "illustrator": "Ted Pendergraft",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": true,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Sel 'adam: When you are attacked, if a card ability gives a bonus to the attack roll, your defense roll gains +2.\nBitha: When you are attacked, before rolls are made, you may choose to discard this card. If you do, the attack deals -2 damage, to a minimum of 0.\n"
-    },
-    {
-      "id": "s7-059-3",
-      "source": "spreadsheet-2007",
-      "name": "Maddai Sa'ul Hammelek",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 7,
-      "collector": "059",
-      "culture": "Tribes of Israel",
-      "traits": [
+        "Head",
+        "Arms",
         "Torso"
       ],
       "life": null,
@@ -5606,10 +5272,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Sel 'adam: When you are attacked, if a card ability gives a bonus to the attack roll, your defense roll gains +2.\nBitha: When you are attacked, before rolls are made, you may choose to discard this card. If you do, the attack deals -2 damage, to a minimum of 0.\n"
     },
     {
@@ -5621,6 +5285,9 @@
       "set": 7,
       "collector": "060",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Item"
       ],
@@ -5705,6 +5372,9 @@
       "set": 7,
       "collector": "061",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Male"
       ],
@@ -5802,6 +5472,9 @@
       "set": 7,
       "collector": "062",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Location"
       ],
@@ -5886,6 +5559,9 @@
       "set": 7,
       "collector": "063",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Sword"
       ],
@@ -5978,6 +5654,9 @@
       "set": 7,
       "collector": "064",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Shield"
       ],
@@ -6057,6 +5736,9 @@
       "set": 7,
       "collector": "065",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Item"
       ],
@@ -6141,6 +5823,9 @@
       "set": 7,
       "collector": "066",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Male"
       ],
@@ -6233,6 +5918,9 @@
       "set": 7,
       "collector": "067",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Quest"
       ],
@@ -6312,6 +6000,9 @@
       "set": 7,
       "collector": "068",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Sword"
       ],
@@ -6409,6 +6100,9 @@
       "set": 7,
       "collector": "069",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Torso"
       ],
@@ -6488,6 +6182,9 @@
       "set": 7,
       "collector": "070",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Quest"
       ],
@@ -6572,6 +6269,9 @@
       "set": 7,
       "collector": "071",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Male"
       ],
@@ -6664,6 +6364,9 @@
       "set": 7,
       "collector": "072",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Female"
       ],
@@ -6743,6 +6446,9 @@
       "set": 7,
       "collector": "073",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -6840,6 +6546,9 @@
       "set": 7,
       "collector": "074",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Torso"
       ],
@@ -6919,6 +6628,9 @@
       "set": 7,
       "collector": "075",
       "culture": "Tribes of Israel",
+      "cultures": [
+        "Tribes of Israel"
+      ],
       "traits": [
         "Item"
       ],
@@ -6998,6 +6710,9 @@
       "set": 7,
       "collector": "076",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Male"
       ],
@@ -7082,7 +6797,7 @@
       "raw_source_text": "Gorgi Epithisi - Action: Once each round, if you are adjacent to an opposing warrior, move one space. After the move, if you are no longer adjacent to that warrior, deal 1 damage to them."
     },
     {
-      "id": "s7-077-1",
+      "id": "s7-077",
       "source": "spreadsheet-2007",
       "name": "Afroditi",
       "card_type": "inspiration",
@@ -7090,88 +6805,11 @@
       "set": 7,
       "collector": "077",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
-        "Deity"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 6,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Teleia Omorfia",
-          "type": "static",
-          "text": "If you are a male warrior, get +1 speed and -3 experience."
-        }
-      ],
-      "flavor": "Born from the foaming sea, Aphrodite was considered the most beautiful of the gods and goddesses, though she was also very vain and easily offended.",
-      "illustrator": "Jason Engle",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": true,
-        "experience_dependant": false,
-        "speed_bonus": true,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Teleia Omorfia: If you are a male warrior, get +1 speed and -3 experience."
-    },
-    {
-      "id": "s7-077-2",
-      "source": "spreadsheet-2007",
-      "name": "Afroditi",
-      "card_type": "inspiration",
-      "element": "Fire",
-      "set": 7,
-      "collector": "077",
-      "culture": "Trojan",
-      "traits": [
+        "Deity",
         "Female"
       ],
       "life": null,
@@ -7237,10 +6875,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Teleia Omorfia: If you are a male warrior, get +1 speed and -3 experience."
     },
     {
@@ -7252,6 +6888,9 @@
       "set": 7,
       "collector": "078",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -7336,7 +6975,7 @@
       "raw_source_text": "Ekdikisi: Once each round, after you hit an opponent with this weapon, name an ability on one of the defender's cards. That ability has no effect until the start of your next turn."
     },
     {
-      "id": "s7-079-1",
+      "id": "s7-079",
       "source": "spreadsheet-2007",
       "name": "Aristourgima Tou Ifestou",
       "card_type": "armor",
@@ -7344,351 +6983,14 @@
       "set": 7,
       "collector": "079",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
-        "Head"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Endoksi Panoplia",
-          "type": "reveal",
-          "text": "The next time you take damage this game, reduce the damage to 0."
-        },
-        {
-          "name": "Prokathorismeno",
-          "type": "static",
-          "text": "Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1."
-        }
-      ],
-      "flavor": "Hephaestus forged a set of arms and armor for Aeneas. The centerpiece of the ensemble was a shield depicting glorious episodes from Rome's future history, reflecting Aeneas' great destiny.",
-      "illustrator": "Jason Engle",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Endoksi Panoplia - Reveal: The next time you take damage this game, reduce the damage to 0. \nProkathorismeno: Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1. \n"
-    },
-    {
-      "id": "s7-079-2",
-      "source": "spreadsheet-2007",
-      "name": "Aristourgima Tou Ifestou",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 7,
-      "collector": "079",
-      "culture": "Trojan",
-      "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Endoksi Panoplia",
-          "type": "reveal",
-          "text": "The next time you take damage this game, reduce the damage to 0."
-        },
-        {
-          "name": "Prokathorismeno",
-          "type": "static",
-          "text": "Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1."
-        }
-      ],
-      "flavor": "Hephaestus forged a set of arms and armor for Aeneas. The centerpiece of the ensemble was a shield depicting glorious episodes from Rome's future history, reflecting Aeneas' great destiny.",
-      "illustrator": "Jason Engle",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Endoksi Panoplia - Reveal: The next time you take damage this game, reduce the damage to 0. \nProkathorismeno: Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1. \n"
-    },
-    {
-      "id": "s7-079-3",
-      "source": "spreadsheet-2007",
-      "name": "Aristourgima Tou Ifestou",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 7,
-      "collector": "079",
-      "culture": "Trojan",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Endoksi Panoplia",
-          "type": "reveal",
-          "text": "The next time you take damage this game, reduce the damage to 0."
-        },
-        {
-          "name": "Prokathorismeno",
-          "type": "static",
-          "text": "Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1."
-        }
-      ],
-      "flavor": "Hephaestus forged a set of arms and armor for Aeneas. The centerpiece of the ensemble was a shield depicting glorious episodes from Rome's future history, reflecting Aeneas' great destiny.",
-      "illustrator": "Jason Engle",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Endoksi Panoplia - Reveal: The next time you take damage this game, reduce the damage to 0. \nProkathorismeno: Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1. \n"
-    },
-    {
-      "id": "s7-079-4",
-      "source": "spreadsheet-2007",
-      "name": "Aristourgima Tou Ifestou",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 7,
-      "collector": "079",
-      "culture": "Trojan",
-      "traits": [
-        "Arms"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Endoksi Panoplia",
-          "type": "reveal",
-          "text": "The next time you take damage this game, reduce the damage to 0."
-        },
-        {
-          "name": "Prokathorismeno",
-          "type": "static",
-          "text": "Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1."
-        }
-      ],
-      "flavor": "Hephaestus forged a set of arms and armor for Aeneas. The centerpiece of the ensemble was a shield depicting glorious episodes from Rome's future history, reflecting Aeneas' great destiny.",
-      "illustrator": "Jason Engle",
-      "background": "",
-      "tags": {
-        "reveal": true,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Endoksi Panoplia - Reveal: The next time you take damage this game, reduce the damage to 0. \nProkathorismeno: Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1. \n"
-    },
-    {
-      "id": "s7-079-5",
-      "source": "spreadsheet-2007",
-      "name": "Aristourgima Tou Ifestou",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 7,
-      "collector": "079",
-      "culture": "Trojan",
-      "traits": [
+        "Head",
+        "Torso",
+        "Legs",
+        "Arms",
         "Shield"
       ],
       "life": null,
@@ -7759,10 +7061,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Endoksi Panoplia - Reveal: The next time you take damage this game, reduce the damage to 0. \nProkathorismeno: Once each round, before you are damaged by a rival's attack, make an attack against the attacker at +1. \n"
     },
     {
@@ -7774,6 +7074,9 @@
       "set": 7,
       "collector": "080",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Item"
       ],
@@ -7858,6 +7161,9 @@
       "set": 7,
       "collector": "081",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Male"
       ],
@@ -7947,7 +7253,7 @@
       "raw_source_text": "Enisxisi: While you have a support card in a space in your basic attack grid, your attacks deal +1 damage.\nRaze - Action: Discard a support card in a space in your basic attack grid.\n"
     },
     {
-      "id": "s7-082-1",
+      "id": "s7-082",
       "source": "spreadsheet-2007",
       "name": "Artemis",
       "card_type": "inspiration",
@@ -7955,88 +7261,11 @@
       "set": 7,
       "collector": "082",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
-        "Deity"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": null,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Thea tou Fegariou",
-          "type": "static",
-          "text": "At the start of each round, if the total initiative for all players for this round is 12 or less, you may move one space and then make a basic attack, if possible."
-        }
-      ],
-      "flavor": "Artemis was the virgin moon goddess of the hunt, chastity, childbirth, fertility, healing, and nature. Some have identified her with Hecate, a pre-Olympian, feral goddess.",
-      "illustrator": "beet",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": true,
-        "free_attack": true,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": true,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Thea tou Fegariou: At the start of each round, if the total initiative for all players for this round is 12 or less, you may move one space and then make a basic attack, if possible."
-    },
-    {
-      "id": "s7-082-2",
-      "source": "spreadsheet-2007",
-      "name": "Artemis",
-      "card_type": "inspiration",
-      "element": "Wood",
-      "set": 7,
-      "collector": "082",
-      "culture": "Trojan",
-      "traits": [
+        "Deity",
         "Female"
       ],
       "life": null,
@@ -8102,10 +7331,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Thea tou Fegariou: At the start of each round, if the total initiative for all players for this round is 12 or less, you may move one space and then make a basic attack, if possible."
     },
     {
@@ -8117,6 +7344,9 @@
       "set": 7,
       "collector": "083",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8209,6 +7439,9 @@
       "set": 7,
       "collector": "084",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Head"
       ],
@@ -8288,6 +7521,9 @@
       "set": 7,
       "collector": "085",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Item"
       ],
@@ -8372,6 +7608,9 @@
       "set": 7,
       "collector": "086",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Male"
       ],
@@ -8464,6 +7703,9 @@
       "set": 7,
       "collector": "087",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Code"
       ],
@@ -8543,6 +7785,9 @@
       "set": 7,
       "collector": "088",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8635,6 +7880,9 @@
       "set": 7,
       "collector": "089",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Item"
       ],
@@ -8719,6 +7967,9 @@
       "set": 7,
       "collector": "090",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Deity"
       ],
@@ -8798,6 +8049,9 @@
       "set": 7,
       "collector": "091",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Male"
       ],
@@ -8890,6 +8144,9 @@
       "set": 7,
       "collector": "092",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Female"
       ],
@@ -8974,6 +8231,9 @@
       "set": 7,
       "collector": "093",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -9073,6 +8333,9 @@
       "set": 7,
       "collector": "094",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Torso"
       ],
@@ -9152,6 +8415,9 @@
       "set": 7,
       "collector": "095",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Ability"
       ],
@@ -9236,6 +8502,9 @@
       "set": 7,
       "collector": "096",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Male"
       ],
@@ -9333,6 +8602,9 @@
       "set": 7,
       "collector": "097",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Female"
       ],
@@ -9412,6 +8684,9 @@
       "set": 7,
       "collector": "098",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Sword"
       ],
@@ -9504,6 +8779,9 @@
       "set": 7,
       "collector": "099",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
         "Location"
       ],
@@ -9580,7 +8858,7 @@
       "raw_source_text": "Oxirono - Reveal: Place this card in any unoccupied space in the arena.\nKatareusi: While you are in this card's row or column, set each of your defense rolls that are less than 8 to 8. \n"
     },
     {
-      "id": "s7-100-1",
+      "id": "s7-100",
       "source": "spreadsheet-2007",
       "name": "Cassandra",
       "card_type": "special",
@@ -9588,88 +8866,11 @@
       "set": 7,
       "collector": "100",
       "culture": "Trojan",
+      "cultures": [
+        "Trojan"
+      ],
       "traits": [
-        "Female"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Katara tis Dispistias",
-          "type": "static",
-          "text": "Before you are attacked, the attacker may choose to reduce all bonuses to their attack roll to 0. If they do not, and the attack hits, deal 1 damage to that opponent."
-        }
-      ],
-      "flavor": "Apollo fell in love with Cassandra, and granted her the gift of prophecy. When she did not return his feelings, he flew into a rage and cursed her, so that nobody would believe her visions.",
-      "illustrator": "Raven Mimura",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": true,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Katara tis Dispistias: Before you are attacked, the attacker may choose to reduce all bonuses to their attack roll to 0. If they do not, and the attack hits, deal 1 damage to that opponent. "
-    },
-    {
-      "id": "s7-100-2",
-      "source": "spreadsheet-2007",
-      "name": "Cassandra",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 7,
-      "collector": "100",
-      "culture": "Trojan",
-      "traits": [
+        "Female",
         "Mystic"
       ],
       "life": null,
@@ -9735,10 +8936,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Katara tis Dispistias: Before you are attacked, the attacker may choose to reduce all bonuses to their attack roll to 0. If they do not, and the attack hits, deal 1 damage to that opponent. "
     }
   ]

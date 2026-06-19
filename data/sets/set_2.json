@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": 2,
-  "card_count": 108,
-  "review_count": 17,
+  "card_count": 100,
+  "review_count": 3,
   "cards": [
     {
       "id": "s2-001",
@@ -15,6 +15,9 @@
       "set": 2,
       "collector": "001",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Male"
       ],
@@ -107,6 +110,9 @@
       "set": 2,
       "collector": "002",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Female"
       ],
@@ -186,6 +192,9 @@
       "set": 2,
       "collector": "003",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Sword"
       ],
@@ -278,6 +287,9 @@
       "set": 2,
       "collector": "004",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Torso"
       ],
@@ -357,6 +369,9 @@
       "set": 2,
       "collector": "005",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Shield"
       ],
@@ -436,6 +451,9 @@
       "set": 2,
       "collector": "006",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Female"
       ],
@@ -520,7 +538,7 @@
       "raw_source_text": "Swift Swidnes: While you have a face up cavalry card, your attack rolls gain +1 and your support cards gain +2 initiative."
     },
     {
-      "id": "s2-007-1",
+      "id": "s2-007",
       "source": "spreadsheet-2007",
       "name": "Rhiannon",
       "card_type": "inspiration",
@@ -528,88 +546,11 @@
       "set": 2,
       "collector": "007",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
-        "Deity"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 4,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Wintsang",
-          "type": "static",
-          "text": "Each time a cavalry card is revealed (including this one), you gain one life."
-        }
-      ],
-      "flavor": "Goddess of birds and horses, Rhiannon was unjustly accused of killing her newborn son. She silently accepted her punishment to carry guests from the gate into the castle on her back. When the fiend that had kidnapped her son was killed and her son returned, she was returned her place as queen.",
-      "illustrator": "RK Post",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": true,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": true,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Wintsang: Each time a cavalry card is revealed (including this one), you gain one life."
-    },
-    {
-      "id": "s2-007-2",
-      "source": "spreadsheet-2007",
-      "name": "Rhiannon",
-      "card_type": "inspiration",
-      "element": "Wind",
-      "set": 2,
-      "collector": "007",
-      "culture": "Briton",
-      "traits": [
+        "Deity",
         "Cavalry"
       ],
       "life": null,
@@ -675,10 +616,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Wintsang: Each time a cavalry card is revealed (including this one), you gain one life."
     },
     {
@@ -690,6 +629,9 @@
       "set": 2,
       "collector": "008",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -782,6 +724,9 @@
       "set": 2,
       "collector": "009",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Torso"
       ],
@@ -861,6 +806,9 @@
       "set": 2,
       "collector": "010",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -940,6 +888,9 @@
       "set": 2,
       "collector": "011",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Male"
       ],
@@ -1032,6 +983,9 @@
       "set": 2,
       "collector": "012",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Female"
       ],
@@ -1111,6 +1065,9 @@
       "set": 2,
       "collector": "013",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1203,6 +1160,9 @@
       "set": 2,
       "collector": "014",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Torso"
       ],
@@ -1282,6 +1242,9 @@
       "set": 2,
       "collector": "015",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Male"
       ],
@@ -1353,7 +1316,7 @@
       "raw_source_text": "Aector of de Drakon: Before rolling, discard this card and another face up, non-weapon support cards. If you do, that roll gains +3. "
     },
     {
-      "id": "s2-016-1",
+      "id": "s2-016",
       "source": "spreadsheet-2007",
       "name": "Richard the Lionheart",
       "card_type": "warrior",
@@ -1361,101 +1324,11 @@
       "set": 2,
       "collector": "016",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
-        "Male"
-      ],
-      "life": 8,
-      "speed": 3,
-      "experience": 5,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 17,
-      "grid_raw": "+0 +1 ▲ +0",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": null,
-        "2B": null,
-        "2C": "+0",
-        "3A": "+1",
-        "3B": "marker",
-        "3C": "+0",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Fixe Strican",
-          "type": "static",
-          "text": "After you miss an attack, your next attack roll gains +2."
-        }
-      ],
-      "flavor": "Also know as \"The Absent King,\" during Richard the Lionheart's ten year reign as the King of England, he spent less than six months in England. The rest of his reign was spent fighting in France, Cyprus and in the Third Crusade against the Sarcacen leader Saladin..",
-      "illustrator": "Greg Staples",
-      "background": "Warrior, crusader, king – Richard the Lionheart spent much of his life on the battlefield. Rarely tarrying for any length of time in his own kingdom, Richard’s few stays in England were for the sole purposes of recruiting and supplying new armies. Unquestionably brave on the battlefield, Richard acquired a profound respect for his opponents during the Crusades.\n\nArmored in a full mail hauberk and wielding the powerful greatsword, Richard is an implacable foe in the Anachronism™ arena. Guided by the tenets of chivalry, all who face him will come to know why he is called “The Lionheart”.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Fixe Strican: After you miss an attack, your next attack roll gains +2."
-    },
-    {
-      "id": "s2-016-2",
-      "source": "spreadsheet-2007",
-      "name": "Richard the Lionheart",
-      "card_type": "warrior",
-      "element": "Earth",
-      "set": 2,
-      "collector": "016",
-      "culture": "Briton",
-      "traits": [
+        "Male",
         "Cavalry"
       ],
       "life": 8,
@@ -1534,10 +1407,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Fixe Strican: After you miss an attack, your next attack roll gains +2."
     },
     {
@@ -1549,6 +1420,9 @@
       "set": 2,
       "collector": "017",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Female"
       ],
@@ -1628,6 +1502,9 @@
       "set": 2,
       "collector": "018",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1712,7 +1589,7 @@
       "raw_source_text": "Ridon dem Dune: This weapon deals +1 damage while you have a face up cavalry card."
     },
     {
-      "id": "s2-019-1",
+      "id": "s2-019",
       "source": "spreadsheet-2007",
       "name": "Full Mail Hauberk",
       "card_type": "armor",
@@ -1720,250 +1597,13 @@
       "set": 2,
       "collector": "019",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
-        "Head"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Mast Laestan",
-          "type": "static",
-          "text": "You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
-        }
-      ],
-      "flavor": "Developed to withstand blows from a charging knight, full mail was cumbersome and unweildy, but effective.",
-      "illustrator": "Greg Staples",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Mast Laestan: You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
-    },
-    {
-      "id": "s2-019-2",
-      "source": "spreadsheet-2007",
-      "name": "Full Mail Hauberk",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 2,
-      "collector": "019",
-      "culture": "Briton",
-      "traits": [
-        "Torso"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Mast Laestan",
-          "type": "static",
-          "text": "You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
-        }
-      ],
-      "flavor": "Developed to withstand blows from a charging knight, full mail was cumbersome and unweildy, but effective.",
-      "illustrator": "Greg Staples",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Mast Laestan: You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
-    },
-    {
-      "id": "s2-019-3",
-      "source": "spreadsheet-2007",
-      "name": "Full Mail Hauberk",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 2,
-      "collector": "019",
-      "culture": "Briton",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 2,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Mast Laestan",
-          "type": "static",
-          "text": "You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
-        }
-      ],
-      "flavor": "Developed to withstand blows from a charging knight, full mail was cumbersome and unweildy, but effective.",
-      "illustrator": "Greg Staples",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": true,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Mast Laestan: You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
-    },
-    {
-      "id": "s2-019-4",
-      "source": "spreadsheet-2007",
-      "name": "Full Mail Hauberk",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 2,
-      "collector": "019",
-      "culture": "Briton",
-      "traits": [
+        "Head",
+        "Torso",
+        "Legs",
         "Arms"
       ],
       "life": null,
@@ -2029,10 +1669,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Mast Laestan: You suffer 1 less damage from all attacks (except ranged attacks), to a minimum of 1 damage."
     },
     {
@@ -2044,6 +1682,9 @@
       "set": 2,
       "collector": "020",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Ideal"
       ],
@@ -2123,6 +1764,9 @@
       "set": 2,
       "collector": "021",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Male"
       ],
@@ -2215,6 +1859,9 @@
       "set": 2,
       "collector": "022",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Female"
       ],
@@ -2299,6 +1946,9 @@
       "set": 2,
       "collector": "023",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -2393,6 +2043,9 @@
       "set": 2,
       "collector": "024",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Torso"
       ],
@@ -2472,6 +2125,9 @@
       "set": 2,
       "collector": "025",
       "culture": "Briton",
+      "cultures": [
+        "Briton"
+      ],
       "traits": [
         "Ally"
       ],
@@ -2551,6 +2207,9 @@
       "set": 2,
       "collector": "026",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -2643,6 +2302,9 @@
       "set": 2,
       "collector": "027",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2722,6 +2384,9 @@
       "set": 2,
       "collector": "028",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -2814,6 +2479,9 @@
       "set": 2,
       "collector": "029",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -2893,6 +2561,9 @@
       "set": 2,
       "collector": "030",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Ally"
       ],
@@ -2964,7 +2635,7 @@
       "raw_source_text": "Bai ba ziong di - Reveal: Choose attack roll, defense roll, or speed. Your opponent loses all bonuses of that choosen type from card abilities for this round."
     },
     {
-      "id": "s2-031-1",
+      "id": "s2-031",
       "source": "spreadsheet-2007",
       "name": "Hua Mulan",
       "card_type": "warrior",
@@ -2972,106 +2643,11 @@
       "set": 2,
       "collector": "031",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
-        "Male"
-      ],
-      "life": 7,
-      "speed": 3,
-      "experience": 4,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 15,
-      "grid_raw": "+0 ▲ +1 +0",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": null,
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": "+0",
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Jing tong qiang",
-          "type": "static",
-          "text": "While you have a polearm, your attack rolls gain +1."
-        },
-        {
-          "name": "Su Di",
-          "type": "static",
-          "text": "At the start of the game, if there is an opposing Mongol warrior, gain 2 life and +6 experience."
-        }
-      ],
-      "flavor": "Famous for disguising herself as a man, Mulan distinguished herself as a soldier and was summoned to court by the emperor. Though he wished to appoint her to high office as a reward, Mulan asked only for a horse to return home.",
-      "illustrator": "James Ryman",
-      "background": "Hua Mulan came to know the values of courage and filial loyalty from an early age. Refusing to let her aged father or young brother be drafted into the Chinese army, Mulan disguised herself as a man and enlisted in their place. Mulan’s prowess and bravery were unmatched. She led armies to victory and earned a commendation from the Emperor himself. Only after her military career ended was it learned that this great warrior was a woman.\n\nA master of the qiang spear, Mulan is a deadly adversary of the Mongol hordes. Inspired to righteous retribution by the powerful Zhu Rong, Mulan is a match for any opponent, man or woman, in the Anachronism™ arena.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": true,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Jing tong qiang: While you have a polearm, your attack rolls gain +1.\nSu Di: At the start of the game, if there is an opposing Mongol warrior, gain 2 life and +6 experience."
-    },
-    {
-      "id": "s2-031-2",
-      "source": "spreadsheet-2007",
-      "name": "Hua Mulan",
-      "card_type": "warrior",
-      "element": "Water",
-      "set": 2,
-      "collector": "031",
-      "culture": "Chinese",
-      "traits": [
+        "Male",
         "Female"
       ],
       "life": 7,
@@ -3155,10 +2731,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Jing tong qiang: While you have a polearm, your attack rolls gain +1.\nSu Di: At the start of the game, if there is an opposing Mongol warrior, gain 2 life and +6 experience."
     },
     {
@@ -3170,6 +2744,9 @@
       "set": 2,
       "collector": "032",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3249,6 +2826,9 @@
       "set": 2,
       "collector": "033",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -3341,6 +2921,9 @@
       "set": 2,
       "collector": "034",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Head"
       ],
@@ -3420,6 +3003,9 @@
       "set": 2,
       "collector": "035",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Item"
       ],
@@ -3499,6 +3085,9 @@
       "set": 2,
       "collector": "036",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -3591,6 +3180,9 @@
       "set": 2,
       "collector": "037",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3670,6 +3262,9 @@
       "set": 2,
       "collector": "038",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Axe"
       ],
@@ -3762,6 +3357,9 @@
       "set": 2,
       "collector": "039",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -3841,6 +3439,9 @@
       "set": 2,
       "collector": "040",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Item"
       ],
@@ -3920,6 +3521,9 @@
       "set": 2,
       "collector": "041",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -4012,6 +3616,9 @@
       "set": 2,
       "collector": "042",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Deity"
       ],
@@ -4091,6 +3698,9 @@
       "set": 2,
       "collector": "043",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -4183,6 +3793,9 @@
       "set": 2,
       "collector": "044",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -4262,6 +3875,9 @@
       "set": 2,
       "collector": "045",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Scrolls"
       ],
@@ -4341,6 +3957,9 @@
       "set": 2,
       "collector": "046",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Male"
       ],
@@ -4433,6 +4052,9 @@
       "set": 2,
       "collector": "047",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Tattoo"
       ],
@@ -4512,6 +4134,9 @@
       "set": 2,
       "collector": "048",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Sword"
       ],
@@ -4604,6 +4229,9 @@
       "set": 2,
       "collector": "049",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Torso"
       ],
@@ -4683,6 +4311,9 @@
       "set": 2,
       "collector": "050",
       "culture": "Chinese",
+      "cultures": [
+        "Chinese"
+      ],
       "traits": [
         "Ability"
       ],
@@ -4762,6 +4393,9 @@
       "set": 2,
       "collector": "051",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Female"
       ],
@@ -4854,6 +4488,9 @@
       "set": 2,
       "collector": "052",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -4938,6 +4575,9 @@
       "set": 2,
       "collector": "053",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Knife"
       ],
@@ -5030,6 +4670,9 @@
       "set": 2,
       "collector": "054",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -5109,6 +4752,9 @@
       "set": 2,
       "collector": "055",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Item"
       ],
@@ -5188,6 +4834,9 @@
       "set": 2,
       "collector": "056",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Male"
       ],
@@ -5280,6 +4929,9 @@
       "set": 2,
       "collector": "057",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -5359,6 +5011,9 @@
       "set": 2,
       "collector": "058",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Sword"
       ],
@@ -5451,6 +5106,9 @@
       "set": 2,
       "collector": "059",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Shield"
       ],
@@ -5535,6 +5193,9 @@
       "set": 2,
       "collector": "060",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Item"
       ],
@@ -5614,6 +5275,9 @@
       "set": 2,
       "collector": "061",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Male"
       ],
@@ -5706,6 +5370,9 @@
       "set": 2,
       "collector": "062",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -5785,6 +5452,9 @@
       "set": 2,
       "collector": "063",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Axe"
       ],
@@ -5877,6 +5547,9 @@
       "set": 2,
       "collector": "064",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -5961,6 +5634,9 @@
       "set": 2,
       "collector": "065",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Cavalry"
       ],
@@ -6040,6 +5716,9 @@
       "set": 2,
       "collector": "066",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Male"
       ],
@@ -6132,6 +5811,9 @@
       "set": 2,
       "collector": "067",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -6211,6 +5893,9 @@
       "set": 2,
       "collector": "068",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -6310,6 +5995,9 @@
       "set": 2,
       "collector": "069",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Head"
       ],
@@ -6389,6 +6077,9 @@
       "set": 2,
       "collector": "070",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Tome"
       ],
@@ -6473,6 +6164,9 @@
       "set": 2,
       "collector": "071",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Male"
       ],
@@ -6565,6 +6259,9 @@
       "set": 2,
       "collector": "072",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Deity"
       ],
@@ -6641,7 +6338,7 @@
       "raw_source_text": "M' 'n - Reveal: Your next attack deals +1 damage.\n' r hnn: Your attack rolls gain +2 against warriors without a face-up inspiration."
     },
     {
-      "id": "s2-073-1",
+      "id": "s2-073",
       "source": "spreadsheet-2007",
       "name": "Nsywt",
       "card_type": "weapon",
@@ -6649,101 +6346,11 @@
       "set": 2,
       "collector": "073",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
-        "Polearm"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": 1,
-      "initiative": 1,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "+1 +1 +1 +1 ▲",
-      "grid": {
-        "1A": null,
-        "1B": "+1",
-        "1C": "+1",
-        "2A": "+1",
-        "2B": null,
-        "2C": "+1",
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Qm'",
-          "type": "static",
-          "text": "When you are hit by a non-adjacent opponent, deal 1 damage to the attacker. You may use another weapon."
-        }
-      ],
-      "flavor": "One of the earliest types of weapon invented by man, the nsywt, a javelin, was little more than a sharpened stick in its earliest incarnation.",
-      "illustrator": "Thomas M. Baxa",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": true,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Qm': When you are hit by a non-adjacent opponent, deal 1 damage to the attacker.\nYou may use another weapon."
-    },
-    {
-      "id": "s2-073-2",
-      "source": "spreadsheet-2007",
-      "name": "Nsywt",
-      "card_type": "weapon",
-      "element": "unknown",
-      "set": 2,
-      "collector": "073",
-      "culture": "Egyptian",
-      "traits": [
+        "Polearm",
         "Ranged"
       ],
       "life": null,
@@ -6822,10 +6429,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Qm': When you are hit by a non-adjacent opponent, deal 1 damage to the attacker.\nYou may use another weapon."
     },
     {
@@ -6837,6 +6442,9 @@
       "set": 2,
       "collector": "074",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Torso"
       ],
@@ -6921,6 +6529,9 @@
       "set": 2,
       "collector": "075",
       "culture": "Egyptian",
+      "cultures": [
+        "Egyptian"
+      ],
       "traits": [
         "Item"
       ],
@@ -7000,6 +6611,9 @@
       "set": 2,
       "collector": "076",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Male"
       ],
@@ -7092,6 +6706,9 @@
       "set": 2,
       "collector": "077",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Deity"
       ],
@@ -7171,6 +6788,9 @@
       "set": 2,
       "collector": "078",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Sword"
       ],
@@ -7263,6 +6883,9 @@
       "set": 2,
       "collector": "079",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Head"
       ],
@@ -7342,6 +6965,9 @@
       "set": 2,
       "collector": "080",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Ability"
       ],
@@ -7413,7 +7039,7 @@
       "raw_source_text": "Emiyel: When an opponent's attacks you and misses, they take 1 damage if their experience is less than 2. Otherwise, they get experience -2 for the rest of the game."
     },
     {
-      "id": "s2-081-1",
+      "id": "s2-081",
       "source": "spreadsheet-2007",
       "name": "Gengis Khan",
       "card_type": "warrior",
@@ -7421,101 +7047,11 @@
       "set": 2,
       "collector": "081",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
-        "Male"
-      ],
-      "life": 7,
-      "speed": 3,
-      "experience": 6,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 17,
-      "grid_raw": "+2 +2 ▲",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+2",
-        "2B": "+2",
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": null,
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Erkesiyeku ary-a",
-          "type": "static",
-          "text": "Your attack rolls are +1 while attacking an opponent without a cavalry card."
-        }
-      ],
-      "flavor": "Genghis Khan, the inspired leader of a tribe of steppe nomads, led his people to establish the Mongol Empire, the largest land empire in the history of mankind.",
-      "illustrator": "Raven Mimura",
-      "background": "N/A Starter Warrior",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": true,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Erkesiyeku ary-a: Your attack rolls are +1 while attacking an opponent without a cavalry card."
-    },
-    {
-      "id": "s2-081-2",
-      "source": "spreadsheet-2007",
-      "name": "Gengis Khan",
-      "card_type": "warrior",
-      "element": "Metal",
-      "set": 2,
-      "collector": "081",
-      "culture": "Mongol",
-      "traits": [
+        "Male",
         "Cavalry"
       ],
       "life": 7,
@@ -7594,10 +7130,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Erkesiyeku ary-a: Your attack rolls are +1 while attacking an opponent without a cavalry card."
     },
     {
@@ -7609,6 +7143,9 @@
       "set": 2,
       "collector": "082",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Deity"
       ],
@@ -7688,6 +7225,9 @@
       "set": 2,
       "collector": "083",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Axe"
       ],
@@ -7780,6 +7320,9 @@
       "set": 2,
       "collector": "084",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Torso"
       ],
@@ -7859,6 +7402,9 @@
       "set": 2,
       "collector": "085",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -7938,6 +7484,9 @@
       "set": 2,
       "collector": "086",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Female"
       ],
@@ -8030,6 +7579,9 @@
       "set": 2,
       "collector": "087",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Deity"
       ],
@@ -8109,6 +7661,9 @@
       "set": 2,
       "collector": "088",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Knife"
       ],
@@ -8206,6 +7761,9 @@
       "set": 2,
       "collector": "089",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Legs"
       ],
@@ -8285,6 +7843,9 @@
       "set": 2,
       "collector": "090",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Item"
       ],
@@ -8364,6 +7925,9 @@
       "set": 2,
       "collector": "091",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Male"
       ],
@@ -8456,6 +8020,9 @@
       "set": 2,
       "collector": "092",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Item"
       ],
@@ -8535,6 +8102,9 @@
       "set": 2,
       "collector": "093",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8627,6 +8197,9 @@
       "set": 2,
       "collector": "094",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Torso"
       ],
@@ -8706,6 +8279,9 @@
       "set": 2,
       "collector": "095",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -8785,6 +8361,9 @@
       "set": 2,
       "collector": "096",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Male"
       ],
@@ -8877,6 +8456,9 @@
       "set": 2,
       "collector": "097",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Dynasty"
       ],
@@ -8956,6 +8538,9 @@
       "set": 2,
       "collector": "098",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -9050,6 +8635,9 @@
       "set": 2,
       "collector": "099",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Torso"
       ],
@@ -9134,6 +8722,9 @@
       "set": 2,
       "collector": "100",
       "culture": "Mongol",
+      "cultures": [
+        "Mongol"
+      ],
       "traits": [
         "Cavalry"
       ],

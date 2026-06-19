@@ -56,7 +56,13 @@
     "culture": {
       "type": "string",
       "default": "",
-      "description": "Culture. Default \"\" + flag."
+      "description": "Primary culture (first of `cultures`), kept for backward compat. The authoritative list is `cultures`."
+    },
+    "cultures": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "All cultures for this card. Usually one; pirate-set cards carry two (e.g. [\"Pirate\",\"Welsh\"]) merged from the spreadsheet's multi-row encoding."
     },
     "traits": {
       "type": "array",

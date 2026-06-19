@@ -8,9 +8,12 @@
   compiled by the community and the file was last saved in 2017. This is now the **source of
   truth** for the card database: it is already typed and cleaned, carries the attack-grid
   geometry (cols 60–71), and adds a mechanical tag taxonomy and warrior backgrounds.
-  - One row → one card. The sheet contains a number of **literal duplicate rows** (the same card
-    listed 2–5×); these are preserved (nothing filtered) and disambiguated with `-N` id suffixes
-    and a `possible_duplicate` flag rather than dropped.
+  - The sheet is **denormalized**: a card's multi-valued attributes are exploded into one row per
+    value (e.g. *Full Mail Hauberk* spans 4 rows for traits Head/Torso/Legs/Arms; pirate cards
+    repeat per culture, Pirate + Welsh). The 868 rows therefore represent **761 distinct cards**.
+    The builder **merges** each `(set, collector, name)` group into one card, unioning `traits` and
+    `cultures`; where a single-valued field (tags/hands/flavor/name) genuinely differs it picks a
+    canonical value (max hands, longest text, OR'd tags) and flags `merge_conflict` for review.
   - **Ranged weapons** print the warrior marker at cell **4B** (back row), not 3B; these are kept
     verbatim and flagged `grid_marker_anomaly`.
 

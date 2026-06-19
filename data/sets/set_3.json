@@ -3,8 +3,8 @@
   "generated_at": "2026-06-19T00:00:00Z",
   "source": "spreadsheet-2007",
   "set": 3,
-  "card_count": 106,
-  "review_count": 11,
+  "card_count": 100,
+  "review_count": 3,
   "cards": [
     {
       "id": "s3-001",
@@ -15,6 +15,9 @@
       "set": 3,
       "collector": "001",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Male"
       ],
@@ -107,6 +110,9 @@
       "set": 3,
       "collector": "002",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Male"
       ],
@@ -186,6 +192,9 @@
       "set": 3,
       "collector": "003",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Sword"
       ],
@@ -278,6 +287,9 @@
       "set": 3,
       "collector": "004",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Shield"
       ],
@@ -357,6 +369,9 @@
       "set": 3,
       "collector": "005",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Head"
       ],
@@ -436,6 +451,9 @@
       "set": 3,
       "collector": "006",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Male"
       ],
@@ -528,6 +546,9 @@
       "set": 3,
       "collector": "007",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Deity"
       ],
@@ -607,6 +628,9 @@
       "set": 3,
       "collector": "008",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Sword"
       ],
@@ -691,7 +715,7 @@
       "raw_source_text": "Acier Sanctifié: Your defense rolls gain +1 for each inspiration the attacker and defender have in play."
     },
     {
-      "id": "s3-009-1",
+      "id": "s3-009",
       "source": "spreadsheet-2007",
       "name": "Broigne d'Écailles",
       "card_type": "armor",
@@ -699,169 +723,12 @@
       "set": 3,
       "collector": "009",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
-        "Arms"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Posture Défensive",
-          "type": "static",
-          "text": "Once per turn, after you make a defense roll, you may have the roll gain +3. If you do, you get -1 speed for your next turn."
-        }
-      ],
-      "flavor": "Only once in the history of armed combat has an army of infantry without bows and arrows or firearms withstood armored cavalry. This honor goes to the hauberk-armored men of Charles Martel and his brilliant defensive tactics.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": true,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Posture Défensive: Once per turn, after you make a defense roll, you may have the roll gain +3. If you do, you get -1 speed for your next turn."
-    },
-    {
-      "id": "s3-009-2",
-      "source": "spreadsheet-2007",
-      "name": "Broigne d'Écailles",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 3,
-      "collector": "009",
-      "culture": "French",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 5,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Posture Défensive",
-          "type": "static",
-          "text": "Once per turn, after you make a defense roll, you may have the roll gain +3. If you do, you get -1 speed for your next turn."
-        }
-      ],
-      "flavor": "Only once in the history of armed combat has an army of infantry without bows and arrows or firearms withstood armored cavalry. This honor goes to the hauberk-armored men of Charles Martel and his brilliant defensive tactics.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": true,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": true,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Posture Défensive: Once per turn, after you make a defense roll, you may have the roll gain +3. If you do, you get -1 speed for your next turn."
-    },
-    {
-      "id": "s3-009-3",
-      "source": "spreadsheet-2007",
-      "name": "Broigne d'Écailles",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 3,
-      "collector": "009",
-      "culture": "French",
-      "traits": [
+        "Arms",
+        "Legs",
         "Torso"
       ],
       "life": null,
@@ -927,14 +794,12 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Posture Défensive: Once per turn, after you make a defense roll, you may have the roll gain +3. If you do, you get -1 speed for your next turn."
     },
     {
-      "id": "s3-010-1",
+      "id": "s3-010",
       "source": "spreadsheet-2007",
       "name": "Marteau de Cavalerie",
       "card_type": "special",
@@ -942,88 +807,11 @@
       "set": 3,
       "collector": "010",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
-        "Bludgeon"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 1,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Coup Fracassant",
-          "type": "static",
-          "text": "At the start of each round, roll two dice. If the total is less than an adjacent opponent's experience, deal 1 damage to that warrior and their defense rolls get -1 this round."
-        }
-      ],
-      "flavor": "After witnessing the fearsome effectiveness of the Saracen cavalry, Charles Martel expanded on the traditional tactics of the time, and developed new and inventive ways to demonstrate his superiority on the battlefield.",
-      "illustrator": "Michael Koch",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": true,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": true,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Coup Fracassant: At the start of each round, roll two dice. If the total is less than an adjacent opponent's experience, deal 1 damage to that warrior and their defense rolls get -1 this round."
-    },
-    {
-      "id": "s3-010-2",
-      "source": "spreadsheet-2007",
-      "name": "Marteau de Cavalerie",
-      "card_type": "special",
-      "element": "unknown",
-      "set": 3,
-      "collector": "010",
-      "culture": "French",
-      "traits": [
+        "Bludgeon",
         "Item"
       ],
       "life": null,
@@ -1046,52 +834,52 @@
       "illustrator": "Michael Koch",
       "background": "",
       "tags": {
-        "reveal": false,
         "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": true,
         "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": true,
         "attack_bonus": false,
         "attack_penalty": false,
-        "damage_reduction": false,
+        "card_recycle": false,
+        "cavalry_dependant": false,
+        "conditional": true,
+        "continuous": false,
+        "create_negate_critical": false,
+        "creates_doubles": false,
+        "culture_dependant": false,
         "damage_bonus": false,
+        "damage_reduction": false,
+        "defense_bonus": false,
+        "defense_penalty": true,
+        "dice_manipulation": false,
+        "discards": false,
+        "element_dependant": false,
         "experience_bonus": false,
+        "experience_dependant": true,
         "experience_penalty": false,
-        "experience_dependant": false,
+        "free_attack": false,
+        "free_damage": true,
+        "free_move": false,
+        "initiative_bonus": false,
+        "initiative_dependant": false,
+        "initiative_penalty": false,
+        "life_dependant": false,
+        "life_gain": false,
+        "multiple_armors": false,
+        "multiple_inspirations": false,
+        "multiple_specials": false,
+        "multiple_weapon_attacks": false,
+        "multiple_weapons": false,
+        "plays_to_arena": false,
+        "prevents_discards": false,
+        "reveal": false,
+        "rivalry": false,
         "speed_bonus": false,
         "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
         "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
+        "usable_from_discard": false
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "possible_duplicate"
+        "merge_conflict"
       ],
       "raw_source_text": "Coup Fracassant: At the start of each round, roll two dice. If the total is less than an adjacent opponent's experience, deal 1 damage to that warrior and their defense rolls get -1 this round."
     },
@@ -1104,6 +892,9 @@
       "set": 3,
       "collector": "011",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Male"
       ],
@@ -1196,6 +987,9 @@
       "set": 3,
       "collector": "012",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Code"
       ],
@@ -1275,6 +1069,9 @@
       "set": 3,
       "collector": "013",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1367,6 +1164,9 @@
       "set": 3,
       "collector": "014",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Torso"
       ],
@@ -1446,6 +1246,9 @@
       "set": 3,
       "collector": "015",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Item"
       ],
@@ -1525,6 +1328,9 @@
       "set": 3,
       "collector": "016",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Female"
       ],
@@ -1617,6 +1423,9 @@
       "set": 3,
       "collector": "017",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Ally"
       ],
@@ -1696,6 +1505,9 @@
       "set": 3,
       "collector": "018",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Sword"
       ],
@@ -1780,7 +1592,7 @@
       "raw_source_text": "Ardente Vengeance: After you are hit by an adjacent opponent's weapon, if you are a Fire warrior, you may immediately make an attack with this weapon at +0. This attack deals +1 damage."
     },
     {
-      "id": "s3-019-1",
+      "id": "s3-019",
       "source": "spreadsheet-2007",
       "name": "Blanc Harnois",
       "card_type": "armor",
@@ -1788,169 +1600,12 @@
       "set": 3,
       "collector": "019",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
-        "Arms"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Éclat Immaculé",
-          "type": "static",
-          "text": "Your attacks deal +1 damage to a player who has used a Reveal ability this game."
-        }
-      ],
-      "flavor": "After liberating Orleans, Jargeau, Meung-sur-Loire, Beaugency, and Patay from the English, Joan of Arc marched in her brilliant white armor to Rheims to see Charles crowned king.",
-      "illustrator": "Michael Komarck",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Éclat Immaculé: Your attacks deal +1 damage to a player who has used a Reveal ability this game."
-    },
-    {
-      "id": "s3-019-2",
-      "source": "spreadsheet-2007",
-      "name": "Blanc Harnois",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 3,
-      "collector": "019",
-      "culture": "French",
-      "traits": [
-        "Legs"
-      ],
-      "life": null,
-      "speed": null,
-      "experience": null,
-      "damage": null,
-      "initiative": 1,
-      "hands": 0,
-      "salary": null,
-      "grid_raw": "",
-      "grid": null,
-      "abilities": [
-        {
-          "name": "Éclat Immaculé",
-          "type": "static",
-          "text": "Your attacks deal +1 damage to a player who has used a Reveal ability this game."
-        }
-      ],
-      "flavor": "After liberating Orleans, Jargeau, Meung-sur-Loire, Beaugency, and Patay from the English, Joan of Arc marched in her brilliant white armor to Rheims to see Charles crowned king.",
-      "illustrator": "Michael Komarck",
-      "background": "",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": false,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": true,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": true,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Éclat Immaculé: Your attacks deal +1 damage to a player who has used a Reveal ability this game."
-    },
-    {
-      "id": "s3-019-3",
-      "source": "spreadsheet-2007",
-      "name": "Blanc Harnois",
-      "card_type": "armor",
-      "element": "unknown",
-      "set": 3,
-      "collector": "019",
-      "culture": "French",
-      "traits": [
+        "Arms",
+        "Legs",
         "Torso"
       ],
       "life": null,
@@ -1973,52 +1628,52 @@
       "illustrator": "Michael Komarck",
       "background": "",
       "tags": {
-        "reveal": false,
         "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
         "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
         "attack_bonus": false,
         "attack_penalty": false,
-        "damage_reduction": false,
+        "card_recycle": false,
+        "cavalry_dependant": false,
+        "conditional": true,
+        "continuous": false,
+        "create_negate_critical": false,
+        "creates_doubles": false,
+        "culture_dependant": false,
         "damage_bonus": true,
+        "damage_reduction": false,
+        "defense_bonus": false,
+        "defense_penalty": false,
+        "dice_manipulation": false,
+        "discards": false,
+        "element_dependant": false,
         "experience_bonus": false,
-        "experience_penalty": false,
         "experience_dependant": false,
+        "experience_penalty": false,
+        "free_attack": false,
+        "free_damage": false,
+        "free_move": false,
+        "initiative_bonus": false,
+        "initiative_dependant": false,
+        "initiative_penalty": false,
+        "life_dependant": false,
+        "life_gain": false,
+        "multiple_armors": false,
+        "multiple_inspirations": false,
+        "multiple_specials": false,
+        "multiple_weapon_attacks": true,
+        "multiple_weapons": false,
+        "plays_to_arena": false,
+        "prevents_discards": false,
+        "reveal": false,
+        "rivalry": false,
         "speed_bonus": false,
         "speed_penalty": false,
-        "continuous": false,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
         "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
+        "usable_from_discard": false
       },
       "parse_confidence": "partial",
       "needs_review": [
-        "possible_duplicate"
+        "merge_conflict"
       ],
       "raw_source_text": "Éclat Immaculé: Your attacks deal +1 damage to a player who has used a Reveal ability this game."
     },
@@ -2031,6 +1686,9 @@
       "set": 3,
       "collector": "020",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Item"
       ],
@@ -2110,6 +1768,9 @@
       "set": 3,
       "collector": "021",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Male"
       ],
@@ -2202,6 +1863,9 @@
       "set": 3,
       "collector": "022",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2286,6 +1950,9 @@
       "set": 3,
       "collector": "023",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Sword"
       ],
@@ -2378,6 +2045,9 @@
       "set": 3,
       "collector": "024",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Shield"
       ],
@@ -2457,6 +2127,9 @@
       "set": 3,
       "collector": "025",
       "culture": "French",
+      "cultures": [
+        "French"
+      ],
       "traits": [
         "Item"
       ],
@@ -2536,6 +2209,9 @@
       "set": 3,
       "collector": "026",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Male"
       ],
@@ -2628,6 +2304,9 @@
       "set": 3,
       "collector": "027",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Deity"
       ],
@@ -2707,6 +2386,9 @@
       "set": 3,
       "collector": "028",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -2799,6 +2481,9 @@
       "set": 3,
       "collector": "029",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Torso"
       ],
@@ -2878,6 +2563,9 @@
       "set": 3,
       "collector": "030",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Location"
       ],
@@ -2957,6 +2645,9 @@
       "set": 3,
       "collector": "031",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Male"
       ],
@@ -3049,6 +2740,9 @@
       "set": 3,
       "collector": "032",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3128,6 +2822,9 @@
       "set": 3,
       "collector": "033",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -3220,6 +2917,9 @@
       "set": 3,
       "collector": "034",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Torso"
       ],
@@ -3299,6 +2999,9 @@
       "set": 3,
       "collector": "035",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Location"
       ],
@@ -3378,6 +3081,9 @@
       "set": 3,
       "collector": "036",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Female"
       ],
@@ -3470,6 +3176,9 @@
       "set": 3,
       "collector": "037",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Deity"
       ],
@@ -3549,6 +3258,9 @@
       "set": 3,
       "collector": "038",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Knife"
       ],
@@ -3641,6 +3353,9 @@
       "set": 3,
       "collector": "039",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Torso"
       ],
@@ -3720,6 +3435,9 @@
       "set": 3,
       "collector": "040",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Ally"
       ],
@@ -3799,6 +3517,9 @@
       "set": 3,
       "collector": "041",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Male"
       ],
@@ -3891,6 +3612,9 @@
       "set": 3,
       "collector": "042",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Female"
       ],
@@ -3970,6 +3694,9 @@
       "set": 3,
       "collector": "043",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Sword"
       ],
@@ -4062,6 +3789,9 @@
       "set": 3,
       "collector": "044",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Torso"
       ],
@@ -4141,6 +3871,9 @@
       "set": 3,
       "collector": "045",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Item"
       ],
@@ -4220,6 +3953,9 @@
       "set": 3,
       "collector": "046",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Male"
       ],
@@ -4312,6 +4048,9 @@
       "set": 3,
       "collector": "047",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Male"
       ],
@@ -4391,6 +4130,9 @@
       "set": 3,
       "collector": "048",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Axe"
       ],
@@ -4483,6 +4225,9 @@
       "set": 3,
       "collector": "049",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Torso"
       ],
@@ -4562,6 +4307,9 @@
       "set": 3,
       "collector": "050",
       "culture": "Germanic",
+      "cultures": [
+        "Germanic"
+      ],
       "traits": [
         "Title"
       ],
@@ -4641,6 +4389,9 @@
       "set": 3,
       "collector": "051",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Male"
       ],
@@ -4733,6 +4484,9 @@
       "set": 3,
       "collector": "052",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Deity"
       ],
@@ -4812,6 +4566,9 @@
       "set": 3,
       "collector": "053",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Polearm"
       ],
@@ -4904,6 +4661,9 @@
       "set": 3,
       "collector": "054",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Shield"
       ],
@@ -4983,6 +4743,9 @@
       "set": 3,
       "collector": "055",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Item"
       ],
@@ -5062,6 +4825,9 @@
       "set": 3,
       "collector": "056",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Male"
       ],
@@ -5154,6 +4920,9 @@
       "set": 3,
       "collector": "057",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Deity"
       ],
@@ -5233,6 +5002,9 @@
       "set": 3,
       "collector": "058",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Bludgeon"
       ],
@@ -5325,6 +5097,9 @@
       "set": 3,
       "collector": "059",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Shield"
       ],
@@ -5404,6 +5179,9 @@
       "set": 3,
       "collector": "060",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Head"
       ],
@@ -5483,6 +5261,9 @@
       "set": 3,
       "collector": "061",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Male"
       ],
@@ -5575,6 +5356,9 @@
       "set": 3,
       "collector": "062",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Deity"
       ],
@@ -5654,6 +5438,9 @@
       "set": 3,
       "collector": "063",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Ranged"
       ],
@@ -5748,6 +5535,9 @@
       "set": 3,
       "collector": "064",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Shield"
       ],
@@ -5827,6 +5617,9 @@
       "set": 3,
       "collector": "065",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Ally"
       ],
@@ -5898,7 +5691,7 @@
       "raw_source_text": "Tĥawát'elya: Once each round, after an opponent rolls consecutive numbers, deal 1 damage to that warrior."
     },
     {
-      "id": "s3-066-1",
+      "id": "s3-066",
       "source": "spreadsheet-2007",
       "name": "Tĥatĥaŋka Íyotake (Sitting Bull)",
       "card_type": "warrior",
@@ -5906,101 +5699,11 @@
       "set": 3,
       "collector": "066",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
-        "Male"
-      ],
-      "life": 7,
-      "speed": 3,
-      "experience": 9,
-      "damage": 1,
-      "initiative": null,
-      "hands": 0,
-      "salary": 20,
-      "grid_raw": "+0 +0 ▲ +1",
-      "grid": {
-        "1A": null,
-        "1B": null,
-        "1C": null,
-        "2A": "+0",
-        "2B": "+0",
-        "2C": null,
-        "3A": null,
-        "3B": "marker",
-        "3C": "+1",
-        "4A": null,
-        "4B": null,
-        "4C": null
-      },
-      "abilities": [
-        {
-          "name": "Húŋkešni",
-          "type": "static",
-          "text": "Your attack rolls made during the last action of your turn gain +2."
-        }
-      ],
-      "flavor": "With unmatched courage, Sitting Bull defended the lands and traditions of the Lakota people for decades.",
-      "illustrator": "Greg Staples",
-      "background": "Shaman and Chief of the Hunkpapa Sioux and eventually the Lakota nation, Thathanka Iyotake led his warriors on raids against both prospectors and settlers violating the Fort Laramie Treaty in the Black Hills. The United States Army responded, and Thathanka Iyoatake brough together thousands of Lakota, Cheyenne, and Arapaho warriors to fight against these troops. At the Battle of Little Bighorn, these warriors massacred the U.S. 7th Cavalry regiment, led by George Custer, delivering to the United States its most devastating defeat ever at the hands of any Native American tribe.\n\nThathanka Iyotake brings clairvoyance and determination to the Anachronsim arena. With a clear view of life and liberty, he thinks only of the well-being of his people and will stop at nothing to ensure it. Use Thathanka Iyotake, known as Sitting Bull, to see every situation for what it is and to outlast any enemy with determination and resolve.",
-      "tags": {
-        "reveal": false,
-        "action": false,
-        "life_gain": false,
-        "life_dependant": false,
-        "free_move": false,
-        "free_attack": false,
-        "free_damage": false,
-        "allows_re_roll": false,
-        "dice_manipulation": false,
-        "defense_bonus": false,
-        "defense_penalty": false,
-        "attack_bonus": true,
-        "attack_penalty": false,
-        "damage_reduction": false,
-        "damage_bonus": false,
-        "experience_bonus": false,
-        "experience_penalty": false,
-        "experience_dependant": false,
-        "speed_bonus": false,
-        "speed_penalty": false,
-        "continuous": true,
-        "conditional": true,
-        "initiative_bonus": false,
-        "initiative_penalty": false,
-        "initiative_dependant": false,
-        "rivalry": false,
-        "create_negate_critical": false,
-        "cavalry_dependant": false,
-        "triggers_on_ties": false,
-        "culture_dependant": false,
-        "element_dependant": false,
-        "plays_to_arena": false,
-        "card_recycle": false,
-        "usable_from_discard": false,
-        "creates_doubles": false,
-        "multiple_weapon_attacks": false,
-        "discards": false,
-        "prevents_discards": false,
-        "multiple_inspirations": false,
-        "multiple_weapons": false,
-        "multiple_armors": false,
-        "multiple_specials": false
-      },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
-      "raw_source_text": "Húŋkešni: Your attack rolls made during the last action of your turn gain +2."
-    },
-    {
-      "id": "s3-066-2",
-      "source": "spreadsheet-2007",
-      "name": "Tĥatĥaŋka Íyotake (Sitting Bull)",
-      "card_type": "warrior",
-      "element": "Earth",
-      "set": 3,
-      "collector": "066",
-      "culture": "Native American",
-      "traits": [
+        "Male",
         "Cavalry"
       ],
       "life": 7,
@@ -6079,10 +5782,8 @@
         "multiple_armors": false,
         "multiple_specials": false
       },
-      "parse_confidence": "partial",
-      "needs_review": [
-        "possible_duplicate"
-      ],
+      "parse_confidence": "clean",
+      "needs_review": [],
       "raw_source_text": "Húŋkešni: Your attack rolls made during the last action of your turn gain +2."
     },
     {
@@ -6094,6 +5795,9 @@
       "set": 3,
       "collector": "067",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Deity"
       ],
@@ -6178,6 +5882,9 @@
       "set": 3,
       "collector": "068",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Axe"
       ],
@@ -6270,6 +5977,9 @@
       "set": 3,
       "collector": "069",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Shield"
       ],
@@ -6349,6 +6059,9 @@
       "set": 3,
       "collector": "070",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Ability"
       ],
@@ -6428,6 +6141,9 @@
       "set": 3,
       "collector": "071",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Male"
       ],
@@ -6520,6 +6236,9 @@
       "set": 3,
       "collector": "072",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Quest"
       ],
@@ -6599,6 +6318,9 @@
       "set": 3,
       "collector": "073",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Knife"
       ],
@@ -6691,6 +6413,9 @@
       "set": 3,
       "collector": "074",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Shield"
       ],
@@ -6770,6 +6495,9 @@
       "set": 3,
       "collector": "075",
       "culture": "Native American",
+      "cultures": [
+        "Native American"
+      ],
       "traits": [
         "Item"
       ],
@@ -6849,6 +6577,9 @@
       "set": 3,
       "collector": "076",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Male"
       ],
@@ -6941,6 +6672,9 @@
       "set": 3,
       "collector": "077",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Female"
       ],
@@ -7020,6 +6754,9 @@
       "set": 3,
       "collector": "078",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -7112,6 +6849,9 @@
       "set": 3,
       "collector": "079",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Head"
       ],
@@ -7191,6 +6931,9 @@
       "set": 3,
       "collector": "080",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Item"
       ],
@@ -7270,6 +7013,9 @@
       "set": 3,
       "collector": "081",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Male"
       ],
@@ -7362,6 +7108,9 @@
       "set": 3,
       "collector": "082",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Quest"
       ],
@@ -7441,6 +7190,9 @@
       "set": 3,
       "collector": "083",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -7533,6 +7285,9 @@
       "set": 3,
       "collector": "084",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Shield"
       ],
@@ -7612,6 +7367,9 @@
       "set": 3,
       "collector": "085",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Head"
       ],
@@ -7691,6 +7449,9 @@
       "set": 3,
       "collector": "086",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Male"
       ],
@@ -7783,6 +7544,9 @@
       "set": 3,
       "collector": "087",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Item"
       ],
@@ -7862,6 +7626,9 @@
       "set": 3,
       "collector": "088",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Axe"
       ],
@@ -7954,6 +7721,9 @@
       "set": 3,
       "collector": "089",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Head"
       ],
@@ -8033,6 +7803,9 @@
       "set": 3,
       "collector": "090",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Head"
       ],
@@ -8112,6 +7885,9 @@
       "set": 3,
       "collector": "091",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Female"
       ],
@@ -8204,6 +7980,9 @@
       "set": 3,
       "collector": "092",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Ability"
       ],
@@ -8283,6 +8062,9 @@
       "set": 3,
       "collector": "093",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8375,6 +8157,9 @@
       "set": 3,
       "collector": "094",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Torso"
       ],
@@ -8454,6 +8239,9 @@
       "set": 3,
       "collector": "095",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Item"
       ],
@@ -8533,6 +8321,9 @@
       "set": 3,
       "collector": "096",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Male"
       ],
@@ -8625,6 +8416,9 @@
       "set": 3,
       "collector": "097",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Emblem"
       ],
@@ -8704,6 +8498,9 @@
       "set": 3,
       "collector": "098",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Sword"
       ],
@@ -8796,6 +8593,9 @@
       "set": 3,
       "collector": "099",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Arms"
       ],
@@ -8875,6 +8675,9 @@
       "set": 3,
       "collector": "100",
       "culture": "Scottish",
+      "cultures": [
+        "Scottish"
+      ],
       "traits": [
         "Item"
       ],
