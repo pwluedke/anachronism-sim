@@ -19,17 +19,26 @@ Custom-card contract re-verified against the updated schema.
 The earlier Heard-list build (749 cards, `heard-2007`) is retained only as `scraper/parse_cards.py`
 + the raw page text in `data/raw/` for provenance.
 
-## Milestone 3 (CURRENT): Data cross-check
+## Milestone 3 (deferred): Data cross-check
 
 Reconcile the spreadsheet against card images / the TTS mod + weebly; verify promos and the
-duplicate-row groups; spot-check grid geometry against the art.
+duplicate-row groups; spot-check grid geometry against the art. (Deferred — picked up the engine
+spine first; the gitignored card-scan archives in `data/images/` are the inputs for this pass.)
 
-## Milestone 4: Core 1v1 engine
+## Milestone 4 (DONE): Core 1v1 engine — headless spine
 
-Grid, facing, initiative, reveal timing, 5-round structure, attack/defense resolution with
-modifiers + crits. Headless + tested.
+Pure-function TypeScript engine in [`engine/`](../engine/README.md): 4×4 arena, orthogonal
+movement + facing/rotation, attack-grid **projection** (rotates with facing, clips at edges),
+basic attack resolution (2d6 + grid mods, crit-on-doubles, experience/dice-off tiebreak), the
+5-round loop with initiative and all 4 win conditions, seeded-RNG determinism, and the 14 ability
+hook-points fired (empty) at the correct points. Warriors only; abilities inert.
 
-## Milestone 5: Bot opponent
+**DONE =** `tsc` clean, **69 vitest tests** green, ~99% statement coverage on the core, one full
+scripted game's event log prints start-to-finish. (Built from the written rules summary — the
+Set-7 rulebook PDF was not in the repo; one documented interpretation: basic attacks are metered as
+1 action. See the engine README.)
+
+## Milestone 5 (CURRENT): Bot opponent
 
 ## Milestone 6: Local hotseat UI (1v1)
 
