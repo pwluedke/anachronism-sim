@@ -1,192 +1,2054 @@
 [
   {
-    "id": "s1-058",
+    "id": "s1-023",
     "set": 1,
-    "name": "FREYDIS EIRIKSDOTTIR",
+    "set_label": null,
+    "name": "Yumi",
     "parse_confidence": "partial",
     "needs_review": [
-      "abilities"
-    ],
-    "raw_source_text": "FREYDIS EIRIKSDOTTIR (Water) 7 Life 4 Speed –2 –2 2 Experience +0 � 1 Damage Norse • Warrior • Female Greenlanders and Icelanders leave their homes in search of Vinland, a land shrouded in myth, yet held to be real. Leading these men and women on the quest for this new land is Freydis, daughter of the infamous Eirik the Red, and her husband Thorvard. Illustration: RK Post 1 58/100"
+      "grid_marker_anomaly"
+    ]
   },
   {
-    "id": "s3-097",
-    "set": 3,
-    "name": "CLUARAN NA H-ALBA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "source_typo"
-    ],
-    "raw_source_text": "(3) CLUARAN NA H-ALBA (Wood) Scottish • inspiration • Emblem Cha Togar M’ Fhearg Gun Dìoladh: Once per round, after you are hit by an opponent without an Armor in play, your next attack deals +2 damage. It is said that a raiding party of Danes attacking a Scottish castle came by night and took off their shoes to be as quiet as possible. Reaching the castle moat, they jumped in to swim across. To their surprise, the moat held no water but thistles. Their shouts of pain awoke the defenders of the castle, and the Danes fled. Illustration: Hugh Jamieson 3 97/100"
-  },
-  {
-    "id": "s1-P9-10",
+    "id": "s1-061-1",
     "set": 1,
-    "name": "MARS",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "source_typo"
-    ],
-    "raw_source_text": "(4) MARS (Earth) Roman • Inspiration • Diety Concors: If all of your face-up cards are Roman, all of your rolls gain +1. War god and father of Romulus and Remus, Mars one of the most revered and worshipped gods in the Roman pantheon. Illustration: Greg Staples 1 P9/10"
-  },
-  {
-    "id": "s6-084-weapon",
-    "set": 6,
-    "name": "BUZDOVAN",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "shared_collector"
-    ],
-    "raw_source_text": "(6) BUZDOVAN (2) +0 +1 +0 � Turkish • Weapon • Bludgeon (1 Hand) Zalim salidirma: When you attack a rival, you may re-roll one die of the attack roll. Serit vzakta: When you hit a rival with this weapon, you may discard one of that warrior’s non-weapon support cards. The flanged maces wielded by Ottoman troops were notable for their long metal sheath, which covered much of the upper part of the weapon’s haft. Illustration: Szucs Grégory 6 84/100"
-  },
-  {
-    "id": "s7-068",
-    "set": 7,
-    "name": "�EREV APPOLONIUS",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "weapon_damage"
-    ],
-    "raw_source_text": "(5) �EREV APPOLONIUS +1 –1 � +0 Tribes of Israel • Weapon • Sword (1 Hand) �addîq: Attacks with this weapon deal +1 damage if the defender does not have an inspiration card in play. Q�de�: You may use two inspiration cards. Meeting Appolonius in battle, Judah slew him and took his sword. Judah used the Seleucid sword from that day until his death. Illustration: Michael Kaluta 7 68/100"
-  },
-  {
-    "id": "s7-028",
-    "set": 7,
-    "name": "HILIA PLIA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "hands"
-    ],
-    "raw_source_text": "(6) HILIA PLIA (0) � Greek • Weapon • Item Terastios Stolos: This card’s initiative cannot be changed. Epikimeni Isvoli – Reveal: Roll one die. If the roll is equal to or less than the number of times you have revealed this card this game, deal 2 damage to an opposing warrior. Turn this card face down and swap it with another of your facedown cards. Turn the other card face up. Massing his fleet at Aulis, Agamemnon set sail for Troy with a fleet of a thousand warships. Illustration: Jon Hodgson 7 28/100"
-  },
-  {
-    "id": "s7-023",
-    "set": 7,
-    "name": "JOHNSON’S ARMY",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "hands"
-    ],
-    "raw_source_text": "(6) JOHNSON’S ARMY (0) � American Frontiersmen • Weapon • Ally Organized Assault: Once each round, when you make a basic attack, make two attack rolls and compare each against the defender’s defense roll. Deal your warrior’s damage for each attack roll that hits. Well-equipped: You may use another weapon card. After Mormons seized Fort Bridger, Bridger guided Albert Sidney Johnson’s Army to the site in 1857, forcing the Mormons to flee. Illustration: Chris Dien 7 23/100"
-  },
-  {
-    "id": "s7-073",
-    "set": 7,
-    "name": "L��Î-��MÔR",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "hands"
-    ],
-    "raw_source_text": "(9) L��Î-��MÔR (1) +1 +0 –1 � –1 Tribes of Israel • Weapon • Bludgeon Hithgann�n: After an opponent makes a critical hit, you may attack that player with this weapon at +3. This attack deals +2 damage. Ma‘���h R�ge‘: You may use another weapon card. “With the jawbone of an ass, heaps upon heaps, with the jawbone of an ass I have slain a thousand men.” – Samson, Judges 15:16 Illustration: William O’Connor 7 73/100"
-  },
-  {
-    "id": "s4-043",
-    "set": 4,
-    "name": "MANAI IKALANAI",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "weapon_damage"
-    ],
-    "raw_source_text": "(6) MANAI IKALANAI +1 +0 � +2 Maori • Weapon • Bludgeon (1 Hand) Matau: After you make a critical hit with this weapon, deal 2 damage to the defender and place this card in any space in the arena. Kákari: While you are in or adjacent to this card’s space, your attack rolls gain +2. The jawbone of Maui’s grandmother, he used it both as a fearsome weapon and as a fishing hook, with which he hauled the North Island from the bottom of the sea. Illustration: Brom 4 43/100"
-  },
-  {
-    "id": "s7-043",
-    "set": 7,
-    "name": "PETRINI MAZA",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "hands"
-    ],
-    "raw_source_text": "(5) PETRINI MAZA (0) � Greek • Weapon • Bludgeon Terastia Plaka – Reveal: Place this card in an unoccupied space in the arena. Ektoksefsi – Action: Once each round, if you are adjacent to this card, make an attack with this weapon at +0 against any opponent. This attack has a base damage of 4 and cannot deal more than 4 damage. The defender then moves this card to a space adjacent to them. When Hector attacked the Greek camp, Aias hurled a mass of stone at him, wounding him grievously. But for the intervention of Apollo, Hector would have died during this battle. Illustration: Mark Poole 7 43/100"
-  },
-  {
-    "id": "s6-P42-100",
-    "set": 6,
-    "name": "SAIF",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "weapon_damage"
-    ],
-    "raw_source_text": "(6) SAIF +1 +1 –1 � Saracen • Weapon • Sword (1 Hand) Yendafae Besarah: When you attack with this weapon, if the defense roll is less than this card’s initiative, the attack deals +1 damage. Dokha: If you revealed a ranged weapon this game, your attack rolls gain +1. Generally very similar to the Persian shamshir, some Arabian saif more closely resembled Turkish kilij swords. Illustration: Raven Mimura 6 P42/100"
-  },
-  {
-    "id": "s6-013-1",
-    "set": 6,
-    "name": "SHAN DIAN MAO",
+    "set_label": null,
+    "name": "Skegox Francisca",
     "parse_confidence": "partial",
     "needs_review": [
       "possible_duplicate"
-    ],
-    "raw_source_text": "(1) SHAN DIAN MAO (2) +2 +2 +0 � Chinese � Weapon � Polearm (2 Hands) Zhou yun: When you attack a rival with this weapon, you may re-roll the attack roll, and the attack deals +1 damage. Ma Chao wielded his weapon with such blinding speed that it became known as “Lightning Spear”. Illustration: Rick Sardinha 6 13/100"
+    ]
   },
   {
-    "id": "s4-018",
-    "set": 4,
-    "name": "SLEÁ LE SCIAN LE CUMA DUILLEOG",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "hands"
-    ],
-    "raw_source_text": "(9) SLEÁ LE SCIAN LE CUMA DUILLEOG (2) +0 +2 +1 +1 +0 � Irish • Weapon • Polearm Créacht a Thaoscadh: After an opposing warrior gains life from one of their card abilities, you may immediately attack that warrior with this weapon, if possible. The leaf-blade spear is one of the most immediately recognizable Celtic weapons. Illustration: Raven Mimura 4 18/100"
-  },
-  {
-    "id": "s6-013-2",
-    "set": 6,
-    "name": "SHAN DIAN MAO",
+    "id": "s1-061-2",
+    "set": 1,
+    "set_label": null,
+    "name": "Skegox Francisca",
     "parse_confidence": "partial",
     "needs_review": [
       "possible_duplicate"
-    ],
-    "raw_source_text": "(1) SHAN DIAN MAO (2) +2 +2 +0 � Chinese � Weapon � Polearm (2 Hands) Zhou yun: When you attack a rival with this weapon, you may re-roll the attack roll, and the attack deals +1 damage. Ma Chao wielded his weapon with such blinding speed that it became known as “Lightning Spear”. Illustration: Rick Sardinha 6 13/100"
+    ]
   },
   {
-    "id": "s7-39-10",
-    "set": 7,
-    "name": "MAGIKO VOTANI",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "collector_format"
-    ],
-    "raw_source_text": "(7) MAGIKO VOTANI Greek • Armor • Item Ieri Prostasia: Attack rolls against you cannot gain bonuses from non-weapon cards. Attacks against you cannot gain damage bonuses from support cards. When Circe turned Odysseus’ men into swine, Hermes gave him a sprig of moly, to protect him against Circe’s powers, and allow him to broker his men’s release. Illustration: Thomas Denmark 7 39/10"
-  },
-  {
-    "id": "s7-029",
-    "set": 7,
-    "name": "MIKINAIKOS THORAKAS",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "source_typo"
-    ],
-    "raw_source_text": "(4) MIKINAIKOS THORAKAS Grek • Armor • Torso Dipsa gia Ekdikisi: After you are hit by an attack with a damage bonus, the attacker becomes your rival until the end of your next turn. Stirixi: Before you are dealt damage from an attack, you may discard this card. If you do, that attack and the next attack against you deal –1 damage, to a minimum of 1. Given to Agamemnon as a gift, his cuirass had ten bands of dark enamel, twelve of gold, and twenty of tin. Dark blue serpents, three on either side, arched toward the neck. Illustration: Jon Hodgson 7 29/100"
-  },
-  {
-    "id": "s6-084-armor",
-    "set": 6,
-    "name": "RUMELI HISARI",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "shared_collector"
-    ],
-    "raw_source_text": "(0) RUMELI HISARI Turkish • Armor • Location Ara: When you hit with a basic attack, if the total of your life and experience is less than the defender’s initiative for the current round, gain 1 life. Mehmed II built the Rumeli Hisari castle to provide a secure base of operations, where he could prepare for the siege of Constantinople in safety. Illustration: Szucs Grégory 6 84/100"
-  },
-  {
-    "id": "s6-099",
-    "set": 6,
-    "name": "YARIK",
-    "parse_confidence": "partial",
-    "needs_review": [
-      "source_typo"
-    ],
-    "raw_source_text": "(4) YARIK Turkish � Amor � Torso Gurur: Any opponent who rolls doubles is your rival. Zhatta fit: Your defense rolls gain +1. Once each turn, when you are attacked, each time a die of the attack roll is re-rolled, you may re-roll one die of your defense roll. Made from chain and reinforced with light metal plates, the armor of the Sultan reflected the glory of his mighty empire. Illustration: Drew Baker 6 99/100"
-  },
-  {
-    "id": "s2-100",
+    "id": "s2-007-1",
     "set": 2,
-    "name": "MANGUDAI STEED",
+    "set_label": null,
+    "name": "Rhiannon",
     "parse_confidence": "partial",
     "needs_review": [
-      "source_typo"
-    ],
-    "raw_source_text": "(5) MANGUDAI STEED Mongol • Special • Calvary Qayurmay-iyar bayuju ögkü: Once per turn, after you move out of a space in an opposing warrior's attack grid, you may immediately attack that opponent with one of your ranged weapons at +0. The selection process for the elite Mangudai unit was grueling and dangerous. All of its members were superbly disciplined and trained, the perfect spearhead force for the attacking Mongol armies. Illustration: Randy Gallegos 2 100/100"
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-007-2",
+    "set": 2,
+    "set_label": null,
+    "name": "Rhiannon",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-016-1",
+    "set": 2,
+    "set_label": null,
+    "name": "Richard the Lionheart",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-016-2",
+    "set": 2,
+    "set_label": null,
+    "name": "Richard the Lionheart",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-019-1",
+    "set": 2,
+    "set_label": null,
+    "name": "Full Mail Hauberk",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-019-2",
+    "set": 2,
+    "set_label": null,
+    "name": "Full Mail Hauberk",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-019-3",
+    "set": 2,
+    "set_label": null,
+    "name": "Full Mail Hauberk",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-019-4",
+    "set": 2,
+    "set_label": null,
+    "name": "Full Mail Hauberk",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-023",
+    "set": 2,
+    "set_label": null,
+    "name": "Long Bow",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s2-031-1",
+    "set": 2,
+    "set_label": null,
+    "name": "Hua Mulan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-031-2",
+    "set": 2,
+    "set_label": null,
+    "name": "Hua Mulan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-068",
+    "set": 2,
+    "set_label": null,
+    "name": "Hornbow",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s2-073-1",
+    "set": 2,
+    "set_label": null,
+    "name": "Nsywt",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-073-2",
+    "set": 2,
+    "set_label": null,
+    "name": "Nsywt",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-081-1",
+    "set": 2,
+    "set_label": null,
+    "name": "Gengis Khan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-081-2",
+    "set": 2,
+    "set_label": null,
+    "name": "Gengis Khan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s2-098",
+    "set": 2,
+    "set_label": null,
+    "name": "Num Mor",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s3-009-1",
+    "set": 3,
+    "set_label": null,
+    "name": "Broigne d'Écailles",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-009-2",
+    "set": 3,
+    "set_label": null,
+    "name": "Broigne d'Écailles",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-009-3",
+    "set": 3,
+    "set_label": null,
+    "name": "Broigne d'Écailles",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-010-1",
+    "set": 3,
+    "set_label": null,
+    "name": "Marteau de Cavalerie",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-010-2",
+    "set": 3,
+    "set_label": null,
+    "name": "Marteau de Cavalerie",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-019-1",
+    "set": 3,
+    "set_label": null,
+    "name": "Blanc Harnois",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-019-2",
+    "set": 3,
+    "set_label": null,
+    "name": "Blanc Harnois",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-019-3",
+    "set": 3,
+    "set_label": null,
+    "name": "Blanc Harnois",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-063",
+    "set": 3,
+    "set_label": null,
+    "name": "Itázipa Blaská",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s3-066-1",
+    "set": 3,
+    "set_label": null,
+    "name": "Tĥatĥaŋka Íyotake (Sitting Bull)",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-066-2",
+    "set": 3,
+    "set_label": null,
+    "name": "Tĥatĥaŋka Íyotake (Sitting Bull)",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-028-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Taiaha",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-028-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Taiaha",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-030-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Hei-Tiki",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-030-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Hei-Tiki",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-039-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Moko",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-039-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Moko",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-048-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Kotiate",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-048-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Kotiate",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-058",
+    "set": 4,
+    "set_label": null,
+    "name": "Kamea-e Helal-e Irani",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s4-068-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Palta",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-068-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Palta",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-071-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Shapur I",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-071-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Shapur I",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-072-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Zartosht",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-072-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Zartosht",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-077-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Voltaire",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-077-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Voltaire",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-082-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Anastasia Romanova Zakharyina",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-082-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Anastasia Romanova Zakharyina",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-092-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Samozvantez Dmitry",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-092-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Samozvantez Dmitry",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-097-1",
+    "set": 4,
+    "set_label": null,
+    "name": "Metropolitan Kyrillus",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s4-097-2",
+    "set": 4,
+    "set_label": null,
+    "name": "Metropolitan Kyrillus",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-009-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Ocelocolohtic",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-009-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Ocelocolohtic",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-009-3",
+    "set": 5,
+    "set_label": null,
+    "name": "Ocelocolohtic",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-010-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Ocelomeh",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-010-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Ocelomeh",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-014-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Cuauhcuachimalli",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-014-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Cuauhcuachimalli",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-014-3",
+    "set": 5,
+    "set_label": null,
+    "name": "Cuauhcuachimalli",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-023-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Tematlatl",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly",
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-023-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Tematlatl",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly",
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-034-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Akaitoodoshi-Yoroi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-034-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Akaitoodoshi-Yoroi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-034-3",
+    "set": 5,
+    "set_label": null,
+    "name": "Akaitoodoshi-Yoroi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-039-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Akazonae",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-039-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Akazonae",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-039-3",
+    "set": 5,
+    "set_label": null,
+    "name": "Akazonae",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-044-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Touseigusoku",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-044-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Touseigusoku",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-044-3",
+    "set": 5,
+    "set_label": null,
+    "name": "Touseigusoku",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-049-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Kusubekawasugakeodoshi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-049-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Kusubekawasugakeodoshi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-049-3",
+    "set": 5,
+    "set_label": null,
+    "name": "Kusubekawasugakeodoshi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-058",
+    "set": 5,
+    "set_label": null,
+    "name": "Kaws",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s5-061-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Maowvia",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-061-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Maowvia",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-062-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Alnabi Mosa",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-062-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Alnabi Mosa",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-063-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Sahm",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-063-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Sahm",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-065-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Mesbah",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-065-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Mesbah",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-077-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Mercurino Gattinara",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-077-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Mercurino Gattinara",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-082-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Santiago Matamoros",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-082-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Santiago Matamoros",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-093",
+    "set": 5,
+    "set_label": null,
+    "name": "Arcabuz",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s5-097-1",
+    "set": 5,
+    "set_label": null,
+    "name": "Fernando II de Aragon",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-097-2",
+    "set": 5,
+    "set_label": null,
+    "name": "Fernando II de Aragon",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-007-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Diao Chan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-007-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Diao Chan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-015-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Biao Qi Jiangjun",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-015-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Biao Qi Jiangjun",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-021-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Zhang Jiao",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-021-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Zhang Jiao",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-023-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Tai Chi Gun",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-023-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Tai Chi Gun",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-026-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Anne Bonney",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-026-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Anne Bonney",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-026-3",
+    "set": 6,
+    "set_label": null,
+    "name": "Anne Bonney",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-026-4",
+    "set": 6,
+    "set_label": null,
+    "name": "Anne Bonney",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-027-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Calico Jack Rackham",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-027-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Calico Jack Rackham",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-027-3",
+    "set": 6,
+    "set_label": null,
+    "name": "Calico Jack Rackham",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-027-4",
+    "set": 6,
+    "set_label": null,
+    "name": "Calico Jack Rackham",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-028-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Flintlock Pistol",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-028-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Flintlock Pistol",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-029-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Pleading the Belly",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-029-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Pleading the Belly",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-030-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Ye Dirty Swabs",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-030-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Ye Dirty Swabs",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-031-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Black Bart",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-031-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Black Bart",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-032-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Davy Jones' Locker",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-032-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Davy Jones' Locker",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-033-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Small Sword",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-033-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Small Sword",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-034-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Plumed Hat",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-034-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Plumed Hat",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-035-1",
+    "set": 6,
+    "set_label": null,
+    "name": "A Straight Ship",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-035-2",
+    "set": 6,
+    "set_label": null,
+    "name": "A straight Ship",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-036-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Blackbeard",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-036-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Blackbeard",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-037-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Blackbeard's Jolly Roger",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-037-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Blackbeard's Jolly Roger",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-038-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Pair o' Cutlasses",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-038-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Pair o' Cutlasses",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-039-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Fearsome Reputation",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-039-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Fearsome Reputation",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-040-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Pieces of Eight",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-040-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Pieces of Eight",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-040-3",
+    "set": 6,
+    "set_label": null,
+    "name": "Pieces of Eight",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-040-4",
+    "set": 6,
+    "set_label": null,
+    "name": "Pieces of Eight",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-041-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Grainne Ni Mhaille",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-041-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Grainne Ni Mhaille",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-042-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Pirate Legacy",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-042-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Pirate Legacy",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-043-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Boarding Axe",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-043-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Boarding Axe",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-044-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Articles of Interrogatory",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-044-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Articles of Interrogatory",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-045-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Pirate Stronghold",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-045-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Pirate Stronghold",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-046-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Sir Francis Drake",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-046-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Sir Francis Drake",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-047-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Good Queen Bess",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-047-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Good Queen Bess",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-047-3",
+    "set": 6,
+    "set_label": null,
+    "name": "Good Queen Bess",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-047-4",
+    "set": 6,
+    "set_label": null,
+    "name": "Good Queen Bess",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-048-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Swept-Hilt Rapier",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-048-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Swept-Hilt Rapier",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-049-1",
+    "set": 6,
+    "set_label": null,
+    "name": "El Draco",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-049-2",
+    "set": 6,
+    "set_label": null,
+    "name": "El Draco",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-050-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Letter of Marque",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-050-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Letter of Marque",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-052-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Zamolxis",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-052-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Zamolxis",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-067-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Papa Sixtus Al IV-Lea",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-067-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Papa Sixtus Al IV-Lea",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-087-inspiration-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Kosem Sultan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "shared_collector"
+    ]
+  },
+  {
+    "id": "s6-087-inspiration-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Kösem Sultan",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "shared_collector"
+    ]
+  },
+  {
+    "id": "s6-092-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Qubbat Al-Nabi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-092-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Qubbat Al-Nabi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-097-1",
+    "set": 6,
+    "set_label": null,
+    "name": "Roxelana",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-097-2",
+    "set": 6,
+    "set_label": null,
+    "name": "Roxelana",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-035-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Orgi Tou Posidona",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-035-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Orgi Tou Posidona",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-037-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Athina",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-037-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Athina",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-038",
+    "set": 7,
+    "set_label": null,
+    "name": "Toxou Tou Odissea",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s7-042-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Chiron",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-042-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Chiron",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-048-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Klironomimena Opla",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-048-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Klironomimena Opla",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-058",
+    "set": 7,
+    "set_label": null,
+    "name": "Qela'",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s7-059-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Maddai Sa'ul Hammelek",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-059-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Maddai Sa'ul Hammelek",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-059-3",
+    "set": 7,
+    "set_label": null,
+    "name": "Maddai Sa'ul Hammelek",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-077-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Afroditi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-077-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Afroditi",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-079-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Aristourgima Tou Ifestou",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-079-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Aristourgima Tou Ifestou",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-079-3",
+    "set": 7,
+    "set_label": null,
+    "name": "Aristourgima Tou Ifestou",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-079-4",
+    "set": 7,
+    "set_label": null,
+    "name": "Aristourgima Tou Ifestou",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-079-5",
+    "set": 7,
+    "set_label": null,
+    "name": "Aristourgima Tou Ifestou",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-082-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Artemis",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-082-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Artemis",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-093",
+    "set": 7,
+    "set_label": null,
+    "name": "Dilitiriasmeno Velos",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "grid_marker_anomaly"
+    ]
+  },
+  {
+    "id": "s7-100-1",
+    "set": 7,
+    "set_label": null,
+    "name": "Cassandra",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-100-2",
+    "set": 7,
+    "set_label": null,
+    "name": "Cassandra",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-P019-1",
+    "set": 3,
+    "set_label": "P3",
+    "name": "Chan Zhang",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s3-P019-2",
+    "set": 3,
+    "set_label": "P3",
+    "name": "Chan Zhang",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-P037-1",
+    "set": 5,
+    "set_label": "P5",
+    "name": "Rasputin",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-P037-2",
+    "set": 5,
+    "set_label": "P5",
+    "name": "Rasputin",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-P038-1",
+    "set": 5,
+    "set_label": "P5",
+    "name": "Baba Yaga",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s5-P038-2",
+    "set": 5,
+    "set_label": "P5",
+    "name": "Baba Yaga",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-P044-1",
+    "set": 6,
+    "set_label": "P6",
+    "name": "Cuauhxicalli",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-P044-2",
+    "set": 6,
+    "set_label": "P6",
+    "name": "Cuauhxicalli",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-P047-1",
+    "set": 6,
+    "set_label": "P6",
+    "name": "Tomas de Torquemada",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s6-P047-2",
+    "set": 6,
+    "set_label": "P6",
+    "name": "Tomas de Torquemada",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-P054-1",
+    "set": 7,
+    "set_label": "P7",
+    "name": "Queen Anne's Revenge",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
+  },
+  {
+    "id": "s7-P054-2",
+    "set": 7,
+    "set_label": "P7",
+    "name": "Queen Anne's Revenge",
+    "parse_confidence": "partial",
+    "needs_review": [
+      "possible_duplicate"
+    ]
   }
 ]

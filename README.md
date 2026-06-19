@@ -2,9 +2,9 @@
 
 A digital simulator for *Anachronism*, the tactical CCG published 2004–2007 by TriKing Games in partnership with the History Channel. Warriors from across history meet on a grid where position and facing matter: combatants are moveable and facing-aware, and combat resolves through initiative, reveal timing, and attack/defense modifiers. The simulator targets three modes of play — solo against a bot, local hotseat (1v1 and up to 4 players), and online multiplayer.
 
-## Status: Milestone 2 — Attack-grid geometry (in progress)
+## Status: Milestone 3 — Data cross-check (in progress)
 
-Milestone 1 (Card Database) is complete: 749 schema-valid cards (730 clean / 19 flagged source facts / 0 suspect).
+Milestones 1 + 2 complete: the card database was rebuilt from `Anachronism Cards Spreadsheet.xls` (`spreadsheet-2007`), the new source of truth — 868 schema-valid cards (sets 1–7 + promos P1, P3–P7) with attack-grid geometry, a mechanical `tags` taxonomy, and warrior backgrounds. 663 clean / 205 flagged source facts / 0 suspect.
 
 ## Project Structure
 

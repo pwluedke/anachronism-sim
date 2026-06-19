@@ -23,8 +23,8 @@
     },
     "source": {
       "type": "string",
-      "enum": ["heard-2007", "tts-mod", "weebly", "custom", "user-import"],
-      "description": "Origin of this card record. This scrape: heard-2007."
+      "enum": ["heard-2007", "spreadsheet-2007", "tts-mod", "weebly", "custom", "user-import"],
+      "description": "Origin of this card record. Current source of truth: spreadsheet-2007."
     },
     "name": {
       "type": "string",
@@ -43,11 +43,15 @@
     },
     "set": {
       "type": "integer",
-      "description": "Set number. Default 0 + flag."
+      "description": "Set number (1-7). For promo cards this is the parent set; see set_label."
+    },
+    "set_label": {
+      "type": "string",
+      "description": "Promo-set label (\"P1\"..\"P7\"). Present only on promo cards; numbered cards omit it."
     },
     "collector": {
       "type": "string",
-      "description": "Collector number, preserved verbatim (e.g. \"091\", \"P1/10\"). Default \"\" + flag."
+      "description": "Collector number, preserved verbatim (e.g. \"091\", \"001\"). Default \"\" + flag."
     },
     "culture": {
       "type": "string",
@@ -61,49 +65,69 @@
       "description": "Trait list (e.g. [\"Warrior\",\"Male\"]). Default [] + flag."
     },
     "life": {
-      "type": "integer",
-      "default": 0,
-      "description": "WARRIOR-only. Default 0 + flag."
+      "type": ["integer", "null"],
+      "description": "Warrior stat. null when the source prints no value (NA)."
     },
     "speed": {
-      "type": "integer",
-      "default": 0,
-      "description": "WARRIOR-only. Default 0 + flag."
+      "type": ["integer", "null"],
+      "description": "Warrior stat. null when the source prints no value (NA)."
     },
     "experience": {
-      "type": "integer",
-      "default": 0,
-      "description": "WARRIOR-only. Default 0 + flag."
+      "type": ["integer", "null"],
+      "description": "Warrior stat. null when the source prints no value (NA)."
     },
     "damage": {
-      "type": "integer",
-      "default": 0,
-      "description": "WARRIOR-only. Default 0 + flag."
+      "type": ["integer", "null"],
+      "description": "Attack damage (warriors and weapons). null when the source prints no value (NA)."
     },
     "initiative": {
-      "type": "integer",
-      "default": 0,
-      "description": "SUPPORT-card only (leading \"(N)\"). Default 0 + flag."
+      "type": ["integer", "null"],
+      "description": "Support-card initiative. null when the source prints no value (NA)."
     },
     "hands": {
-      "type": "integer",
-      "default": 0,
-      "description": "WEAPON-only. Default 0 + flag."
+      "type": ["integer", "null"],
+      "description": "Weapon hands. null when the source prints no value (NA)."
     },
     "weapon_damage": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "default": 0,
-      "description": "WEAPON-only. Default 0 + flag."
+      "description": "Legacy field (Heard source). The spreadsheet folds weapon damage into `damage`; omitted on spreadsheet-2007 records."
+    },
+    "salary": {
+      "type": ["integer", "null"],
+      "description": "Warrior point cost (\"Salary\"). null for non-warriors / NA."
     },
     "grid_raw": {
       "type": "string",
       "default": "",
-      "description": "Unparsed attack-grid modifier substring, verbatim. Default \"\"."
+      "description": "Row-major non-empty grid cells, verbatim (marker shown as ▲). \"\" for support cards."
     },
     "grid": {
-      "type": ["object", "null"],
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "1A": { "type": ["string", "null"] }, "1B": { "type": ["string", "null"] }, "1C": { "type": ["string", "null"] },
+            "2A": { "type": ["string", "null"] }, "2B": { "type": ["string", "null"] }, "2C": { "type": ["string", "null"] },
+            "3A": { "type": ["string", "null"] }, "3B": { "type": ["string", "null"] }, "3C": { "type": ["string", "null"] },
+            "4A": { "type": ["string", "null"] }, "4B": { "type": ["string", "null"] }, "4C": { "type": ["string", "null"] }
+          }
+        }
+      ],
       "default": null,
-      "description": "Parsed spatial geometry. ALWAYS null for now (deferred to Milestone 2)."
+      "description": "Flat 12-key attack grid (keys 1A..4C). Cell value: a modifier string (e.g. \"+1\"), \"marker\" at 3B, or null for empty. null for support cards (no grid)."
+    },
+    "background": {
+      "type": "string",
+      "default": "",
+      "description": "Warrior background / historical prose. Often empty for support cards."
+    },
+    "tags": {
+      "type": "object",
+      "additionalProperties": { "type": ["boolean", "null"] },
+      "description": "Mechanical taxonomy (snake_cased spreadsheet columns) -> boolean. null when the source value is NA."
     },
     "abilities": {
       "type": "array",

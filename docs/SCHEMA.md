@@ -18,49 +18,58 @@ to fix.
 | `source` | enum | **required** | — |
 | `name` | string | **required** | `""` + flag |
 | `card_type` | enum | **required** | — |
-| `element` | enum | optional | `"unknown"` + flag |
-| `set` | integer | **required** | `0` + flag |
+| `element` | enum | optional | `"unknown"` |
+| `set` | integer | **required** | — |
+| `set_label` | string | optional (promos only) | omitted |
 | `collector` | string | **required** | `""` + flag |
-| `culture` | string | optional | `""` + flag |
-| `traits` | string[] | optional | `[]` + flag |
-| `life` | integer | warrior-only | `0` + flag |
-| `speed` | integer | warrior-only | `0` + flag |
-| `experience` | integer | warrior-only | `0` + flag |
-| `damage` | integer | warrior-only | `0` + flag |
-| `initiative` | integer | support-only | `0` + flag |
-| `hands` | integer | weapon-only | `0` + flag |
-| `weapon_damage` | integer | weapon-only | `0` + flag |
+| `culture` | string | optional | `""` |
+| `traits` | string[] | optional | `[]` |
+| `life` | integer \| null | warrior stat | `null` (NA) |
+| `speed` | integer \| null | warrior stat | `null` (NA) |
+| `experience` | integer \| null | warrior stat | `null` (NA) |
+| `damage` | integer \| null | warrior/weapon | `null` (NA) |
+| `initiative` | integer \| null | support stat | `null` (NA) |
+| `hands` | integer \| null | weapon stat | `null` (NA) |
+| `salary` | integer \| null | warrior point cost | `null` (NA / non-warrior) |
+| `weapon_damage` | integer | legacy (Heard) | omitted on spreadsheet records |
 | `grid_raw` | string | optional | `""` |
-| `grid` | object \| null | optional | always `null` for now |
-| `abilities` | array of objects | optional | `[]` + flag if none |
+| `grid` | object \| null | warrior/weapon only | `null` for support cards |
+| `abilities` | array of objects | optional | `[]` |
 | `flavor` | string | optional | `""` |
 | `illustrator` | string | optional | `""` |
+| `background` | string | optional | `""` |
+| `tags` | object of bool\|null | optional | populated for every card |
 | `parse_confidence` | enum | **required** | — |
 | `needs_review` | string[] | **required** | `[]` (empty = clean) |
 | `raw_source_text` | string | **required** | always populated |
 
 ### Field detail
 
-- **`id`** — `"s{set}-{collector}"` for official cards (e.g. `"s1-091"`); `"custom-{uuid}"` for homebrew.
-- **`source`** — enum: `heard-2007` | `tts-mod` | `weebly` | `custom` | `user-import`. This scrape: `heard-2007`.
+- **`id`** — `"s{set}-{collector}"` for numbered cards (e.g. `"s1-091"`); `"s{set}-P{collector}"` for promos (e.g. `"s1-P001"`); `"custom-{uuid}"` for homebrew. Collisions (duplicate rows / shared collector) are disambiguated with a `-{card_type}` or `-N` suffix.
+- **`source`** — enum: `heard-2007` | `spreadsheet-2007` | `tts-mod` | `weebly` | `custom` | `user-import`. Current source of truth: `spreadsheet-2007`.
 - **`name`** — the card name. Default `""` and flag if unreadable.
 - **`card_type`** — enum: `warrior` | `inspiration` | `weapon` | `armor` | `special`.
-- **`element`** — enum: `Aether` | `Earth` | `Fire` | `Metal` | `Water` | `Wind` | `Wood` | `unknown`. Default `"unknown"` + flag. Support cards may not print an element the same way; record `unknown` as appropriate.
-- **`set`** — integer. Default `0` + flag.
-- **`collector`** — string; preserve formatting verbatim (`"091"`, `"P1/10"`). Default `""` + flag.
-- **`culture`** — string. Default `""` + flag.
-- **`traits`** — string array (e.g. `["Warrior","Male"]`). Default `[]` + flag.
-- **`life`, `speed`, `experience`, `damage`** — integers, **warrior-only**. Default `0` + flag each.
-- **`initiative`** — integer, **support-card only** (the leading `"(N)"`). Default `0` + flag.
-- **`hands`, `weapon_damage`** — integers, **weapon-only**. Default `0` + flag each.
-- **`grid_raw`** — string. The unparsed attack-grid modifier substring, verbatim. Default `""`.
-- **`grid`** — object or `null`. Parsed spatial geometry. **ALWAYS `null` for now** (deferred to Milestone 2).
-- **`abilities`** — array of `{ name: string, type: action|reveal|static|unknown, text: string }`. Default `[]` + flag if none.
-- **`flavor`** — string. Default `""`.
-- **`illustrator`** — string. Default `""`.
+- **`element`** — enum: `Aether` | `Earth` | `Fire` | `Metal` | `Water` | `Wind` | `Wood` | `unknown`. `unknown` when the source prints no element (most support cards, all weapons).
+- **`set`** — integer 1–7. For promo cards this is the **parent** set; the promo label lives in `set_label`.
+- **`set_label`** — `"P1"`..`"P7"`. Present **only** on promo cards; numbered cards omit it.
+- **`collector`** — string; preserve leading zeros (`"001"`).
+- **`culture`** — string. `""` when absent.
+- **`traits`** — string array (the card's Subtype/Traits, e.g. `["Male"]`, `["Polearm"]`).
+- **`life`, `speed`, `experience`, `damage`** — integer or `null`. `null` when the source value is `NA` (e.g. warriors have no `damage`-less... support cards leave the warrior stats `NA`).
+- **`initiative`** — integer or `null`. Support-card initiative; `null` (NA) for warriors.
+- **`hands`** — integer or `null` (weapons).
+- **`salary`** — integer or `null`. Warrior point cost (the "Salary" column); `null` for non-warriors / NA.
+- **`weapon_damage`** — **legacy** Heard-only field. The spreadsheet folds weapon damage into `damage`, so spreadsheet records omit it.
+- **`grid_raw`** — string. Row-major non-empty grid cells, verbatim (marker shown as `▲`). `""` for support cards.
+- **`grid`** — flat 12-key object (`1A`..`4C`) or `null`. Each cell is a modifier string (e.g. `"+1"`), the literal `"marker"` (warrior position, normally at `3B`; ranged weapons place it at `4B`, flagged `grid_marker_anomaly`), or `null` for an empty cell. `null` for support cards (no grid).
+- **`abilities`** — array of `{ name: string, type: action|reveal|static|unknown, text: string }`. Parsed from the Text column (`Name - Reveal:` / `Name - Action:` / `Name:`).
+- **`flavor`** — string. Card flavor text. `""` when absent.
+- **`illustrator`** — string. `""` when absent.
+- **`background`** — string. Warrior background / historical prose; often `""` for support cards.
+- **`tags`** — object mapping snake_cased mechanical-taxonomy columns (e.g. `reveal`, `attack_bonus`, `cavalry_dependant`) to `boolean` (or `null` if the source value is NA). Populated for every card.
 - **`parse_confidence`** — enum: `clean` | `partial` | `suspect`.
-- **`needs_review`** — string array of field names that were defaulted/faked. Empty = clean.
-- **`raw_source_text`** — string. The full original substring for this card, verbatim. Always populated.
+- **`needs_review`** — string array of flags. Empty = clean. Spreadsheet flags: `possible_duplicate`, `shared_collector`, `grid_marker_anomaly`.
+- **`raw_source_text`** — string. The verbatim source Text-column value for this card. Always populated.
 
 ## File wrapper
 
@@ -70,7 +79,7 @@ Per-set files in `data/sets/` and the combined `data/all_cards.json` share this 
 {
   "schema_version": 1,
   "generated_at": "<ISO timestamp>",
-  "source": "heard-2007",
+  "source": "spreadsheet-2007",
   "set": 0,
   "card_count": 0,
   "review_count": 0,
@@ -78,7 +87,9 @@ Per-set files in `data/sets/` and the combined `data/all_cards.json` share this 
 }
 ```
 
-- `set` is the integer set number for per-set files, or `null` for the combined index.
+- `set` is the integer set number for numbered per-set files (`set_1.json`..`set_7.json`),
+  the string `"P"` for the combined promo file (`set_P.json`, which holds all P1–P7 cards),
+  or `null` for the combined index (`all_cards.json`).
 
 ## review_queue.json
 
@@ -88,9 +99,9 @@ A flat array of objects:
 {
   "id": "",
   "set": 0,
+  "set_label": null,
   "name": "",
-  "parse_confidence": "suspect",
-  "needs_review": [],
-  "raw_source_text": ""
+  "parse_confidence": "partial",
+  "needs_review": []
 }
 ```
