@@ -12,4 +12,4 @@ venv/
 *.log
 data/raw/*.html
 data/raw/*.tmp
-data/images/*.zip
+data/images/
