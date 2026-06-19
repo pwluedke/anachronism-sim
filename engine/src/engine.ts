@@ -16,6 +16,7 @@ import type {
 import { seedState, rollDie } from "./rng";
 import { canMove, applyMove, applyRotate } from "./arena";
 import { resolveAttack } from "./combat";
+import * as Hooks from "./hooks";
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
@@ -84,11 +85,14 @@ function startRound(state: GameState, events: GameEvent[]): void {
     initiative: state.initiative,
     turnOrder: state.turnOrder,
   });
+  Hooks.resolveHooks(state, "onRoundStart", { round: state.round });
+  Hooks.resolveHooks(state, "onReveal", { round: state.round });
   events.push({
     type: "turnStarted",
     player: state.currentPlayer,
     actions: state.actionsRemaining,
   });
+  Hooks.resolveHooks(state, "onTurnStart", { player: state.currentPlayer });
 }
 
 /** Compute and record the end-of-game result (life / experience / draw). */
@@ -114,6 +118,7 @@ function endGame(state: GameState, events: GameEvent[]): void {
 /** End the current turn and advance: next player, or next round, or game end. */
 function endTurn(state: GameState, events: GameEvent[]): void {
   events.push({ type: "turnEnded", player: state.currentPlayer });
+  Hooks.resolveHooks(state, "onTurnEnd", { player: state.currentPlayer });
   if (state.turnIndex === 0) {
     state.turnIndex = 1;
     state.currentPlayer = state.turnOrder[1];
@@ -123,10 +128,12 @@ function endTurn(state: GameState, events: GameEvent[]): void {
       player: state.currentPlayer,
       actions: state.actionsRemaining,
     });
+    Hooks.resolveHooks(state, "onTurnStart", { player: state.currentPlayer });
     return;
   }
   // both players have acted -> end of round
   events.push({ type: "roundEnded", round: state.round });
+  Hooks.resolveHooks(state, "onRoundEnd", { round: state.round });
   if (state.round < state.maxRounds) {
     state.round += 1;
     startRound(state, events);
@@ -165,6 +172,7 @@ export function init(card0: CardData, card1: CardData, seed: number): ApplyResul
   };
 
   const events: GameEvent[] = [{ type: "setup", firstPlacer }];
+  Hooks.resolveHooks(state, "onSetup", {});
   startRound(state, events);
   return { state, events };
 }
@@ -209,16 +217,27 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
     }
     case "ATTACK": {
       if (state.actionsRemaining < 1) return { state: prev, events: [] };
-      const r = resolveAttack(
-        state.warriors[me],
-        state.warriors[foe],
-        state.rng,
-        state.arenaSize,
-      );
-      if (!r.result.legal) return { state: prev, events: [] }; // not in grid -> no-op
+      // legality (defender in grid) is checked inside resolveAttack; peek first
+      // so an illegal attack is a true no-op (no hook noise, no RNG burn).
+      const pre = resolveAttack(state.warriors[me], state.warriors[foe], state.rng, state.arenaSize);
+      if (!pre.result.legal) return { state: prev, events: [] };
+
+      Hooks.resolveHooks(state, "beforeAttackRoll", { attacker: me, defender: foe });
+      const r = pre;
+      Hooks.resolveHooks(state, "afterAttackRoll", { attacker: me, defender: foe, result: r.result });
       state.rng = r.rng;
       state.actionsRemaining -= 1;
-      if (r.result.hit) state.warriors[foe].life -= r.result.damage;
+
+      Hooks.resolveHooks(state, r.result.hit ? "onHit" : "onMiss", { attacker: me, defender: foe, result: r.result });
+      if (r.result.hit && r.result.crit) {
+        Hooks.resolveHooks(state, "onCriticalHit", { attacker: me, defender: foe, result: r.result });
+      }
+      Hooks.resolveHooks(state, "afterDefense", { attacker: me, defender: foe, result: r.result });
+
+      if (r.result.hit) {
+        state.warriors[foe].life -= r.result.damage;
+        Hooks.resolveHooks(state, "onDamageDealt", { attacker: me, defender: foe, result: r.result });
+      }
       events.push({
         type: "attacked",
         attacker: me,
@@ -233,6 +252,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
         tiebreak: r.result.tiebreak,
       });
       if (state.warriors[foe].life <= 0) {
+        Hooks.resolveHooks(state, "onWarriorDefeated", { player: foe });
         events.push({ type: "warriorDefeated", player: foe });
         state.winner = me;
         state.phase = "ended";
