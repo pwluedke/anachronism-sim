@@ -1,0 +1,20 @@
+{
+  "name": "@anachronism/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Headless, pure-function 1v1 Anachronism game engine (Milestone 4 spine).",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "example": "tsx examples/scripted-game.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.21",
+    "@vitest/coverage-v8": "^2.1.8",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
