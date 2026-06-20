@@ -1,14 +1,16 @@
-// Hotseat shell. Holds the engine GameState; renders it. All rules live in the
-// engine — this component only reads state and (later tasks) dispatches actions.
-import { useMemo, useState } from "react";
-import { init, projectGrid } from "@engine";
+// Hotseat shell. Holds the engine GameState via useGame; renders it and routes
+// chosen actions back through the engine. NO rules here — the engine owns them.
+import { useMemo } from "react";
+import { projectGrid } from "@engine";
 import { PLAYER_0, PLAYER_1 } from "./cards";
+import { useGame } from "./useGame";
 import { Board, type Highlight } from "./components/Board";
 import { StatusPanel } from "./components/StatusPanel";
+import { ActionMenu } from "./components/ActionMenu";
 
 export function App() {
-  const [game] = useState(() => init(PLAYER_0, PLAYER_1, 1));
-  const { state } = game;
+  const { view, dispatch } = useGame(PLAYER_0, PLAYER_1, 1);
+  const { state } = view;
 
   // Active warrior's reachable cells, straight from the engine's projection.
   const highlights = useMemo(() => {
@@ -25,7 +27,10 @@ export function App() {
     <main className="app">
       <h1>Anachronism — Hotseat</h1>
       <div className="layout">
-        <Board state={state} highlights={highlights} />
+        <div>
+          <Board state={state} highlights={highlights} />
+          <ActionMenu state={state} onAct={dispatch} />
+        </div>
         <StatusPanel state={state} cards={[PLAYER_0, PLAYER_1]} />
       </div>
     </main>

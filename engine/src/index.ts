@@ -1,6 +1,7 @@
 // Public engine API.
 export * from "./types";
 export { init, applyAction, determineInitiative, currentWarrior } from "./engine";
+export { getLegalActions } from "./legal";
 export { projectGrid, modifierAt, markerKey, parseMod } from "./projection";
 export { resolveAttack, judge, breakTie } from "./combat";
 export { canMove, applyMove, applyRotate, stepPos, inBounds, FACINGS, FACE_DELTA } from "./arena";
