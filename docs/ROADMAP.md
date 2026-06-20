@@ -38,9 +38,23 @@ scripted game's event log prints start-to-finish. Built against the Set-7 Basic 
 `data/raw/anachronism_rulebook_set_7.pdf`): a basic attack costs 1 action and is **not capped per
 turn** (p11). See the engine README.
 
+## Milestone 6 (DONE): Minimal playable UI — hotseat (1v1)
+
+Thin React + Vite UI in [`ui/`](../ui/) over the headless engine, imported by local path
+(`@engine` → `engine/src`) so there is **one source of truth** for rules. Renders the 4×4 arena and
+both warriors (facing shown), a status panel (round/turn/actions + per-warrior life & stats), and
+highlights the active warrior's projected attack grid (via the engine's `projectGrid`). Actions come
+from the engine's pure `getLegalActions(state)` rendered as buttons; clicking dispatches through
+`applyAction` and re-renders. A scrolling event log and a winner banner (with the deciding condition)
+complete a full hotseat game; "New game" re-inits. **No game logic lives in the UI** — verified.
+
+**DONE =** full hotseat game playable in the browser start-to-finish; engine suite green (**78 tests**,
+incl. `getLegalActions`); UI rule-logic audit clean; `vite build` + dev server confirmed.
+
 ## Milestone 5 (CURRENT): Bot opponent
 
-## Milestone 6: Local hotseat UI (1v1)
+A computer opponent over the same engine (it already exposes `getLegalActions`; a greedy reference
+policy lives in `engine/examples/policy.ts`). Built before the UI's bot wiring.
 
 ## Milestone 7: 4-player + variant rules
 
