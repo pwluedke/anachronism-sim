@@ -4,6 +4,7 @@ import { useState } from "react";
 import { init } from "@engine";
 import { PLAYER_0, PLAYER_1 } from "./cards";
 import { Board } from "./components/Board";
+import { StatusPanel } from "./components/StatusPanel";
 
 export function App() {
   const [game] = useState(() => init(PLAYER_0, PLAYER_1, 1));
@@ -12,10 +13,10 @@ export function App() {
   return (
     <main className="app">
       <h1>Anachronism — Hotseat</h1>
-      <p className="muted">
-        P0 {PLAYER_0.name} &nbsp;vs&nbsp; P1 {PLAYER_1.name}
-      </p>
-      <Board state={state} />
+      <div className="layout">
+        <Board state={state} />
+        <StatusPanel state={state} cards={[PLAYER_0, PLAYER_1]} />
+      </div>
     </main>
   );
 }

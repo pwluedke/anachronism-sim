@@ -32,6 +32,69 @@ h1 {
   color: var(--muted);
 }
 
+.layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ---- status panel ---- */
+.status {
+  min-width: 240px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+.status-head {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.big {
+  font-size: 18px;
+  font-weight: 700;
+}
+.wcards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wcard {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+.wcard.turn {
+  border-color: #ffe066;
+}
+.wname {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.dot.p0 {
+  background: var(--p0);
+}
+.dot.p1 {
+  background: var(--p1);
+}
+.stats {
+  display: flex;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 /* ---- board ---- */
 .board {
   display: inline-block;
