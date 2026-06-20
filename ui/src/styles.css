@@ -1,0 +1,33 @@
+:root {
+  color-scheme: dark;
+  --bg: #14161a;
+  --panel: #1d2127;
+  --line: #2c323b;
+  --ink: #e6e9ef;
+  --muted: #8b94a3;
+  --p0: #4ea1ff;
+  --p1: #ff7a59;
+  --hit: #2b6cb0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.app {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.muted {
+  color: var(--muted);
+}
