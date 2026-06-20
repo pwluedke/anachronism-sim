@@ -32,11 +32,62 @@ h1 {
   color: var(--muted);
 }
 
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.banner {
+  background: #2a3a2a;
+  border: 1px solid #3d5a3d;
+  color: #d6f5d6;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  margin: 6px 0 12px;
+}
 .layout {
   display: flex;
   gap: 20px;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+
+/* ---- event log ---- */
+.log {
+  min-width: 280px;
+  flex: 1;
+}
+.log-head {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.log-body {
+  height: 360px;
+  overflow-y: auto;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-family: ui-monospace, monospace;
+  line-height: 1.5;
+}
+.logline.roundStarted {
+  color: #ffe066;
+  margin-top: 4px;
+}
+.logline.attacked {
+  color: #cfe3ff;
+}
+.logline.warriorDefeated {
+  color: var(--p1);
+  font-weight: 700;
+}
+.logline.gameEnded {
+  color: #d6f5d6;
+  font-weight: 700;
 }
 
 /* ---- status panel ---- */
