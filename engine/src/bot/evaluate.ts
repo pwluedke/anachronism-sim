@@ -34,5 +34,9 @@ export function evaluate(state: GameState, perspective: PlayerId): number {
   const mine = threat(me, foe, state.arenaSize) * (onMove ? moverMult : 1);
   const theirs = threat(foe, me, state.arenaSize) * (onMove ? 1 : moverMult);
 
-  return life + lead + (mine - theirs) + expDiff * W.experience;
+  const distance =
+    Math.abs(me.position.row - foe.position.row) + Math.abs(me.position.col - foe.position.col);
+  const approach = -W.approach * Math.max(0, -margin) * distance;
+
+  return life + lead + (mine - theirs) + approach + expDiff * W.experience;
 }

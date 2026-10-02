@@ -37,6 +37,15 @@ export const EVAL_WEIGHTS = {
    */
   lead: 1500,
   leadSpread: 0.35,
+  /**
+   * Distance-to-engagement: subtracts `approach * deficit * distance`, where distance is the
+   * orthogonal step distance between the warriors and deficit = max(0, -margin) (how far behind I am
+   * on life, experience tiebreak as 0.5). A trailing bot sees gain from every step toward the
+   * opponent, before it is in range; level or ahead, the term is 0 and the bot is free to keep its
+   * lead. Applied from the evaluating player's side only, so the eval is not zero-sum while one
+   * side trails.
+   */
+  approach: 200,
   /** Per point of experience difference. Minor: experience is only a tiebreaker. */
   experience: 1,
   /** Magnitude for a decided game: a win scores +terminal, a loss -terminal, a draw 0. */
@@ -58,8 +67,12 @@ export const CHANCE_SAMPLES = 24;
 export const DEPTH_EASY = 1;
 /** Medium looks about one full turn ahead. */
 export const DEPTH_MEDIUM = 3;
-/** Hard: full current turn + opponent's reply turn. Raise/lower this during playtesting (each +1 ≈ 3-8x slower). */
-export const DEPTH_HARD = 6;
+/**
+ * Hard: one ply past the end of a full turn. Raise/lower this during playtesting; each +1 costs
+ * roughly 5-20x. Measured with facing-carrying moves (about 15 legal actions per position):
+ * depth 4 ~50ms per decision, 5 ~230ms, 6 4-7s. Depths 4-5 played Medium about even on the spine.
+ */
+export const DEPTH_HARD = 4;
 /** Easy's seeded chance per decision of playing a uniformly random legal action instead of its search pick. */
 export const BLUNDER_CHANCE = 0.3;
 

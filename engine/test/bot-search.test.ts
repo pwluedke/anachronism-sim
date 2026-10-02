@@ -74,8 +74,10 @@ describe("search (expectiminimax)", () => {
   });
 
   it("ties go to the lowest-index legal action", () => {
-    // Far apart, nobody can reach a threat in one action: every depth-1 choice scores the same.
+    // Far apart, level on life, nobody can reach a threat in one action: every depth-1 choice
+    // scores the same.
     const s = setup({ p0: [1, 1, "N"], p1: [3, 3, "S"] });
+    s.warriors[1].life = s.warriors[0].life;
     const legal = getLegalActions(s);
     const scores = legal.map((a) => evaluate(applyAction(s, a).state, 0));
     expect(new Set(scores).size).toBe(1);

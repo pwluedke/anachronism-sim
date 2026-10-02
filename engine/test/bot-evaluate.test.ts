@@ -21,9 +21,9 @@ describe("evaluate", () => {
     expect(evaluate(base(), 1)).toBe(0);
   });
 
-  it("is zero-sum: my score is the negation of the opponent's", () => {
+  it("is zero-sum while life is level: my score is the negation of the opponent's", () => {
+    // (Not zero-sum while one side trails: the approach term is the trailing side's alone.)
     const s = base();
-    s.warriors[0].life = 6;
     s.warriors[0].position = { row: 1, col: 1 };
     s.warriors[0].facing = "S";
     s.warriors[1].position = { row: 2, col: 1 };
@@ -176,4 +176,28 @@ describe("evaluate: life lead vs rounds remaining (fix 2)", () => {
     }
     expect(plan).toContain("ATTACK");
   }, 30_000);
+});
+
+describe("evaluate: distance to engagement", () => {
+  function at(p0: [number, number], lifeGap: number): number {
+    const s = base(); // P0 Achilles facing N at the given cell, P1 at (3,3) facing S
+    s.warriors[0].position = { row: p0[0], col: p0[1] };
+    s.warriors[1].life = s.warriors[0].life - lifeGap; // lifeGap < 0: P0 behind
+    return evaluate(s, 0);
+  }
+
+  it("a trailing side gains from each step toward the opponent, before it is in range", () => {
+    expect(at([1, 1], -2)).toBeGreaterThan(at([0, 0], -2)); // distance 4 vs 6
+    expect(at([1, 2], -2)).toBeGreaterThan(at([1, 1], -2)); // distance 3 vs 4
+  });
+
+  it("pulls harder the further behind the side is", () => {
+    const gain = (gap: number) => at([1, 1], gap) - at([0, 0], gap);
+    expect(gain(-3)).toBeGreaterThan(gain(-1));
+  });
+
+  it("is neutral when level or ahead: distance alone does not change the score", () => {
+    expect(at([1, 1], 0)).toBe(at([0, 0], 0));
+    expect(at([1, 1], 2)).toBe(at([0, 0], 2));
+  });
 });
