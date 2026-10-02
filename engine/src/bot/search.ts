@@ -6,6 +6,9 @@
 //   exhaustion and round/initiative changes are whatever applyAction produces.
 // - ATTACK is a chance node (see CHANCE_SAMPLES): its children are searched
 //   with a full window and averaged by outcome frequency.
+// - Known leak (not fixed): when both warriors have equal experience, round-start initiative is a
+//   dice-off drawn from state.rng, which on non-attack lines is the game's real RNG. So in mirror
+//   matches the search can see who will win initiative next round.
 // - Tie-break: root actions are compared in getLegalActions order and only a
 //   strictly better score replaces the incumbent, so among equal scores the
 //   lowest-index legal action wins.
