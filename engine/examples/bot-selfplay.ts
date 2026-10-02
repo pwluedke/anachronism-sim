@@ -23,7 +23,7 @@ const pairings: [Difficulty, Difficulty][] = [
 ];
 
 const pct = (n: number, d: number) => `${((100 * n) / d).toFixed(0)}%`.padStart(4);
-console.log(`=== Self-play: ${games} games per pairing (seats alternate, all 16 fixture matchups cycle) ===`);
+console.log(`=== Self-play: ${games} games per pairing (every fixture matchup played from both seats) ===`);
 console.log("A        B        A wins     B wins     draws   time");
 const rows: PairingSummary[] = [];
 for (const [a, b] of pairings) {

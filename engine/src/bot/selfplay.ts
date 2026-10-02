@@ -82,8 +82,8 @@ export interface PairingSummary {
 }
 
 /**
- * Play `games` games of tier `a` vs tier `b`. Seats alternate every game (a is P0 on even games)
- * and card matchups cycle through every ordered pair of `cardIds`, so neither side gets a
+ * Play `games` games of tier `a` vs tier `b`. Card matchups cycle through every ordered pair of
+ * `cardIds`, and each matchup is played twice with seats swapped, so neither tier gets a
  * systematic seat or warrior advantage. Illegal actions or non-terminating games throw.
  */
 export function selfPlayBatch(
@@ -99,7 +99,8 @@ export function selfPlayBatch(
   const out: PairingSummary = { a, b, games, aWins: 0, bWins: 0, draws: 0 };
 
   for (let g = 0; g < games; g++) {
-    const [x, y] = matchups[g % matchups.length];
+    // Consecutive game pairs share a matchup with seats swapped, so each tier plays both warriors.
+    const [x, y] = matchups[Math.floor(g / 2) % matchups.length];
     const aSeat: PlayerId = g % 2 === 0 ? 0 : 1;
     const r =
       aSeat === 0
