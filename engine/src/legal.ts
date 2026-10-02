@@ -15,9 +15,11 @@ export function getLegalActions(state: GameState): Action[] {
   const acts: Action[] = [];
 
   if (state.actionsRemaining >= 1) {
-    // moves into legal (in-arena, unoccupied) cells
+    // moves into legal (in-arena, unoccupied) cells, each with every facing: a warrior may turn
+    // for free as part of a move, so the step and the new facing cost one action together
     for (const dir of FACINGS) {
-      if (canMove(state.warriors, me, dir, state.arenaSize).ok) acts.push({ type: "MOVE", dir });
+      if (!canMove(state.warriors, me, dir, state.arenaSize).ok) continue;
+      for (const facing of FACINGS) acts.push({ type: "MOVE", dir, facing });
     }
     // rotations to a different facing
     for (const f of FACINGS) {

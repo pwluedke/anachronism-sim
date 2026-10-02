@@ -7,7 +7,7 @@ const DIR: Record<string, string> = { N: "North", E: "East", S: "South", W: "Wes
 export function actionLabel(a: Action, state: GameState): string {
   switch (a.type) {
     case "MOVE":
-      return `Move ${DIR[a.dir]}`;
+      return a.facing ? `Move ${DIR[a.dir]}, face ${DIR[a.facing]}` : `Move ${DIR[a.dir]}`;
     case "ROTATE":
       return `Rotate ${DIR[a.facing]}`;
     case "ATTACK": {

@@ -10,6 +10,8 @@ import {
   occupant,
 } from "../src/arena";
 import type { Warrior, Facing } from "../src/types";
+import { init, applyAction } from "../src/engine";
+import { ACHILLES, AJAX } from "../fixtures/warriors";
 
 function w(
   playerId: 0 | 1,
@@ -112,5 +114,27 @@ describe("occupant", () => {
     expect(occupant(ws, { row: 0, col: 0 })).toBe(0);
     expect(occupant(ws, { row: 3, col: 3 })).toBe(1);
     expect(occupant(ws, { row: 1, col: 1 })).toBe(null);
+  });
+});
+
+describe("move-then-free-rotate through applyAction", () => {
+  it("a MOVE with facing steps and turns for a single action", () => {
+    const s = structuredClone(init(ACHILLES, AJAX, 1).state);
+    s.currentPlayer = 0;
+    s.actionsRemaining = 3;
+    s.warriors[0].position = { row: 1, col: 1 };
+    s.warriors[0].facing = "S";
+    s.warriors[1].position = { row: 3, col: 3 };
+    const r = applyAction(s, { type: "MOVE", dir: "E", facing: "N" });
+    expect(r.state.warriors[0].position).toEqual({ row: 1, col: 2 });
+    expect(r.state.warriors[0].facing).toBe("N");
+    expect(r.state.actionsRemaining).toBe(2);
+    expect(r.events).toContainEqual({
+      type: "moved",
+      player: 0,
+      from: { row: 1, col: 1 },
+      to: { row: 1, col: 2 },
+      facing: "N",
+    });
   });
 });
