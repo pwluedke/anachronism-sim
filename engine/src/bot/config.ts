@@ -21,3 +21,10 @@ export const EVAL_WEIGHTS = {
   /** Magnitude for a decided game: a win scores +terminal, a loss -terminal, a draw 0. */
   terminal: 1_000_000,
 } as const;
+
+/**
+ * Dice samples per ATTACK in the search. The search never looks at the game's real future rolls:
+ * each attack is resolved by the engine under this many bot-seeded RNG states, and the distinct
+ * outcomes (miss / hit / crit / kill) are weighted by frequency. Higher = truer odds, slower search.
+ */
+export const CHANCE_SAMPLES = 24;
