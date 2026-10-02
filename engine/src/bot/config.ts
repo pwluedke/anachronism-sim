@@ -28,3 +28,29 @@ export const EVAL_WEIGHTS = {
  * outcomes (miss / hit / crit / kill) are weighted by frequency. Higher = truer odds, slower search.
  */
 export const CHANCE_SAMPLES = 24;
+
+// ---- Difficulty tiers ------------------------------------------------------
+// Depths are in plies (one ply = one action, either side). A spine warrior has speed 3,
+// so 3 plies ≈ one full turn and 6 ≈ my turn + the opponent's reply.
+
+/** Easy looks one action ahead. */
+export const DEPTH_EASY = 1;
+/** Medium looks about one full turn ahead. */
+export const DEPTH_MEDIUM = 3;
+/** Hard: full current turn + opponent's reply turn. Raise/lower this during playtesting (each +1 ≈ 3-8x slower). */
+export const DEPTH_HARD = 6;
+/** Easy's seeded chance per decision of playing a uniformly random legal action instead of its search pick. */
+export const BLUNDER_CHANCE = 0.3;
+
+export type Difficulty = "easy" | "medium" | "hard";
+
+export interface TierConfig {
+  depth: number;
+  blunderChance: number;
+}
+
+export const TIER_CONFIG: Record<Difficulty, TierConfig> = {
+  easy: { depth: DEPTH_EASY, blunderChance: BLUNDER_CHANCE },
+  medium: { depth: DEPTH_MEDIUM, blunderChance: 0 },
+  hard: { depth: DEPTH_HARD, blunderChance: 0 },
+};

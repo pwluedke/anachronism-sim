@@ -8,3 +8,4 @@ export { canMove, applyMove, applyRotate, stepPos, inBounds, FACINGS, FACE_DELTA
 export { step, rollDie, roll2d6, seedState } from "./rng";
 export { HOOKS, resolveHooks } from "./hooks";
 export type { HookName, HookContext } from "./hooks";
+export * from "./bot";
