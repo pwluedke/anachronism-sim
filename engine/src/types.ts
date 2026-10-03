@@ -138,6 +138,9 @@ export interface AbilityAction {
   type: "ABILITY";
   card: string;
   ability: string;
+  /** For abilities that take a choice, e.g. where an ability move ends and the facing after it. */
+  to?: Position;
+  facing?: Facing;
 }
 export type Action = MoveAction | RotateAction | AttackAction | PassAction | DiscardAction | AbilityAction;
 

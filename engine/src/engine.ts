@@ -323,7 +323,8 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
       return { state: prev, events: [] }; // only meaningful while a restriction is pending
     case "ABILITY": {
       if (state.actionsRemaining < 1) return { state: prev, events: [] };
-      if (!useActionAbility(state, me, action.card, action.ability, events)) return { state: prev, events: [] };
+      const params = action.to && action.facing ? { to: action.to, facing: action.facing } : undefined;
+      if (!useActionAbility(state, me, action.card, action.ability, events, params)) return { state: prev, events: [] };
       state.actionsRemaining -= 1;
       if (endIfDefeated(state, events)) return { state, events };
       break;
@@ -362,7 +363,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
       // so an illegal attack is a true no-op (no hook noise, no RNG burn).
       const attacker = armedAttacker(state, me, action.weapon);
       if (!attacker) return { state: prev, events: [] };
-      const pre = resolveAttack(attacker, state.warriors[foe], state.rng, state.arenaSize, attackRollBonus(state, me));
+      const pre = resolveAttack(attacker, state.warriors[foe], state.rng, state.arenaSize, attackRollBonus(state, me, action.weapon));
       if (!pre.result.legal) return { state: prev, events: [] };
       const weaponSlot = action.weapon
         ? state.cards[me].support.find((s) => s.card.id === action.weapon)

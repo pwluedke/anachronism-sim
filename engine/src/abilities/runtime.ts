@@ -9,7 +9,7 @@
 
 import type { GameEvent, GameState, PlayerId } from "../types";
 import { REGISTRY } from "./registry";
-import type { AttackKind, FireContext, RuntimeAbility, Trigger } from "./types";
+import type { AbilityParams, AttackKind, FireContext, ModKind, RuntimeAbility, Trigger } from "./types";
 
 /** Facts about the attack an attack trigger fires for. */
 export interface AttackInfo {
@@ -92,14 +92,37 @@ export function fireTrigger(
   }
 }
 
-/** Player p's total bonus to attack rolls right now: continuous abilities + active timed effects. */
-export function attackRollBonus(state: GameState, p: PlayerId): number {
-  let bonus = 0;
-  for (const src of sources(state, p)) {
-    for (const a of src.abilities) if (a.trigger === "continuous" && a.attackRoll) bonus += a.attackRoll(state, p);
+const oppOf = (p: PlayerId): PlayerId => (p === 0 ? 1 : 0);
+
+/** Sum of a modifier for `owner`: continuous abilities of their in-effect cards + active timed effects. */
+function modifierTotal(state: GameState, owner: PlayerId, kind: ModKind, attacker: PlayerId, defender: PlayerId, weaponId?: string): number {
+  let total = 0;
+  for (const src of sources(state, owner)) {
+    for (const a of src.abilities) {
+      if (a.trigger === "continuous" && a.modify) {
+        total += a.modify(kind, { state, owner, attacker, defender, weaponId, sourceCardId: src.cardId });
+      }
+    }
   }
-  for (const e of state.effects) if (e.owner === p && e.active && e.kind === "attackRoll") bonus += e.amount;
-  return bonus;
+  if (kind !== "weaponDamage") {
+    for (const e of state.effects) if (e.owner === owner && e.active && e.kind === kind) total += e.amount;
+  }
+  return total;
+}
+
+/** Attacker p's bonus to an attack roll (against the opponent, with `weaponId` or a basic attack). */
+export function attackRollBonus(state: GameState, p: PlayerId, weaponId?: string): number {
+  return modifierTotal(state, p, "attackRoll", p, oppOf(p), weaponId);
+}
+
+/** Defender p's bonus to their defense roll against the opponent's attack. */
+export function defenseRollBonus(state: GameState, p: PlayerId, weaponId?: string): number {
+  return modifierTotal(state, p, "defenseRoll", oppOf(p), p, weaponId);
+}
+
+/** Extra damage attacker p's attack with `weaponId` deals (weapon abilities, e.g. Gladius). */
+export function weaponDamageBonus(state: GameState, p: PlayerId, weaponId: string): number {
+  return modifierTotal(state, p, "weaponDamage", p, oppOf(p), weaponId);
 }
 
 /** At the start of p's turn: activate p's pending "next turn" effects; returns the speed bonus. */
@@ -128,27 +151,51 @@ export interface ActionAbilityRef {
   cardId: string;
   cardName: string;
   ability: string;
+  /** For abilities that take a choice (e.g. a move): one entry per legal choice. */
+  params?: AbilityParams;
 }
 
-/** Action abilities p could use right now (cost one action; checked by getLegalActions). */
+const sameParams = (a?: AbilityParams, b?: AbilityParams) =>
+  !a && !b
+    ? true
+    : !!a && !!b && a.facing === b.facing && a.to.row === b.to.row && a.to.col === b.to.col;
+
+/** Action abilities p could use right now, one entry per legal choice (cost one action; offered by
+ *  getLegalActions). */
 export function usableActionAbilities(state: GameState, p: PlayerId): ActionAbilityRef[] {
   const out: ActionAbilityRef[] = [];
   for (const src of sources(state, p)) {
     for (const a of src.abilities) {
       if (a.trigger !== "action" || isUsedUp(state, src.cardId, a)) continue;
-      if (a.canFire && !a.canFire(context(state, p, src, a, []))) continue;
-      out.push({ cardId: src.cardId, cardName: src.cardName, ability: a.name });
+      const ctx = context(state, p, src, a, []);
+      if (a.canFire && !a.canFire(ctx)) continue;
+      const ref = { cardId: src.cardId, cardName: src.cardName, ability: a.name };
+      if (a.options) for (const params of a.options(ctx)) out.push({ ...ref, params });
+      else out.push(ref);
     }
   }
   return out;
 }
 
-/** Use an action ability (the caller spends the action). Returns false if it isn't usable. */
-export function useActionAbility(state: GameState, p: PlayerId, cardId: string, ability: string, events: GameEvent[]): boolean {
-  const src = sources(state, p).find((s) => s.cardId === cardId);
-  const a = src?.abilities.find((x) => x.trigger === "action" && x.name === ability);
-  if (!src || !a) return false;
-  return tryFire(context(state, p, src, a, events), a);
+/** Use an action ability (the caller spends the action). Returns false if it isn't usable with
+ *  those params. */
+export function useActionAbility(
+  state: GameState,
+  p: PlayerId,
+  cardId: string,
+  ability: string,
+  events: GameEvent[],
+  params?: AbilityParams,
+): boolean {
+  const offered = usableActionAbilities(state, p).some((r) => r.cardId === cardId && r.ability === ability && sameParams(r.params, params));
+  if (!offered) return false;
+  const src = sources(state, p).find((s) => s.cardId === cardId)!;
+  const a = src.abilities.find((x) => x.trigger === "action" && x.name === ability)!;
+  const ctx = context(state, p, src, a, events);
+  const effect = a.fire!(ctx, params);
+  if (a.oncePerRound) state.abilityUses.push(useKey(cardId, a));
+  events.push({ type: "abilityFired", player: p, cardId, cardName: src.cardName, ability: a.name, effect });
+  return true;
 }
 
 // ---- Display helpers (read-only) -----------------------------------------------------------------
@@ -182,8 +229,9 @@ export function abilityStatus(state: GameState, p: PlayerId): AbilityStatus[] {
       const base = { cardId: src.cardId, cardName: src.cardName, ability: a.name, trigger: a.trigger };
       if (a.trigger === "continuous") {
         const on = a.inEffect ? a.inEffect(state, p) : true;
-        const v = a.attackRoll ? a.attackRoll(state, p) : 0;
-        out.push({ ...base, status: on ? "active" : "dormant", detail: on ? `${v >= 0 ? "+" : ""}${v} to attack rolls` : "condition not met" });
+        const detail = a.describeNow ? a.describeNow(state, p, src.cardId) : "in effect";
+        const active = on && detail !== "condition not met";
+        out.push({ ...base, status: active ? "active" : "dormant", detail: active ? detail : "condition not met" });
       } else if (isUsedUp(state, src.cardId, a)) {
         out.push({ ...base, status: "used", detail: "used this round" });
       } else if (a.trigger === "reveal") {

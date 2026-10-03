@@ -1,7 +1,7 @@
 // Ability runtime types. Every ability — whether authored as data (see format.ts) or hand-coded —
 // becomes a RuntimeAbility, which is all the runtime ever sees.
 
-import type { GameEvent, GameState, PlayerId } from "../types";
+import type { Facing, GameEvent, GameState, PlayerId, Position } from "../types";
 
 /** When an ability acts. "continuous" abilities are always on (while their card is in play) and are
  *  read when a value is needed (e.g. an attack roll); the others fire at a moment. */
@@ -26,7 +26,7 @@ export interface TimedEffect {
   source: string;
   sourceName: string;
   ability: string;
-  kind: "attackRoll" | "speed";
+  kind: "attackRoll" | "defenseRoll" | "speed";
   amount: number;
   /** thisRound: until the round ends. nextTurn: the owner's next turn only. */
   duration: "thisRound" | "nextTurn";
@@ -48,6 +48,28 @@ export interface FireContext {
   attackKind?: AttackKind;
 }
 
+/** The values continuous abilities can modify. */
+export type ModKind = "attackRoll" | "defenseRoll" | "weaponDamage";
+
+/** The attack a modifier is being asked about. `owner` is the ability's owner (the attacker for
+ *  attack-roll and weapon-damage modifiers, the defender for defense-roll modifiers). */
+export interface ModQuery {
+  state: GameState;
+  owner: PlayerId;
+  attacker: PlayerId;
+  defender: PlayerId;
+  /** The weapon the attack is made with (undefined: a basic attack). */
+  weaponId?: string;
+  /** The card the ability is on. */
+  sourceCardId: string;
+}
+
+/** Choices an Action ability takes, e.g. where an ability move ends and the facing after it. */
+export interface AbilityParams {
+  to: Position;
+  facing: Facing;
+}
+
 export interface RuntimeAbility {
   name: string;
   trigger: Trigger;
@@ -56,11 +78,14 @@ export interface RuntimeAbility {
   /** Event / action abilities: may this fire now? (conditions) */
   canFire?(ctx: FireContext): boolean;
   /** Event / action abilities: apply the effect(s). Returns a short description for the log. */
-  fire?(ctx: FireContext): string;
-  /** Continuous abilities: this ability's current bonus to its owner's attack rolls. */
-  attackRoll?(state: GameState, owner: PlayerId): number;
-  /** Continuous abilities: is the ability currently in effect (for display)? */
+  fire?(ctx: FireContext, params?: AbilityParams): string;
+  /** Action abilities that need a choice (e.g. a move): every legal choice right now. */
+  options?(ctx: FireContext): AbilityParams[];
+  /** Continuous abilities: this ability's current contribution to a modifier. */
+  modify?(kind: ModKind, q: ModQuery): number;
+  /** Continuous abilities: is the ability currently in effect, and what it's doing (for display)? */
   inEffect?(state: GameState, owner: PlayerId): boolean;
+  describeNow?(state: GameState, owner: PlayerId, sourceCardId: string): string;
 }
 
 /** Card id -> its implemented abilities. Cards without an entry are inert. */

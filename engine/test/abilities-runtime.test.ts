@@ -59,7 +59,7 @@ describe("ability runtime", () => {
   });
 
   it("face-down and discarded cards have no effect", () => {
-    register(ALEX.support[3].id, { name: "C", trigger: "continuous", attackRoll: () => 5 }); // face-down until round 4
+    register(ALEX.support[3].id, { name: "C", trigger: "continuous", modify: (k) => (k === "attackRoll" ? 5 : 0) }); // face-down until round 4
     const { state } = init(ALEX, LEO, 1);
     expect(attackRollBonus(state, 0)).toBe(0);
     const s = structuredClone(state);

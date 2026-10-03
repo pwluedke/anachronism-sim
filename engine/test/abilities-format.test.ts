@@ -25,7 +25,9 @@ describe("ability authoring format", () => {
   it("compiles a continuous data ability into an attack-roll contribution", () => {
     const a = compileAbility({ name: "X", trigger: "continuous", effects: [{ kind: "attackRoll", amount: 2 }] });
     expect(a.trigger).toBe("continuous");
-    expect(a.attackRoll!(init(ALEX, LEO, 1).state, 0)).toBe(2);
+    const state = init(ALEX, LEO, 1).state;
+    expect(a.modify!("attackRoll", { state, owner: 0, attacker: 0, defender: 1, sourceCardId: "x" })).toBe(2);
+    expect(a.modify!("defenseRoll", { state, owner: 0, attacker: 1, defender: 0, sourceCardId: "x" })).toBe(0);
   });
 
   it("compiles a fired data ability with its usage limit", () => {
@@ -37,6 +39,8 @@ describe("ability authoring format", () => {
   it("rejects combinations the runtime can't do", () => {
     expect(() => compileAbility({ name: "a", trigger: "continuous", effects: [{ kind: "attackRoll", amount: 1 }], duration: "thisRound" })).toThrow();
     expect(() => compileAbility({ name: "b", trigger: "continuous", effects: [{ kind: "gainLife", amount: 1 }] })).toThrow();
+    expect(() => compileAbility({ name: "e", trigger: "reveal", effects: [{ kind: "weaponDamage", amount: 1 }] })).toThrow();
+    expect(() => compileAbility({ name: "f", trigger: "reveal", effects: [{ kind: "move", spaces: 2 }] })).toThrow(/Action/);
     expect(() => compileAbility({ name: "c", trigger: "reveal", effects: [{ kind: "attackRoll", amount: 1 }] })).toThrow(/duration/);
     expect(() => compileAbility({ name: "d", trigger: "action", effects: [{ kind: "speed", amount: 1 }], duration: "permanent" })).toThrow();
   });

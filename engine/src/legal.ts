@@ -41,7 +41,13 @@ export function getLegalActions(state: GameState): Action[] {
       }
     }
     // Action abilities of the warrior and in-play cards (each costs one action)
-    for (const a of usableActionAbilities(state, me)) acts.push({ type: "ABILITY", card: a.cardId, ability: a.ability });
+    for (const a of usableActionAbilities(state, me)) {
+      acts.push(
+        a.params
+          ? { type: "ABILITY", card: a.cardId, ability: a.ability, to: a.params.to, facing: a.params.facing }
+          : { type: "ABILITY", card: a.cardId, ability: a.ability },
+      );
+    }
   }
   acts.push({ type: "PASS" }); // always available while playing
   return acts;
