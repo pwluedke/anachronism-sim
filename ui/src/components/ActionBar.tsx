@@ -9,6 +9,8 @@ export interface ActionBarProps {
   enabled: boolean;
   /** Attacks if the engine offers ATTACK; otherwise the parent explains why not. */
   onAttack: () => void;
+  /** Pointer/focus on Attack: the parent previews the attack grid. */
+  onAttackHover: (on: boolean) => void;
   /** Whether the engine currently offers ATTACK (styling only). */
   inRange: boolean;
   pass?: Action;
@@ -18,14 +20,22 @@ export interface ActionBarProps {
   onCancel: () => void;
 }
 
-export function ActionBar({ prompt, notice, thinking, enabled, onAttack, inRange, pass, confirm, canCancel, onAct, onCancel }: ActionBarProps) {
+export function ActionBar({ prompt, notice, thinking, enabled, onAttack, onAttackHover, inRange, pass, confirm, canCancel, onAct, onCancel }: ActionBarProps) {
   return (
     <section className="action-bar" aria-label="actions">
       <div className={`action-prompt${thinking ? " thinking" : ""}${notice ? " notice" : ""}`} aria-live="polite">
         {prompt}
       </div>
       <div className="action-buttons">
-        <button className={`btn btn-attack${inRange ? " in-range" : ""}`} disabled={!enabled} onClick={onAttack}>
+        <button
+          className={`btn btn-attack${inRange ? " in-range" : ""}`}
+          disabled={!enabled}
+          onClick={onAttack}
+          onMouseEnter={() => onAttackHover(true)}
+          onMouseLeave={() => onAttackHover(false)}
+          onFocus={() => onAttackHover(true)}
+          onBlur={() => onAttackHover(false)}
+        >
           Attack <kbd>A</kbd>
         </button>
         <button className="btn" disabled={!enabled || !canCancel} onClick={onCancel}>

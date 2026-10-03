@@ -44,6 +44,7 @@ export function App() {
   const [sel, setSel] = useState<Selection>(NO_SELECTION);
   const [hover, setHover] = useState<Facing | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
+  const [attackHover, setAttackHover] = useState(false);
   useEffect(() => {
     setSel(NO_SELECTION);
     setHover(null);
@@ -67,11 +68,13 @@ export function App() {
   // else the current facing (turning in place to it isn't an action, so it has no caret of its own).
   const shownFacing = sel.kind === "none" ? null : (hover ?? sel.facing ?? active.facing);
 
+  // Hovering Attack previews the grid an attack would use: from where the warrior stands now.
+  const attackPreview = attackHover && humanTurn;
   const grid = useMemo(() => {
     if (!playing) return new Map<string, number>();
-    if (target && shownFacing) return gridAt(state, target, shownFacing);
+    if (!attackPreview && target && shownFacing) return gridAt(state, target, shownFacing);
     return gridAt(state, active.position, active.facing);
-  }, [state, playing, target, shownFacing, active]);
+  }, [state, playing, attackPreview, target, shownFacing, active]);
 
   const confirm = model ? selectedAction(model, sel) : undefined;
   const act = (a: Action) => dispatch(a);
@@ -189,7 +192,7 @@ export function App() {
             state={state}
             cards={CARDS}
             grid={grid}
-            gridIsPreview={!!(target && shownFacing)}
+            gridIsPreview={attackPreview || !!(target && shownFacing)}
             reach={model && sel.kind !== "rotate" ? new Set(model.reach.keys()) : undefined}
             path={model && sel.kind === "move" && target ? { from: model.origin, to: target } : null}
             carets={
@@ -214,6 +217,7 @@ export function App() {
             thinking={botTurn}
             enabled={humanTurn}
             onAttack={tryAttack}
+            onAttackHover={setAttackHover}
             inRange={!!model?.attack}
             pass={model?.pass}
             confirm={confirm}
