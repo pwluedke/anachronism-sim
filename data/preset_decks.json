@@ -1,0 +1,4835 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-03T07:57:51+00:00",
+  "source": "spreadsheet-2007",
+  "rule": "warrior immediately followed (by collector number, per set) by exactly 4 non-warrior cards",
+  "deck_count": 133,
+  "skipped_count": 24,
+  "decks": [
+    {
+      "id": "s1-001",
+      "set": 1,
+      "warrior": {
+        "id": "s1-001",
+        "name": "Alexander the Great",
+        "collector": "001"
+      },
+      "support": [
+        {
+          "id": "s1-002",
+          "name": "Oracle of Delphi",
+          "collector": "002",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-003",
+          "name": "Sarissae",
+          "collector": "003",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-004",
+          "name": "Linen Cuirass",
+          "collector": "004",
+          "type": "armor"
+        },
+        {
+          "id": "s1-005",
+          "name": "Bucephalus",
+          "collector": "005",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-006",
+      "set": 1,
+      "warrior": {
+        "id": "s1-006",
+        "name": "Leonidas",
+        "collector": "006"
+      },
+      "support": [
+        {
+          "id": "s1-007",
+          "name": "Nemesis",
+          "collector": "007",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-008",
+          "name": "Spartan Lakonian",
+          "collector": "008",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-009",
+          "name": "Muscle Cuirass",
+          "collector": "009",
+          "type": "armor"
+        },
+        {
+          "id": "s1-010",
+          "name": "Hoplon",
+          "collector": "010",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-011",
+      "set": 1,
+      "warrior": {
+        "id": "s1-011",
+        "name": "Herakles",
+        "collector": "011"
+      },
+      "support": [
+        {
+          "id": "s1-012",
+          "name": "Zeus",
+          "collector": "012",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-013",
+          "name": "Kopis",
+          "collector": "013",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-014",
+          "name": "Greaves",
+          "collector": "014",
+          "type": "armor"
+        },
+        {
+          "id": "s1-015",
+          "name": "Belt of Hippolyte",
+          "collector": "015",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-016",
+      "set": 1,
+      "warrior": {
+        "id": "s1-016",
+        "name": "Milo of Croton",
+        "collector": "016"
+      },
+      "support": [
+        {
+          "id": "s1-017",
+          "name": "Pythagoras",
+          "collector": "017",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-018",
+          "name": "Ropalo",
+          "collector": "018",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-019",
+          "name": "Liontari",
+          "collector": "019",
+          "type": "armor"
+        },
+        {
+          "id": "s1-020",
+          "name": "Kotynos",
+          "collector": "020",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-021",
+      "set": 1,
+      "warrior": {
+        "id": "s1-021",
+        "name": "Oda Nobunaga",
+        "collector": "021"
+      },
+      "support": [
+        {
+          "id": "s1-022",
+          "name": "Izanagi",
+          "collector": "022",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-023",
+          "name": "Yumi",
+          "collector": "023",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-024",
+          "name": "Do",
+          "collector": "024",
+          "type": "armor"
+        },
+        {
+          "id": "s1-025",
+          "name": "Kyudo",
+          "collector": "025",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-041",
+      "set": 1,
+      "warrior": {
+        "id": "s1-041",
+        "name": "Ninja",
+        "collector": "041"
+      },
+      "support": [
+        {
+          "id": "s1-042",
+          "name": "Izanami",
+          "collector": "042",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-043",
+          "name": "Ninja-to",
+          "collector": "043",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-044",
+          "name": "Shinobo Shozoku",
+          "collector": "044",
+          "type": "armor"
+        },
+        {
+          "id": "s1-045",
+          "name": "Shuriken",
+          "collector": "045",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-046",
+      "set": 1,
+      "warrior": {
+        "id": "s1-046",
+        "name": "Canute the Great",
+        "collector": "046"
+      },
+      "support": [
+        {
+          "id": "s1-047",
+          "name": "Odin",
+          "collector": "047",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-048",
+          "name": "Langseax",
+          "collector": "048",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-049",
+          "name": "Healsbeorgs",
+          "collector": "049",
+          "type": "armor"
+        },
+        {
+          "id": "s1-050",
+          "name": "Crown of England",
+          "collector": "050",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-064",
+      "set": 1,
+      "warrior": {
+        "id": "s1-064",
+        "name": "Grettir the Strong",
+        "collector": "064"
+      },
+      "support": [
+        {
+          "id": "s1-065",
+          "name": "Loki",
+          "collector": "065",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-066",
+          "name": "Dane Axe",
+          "collector": "066",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-067",
+          "name": "Bear Sark",
+          "collector": "067",
+          "type": "armor"
+        },
+        {
+          "id": "s1-068",
+          "name": "Berserkergangr",
+          "collector": "068",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-076",
+      "set": 1,
+      "warrior": {
+        "id": "s1-076",
+        "name": "Amazonia",
+        "collector": "076"
+      },
+      "support": [
+        {
+          "id": "s1-077",
+          "name": "Mercury",
+          "collector": "077",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-078",
+          "name": "Pugio",
+          "collector": "078",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-079",
+          "name": "Pteryges",
+          "collector": "079",
+          "type": "armor"
+        },
+        {
+          "id": "s1-080",
+          "name": "Scutulum",
+          "collector": "080",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-081",
+      "set": 1,
+      "warrior": {
+        "id": "s1-081",
+        "name": "Marcus Claudius Marcellus",
+        "collector": "081"
+      },
+      "support": [
+        {
+          "id": "s1-082",
+          "name": "Apollo",
+          "collector": "082",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-083",
+          "name": "Pilum",
+          "collector": "083",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-084",
+          "name": "Loricae Segmentata",
+          "collector": "084",
+          "type": "armor"
+        },
+        {
+          "id": "s1-085",
+          "name": "Disciplina",
+          "collector": "085",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-086",
+      "set": 1,
+      "warrior": {
+        "id": "s1-086",
+        "name": "Maximinus",
+        "collector": "086"
+      },
+      "support": [
+        {
+          "id": "s1-087",
+          "name": "Pluto",
+          "collector": "087",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-088",
+          "name": "Spatha",
+          "collector": "088",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-089",
+          "name": "Cassis",
+          "collector": "089",
+          "type": "armor"
+        },
+        {
+          "id": "s1-090",
+          "name": "Scutum",
+          "collector": "090",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-091",
+      "set": 1,
+      "warrior": {
+        "id": "s1-091",
+        "name": "Achilles",
+        "collector": "091"
+      },
+      "support": [
+        {
+          "id": "s1-092",
+          "name": "Thetis",
+          "collector": "092",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-093",
+          "name": "Sarissa",
+          "collector": "093",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-094",
+          "name": "Armor of Hephaestus",
+          "collector": "094",
+          "type": "armor"
+        },
+        {
+          "id": "s1-095",
+          "name": "Shield of Hephaestus",
+          "collector": "095",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s1-096",
+      "set": 1,
+      "warrior": {
+        "id": "s1-096",
+        "name": "Spartacus",
+        "collector": "096"
+      },
+      "support": [
+        {
+          "id": "s1-097",
+          "name": "Blossius of Cumae",
+          "collector": "097",
+          "type": "inspiration"
+        },
+        {
+          "id": "s1-098",
+          "name": "Sica",
+          "collector": "098",
+          "type": "weapon"
+        },
+        {
+          "id": "s1-099",
+          "name": "Ocrea",
+          "collector": "099",
+          "type": "armor"
+        },
+        {
+          "id": "s1-100",
+          "name": "Parma",
+          "collector": "100",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-001",
+      "set": 2,
+      "warrior": {
+        "id": "s2-001",
+        "name": "Alfred the Great",
+        "collector": "001"
+      },
+      "support": [
+        {
+          "id": "s2-002",
+          "name": "Ealswith",
+          "collector": "002",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-003",
+          "name": "Longsword",
+          "collector": "003",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-004",
+          "name": "Gambeson",
+          "collector": "004",
+          "type": "armor"
+        },
+        {
+          "id": "s2-005",
+          "name": "Targe",
+          "collector": "005",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-006",
+      "set": 2,
+      "warrior": {
+        "id": "s2-006",
+        "name": "Boudicca",
+        "collector": "006"
+      },
+      "support": [
+        {
+          "id": "s2-007",
+          "name": "Rhiannon",
+          "collector": "007",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-008",
+          "name": "Goaf",
+          "collector": "008",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-009",
+          "name": "Bratt",
+          "collector": "009",
+          "type": "armor"
+        },
+        {
+          "id": "s2-010",
+          "name": "Carpat",
+          "collector": "010",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-011",
+      "set": 2,
+      "warrior": {
+        "id": "s2-011",
+        "name": "King Arthur",
+        "collector": "011"
+      },
+      "support": [
+        {
+          "id": "s2-012",
+          "name": "Lady of the Lake",
+          "collector": "012",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-013",
+          "name": "Excalibur",
+          "collector": "013",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-014",
+          "name": "Chainmail Shirt",
+          "collector": "014",
+          "type": "armor"
+        },
+        {
+          "id": "s2-015",
+          "name": "Merlin the Wise",
+          "collector": "015",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-016",
+      "set": 2,
+      "warrior": {
+        "id": "s2-016",
+        "name": "Richard the Lionheart",
+        "collector": "016"
+      },
+      "support": [
+        {
+          "id": "s2-017",
+          "name": "Bernegnaria",
+          "collector": "017",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-018",
+          "name": "Greatsword",
+          "collector": "018",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-019",
+          "name": "Full Mail Hauberk",
+          "collector": "019",
+          "type": "armor"
+        },
+        {
+          "id": "s2-020",
+          "name": "Chivalry",
+          "collector": "020",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-021",
+      "set": 2,
+      "warrior": {
+        "id": "s2-021",
+        "name": "Robin Hood",
+        "collector": "021"
+      },
+      "support": [
+        {
+          "id": "s2-022",
+          "name": "Maid Marion",
+          "collector": "022",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-023",
+          "name": "Long Bow",
+          "collector": "023",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-024",
+          "name": "Leather Jerkin",
+          "collector": "024",
+          "type": "armor"
+        },
+        {
+          "id": "s2-025",
+          "name": "Band of Merry Men",
+          "collector": "025",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-026",
+      "set": 2,
+      "warrior": {
+        "id": "s2-026",
+        "name": "Guan Yu",
+        "collector": "026"
+      },
+      "support": [
+        {
+          "id": "s2-027",
+          "name": "Guan Di",
+          "collector": "027",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-028",
+          "name": "Qing Long Yan Yue Dao",
+          "collector": "028",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-029",
+          "name": "Jlang Jun Zhil Kai",
+          "collector": "029",
+          "type": "armor"
+        },
+        {
+          "id": "s2-030",
+          "name": "Tao Yuan San Jie Yi",
+          "collector": "030",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-031",
+      "set": 2,
+      "warrior": {
+        "id": "s2-031",
+        "name": "Hua Mulan",
+        "collector": "031"
+      },
+      "support": [
+        {
+          "id": "s2-032",
+          "name": "Zhu Rong",
+          "collector": "032",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-033",
+          "name": "Qiang Spear",
+          "collector": "033",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-034",
+          "name": "Zhou",
+          "collector": "034",
+          "type": "armor"
+        },
+        {
+          "id": "s2-035",
+          "name": "Sheng Kai De Mu Lan Hua",
+          "collector": "035",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-036",
+      "set": 2,
+      "warrior": {
+        "id": "s2-036",
+        "name": "Jei the Tyrant",
+        "collector": "036"
+      },
+      "support": [
+        {
+          "id": "s2-037",
+          "name": "Yeng Wang Ye",
+          "collector": "037",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-038",
+          "name": "Yue",
+          "collector": "038",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-039",
+          "name": "Bo Xion Jla",
+          "collector": "039",
+          "type": "armor"
+        },
+        {
+          "id": "s2-040",
+          "name": "Qing Gong Palace",
+          "collector": "040",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-041",
+      "set": 2,
+      "warrior": {
+        "id": "s2-041",
+        "name": "Sun Tzu",
+        "collector": "041"
+      },
+      "support": [
+        {
+          "id": "s2-042",
+          "name": "Yu Huang Shang Di",
+          "collector": "042",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-043",
+          "name": "Nu Gong",
+          "collector": "043",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-044",
+          "name": "Shan Wen Jia",
+          "collector": "044",
+          "type": "armor"
+        },
+        {
+          "id": "s2-045",
+          "name": "Bing Fa",
+          "collector": "045",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-046",
+      "set": 2,
+      "warrior": {
+        "id": "s2-046",
+        "name": "Yueh Fei",
+        "collector": "046"
+      },
+      "support": [
+        {
+          "id": "s2-047",
+          "name": "Jin Cheng Bao Guo",
+          "collector": "047",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-048",
+          "name": "Dao",
+          "collector": "048",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-049",
+          "name": "Hu Xion Jia",
+          "collector": "049",
+          "type": "armor"
+        },
+        {
+          "id": "s2-050",
+          "name": "Ba Duan Jin",
+          "collector": "050",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-051",
+      "set": 2,
+      "warrior": {
+        "id": "s2-051",
+        "name": "Cleopatra VII",
+        "collector": "051"
+      },
+      "support": [
+        {
+          "id": "s2-052",
+          "name": "Ast",
+          "collector": "052",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-053",
+          "name": "B'gsw",
+          "collector": "053",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-054",
+          "name": "Golden Corselet",
+          "collector": "054",
+          "type": "armor"
+        },
+        {
+          "id": "s2-055",
+          "name": "Heqa and Was Scepters",
+          "collector": "055",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-056",
+      "set": 2,
+      "warrior": {
+        "id": "s2-056",
+        "name": "Horemheb the Restorer",
+        "collector": "056"
+      },
+      "support": [
+        {
+          "id": "s2-057",
+          "name": "Horus",
+          "collector": "057",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-058",
+          "name": "Khopesh",
+          "collector": "058",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-059",
+          "name": "Man-High Shield",
+          "collector": "059",
+          "type": "armor"
+        },
+        {
+          "id": "s2-060",
+          "name": "Udjat Eye",
+          "collector": "060",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-061",
+      "set": 2,
+      "warrior": {
+        "id": "s2-061",
+        "name": "Ramses II",
+        "collector": "061"
+      },
+      "support": [
+        {
+          "id": "s2-062",
+          "name": "Ra",
+          "collector": "062",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-063",
+          "name": "Minb",
+          "collector": "063",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-064",
+          "name": "Ikm''T",
+          "collector": "064",
+          "type": "armor"
+        },
+        {
+          "id": "s2-065",
+          "name": "Wereryet",
+          "collector": "065",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-066",
+      "set": 2,
+      "warrior": {
+        "id": "s2-066",
+        "name": "Seti I",
+        "collector": "066"
+      },
+      "support": [
+        {
+          "id": "s2-067",
+          "name": "Osiris",
+          "collector": "067",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-068",
+          "name": "Hornbow",
+          "collector": "068",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-069",
+          "name": "Khepresh",
+          "collector": "069",
+          "type": "armor"
+        },
+        {
+          "id": "s2-070",
+          "name": "Reu Nu Pert Em Hru",
+          "collector": "070",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-071",
+      "set": 2,
+      "warrior": {
+        "id": "s2-071",
+        "name": "Srqt. The Scorpion King",
+        "collector": "071"
+      },
+      "support": [
+        {
+          "id": "s2-072",
+          "name": "Khnum",
+          "collector": "072",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-073",
+          "name": "Nsywt",
+          "collector": "073",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-074",
+          "name": "Ikm Mskw",
+          "collector": "074",
+          "type": "armor"
+        },
+        {
+          "id": "s2-075",
+          "name": "Mace of the Scorpion King",
+          "collector": "075",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-076",
+      "set": 2,
+      "warrior": {
+        "id": "s2-076",
+        "name": "Attila the Hun",
+        "collector": "076"
+      },
+      "support": [
+        {
+          "id": "s2-077",
+          "name": "Nemere",
+          "collector": "077",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-078",
+          "name": "Sword of Mars",
+          "collector": "078",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-079",
+          "name": "Duugla",
+          "collector": "079",
+          "type": "armor"
+        },
+        {
+          "id": "s2-080",
+          "name": "Gäitäy Geprech",
+          "collector": "080",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-081",
+      "set": 2,
+      "warrior": {
+        "id": "s2-081",
+        "name": "Gengis Khan",
+        "collector": "081"
+      },
+      "support": [
+        {
+          "id": "s2-082",
+          "name": "Koekki Moengke Tengri",
+          "collector": "082",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-083",
+          "name": "Alman Sukh",
+          "collector": "083",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-084",
+          "name": "Khurim",
+          "collector": "084",
+          "type": "armor"
+        },
+        {
+          "id": "s2-085",
+          "name": "Zhad",
+          "collector": "085",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-086",
+      "set": 2,
+      "warrior": {
+        "id": "s2-086",
+        "name": "Khutulun",
+        "collector": "086"
+      },
+      "support": [
+        {
+          "id": "s2-087",
+          "name": "Burqan-Qaldun",
+          "collector": "087",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-088",
+          "name": "Khutga",
+          "collector": "088",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-089",
+          "name": "Gutal",
+          "collector": "089",
+          "type": "armor"
+        },
+        {
+          "id": "s2-090",
+          "name": "100 Aduu Bootsoo",
+          "collector": "090",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-091",
+      "set": 2,
+      "warrior": {
+        "id": "s2-091",
+        "name": "Kubulai Khan",
+        "collector": "091"
+      },
+      "support": [
+        {
+          "id": "s2-092",
+          "name": "Xanadu",
+          "collector": "092",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-093",
+          "name": "Tomor Scimitar",
+          "collector": "093",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-094",
+          "name": "Tsamts Torgo",
+          "collector": "094",
+          "type": "armor"
+        },
+        {
+          "id": "s2-095",
+          "name": "Num Tom",
+          "collector": "095",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s2-096",
+      "set": 2,
+      "warrior": {
+        "id": "s2-096",
+        "name": "Subedei",
+        "collector": "096"
+      },
+      "support": [
+        {
+          "id": "s2-097",
+          "name": "Yeke Mongghol Ulus",
+          "collector": "097",
+          "type": "inspiration"
+        },
+        {
+          "id": "s2-098",
+          "name": "Num Mor",
+          "collector": "098",
+          "type": "weapon"
+        },
+        {
+          "id": "s2-099",
+          "name": "Khatangu",
+          "collector": "099",
+          "type": "armor"
+        },
+        {
+          "id": "s2-100",
+          "name": "Mangudai Steed",
+          "collector": "100",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-001",
+      "set": 3,
+      "warrior": {
+        "id": "s3-001",
+        "name": "Charlemagne",
+        "collector": "001"
+      },
+      "support": [
+        {
+          "id": "s3-002",
+          "name": "Pape Hadrien Ier",
+          "collector": "002",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-003",
+          "name": "Épée Carolingienne",
+          "collector": "003",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-004",
+          "name": "Bouclier Carolingien",
+          "collector": "004",
+          "type": "armor"
+        },
+        {
+          "id": "s3-005",
+          "name": "Couronne Impériale",
+          "collector": "005",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-006",
+      "set": 3,
+      "warrior": {
+        "id": "s3-006",
+        "name": "Charles Martel",
+        "collector": "006"
+      },
+      "support": [
+        {
+          "id": "s3-007",
+          "name": "Saint Boniface",
+          "collector": "007",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-008",
+          "name": "L'Épée aux Cinq Croix",
+          "collector": "008",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-009",
+          "name": "Broigne d'Écailles",
+          "collector": "009",
+          "type": "armor"
+        },
+        {
+          "id": "s3-010",
+          "name": "Marteau de Cavalerie",
+          "collector": "010",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-011",
+      "set": 3,
+      "warrior": {
+        "id": "s3-011",
+        "name": "Roland le Paladin",
+        "collector": "011"
+      },
+      "support": [
+        {
+          "id": "s3-012",
+          "name": "Code du Paladin",
+          "collector": "012",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-013",
+          "name": "Durendal",
+          "collector": "013",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-014",
+          "name": "Cotte de Mailles du Paladin",
+          "collector": "014",
+          "type": "armor"
+        },
+        {
+          "id": "s3-015",
+          "name": "Olifant",
+          "collector": "015",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-016",
+      "set": 3,
+      "warrior": {
+        "id": "s3-016",
+        "name": "Sainte Jeanne d'Arc",
+        "collector": "016"
+      },
+      "support": [
+        {
+          "id": "s3-017",
+          "name": "Archange Michel",
+          "collector": "017",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-018",
+          "name": "Épée de Martel",
+          "collector": "018",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-019",
+          "name": "Blanc Harnois",
+          "collector": "019",
+          "type": "armor"
+        },
+        {
+          "id": "s3-020",
+          "name": "Sainte Bannière",
+          "collector": "020",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-021",
+      "set": 3,
+      "warrior": {
+        "id": "s3-021",
+        "name": "Vercingétorix",
+        "collector": "021"
+      },
+      "support": [
+        {
+          "id": "s3-022",
+          "name": "Camulos",
+          "collector": "022",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-023",
+          "name": "Épée Celtique",
+          "collector": "023",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-024",
+          "name": "Bouclier Celtique",
+          "collector": "024",
+          "type": "armor"
+        },
+        {
+          "id": "s3-025",
+          "name": "Harnachement",
+          "collector": "025",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-026",
+      "set": 3,
+      "warrior": {
+        "id": "s3-026",
+        "name": "Alarich",
+        "collector": "026"
+      },
+      "support": [
+        {
+          "id": "s3-027",
+          "name": "Heimdal",
+          "collector": "027",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-028",
+          "name": "Ger",
+          "collector": "028",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-029",
+          "name": "Wolfsfell",
+          "collector": "029",
+          "type": "armor"
+        },
+        {
+          "id": "s3-030",
+          "name": "Salarische Tor",
+          "collector": "030",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-031",
+      "set": 3,
+      "warrior": {
+        "id": "s3-031",
+        "name": "Arminus",
+        "collector": "031"
+      },
+      "support": [
+        {
+          "id": "s3-032",
+          "name": "Tiwaz",
+          "collector": "032",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-033",
+          "name": "Aaminius Standarte",
+          "collector": "033",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-034",
+          "name": "Rüstung der Römisches Hilfstruppen",
+          "collector": "034",
+          "type": "armor"
+        },
+        {
+          "id": "s3-035",
+          "name": "Varusschlacht",
+          "collector": "035",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-036",
+      "set": 3,
+      "warrior": {
+        "id": "s3-036",
+        "name": "Fredegunde",
+        "collector": "036"
+      },
+      "support": [
+        {
+          "id": "s3-037",
+          "name": "Freya",
+          "collector": "037",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-038",
+          "name": "Vergifteter Dolch",
+          "collector": "038",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-039",
+          "name": "Steppumhang",
+          "collector": "039",
+          "type": "armor"
+        },
+        {
+          "id": "s3-040",
+          "name": "Schutzherrin der Meuchelmörder",
+          "collector": "040",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-041",
+      "set": 3,
+      "warrior": {
+        "id": "s3-041",
+        "name": "Siegfried",
+        "collector": "041"
+      },
+      "support": [
+        {
+          "id": "s3-042",
+          "name": "Krimhild",
+          "collector": "042",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-043",
+          "name": "Balmung",
+          "collector": "043",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-044",
+          "name": "Tarnkappe",
+          "collector": "044",
+          "type": "armor"
+        },
+        {
+          "id": "s3-045",
+          "name": "Bad im Drachenblut",
+          "collector": "045",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-046",
+      "set": 3,
+      "warrior": {
+        "id": "s3-046",
+        "name": "Theoderich der Grosse",
+        "collector": "046"
+      },
+      "support": [
+        {
+          "id": "s3-047",
+          "name": "Boethius",
+          "collector": "047",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-048",
+          "name": "Kriegsaxt",
+          "collector": "048",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-049",
+          "name": "Lorica Hamata",
+          "collector": "049",
+          "type": "armor"
+        },
+        {
+          "id": "s3-050",
+          "name": "Magister Militum",
+          "collector": "050",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-051",
+      "set": 3,
+      "warrior": {
+        "id": "s3-051",
+        "name": "Makataimeshekiakiak (Black Hawk)",
+        "collector": "051"
+      },
+      "support": [
+        {
+          "id": "s3-052",
+          "name": "Íŋyaŋ",
+          "collector": "052",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-053",
+          "name": "Íŋyaŋ Wahúkeza",
+          "collector": "053",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-054",
+          "name": "Wakté Waháčhaŋka",
+          "collector": "054",
+          "type": "armor"
+        },
+        {
+          "id": "s3-055",
+          "name": "Okíčhize Čhaŋnúŋpa",
+          "collector": "055",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-056",
+      "set": 3,
+      "warrior": {
+        "id": "s3-056",
+        "name": "Maĥpíya Lúta (Red Cloud)",
+        "collector": "056"
+      },
+      "support": [
+        {
+          "id": "s3-057",
+          "name": "Wí",
+          "collector": "057",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-058",
+          "name": "Čhehúpahu Čhaŋksá",
+          "collector": "058",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-059",
+          "name": "Napé Lúta Waháčhaŋka",
+          "collector": "059",
+          "type": "armor"
+        },
+        {
+          "id": "s3-060",
+          "name": "Itĥáŋčhaŋ Tĥawápĥaha",
+          "collector": "060",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-061",
+      "set": 3,
+      "warrior": {
+        "id": "s3-061",
+        "name": "Tĥašúŋka Witkó (Crazy Horse)",
+        "collector": "061"
+      },
+      "support": [
+        {
+          "id": "s3-062",
+          "name": "Wakíŋyaŋ Šúŋkawakĥaŋ",
+          "collector": "062",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-063",
+          "name": "Itázipa Blaská",
+          "collector": "063",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-064",
+          "name": "Wakíŋyaŋ Waháčhaŋka",
+          "collector": "064",
+          "type": "armor"
+        },
+        {
+          "id": "s3-065",
+          "name": "Heyókĥa",
+          "collector": "065",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-066",
+      "set": 3,
+      "warrior": {
+        "id": "s3-066",
+        "name": "Tĥatĥaŋka Íyotake (Sitting Bull)",
+        "collector": "066"
+      },
+      "support": [
+        {
+          "id": "s3-067",
+          "name": "Wakĥáŋ Tĥáŋka",
+          "collector": "067",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-068",
+          "name": "Waŋhí Čhaŋpí",
+          "collector": "068",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-069",
+          "name": "Wanáği Wačhípi Waháčhaŋka",
+          "collector": "069",
+          "type": "armor"
+        },
+        {
+          "id": "s3-070",
+          "name": "Wanáği Wačhípi",
+          "collector": "070",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-071",
+      "set": 3,
+      "warrior": {
+        "id": "s3-071",
+        "name": "Tecumtha (Tecumseh)",
+        "collector": "071"
+      },
+      "support": [
+        {
+          "id": "s3-072",
+          "name": "Haŋbléčheyapi",
+          "collector": "072",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-073",
+          "name": "Íŋyaŋmila",
+          "collector": "073",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-074",
+          "name": "Mağážu Tĥokáheya Waháčhaŋka",
+          "collector": "074",
+          "type": "armor"
+        },
+        {
+          "id": "s3-075",
+          "name": "Wóphiye Wakĥáŋ",
+          "collector": "075",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-076",
+      "set": 3,
+      "warrior": {
+        "id": "s3-076",
+        "name": "Calum III",
+        "collector": "076"
+      },
+      "support": [
+        {
+          "id": "s3-077",
+          "name": "Naomh Màireid",
+          "collector": "077",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-078",
+          "name": "Claidheamh-Catha dà-Làimhe",
+          "collector": "078",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-079",
+          "name": "Ceannasg Máilleach",
+          "collector": "079",
+          "type": "armor"
+        },
+        {
+          "id": "s3-080",
+          "name": "Cùmhnant Briste",
+          "collector": "080",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-081",
+      "set": 3,
+      "warrior": {
+        "id": "s3-081",
+        "name": "Rob Ruadh MacGriogair",
+        "collector": "081"
+      },
+      "support": [
+        {
+          "id": "s3-082",
+          "name": "Ar-a-mach Cràbhach",
+          "collector": "082",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-083",
+          "name": "Claidheamh Leathann",
+          "collector": "083",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-084",
+          "name": "Targaid Gháidhealach",
+          "collector": "084",
+          "type": "armor"
+        },
+        {
+          "id": "s3-085",
+          "name": "Bonaid Trì-Iteagan",
+          "collector": "085",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-086",
+      "set": 3,
+      "warrior": {
+        "id": "s3-086",
+        "name": "Raibeart Brus",
+        "collector": "086"
+      },
+      "support": [
+        {
+          "id": "s3-087",
+          "name": "Damhan-Allaidh Leantalach",
+          "collector": "087",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-088",
+          "name": "Tuagh-Chatha Albannach",
+          "collector": "088",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-089",
+          "name": "Clogaid Phembridge",
+          "collector": "089",
+          "type": "armor"
+        },
+        {
+          "id": "s3-090",
+          "name": "Crùn na h-alba",
+          "collector": "090",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-091",
+      "set": 3,
+      "warrior": {
+        "id": "s3-091",
+        "name": "Sgàthach an Eilein Sgiathanaich",
+        "collector": "091"
+      },
+      "support": [
+        {
+          "id": "s3-092",
+          "name": "Iombhas Forasna",
+          "collector": "092",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-093",
+          "name": "Tuisg na Grèige",
+          "collector": "093",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-094",
+          "name": "Caithbheart-Chuim Leathrach",
+          "collector": "094",
+          "type": "armor"
+        },
+        {
+          "id": "s3-095",
+          "name": "Craobh nan Clach",
+          "collector": "095",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s3-096",
+      "set": 3,
+      "warrior": {
+        "id": "s3-096",
+        "name": "Uilleam Uallas",
+        "collector": "096"
+      },
+      "support": [
+        {
+          "id": "s3-097",
+          "name": "Cluaran na h-Alba",
+          "collector": "097",
+          "type": "inspiration"
+        },
+        {
+          "id": "s3-098",
+          "name": "Claidheamh-mòr Gàidhealach",
+          "collector": "098",
+          "type": "weapon"
+        },
+        {
+          "id": "s3-099",
+          "name": "Caithbheart-Ruighe Leathrach",
+          "collector": "099",
+          "type": "armor"
+        },
+        {
+          "id": "s3-100",
+          "name": "Sporan",
+          "collector": "100",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-001",
+      "set": 4,
+      "warrior": {
+        "id": "s4-001",
+        "name": "Benrig Medb",
+        "collector": "001"
+      },
+      "support": [
+        {
+          "id": "s4-002",
+          "name": "Anu",
+          "collector": "002",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-003",
+          "name": "Slea Bladhmadh",
+          "collector": "003",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-004",
+          "name": "Brat Derg",
+          "collector": "004",
+          "type": "armor"
+        },
+        {
+          "id": "s4-005",
+          "name": "Donn Cuailnge",
+          "collector": "005",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-006",
+      "set": 4,
+      "warrior": {
+        "id": "s4-006",
+        "name": "Brian Boru",
+        "collector": "006"
+      },
+      "support": [
+        {
+          "id": "s4-007",
+          "name": "Ard Ri",
+          "collector": "007",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-008",
+          "name": "Cliabh Mor",
+          "collector": "008",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-009",
+          "name": "Maille na Lub",
+          "collector": "009",
+          "type": "armor"
+        },
+        {
+          "id": "s4-010",
+          "name": "Culain Tairbh",
+          "collector": "010",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-011",
+      "set": 4,
+      "warrior": {
+        "id": "s4-011",
+        "name": "Cu Chulainn",
+        "collector": "011"
+      },
+      "support": [
+        {
+          "id": "s4-012",
+          "name": "Mor Rioghain",
+          "collector": "012",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-013",
+          "name": "Gae Bolg",
+          "collector": "013",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-014",
+          "name": "Duban",
+          "collector": "014",
+          "type": "armor"
+        },
+        {
+          "id": "s4-015",
+          "name": "Bas Sheasamhach",
+          "collector": "015",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-016",
+      "set": 4,
+      "warrior": {
+        "id": "s4-016",
+        "name": "Donal McCathaigh",
+        "collector": "016"
+      },
+      "support": [
+        {
+          "id": "s4-017",
+          "name": "Dli Breithim",
+          "collector": "017",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-018",
+          "name": "Slea le Scian le Cuma Duilleog",
+          "collector": "018",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-019",
+          "name": "Torc Orga",
+          "collector": "019",
+          "type": "armor"
+        },
+        {
+          "id": "s4-020",
+          "name": "Siuloir na Cosach Croise",
+          "collector": "020",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-021",
+      "set": 4,
+      "warrior": {
+        "id": "s4-021",
+        "name": "Finn MacCumhaill",
+        "collector": "021"
+      },
+      "support": [
+        {
+          "id": "s4-022",
+          "name": "An Bradan Feasa",
+          "collector": "022",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-023",
+          "name": "Mac an Luin",
+          "collector": "023",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-024",
+          "name": "Sgisth Gailbhinn",
+          "collector": "024",
+          "type": "armor"
+        },
+        {
+          "id": "s4-025",
+          "name": "Bran Agus Sceolang",
+          "collector": "025",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-026",
+      "set": 4,
+      "warrior": {
+        "id": "s4-026",
+        "name": "Ariki Te Wherowhero",
+        "collector": "026"
+      },
+      "support": [
+        {
+          "id": "s4-027",
+          "name": "Treaty of Waitangi",
+          "collector": "027",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-028",
+          "name": "Taiaha",
+          "collector": "028",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-029",
+          "name": "Pa",
+          "collector": "029",
+          "type": "armor"
+        },
+        {
+          "id": "s4-030",
+          "name": "Hei-Tiki",
+          "collector": "030",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-031",
+      "set": 4,
+      "warrior": {
+        "id": "s4-031",
+        "name": "Hatupatu",
+        "collector": "031"
+      },
+      "support": [
+        {
+          "id": "s4-032",
+          "name": "Tane Mahuta",
+          "collector": "032",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-033",
+          "name": "Mere",
+          "collector": "033",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-034",
+          "name": "Te Kohatu-O-Hatupatu",
+          "collector": "034",
+          "type": "armor"
+        },
+        {
+          "id": "s4-035",
+          "name": "Karakia",
+          "collector": "035",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-036",
+      "set": 4,
+      "warrior": {
+        "id": "s4-036",
+        "name": "Kupe",
+        "collector": "036"
+      },
+      "support": [
+        {
+          "id": "s4-037",
+          "name": "Tangaroa",
+          "collector": "037",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-038",
+          "name": "Hauhau-te-Rangi",
+          "collector": "038",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-039",
+          "name": "Moko",
+          "collector": "039",
+          "type": "armor"
+        },
+        {
+          "id": "s4-040",
+          "name": "Waka",
+          "collector": "040",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-041",
+      "set": 4,
+      "warrior": {
+        "id": "s4-041",
+        "name": "Maui Tikitiki",
+        "collector": "041"
+      },
+      "support": [
+        {
+          "id": "s4-042",
+          "name": "Tu-Matauenga",
+          "collector": "042",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-043",
+          "name": "Manai Ikalanai",
+          "collector": "043",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-044",
+          "name": "Kahu Kiwi",
+          "collector": "044",
+          "type": "armor"
+        },
+        {
+          "id": "s4-045",
+          "name": "Mana",
+          "collector": "045",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-046",
+      "set": 4,
+      "warrior": {
+        "id": "s4-046",
+        "name": "Te Raupraha",
+        "collector": "046"
+      },
+      "support": [
+        {
+          "id": "s4-047",
+          "name": "Ranga-nui Me Papa-tu-a-Nuku",
+          "collector": "047",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-048",
+          "name": "Kotiate",
+          "collector": "048",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-049",
+          "name": "Haka",
+          "collector": "049",
+          "type": "armor"
+        },
+        {
+          "id": "s4-050",
+          "name": "Tapu",
+          "collector": "050",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-051",
+      "set": 4,
+      "warrior": {
+        "id": "s4-051",
+        "name": "Apranik",
+        "collector": "051"
+      },
+      "support": [
+        {
+          "id": "s4-052",
+          "name": "Anahita",
+          "collector": "052",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-053",
+          "name": "Akinaka",
+          "collector": "053",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-054",
+          "name": "Tiara",
+          "collector": "054",
+          "type": "armor"
+        },
+        {
+          "id": "s4-055",
+          "name": "Jang O Goriz",
+          "collector": "055",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-056",
+      "set": 4,
+      "warrior": {
+        "id": "s4-056",
+        "name": "Cyrus The Great",
+        "collector": "056"
+      },
+      "support": [
+        {
+          "id": "s4-057",
+          "name": "Mardukh",
+          "collector": "057",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-058",
+          "name": "Kamea-e Helal-e Irani",
+          "collector": "058",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-059",
+          "name": "Spara",
+          "collector": "059",
+          "type": "armor"
+        },
+        {
+          "id": "s4-060",
+          "name": "Arabe Haye Darrande",
+          "collector": "060",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-061",
+      "set": 4,
+      "warrior": {
+        "id": "s4-061",
+        "name": "Darius the Great",
+        "collector": "061"
+      },
+      "support": [
+        {
+          "id": "s4-062",
+          "name": "Ahura-mazda",
+          "collector": "062",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-063",
+          "name": "Neyze-ye Darrande",
+          "collector": "063",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-064",
+          "name": "Gerron",
+          "collector": "064",
+          "type": "armor"
+        },
+        {
+          "id": "s4-065",
+          "name": "Amrtaka",
+          "collector": "065",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-066",
+      "set": 4,
+      "warrior": {
+        "id": "s4-066",
+        "name": "Mithridies VI The Great",
+        "collector": "066"
+      },
+      "support": [
+        {
+          "id": "s4-067",
+          "name": "Dionysus",
+          "collector": "067",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-068",
+          "name": "Palta",
+          "collector": "068",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-069",
+          "name": "Griwban",
+          "collector": "069",
+          "type": "armor"
+        },
+        {
+          "id": "s4-070",
+          "name": "Mitray-i",
+          "collector": "070",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-071",
+      "set": 4,
+      "warrior": {
+        "id": "s4-071",
+        "name": "Shapur I",
+        "collector": "071"
+      },
+      "support": [
+        {
+          "id": "s4-072",
+          "name": "Zartosht",
+          "collector": "072",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-073",
+          "name": "Kontos",
+          "collector": "073",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-074",
+          "name": "Kolah Khod-e Sasani",
+          "collector": "074",
+          "type": "armor"
+        },
+        {
+          "id": "s4-075",
+          "name": "Rhyton",
+          "collector": "075",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-076",
+      "set": 4,
+      "warrior": {
+        "id": "s4-076",
+        "name": "Catherine The Great",
+        "collector": "076"
+      },
+      "support": [
+        {
+          "id": "s4-077",
+          "name": "Voltaire",
+          "collector": "077",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-078",
+          "name": "Polusablya",
+          "collector": "078",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-079",
+          "name": "Kirasa",
+          "collector": "079",
+          "type": "armor"
+        },
+        {
+          "id": "s4-080",
+          "name": "Prosveschenniy Absolutism",
+          "collector": "080",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-081",
+      "set": 4,
+      "warrior": {
+        "id": "s4-081",
+        "name": "Ivan The Terrible",
+        "collector": "081"
+      },
+      "support": [
+        {
+          "id": "s4-082",
+          "name": "Anastasia Romanova Zakharyina",
+          "collector": "082",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-083",
+          "name": "Shestoper",
+          "collector": "083",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-084",
+          "name": "Tyegilya",
+          "collector": "084",
+          "type": "armor"
+        },
+        {
+          "id": "s4-085",
+          "name": "Oprichniki",
+          "collector": "085",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-086",
+      "set": 4,
+      "warrior": {
+        "id": "s4-086",
+        "name": "Peter I The Great",
+        "collector": "086"
+      },
+      "support": [
+        {
+          "id": "s4-087",
+          "name": "Vozeshenniye Posolstovo",
+          "collector": "087",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-088",
+          "name": "Shpaga",
+          "collector": "088",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-089",
+          "name": "Kolontar",
+          "collector": "089",
+          "type": "armor"
+        },
+        {
+          "id": "s4-090",
+          "name": "Rindi",
+          "collector": "090",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-091",
+      "set": 4,
+      "warrior": {
+        "id": "s4-091",
+        "name": "Prinz Mikhial Skopin-Shuisky",
+        "collector": "091"
+      },
+      "support": [
+        {
+          "id": "s4-092",
+          "name": "Samozvantez Dmitry",
+          "collector": "092",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-093",
+          "name": "Palash",
+          "collector": "093",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-094",
+          "name": "Bakhterets",
+          "collector": "094",
+          "type": "armor"
+        },
+        {
+          "id": "s4-095",
+          "name": "Mechnik",
+          "collector": "095",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s4-096",
+      "set": 4,
+      "warrior": {
+        "id": "s4-096",
+        "name": "Saint Alexander Nevsky",
+        "collector": "096"
+      },
+      "support": [
+        {
+          "id": "s4-097",
+          "name": "Metropolitan Kyrillus",
+          "collector": "097",
+          "type": "inspiration"
+        },
+        {
+          "id": "s4-098",
+          "name": "Chekan",
+          "collector": "098",
+          "type": "weapon"
+        },
+        {
+          "id": "s4-099",
+          "name": "Kol'chuga",
+          "collector": "099",
+          "type": "armor"
+        },
+        {
+          "id": "s4-100",
+          "name": "Shlem",
+          "collector": "100",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-001",
+      "set": 5,
+      "warrior": {
+        "id": "s5-001",
+        "name": "Auitzotl",
+        "collector": "001"
+      },
+      "support": [
+        {
+          "id": "s5-002",
+          "name": "Tlaloc",
+          "collector": "002",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-003",
+          "name": "Atlatl",
+          "collector": "003",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-004",
+          "name": "Chimalli",
+          "collector": "004",
+          "type": "armor"
+        },
+        {
+          "id": "s5-005",
+          "name": "Mectal",
+          "collector": "005",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-006",
+      "set": 5,
+      "warrior": {
+        "id": "s5-006",
+        "name": "Cuitlahuac",
+        "collector": "006"
+      },
+      "support": [
+        {
+          "id": "s5-007",
+          "name": "Tezcatlipoca",
+          "collector": "007",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-008",
+          "name": "Tlacochtli",
+          "collector": "008",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-009",
+          "name": "Ocelocolohtic",
+          "collector": "009",
+          "type": "armor"
+        },
+        {
+          "id": "s5-010",
+          "name": "Ocelomeh",
+          "collector": "010",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-011",
+      "set": 5,
+      "warrior": {
+        "id": "s5-011",
+        "name": "Itzcoatl",
+        "collector": "011"
+      },
+      "support": [
+        {
+          "id": "s5-012",
+          "name": "Teyaotenyiliztli",
+          "collector": "012",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-013",
+          "name": "Macuahuitl",
+          "collector": "013",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-014",
+          "name": "Cuauhcuachimalli",
+          "collector": "014",
+          "type": "armor"
+        },
+        {
+          "id": "s5-015",
+          "name": "Teponaztli",
+          "collector": "015",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-016",
+      "set": 5,
+      "warrior": {
+        "id": "s5-016",
+        "name": "Moctezuma II",
+        "collector": "016"
+      },
+      "support": [
+        {
+          "id": "s5-017",
+          "name": "Quetzalcoatl",
+          "collector": "017",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-018",
+          "name": "Tecpatl",
+          "collector": "018",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-019",
+          "name": "Copilli",
+          "collector": "019",
+          "type": "armor"
+        },
+        {
+          "id": "s5-020",
+          "name": "Tlimatli",
+          "collector": "020",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-021",
+      "set": 5,
+      "warrior": {
+        "id": "s5-021",
+        "name": "Tlacaelel",
+        "collector": "021"
+      },
+      "support": [
+        {
+          "id": "s5-022",
+          "name": "Huitzilopochtli",
+          "collector": "022",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-023",
+          "name": "Tematlatl",
+          "collector": "023",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-024",
+          "name": "Ichcahuipilli",
+          "collector": "024",
+          "type": "armor"
+        },
+        {
+          "id": "s5-025",
+          "name": "Xochivaovotl",
+          "collector": "025",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-026",
+      "set": 5,
+      "warrior": {
+        "id": "s5-026",
+        "name": "Hijikata Toshizo",
+        "collector": "026"
+      },
+      "support": [
+        {
+          "id": "s5-027",
+          "name": "Kyokuchu-Hatto",
+          "collector": "027",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-028",
+          "name": "Izuminokami-Kanesada",
+          "collector": "028",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-029",
+          "name": "Haori",
+          "collector": "029",
+          "type": "armor"
+        },
+        {
+          "id": "s5-030",
+          "name": "Ishida-Sanyaku",
+          "collector": "030",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-031",
+      "set": 5,
+      "warrior": {
+        "id": "s5-031",
+        "name": "Minamoto no Yoshitsune",
+        "collector": "031"
+      },
+      "support": [
+        {
+          "id": "s5-032",
+          "name": "Genji",
+          "collector": "032",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-033",
+          "name": "Usumidori",
+          "collector": "033",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-034",
+          "name": "Akaitoodoshi-Yoroi",
+          "collector": "034",
+          "type": "armor"
+        },
+        {
+          "id": "s5-035",
+          "name": "Rikutosanryaku",
+          "collector": "035",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-036",
+      "set": 5,
+      "warrior": {
+        "id": "s5-036",
+        "name": "Sanada Nobushige",
+        "collector": "036"
+      },
+      "support": [
+        {
+          "id": "s5-037",
+          "name": "Rokunmonsenmon",
+          "collector": "037",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-038",
+          "name": "Muramasa",
+          "collector": "038",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-039",
+          "name": "Akazonae",
+          "collector": "039",
+          "type": "armor"
+        },
+        {
+          "id": "s5-040",
+          "name": "Sanadamaru",
+          "collector": "040",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-041",
+      "set": 5,
+      "warrior": {
+        "id": "s5-041",
+        "name": "Takeda Shingen",
+        "collector": "041"
+      },
+      "support": [
+        {
+          "id": "s5-042",
+          "name": "Furinkazan",
+          "collector": "042",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-043",
+          "name": "Jin-Dachi",
+          "collector": "043",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-044",
+          "name": "Touseigusoku",
+          "collector": "044",
+          "type": "armor"
+        },
+        {
+          "id": "s5-045",
+          "name": "Gunpai",
+          "collector": "045",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-046",
+      "set": 5,
+      "warrior": {
+        "id": "s5-046",
+        "name": "Uesugi Kenshin",
+        "collector": "046"
+      },
+      "support": [
+        {
+          "id": "s5-047",
+          "name": "Kawanakajima",
+          "collector": "047",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-048",
+          "name": "Azukinagamitsu",
+          "collector": "048",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-049",
+          "name": "Kusubekawasugakeodoshi",
+          "collector": "049",
+          "type": "armor"
+        },
+        {
+          "id": "s5-050",
+          "name": "Hata Bi",
+          "collector": "050",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-051",
+      "set": 5,
+      "warrior": {
+        "id": "s5-051",
+        "name": "Amr ibn al'Aas",
+        "collector": "051"
+      },
+      "support": [
+        {
+          "id": "s5-052",
+          "name": "Masjid ahl ar-Rayah",
+          "collector": "052",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-053",
+          "name": "Ras al Asad",
+          "collector": "053",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-054",
+          "name": "Al Derba",
+          "collector": "054",
+          "type": "armor"
+        },
+        {
+          "id": "s5-055",
+          "name": "Reaaia Elahiia",
+          "collector": "055",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-056",
+      "set": 5,
+      "warrior": {
+        "id": "s5-056",
+        "name": "Harun al-Rashid",
+        "collector": "056"
+      },
+      "support": [
+        {
+          "id": "s5-057",
+          "name": "Al-Khayzuran",
+          "collector": "057",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-058",
+          "name": "Kaws",
+          "collector": "058",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-059",
+          "name": "Ran",
+          "collector": "059",
+          "type": "armor"
+        },
+        {
+          "id": "s5-060",
+          "name": "Alf Layla wa-Layla",
+          "collector": "060",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-061",
+      "set": 5,
+      "warrior": {
+        "id": "s5-061",
+        "name": "Maowvia",
+        "collector": "061"
+      },
+      "support": [
+        {
+          "id": "s5-062",
+          "name": "Alnabi Mosa",
+          "collector": "062",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-063",
+          "name": "Sahm",
+          "collector": "063",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-064",
+          "name": "Gabal el Taur",
+          "collector": "064",
+          "type": "armor"
+        },
+        {
+          "id": "s5-065",
+          "name": "Mesbah",
+          "collector": "065",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-066",
+      "set": 5,
+      "warrior": {
+        "id": "s5-066",
+        "name": "Salah ad-Din",
+        "collector": "066"
+      },
+      "support": [
+        {
+          "id": "s5-067",
+          "name": "Al Madina al Mokadassa",
+          "collector": "067",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-068",
+          "name": "Saif Damashki",
+          "collector": "068",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-069",
+          "name": "Bargustuwan",
+          "collector": "069",
+          "type": "armor"
+        },
+        {
+          "id": "s5-070",
+          "name": "Khaimat Hemaya Men Alraml",
+          "collector": "070",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-071",
+      "set": 5,
+      "warrior": {
+        "id": "s5-071",
+        "name": "Tariq ibn Ziyad",
+        "collector": "071"
+      },
+      "support": [
+        {
+          "id": "s5-072",
+          "name": "Hadis Kaiim",
+          "collector": "072",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-073",
+          "name": "Balltat Harb",
+          "collector": "073",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-074",
+          "name": "Khauza",
+          "collector": "074",
+          "type": "armor"
+        },
+        {
+          "id": "s5-075",
+          "name": "Jabal Tariq",
+          "collector": "075",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-076",
+      "set": 5,
+      "warrior": {
+        "id": "s5-076",
+        "name": "Carlos V",
+        "collector": "076"
+      },
+      "support": [
+        {
+          "id": "s5-077",
+          "name": "Mercurino Gattinara",
+          "collector": "077",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-078",
+          "name": "Albarda Espanola",
+          "collector": "078",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-079",
+          "name": "Escudo de Carlos V",
+          "collector": "079",
+          "type": "armor"
+        },
+        {
+          "id": "s5-080",
+          "name": "Ballestero Vasco",
+          "collector": "080",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-081",
+      "set": 5,
+      "warrior": {
+        "id": "s5-081",
+        "name": "El Cid",
+        "collector": "081"
+      },
+      "support": [
+        {
+          "id": "s5-082",
+          "name": "Santiago Matamoros",
+          "collector": "082",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-083",
+          "name": "Tizona y Colada",
+          "collector": "083",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-084",
+          "name": "Cota Corta",
+          "collector": "084",
+          "type": "armor"
+        },
+        {
+          "id": "s5-085",
+          "name": "Babieca",
+          "collector": "085",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-086",
+      "set": 5,
+      "warrior": {
+        "id": "s5-086",
+        "name": "El Gran Capitan",
+        "collector": "086"
+      },
+      "support": [
+        {
+          "id": "s5-087",
+          "name": "Vasallo de la Reina",
+          "collector": "087",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-088",
+          "name": "Pica de Infante",
+          "collector": "088",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-089",
+          "name": "Armadura Completa",
+          "collector": "089",
+          "type": "armor"
+        },
+        {
+          "id": "s5-090",
+          "name": "Formacion de Piqueros",
+          "collector": "090",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-091",
+      "set": 5,
+      "warrior": {
+        "id": "s5-091",
+        "name": "Hernan Cortes",
+        "collector": "091"
+      },
+      "support": [
+        {
+          "id": "s5-092",
+          "name": "La Malinche",
+          "collector": "092",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-093",
+          "name": "Arcabuz",
+          "collector": "093",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-094",
+          "name": "Hombreras",
+          "collector": "094",
+          "type": "armor"
+        },
+        {
+          "id": "s5-095",
+          "name": "Oro Azteca",
+          "collector": "095",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s5-096",
+      "set": 5,
+      "warrior": {
+        "id": "s5-096",
+        "name": "Isabella I of Castile",
+        "collector": "096"
+      },
+      "support": [
+        {
+          "id": "s5-097",
+          "name": "Fernando II de Aragon",
+          "collector": "097",
+          "type": "inspiration"
+        },
+        {
+          "id": "s5-098",
+          "name": "Ropera Toledana",
+          "collector": "098",
+          "type": "weapon"
+        },
+        {
+          "id": "s5-099",
+          "name": "Fervor Religioso",
+          "collector": "099",
+          "type": "armor"
+        },
+        {
+          "id": "s5-100",
+          "name": "La Inquisicion Espanola",
+          "collector": "100",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-001",
+      "set": 6,
+      "warrior": {
+        "id": "s6-001",
+        "name": "Cao Cao",
+        "collector": "001"
+      },
+      "support": [
+        {
+          "id": "s6-002",
+          "name": "Wei Guo",
+          "collector": "002",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-003",
+          "name": "Yi Tian Dao",
+          "collector": "003",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-004",
+          "name": "Guandu Hu Cheng He",
+          "collector": "004",
+          "type": "armor"
+        },
+        {
+          "id": "s6-005",
+          "name": "Jue Ying",
+          "collector": "005",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-006",
+      "set": 6,
+      "warrior": {
+        "id": "s6-006",
+        "name": "Lu Bu",
+        "collector": "006"
+      },
+      "support": [
+        {
+          "id": "s6-007",
+          "name": "Diao Chan",
+          "collector": "007",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-008",
+          "name": "Ji",
+          "collector": "008",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-009",
+          "name": "Shi Tou Kou",
+          "collector": "009",
+          "type": "armor"
+        },
+        {
+          "id": "s6-010",
+          "name": "Chi Tu Ma",
+          "collector": "010",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-011",
+      "set": 6,
+      "warrior": {
+        "id": "s6-011",
+        "name": "Ma Chao",
+        "collector": "011"
+      },
+      "support": [
+        {
+          "id": "s6-012",
+          "name": "Wu Hu",
+          "collector": "012",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-013",
+          "name": "Shan Dian Mao",
+          "collector": "013",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-014",
+          "name": "Yin Tou Hui",
+          "collector": "014",
+          "type": "armor"
+        },
+        {
+          "id": "s6-015",
+          "name": "Biao Qi Jiangjun",
+          "collector": "015",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-016",
+      "set": 6,
+      "warrior": {
+        "id": "s6-016",
+        "name": "Zhang Fei",
+        "collector": "016"
+      },
+      "support": [
+        {
+          "id": "s6-017",
+          "name": "Chang Ban Po",
+          "collector": "017",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-018",
+          "name": "Ba Bian She Mao",
+          "collector": "018",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-019",
+          "name": "Tie Xia Bi Hu Jia",
+          "collector": "019",
+          "type": "armor"
+        },
+        {
+          "id": "s6-020",
+          "name": "Lu Wei",
+          "collector": "020",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-021",
+      "set": 6,
+      "warrior": {
+        "id": "s6-021",
+        "name": "Zhang Jiao",
+        "collector": "021"
+      },
+      "support": [
+        {
+          "id": "s6-022",
+          "name": "Huang Lao Jun",
+          "collector": "022",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-023",
+          "name": "Tai Chi Gun",
+          "collector": "023",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-024",
+          "name": "Tie Chen Shan Qi Gong",
+          "collector": "024",
+          "type": "armor"
+        },
+        {
+          "id": "s6-025",
+          "name": "Huang Jin Zhi Luan",
+          "collector": "025",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-026",
+      "set": 6,
+      "warrior": {
+        "id": "s6-026",
+        "name": "Anne Bonney",
+        "collector": "026"
+      },
+      "support": [
+        {
+          "id": "s6-027",
+          "name": "Calico Jack Rackham",
+          "collector": "027",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-028",
+          "name": "Flintlock Pistol",
+          "collector": "028",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-029",
+          "name": "Pleading the Belly",
+          "collector": "029",
+          "type": "armor"
+        },
+        {
+          "id": "s6-030",
+          "name": "Ye Dirty Swabs",
+          "collector": "030",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-031",
+      "set": 6,
+      "warrior": {
+        "id": "s6-031",
+        "name": "Black Bart",
+        "collector": "031"
+      },
+      "support": [
+        {
+          "id": "s6-032",
+          "name": "Davy Jones' Locker",
+          "collector": "032",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-033",
+          "name": "Small Sword",
+          "collector": "033",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-034",
+          "name": "Plumed Hat",
+          "collector": "034",
+          "type": "armor"
+        },
+        {
+          "id": "s6-035",
+          "name": "A Straight Ship",
+          "collector": "035",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-036",
+      "set": 6,
+      "warrior": {
+        "id": "s6-036",
+        "name": "Blackbeard",
+        "collector": "036"
+      },
+      "support": [
+        {
+          "id": "s6-037",
+          "name": "Blackbeard's Jolly Roger",
+          "collector": "037",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-038",
+          "name": "Pair o' Cutlasses",
+          "collector": "038",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-039",
+          "name": "Fearsome Reputation",
+          "collector": "039",
+          "type": "armor"
+        },
+        {
+          "id": "s6-040",
+          "name": "Pieces of Eight",
+          "collector": "040",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-041",
+      "set": 6,
+      "warrior": {
+        "id": "s6-041",
+        "name": "Grainne Ni Mhaille",
+        "collector": "041"
+      },
+      "support": [
+        {
+          "id": "s6-042",
+          "name": "Pirate Legacy",
+          "collector": "042",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-043",
+          "name": "Boarding Axe",
+          "collector": "043",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-044",
+          "name": "Articles of Interrogatory",
+          "collector": "044",
+          "type": "armor"
+        },
+        {
+          "id": "s6-045",
+          "name": "Pirate Stronghold",
+          "collector": "045",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-046",
+      "set": 6,
+      "warrior": {
+        "id": "s6-046",
+        "name": "Sir Francis Drake",
+        "collector": "046"
+      },
+      "support": [
+        {
+          "id": "s6-047",
+          "name": "Good Queen Bess",
+          "collector": "047",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-048",
+          "name": "Swept-Hilt Rapier",
+          "collector": "048",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-049",
+          "name": "El Draco",
+          "collector": "049",
+          "type": "armor"
+        },
+        {
+          "id": "s6-050",
+          "name": "Letter of Marque",
+          "collector": "050",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-051",
+      "set": 6,
+      "warrior": {
+        "id": "s6-051",
+        "name": "Burebista",
+        "collector": "051"
+      },
+      "support": [
+        {
+          "id": "s6-052",
+          "name": "Zamolxis",
+          "collector": "052",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-053",
+          "name": "Falx",
+          "collector": "053",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-054",
+          "name": "Cascã Dacicã",
+          "collector": "054",
+          "type": "armor"
+        },
+        {
+          "id": "s6-055",
+          "name": "Kogaion",
+          "collector": "055",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-056",
+      "set": 6,
+      "warrior": {
+        "id": "s6-056",
+        "name": "Micheal the Brave",
+        "collector": "056"
+      },
+      "support": [
+        {
+          "id": "s6-057",
+          "name": "Liga Sfîntã",
+          "collector": "057",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-058",
+          "name": "Buzdugan",
+          "collector": "058",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-059",
+          "name": "Buzunare La Armurã",
+          "collector": "059",
+          "type": "armor"
+        },
+        {
+          "id": "s6-060",
+          "name": "Slujbã Valahã",
+          "collector": "060",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-061",
+      "set": 6,
+      "warrior": {
+        "id": "s6-061",
+        "name": "Mircea the Old",
+        "collector": "061"
+      },
+      "support": [
+        {
+          "id": "s6-062",
+          "name": "Mânãstirea Cozia",
+          "collector": "062",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-063",
+          "name": "Buzdugan Cu Crampoane",
+          "collector": "063",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-064",
+          "name": "Placã Armurã Spate",
+          "collector": "064",
+          "type": "armor"
+        },
+        {
+          "id": "s6-065",
+          "name": "Tratatul De La Nicopole",
+          "collector": "065",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-066",
+      "set": 6,
+      "warrior": {
+        "id": "s6-066",
+        "name": "Stephen the Great",
+        "collector": "066"
+      },
+      "support": [
+        {
+          "id": "s6-067",
+          "name": "Papa Sixtus Al IV-Lea",
+          "collector": "067",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-068",
+          "name": "Sabie Pentru O Mânã 'I Jumãtate",
+          "collector": "068",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-069",
+          "name": "Mãnu°i De Armurã",
+          "collector": "069",
+          "type": "armor"
+        },
+        {
+          "id": "s6-070",
+          "name": "Athleta Christi",
+          "collector": "070",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-071",
+      "set": 6,
+      "warrior": {
+        "id": "s6-071",
+        "name": "Vlad Tepes",
+        "collector": "071"
+      },
+      "support": [
+        {
+          "id": "s6-072",
+          "name": "Cupa de Aur",
+          "collector": "072",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-073",
+          "name": "Sabie Puternica",
+          "collector": "073",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-074",
+          "name": "Pieptarul Lui Vlad Dracul",
+          "collector": "074",
+          "type": "armor"
+        },
+        {
+          "id": "s6-075",
+          "name": "Cetatea Poenari",
+          "collector": "075",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-076",
+      "set": 6,
+      "warrior": {
+        "id": "s6-076",
+        "name": "Beyazid I, The Thunderbolt",
+        "collector": "076"
+      },
+      "support": [
+        {
+          "id": "s6-077",
+          "name": "Konstantinya",
+          "collector": "077",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-078",
+          "name": "Mech",
+          "collector": "078",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-079",
+          "name": "Tura",
+          "collector": "079",
+          "type": "armor"
+        },
+        {
+          "id": "s6-080",
+          "name": "Savasi Nicopolis",
+          "collector": "080",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-081",
+      "set": 6,
+      "warrior": {
+        "id": "s6-081",
+        "name": "Mehmed II, The Conqueror",
+        "collector": "081"
+      },
+      "support": [
+        {
+          "id": "s6-082",
+          "name": "Hagia Sophia",
+          "collector": "082",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-083",
+          "name": "Buzdovan",
+          "collector": "083",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-084",
+          "name": "Rumeli Hisari",
+          "collector": "084",
+          "type": "armor"
+        },
+        {
+          "id": "s6-085",
+          "name": "Mektup In Komutan",
+          "collector": "085",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-086",
+      "set": 6,
+      "warrior": {
+        "id": "s6-086",
+        "name": "Murad IV, The Cruel",
+        "collector": "086"
+      },
+      "support": [
+        {
+          "id": "s6-087-inspiration-1",
+          "name": "Kosem Sultan",
+          "collector": "087",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-088",
+          "name": "Topuz",
+          "collector": "088",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-089",
+          "name": "Yasuk",
+          "collector": "089",
+          "type": "armor"
+        },
+        {
+          "id": "s6-090",
+          "name": "Söczügŵün",
+          "collector": "090",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-091",
+      "set": 6,
+      "warrior": {
+        "id": "s6-091",
+        "name": "Selim I, The Brave",
+        "collector": "091"
+      },
+      "support": [
+        {
+          "id": "s6-092",
+          "name": "Qubbat Al-Nabi",
+          "collector": "092",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-093",
+          "name": "Kargi",
+          "collector": "093",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-094",
+          "name": "Silah Iman",
+          "collector": "094",
+          "type": "armor"
+        },
+        {
+          "id": "s6-095",
+          "name": "Khadim Ul Haremeyn",
+          "collector": "095",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s6-096",
+      "set": 6,
+      "warrior": {
+        "id": "s6-096",
+        "name": "Suleiman I, The Magnificent",
+        "collector": "096"
+      },
+      "support": [
+        {
+          "id": "s6-097",
+          "name": "Roxelana",
+          "collector": "097",
+          "type": "inspiration"
+        },
+        {
+          "id": "s6-098",
+          "name": "Yataghan",
+          "collector": "098",
+          "type": "weapon"
+        },
+        {
+          "id": "s6-099",
+          "name": "Yarik",
+          "collector": "099",
+          "type": "armor"
+        },
+        {
+          "id": "s6-100",
+          "name": "Balyemez",
+          "collector": "100",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-001",
+      "set": 7,
+      "warrior": {
+        "id": "s7-001",
+        "name": "Daniel Boone",
+        "collector": "001"
+      },
+      "support": [
+        {
+          "id": "s7-002",
+          "name": "Hunter's Paradise",
+          "collector": "002",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-003",
+          "name": "Crude Whittled Spear",
+          "collector": "003",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-004",
+          "name": "Boonesborough",
+          "collector": "004",
+          "type": "armor"
+        },
+        {
+          "id": "s7-005",
+          "name": "Wilderness Road",
+          "collector": "005",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-006",
+      "set": 7,
+      "warrior": {
+        "id": "s7-006",
+        "name": "Hugh Glass",
+        "collector": "006"
+      },
+      "support": [
+        {
+          "id": "s7-007",
+          "name": "Fort Kiowa",
+          "collector": "007",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-008",
+          "name": "Trapper's Knife",
+          "collector": "008",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-009",
+          "name": "Bear Hide",
+          "collector": "009",
+          "type": "armor"
+        },
+        {
+          "id": "s7-010",
+          "name": "Ashley's Hundred",
+          "collector": "010",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-011",
+      "set": 7,
+      "warrior": {
+        "id": "s7-011",
+        "name": "James Beckwourth",
+        "collector": "011"
+      },
+      "support": [
+        {
+          "id": "s7-012",
+          "name": "Pine Leaf",
+          "collector": "012",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-013",
+          "name": "Tomahawk",
+          "collector": "013",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-014",
+          "name": "Deed of Emancipation",
+          "collector": "014",
+          "type": "armor"
+        },
+        {
+          "id": "s7-015",
+          "name": "Wanderlust",
+          "collector": "015",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-016",
+      "set": 7,
+      "warrior": {
+        "id": "s7-016",
+        "name": "Jim Bowie",
+        "collector": "016"
+      },
+      "support": [
+        {
+          "id": "s7-017",
+          "name": "Texas Revolution",
+          "collector": "017",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-018",
+          "name": "Bowie Knife",
+          "collector": "018",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-019",
+          "name": "The Alamo",
+          "collector": "019",
+          "type": "armor"
+        },
+        {
+          "id": "s7-020",
+          "name": "The Sandbar Fight",
+          "collector": "020",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-021",
+      "set": 7,
+      "warrior": {
+        "id": "s7-021",
+        "name": "Jim Bridger",
+        "collector": "021"
+      },
+      "support": [
+        {
+          "id": "s7-022",
+          "name": "Rocky Mountain Fur Company",
+          "collector": "022",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-023",
+          "name": "Johnson's Army",
+          "collector": "023",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-024",
+          "name": "Fort Bridger",
+          "collector": "024",
+          "type": "armor"
+        },
+        {
+          "id": "s7-025",
+          "name": "Tall Tales",
+          "collector": "025",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-026",
+      "set": 7,
+      "warrior": {
+        "id": "s7-026",
+        "name": "Agamemnon",
+        "collector": "026"
+      },
+      "support": [
+        {
+          "id": "s7-027",
+          "name": "Ifigenia",
+          "collector": "027",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-028",
+          "name": "Hilia Plia",
+          "collector": "028",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-029",
+          "name": "Mikinaikos Thorakas",
+          "collector": "029",
+          "type": "armor"
+        },
+        {
+          "id": "s7-030",
+          "name": "Ikos Ton Atridon",
+          "collector": "030",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-031",
+      "set": 7,
+      "warrior": {
+        "id": "s7-031",
+        "name": "Menelaos",
+        "collector": "031"
+      },
+      "support": [
+        {
+          "id": "s7-032",
+          "name": "Thigmeni Timi",
+          "collector": "032",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-033",
+          "name": "Xifos",
+          "collector": "033",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-034",
+          "name": "Spartiatiko Polemiko Kranos",
+          "collector": "034",
+          "type": "armor"
+        },
+        {
+          "id": "s7-035",
+          "name": "Orgi Tou Posidona",
+          "collector": "035",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-036",
+      "set": 7,
+      "warrior": {
+        "id": "s7-036",
+        "name": "Odysseus",
+        "collector": "036"
+      },
+      "support": [
+        {
+          "id": "s7-037",
+          "name": "Athina",
+          "collector": "037",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-038",
+          "name": "Toxou Tou Odissea",
+          "collector": "038",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-039",
+          "name": "Magiko Votani",
+          "collector": "039",
+          "type": "armor"
+        },
+        {
+          "id": "s7-040",
+          "name": "Dourios Ippos",
+          "collector": "040",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-041",
+      "set": 7,
+      "warrior": {
+        "id": "s7-041",
+        "name": "Ajax",
+        "collector": "041"
+      },
+      "support": [
+        {
+          "id": "s7-042",
+          "name": "Chiron",
+          "collector": "042",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-043",
+          "name": "Petrini Maza",
+          "collector": "043",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-044",
+          "name": "Megali Aspida",
+          "collector": "044",
+          "type": "armor"
+        },
+        {
+          "id": "s7-045",
+          "name": "Propirgio Ton Axeon",
+          "collector": "045",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-046",
+      "set": 7,
+      "warrior": {
+        "id": "s7-046",
+        "name": "Theseus",
+        "collector": "046"
+      },
+      "support": [
+        {
+          "id": "s7-047",
+          "name": "Asterionas",
+          "collector": "047",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-048",
+          "name": "Klironomimena Opla",
+          "collector": "048",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-049",
+          "name": "Kaliva Tis Ekalis",
+          "collector": "049",
+          "type": "armor"
+        },
+        {
+          "id": "s7-050",
+          "name": "Doro Tis Ariadnis",
+          "collector": "050",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-051",
+      "set": 7,
+      "warrior": {
+        "id": "s7-051",
+        "name": "Barak",
+        "collector": "051"
+      },
+      "support": [
+        {
+          "id": "s7-052",
+          "name": "Devora",
+          "collector": "052",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-053",
+          "name": "Herev Pifiyot",
+          "collector": "053",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-054",
+          "name": "Tahara'",
+          "collector": "054",
+          "type": "armor"
+        },
+        {
+          "id": "s7-055",
+          "name": "Kidon",
+          "collector": "055",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-056",
+      "set": 7,
+      "warrior": {
+        "id": "s7-056",
+        "name": "David",
+        "collector": "056"
+      },
+      "support": [
+        {
+          "id": "s7-057",
+          "name": "Golyath",
+          "collector": "057",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-058",
+          "name": "Qela'",
+          "collector": "058",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-059",
+          "name": "Maddai Sa'ul Hammelek",
+          "collector": "059",
+          "type": "armor"
+        },
+        {
+          "id": "s7-060",
+          "name": "'Aron Ha'eduth",
+          "collector": "060",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-061",
+      "set": 7,
+      "warrior": {
+        "id": "s7-061",
+        "name": "Joshua",
+        "collector": "061"
+      },
+      "support": [
+        {
+          "id": "s7-062",
+          "name": "Yereho",
+          "collector": "062",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-063",
+          "name": "Herev",
+          "collector": "063",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-064",
+          "name": "Magen",
+          "collector": "064",
+          "type": "armor"
+        },
+        {
+          "id": "s7-065",
+          "name": "Miswat Yehosua",
+          "collector": "065",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-066",
+      "set": 7,
+      "warrior": {
+        "id": "s7-066",
+        "name": "Judah Maccabee",
+        "collector": "066"
+      },
+      "support": [
+        {
+          "id": "s7-067",
+          "name": "Qin'at Bêtĕkā",
+          "collector": "067",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-068",
+          "name": "Herev Appolonius",
+          "collector": "068",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-069",
+          "name": "Siryôn",
+          "collector": "069",
+          "type": "armor"
+        },
+        {
+          "id": "s7-070",
+          "name": "Hannûkâ",
+          "collector": "070",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-071",
+      "set": 7,
+      "warrior": {
+        "id": "s7-071",
+        "name": "Samson",
+        "collector": "071"
+      },
+      "support": [
+        {
+          "id": "s7-072",
+          "name": "Delila",
+          "collector": "072",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-073",
+          "name": "Lehi-Hamor",
+          "collector": "073",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-074",
+          "name": "Ketoneth",
+          "collector": "074",
+          "type": "armor"
+        },
+        {
+          "id": "s7-075",
+          "name": "Se'ar-Ro's Simson",
+          "collector": "075",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-076",
+      "set": 7,
+      "warrior": {
+        "id": "s7-076",
+        "name": "Aeneas",
+        "collector": "076"
+      },
+      "support": [
+        {
+          "id": "s7-077",
+          "name": "Afroditi",
+          "collector": "077",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-078",
+          "name": "Dorata Me Mproutzini Ehmi",
+          "collector": "078",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-079",
+          "name": "Aristourgima Tou Ifestou",
+          "collector": "079",
+          "type": "armor"
+        },
+        {
+          "id": "s7-080",
+          "name": "Palladio",
+          "collector": "080",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-081",
+      "set": 7,
+      "warrior": {
+        "id": "s7-081",
+        "name": "Brutus",
+        "collector": "081"
+      },
+      "support": [
+        {
+          "id": "s7-082",
+          "name": "Artemis",
+          "collector": "082",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-083",
+          "name": "Mahera",
+          "collector": "083",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-084",
+          "name": "Kranos Me Lofio",
+          "collector": "084",
+          "type": "armor"
+        },
+        {
+          "id": "s7-085",
+          "name": "Petra Tou Londinou",
+          "collector": "085",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-086",
+      "set": 7,
+      "warrior": {
+        "id": "s7-086",
+        "name": "Hector",
+        "collector": "086"
+      },
+      "support": [
+        {
+          "id": "s7-087",
+          "name": "Stili Tis Trias",
+          "collector": "087",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-088",
+          "name": "Spathi Me Asimenia Lavi",
+          "collector": "088",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-089",
+          "name": "Zoni Tou Eanta",
+          "collector": "089",
+          "type": "armor"
+        },
+        {
+          "id": "s7-090",
+          "name": "Theiki Paremvasi",
+          "collector": "090",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-091",
+      "set": 7,
+      "warrior": {
+        "id": "s7-091",
+        "name": "Paris",
+        "collector": "091"
+      },
+      "support": [
+        {
+          "id": "s7-092",
+          "name": "Eleni Tis Spartis",
+          "collector": "092",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-093",
+          "name": "Dilitiriasmeno Velos",
+          "collector": "093",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-094",
+          "name": "Xtipimeno Mproutzino Thorakio",
+          "collector": "094",
+          "type": "armor"
+        },
+        {
+          "id": "s7-095",
+          "name": "Krisi Tou Pari",
+          "collector": "095",
+          "type": "special"
+        }
+      ]
+    },
+    {
+      "id": "s7-096",
+      "set": 7,
+      "warrior": {
+        "id": "s7-096",
+        "name": "Priam",
+        "collector": "096"
+      },
+      "support": [
+        {
+          "id": "s7-097",
+          "name": "Ekavi",
+          "collector": "097",
+          "type": "inspiration"
+        },
+        {
+          "id": "s7-098",
+          "name": "Spathi Tis Trias",
+          "collector": "098",
+          "type": "weapon"
+        },
+        {
+          "id": "s7-099",
+          "name": "Tihi Tis Trias",
+          "collector": "099",
+          "type": "armor"
+        },
+        {
+          "id": "s7-100",
+          "name": "Cassandra",
+          "collector": "100",
+          "type": "special"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "group": "1",
+      "id": "s1-026",
+      "name": "Nakano Takeko",
+      "collector": "026",
+      "following_non_warriors": 6
+    },
+    {
+      "group": "1",
+      "id": "s1-033",
+      "name": "Saito Musashibo Benkei",
+      "collector": "033",
+      "following_non_warriors": 5
+    },
+    {
+      "group": "1",
+      "id": "s1-039",
+      "name": "Miyamoto Musashi",
+      "collector": "039",
+      "following_non_warriors": 1
+    },
+    {
+      "group": "1",
+      "id": "s1-051",
+      "name": "Harald Hardrada",
+      "collector": "051",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "1",
+      "id": "s1-052",
+      "name": "Beowulf",
+      "collector": "052",
+      "following_non_warriors": 5
+    },
+    {
+      "group": "1",
+      "id": "s1-058",
+      "name": "Freydis Eiriksdottir",
+      "collector": "058",
+      "following_non_warriors": 5
+    },
+    {
+      "group": "1",
+      "id": "s1-069",
+      "name": "Julius Caesar",
+      "collector": "069",
+      "following_non_warriors": 6
+    },
+    {
+      "group": "P1",
+      "id": "s1-P001",
+      "name": "Alexander III of Macedon",
+      "collector": "001",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P1",
+      "id": "s1-P002",
+      "name": "Leonidas I of Sparta",
+      "collector": "002",
+      "following_non_warriors": 1
+    },
+    {
+      "group": "P1",
+      "id": "s1-P004",
+      "name": "Nobunaga",
+      "collector": "004",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P1",
+      "id": "s1-P005",
+      "name": "Shinmen Takezo",
+      "collector": "005",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P1",
+      "id": "s1-P006",
+      "name": "Canute I of Denmark",
+      "collector": "006",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P1",
+      "id": "s1-P007",
+      "name": "Geat King Beowulf",
+      "collector": "007",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P1",
+      "id": "s1-P008",
+      "name": "Gaius Julius",
+      "collector": "008",
+      "following_non_warriors": 1
+    },
+    {
+      "group": "P1",
+      "id": "s1-P010",
+      "name": "Spartacus of Thrace",
+      "collector": "010",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P3",
+      "id": "s3-P011",
+      "name": "Hattori Hanzo",
+      "collector": "011",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P3",
+      "id": "s3-P012",
+      "name": "Herakles of Thebes",
+      "collector": "012",
+      "following_non_warriors": 7
+    },
+    {
+      "group": "P3",
+      "id": "s3-P020",
+      "name": "Batu Khan",
+      "collector": "020",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P4",
+      "id": "s4-P022",
+      "name": "D'Artagnan",
+      "collector": "022",
+      "following_non_warriors": 8
+    },
+    {
+      "group": "P5",
+      "id": "s5-P039",
+      "name": "Godfrey of Bouillon",
+      "collector": "039",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P5",
+      "id": "s5-P040",
+      "name": "Gaiseric",
+      "collector": "040",
+      "following_non_warriors": 0
+    },
+    {
+      "group": "P6",
+      "id": "s6-P041",
+      "name": "Liu Bei",
+      "collector": "041",
+      "following_non_warriors": 6
+    },
+    {
+      "group": "P6",
+      "id": "s6-P048",
+      "name": "Xerxes",
+      "collector": "048",
+      "following_non_warriors": 2
+    },
+    {
+      "group": "P7",
+      "id": "s7-P059",
+      "name": "Vlad II Dracul",
+      "collector": "059",
+      "following_non_warriors": 1
+    }
+  ]
+}
