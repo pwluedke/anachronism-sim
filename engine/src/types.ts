@@ -87,6 +87,8 @@ export interface GameState {
 
   /** Each player's support cards (index === playerId). A warrior-only game has none. */
   cards: [PlayerCards, PlayerCards];
+  /** Weapons (card ids) the current player has attacked with this turn: one attack per weapon. */
+  weaponsUsed: string[];
 }
 
 // ---- Actions -------------------------------------------------------------
@@ -103,7 +105,9 @@ export interface RotateAction {
 }
 export interface AttackAction {
   type: "ATTACK";
-  // target is implicit: the only opponent (1v1). Kept explicit-free for clarity.
+  // target is implicit: the only opponent (1v1).
+  /** Id of an in-play weapon to attack with; omitted for a basic attack (warrior grid + damage). */
+  weapon?: string;
 }
 export interface PassAction {
   type: "PASS";
@@ -135,6 +139,8 @@ export interface AttackedEvent {
   crit: boolean;
   damage: number; // damage dealt (0 on miss)
   tiebreak?: "experience" | "diceoff" | null;
+  /** The weapon used, or null for a basic attack. */
+  weapon: { id: string; name: string } | null;
 }
 export interface TurnStartedEvent {
   type: "turnStarted";

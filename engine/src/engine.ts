@@ -20,6 +20,7 @@ import { seedState, rollDie, roll2d6 } from "./rng";
 import { canMove, applyMove, applyRotate } from "./arena";
 import { resolveAttack } from "./combat";
 import * as Hooks from "./hooks";
+import { armedAttacker } from "./cards";
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
@@ -117,6 +118,7 @@ function startRound(state: GameState, events: GameEvent[]): void {
   state.turnIndex = 0;
   state.currentPlayer = state.turnOrder[0];
   state.actionsRemaining = currentWarrior(state).speed;
+  state.weaponsUsed = [];
   events.push({
     type: "roundStarted",
     round: state.round,
@@ -163,6 +165,7 @@ function endTurn(state: GameState, events: GameEvent[]): void {
     state.turnIndex = 1;
     state.currentPlayer = state.turnOrder[1];
     state.actionsRemaining = currentWarrior(state).speed;
+    state.weaponsUsed = [];
     events.push({
       type: "turnStarted",
       player: state.currentPlayer,
@@ -227,6 +230,7 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
     initiative: null,
     winner: null,
     cards: [playerCards(decks[0]), playerCards(decks[1])],
+    weaponsUsed: [],
   };
 
   const events: GameEvent[] = [{ type: "setup", firstPlacer }];
@@ -277,8 +281,14 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
       if (state.actionsRemaining < 1) return { state: prev, events: [] };
       // legality (defender in grid) is checked inside resolveAttack; peek first
       // so an illegal attack is a true no-op (no hook noise, no RNG burn).
-      const pre = resolveAttack(state.warriors[me], state.warriors[foe], state.rng, state.arenaSize);
+      const attacker = armedAttacker(state, me, action.weapon);
+      if (!attacker) return { state: prev, events: [] };
+      const pre = resolveAttack(attacker, state.warriors[foe], state.rng, state.arenaSize);
       if (!pre.result.legal) return { state: prev, events: [] };
+      const weaponSlot = action.weapon
+        ? state.cards[me].support.find((s) => s.card.id === action.weapon)
+        : undefined;
+      if (action.weapon) state.weaponsUsed.push(action.weapon);
 
       Hooks.resolveHooks(state, "beforeAttackRoll", { attacker: me, defender: foe });
       const r = pre;
@@ -308,6 +318,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
         crit: r.result.crit,
         damage: r.result.damage,
         tiebreak: r.result.tiebreak,
+        weapon: weaponSlot ? { id: weaponSlot.card.id, name: weaponSlot.card.name } : null,
       });
       if (state.warriors[foe].life <= 0) {
         Hooks.resolveHooks(state, "onWarriorDefeated", { player: foe });

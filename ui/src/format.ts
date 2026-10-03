@@ -67,10 +67,11 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       };
     case "attacked": {
       const roll = `(${e.attackerRoll}${signed(e.gridMod)} = ${e.attackerTotal} vs ${e.defenderRoll}${e.tiebreak ? `, ${e.tiebreak} tiebreak` : ""})`;
-      if (!e.hit) return { kind: "miss", text: `${names[e.attacker]} strikes at ${names[e.defender]} — and misses.`, detail: roll, player: e.attacker };
+      const withW = e.weapon ? ` with ${e.weapon.name}` : "";
+      if (!e.hit) return { kind: "miss", text: `${names[e.attacker]} strikes at ${names[e.defender]}${withW} — and misses.`, detail: roll, player: e.attacker };
       return {
         kind: e.crit ? "crit" : "hit",
-        text: `${names[e.attacker]} ${e.crit ? "lands a critical blow on" : "strikes"} ${names[e.defender]} for ${e.damage}.`,
+        text: `${names[e.attacker]} ${e.crit ? "lands a critical blow on" : "strikes"} ${names[e.defender]}${withW} for ${e.damage}.`,
         detail: roll,
         player: e.attacker,
       };

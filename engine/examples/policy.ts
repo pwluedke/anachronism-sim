@@ -72,7 +72,8 @@ export function formatEvent(e: GameEvent): string {
         `    P${e.attacker} ATTACK  ${e.attackerRoll}${e.gridMod >= 0 ? "+" : ""}${e.gridMod}=${e.attackerTotal}` +
         ` vs ${e.defenderRoll} => ${e.hit ? "HIT" : "miss"}${e.crit ? " CRIT" : ""}` +
         (e.damage ? ` dmg ${e.damage}` : "") +
-        (e.tiebreak ? ` [${e.tiebreak}]` : "")
+        (e.tiebreak ? ` [${e.tiebreak}]` : "") +
+        (e.weapon ? ` with ${e.weapon.name}` : "")
       );
     case "warriorDefeated":
       return `    !! P${e.player} defeated`;
