@@ -87,15 +87,11 @@ the spine has a low skill ceiling, so deeper search has little to work with.
 - **Mirror-match initiative RNG leak in search** — with equal experience, the round-start dice-off
   reads the game's real RNG on non-attack lines, so the search can see who wins initiative next round.
 
-## Milestone 11 (CURRENT): UI polish / look-and-feel
+## Milestone 7 (CURRENT): UI polish / look-and-feel
 
-Sequenced next, ahead of M7. Phase/turn tracker, styled board, battle log, keyboard shortcuts,
+Epic #31. Cartography theme, click-driven movement board, phase/turn tracker, styled board, battle log, keyboard shortcuts,
 old-world art direction, and wiring the M5 bot into the UI (difficulty picker; the "think pause" lives
 here, not in the engine).
-
-## Milestone 7: 4-player + variant rules
-
-Variant rules sourced from BGG variants.
 
 ## Milestone 8: Online multiplayer
 
@@ -106,3 +102,7 @@ Authoritative server.
 ## Milestone 10: Custom card creator
 
 In-app schema-validated JSON append.
+
+## Milestone 11: 4-player + variant rules
+
+Variant rules sourced from BGG variants.
