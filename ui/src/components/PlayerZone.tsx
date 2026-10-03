@@ -11,12 +11,14 @@ function StatPanel({
   card,
   controller,
   thinking,
+  showFaceDown,
 }: {
   state: GameState;
   pid: PlayerId;
   card: CardData;
   controller: string;
   thinking: boolean;
+  showFaceDown: boolean;
 }) {
   const w = state.warriors[pid];
   const isTurn = state.phase === "playing" && state.currentPlayer === pid;
@@ -54,7 +56,7 @@ function StatPanel({
           <dd>{w.damage}</dd>
         </div>
       </dl>
-      <AbilityChips state={state} pid={pid} warrior={card} />
+      <AbilityChips state={state} pid={pid} warrior={card} showFaceDown={showFaceDown} />
     </div>
   );
 }
@@ -95,19 +97,22 @@ export function PlayerZone({
   thinking,
   discardable,
   onDiscard,
+  showFaceDown = false,
 }: {
   state: GameState;
   pid: PlayerId;
   card: CardData;
   controller: string;
   thinking: boolean;
+  /** Learning mode: list this player's face-down cards' abilities too. */
+  showFaceDown?: boolean;
   /** While a card restriction is pending for this player: the cards they may discard. */
   discardable?: Set<string>;
   onDiscard?: (cardId: string) => void;
 }) {
   return (
     <section className={`player-zone zone-p${pid}`}>
-      <StatPanel state={state} pid={pid} card={card} controller={controller} thinking={thinking} />
+      <StatPanel state={state} pid={pid} card={card} controller={controller} thinking={thinking} showFaceDown={showFaceDown} />
       <SupportSlots state={state} pid={pid} discardable={discardable} onDiscard={onDiscard} />
     </section>
   );

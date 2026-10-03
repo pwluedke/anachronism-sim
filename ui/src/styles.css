@@ -1093,3 +1093,40 @@ button.card-face.discardable:focus-visible {
   font-style: italic;
   color: var(--ink-500);
 }
+
+/* ---- settings ---- */
+.settings {
+  position: relative;
+}
+.settings summary {
+  list-style: none;
+}
+.settings summary::-webkit-details-marker {
+  display: none;
+}
+.settings-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 10;
+  width: 320px;
+  padding: 12px 14px;
+  font-size: var(--fs-sm);
+}
+.setting {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.setting input {
+  margin-top: 4px;
+  accent-color: var(--gold-600);
+}
+.ability-row.ability-facedown {
+  border-left-style: dashed;
+  opacity: 0.75;
+}
+.status-facedown {
+  border-style: dashed;
+}

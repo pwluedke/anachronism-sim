@@ -7,6 +7,8 @@ import { DEFAULT_SIDES } from "./decks";
 import { useGame } from "./useGame";
 import { ModeControls } from "./components/ModeControls";
 import { DeckPicker } from "./components/DeckPicker";
+import { SettingsMenu } from "./components/SettingsMenu";
+import { useSettings } from "./settings";
 import { Arena } from "./components/Arena";
 import { ActionBar, type AttackSource } from "./components/ActionBar";
 import { EventLog } from "./components/EventLog";
@@ -37,6 +39,10 @@ export function App() {
     botSide: 0,
   });
   const { state, log, sides } = view;
+  const { settings, update: updateSettings } = useSettings();
+  // Learning mode reveals a side's face-down abilities only to that side's human player(s).
+  const showFaceDownFor = (pid: 0 | 1) =>
+    settings.showFaceDownAbilities && !(mode.kind === "ai" && mode.botSide === pid);
   const CARDS = [sides[0].warrior, sides[1].warrior] as const;
   const NAMES: [string, string] = [CARDS[0].name, CARDS[1].name];
   const playing = state.phase === "playing";
@@ -228,6 +234,7 @@ export function App() {
         <div className="header-controls">
           <DeckPicker sides={sides} onChange={changeDecks} />
           <ModeControls mode={mode} names={NAMES} onChange={setMode} />
+          <SettingsMenu settings={settings} onChange={updateSettings} />
           <button className="btn" onClick={() => newGame(Date.now() | 0)}>
             New game
           </button>
@@ -242,6 +249,7 @@ export function App() {
         card={CARDS[0]}
         controller={controllerOf(0)}
         thinking={botTurn && state.currentPlayer === 0}
+        showFaceDown={showFaceDownFor(0)}
         {...discardsFor(0)}
       />
 
@@ -306,6 +314,7 @@ export function App() {
         card={CARDS[1]}
         controller={controllerOf(1)}
         thinking={botTurn && state.currentPlayer === 1}
+        showFaceDown={showFaceDownFor(1)}
         {...discardsFor(1)}
       />
     </main>
