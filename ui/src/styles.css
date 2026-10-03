@@ -71,6 +71,9 @@
   .side-right {
     grid-column: 1 / -1;
   }
+  .battle-log-body {
+    height: 240px;
+  }
 }
 @media (max-width: 720px) {
   .midfield {

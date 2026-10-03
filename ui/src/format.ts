@@ -4,6 +4,7 @@ import type { Facing, GameEvent, Position, Winner } from "@engine";
 
 const COLS = ["A", "B", "C", "D"];
 const ROWS = ["I", "II", "III", "IV"];
+const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 const FACING_NAME: Record<Facing, string> = { N: "north", E: "east", S: "south", W: "west" };
 const where = (p: Position) => `${COLS[p.col]}${ROWS[p.row]}`;
 
@@ -34,7 +35,7 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
     case "setup":
       return { kind: "note", text: `${names[e.firstPlacer]} takes the field first.` };
     case "roundStarted":
-      return { kind: "round", text: `Round ${ROWS[e.round - 1] ?? e.round}`, detail: `${names[e.initiative]} has initiative` };
+      return { kind: "round", text: `Round ${ROMAN[e.round - 1] ?? e.round}`, detail: `${names[e.initiative]} has initiative` };
     case "turnStarted":
       return { kind: "turn", text: `${names[e.player]}'s turn`, player: e.player };
     case "moved":

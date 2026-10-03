@@ -87,13 +87,22 @@ the spine has a low skill ceiling, so deeper search has little to work with.
 - **Mirror-match initiative RNG leak in search** — with equal experience, the round-start dice-off
   reads the game's real RNG on non-attack lines, so the search can see who wins initiative next round.
 
-## Milestone 7 (CURRENT): UI polish / look-and-feel
+## Milestone 7 (DONE): UI polish / look-and-feel
 
-Epic #31. Cartography theme, click-driven movement board, phase/turn tracker, styled board, battle log, keyboard shortcuts,
-old-world art direction, and wiring the M5 bot into the UI (difficulty picker; the "think pause" lives
-here, not in the engine).
+Epic #31. The hotseat UI became the full table in an aged-parchment / cartography art direction:
+design tokens for every colour, type and texture (`ui/src/theme.css`); the 4x4 arena as a region on an
+aged map (coordinates, contours, compass rose) with sepia portrait medallions and facing pointers; a
+click-driven, Metal Gear Acid-style move flow (reachable cells → ink path → facing carets → engine
+attack-grid preview → confirm); a phase/turn tracker and a battle chronicle; keyboard shortcuts; and
+play vs the computer (Easy/Medium/Hard, either side, a 650ms think-pause) alongside hotseat.
 
-## Milestone 8: Online multiplayer
+**DONE =** full games vs the bot played start to finish in the browser at all three difficulties;
+4 face-down support-card slots per player and a dice tray present as placeholders; `ui/` audited for
+rule logic — it only calls `init`, `applyAction`, `getLegalActions`, `chooseAction`, `projectGrid`,
+`stepPos`, and every dispatched action is a `getLegalActions` member or the bot's choice. Screenshots
+in [`docs/screenshots/`](screenshots/). Real warrior portrait art drops into `ui/src/portraits.ts`.
+
+## Milestone 8 (CURRENT): Online multiplayer
 
 Authoritative server.
 

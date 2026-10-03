@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Minimal hotseat React UI over the headless Anachronism engine (Milestone 6).",
+  "description": "React UI over the headless Anachronism engine: cartography theme, click-driven board, hotseat or vs the computer.",
   "scripts": {
     "dev": "vite",
     "typecheck": "tsc --noEmit",
