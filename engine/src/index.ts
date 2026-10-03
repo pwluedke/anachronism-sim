@@ -22,4 +22,5 @@ export {
   offendingCards,
 } from "./cards";
 export type { Violation } from "./cards";
+export * from "./abilities";
 export * from "./bot";

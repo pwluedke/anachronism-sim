@@ -31,6 +31,8 @@ export interface CardData {
   experience: number;
   damage: number;
   grid: AttackGrid;
+  /** Printed ability text (display only; mechanics live in abilities/). */
+  abilities?: { name: string; type: string; text: string }[];
 }
 
 export interface Warrior {

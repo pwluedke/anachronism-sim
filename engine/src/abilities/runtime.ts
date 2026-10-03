@@ -143,3 +143,43 @@ export function useActionAbility(state: GameState, p: PlayerId, cardId: string, 
   if (!src || !a) return false;
   return tryFire(context(state, p, src, a, events), a);
 }
+
+// ---- Display helpers (read-only) -----------------------------------------------------------------
+
+export interface AbilityStatus {
+  cardId: string;
+  cardName: string;
+  ability: string;
+  trigger: Trigger;
+  /** active: in effect now · dormant: its condition isn't met · used: once-per-round, spent ·
+   *  ready: waiting for its moment (or, for an Action, usable). */
+  status: "active" | "dormant" | "used" | "ready";
+  detail: string;
+}
+
+const WHEN: Record<Exclude<Trigger, "continuous">, string> = {
+  reveal: "when revealed",
+  roundStart: "at the start of each round",
+  damageDealt: "after dealing damage",
+  action: "Action — costs 1 action",
+};
+
+/** Player p's implemented abilities currently in play, with what each is doing right now. */
+export function abilityStatus(state: GameState, p: PlayerId): AbilityStatus[] {
+  const out: AbilityStatus[] = [];
+  for (const src of sources(state, p)) {
+    for (const a of src.abilities) {
+      const base = { cardId: src.cardId, cardName: src.cardName, ability: a.name, trigger: a.trigger };
+      if (a.trigger === "continuous") {
+        const on = a.inEffect ? a.inEffect(state, p) : true;
+        const v = a.attackRoll ? a.attackRoll(state, p) : 0;
+        out.push({ ...base, status: on ? "active" : "dormant", detail: on ? `${v >= 0 ? "+" : ""}${v} to attack rolls` : "condition not met" });
+      } else if (isUsedUp(state, src.cardId, a)) {
+        out.push({ ...base, status: "used", detail: "used this round" });
+      } else {
+        out.push({ ...base, status: "ready", detail: WHEN[a.trigger] + (a.oncePerRound ? " (once per round)" : "") });
+      }
+    }
+  }
+  return out;
+}

@@ -106,6 +106,7 @@ export function warriorData(r: CardRecord): CardData {
     experience: r.experience ?? 0,
     damage: r.damage ?? 0,
     grid: r.grid,
+    abilities: r.abilities ?? [],
   };
 }
 
