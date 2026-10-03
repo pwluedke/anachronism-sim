@@ -140,7 +140,13 @@ along the way. Hard ≈ Medium again, as logged under the M5 follow-ups. Screens
 - **UI bundle** — the deck card data takes the bundle past Vite's 500 kB advisory (121 kB gzipped);
   code-split if it grows.
 
-## Milestone 9 (CURRENT): Raspberry Pi 4 kiosk build
+## Milestone 9 (CURRENT): Card abilities — hybrid effect engine + first 6-card batch
+
+Epic #51. Turn card abilities on: a structured trigger / condition / effect system most abilities are
+authored as data against, plus hand-coded functions for the ones that don't fit. Proven on six cards
+covering every trigger type (Shinmen Takezo, Maximinus, Leonidas, Apollo, Carlos V, Sun Tzu); other
+cards stay inert until later batches. Also fixes the combat dice-off (two dice each).
+
 
 ## Milestone 10: Custom card creator
 
@@ -153,3 +159,5 @@ Variant rules sourced from BGG variants.
 ## Milestone 12: Online multiplayer
 
 Authoritative server.
+
+## Milestone 13: Raspberry Pi 4 kiosk build
