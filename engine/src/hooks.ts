@@ -8,8 +8,9 @@
 //
 // Firing points (see engine.ts):
 //   onSetup           - once, after warriors are placed, before round 1.
-//   onRoundStart      - start of each round, after initiative is set.
-//   onReveal          - each round start (players reveal support cards; no-op here).
+//   onReveal          - each round start, after support cards are revealed, initiative is set and
+//                       restrictions are resolved (Reveal abilities; card abilities are off: no-op).
+//   onRoundStart      - after onReveal ("at the start of a round" effects come after Reveal, p10).
 //   onTurnStart       - when a player's turn begins (actions reset to speed).
 //   beforeAttackRoll  - an ATTACK is declared, before any dice are rolled.
 //   afterAttackRoll   - both 2d6 are rolled (and the grid mod known), pre-resolution.

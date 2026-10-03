@@ -65,6 +65,8 @@ export function formatEvent(e: GameEvent): string {
       return `    P${e.player} rotate  -> ${e.facing}`;
     case "passed":
       return `    P${e.player} pass`;
+    case "revealed":
+      return `  P${e.player} reveals ${e.name} (${e.cardType}, initiative ${e.initiative ?? "—"})`;
     case "attacked":
       return (
         `    P${e.attacker} ATTACK  ${e.attackerRoll}${e.gridMod >= 0 ? "+" : ""}${e.gridMod}=${e.attackerTotal}` +

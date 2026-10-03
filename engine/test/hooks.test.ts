@@ -36,10 +36,11 @@ describe("hook firing points", () => {
     return log;
   }
 
-  it("setup + round 1 fire onSetup, onRoundStart, onReveal, onTurnStart", () => {
+  it("setup + round 1 fire onSetup, onReveal, onRoundStart, onTurnStart", () => {
+    // Rulebook p10: "at the start of a round" effects occur after Reveal abilities.
     const log = fired();
     init(ACHILLES, AJAX, 1);
-    expect(log).toEqual(["onSetup", "onRoundStart", "onReveal", "onTurnStart"]);
+    expect(log).toEqual(["onSetup", "onReveal", "onRoundStart", "onTurnStart"]);
   });
 
   it("PASS fires onTurnEnd then the next turn's onTurnStart", () => {

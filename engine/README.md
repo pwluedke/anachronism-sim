@@ -119,7 +119,7 @@ replay, and bots.
 `resolveHooks(state, hook, context) -> state` is fired (currently as the identity stub) at every
 point an ability could act. **Firing order** through a turn:
 
-`onSetup` → per round: `onRoundStart` → `onReveal` → `onTurnStart` → … actions … → during an
+`onSetup` → per round: (support cards revealed, initiative set, restrictions resolved) → `onReveal` → `onRoundStart` → `onTurnStart` → … actions … → during an
 `ATTACK`: `beforeAttackRoll` → `afterAttackRoll` → (`onHit` | `onMiss`) → [`onCriticalHit`] →
 `afterDefense` → [`onDamageDealt`] → [`onWarriorDefeated`] → … → `onTurnEnd` → (next turn's
 `onTurnStart`, or `onRoundEnd`).

@@ -353,6 +353,11 @@
 .entry-turn.p1 {
   color: var(--p1-ink);
 }
+.entry-reveal {
+  font-style: italic;
+  color: var(--gold-600);
+  padding-left: 10px;
+}
 .entry-move,
 .entry-note {
   color: var(--ink-700);

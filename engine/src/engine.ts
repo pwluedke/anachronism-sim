@@ -12,6 +12,7 @@ import type {
   GameState,
   PlayerCards,
   PlayerId,
+  SupportSlot,
   Position,
   Warrior,
 } from "./types";
@@ -72,8 +73,34 @@ export function determineInitiative(
   }
 }
 
-/** Begin a round in-place on `state`, appending events. */
+/** Both players simultaneously reveal their next face-down support card into play (rulebook p10).
+ *  Returns what each player revealed this round (null when nothing was left, e.g. round 5). */
+function revealRound(state: GameState, events: GameEvent[]): [SupportSlot | null, SupportSlot | null] {
+  const revealed: [SupportSlot | null, SupportSlot | null] = [null, null];
+  for (const p of [0, 1] as PlayerId[]) {
+    const pc = state.cards[p];
+    if (pc.nextReveal >= pc.support.length) continue;
+    const slot = pc.support[pc.nextReveal];
+    slot.status = "in-play";
+    revealed[p] = slot;
+    events.push({
+      type: "revealed",
+      player: p,
+      slot: pc.nextReveal,
+      cardId: slot.card.id,
+      name: slot.card.name,
+      cardType: slot.card.type,
+      initiative: slot.card.initiative,
+    });
+    pc.nextReveal += 1;
+  }
+  return revealed;
+}
+
+/** Begin a round in-place on `state`, appending events. Rulebook order (p10): reveal, initiative,
+ *  restrictions, Reveal abilities, then "start of round" effects. */
 function startRound(state: GameState, events: GameEvent[]): void {
+  revealRound(state, events);
   const init = determineInitiative(state.warriors, state.rng);
   state.rng = init.rng;
   state.initiative = init.initiative;
@@ -87,8 +114,8 @@ function startRound(state: GameState, events: GameEvent[]): void {
     initiative: state.initiative,
     turnOrder: state.turnOrder,
   });
-  Hooks.resolveHooks(state, "onRoundStart", { round: state.round });
   Hooks.resolveHooks(state, "onReveal", { round: state.round });
+  Hooks.resolveHooks(state, "onRoundStart", { round: state.round });
   events.push({
     type: "turnStarted",
     player: state.currentPlayer,

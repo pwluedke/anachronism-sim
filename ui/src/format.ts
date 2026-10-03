@@ -22,7 +22,7 @@ export function winnerText(winner: Winner, reason: string, names: [string, strin
 }
 
 export interface LogEntry {
-  kind: "round" | "turn" | "move" | "hit" | "crit" | "miss" | "defeat" | "end" | "note";
+  kind: "round" | "reveal" | "turn" | "move" | "hit" | "crit" | "miss" | "defeat" | "end" | "note";
   text: string;
   detail?: string;
   player?: 0 | 1;
@@ -48,6 +48,13 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       return { kind: "move", text: `${names[e.player]} turns to face ${FACING_NAME[e.facing]}.`, player: e.player };
     case "passed":
       return { kind: "note", text: `${names[e.player]} holds.`, player: e.player };
+    case "revealed":
+      return {
+        kind: "reveal",
+        text: `${names[e.player]} reveals ${e.name}`,
+        detail: `(${e.cardType}, initiative ${e.initiative ?? "—"})`,
+        player: e.player,
+      };
     case "attacked": {
       const roll = `(${e.attackerRoll}${signed(e.gridMod)} = ${e.attackerTotal} vs ${e.defenderRoll}${e.tiebreak ? `, ${e.tiebreak} tiebreak` : ""})`;
       if (!e.hit) return { kind: "miss", text: `${names[e.attacker]} strikes at ${names[e.defender]} — and misses.`, detail: roll, player: e.attacker };

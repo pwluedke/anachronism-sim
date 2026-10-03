@@ -168,6 +168,16 @@ export interface SetupEvent {
   type: "setup";
   firstPlacer: PlayerId;
 }
+export interface RevealedEvent {
+  type: "revealed";
+  player: PlayerId;
+  /** Face-down slot index the card came from (0 = leftmost). */
+  slot: number;
+  cardId: string;
+  name: string;
+  cardType: SupportCard["type"];
+  initiative: number | null;
+}
 export interface PassedEvent {
   type: "passed";
   player: PlayerId;
@@ -179,6 +189,7 @@ export type GameEvent =
   | RotatedEvent
   | AttackedEvent
   | PassedEvent
+  | RevealedEvent
   | TurnStartedEvent
   | TurnEndedEvent
   | RoundStartedEvent
