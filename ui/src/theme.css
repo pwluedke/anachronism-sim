@@ -15,12 +15,13 @@
                                  map inks. --*-wash are translucent fills of the same hue.
    - Signals     --hit-ink, --miss-ink, --reach-wash, --threat-wash, --preview-wash   board overlays
                                  and battle-log outcomes.
-   - Type        --font-display (classical serif, small caps) for headings, numerals and labels;
-                 --font-body (readable book serif) for everything else; --fs-* scale.
+   - Type        --font-display (classical serif, small caps) for headings and labels;
+                 --font-body (readable book serif) for everything else; --font-numeric + lining figures
+                 for every number (the display face draws numerals as letterforms); --fs-* scale.
    - Edges       --radius-worn (irregular corners), --border-ink, --edge-burn (inset vignette that reads
                  as a scorched/worn margin), --shadow-paper (lift off the table).
    - Textures    --texture-grain (paper fibre noise), --texture-stains (foxing), --texture-mapgrid
-                 (faint survey grid), --texture-cardback (hatched back of a face-down card). Layer them with --surface-parchment.
+                 (faint survey grid), --texture-contours (terrain contour lines for the map), --texture-cardback (hatched back of a face-down card). Layer them with --surface-parchment.
    - Images      --filter-portrait: History-Channel sepia / black-and-white photo treatment. Apply via
                  the .portrait class.
    ============================================================================= */
@@ -62,6 +63,7 @@
   /* Type */
   --font-display: "IM Fell English SC", "Cormorant SC", "Trajan Pro", Garamond, "Times New Roman", serif;
   --font-body: "EB Garamond", Garamond, "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-numeric: "EB Garamond", Garamond, Georgia, serif; /* with lining figures: see .num */
   --fs-xs: 0.78rem;
   --fs-sm: 0.9rem;
   --fs-md: 1.05rem;
@@ -85,6 +87,7 @@
     repeating-linear-gradient(0deg, rgba(70, 54, 38, 0.07) 0 1px, transparent 1px 44px),
     repeating-linear-gradient(90deg, rgba(70, 54, 38, 0.07) 0 1px, transparent 1px 44px);
   --texture-cardback: repeating-linear-gradient(45deg, rgba(70, 54, 38, 0.09) 0 2px, transparent 2px 7px);
+  --texture-contours: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' fill='none' stroke='%236d5a42' stroke-opacity='0.13' stroke-width='1'%3E%3Cpath d='M-20 80 C60 40 120 120 200 70 S330 40 380 90'/%3E%3Cpath d='M-20 110 C70 70 120 150 210 100 S330 70 380 120'/%3E%3Cpath d='M-20 250 C40 220 110 300 190 260 S320 210 380 250'/%3E%3Cpath d='M-20 280 C50 250 110 330 200 290 S320 240 380 280'/%3E%3Cellipse cx='280' cy='190' rx='46' ry='26'/%3E%3Cellipse cx='280' cy='190' rx='26' ry='13'/%3E%3C/svg%3E");
   --surface-parchment: var(--texture-grain), var(--texture-stains), var(--parchment-100);
 
   /* Images */
@@ -154,6 +157,12 @@ kbd {
 /* Sepia / black-and-white photo treatment for warrior portraits (img or svg). */
 .portrait {
   filter: var(--filter-portrait);
+}
+
+/* Numbers: lining figures, never the display face's letterform numerals. */
+.num {
+  font-family: var(--font-numeric);
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 /* Small-caps label in the display face. */

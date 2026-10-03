@@ -120,7 +120,9 @@
 }
 .stat dd {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: var(--font-numeric);
+  font-variant-numeric: lining-nums;
+  font-weight: 600;
   font-size: var(--fs-lg);
   line-height: 1.1;
 }
@@ -160,6 +162,7 @@
 }
 .tracker-value {
   font-family: var(--font-display);
+  font-variant-numeric: lining-nums;
   font-size: var(--fs-md);
   text-align: right;
 }
@@ -251,64 +254,193 @@
   border-color: var(--hit-ink);
 }
 
-/* ---- board ---- */
-.board {
-  display: inline-block;
-  background: var(--texture-grain), var(--texture-mapgrid), var(--parchment-50);
-  border: var(--border-ink-strong);
-  border-radius: var(--radius-worn);
-  box-shadow: var(--edge-burn);
-  overflow: hidden;
-}
-.row {
-  display: flex;
-}
-.cell {
+/* ---- map arena ---- */
+.map {
+  --cell: 92px;
   position: relative;
-  width: 72px;
-  height: 72px;
-  border: var(--border-ink);
+  display: grid;
+  grid-template-columns: 26px auto;
+  grid-template-rows: 26px auto;
+  padding: 10px 46px 34px 14px;
+  background: var(--texture-grain), var(--texture-contours), var(--texture-stains), var(--parchment-100);
+}
+.map-coords {
+  display: flex;
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  color: var(--ink-500);
+}
+.map-coords-top {
+  grid-column: 2;
+  grid-row: 1;
+}
+.map-coords-top span {
+  width: var(--cell);
+  text-align: center;
+}
+.map-coords-left {
+  grid-column: 1;
+  grid-row: 2;
+  flex-direction: column;
+}
+.map-coords-left span {
+  height: var(--cell);
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-.cell.hl {
+.map-grid {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  border: var(--border-ink-strong);
+  background: var(--texture-mapgrid);
+  box-shadow: 0 0 0 4px var(--parchment-100), 0 0 0 5px var(--ink-300);
+}
+.map-cell {
+  position: relative;
+  width: var(--cell);
+  height: var(--cell);
+  border: 1px dashed var(--ink-300);
+  display: grid;
+  place-items: center;
+}
+.map-cell.in-threat {
   background: var(--threat-wash);
-  box-shadow: inset 0 0 0 2px var(--ink-500);
+  box-shadow: inset 0 0 0 1.5px var(--ink-500);
 }
-.cell .mod {
+.cell-mod {
   position: absolute;
   top: 3px;
-  left: 4px;
-  font-size: var(--fs-xs);
+  left: 6px;
+  font-family: var(--font-numeric);
+  font-variant-numeric: lining-nums;
+  font-weight: 600;
+  font-size: var(--fs-sm);
   color: var(--ink-700);
 }
-.warrior {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  color: var(--parchment-50);
+
+.compass {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  width: 64px;
+  height: 64px;
 }
-.warrior.p0 {
+.compass-ring {
+  fill: none;
+  stroke: var(--ink-500);
+  stroke-width: 1;
+  opacity: 0.7;
+}
+.compass-ring-inner {
+  stroke-dasharray: 2 3;
+}
+.compass-star {
+  fill: var(--parchment-50);
+  stroke: var(--ink-700);
+  stroke-width: 1;
+}
+.compass-star-shade {
+  fill: var(--ink-700);
+  opacity: 0.75;
+}
+.compass-star-minor {
+  fill: var(--gold-300);
+  stroke: var(--ink-500);
+  stroke-width: 0.8;
+  opacity: 0.7;
+}
+.compass-n {
+  font-family: var(--font-display);
+  font-size: 12px;
+  fill: var(--ink-900);
+}
+
+/* ---- warrior token ---- */
+.token {
+  position: relative;
+  width: 68px;
+  height: 68px;
+}
+.token-badge {
+  position: absolute;
+  top: -4px;
+  left: -6px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 4px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  color: var(--parchment-50);
+  border: 1.5px solid var(--parchment-50);
+  z-index: 1;
+}
+.token.p0 .token-badge {
   background: var(--p0-ink);
 }
-.warrior.p1 {
+.token.p1 .token-badge {
   background: var(--p1-ink);
 }
-.warrior.active {
-  outline: 2px solid var(--gold-500);
-  outline-offset: 3px;
+.token-portrait {
+  position: absolute;
+  inset: 4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--parchment-50);
 }
-.warrior .tag {
-  font-size: var(--fs-xs);
-  line-height: 1;
+.token.p0 .token-portrait {
+  box-shadow: 0 0 0 3px var(--p0-ink), var(--shadow-paper);
 }
-.warrior .arrow {
-  font-size: var(--fs-lg);
-  line-height: 1;
+.token.p1 .token-portrait {
+  box-shadow: 0 0 0 3px var(--p1-ink), var(--shadow-paper);
+}
+.token.p0.active .token-portrait {
+  box-shadow: 0 0 0 3px var(--p0-ink), 0 0 0 5px var(--parchment-50), 0 0 0 8px var(--gold-500), var(--shadow-paper);
+}
+.token.p1.active .token-portrait {
+  box-shadow: 0 0 0 3px var(--p1-ink), 0 0 0 5px var(--parchment-50), 0 0 0 8px var(--gold-500), var(--shadow-paper);
+}
+.token-facing {
+  position: absolute;
+  inset: -14px;
+  pointer-events: none;
+}
+.token-pointer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 12px solid var(--ink-900);
+}
+.token.p0 .token-pointer {
+  border-bottom-color: var(--p0-ink);
+}
+.token.p1 .token-pointer {
+  border-bottom-color: var(--p1-ink);
+}
+
+/* placeholder bust (until real portrait art) */
+.pp-ground {
+  fill: var(--parchment-200);
+}
+.p0 .pp-ground {
+  fill: color-mix(in srgb, var(--p0-ink) 22%, var(--parchment-100));
+}
+.p1 .pp-ground {
+  fill: color-mix(in srgb, var(--p1-ink) 22%, var(--parchment-100));
+}
+.pp-bust {
+  fill: var(--ink-500);
+}
+.pp-helm {
+  fill: var(--ink-700);
 }

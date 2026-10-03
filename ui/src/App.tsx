@@ -5,7 +5,7 @@ import { projectGrid } from "@engine";
 import type { GameEvent } from "@engine";
 import { PLAYER_0, PLAYER_1 } from "./cards";
 import { useGame } from "./useGame";
-import { Board, type Highlight } from "./components/Board";
+import { Arena } from "./components/Arena";
 import { ActionMenu } from "./components/ActionMenu";
 import { EventLog } from "./components/EventLog";
 import { PlayerZone } from "./components/PlayerZone";
@@ -20,12 +20,12 @@ export function App() {
   const { view, dispatch, newGame } = useGame(PLAYER_0, PLAYER_1, 1);
   const { state, log } = view;
 
-  const highlights = useMemo(() => {
-    const map = new Map<string, Highlight>();
+  const threat = useMemo(() => {
+    const map = new Map<string, number>();
     if (state.phase !== "playing") return map;
     const w = state.warriors[state.currentPlayer];
     for (const pc of projectGrid(w.attackGrid, w.position, w.facing, state.arenaSize)) {
-      map.set(`${pc.cell.row},${pc.cell.col}`, { mod: pc.mod });
+      map.set(`${pc.cell.row},${pc.cell.col}`, pc.mod);
     }
     return map;
   }, [state]);
@@ -56,7 +56,7 @@ export function App() {
           <DiceArea log={log} />
         </aside>
         <div className="arena-column">
-          <Board state={state} highlights={highlights} />
+          <Arena state={state} cards={CARDS} threat={threat} />
         </div>
         <aside className="side-right">
           <EventLog log={log} />
