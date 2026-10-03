@@ -31,6 +31,11 @@ sys.path.insert(0, os.path.dirname(__file__))
 import build_from_spreadsheet as B  # noqa: E402
 
 OUT = os.path.join(B.ROOT, "data", "preset_decks.json")
+# Slim records of just the cards the decks use, with just the fields the engine's loader reads, so
+# the browser UI doesn't have to bundle the full 2 MB card database.
+CARDS_OUT = os.path.join(B.ROOT, "data", "preset_deck_cards.json")
+ENGINE_FIELDS = ["id", "name", "card_type", "collector", "set", "life", "speed", "experience", "damage",
+                 "initiative", "hands", "traits", "grid", "abilities"]
 DECK_SIZE = 4
 
 
@@ -101,6 +106,15 @@ def main() -> None:
     with open(OUT, "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
+
+    by_id = {c["id"]: c for c in cards}
+    used = sorted({x["id"] for d in decks for x in [d["warrior"], *d["support"]]})
+    slim = [{k: by_id[i].get(k) for k in ENGINE_FIELDS} for i in used]
+    with open(CARDS_OUT, "w", encoding="utf-8") as fh:
+        json.dump({"schema_version": 1, "source": B.SOURCE, "card_count": len(slim), "cards": slim}, fh,
+                  ensure_ascii=False, separators=(",", ":"))
+        fh.write("\n")
+    print(f"wrote {CARDS_OUT}: {len(slim)} cards")
 
     by_group = Counter(d.get("set_label") or str(d["set"]) for d in decks)
     print(f"wrote {OUT}: {len(decks)} decks  {dict(sorted(by_group.items()))}")

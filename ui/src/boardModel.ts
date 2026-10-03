@@ -1,7 +1,7 @@
 // Board interaction model. Everything here is DERIVED from getLegalActions(state) and engine
 // helpers (stepPos, projectGrid). It never decides legality: a selection only resolves to an
 // action by finding that exact action object in the engine's legal list.
-import { getLegalActions, projectGrid, stepPos } from "@engine";
+import { getLegalActions, projectGrid, stepPos, weaponsInPlay } from "@engine";
 import type { Action, Facing, GameState, Position } from "@engine";
 
 export const cellKey = (p: Position) => `${p.row},${p.col}`;
@@ -22,8 +22,15 @@ export interface BoardModel {
   moveFacings: (dir: Facing) => Facing[];
   /** Facings offered by ROTATE actions (from the legal list). */
   rotateFacings: Facing[];
-  attack: Action | undefined;
+  /** The basic attack, if the foe is in the warrior's grid. */
+  basicAttack: Action | undefined;
+  /** Legal weapon attacks, keyed by weapon card id. */
+  weaponAttacks: Map<string, Action>;
+  /** Every legal attack (basic first, then weapons). */
+  attacks: Action[];
   pass: Action | undefined;
+  /** Legal discards while a card restriction is pending, keyed by card id. */
+  discards: Map<string, Action>;
 }
 
 export function buildModel(state: GameState): BoardModel {
@@ -40,8 +47,11 @@ export function buildModel(state: GameState): BoardModel {
     moveFacings: (dir) =>
       legal.flatMap((a) => (a.type === "MOVE" && a.dir === dir && a.facing ? [a.facing] : [])),
     rotateFacings: legal.flatMap((a) => (a.type === "ROTATE" ? [a.facing] : [])),
-    attack: legal.find((a) => a.type === "ATTACK"),
+    basicAttack: legal.find((a) => a.type === "ATTACK" && !a.weapon),
+    weaponAttacks: new Map(legal.flatMap((a) => (a.type === "ATTACK" && a.weapon ? [[a.weapon, a] as const] : []))),
+    attacks: legal.filter((a) => a.type === "ATTACK"),
     pass: legal.find((a) => a.type === "PASS"),
+    discards: new Map(legal.flatMap((a) => (a.type === "DISCARD" ? [[a.card, a] as const] : []))),
   };
 }
 
@@ -68,5 +78,16 @@ export function gridAt(state: GameState, pos: Position, facing: Facing): Map<str
   const w = state.warriors[state.currentPlayer];
   const out = new Map<string, number>();
   for (const pc of projectGrid(w.attackGrid, pos, facing, state.arenaSize)) out.set(cellKey(pc.cell), pc.mod);
+  return out;
+}
+
+/** Engine projection of an in-play weapon's grid from the active warrior's position + facing. */
+export function weaponGridAt(state: GameState, weaponId: string): Map<string, number> {
+  const p = state.currentPlayer;
+  const w = state.warriors[p];
+  const slot = weaponsInPlay(state, p).find((s) => s.card.id === weaponId);
+  const out = new Map<string, number>();
+  if (!slot?.card.grid) return out;
+  for (const pc of projectGrid(slot.card.grid, w.position, w.facing, state.arenaSize)) out.set(cellKey(pc.cell), pc.mod);
   return out;
 }

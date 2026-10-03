@@ -1,12 +1,14 @@
 // Table shell. Holds the engine GameState via useGame; renders it and routes chosen actions back
 // through the engine. NO rules here — legality comes from getLegalActions (via boardModel).
 import { useEffect, useMemo, useState } from "react";
-import type { Action, Facing, GameEvent } from "@engine";
-import { PLAYER_0, PLAYER_1 } from "./cards";
+import { violations, weaponsInPlay } from "@engine";
+import type { Action, Deck, Facing, GameEvent } from "@engine";
+import { DEFAULT_SIDES } from "./decks";
 import { useGame } from "./useGame";
 import { ModeControls } from "./components/ModeControls";
+import { DeckPicker } from "./components/DeckPicker";
 import { Arena } from "./components/Arena";
-import { ActionBar } from "./components/ActionBar";
+import { ActionBar, type AttackSource } from "./components/ActionBar";
 import { EventLog } from "./components/EventLog";
 import { PlayerZone } from "./components/PlayerZone";
 import { PhaseTracker } from "./components/PhaseTracker";
@@ -19,32 +21,34 @@ import {
   gridAt,
   selectedAction,
   selectionCell,
+  weaponGridAt,
   type Selection,
 } from "./boardModel";
 
 type GameEndedEvent = Extract<GameEvent, { type: "gameEnded" }>;
-const CARDS: [typeof PLAYER_0, typeof PLAYER_1] = [PLAYER_0, PLAYER_1];
-const NAMES: [string, string] = [PLAYER_0.name, PLAYER_1.name];
 const COLS = ["A", "B", "C", "D"];
 const ROWS = ["I", "II", "III", "IV"];
 const FACING_NAME: Record<Facing, string> = { N: "north", E: "east", S: "south", W: "west" };
 
 export function App() {
-  const { view, dispatch, newGame, mode, setMode, botTurn } = useGame(PLAYER_0, PLAYER_1, Date.now() | 0, {
+  const { view, dispatch, newGame, mode, setMode, botTurn } = useGame(DEFAULT_SIDES, Date.now() | 0, {
     kind: "ai",
     difficulty: "medium",
     botSide: 0,
   });
-  const { state, log } = view;
+  const { state, log, sides } = view;
+  const CARDS = [sides[0].warrior, sides[1].warrior] as const;
+  const NAMES: [string, string] = [CARDS[0].name, CARDS[1].name];
   const playing = state.phase === "playing";
   const humanTurn = playing && !botTurn;
+  const pending = !!state.pending;
 
   // Interaction model only exists on a human's turn: no clicks are possible while the bot plays.
   const model = useMemo(() => (humanTurn ? buildModel(state) : null), [state, humanTurn]);
   const [sel, setSel] = useState<Selection>(NO_SELECTION);
   const [hover, setHover] = useState<Facing | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
-  const [attackHover, setAttackHover] = useState(false);
+  const [attackHover, setAttackHover] = useState<AttackSource | null>(null);
   useEffect(() => {
     setSel(NO_SELECTION);
     setHover(null);
@@ -56,10 +60,29 @@ export function App() {
     return () => clearTimeout(t);
   }, [notice]);
 
-  // In range <=> the engine offers an ATTACK. Never computed here.
-  const tryAttack = () => {
-    if (model?.attack) dispatch(model.attack);
-    else if (model) setNotice("No enemy in range — they must stand in a marked cell of your attack grid.");
+  const name = NAMES[state.currentPlayer];
+  const myWeapons = humanTurn && !pending ? weaponsInPlay(state, state.currentPlayer) : [];
+  const weaponName = (id: string) => myWeapons.find((w) => w.card.id === id)?.card.name ?? "that weapon";
+
+  // In range <=> the engine offers that ATTACK. Never computed here.
+  const tryAttack = (source: AttackSource) => {
+    if (!model) return;
+    if (source === "basic") {
+      if (model.basicAttack) dispatch(model.basicAttack);
+      else if (model.weaponAttacks.size)
+        setNotice(`Out of ${name}'s own reach — attack with ${weaponName([...model.weaponAttacks.keys()][0])} instead.`);
+      else setNotice("No enemy in range — they must stand in a marked cell of your attack grid.");
+      return;
+    }
+    const a = model.weaponAttacks.get(source);
+    if (a) dispatch(a);
+    else if (state.weaponsUsed.includes(source)) setNotice(`${weaponName(source)} has already attacked this turn.`);
+    else setNotice(`No enemy in ${weaponName(source)}'s grid.`);
+  };
+  const onEnemyClick = () => {
+    if (!model || model.attacks.length === 0) return;
+    if (model.attacks.length === 1) dispatch(model.attacks[0]);
+    else setNotice("Several attacks reach — choose one below (Attack, or a weapon).");
   };
 
   const active = state.warriors[state.currentPlayer];
@@ -68,10 +91,11 @@ export function App() {
   // else the current facing (turning in place to it isn't an action, so it has no caret of its own).
   const shownFacing = sel.kind === "none" ? null : (hover ?? sel.facing ?? active.facing);
 
-  // Hovering Attack previews the grid an attack would use: from where the warrior stands now.
-  const attackPreview = attackHover && humanTurn;
+  // Hovering an attack button previews that attack's grid from where the warrior stands now.
+  const attackPreview = humanTurn ? attackHover : null;
   const grid = useMemo(() => {
     if (!playing) return new Map<string, number>();
+    if (attackPreview && attackPreview !== "basic") return weaponGridAt(state, attackPreview);
     if (!attackPreview && target && shownFacing) return gridAt(state, target, shownFacing);
     return gridAt(state, active.position, active.facing);
   }, [state, playing, attackPreview, target, shownFacing, active]);
@@ -94,7 +118,7 @@ export function App() {
   useEffect(() => {
     const ARROW: Record<string, Facing> = { ArrowUp: "N", ArrowRight: "E", ArrowDown: "S", ArrowLeft: "W" };
     const onKey = (e: KeyboardEvent) => {
-      if (!model || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (!model || pending || e.metaKey || e.ctrlKey || e.altKey) return;
       if (e.target instanceof HTMLSelectElement || e.target instanceof HTMLInputElement) return;
       const k = e.key;
       let handled = true;
@@ -122,7 +146,9 @@ export function App() {
         setSel(NO_SELECTION);
         setHover(null);
       } else if (k === "a" || k === "A") {
-        tryAttack();
+        tryAttack("basic");
+      } else if (k === "w" || k === "W") {
+        if (myWeapons.length) tryAttack(myWeapons[0].card.id);
       } else if (k === "e" || k === "E") {
         if (model.pass) dispatch(model.pass);
       } else if (k === "r" || k === "R") {
@@ -135,7 +161,7 @@ export function App() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [model, sel, confirm, active, dispatch, tryAttack]);
+  }, [model, pending, sel, confirm, active, dispatch, tryAttack, myWeapons]);
 
   const onOwnTokenClick = () => {
     if (!model || model.rotateFacings.length === 0) return;
@@ -143,12 +169,15 @@ export function App() {
     setSel(sel.kind === "rotate" ? NO_SELECTION : { kind: "rotate", facing: null });
   };
 
-  const name = CARDS[state.currentPlayer].name;
   let prompt = "The battle is over.";
   if (notice) {
     prompt = notice;
   } else if (botTurn && mode.kind === "ai") {
-    prompt = `${name} (computer, ${mode.difficulty}) is considering…`;
+    prompt = `${name} (computer, ${mode.difficulty}) is ${pending ? "choosing a card to discard" : "considering"}…`;
+  } else if (playing && pending) {
+    prompt = `${name} is over a card limit (${violations(state, state.currentPlayer)
+      .map((v) => v.detail)
+      .join("; ")}). Click a highlighted card to discard it.`;
   } else if (playing && target && sel.kind === "move") {
     const where = `${COLS[target.col]}${ROWS[target.row]}`;
     prompt = sel.facing
@@ -159,22 +188,34 @@ export function App() {
       ? `${name} turns ${FACING_NAME[sel.facing]}. Confirm, or pick another facing.`
       : `${name} faces ${FACING_NAME[active.facing]} (current). Pick a new facing, or Esc.`;
   } else if (playing) {
-    prompt = `${name}: pick a destination, click ${name} to turn in place${model?.attack ? ", or attack" : ""}.`;
+    prompt = `${name}: pick a destination, click ${name} to turn in place${model?.attacks.length ? ", or attack" : ""}.`;
   }
 
   const controllerOf = (pid: 0 | 1) =>
-    mode.kind === "ai" ? (mode.botSide === pid ? `computer · ${mode.difficulty}` : "you") : `player ${pid === 0 ? "I" : "II"}`;
+    mode.kind === "ai" ? (mode.botSide === pid ? `computer · ${mode.difficulty}` : "you") : "hotseat";
+  const discardsFor = (pid: 0 | 1) => {
+    if (!model || !pending || state.currentPlayer !== pid) return {};
+    return {
+      discardable: new Set(model.discards.keys()),
+      onDiscard: (id: string) => {
+        const a = model.discards.get(id);
+        if (a) dispatch(a);
+      },
+    };
+  };
 
   const ended =
     state.phase === "ended"
       ? ([...log].reverse().find((e) => e.type === "gameEnded") as GameEndedEvent | undefined)
       : undefined;
+  const changeDecks = (next: [Deck, Deck]) => newGame(Date.now() | 0, next);
 
   return (
     <main className="table">
       <header className="table-header">
         <h1>Anachronism</h1>
         <div className="header-controls">
+          <DeckPicker sides={sides} onChange={changeDecks} />
           <ModeControls mode={mode} names={NAMES} onChange={setMode} />
           <button className="btn" onClick={() => newGame(Date.now() | 0)}>
             New game
@@ -184,19 +225,26 @@ export function App() {
 
       {ended && <div className="banner">{winnerText(ended.winner, ended.reason, NAMES)}</div>}
 
-      <PlayerZone state={state} pid={0} card={CARDS[0]} controller={controllerOf(0)} thinking={botTurn && state.currentPlayer === 0} />
+      <PlayerZone
+        state={state}
+        pid={0}
+        card={CARDS[0]}
+        controller={controllerOf(0)}
+        thinking={botTurn && state.currentPlayer === 0}
+        {...discardsFor(0)}
+      />
 
       <div className="midfield">
         <aside className="side-left">
-          <PhaseTracker state={state} cards={CARDS} />
+          <PhaseTracker state={state} cards={[CARDS[0], CARDS[1]]} />
           <DiceArea log={log} />
         </aside>
         <div className="arena-column">
           <Arena
             state={state}
-            cards={CARDS}
+            cards={[CARDS[0], CARDS[1]]}
             grid={grid}
-            gridIsPreview={attackPreview || !!(target && shownFacing)}
+            gridIsPreview={!!attackPreview || !!(target && shownFacing)}
             reach={model && sel.kind !== "rotate" ? new Set(model.reach.keys()) : undefined}
             path={model && sel.kind === "move" && target ? { from: model.origin, to: target } : null}
             carets={
@@ -212,17 +260,18 @@ export function App() {
             }
             onCellClick={model ? onCellClick : undefined}
             onOwnTokenClick={model ? onOwnTokenClick : undefined}
-            onEnemyTokenClick={model?.attack ? () => act(model.attack!) : undefined}
-            canAttack={!!model?.attack}
+            onEnemyTokenClick={model?.attacks.length ? onEnemyClick : undefined}
+            canAttack={!!model?.attacks.length}
           />
           <ActionBar
             prompt={prompt}
             notice={!!notice}
             thinking={botTurn}
-            enabled={humanTurn}
+            enabled={humanTurn && !pending}
             onAttack={tryAttack}
             onAttackHover={setAttackHover}
-            inRange={!!model?.attack}
+            basicInRange={!!model?.basicAttack}
+            weapons={myWeapons.map((w) => ({ id: w.card.id, name: w.card.name, inRange: !!model?.weaponAttacks.has(w.card.id) }))}
             pass={model?.pass}
             confirm={confirm}
             canCancel={sel.kind !== "none"}
@@ -235,7 +284,14 @@ export function App() {
         </aside>
       </div>
 
-      <PlayerZone state={state} pid={1} card={CARDS[1]} controller={controllerOf(1)} thinking={botTurn && state.currentPlayer === 1} />
+      <PlayerZone
+        state={state}
+        pid={1}
+        card={CARDS[1]}
+        controller={controllerOf(1)}
+        thinking={botTurn && state.currentPlayer === 1}
+        {...discardsFor(1)}
+      />
     </main>
   );
 }

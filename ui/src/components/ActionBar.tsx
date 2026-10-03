@@ -1,18 +1,29 @@
-// The controls under the map: a prompt describing the pending choice, plus Attack / Confirm /
-// Cancel / End turn. Every button dispatches an action taken from the engine's legal list.
+// The controls under the map: a prompt describing the pending choice, plus the attack options
+// (basic, and each in-play weapon), Cancel / Confirm / End turn. Every button dispatches an action
+// taken from the engine's legal list; whether an attack is on offer is the engine's call.
 import type { Action } from "@engine";
+
+export interface WeaponOption {
+  id: string;
+  name: string;
+  /** The engine currently offers an ATTACK with this weapon. */
+  inRange: boolean;
+}
+
+/** "basic" or a weapon card id. */
+export type AttackSource = "basic" | string;
 
 export interface ActionBarProps {
   prompt: string;
   notice?: boolean;
   thinking?: boolean;
   enabled: boolean;
-  /** Attacks if the engine offers ATTACK; otherwise the parent explains why not. */
-  onAttack: () => void;
-  /** Pointer/focus on Attack: the parent previews the attack grid. */
-  onAttackHover: (on: boolean) => void;
-  /** Whether the engine currently offers ATTACK (styling only). */
-  inRange: boolean;
+  /** Attack with a source if the engine offers it; otherwise the parent explains why not. */
+  onAttack: (source: AttackSource) => void;
+  /** Pointer/focus on an attack button: the parent previews that source's grid (null = off). */
+  onAttackHover: (source: AttackSource | null) => void;
+  basicInRange: boolean;
+  weapons: WeaponOption[];
   pass?: Action;
   confirm?: Action;
   canCancel: boolean;
@@ -20,7 +31,15 @@ export interface ActionBarProps {
   onCancel: () => void;
 }
 
-export function ActionBar({ prompt, notice, thinking, enabled, onAttack, onAttackHover, inRange, pass, confirm, canCancel, onAct, onCancel }: ActionBarProps) {
+export function ActionBar(props: ActionBarProps) {
+  const { prompt, notice, thinking, enabled, onAttack, onAttackHover, basicInRange, weapons, pass, confirm, canCancel, onAct, onCancel } =
+    props;
+  const hoverProps = (source: AttackSource) => ({
+    onMouseEnter: () => onAttackHover(source),
+    onMouseLeave: () => onAttackHover(null),
+    onFocus: () => onAttackHover(source),
+    onBlur: () => onAttackHover(null),
+  });
   return (
     <section className="action-bar" aria-label="actions">
       <div className={`action-prompt${thinking ? " thinking" : ""}${notice ? " notice" : ""}`} aria-live="polite">
@@ -28,16 +47,25 @@ export function ActionBar({ prompt, notice, thinking, enabled, onAttack, onAttac
       </div>
       <div className="action-buttons">
         <button
-          className={`btn btn-attack${inRange ? " in-range" : ""}`}
+          className={`btn btn-attack${basicInRange ? " in-range" : ""}`}
           disabled={!enabled}
-          onClick={onAttack}
-          onMouseEnter={() => onAttackHover(true)}
-          onMouseLeave={() => onAttackHover(false)}
-          onFocus={() => onAttackHover(true)}
-          onBlur={() => onAttackHover(false)}
+          onClick={() => onAttack("basic")}
+          {...hoverProps("basic")}
         >
           Attack <kbd>A</kbd>
         </button>
+        {weapons.map((w, i) => (
+          <button
+            key={w.id}
+            className={`btn btn-attack btn-weapon${w.inRange ? " in-range" : ""}`}
+            disabled={!enabled}
+            onClick={() => onAttack(w.id)}
+            title={`Weapon attack with ${w.name}: its own grid and damage, once per turn`}
+            {...hoverProps(w.id)}
+          >
+            {w.name} {i === 0 && <kbd>W</kbd>}
+          </button>
+        ))}
         <button className="btn" disabled={!enabled || !canCancel} onClick={onCancel}>
           Cancel <kbd>Esc</kbd>
         </button>

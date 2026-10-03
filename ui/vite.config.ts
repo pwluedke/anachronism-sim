@@ -13,6 +13,7 @@ export default defineConfig({
     alias: {
       "@engine": path.resolve(root, "../engine/src/index.ts"),
       "@fixtures": path.resolve(root, "../engine/fixtures/warriors.ts"),
+      "@data": path.resolve(root, "../data"),
     },
   },
   server: { fs: { allow: [path.resolve(root, "..")] } },

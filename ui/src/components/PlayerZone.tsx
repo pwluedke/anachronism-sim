@@ -1,9 +1,8 @@
-// One player's side of the table: warrior stat panel + the 4 face-down support-card slots.
-// Slots are placeholders until support cards exist; the space is reserved now so the layout holds.
+// One player's side of the table: warrior stat panel + the 4 support cards (face-down until
+// revealed, left to right, one per round).
 import type { CardData, GameState, PlayerId } from "@engine";
 import { GridDiagram } from "./GridDiagram";
-
-export const SUPPORT_SLOTS = 4;
+import { SupportCard } from "./SupportCard";
 
 function StatPanel({
   state,
@@ -58,13 +57,29 @@ function StatPanel({
   );
 }
 
-function SupportSlots({ pid }: { pid: PlayerId }) {
+function SupportSlots({
+  state,
+  pid,
+  discardable,
+  onDiscard,
+}: {
+  state: GameState;
+  pid: PlayerId;
+  discardable?: Set<string>;
+  onDiscard?: (cardId: string) => void;
+}) {
+  const slots = state.cards[pid].support;
   return (
-    <div className="support-slots" aria-label={`player ${pid} support cards (not yet in play)`}>
-      {Array.from({ length: SUPPORT_SLOTS }, (_, i) => (
-        <div key={i} className="card-back" title="Support card slot (face down)">
-          <span className="card-back-mark">A</span>
-        </div>
+    <div className="support-slots" aria-label={`player ${pid === 0 ? "I" : "II"} support cards`}>
+      {slots.length === 0 && <span className="muted support-none">no support cards</span>}
+      {slots.map((slot, i) => (
+        <SupportCard
+          key={`${slot.card.id}-${slot.status}`}
+          slot={slot}
+          index={i}
+          discardable={discardable?.has(slot.card.id)}
+          onDiscard={onDiscard ? () => onDiscard(slot.card.id) : undefined}
+        />
       ))}
     </div>
   );
@@ -76,17 +91,22 @@ export function PlayerZone({
   card,
   controller,
   thinking,
+  discardable,
+  onDiscard,
 }: {
   state: GameState;
   pid: PlayerId;
   card: CardData;
   controller: string;
   thinking: boolean;
+  /** While a card restriction is pending for this player: the cards they may discard. */
+  discardable?: Set<string>;
+  onDiscard?: (cardId: string) => void;
 }) {
   return (
     <section className={`player-zone zone-p${pid}`}>
       <StatPanel state={state} pid={pid} card={card} controller={controller} thinking={thinking} />
-      <SupportSlots pid={pid} />
+      <SupportSlots state={state} pid={pid} discardable={discardable} onDiscard={onDiscard} />
     </section>
   );
 }

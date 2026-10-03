@@ -10,12 +10,14 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "noEmit": true,
     "isolatedModules": true,
     "allowImportingTsExtensions": true,
     "paths": {
       "@engine": ["../engine/src/index.ts"],
-      "@fixtures": ["../engine/fixtures/warriors.ts"]
+      "@fixtures": ["../engine/fixtures/warriors.ts"],
+      "@data/*": ["../data/*"]
     }
   },
   "include": ["src", "test", "vite.config.ts", "vitest.config.ts"]
