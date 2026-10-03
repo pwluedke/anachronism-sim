@@ -150,6 +150,9 @@ export interface RoundStartedEvent {
   round: number;
   initiative: PlayerId;
   turnOrder: [PlayerId, PlayerId];
+  /** Initiative values of the cards each player revealed this round (null: none / round 5). */
+  initiativeValues: [number | null, number | null];
+  decidedBy: "initiative" | "experience" | "diceoff";
 }
 export interface RoundEndedEvent {
   type: "roundEnded";

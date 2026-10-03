@@ -16,7 +16,7 @@ import type {
   Position,
   Warrior,
 } from "./types";
-import { seedState, rollDie } from "./rng";
+import { seedState, rollDie, roll2d6 } from "./rng";
 import { canMove, applyMove, applyRotate } from "./arena";
 import { resolveAttack } from "./combat";
 import * as Hooks from "./hooks";
@@ -53,23 +53,29 @@ function opponentId(p: PlayerId): PlayerId {
   return (p === 0 ? 1 : 0) as PlayerId;
 }
 
-/** Initiative: higher Experience wins; equal -> unmodified dice-off. */
+export type InitiativeDecider = "initiative" | "experience" | "diceoff";
+
+/** Initiative for a round (rulebook p10, p13): the higher initiative value on the support cards
+ *  revealed this round goes first. A tie — including round 5 or a side with nothing revealed, where
+ *  the value is null — goes to the higher Experience, then a dice-off (2d6 each, reroll ties). */
 export function determineInitiative(
   warriors: readonly [Warrior, Warrior],
   rng: number,
-): { initiative: PlayerId; rng: number } {
+  values: readonly [number | null, number | null] = [null, null],
+): { initiative: PlayerId; rng: number; decidedBy: InitiativeDecider } {
+  const [v0, v1] = values;
+  if (v0 !== null && v1 !== null && v0 !== v1) {
+    return { initiative: v0 > v1 ? 0 : 1, rng, decidedBy: "initiative" };
+  }
   if (warriors[0].experience !== warriors[1].experience) {
-    return {
-      initiative: warriors[0].experience > warriors[1].experience ? 0 : 1,
-      rng,
-    };
+    return { initiative: warriors[0].experience > warriors[1].experience ? 0 : 1, rng, decidedBy: "experience" };
   }
   let s = rng;
   for (;;) {
-    const a = rollDie(s);
-    const b = rollDie(a.state);
+    const a = roll2d6(s);
+    const b = roll2d6(a.state);
     s = b.state;
-    if (a.die !== b.die) return { initiative: a.die > b.die ? 0 : 1, rng: s };
+    if (a.sum !== b.sum) return { initiative: a.sum > b.sum ? 0 : 1, rng: s, decidedBy: "diceoff" };
   }
 }
 
@@ -100,8 +106,11 @@ function revealRound(state: GameState, events: GameEvent[]): [SupportSlot | null
 /** Begin a round in-place on `state`, appending events. Rulebook order (p10): reveal, initiative,
  *  restrictions, Reveal abilities, then "start of round" effects. */
 function startRound(state: GameState, events: GameEvent[]): void {
-  revealRound(state, events);
-  const init = determineInitiative(state.warriors, state.rng);
+  const revealed = revealRound(state, events);
+  const init = determineInitiative(state.warriors, state.rng, [
+    revealed[0]?.card.initiative ?? null,
+    revealed[1]?.card.initiative ?? null,
+  ]);
   state.rng = init.rng;
   state.initiative = init.initiative;
   state.turnOrder = [init.initiative, opponentId(init.initiative)];
@@ -113,6 +122,8 @@ function startRound(state: GameState, events: GameEvent[]): void {
     round: state.round,
     initiative: state.initiative,
     turnOrder: state.turnOrder,
+    initiativeValues: [revealed[0]?.card.initiative ?? null, revealed[1]?.card.initiative ?? null],
+    decidedBy: init.decidedBy,
   });
   Hooks.resolveHooks(state, "onReveal", { round: state.round });
   Hooks.resolveHooks(state, "onRoundStart", { round: state.round });

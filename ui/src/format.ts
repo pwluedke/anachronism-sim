@@ -35,7 +35,17 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
     case "setup":
       return { kind: "note", text: `${names[e.firstPlacer]} takes the field first.` };
     case "roundStarted":
-      return { kind: "round", text: `Round ${ROMAN[e.round - 1] ?? e.round}`, detail: `${names[e.initiative]} has initiative` };
+      return {
+        kind: "round",
+        text: `Round ${ROMAN[e.round - 1] ?? e.round}`,
+        detail: `${names[e.initiative]} has initiative ${
+          e.decidedBy === "initiative"
+            ? `(${e.initiativeValues[e.initiative]} vs ${e.initiativeValues[e.initiative === 0 ? 1 : 0]})`
+            : e.decidedBy === "experience"
+              ? "(on experience)"
+              : "(dice-off)"
+        }`,
+      };
     case "turnStarted":
       return { kind: "turn", text: `${names[e.player]}'s turn`, player: e.player };
     case "moved":
