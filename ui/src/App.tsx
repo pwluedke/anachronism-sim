@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Action, Facing, GameEvent } from "@engine";
 import { PLAYER_0, PLAYER_1 } from "./cards";
 import { useGame } from "./useGame";
+import { ModeControls } from "./components/ModeControls";
 import { Arena } from "./components/Arena";
 import { ActionBar } from "./components/ActionBar";
 import { EventLog } from "./components/EventLog";
@@ -29,11 +30,17 @@ const ROWS = ["I", "II", "III", "IV"];
 const FACING_NAME: Record<Facing, string> = { N: "north", E: "east", S: "south", W: "west" };
 
 export function App() {
-  const { view, dispatch, newGame } = useGame(PLAYER_0, PLAYER_1, 1);
+  const { view, dispatch, newGame, mode, setMode, botTurn } = useGame(PLAYER_0, PLAYER_1, Date.now() | 0, {
+    kind: "ai",
+    difficulty: "medium",
+    botSide: 0,
+  });
   const { state, log } = view;
   const playing = state.phase === "playing";
+  const humanTurn = playing && !botTurn;
 
-  const model = useMemo(() => (playing ? buildModel(state) : null), [state, playing]);
+  // Interaction model only exists on a human's turn: no clicks are possible while the bot plays.
+  const model = useMemo(() => (humanTurn ? buildModel(state) : null), [state, humanTurn]);
   const [sel, setSel] = useState<Selection>(NO_SELECTION);
   const [hover, setHover] = useState<Facing | null>(null);
   useEffect(() => {
@@ -73,7 +80,9 @@ export function App() {
 
   const name = CARDS[state.currentPlayer].name;
   let prompt = "The battle is over.";
-  if (playing && target && sel.kind === "move") {
+  if (botTurn && mode.kind === "ai") {
+    prompt = `${name} (computer, ${mode.difficulty}) is considering…`;
+  } else if (playing && target && sel.kind === "move") {
     const where = `${COLS[target.col]}${ROWS[target.row]}`;
     prompt = sel.facing
       ? `${name} marches to ${where}, facing ${FACING_NAME[sel.facing]}. Confirm, or pick another facing.`
@@ -83,6 +92,9 @@ export function App() {
   } else if (playing) {
     prompt = `${name}: pick a destination, click ${name} to turn in place${model?.attack ? ", or attack" : ""}.`;
   }
+
+  const controllerOf = (pid: 0 | 1) =>
+    mode.kind === "ai" ? (mode.botSide === pid ? `computer · ${mode.difficulty}` : "you") : `player ${pid === 0 ? "I" : "II"}`;
 
   const ended =
     state.phase === "ended"
@@ -94,6 +106,7 @@ export function App() {
       <header className="table-header">
         <h1>Anachronism</h1>
         <div className="header-controls">
+          <ModeControls mode={mode} names={NAMES} onChange={setMode} />
           <button className="btn" onClick={() => newGame(Date.now() | 0)}>
             New game
           </button>
@@ -102,7 +115,7 @@ export function App() {
 
       {ended && <div className="banner">{winnerText(ended.winner, ended.reason, NAMES)}</div>}
 
-      <PlayerZone state={state} pid={0} card={CARDS[0]} />
+      <PlayerZone state={state} pid={0} card={CARDS[0]} controller={controllerOf(0)} thinking={botTurn && state.currentPlayer === 0} />
 
       <div className="midfield">
         <aside className="side-left">
@@ -135,7 +148,8 @@ export function App() {
           />
           <ActionBar
             prompt={prompt}
-            enabled={playing}
+            thinking={botTurn}
+            enabled={humanTurn}
             attack={model?.attack}
             pass={model?.pass}
             confirm={confirm}
@@ -149,7 +163,7 @@ export function App() {
         </aside>
       </div>
 
-      <PlayerZone state={state} pid={1} card={CARDS[1]} />
+      <PlayerZone state={state} pid={1} card={CARDS[1]} controller={controllerOf(1)} thinking={botTurn && state.currentPlayer === 1} />
     </main>
   );
 }

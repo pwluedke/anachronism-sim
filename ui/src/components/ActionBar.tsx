@@ -4,6 +4,7 @@ import type { Action } from "@engine";
 
 export interface ActionBarProps {
   prompt: string;
+  thinking?: boolean;
   enabled: boolean;
   attack?: Action;
   pass?: Action;
@@ -13,10 +14,12 @@ export interface ActionBarProps {
   onCancel: () => void;
 }
 
-export function ActionBar({ prompt, enabled, attack, pass, confirm, canCancel, onAct, onCancel }: ActionBarProps) {
+export function ActionBar({ prompt, thinking, enabled, attack, pass, confirm, canCancel, onAct, onCancel }: ActionBarProps) {
   return (
     <section className="action-bar" aria-label="actions">
-      <div className="action-prompt">{prompt}</div>
+      <div className={`action-prompt${thinking ? " thinking" : ""}`} aria-live="polite">
+        {prompt}
+      </div>
       <div className="action-buttons">
         <button className="btn btn-attack" disabled={!enabled || !attack} onClick={() => attack && onAct(attack)}>
           Attack

@@ -677,3 +677,49 @@ button.token:focus-visible {
 .caret:focus-visible {
   outline: none;
 }
+
+/* ---- mode controls / bot ---- */
+.mode-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.field select {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: var(--ink-900);
+  background: var(--parchment-50);
+  border: var(--border-ink-strong);
+  border-radius: var(--radius-worn);
+  padding: 2px 6px;
+}
+.field select:focus-visible {
+  outline: 2px solid var(--gold-500);
+  outline-offset: 1px;
+}
+.thinking-note,
+.action-prompt.thinking {
+  font-style: italic;
+  color: var(--gold-600);
+  animation: ink-breathe 1.2s ease-in-out infinite;
+}
+.thinking-note {
+  font-size: var(--fs-sm);
+}
+@keyframes ink-breathe {
+  50% {
+    opacity: 0.45;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .thinking-note,
+  .action-prompt.thinking {
+    animation: none;
+  }
+}

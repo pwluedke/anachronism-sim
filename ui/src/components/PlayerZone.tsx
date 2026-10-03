@@ -4,14 +4,29 @@ import type { CardData, GameState, PlayerId } from "@engine";
 
 export const SUPPORT_SLOTS = 4;
 
-function StatPanel({ state, pid, card }: { state: GameState; pid: PlayerId; card: CardData }) {
+function StatPanel({
+  state,
+  pid,
+  card,
+  controller,
+  thinking,
+}: {
+  state: GameState;
+  pid: PlayerId;
+  card: CardData;
+  controller: string;
+  thinking: boolean;
+}) {
   const w = state.warriors[pid];
   const isTurn = state.phase === "playing" && state.currentPlayer === pid;
   return (
     <div className={`stat-panel parchment p${pid}${isTurn ? " is-turn" : ""}`}>
       <div className="stat-name">
-        <span className="label">player {pid === 0 ? "I" : "II"}</span>
+        <span className="label">
+          player {pid === 0 ? "I" : "II"} · {controller}
+        </span>
         <h2>{card.name}</h2>
+        {thinking && <span className="thinking-note">considering…</span>}
       </div>
       <dl className="stat-grid">
         <div className="stat stat-life">
@@ -50,10 +65,22 @@ function SupportSlots({ pid }: { pid: PlayerId }) {
   );
 }
 
-export function PlayerZone({ state, pid, card }: { state: GameState; pid: PlayerId; card: CardData }) {
+export function PlayerZone({
+  state,
+  pid,
+  card,
+  controller,
+  thinking,
+}: {
+  state: GameState;
+  pid: PlayerId;
+  card: CardData;
+  controller: string;
+  thinking: boolean;
+}) {
   return (
     <section className={`player-zone zone-p${pid}`}>
-      <StatPanel state={state} pid={pid} card={card} />
+      <StatPanel state={state} pid={pid} card={card} controller={controller} thinking={thinking} />
       <SupportSlots pid={pid} />
     </section>
   );
