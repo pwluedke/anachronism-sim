@@ -22,6 +22,7 @@ import { resolveAttack } from "./combat";
 import * as Hooks from "./hooks";
 import { armedAttacker, offendingCards, violations } from "./cards";
 import { attackRollBonus, beginTurnEffects, useActionAbility } from "./abilities/runtime";
+import "./abilities/cards"; // registers the implemented card abilities
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
