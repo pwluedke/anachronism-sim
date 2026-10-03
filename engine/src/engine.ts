@@ -24,7 +24,15 @@ import { judge } from "./combat";
 import { modifierAt } from "./projection";
 import * as Hooks from "./hooks";
 import { armedAttacker, offendingCards, violations } from "./cards";
-import { attackRollBonus, beginTurnEffects, resolveReroll, usableReroll, useActionAbility } from "./abilities/runtime";
+import {
+  attackRollBonus,
+  beginTurnEffects,
+  defenseRollBonus,
+  resolveReroll,
+  usableReroll,
+  useActionAbility,
+  weaponDamageBonus,
+} from "./abilities/runtime";
 import "./abilities/cards"; // registers the implemented card abilities
 
 const ARENA = 4;
@@ -319,7 +327,17 @@ function finishAttack(state: GameState, pa: PendingAttack, events: GameEvent[]):
   const me = pa.attacker;
   const foe = pa.defender;
   const attacker = { ...state.warriors[me], damage: pa.baseDamage };
-  const r = judge(pa.attackerDice, pa.defenderDice, pa.gridMod, attacker, state.warriors[foe], state.rng, attackRollBonus(state, me, pa.weapon));
+  const r = judge(
+    pa.attackerDice,
+    pa.defenderDice,
+    pa.gridMod,
+    attacker,
+    state.warriors[foe],
+    state.rng,
+    attackRollBonus(state, me, pa.weapon),
+    defenseRollBonus(state, foe, pa.weapon),
+    pa.weapon ? weaponDamageBonus(state, me, pa.weapon) : 0,
+  );
   state.rng = r.rng;
   Hooks.resolveHooks(state, "afterAttackRoll", { attacker: me, defender: foe, result: r.result });
   const weaponSlot = pa.weapon ? state.cards[me].support.find((s) => s.card.id === pa.weapon) : undefined;
@@ -333,6 +351,9 @@ function finishAttack(state: GameState, pa: PendingAttack, events: GameEvent[]):
     gridMod: r.result.gridMod,
     rollBonus: r.result.rollBonus,
     attackerTotal: r.result.attackerTotal,
+    defenseBonus: r.result.defenseBonus,
+    defenderTotal: r.result.defenderTotal,
+    damageBonus: r.result.damageBonus,
     hit: r.result.hit,
     crit: r.result.crit,
     damage: r.result.damage,

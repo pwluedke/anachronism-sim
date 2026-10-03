@@ -86,7 +86,8 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       };
     case "attacked": {
       const bonus = e.rollBonus ? `${signed(e.rollBonus)}` : "";
-      const roll = `(${e.attackerRoll}${signed(e.gridMod)}${bonus} = ${e.attackerTotal} vs ${e.defenderRoll}${e.tiebreak ? `, ${e.tiebreak} tiebreak` : ""})`;
+      const defense = e.defenseBonus ? `${e.defenderRoll}${signed(e.defenseBonus)} = ${e.defenderTotal}` : `${e.defenderRoll}`;
+      const roll = `(${e.attackerRoll}${signed(e.gridMod)}${bonus} = ${e.attackerTotal} vs ${defense}${e.tiebreak ? `, ${e.tiebreak} tiebreak` : ""})`;
       const withW = e.weapon ? ` with ${e.weapon.name}` : "";
       if (!e.hit) return { kind: "miss", text: `${names[e.attacker]} strikes at ${names[e.defender]}${withW} — and misses.`, detail: roll, player: e.attacker };
       return {

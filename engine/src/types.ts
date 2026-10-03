@@ -209,6 +209,9 @@ export interface AttackedEvent {
   gridMod: number; // modifier from the defender's cell in the attacker's grid
   rollBonus: number; // bonus from card abilities
   attackerTotal: number; // attackerRoll + gridMod + rollBonus
+  defenseBonus: number; // defender's bonus from card abilities
+  defenderTotal: number; // defenderRoll + defenseBonus
+  damageBonus: number; // extra damage from abilities (e.g. a weapon's)
   hit: boolean;
   crit: boolean;
   damage: number; // damage dealt (0 on miss)

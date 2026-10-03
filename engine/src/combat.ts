@@ -19,6 +19,11 @@ export interface AttackResult {
   /** Bonus to the attack roll from card abilities (e.g. "Your attack rolls gain +2"). */
   rollBonus: number;
   attackerTotal: number; // attackerRoll + gridMod + rollBonus
+  /** Bonus to the defense roll from the defender's card abilities. */
+  defenseBonus: number;
+  defenderTotal: number; // defenderRoll + defenseBonus
+  /** Extra damage from abilities (added after a critical hit doubles the base damage, p13). */
+  damageBonus: number;
   hit: boolean;
   crit: boolean; // attacker rolled doubles
   damage: number; // 0 on miss
@@ -28,6 +33,9 @@ export interface AttackResult {
 const ILLEGAL: AttackResult = {
   legal: false,
   rollBonus: 0,
+  defenseBonus: 0,
+  defenderTotal: 0,
+  damageBonus: 0,
   attackerRoll: 0,
   defenderRoll: 0,
   gridMod: 0,
@@ -72,18 +80,21 @@ export function judge(
   defender: Warrior,
   rng: number,
   rollBonus = 0,
+  defenseBonus = 0,
+  damageBonus = 0,
 ): { result: AttackResult; rng: number } {
   const attackerRoll = attackerDice[0] + attackerDice[1];
   const defenderRoll = defenderDice[0] + defenderDice[1];
   const attackerTotal = attackerRoll + gridMod + rollBonus;
+  const defenderTotal = defenderRoll + defenseBonus;
   const crit = attackerDice[0] === attackerDice[1];
 
   let hit: boolean;
   let tiebreak: "experience" | "diceoff" | null = null;
   let s = rng;
-  if (attackerTotal > defenderRoll) {
+  if (attackerTotal > defenderTotal) {
     hit = true;
-  } else if (attackerTotal < defenderRoll) {
+  } else if (attackerTotal < defenderTotal) {
     hit = false;
   } else {
     const t = breakTie(attacker, defender, s);
@@ -92,9 +103,24 @@ export function judge(
     hit = t.winner === "attacker";
   }
 
-  const damage = hit ? attacker.damage * (crit ? 2 : 1) : 0;
+  // A critical hit doubles the BASE damage before any other modifiers are applied (p13).
+  const damage = hit ? attacker.damage * (crit ? 2 : 1) + damageBonus : 0;
   return {
-    result: { legal: true, attackerRoll, defenderRoll, gridMod, rollBonus, attackerTotal, hit, crit, damage, tiebreak },
+    result: {
+      legal: true,
+      attackerRoll,
+      defenderRoll,
+      gridMod,
+      rollBonus,
+      attackerTotal,
+      defenseBonus,
+      defenderTotal,
+      damageBonus,
+      hit,
+      crit,
+      damage,
+      tiebreak,
+    },
     rng: s,
   };
 }

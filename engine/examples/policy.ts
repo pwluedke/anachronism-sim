@@ -82,7 +82,7 @@ export function formatEvent(e: GameEvent): string {
     case "attacked":
       return (
         `    P${e.attacker} ATTACK  ${e.attackerRoll}${e.gridMod >= 0 ? "+" : ""}${e.gridMod}${e.rollBonus ? `+${e.rollBonus}` : ""}=${e.attackerTotal}` +
-        ` vs ${e.defenderRoll} => ${e.hit ? "HIT" : "miss"}${e.crit ? " CRIT" : ""}` +
+        ` vs ${e.defenderRoll}${e.defenseBonus ? `+${e.defenseBonus}` : ""} => ${e.hit ? "HIT" : "miss"}${e.crit ? " CRIT" : ""}` +
         (e.damage ? ` dmg ${e.damage}` : "") +
         (e.tiebreak ? ` [${e.tiebreak}]` : "") +
         (e.weapon ? ` with ${e.weapon.name}` : "")
