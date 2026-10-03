@@ -102,14 +102,45 @@ rule logic — it only calls `init`, `applyAction`, `getLegalActions`, `chooseAc
 `stepPos`, and every dispatched action is a `getLegalActions` member or the bot's choice. Screenshots
 in [`docs/screenshots/`](screenshots/). Real warrior portrait art drops into `ui/src/portraits.ts`.
 
-## Milestone 8 (CURRENT): Support cards — reveal flow, initiative, weapons (abilities off)
+## Milestone 8 (DONE): Support cards — reveal flow, initiative, weapons (abilities off)
 
-Epic #40. Each player's 4 support cards: face-down setup order, the leftmost card revealed each
-round, initiative from the revealed card's value, and weapon attacks (weapon grid + damage, one per
-weapon per turn, hands limit). Card ability text stays inert this milestone. Decks come from
-`data/preset_decks.json`, generated from the spreadsheet.
+Epic #40. Each player now has a warrior + 4 support cards. Decks: `data/preset_decks.json`, 133
+preset decks generated from the spreadsheet (`scraper/build_preset_decks.py`: a warrior followed by
+exactly 4 non-warriors; promo sets hold no decks; the Kosem/Kösem Sultan variant counts once).
+Round start follows the rulebook: both players reveal their next face-down card; the higher revealed
+initiative goes first (tie / null ⇒ experience ⇒ 2d6 dice-off); card restrictions (one per type,
+one per torso/head/leg/arm/shield trait, max 2 hands) are resolved by the player discarding — a real
+`DISCARD` choice in the engine, made by the bot via search; then the first turn. Weapon attacks use
+the weapon's grid + damage, once per weapon per turn; basic attacks stay uncapped. Card ability text
+is carried but inert; the ability hooks still fire as no-ops. UI: support cards flip on reveal, a
+weapon button per in-play weapon with grid preview, clickable discards, deck pickers for both sides.
 
-## Milestone 9: Raspberry Pi 4 kiosk build
+**DONE =** 154 engine tests green (reveal, initiative, weapons, restrictions, deck loader, bot with
+weapons); 33 UI tests; full games with support cards played vs the bot in the browser at every tier.
+Deck self-play, 32 games per pairing with rotating preset decks, both seats:
+
+| A vs B | A wins | B wins | draws |
+|--------|--------|--------|-------|
+| Easy vs Easy | 14 | 18 | 0 |
+| Medium vs Easy | 29 | 3 | 0 |
+| Medium vs Medium | 18 | 13 | 1 |
+| Hard vs Easy | 27 | 5 | 0 |
+| Hard vs Medium | 15 | 17 | 0 |
+| Hard vs Hard | 17 | 15 | 0 |
+
+All 192 games terminal with zero illegal actions; 610 weapon attacks and 44 restriction discards
+along the way. Hard ≈ Medium again, as logged under the M5 follow-ups. Screenshots in
+[`docs/screenshots/`](screenshots/) (`m8-*`).
+
+### M8 follow-ups
+
+- **Card abilities** — the next big step: implement `resolveHooks` + per-card ability effects.
+- **Combat tiebreak dice** — a tied attack roll still breaks a tied-experience tie with one die each;
+  the rulebook (p13) says two dice each, rerolling ties (initiative already does this).
+- **UI bundle** — the deck card data takes the bundle past Vite's 500 kB advisory (121 kB gzipped);
+  code-split if it grows.
+
+## Milestone 9 (CURRENT): Raspberry Pi 4 kiosk build
 
 ## Milestone 10: Custom card creator
 
