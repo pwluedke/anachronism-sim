@@ -8,7 +8,7 @@
 // to one per turn (Set 7 Basic Rulebook, p11) — the action budget gates them.
 
 import type { Warrior } from "./types";
-import { roll2d6, rollDie } from "./rng";
+import { roll2d6 } from "./rng";
 import { modifierAt } from "./projection";
 
 export interface AttackResult {
@@ -49,13 +49,13 @@ export function breakTie(
     };
   }
   let s = rng;
-  // Unmodified dice-off: each rolls a die; higher wins; reroll while tied.
+  // Unmodified dice-off (rulebook p13, Ties): each rolls two dice; higher total wins; reroll ties.
   for (;;) {
-    const a = rollDie(s);
-    const b = rollDie(a.state);
+    const a = roll2d6(s);
+    const b = roll2d6(a.state);
     s = b.state;
-    if (a.die !== b.die) {
-      return { winner: a.die > b.die ? "attacker" : "defender", method: "diceoff", rng: s };
+    if (a.sum !== b.sum) {
+      return { winner: a.sum > b.sum ? "attacker" : "defender", method: "diceoff", rng: s };
     }
   }
 }

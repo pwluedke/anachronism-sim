@@ -94,6 +94,26 @@ describe("ties: experience then dice-off", () => {
     }
   });
 
+  it("breakTie dice-off rolls two dice each (rulebook p13), rerolling tied totals", () => {
+    const att = warrior({ experience: 5 });
+    const def = warrior({ playerId: 1, experience: 5 });
+    for (const seed of [1, 7, 123, 999, 4242]) {
+      // replay the expected rolls: 2d6 attacker, 2d6 defender, repeat while the sums tie
+      let s = seed;
+      let expected: "attacker" | "defender";
+      for (;;) {
+        const a = roll2d6(s);
+        const d = roll2d6(a.state);
+        s = d.state;
+        if (a.sum !== d.sum) {
+          expected = a.sum > d.sum ? "attacker" : "defender";
+          break;
+        }
+      }
+      expect(breakTie(att, def, seed)).toEqual({ winner: expected, method: "diceoff", rng: s });
+    }
+  });
+
   it("breakTie dice-off is deterministic for a given rng", () => {
     const att = warrior({ experience: 5 });
     const def = warrior({ playerId: 1, experience: 5 });
