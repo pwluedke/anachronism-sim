@@ -1,6 +1,7 @@
 // One player's side of the table: warrior stat panel + the 4 face-down support-card slots.
 // Slots are placeholders until support cards exist; the space is reserved now so the layout holds.
 import type { CardData, GameState, PlayerId } from "@engine";
+import { GridDiagram } from "./GridDiagram";
 
 export const SUPPORT_SLOTS = 4;
 
@@ -28,6 +29,10 @@ function StatPanel({
         <h2>{card.name}</h2>
         {thinking && <span className="thinking-note">considering…</span>}
       </div>
+      <figure className="stat-pattern">
+        <GridDiagram grid={card.grid} name={card.name} />
+        <figcaption className="label">attack · forward ↑</figcaption>
+      </figure>
       <dl className="stat-grid">
         <div className="stat stat-life">
           <dt className="label">life</dt>
