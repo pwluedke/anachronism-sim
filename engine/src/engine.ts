@@ -20,7 +20,7 @@ import { seedState, rollDie, roll2d6 } from "./rng";
 import { canMove, applyMove, applyRotate } from "./arena";
 import { resolveAttack } from "./combat";
 import * as Hooks from "./hooks";
-import { armedAttacker } from "./cards";
+import { armedAttacker, offendingCards, violations } from "./cards";
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
@@ -115,10 +115,6 @@ function startRound(state: GameState, events: GameEvent[]): void {
   state.rng = init.rng;
   state.initiative = init.initiative;
   state.turnOrder = [init.initiative, opponentId(init.initiative)];
-  state.turnIndex = 0;
-  state.currentPlayer = state.turnOrder[0];
-  state.actionsRemaining = currentWarrior(state).speed;
-  state.weaponsUsed = [];
   events.push({
     type: "roundStarted",
     round: state.round,
@@ -127,6 +123,36 @@ function startRound(state: GameState, events: GameEvent[]): void {
     initiativeValues: [revealed[0]?.card.initiative ?? null, revealed[1]?.card.initiative ?? null],
     decidedBy: init.decidedBy,
   });
+  // Card restrictions are checked after initiative, before Reveal abilities (p14).
+  const queue = state.turnOrder.filter((p) => violations(state, p).length > 0);
+  if (queue.length) {
+    state.pending = { kind: "discard", queue };
+    requestDiscard(state, events);
+    return;
+  }
+  beginFirstTurn(state, events);
+}
+
+/** Hand the pending discard to the first queued player. */
+function requestDiscard(state: GameState, events: GameEvent[]): void {
+  const p = state.pending!.queue[0];
+  state.currentPlayer = p;
+  state.actionsRemaining = 0;
+  events.push({
+    type: "discardRequired",
+    player: p,
+    reasons: violations(state, p).map((v) => v.detail),
+    offending: offendingCards(state, p).map((s) => s.card.id),
+  });
+}
+
+/** Finish round start once cards are legal: Reveal abilities, start-of-round effects, first turn. */
+function beginFirstTurn(state: GameState, events: GameEvent[]): void {
+  state.pending = null;
+  state.turnIndex = 0;
+  state.currentPlayer = state.turnOrder[0];
+  state.actionsRemaining = currentWarrior(state).speed;
+  state.weaponsUsed = [];
   Hooks.resolveHooks(state, "onReveal", { round: state.round });
   Hooks.resolveHooks(state, "onRoundStart", { round: state.round });
   events.push({
@@ -135,6 +161,22 @@ function startRound(state: GameState, events: GameEvent[]): void {
     actions: state.actionsRemaining,
   });
   Hooks.resolveHooks(state, "onTurnStart", { player: state.currentPlayer });
+}
+
+/** Resolve one DISCARD while a restriction is pending. Illegal discards are no-ops. */
+function applyDiscard(prev: GameState, action: Action): ApplyResult {
+  if (action.type !== "DISCARD") return { state: prev, events: [] };
+  const p = prev.currentPlayer;
+  if (!offendingCards(prev, p).some((s) => s.card.id === action.card)) return { state: prev, events: [] };
+  const state: GameState = structuredClone(prev);
+  const events: GameEvent[] = [];
+  const slot = state.cards[p].support.find((s) => s.card.id === action.card)!;
+  slot.status = "discarded";
+  events.push({ type: "discarded", player: p, cardId: slot.card.id, name: slot.card.name });
+  if (violations(state, p).length === 0) state.pending!.queue.shift();
+  if (state.pending!.queue.length) requestDiscard(state, events);
+  else beginFirstTurn(state, events);
+  return { state, events };
 }
 
 /** Compute and record the end-of-game result (life / experience / draw). */
@@ -231,6 +273,7 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
     winner: null,
     cards: [playerCards(decks[0]), playerCards(decks[1])],
     weaponsUsed: [],
+    pending: null,
   };
 
   const events: GameEvent[] = [{ type: "setup", firstPlacer }];
@@ -243,12 +286,15 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
  *  (unchanged state, empty event list). */
 export function applyAction(prev: GameState, action: Action): ApplyResult {
   if (prev.phase !== "playing") return { state: prev, events: [] };
+  if (prev.pending) return applyDiscard(prev, action);
   const state: GameState = structuredClone(prev);
   const events: GameEvent[] = [];
   const me = state.currentPlayer;
   const foe = opponentId(me);
 
   switch (action.type) {
+    case "DISCARD":
+      return { state: prev, events: [] }; // only meaningful while a restriction is pending
     case "PASS": {
       events.push({ type: "passed", player: me });
       endTurn(state, events);

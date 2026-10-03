@@ -6,10 +6,13 @@
 import type { Action, GameState } from "./types";
 import { FACINGS, canMove } from "./arena";
 import { modifierAt } from "./projection";
+import { offendingCards } from "./cards";
 
 export function getLegalActions(state: GameState): Action[] {
   if (state.phase !== "playing") return [];
   const me = state.currentPlayer;
+  // A pending card restriction: the only legal actions are discards of offending cards.
+  if (state.pending) return offendingCards(state, me).map((s) => ({ type: "DISCARD", card: s.card.id }));
   const w = state.warriors[me];
   const foe = state.warriors[me === 0 ? 1 : 0];
   const acts: Action[] = [];

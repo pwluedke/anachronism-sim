@@ -89,10 +89,15 @@ export interface GameState {
   cards: [PlayerCards, PlayerCards];
   /** Weapons (card ids) the current player has attacked with this turn: one attack per weapon. */
   weaponsUsed: string[];
+  /**
+   * A card restriction to resolve before the round's first turn (rulebook p14): each queued player,
+   * in initiative order, discards offending in-play cards until legal. currentPlayer is queue[0].
+   */
+  pending: { kind: "discard"; queue: PlayerId[] } | null;
 }
 
 // ---- Actions -------------------------------------------------------------
-export type ActionType = "MOVE" | "ROTATE" | "ATTACK" | "PASS";
+export type ActionType = "MOVE" | "ROTATE" | "ATTACK" | "PASS" | "DISCARD";
 
 export interface MoveAction {
   type: "MOVE";
@@ -112,7 +117,12 @@ export interface AttackAction {
 export interface PassAction {
   type: "PASS";
 }
-export type Action = MoveAction | RotateAction | AttackAction | PassAction;
+/** Discard an in-play support card to resolve a card restriction (only while one is pending). */
+export interface DiscardAction {
+  type: "DISCARD";
+  card: string;
+}
+export type Action = MoveAction | RotateAction | AttackAction | PassAction | DiscardAction;
 
 // ---- Events (for UI / replay / bots) ------------------------------------
 export interface MovedEvent {
@@ -187,6 +197,20 @@ export interface RevealedEvent {
   cardType: SupportCard["type"];
   initiative: number | null;
 }
+export interface DiscardRequiredEvent {
+  type: "discardRequired";
+  player: PlayerId;
+  /** Human-readable restriction(s) broken, e.g. "3 hands (max 2)". */
+  reasons: string[];
+  /** In-play card ids the player may discard. */
+  offending: string[];
+}
+export interface DiscardedEvent {
+  type: "discarded";
+  player: PlayerId;
+  cardId: string;
+  name: string;
+}
 export interface PassedEvent {
   type: "passed";
   player: PlayerId;
@@ -199,6 +223,8 @@ export type GameEvent =
   | AttackedEvent
   | PassedEvent
   | RevealedEvent
+  | DiscardRequiredEvent
+  | DiscardedEvent
   | TurnStartedEvent
   | TurnEndedEvent
   | RoundStartedEvent

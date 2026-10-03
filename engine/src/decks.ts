@@ -5,6 +5,7 @@
 // only a card's own stats (type, initiative, hands, traits, and a weapon's grid + damage) matter.
 
 import type { AttackGrid, CardData } from "./types";
+import { cardViolations, type Violation } from "./cards";
 
 export type SupportType = "weapon" | "armor" | "inspiration" | "special";
 
@@ -138,8 +139,17 @@ export function loadDeck(rec: PresetDeckRecord, cards: CardIndex): Deck {
     else if (r.card_type === "weapon" && (r.grid === null || r.damage === null)) problems.push(`weapon ${r.name} lacks a grid or damage`);
     else support.push(supportCard(r));
   }
+  const names = support.map((c) => c.name);
+  const dupes = names.filter((n, i) => names.indexOf(n) !== i);
+  if (dupes.length) problems.push(`duplicate support card ${[...new Set(dupes)].join(", ")} (a deck may not repeat a card)`);
   if (problems.length) throw new DeckLoadError(rec.id, problems);
   return { id: rec.id, warrior: warriorData(w!), support };
+}
+
+/** Restrictions the deck will run into once all its support cards are in play: each forces a
+ *  discard during the game (the deck is still legal to play). */
+export function forcedDiscards(deck: Deck): Violation[] {
+  return cardViolations(deck.support);
 }
 
 /** Load every preset deck, separating the ones that resolve from the ones that don't. */

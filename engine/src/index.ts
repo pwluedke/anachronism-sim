@@ -10,5 +10,16 @@ export { step, rollDie, roll2d6, seedState } from "./rng";
 export { HOOKS, resolveHooks } from "./hooks";
 export type { HookName, HookContext } from "./hooks";
 export * from "./decks";
-export { MAX_HANDS, inPlay, handsInPlay, weaponsInPlay, armedAttacker } from "./cards";
+export {
+  MAX_HANDS,
+  RESTRICTED_TRAITS,
+  inPlay,
+  handsInPlay,
+  weaponsInPlay,
+  armedAttacker,
+  cardViolations,
+  violations,
+  offendingCards,
+} from "./cards";
+export type { Violation } from "./cards";
 export * from "./bot";

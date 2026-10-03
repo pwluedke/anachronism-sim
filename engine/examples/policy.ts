@@ -7,6 +7,7 @@ import { canMove } from "../src/arena";
 import { modifierAt } from "../src/projection";
 import type { Action, CardData, Facing, GameEvent, GameState } from "../src/types";
 import { init } from "../src/engine";
+import { getLegalActions } from "../src/legal";
 
 function facingToward(dr: number, dc: number): Facing {
   if (Math.abs(dr) >= Math.abs(dc)) return dr > 0 ? "S" : "N";
@@ -19,6 +20,7 @@ export function chooseAction(state: GameState): Action {
   const opp = state.warriors[me.playerId === 0 ? 1 : 0];
   const size = state.arenaSize;
 
+  if (state.pending) return getLegalActions(state)[0]; // discard the first offending card
   if (state.actionsRemaining < 1) return { type: "PASS" };
 
   // In range? attack.
@@ -65,6 +67,10 @@ export function formatEvent(e: GameEvent): string {
       return `    P${e.player} rotate  -> ${e.facing}`;
     case "passed":
       return `    P${e.player} pass`;
+    case "discardRequired":
+      return `  P${e.player} must discard (${e.reasons.join("; ")})`;
+    case "discarded":
+      return `  P${e.player} discards ${e.name}`;
     case "revealed":
       return `  P${e.player} reveals ${e.name} (${e.cardType}, initiative ${e.initiative ?? "—"})`;
     case "attacked":

@@ -58,6 +58,10 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       return { kind: "move", text: `${names[e.player]} turns to face ${FACING_NAME[e.facing]}.`, player: e.player };
     case "passed":
       return { kind: "note", text: `${names[e.player]} holds.`, player: e.player };
+    case "discardRequired":
+      return { kind: "note", text: `${names[e.player]} must discard: ${e.reasons.join("; ")}.`, player: e.player };
+    case "discarded":
+      return { kind: "note", text: `${names[e.player]} discards ${e.name}.`, player: e.player };
     case "revealed":
       return {
         kind: "reveal",
