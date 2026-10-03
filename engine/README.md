@@ -1,9 +1,8 @@
 # Anachronism Engine — Headless 1v1
 
 A pure-function, fully-serializable TypeScript engine for 1v1 *Anachronism*: warriors plus their
-4 support cards (Milestone 8). **Card abilities are off**: ability text is carried but has no effect,
-and every hook-point an ability could need is fired (empty) at the right moment. Only a card's own
-stats matter (initiative, type, hands, a weapon's grid + damage). No UI, no I/O, no `Math.random`.
+4 support cards (Milestone 8) and card abilities (Milestone 9) — live for a first batch of six cards;
+every other card's ability text is carried but inert. No UI, no I/O, no `Math.random`.
 
 ```ts
 import { init, applyAction } from "./src";
@@ -52,7 +51,7 @@ if the target is not covered — which is exactly the basic-attack legality test
 > Note: ranged weapons in the source print the marker at `4B`; projection keys off whatever cell
 > holds `"marker"`, so it generalises, but the spine's warriors all use the canonical `3B`.
 
-## Support cards (Milestone 8 — abilities off)
+## Support cards (Milestone 8)
 
 `init(deck0, deck1, seed)` takes two decks: a warrior + 4 support cards in face-down order (index 0
 leftmost). A bare warrior card is a deck with no support cards (the original warrior-only spine).
@@ -71,7 +70,8 @@ Round start follows the rulebook (pp. 10, 13–15):
    special), one per trait torso / head / leg / arm / shield, at most 2 hands. A player over a limit
    must `DISCARD` offending cards (their choice, in initiative order) before the first turn; the
    revealed card's initiative still counts if it is discarded. Decks may not repeat a card name.
-4. `onReveal`, then `onRoundStart` hooks (abilities off ⇒ no-ops), then the first turn.
+4. `onReveal`, then `onRoundStart` — Reveal and start-of-round abilities (see Card abilities) — then
+   the first turn.
 
 **Weapons**: `ATTACK` may name an in-play weapon: it uses the weapon's grid (projected with facing;
 ranged weapons' 4B marker handled) and the weapon's damage, doubled on a crit. One attack per weapon
@@ -178,16 +178,17 @@ replay, and bots.
 
 ## Ability hook-points
 
-`resolveHooks(state, hook, context) -> state` is fired (currently as the identity stub) at every
-point an ability could act. **Firing order** through a turn:
+`resolveHooks(state, hook, context) -> state` is fired at every point an ability could act and
+dispatches to the ability runtime (`src/abilities/`): `onReveal`, `onRoundStart` and `onDamageDealt`
+fire abilities; `onTurnEnd` / `onRoundEnd` expire timed effects. **Firing order** through a turn:
 
 `onSetup` → per round: (support cards revealed, initiative set, restrictions resolved) → `onReveal` → `onRoundStart` → `onTurnStart` → … actions … → during an
 `ATTACK`: `beforeAttackRoll` → `afterAttackRoll` → (`onHit` | `onMiss`) → [`onCriticalHit`] →
 `afterDefense` → [`onDamageDealt`] → [`onWarriorDefeated`] → … → `onTurnEnd` → (next turn's
 `onTurnStart`, or `onRoundEnd`).
 
-The engine runs identically with all hooks empty; Milestone-N ability work implements `resolveHooks`
-without re-plumbing the loop.
+With no implemented abilities in play the hooks change nothing. The remaining hook points (e.g.
+`beforeAttackRoll`, `onCriticalHit`) are wired and ready for later ability batches.
 
 ## Bot opponent (Milestone 5)
 

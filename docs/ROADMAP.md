@@ -140,15 +140,38 @@ along the way. Hard ≈ Medium again, as logged under the M5 follow-ups. Screens
 - **UI bundle** — the deck card data takes the bundle past Vite's 500 kB advisory (121 kB gzipped);
   code-split if it grows.
 
-## Milestone 9 (CURRENT): Card abilities — hybrid effect engine + first 6-card batch
+## Milestone 9 (DONE): Card abilities — hybrid effect engine + first 6-card batch
 
-Epic #51. Turn card abilities on: a structured trigger / condition / effect system most abilities are
-authored as data against, plus hand-coded functions for the ones that don't fit. Proven on six cards
-covering every trigger type (Shinmen Takezo, Maximinus, Leonidas, Apollo, Carlos V, Sun Tzu); other
-cards stay inert until later batches. Also fixes the combat dice-off (two dice each).
+Epic #51. Card abilities are on, through a hybrid engine in `engine/src/abilities/`: the hook points
+feed a runtime that runs the abilities of each player's warrior and in-play support cards. An ability
+is authored as **data** (`{ trigger, condition?, effects, usageLimit?, duration? }`, compiled from the
+primitives) or **hand-coded** (the escape hatch, same runtime interface). Timing per the rulebook:
+Reveal abilities after reveal/initiative/restrictions, then start-of-round, in initiative order;
+damage abilities after the blow; Action abilities as an `ABILITY` action costing one action; timed
+effects ("this round", "your next turn") outlive their card; once-per-round uses reset each round.
+Also fixed: the combat dice-off now rolls two dice each.
 
+First batch — one card per trigger type: Shinmen Takezo (+2 attack rolls), Maximinus (+1 while an
+inspiration is in play), Leonidas (+1 life after dealing damage, once per round), Apollo (Reveal: +1
+attack rolls this round), Carlos V (+1 life at round start if he lost initiative), Sun Tzu (Action:
++1 speed next turn). **Every other card is still inert.** The bot values roll bonuses and banked
+speed; the UI shows each player's active abilities and effects and offers Action abilities.
 
-## Milestone 10: Custom card creator
+**DONE =** 184 engine tests green (per-card behaviour + limits/durations, primitives, runtime, format,
+bot); 48 self-play games with every batch deck terminal with zero illegal actions (Leonidas, Apollo,
+Carlos V and Sun Tzu all fired); full games vs the bot in the browser with the abilities live.
+Screenshots: [`docs/screenshots/`](screenshots/) (`m9-*`).
+
+### M9 follow-ups
+
+- **Shinmen Takezo's second clause** — "Your attacks with swords deal +1 damage" is not implemented
+  (needs a weapon-trait condition primitive). He is a promo card, in no preset deck: tests use a
+  test-only deck and he isn't selectable in the UI yet.
+- **More cards** — later batches add primitives and cards; everything outside the six is inert.
+- **Optional abilities** — the rulebook makes limited abilities optional; the six batch abilities only
+  ever help their owner, so they apply automatically. Abilities with a downside will need a choice.
+
+## Milestone 10 (CURRENT): Custom card creator
 
 In-app schema-validated JSON append.
 
