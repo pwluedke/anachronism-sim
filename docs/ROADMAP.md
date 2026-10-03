@@ -102,9 +102,12 @@ rule logic — it only calls `init`, `applyAction`, `getLegalActions`, `chooseAc
 `stepPos`, and every dispatched action is a `getLegalActions` member or the bot's choice. Screenshots
 in [`docs/screenshots/`](screenshots/). Real warrior portrait art drops into `ui/src/portraits.ts`.
 
-## Milestone 8 (CURRENT): Online multiplayer
+## Milestone 8 (CURRENT): Support cards — reveal flow, initiative, weapons (abilities off)
 
-Authoritative server.
+Epic #40. Each player's 4 support cards: face-down setup order, the leftmost card revealed each
+round, initiative from the revealed card's value, and weapon attacks (weapon grid + damage, one per
+weapon per turn, hands limit). Card ability text stays inert this milestone. Decks come from
+`data/preset_decks.json`, generated from the spreadsheet.
 
 ## Milestone 9: Raspberry Pi 4 kiosk build
 
@@ -115,3 +118,7 @@ In-app schema-validated JSON append.
 ## Milestone 11: 4-player + variant rules
 
 Variant rules sourced from BGG variants.
+
+## Milestone 12: Online multiplayer
+
+Authoritative server.
