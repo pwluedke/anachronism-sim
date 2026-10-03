@@ -131,6 +131,7 @@ export function Arena(props: ArenaProps) {
       const cls = [
         "map-cell",
         mod !== undefined ? (gridIsPreview ? "in-preview" : "in-threat") : "",
+        mod !== undefined && w ? "occupied-in-grid" : "",
         reachable ? "reachable" : "",
         isCaretCell ? "destination" : "",
       ]
@@ -139,7 +140,7 @@ export function Arena(props: ArenaProps) {
       const onCell = reachable && props.onCellClick ? () => props.onCellClick!({ row: r, col: c }) : undefined;
       cells.push(
         <div key={k} className={cls} data-rc={k} onClick={onCell} title={onCell ? `Move to ${COLS[c]}${ROWS[r]}` : undefined}>
-          {mod !== undefined && <span className="cell-mod">{mod >= 0 ? `+${mod}` : mod}</span>}
+          {mod !== undefined && !w && <span className="cell-mod">{mod >= 0 ? `+${mod}` : mod}</span>}
           {w && (
             <Token
               w={w}
@@ -149,6 +150,11 @@ export function Arena(props: ArenaProps) {
               hint={isMine ? "rotate in place" : canAttack ? "attack" : undefined}
               targetable={!isMine && !!canAttack}
             />
+          )}
+          {mod !== undefined && w && (
+            <span className="cell-mod on-token" title={`In the attack grid at ${mod >= 0 ? `+${mod}` : mod}`}>
+              {mod >= 0 ? `+${mod}` : mod}
+            </span>
           )}
           {isCaretCell && carets && <Carets set={carets} />}
         </div>,

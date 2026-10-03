@@ -791,3 +791,24 @@ button.token:focus-visible {
 .p1 .gd-dot {
   background: var(--p1-ink);
 }
+
+/* ---- attack value on an occupied cell (never hidden by the token) ---- */
+.cell-mod.on-token {
+  top: 2px;
+  left: auto;
+  right: 2px;
+  z-index: 3;
+  min-width: 26px;
+  padding: 1px 5px;
+  text-align: center;
+  border-radius: 9px;
+  color: var(--parchment-50);
+  background: var(--hit-ink);
+  border: 1.5px solid var(--parchment-50);
+  box-shadow: var(--shadow-paper);
+  pointer-events: none;
+}
+.map-cell.occupied-in-grid .token-portrait {
+  outline: 2px solid var(--hit-ink);
+  outline-offset: 3px;
+}
