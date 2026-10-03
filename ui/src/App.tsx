@@ -23,6 +23,7 @@ import {
 
 type GameEndedEvent = Extract<GameEvent, { type: "gameEnded" }>;
 const CARDS: [typeof PLAYER_0, typeof PLAYER_1] = [PLAYER_0, PLAYER_1];
+const NAMES: [string, string] = [PLAYER_0.name, PLAYER_1.name];
 const COLS = ["A", "B", "C", "D"];
 const ROWS = ["I", "II", "III", "IV"];
 const FACING_NAME: Record<Facing, string> = { N: "north", E: "east", S: "south", W: "west" };
@@ -99,7 +100,7 @@ export function App() {
         </div>
       </header>
 
-      {ended && <div className="banner">{winnerText(ended.winner, ended.reason)}</div>}
+      {ended && <div className="banner">{winnerText(ended.winner, ended.reason, NAMES)}</div>}
 
       <PlayerZone state={state} pid={0} card={CARDS[0]} />
 
@@ -144,7 +145,7 @@ export function App() {
           />
         </div>
         <aside className="side-right">
-          <EventLog log={log} />
+          <EventLog log={log} names={NAMES} />
         </aside>
       </div>
 

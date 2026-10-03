@@ -1,47 +1,68 @@
-// Presentation-only helpers (labels). No game logic — these never decide
-// legality or outcomes, they only turn engine data into readable strings.
-import type { GameEvent, Winner } from "@engine";
+// Presentation-only helpers. No game logic — these never decide legality or outcomes, they only
+// turn engine data into readable words.
+import type { Facing, GameEvent, Position, Winner } from "@engine";
+
+const COLS = ["A", "B", "C", "D"];
+const ROWS = ["I", "II", "III", "IV"];
+const FACING_NAME: Record<Facing, string> = { N: "north", E: "east", S: "south", W: "west" };
+const where = (p: Position) => `${COLS[p.col]}${ROWS[p.row]}`;
 
 const REASON: Record<string, string> = {
-  kill: "by defeat",
-  life: "more life after 5 rounds",
-  experience: "experience tiebreak",
-  draw: "draw",
+  kill: "by defeating the foe",
+  life: "with more life after five rounds",
+  experience: "on experience, life being equal",
+  draw: "",
 };
 
-export function winnerText(winner: Winner, reason: string): string {
-  if (winner === "draw") return "Draw — evenly matched";
-  return `Player ${winner} wins (${REASON[reason] ?? reason})`;
+export function winnerText(winner: Winner, reason: string, names: [string, string]): string {
+  if (winner === null) return "";
+  if (winner === "draw") return "A draw — the warriors are evenly matched";
+  return `${names[winner]} wins ${REASON[reason] ?? reason}`;
 }
 
-export function eventLine(e: GameEvent): string {
+export interface LogEntry {
+  kind: "round" | "turn" | "move" | "hit" | "crit" | "miss" | "defeat" | "end" | "note";
+  text: string;
+  detail?: string;
+  player?: 0 | 1;
+}
+
+const signed = (n: number) => (n >= 0 ? `+${n}` : `${n}`);
+
+export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null {
   switch (e.type) {
     case "setup":
-      return `Setup — P${e.firstPlacer} places first`;
+      return { kind: "note", text: `${names[e.firstPlacer]} takes the field first.` };
     case "roundStarted":
-      return `— Round ${e.round} — initiative P${e.initiative}`;
+      return { kind: "round", text: `Round ${ROWS[e.round - 1] ?? e.round}`, detail: `${names[e.initiative]} has initiative` };
     case "turnStarted":
-      return `P${e.player}'s turn (${e.actions} actions)`;
+      return { kind: "turn", text: `${names[e.player]}'s turn`, player: e.player };
     case "moved":
-      return `P${e.player} moves (${e.from.row},${e.from.col})→(${e.to.row},${e.to.col}) facing ${e.facing}`;
+      return {
+        kind: "move",
+        text: `${names[e.player]} marches ${where(e.from)} → ${where(e.to)}, facing ${FACING_NAME[e.facing]}.`,
+        player: e.player,
+      };
     case "rotated":
-      return `P${e.player} rotates to ${e.facing}`;
+      return { kind: "move", text: `${names[e.player]} turns to face ${FACING_NAME[e.facing]}.`, player: e.player };
     case "passed":
-      return `P${e.player} passes`;
-    case "attacked":
-      return (
-        `P${e.attacker} attacks P${e.defender}: ` +
-        `${e.attackerRoll}${e.gridMod >= 0 ? "+" : ""}${e.gridMod}=${e.attackerTotal} vs ${e.defenderRoll} → ` +
-        `${e.hit ? "HIT" : "miss"}${e.crit ? " CRIT" : ""}${e.damage ? ` (${e.damage} dmg)` : ""}` +
-        `${e.tiebreak ? ` [${e.tiebreak}]` : ""}`
-      );
+      return { kind: "note", text: `${names[e.player]} holds.`, player: e.player };
+    case "attacked": {
+      const roll = `(${e.attackerRoll}${signed(e.gridMod)} = ${e.attackerTotal} vs ${e.defenderRoll}${e.tiebreak ? `, ${e.tiebreak} tiebreak` : ""})`;
+      if (!e.hit) return { kind: "miss", text: `${names[e.attacker]} strikes at ${names[e.defender]} — and misses.`, detail: roll, player: e.attacker };
+      return {
+        kind: e.crit ? "crit" : "hit",
+        text: `${names[e.attacker]} ${e.crit ? "lands a critical blow on" : "strikes"} ${names[e.defender]} for ${e.damage}.`,
+        detail: roll,
+        player: e.attacker,
+      };
+    }
     case "warriorDefeated":
-      return `*** P${e.player} defeated ***`;
-    case "turnEnded":
-      return `P${e.player} turn ends`;
-    case "roundEnded":
-      return `Round ${e.round} ends`;
+      return { kind: "defeat", text: `${names[e.player]} falls.`, player: e.player };
     case "gameEnded":
-      return `GAME OVER — ${winnerText(e.winner, e.reason)}`;
+      return { kind: "end", text: winnerText(e.winner, e.reason, names) + "." };
+    case "turnEnded":
+    case "roundEnded":
+      return null;
   }
 }

@@ -153,18 +153,83 @@
 
 /* ---- phase tracker ---- */
 .phase-tracker {
-  padding: 12px 16px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: baseline;
-  column-gap: 12px;
-  row-gap: 4px;
+  padding: 12px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.tracker-value {
+.tracker-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.tracker-round {
   font-family: var(--font-display);
-  font-variant-numeric: lining-nums;
+  font-size: var(--fs-xl);
+  line-height: 1;
+}
+.round-pips {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  margin-top: -2px;
+}
+.pip {
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border: 1px solid var(--ink-500);
+}
+.pip.done {
+  background: var(--ink-500);
+}
+.pip.now {
+  background: var(--gold-500);
+  border-color: var(--gold-600);
+}
+.tracker-turn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
   font-size: var(--fs-md);
-  text-align: right;
+}
+.tracker-turn.p0 {
+  color: var(--p0-ink);
+}
+.tracker-turn.p1 {
+  color: var(--p1-ink);
+}
+.tracker-badge {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 4px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  font-size: var(--fs-xs);
+  color: var(--parchment-50);
+}
+.p0 .tracker-badge {
+  background: var(--p0-ink);
+}
+.p1 .tracker-badge {
+  background: var(--p1-ink);
+}
+.action-pips {
+  display: flex;
+  gap: 5px;
+}
+.apip {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink-500);
+}
+.apip.left {
+  background: var(--ink-700);
+  border-color: var(--ink-900);
 }
 
 /* ---- dice tray ---- */
@@ -225,37 +290,91 @@
   border-color: var(--hit-ink);
 }
 
-/* ---- event log ---- */
-.log {
-  min-width: 280px;
-  flex: 1;
+/* ---- battle log ---- */
+.battle-log {
+  padding: 12px 6px 10px 16px;
+  display: flex;
+  flex-direction: column;
 }
-.log-head {
+.battle-log-title {
+  font-size: var(--fs-md);
+  text-align: center;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--gold-300);
   margin-bottom: 6px;
 }
-.log-body {
-  height: 360px;
+.battle-log-body {
+  height: 470px;
   overflow-y: auto;
-  padding: 8px 12px;
+  padding-right: 10px;
   font-size: var(--fs-sm);
-  line-height: 1.5;
-  background: var(--surface-parchment);
-  border: var(--border-ink);
-  border-radius: var(--radius-worn);
-  box-shadow: var(--edge-burn);
+  line-height: 1.45;
+  scrollbar-color: var(--ink-300) transparent;
 }
-.logline.roundStarted {
+.entry {
+  padding: 2px 0;
+}
+.entry-detail {
+  color: var(--ink-500);
+  font-size: var(--fs-xs);
+}
+.entry-round {
+  margin: 10px 0 2px;
+  text-align: center;
   font-family: var(--font-display);
+  font-size: var(--fs-md);
   color: var(--gold-600);
+}
+.entry-round .entry-text::before,
+.entry-round .entry-text::after {
+  content: "\2766";
+  margin: 0 8px;
+  font-size: var(--fs-sm);
+  color: var(--ink-300);
+}
+.entry-round .entry-detail {
+  display: block;
+  font-family: var(--font-body);
+  font-style: italic;
+}
+.entry-turn {
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
   margin-top: 4px;
 }
-.logline.attacked {
-  color: var(--ink-700);
+.entry-turn.p0 {
+  color: var(--p0-ink);
 }
-.logline.warriorDefeated,
-.logline.gameEnded {
+.entry-turn.p1 {
+  color: var(--p1-ink);
+}
+.entry-move,
+.entry-note {
+  color: var(--ink-700);
+  padding-left: 10px;
+}
+.entry-miss {
+  color: var(--ink-500);
+  font-style: italic;
+  padding-left: 10px;
+}
+.entry-hit,
+.entry-crit {
   color: var(--hit-ink);
+  padding-left: 10px;
+}
+.entry-crit {
   font-weight: 600;
+}
+.entry-defeat,
+.entry-end {
+  margin-top: 8px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  color: var(--hit-ink);
 }
 
 /* ---- map arena ---- */

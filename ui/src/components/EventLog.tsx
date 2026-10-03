@@ -1,21 +1,24 @@
-// Renders the running event log returned by the engine, newest at the bottom.
+// The battle log: engine events written up in warriors' names, newest at the bottom, auto-scrolling.
 import { useEffect, useRef } from "react";
 import type { GameEvent } from "@engine";
-import { eventLine } from "../format";
+import { logEntry } from "../format";
 
-export function EventLog({ log }: { log: GameEvent[] }) {
+export function EventLog({ log, names }: { log: GameEvent[]; names: [string, string] }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (ref.current) ref.current.scrollTop = ref.current.scrollHeight;
   }, [log.length]);
 
+  const entries = log.map((e) => logEntry(e, names)).filter((x) => x !== null);
+
   return (
-    <section className="log">
-      <div className="muted log-head">event log</div>
-      <div className="log-body" ref={ref}>
-        {log.map((e, i) => (
-          <div key={i} className={`logline ${e.type}`}>
-            {eventLine(e)}
+    <section className="battle-log parchment" aria-label="battle log">
+      <h3 className="battle-log-title">Chronicle of Battle</h3>
+      <div className="battle-log-body" ref={ref}>
+        {entries.map((x, i) => (
+          <div key={i} className={`entry entry-${x.kind}${x.player !== undefined ? ` p${x.player}` : ""}`}>
+            <span className="entry-text">{x.text}</span>
+            {x.detail && <span className="entry-detail num"> {x.detail}</span>}
           </div>
         ))}
       </div>
