@@ -1,4 +1,5 @@
-// Core types for the headless 1v1 Anachronism engine (Milestone 4 spine).
+// Core types for the headless 1v1 Anachronism engine.
+import type { SupportCard } from "./decks";
 // GameState is fully serializable: plain objects / arrays / primitives only.
 
 export type PlayerId = 0 | 1;
@@ -45,6 +46,22 @@ export interface Warrior {
 }
 
 export type Phase = "setup" | "playing" | "ended";
+
+// ---- Support cards ----------------------------------------------------------
+export type SupportStatus = "face-down" | "in-play" | "discarded";
+
+export interface SupportSlot {
+  card: SupportCard;
+  status: SupportStatus;
+}
+
+/** One player's support cards: placed face-down left to right; slot `nextReveal` is revealed next. */
+export interface PlayerCards {
+  deckId: string | null;
+  support: SupportSlot[];
+  /** Index of the next face-down slot to reveal (== support.length once all are revealed). */
+  nextReveal: number;
+}
 export type Winner = PlayerId | "draw" | null;
 
 export interface GameState {
@@ -67,6 +84,9 @@ export interface GameState {
   initiative: PlayerId | null;
 
   winner: Winner;
+
+  /** Each player's support cards (index === playerId). A warrior-only game has none. */
+  cards: [PlayerCards, PlayerCards];
 }
 
 // ---- Actions -------------------------------------------------------------

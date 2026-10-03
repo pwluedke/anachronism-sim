@@ -2,6 +2,7 @@
 // Pure: applyAction(state, action) -> { state, events }. No input mutation
 // (state is structurally cloned), no I/O, randomness only via the seeded RNG.
 
+import type { Deck } from "./decks";
 import type {
   Action,
   ApplyResult,
@@ -9,6 +10,7 @@ import type {
   Facing,
   GameEvent,
   GameState,
+  PlayerCards,
   PlayerId,
   Position,
   Warrior,
@@ -142,11 +144,28 @@ function endTurn(state: GameState, events: GameEvent[]): void {
   }
 }
 
-/** Create the starting game at round 1, ready for player one's first action. */
-export function init(card0: CardData, card1: CardData, seed: number): ApplyResult {
+/** A side is a full deck, or a bare warrior (a deck with no support cards — the warrior-only spine). */
+export type Side = Deck | CardData;
+
+function asDeck(side: Side): Deck {
+  return "warrior" in side ? side : { id: side.id, warrior: side, support: [] };
+}
+
+function playerCards(deck: Deck): PlayerCards {
+  return {
+    deckId: deck.support.length ? deck.id : null,
+    support: deck.support.map((card) => ({ card: structuredClone(card), status: "face-down" as const })),
+    nextReveal: 0,
+  };
+}
+
+/** Create the starting game at round 1, ready for player one's first action. Each side's support
+ *  cards are placed face-down in the deck's order (index 0 = leftmost, revealed first). */
+export function init(side0: Side, side1: Side, seed: number): ApplyResult {
+  const decks = [asDeck(side0), asDeck(side1)] as const;
   const warriors: [Warrior, Warrior] = [
-    buildWarrior(card0, 0),
-    buildWarrior(card1, 1),
+    buildWarrior(decks[0].warrior, 0),
+    buildWarrior(decks[1].warrior, 1),
   ];
   let rng = seedState(seed);
   // Setup roll decides who would place first (placement itself is fixed here).
@@ -169,6 +188,7 @@ export function init(card0: CardData, card1: CardData, seed: number): ApplyResul
     actionsRemaining: 0,
     initiative: null,
     winner: null,
+    cards: [playerCards(decks[0]), playerCards(decks[1])],
   };
 
   const events: GameEvent[] = [{ type: "setup", firstPlacer }];
