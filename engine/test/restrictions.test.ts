@@ -20,6 +20,11 @@ const cards = indexCards(allCards.cards as unknown as CardRecord[]);
 const recs = presets.decks as PresetDeckRecord[];
 const deck = (w: string) => loadDeck(recs.find((d) => d.warrior.name === w)!, cards);
 
+const lastOf = <T extends GameEvent["type"]>(log: GameEvent[], type: T, player?: number) =>
+  [...log].reverse().find((e) => e.type === type && (player === undefined || ("player" in e && e.player === player))) as
+    | Extract<GameEvent, { type: T }>
+    | undefined;
+
 /** PASS through rounds until a discard is pending (or the game ends). */
 function untilPending(a: ReturnType<typeof deck>, b: ReturnType<typeof deck>, seed = 1) {
   let { state, events } = init(a, b, seed);
@@ -64,7 +69,7 @@ describe("card restrictions", () => {
     const { state, log } = untilPending(GK, deck("Alexander the Great"));
     expect(state.pending).toMatchObject({ kind: "discard", queue: [0] });
     expect(state.currentPlayer).toBe(0);
-    const req = log.findLast((e) => e.type === "discardRequired");
+    const req = lastOf(log, "discardRequired");
     expect(req).toMatchObject({ player: 0, reasons: [expect.stringMatching(/hands/)] });
     // Only discards of the offending cards are legal; nothing else does anything.
     const legal = getLegalActions(state);
@@ -85,9 +90,9 @@ describe("card restrictions", () => {
 
   it("the revealed card's initiative counts even if that card is discarded", () => {
     const { state, log } = untilPending(deck("Gengis Khan"), deck("Alexander the Great"));
-    const rs = log.findLast((e) => e.type === "roundStarted");
-    const justRevealed = log.findLast((e) => e.type === "revealed" && e.player === 0);
-    if (rs?.type !== "roundStarted" || justRevealed?.type !== "revealed") throw new Error("missing events");
+    const rs = lastOf(log, "roundStarted");
+    const justRevealed = lastOf(log, "revealed", 0);
+    if (!rs || !justRevealed) throw new Error("missing events");
     expect(rs.initiativeValues[0]).toBe(justRevealed.initiative);
     const after = applyAction(state, { type: "DISCARD", card: justRevealed.cardId }).state;
     expect(after.turnOrder).toEqual(state.turnOrder); // initiative unchanged by the discard
@@ -112,13 +117,15 @@ describe("card restrictions", () => {
   });
 
   it("the bot resolves its own discards and the game finishes", () => {
-    let { state } = init(deck("Gengis Khan"), deck("Canute the Great"), 9);
-    let discards = 0;
-    for (let i = 0; i < 400 && state.phase === "playing"; i++) {
-      if (state.pending) discards++;
-      state = applyAction(state, chooseAction(state, "medium", 4)).state;
+    let { state } = untilPending(deck("Gengis Khan"), deck("Canute the Great"), 9);
+    expect(state.pending).not.toBeNull();
+    while (state.pending) {
+      const a = chooseAction(state, "medium", 4);
+      expect(a.type).toBe("DISCARD");
+      expect(getLegalActions(state)).toContainEqual(a);
+      state = applyAction(state, a).state;
     }
+    for (let i = 0; i < 400 && state.phase === "playing"; i++) state = applyAction(state, chooseAction(state, "medium", 4)).state;
     expect(state.phase).toBe("ended");
-    expect(discards).toBeGreaterThan(0);
   });
 });

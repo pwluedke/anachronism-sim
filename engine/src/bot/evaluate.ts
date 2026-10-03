@@ -2,12 +2,30 @@
 
 import type { GameState, PlayerId, Warrior } from "../types";
 import { modifierAt } from "../projection";
+import { armedAttacker, weaponsInPlay } from "../cards";
 import { EVAL_WEIGHTS as W } from "./config";
 
-/** Threat `attacker` poses to `defender`, per attack: 0 if out of grid, else (base + modifier bonus) x damage. */
-function threat(attacker: Warrior, defender: Warrior, size: number): number {
-  const mod = modifierAt(attacker.attackGrid, attacker.position, attacker.facing, defender.position, size);
-  return mod === null ? 0 : (W.threat + W.threatMod * mod) * attacker.damage;
+/** Per-attack threat from one attack source: 0 if out of its grid, else (base + modifier bonus) x damage. */
+function sourceThreat(src: Warrior, defender: Warrior, size: number): number {
+  const mod = modifierAt(src.attackGrid, src.position, src.facing, defender.position, size);
+  return mod === null ? 0 : (W.threat + W.threatMod * mod) * src.damage;
+}
+
+/**
+ * Threat player p poses to the other, per attack: the best of its attack sources — the warrior's
+ * own grid and each in-play weapon (weapon grid + damage). For the side to move, a weapon already
+ * used this turn no longer counts (armedAttacker applies the one-per-turn rule).
+ */
+function threat(state: GameState, p: PlayerId): number {
+  const defender = state.warriors[p === 0 ? 1 : 0];
+  let best = sourceThreat(state.warriors[p], defender, state.arenaSize);
+  for (const slot of weaponsInPlay(state, p)) {
+    const armed = state.currentPlayer === p
+      ? armedAttacker(state, p, slot.card.id)
+      : { ...state.warriors[p], attackGrid: slot.card.grid!, damage: slot.card.damage! };
+    if (armed) best = Math.max(best, sourceThreat(armed, defender, state.arenaSize));
+  }
+  return best;
 }
 
 export function evaluate(state: GameState, perspective: PlayerId): number {
@@ -31,8 +49,8 @@ export function evaluate(state: GameState, perspective: PlayerId): number {
   // The side to move can spend its remaining actions on attacks before the other can answer.
   const moverMult = W.threatOnMove * state.actionsRemaining;
   const onMove = state.currentPlayer === perspective;
-  const mine = threat(me, foe, state.arenaSize) * (onMove ? moverMult : 1);
-  const theirs = threat(foe, me, state.arenaSize) * (onMove ? 1 : moverMult);
+  const mine = threat(state, perspective) * (onMove ? moverMult : 1);
+  const theirs = threat(state, perspective === 0 ? 1 : 0) * (onMove ? 1 : moverMult);
 
   const distance =
     Math.abs(me.position.row - foe.position.row) + Math.abs(me.position.col - foe.position.col);

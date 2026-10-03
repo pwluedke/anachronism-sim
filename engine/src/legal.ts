@@ -6,7 +6,7 @@
 import type { Action, GameState } from "./types";
 import { FACINGS, canMove } from "./arena";
 import { modifierAt } from "./projection";
-import { offendingCards } from "./cards";
+import { armedAttacker, offendingCards, weaponsInPlay } from "./cards";
 
 export function getLegalActions(state: GameState): Action[] {
   if (state.phase !== "playing") return [];
@@ -31,6 +31,13 @@ export function getLegalActions(state: GameState): Action[] {
     // a basic attack if the opponent is in the projected grid
     if (modifierAt(w.attackGrid, w.position, w.facing, foe.position, state.arenaSize) !== null) {
       acts.push({ type: "ATTACK" });
+    }
+    // a weapon attack for each in-play weapon not yet used this turn whose grid covers the opponent
+    for (const slot of weaponsInPlay(state, me)) {
+      const armed = armedAttacker(state, me, slot.card.id);
+      if (armed && modifierAt(armed.attackGrid, armed.position, armed.facing, foe.position, state.arenaSize) !== null) {
+        acts.push({ type: "ATTACK", weapon: slot.card.id });
+      }
     }
   }
   acts.push({ type: "PASS" }); // always available while playing

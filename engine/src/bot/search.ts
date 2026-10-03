@@ -56,10 +56,10 @@ function sampleRngs(seed: number, n: number): number[] {
 const ORDER: Record<Action["type"], number> = { DISCARD: 0, ATTACK: 0, MOVE: 1, ROTATE: 2, PASS: 3 };
 
 /** Distinct ATTACK outcomes and their sampled probabilities. */
-function attackOutcomes(state: GameState, ctx: Ctx): { state: GameState; p: number }[] {
+function attackOutcomes(state: GameState, attack: Action, ctx: Ctx): { state: GameState; p: number }[] {
   const groups = new Map<string, { state: GameState; n: number }>();
   for (const rng of ctx.sampleRngs) {
-    const next = applyAction({ ...state, rng }, { type: "ATTACK" }).state;
+    const next = applyAction({ ...state, rng }, attack).state;
     const key = `${next.warriors[0].life}|${next.warriors[1].life}`;
     const g = groups.get(key);
     if (g) g.n += 1;
@@ -79,7 +79,7 @@ function actionValue(
 ): number {
   if (action.type === "ATTACK") {
     let v = 0;
-    for (const o of attackOutcomes(state, ctx)) v += o.p * value(o.state, depth - 1, -INF, INF, ctx);
+    for (const o of attackOutcomes(state, action, ctx)) v += o.p * value(o.state, depth - 1, -INF, INF, ctx);
     return v;
   }
   return value(applyAction(state, action).state, depth - 1, alpha, beta, ctx);

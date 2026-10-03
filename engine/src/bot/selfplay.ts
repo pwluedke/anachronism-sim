@@ -3,7 +3,7 @@
 // and every game must end within MAX_SELFPLAY_ACTIONS.
 
 import type { CardData, GameEvent, PlayerId, Winner } from "../types";
-import { init, applyAction } from "../engine";
+import { init, applyAction, type Side } from "../engine";
 import { getLegalActions } from "../legal";
 import { FIXTURES } from "../../fixtures/warriors";
 import { chooseAction } from "./choose";
@@ -38,10 +38,20 @@ export function selfPlay(
   const c0 = cards[cardId0];
   const c1 = cards[cardId1];
   if (!c0 || !c1) throw new Error(`selfPlay: unknown card id ${!c0 ? cardId0 : cardId1}`);
+  return selfPlaySides(c0, c1, difficulty0, difficulty1, seed);
+}
 
+/** Self-play between any two sides: full decks (support cards) or bare warriors. */
+export function selfPlaySides(
+  side0: Side,
+  side1: Side,
+  difficulty0: Difficulty,
+  difficulty1: Difficulty,
+  seed: number,
+): SelfPlayResult {
   const difficulty: [Difficulty, Difficulty] = [difficulty0, difficulty1];
   const seeds = botSeeds(seed);
-  let { state, events: initEvents } = init(c0, c1, seed);
+  let { state, events: initEvents } = init(side0, side1, seed);
   const events: GameEvent[] = [...initEvents];
   let actions = 0;
 
