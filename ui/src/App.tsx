@@ -63,7 +63,9 @@ export function App() {
 
   const active = state.warriors[state.currentPlayer];
   const target = model ? selectionCell(model, sel) : null;
-  const shownFacing = sel.kind === "none" ? null : (hover ?? sel.facing);
+  // While carets are showing, always preview where the grid would be: the hovered or chosen facing,
+  // else the current facing (turning in place to it isn't an action, so it has no caret of its own).
+  const shownFacing = sel.kind === "none" ? null : (hover ?? sel.facing ?? active.facing);
 
   const grid = useMemo(() => {
     if (!playing) return new Map<string, number>();

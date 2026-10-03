@@ -31,7 +31,7 @@ export function ActionBar({ prompt, notice, thinking, enabled, onAttack, inRange
         <button className="btn" disabled={!enabled || !canCancel} onClick={onCancel}>
           Cancel <kbd>Esc</kbd>
         </button>
-        <button className="btn btn-gold" disabled={!enabled || !confirm} onClick={() => confirm && onAct(confirm)}>
+        <button className="btn" disabled={!enabled || !confirm} onClick={() => confirm && onAct(confirm)}>
           Confirm <kbd>Enter</kbd>
         </button>
         <button className="btn" disabled={!enabled || !pass} onClick={() => pass && onAct(pass)}>
