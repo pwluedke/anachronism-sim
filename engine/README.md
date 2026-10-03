@@ -77,6 +77,42 @@ Round start follows the rulebook (pp. 10, 13–15):
 ranged weapons' 4B marker handled) and the weapon's damage, doubled on a crit. One attack per weapon
 per turn (`weaponsUsed`, reset each turn); basic attacks stay uncapped.
 
+## Card abilities (Milestone 9)
+
+Abilities live in `src/abilities/`. The engine's hook points feed a runtime (`runtime.ts`) that runs
+the abilities of each player's warrior and **in-play** support cards; face-down and discarded cards
+do nothing. Only cards registered in `cards.ts` have working abilities — **every other card's
+ability text is inert**.
+
+Timing follows the rulebook: Reveal abilities fire after the round's reveal, initiative and card
+restrictions (only for the card revealed that round), then "start of round" abilities, both in
+initiative order; damage abilities fire for the attacker after the blow is logged; Action abilities
+are an `ABILITY` action costing one of the warrior's actions. Timed effects ("this round", "your next
+turn") outlive their card; "once per round" uses reset each round. Abilities that only ever help
+their owner apply automatically (the rulebook makes limited abilities optional).
+
+An ability is authored one of two ways (`format.ts`):
+
+```ts
+// 1. Data — built from the primitives in primitives.ts (most cards):
+defineCard("s1-082", { data: {                      // Apollo — "Reveal: Your attack rolls gain +1 this round."
+  name: "Cura Dei", trigger: "reveal",
+  effects: [{ kind: "attackRoll", amount: 1 }], duration: "thisRound",
+}});
+
+// 2. Coded — the escape hatch for text the primitives can't express, same runtime interface:
+defineCard("s9-999", { coded: {
+  name: "Example", trigger: "damageDealt", oncePerRound: true,
+  canFire: (ctx) => ctx.state.round > 2,
+  fire: (ctx) => { ctx.state.warriors[ctx.owner].life += 2; return "gains 2 life"; },
+}});
+```
+
+Data fields: `trigger` (`continuous` | `reveal` | `roundStart` | `damageDealt` | `action`),
+`condition?` (`hasInPlay` a card type | `lostInitiative`), `effects` (`attackRoll` | `gainLife` |
+`speed`, with an amount), `usageLimit?` (`oncePerRound`), `duration?` (`permanent` | `thisRound` |
+`nextTurn`).
+
 ## Round / turn / combat rules
 
 - **5 rounds.** Each round: reveal + initiative (above), then each player takes one turn, initiative
