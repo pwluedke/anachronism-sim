@@ -171,9 +171,11 @@ Screenshots: [`docs/screenshots/`](screenshots/) (`m9-*`).
 - **Optional abilities** — the rulebook makes limited abilities optional; the six batch abilities only
   ever help their owner, so they apply automatically. Abilities with a downside will need a choice.
 
-## Milestone 10 (CURRENT): Custom card creator
+## Milestone 10 (CURRENT): Card abilities batch 2 — defense, damage, re-roll, move, reactions
 
-In-app schema-validated JSON append.
+Epic #60. Extends the ability engine with defense-roll and weapon-damage modifiers, ability damage,
+optional re-rolls, ability movement, and when-hit / when-missed / start-of-game triggers, proven on
+seven cards (Linen Cuirass, Byrnies, Gladius, Khutulun, Subedei, Salah ad-Din, Vlad Tepes).
 
 ## Milestone 11: 4-player + variant rules
 
@@ -184,3 +186,7 @@ Variant rules sourced from BGG variants.
 Authoritative server.
 
 ## Milestone 13: Raspberry Pi 4 kiosk build
+
+## Milestone 14: Custom card creator
+
+In-app schema-validated JSON append.
