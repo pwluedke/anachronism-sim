@@ -67,6 +67,7 @@ def main() -> None:
     sh = xlrd.open_workbook(B.XLS).sheet_by_name("A7")
     headers = sh.row_values(0)
     cards, _, _ = B.resolve_and_merge([B.build_record(sh.row_values(r), headers) for r in range(1, sh.nrows)])
+    B.apply_grid_overrides(cards)  # scan-verified grids, same as all_cards.json
 
     groups: dict[object, list[dict]] = defaultdict(list)
     for c in cards:

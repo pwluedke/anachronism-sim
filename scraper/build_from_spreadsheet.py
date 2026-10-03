@@ -149,6 +149,26 @@ def build_grid(row, card_type):
     return grid, " ".join(raw_tokens), anomaly
 
 
+# Attack grids the spreadsheet leaves blank but the printed card has, read from the card scans in
+# data/images/ (Resized Card Scans for PNP/{set}_{collector}.jpg). Only cells that carry a value are
+# listed; every other cell is empty. Applied after the merge, so a rebuild keeps the fix.
+# (Marcus Claudius Marcellus, s1-081, really has no grid: he attacks through his ability.)
+GRID_OVERRIDES = {
+    "s5-076": {"2A": "+1", "3A": "+0", "3B": "marker", "3C": "+0"},  # Carlos V
+    "s5-061": {"2A": "+0", "2B": "+1", "2C": "+0", "3B": "marker"},  # Maowvia
+}
+
+
+def apply_grid_overrides(cards):
+    """Replace blank spreadsheet grids with the scan-verified ones in GRID_OVERRIDES."""
+    by_id = {c["id"]: c for c in cards}
+    for cid, cells in GRID_OVERRIDES.items():
+        card = by_id[cid]
+        grid = {key: cells.get(key) for _, key in GRID_CELLS}
+        card["grid"] = grid
+        card["grid_raw"] = " ".join("▲" if grid[k] == "marker" else grid[k] for _, k in GRID_CELLS if grid[k])
+
+
 def build_tags(row, headers):
     tags = {}
     for c in list(range(14, 36)) + list(range(37, 57)):  # exclude col 36 (Salary)
@@ -446,6 +466,7 @@ def main():
 
     rows = [build_record(sh.row_values(r), headers) for r in range(1, sh.nrows)]
     cards, collisions, merge_conflicts = resolve_and_merge(rows)
+    apply_grid_overrides(cards)
     for c in cards:
         recompute_confidence(c)
     rq = write_outputs(cards)
