@@ -77,6 +77,9 @@ if the target is not covered — which is exactly the basic-attack legality test
 | `ATTACK` | `{ type:"ATTACK" }` | 1 action | Basic attack against the opponent (must be in the projected grid). |
 | `PASS` | `{ type:"PASS" }` | — | End the turn immediately. |
 
+`getLegalActions(state)` offers every legal step with each of the four facings (the free rotate), so
+up to 16 `MOVE`s per position.
+
 A turn ends when `actionsRemaining` hits 0 or on `PASS`. Illegal actions (off-grid move, attack with
 the foe out of range, acting with no budget) are **no-ops**: the same state is returned with an empty
 event list.
@@ -124,13 +127,39 @@ point an ability could act. **Firing order** through a turn:
 The engine runs identically with all hooks empty; Milestone-N ability work implements `resolveHooks`
 without re-plumbing the loop.
 
+## Bot opponent (Milestone 5)
+
+`src/bot/` is a search-based opponent built only on the public surface (`getLegalActions`,
+`applyAction`, reading `GameState`). Pure, no I/O, no time caps.
+
+```ts
+import { chooseAction } from "./src";
+const action = chooseAction(state, "hard", /* botSeed */ 7); // always a member of getLegalActions(state)
+```
+
+- **Search** (`search.ts`): depth-limited expectiminimax with alpha-beta. One ply = one action; max/min
+  follows `state.currentPlayer`. An `ATTACK` is a chance node: the engine resolves it under
+  `CHANCE_SAMPLES` bot-seeded dice samples and the outcomes are weighted by frequency, so the bot never
+  reads the game's real future rolls. Ties go to the lowest-index legal action. Known leak: a
+  mirror-match initiative dice-off still reads the real RNG.
+- **Evaluation** (`evaluate.ts`): life difference (tempo-scaled), a life-lead term that sharpens as
+  rounds run out, a turn-aware grid threat (the side to move counts each remaining action), a
+  distance-to-engagement pull for the trailing side, and an experience tiebreak.
+- **Tiers** (`config.ts`): `TIER_CONFIG` — Easy depth 1 + `BLUNDER_CHANCE` random moves, Medium depth 3,
+  Hard `DEPTH_HARD` (4). Every weight and depth is a named constant in `config.ts`.
+- **Determinism**: same `(state, difficulty, botSeed)` ⇒ same action.
+- **Self-play** (`selfplay.ts`): `selfPlay(cardId0, cardId1, d0, d1, seed)` plays a full game and throws
+  on any illegal action or runaway game; `selfPlayBatch` plays every fixture matchup from both seats.
+
 ## Project layout
 
 ```
-src/        types, rng, arena, projection, combat, hooks, engine, index (public API)
+src/        types, rng, arena, projection, combat, hooks, legal, engine, index (public API)
+src/bot/    config, evaluate, search, choose, selfplay — the Milestone 5 opponent
 fixtures/   warriors.ts — 4 real warriors (Achilles, Ajax, Jei the Tyrant, Suleiman)
-examples/   policy.ts (greedy driver + event formatter), scripted-game.ts (printable game)
-test/       rng, movement, projection, combat, flow, wincon, hooks, game
+examples/   policy.ts (greedy driver + event formatter), scripted-game.ts (printable game),
+            bot-selfplay.ts (bot-vs-bot log + win-rate table)
+test/       rng, movement, projection, combat, flow, wincon, hooks, game, legal, bot-*
 ```
 
 ## Running
@@ -141,4 +170,5 @@ npm run build      # tsc --noEmit (type-check)
 npm test           # vitest run
 npm run test:cov   # vitest with coverage
 npm run example    # print one full scripted game's event log
+npm run selfplay -- 64   # Hard-vs-Easy sample log + win rates, 64 games per tier pairing
 ```

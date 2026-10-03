@@ -51,10 +51,47 @@ complete a full hotseat game; "New game" re-inits. **No game logic lives in the 
 **DONE =** full hotseat game playable in the browser start-to-finish; engine suite green (**78 tests**,
 incl. `getLegalActions`); UI rule-logic audit clean; `vite build` + dev server confirmed.
 
-## Milestone 5 (CURRENT): Bot opponent
+## Milestone 5 (DONE): Bot opponent
 
-A computer opponent over the same engine (it already exposes `getLegalActions`; a greedy reference
-policy lives in `engine/examples/policy.ts`). Built before the UI's bot wiring.
+Search-based opponent in [`engine/src/bot/`](../engine/README.md#bot-opponent-milestone-5), on the engine's
+public surface only: `chooseAction(state, "easy"|"medium"|"hard", botSeed) -> Action`. Depth-limited
+expectiminimax with alpha-beta; attacks are chance nodes resolved under bot-seeded dice samples (the
+bot never reads the game's real rolls). Evaluation: life (tempo-scaled), a life-lead term that sharpens
+toward the round-5 check, a turn-aware grid threat, a distance-to-engagement pull for the trailing side,
+experience. Tiers: Easy depth 1 + 30% seeded blunders, Medium depth 3, Hard depth 4 (~50ms/decision).
+All weights/depths are named constants in `engine/src/bot/config.ts`. Deterministic per
+`(state, difficulty, botSeed)`; `selfPlay`/`selfPlayBatch` harness (`npm run selfplay`).
+
+Also fixed during M5: `getLegalActions` now offers the free rotate on move (#10, #22).
+
+**DONE =** 113 tests green; zero illegal actions and every game terminal across the self-play batches.
+64 games per pairing, every fixture matchup from both seats, Hard depth 4:
+
+| A vs B | A wins | B wins | draws |
+|--------|--------|--------|-------|
+| Hard vs Easy | 53 (83%) | 8 | 3 |
+| Hard vs Medium | 24 (38%) | 37 | 3 |
+| Medium vs Easy | 53 (83%) | 10 | 1 |
+| Easy vs Easy | 33 | 29 | 2 |
+| Medium vs Medium | 27 | 35 | 2 |
+
+Both search tiers beat Easy clearly. **Hard does not beat Medium** on the current game (depths 4–6
+all measured at or below even): with dice and the warrior matchup dominating and ~15 actions per side,
+the spine has a low skill ceiling, so deeper search has little to work with.
+
+### M5 follow-ups
+
+- **Hard-tier strength re-check once abilities exist** — including whether search depth should end on
+  turn boundaries rather than a raw ply count, and search speed (depth 6 cost 4–7s/decision once moves
+  carry facings; a transposition cache is the obvious first step).
+- **Mirror-match initiative RNG leak in search** — with equal experience, the round-start dice-off
+  reads the game's real RNG on non-attack lines, so the search can see who wins initiative next round.
+
+## Milestone 11 (CURRENT): UI polish / look-and-feel
+
+Sequenced next, ahead of M7. Phase/turn tracker, styled board, battle log, keyboard shortcuts,
+old-world art direction, and wiring the M5 bot into the UI (difficulty picker; the "think pause" lives
+here, not in the engine).
 
 ## Milestone 7: 4-player + variant rules
 
