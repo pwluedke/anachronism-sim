@@ -3,30 +3,35 @@
 import type { GameState, PlayerId, Warrior } from "../types";
 import { modifierAt } from "../projection";
 import { armedAttacker, weaponsInPlay } from "../cards";
-import { attackRollBonus } from "../abilities/runtime";
+import { attackRollBonus, defenseRollBonus, weaponDamageBonus } from "../abilities/runtime";
 import { EVAL_WEIGHTS as W } from "./config";
 
 /** Per-attack threat from one attack source: 0 if out of its grid, else (base + modifier bonus) x
- *  damage. Card-ability roll bonuses count like grid modifiers. */
-function sourceThreat(src: Warrior, defender: Warrior, size: number, rollBonus: number): number {
+ *  damage. Ability roll bonuses count like grid modifiers (the defender's defense bonus counts
+ *  against); ability damage bonuses add to the damage. */
+function sourceThreat(src: Warrior, defender: Warrior, size: number, rollEdge: number, damage: number): number {
   const mod = modifierAt(src.attackGrid, src.position, src.facing, defender.position, size);
-  return mod === null ? 0 : Math.max(0, W.threat + W.threatMod * (mod + rollBonus)) * src.damage;
+  return mod === null ? 0 : Math.max(0, W.threat + W.threatMod * (mod + rollEdge)) * damage;
 }
 
 /**
  * Threat player p poses to the other, per attack: the best of its attack sources — the warrior's
- * own grid and each in-play weapon (weapon grid + damage). For the side to move, a weapon already
- * used this turn no longer counts (armedAttacker applies the one-per-turn rule).
+ * own grid and each in-play weapon (weapon grid + damage, plus the weapon's own damage bonus). For
+ * the side to move, a weapon already used this turn no longer counts (armedAttacker applies the
+ * one-per-turn rule).
  */
 function threat(state: GameState, p: PlayerId): number {
-  const defender = state.warriors[p === 0 ? 1 : 0];
-  const bonus = attackRollBonus(state, p);
-  let best = sourceThreat(state.warriors[p], defender, state.arenaSize, bonus);
+  const q: PlayerId = p === 0 ? 1 : 0;
+  const defender = state.warriors[q];
+  const edge = (weaponId?: string) => attackRollBonus(state, p, weaponId) - defenseRollBonus(state, q, weaponId);
+  let best = sourceThreat(state.warriors[p], defender, state.arenaSize, edge(), state.warriors[p].damage);
   for (const slot of weaponsInPlay(state, p)) {
     const armed = state.currentPlayer === p
       ? armedAttacker(state, p, slot.card.id)
       : { ...state.warriors[p], attackGrid: slot.card.grid!, damage: slot.card.damage! };
-    if (armed) best = Math.max(best, sourceThreat(armed, defender, state.arenaSize, bonus));
+    if (!armed) continue;
+    const damage = armed.damage + weaponDamageBonus(state, p, slot.card.id);
+    best = Math.max(best, sourceThreat(armed, defender, state.arenaSize, edge(slot.card.id), damage));
   }
   return best;
 }
