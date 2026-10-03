@@ -20,7 +20,7 @@
    - Edges       --radius-worn (irregular corners), --border-ink, --edge-burn (inset vignette that reads
                  as a scorched/worn margin), --shadow-paper (lift off the table).
    - Textures    --texture-grain (paper fibre noise), --texture-stains (foxing), --texture-mapgrid
-                 (faint survey grid). Layer them with --surface-parchment.
+                 (faint survey grid), --texture-cardback (hatched back of a face-down card). Layer them with --surface-parchment.
    - Images      --filter-portrait: History-Channel sepia / black-and-white photo treatment. Apply via
                  the .portrait class.
    ============================================================================= */
@@ -84,6 +84,7 @@
   --texture-mapgrid:
     repeating-linear-gradient(0deg, rgba(70, 54, 38, 0.07) 0 1px, transparent 1px 44px),
     repeating-linear-gradient(90deg, rgba(70, 54, 38, 0.07) 0 1px, transparent 1px 44px);
+  --texture-cardback: repeating-linear-gradient(45deg, rgba(70, 54, 38, 0.09) 0 2px, transparent 2px 7px);
   --surface-parchment: var(--texture-grain), var(--texture-stains), var(--parchment-100);
 
   /* Images */

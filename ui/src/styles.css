@@ -1,38 +1,206 @@
 /* Component styles. Colours, type, edges and textures come only from theme.css tokens. */
 
-.app {
-  max-width: 920px;
+/* ---- table layout ---------------------------------------------------------
+   Rows: header / player I zone / midfield (tracker+dice | map | log) / player II zone / controls.
+   Support-card slots and the dice tray are placeholders but already occupy their final space. */
+
+.table {
+  --side-col: 230px;
+  --log-col: 300px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 20px 16px;
-}
-
-h1 {
-  font-size: var(--fs-xl);
-  margin: 0 0 12px;
-}
-
-.topbar {
+  padding: 18px 20px 28px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.table-header {
+  display: flex;
+  align-items: baseline;
   justify-content: space-between;
   gap: 16px;
+  border-bottom: 1px solid var(--gold-300);
+  padding-bottom: 6px;
 }
+.table-header h1 {
+  font-size: var(--fs-xl);
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .banner {
   font-family: var(--font-display);
   font-size: var(--fs-lg);
+  text-align: center;
   color: var(--gold-600);
   padding: 10px 14px;
-  margin: 6px 0 12px;
   background: var(--surface-parchment);
   border: 1px solid var(--gold-500);
   border-radius: var(--radius-worn);
   box-shadow: var(--edge-burn);
 }
-.layout {
+
+.midfield {
+  display: grid;
+  grid-template-columns: var(--side-col) minmax(0, 1fr) var(--log-col);
+  gap: 18px;
+  align-items: start;
+}
+.side-left,
+.side-right {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+.arena-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 1040px) {
+  .midfield {
+    grid-template-columns: var(--side-col) minmax(0, 1fr);
+  }
+  .side-right {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 720px) {
+  .midfield {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .side-left {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* ---- player zone ---- */
+.player-zone {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 18px;
   flex-wrap: wrap;
+}
+.stat-panel {
+  flex: 1 1 360px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 16px;
+}
+.stat-panel.is-turn {
+  border-color: var(--gold-500);
+  box-shadow: var(--edge-burn), 0 0 0 1px var(--gold-300), var(--shadow-paper);
+}
+.stat-panel.p0 h2 {
+  color: var(--p0-ink);
+}
+.stat-panel.p1 h2 {
+  color: var(--p1-ink);
+}
+.stat-name h2 {
+  font-size: var(--fs-lg);
+}
+.stat-grid {
+  display: flex;
+  gap: 16px;
+  margin: 0 0 0 auto;
+}
+.stat {
+  text-align: center;
+}
+.stat dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  line-height: 1.1;
+}
+.stat-life dd {
+  color: var(--hit-ink);
+}
+
+.support-slots {
+  display: flex;
+  gap: 10px;
+}
+.card-back {
+  width: 56px;
+  height: 78px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--ink-500);
+  background: var(--texture-cardback), var(--parchment-300);
+  box-shadow: inset 0 0 0 3px var(--parchment-200), inset 0 0 0 4px var(--ink-300), var(--shadow-paper);
+}
+.card-back-mark {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--ink-500);
+  opacity: 0.6;
+}
+
+/* ---- phase tracker ---- */
+.phase-tracker {
+  padding: 12px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  column-gap: 12px;
+  row-gap: 4px;
+}
+.tracker-value {
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  text-align: right;
+}
+
+/* ---- dice tray ---- */
+.dice-area {
+  padding: 10px 14px 12px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.dice-tray {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 84px;
+}
+.die {
+  width: 56px;
+  height: 56px;
+}
+.die-body {
+  fill: var(--parchment-50);
+  stroke: var(--ink-500);
+  stroke-width: 3;
+}
+.die-pip {
+  fill: var(--ink-900);
+}
+.dice-caption {
+  text-align: center;
+  font-size: var(--fs-sm);
+}
+
+/* ---- controls ---- */
+.menu {
+  align-self: center;
+  max-width: 760px;
 }
 
 /* ---- event log ---- */
@@ -68,68 +236,7 @@ h1 {
   font-weight: 600;
 }
 
-/* ---- status panel ---- */
-.status {
-  min-width: 240px;
-  padding: 12px 14px;
-  background: var(--surface-parchment);
-  border: var(--border-ink);
-  border-radius: var(--radius-worn);
-  box-shadow: var(--edge-burn);
-}
-.status-head {
-  display: flex;
-  gap: 18px;
-  border-bottom: var(--border-ink);
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-.big {
-  font-family: var(--font-display);
-  font-size: var(--fs-lg);
-}
-.wcards {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.wcard {
-  border: var(--border-ink);
-  border-radius: var(--radius-worn);
-  padding: 8px 10px;
-}
-.wcard.turn {
-  border-color: var(--gold-500);
-}
-.wname {
-  font-family: var(--font-display);
-  margin-bottom: 4px;
-}
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 6px;
-}
-.dot.p0 {
-  background: var(--p0-ink);
-}
-.dot.p1 {
-  background: var(--p1-ink);
-}
-.stats {
-  display: flex;
-  gap: 12px;
-  color: var(--ink-500);
-  font-size: var(--fs-sm);
-}
-
 /* ---- action menu ---- */
-.menu {
-  margin-top: 14px;
-  max-width: 296px;
-}
 .menu-head {
   font-size: var(--fs-sm);
   margin-bottom: 6px;
