@@ -46,6 +46,9 @@ export const EVAL_WEIGHTS = {
    * side trails.
    */
   approach: 200,
+  /** Per point of speed banked for a coming turn (an extra action to spend then). Abilities'
+   *  attack-roll bonuses need no weight of their own: the threat term counts them like grid mods. */
+  pendingSpeed: 30,
   /** Per point of experience difference. Minor: experience is only a tiebreaker. */
   experience: 1,
   /** Magnitude for a decided game: a win scores +terminal, a loss -terminal, a draw 0. */
