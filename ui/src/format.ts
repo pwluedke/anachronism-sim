@@ -58,6 +58,15 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       return { kind: "move", text: `${names[e.player]} turns to face ${FACING_NAME[e.facing]}.`, player: e.player };
     case "passed":
       return { kind: "note", text: `${names[e.player]} holds.`, player: e.player };
+    case "attackRolled":
+      return {
+        kind: "note",
+        text: `${names[e.attacker]} rolls ${e.attackerDice.join(" + ")} against ${e.defenderDice.join(" + ")}`,
+        detail: `(${e.cardName} — ${e.ability}: may re-roll a die)`,
+        player: e.attacker,
+      };
+    case "rerolled":
+      return { kind: "ability", text: `${e.cardName} — ${e.ability}: ${names[e.player]} re-rolls a ${e.from} into a ${e.to}.`, player: e.player };
     case "abilityFired":
       return {
         kind: "ability",

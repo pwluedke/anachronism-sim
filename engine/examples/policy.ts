@@ -20,7 +20,7 @@ export function chooseAction(state: GameState): Action {
   const opp = state.warriors[me.playerId === 0 ? 1 : 0];
   const size = state.arenaSize;
 
-  if (state.pending) return getLegalActions(state)[0]; // discard the first offending card
+  if (state.pending) return getLegalActions(state)[0]; // first offending discard / first re-roll choice
   if (state.actionsRemaining < 1) return { type: "PASS" };
 
   // In range? attack.
@@ -67,6 +67,10 @@ export function formatEvent(e: GameEvent): string {
       return `    P${e.player} rotate  -> ${e.facing}`;
     case "passed":
       return `    P${e.player} pass`;
+    case "attackRolled":
+      return `    P${e.attacker} rolls ${e.attackerDice.join("+")} vs ${e.defenderDice.join("+")} — ${e.cardName} may re-roll`;
+    case "rerolled":
+      return `    P${e.player} re-rolls a ${e.from} -> ${e.to} (${e.cardName})`;
     case "abilityFired":
       return `  P${e.player} ${e.cardName} — ${e.ability}: ${e.effect}`;
     case "discardRequired":

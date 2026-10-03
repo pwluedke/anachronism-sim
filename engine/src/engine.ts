@@ -10,6 +10,8 @@ import type {
   Facing,
   GameEvent,
   GameState,
+  PendingAttack,
+  PendingReroll,
   PlayerCards,
   PlayerId,
   SupportSlot,
@@ -18,10 +20,11 @@ import type {
 } from "./types";
 import { seedState, rollDie, roll2d6 } from "./rng";
 import { canMove, applyMove, applyRotate } from "./arena";
-import { resolveAttack } from "./combat";
+import { judge } from "./combat";
+import { modifierAt } from "./projection";
 import * as Hooks from "./hooks";
 import { armedAttacker, offendingCards, violations } from "./cards";
-import { attackRollBonus, beginTurnEffects, useActionAbility } from "./abilities/runtime";
+import { attackRollBonus, beginTurnEffects, resolveReroll, usableReroll, useActionAbility } from "./abilities/runtime";
 import "./abilities/cards"; // registers the implemented card abilities
 
 const ARENA = 4;
@@ -137,9 +140,11 @@ function startRound(state: GameState, events: GameEvent[]): void {
   beginFirstTurn(state, events);
 }
 
+const discardQueue = (state: GameState): PlayerId[] => (state.pending?.kind === "discard" ? state.pending.queue : []);
+
 /** Hand the pending discard to the first queued player. */
 function requestDiscard(state: GameState, events: GameEvent[]): void {
-  const p = state.pending!.queue[0];
+  const p = discardQueue(state)[0];
   state.currentPlayer = p;
   state.actionsRemaining = 0;
   events.push({
@@ -178,8 +183,8 @@ function applyDiscard(prev: GameState, action: Action): ApplyResult {
   const slot = state.cards[p].support.find((s) => s.card.id === action.card)!;
   slot.status = "discarded";
   events.push({ type: "discarded", player: p, cardId: slot.card.id, name: slot.card.name });
-  if (violations(state, p).length === 0) state.pending!.queue.shift();
-  if (state.pending!.queue.length) requestDiscard(state, events);
+  if (violations(state, p).length === 0) discardQueue(state).shift();
+  if (discardQueue(state).length) requestDiscard(state, events);
   else beginFirstTurn(state, events);
   return { state, events };
 }
@@ -308,11 +313,77 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
   return { state, events };
 }
 
+/** Judge an attack from its (final) dice and apply the outcome: log, hit/miss hooks, damage, defeat.
+ *  Returns true if the game ended. */
+function finishAttack(state: GameState, pa: PendingAttack, events: GameEvent[]): boolean {
+  const me = pa.attacker;
+  const foe = pa.defender;
+  const attacker = { ...state.warriors[me], damage: pa.baseDamage };
+  const r = judge(pa.attackerDice, pa.defenderDice, pa.gridMod, attacker, state.warriors[foe], state.rng, attackRollBonus(state, me, pa.weapon));
+  state.rng = r.rng;
+  Hooks.resolveHooks(state, "afterAttackRoll", { attacker: me, defender: foe, result: r.result });
+  const weaponSlot = pa.weapon ? state.cards[me].support.find((s) => s.card.id === pa.weapon) : undefined;
+  // Logged as soon as the dice are resolved, so abilities it triggers are logged after it.
+  events.push({
+    type: "attacked",
+    attacker: me,
+    defender: foe,
+    attackerRoll: r.result.attackerRoll,
+    defenderRoll: r.result.defenderRoll,
+    gridMod: r.result.gridMod,
+    rollBonus: r.result.rollBonus,
+    attackerTotal: r.result.attackerTotal,
+    hit: r.result.hit,
+    crit: r.result.crit,
+    damage: r.result.damage,
+    tiebreak: r.result.tiebreak,
+    weapon: weaponSlot ? { id: weaponSlot.card.id, name: weaponSlot.card.name } : null,
+  });
+  const attackKind = pa.weapon ? "weapon" : "basic";
+  Hooks.resolveHooks(state, r.result.hit ? "onHit" : "onMiss", { attacker: me, defender: foe, result: r.result, events, attackKind });
+  if (r.result.hit && r.result.crit) {
+    Hooks.resolveHooks(state, "onCriticalHit", { attacker: me, defender: foe, result: r.result });
+  }
+  Hooks.resolveHooks(state, "afterDefense", { attacker: me, defender: foe, result: r.result });
+  if (r.result.hit) {
+    state.warriors[foe].life -= r.result.damage;
+    Hooks.resolveHooks(state, "onDamageDealt", { attacker: me, defender: foe, result: r.result, events, attackKind });
+  }
+  return endIfDefeated(state, events);
+}
+
+/** While an optional re-roll is pending: REROLL a die, or KEEP the roll; then finish the attack. */
+function applyReroll(prev: GameState, action: Action): ApplyResult {
+  if (prev.pending?.kind !== "reroll") return { state: prev, events: [] };
+  if (action.type !== "KEEP" && !(action.type === "REROLL" && (action.die === 0 || action.die === 1))) {
+    return { state: prev, events: [] };
+  }
+  const state: GameState = structuredClone(prev);
+  const events: GameEvent[] = [];
+  const pending = state.pending as PendingReroll;
+  const pa = pending.attack;
+  state.pending = null;
+  if (action.type === "REROLL") {
+    const old = pa.attackerDice[action.die];
+    const roll = rollDie(state.rng);
+    state.rng = roll.state;
+    pa.attackerDice[action.die] = roll.die;
+    events.push({ type: "rerolled", player: pa.attacker, die: action.die, from: old, to: roll.die, cardName: pending.cardName, ability: pending.ability });
+    const info = { attacker: pa.attacker, defender: pa.defender, attackKind: pa.weapon ? ("weapon" as const) : ("basic" as const) };
+    resolveReroll(state, pa.attacker, pending, roll.die === old, events, info);
+    if (endIfDefeated(state, events)) return { state, events };
+  }
+  if (finishAttack(state, pa, events)) return { state, events };
+  if (state.actionsRemaining <= 0) endTurn(state, events);
+  return { state, events };
+}
+
 /** Apply one action for the current player. Illegal actions are no-ops
  *  (unchanged state, empty event list). */
 export function applyAction(prev: GameState, action: Action): ApplyResult {
   if (prev.phase !== "playing") return { state: prev, events: [] };
-  if (prev.pending) return applyDiscard(prev, action);
+  if (prev.pending?.kind === "discard") return applyDiscard(prev, action);
+  if (prev.pending?.kind === "reroll") return applyReroll(prev, action);
   const state: GameState = structuredClone(prev);
   const events: GameEvent[] = [];
   const me = state.currentPlayer;
@@ -320,7 +391,9 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
 
   switch (action.type) {
     case "DISCARD":
-      return { state: prev, events: [] }; // only meaningful while a restriction is pending
+    case "REROLL":
+    case "KEEP":
+      return { state: prev, events: [] }; // only meaningful while that decision is pending
     case "ABILITY": {
       if (state.actionsRemaining < 1) return { state: prev, events: [] };
       const params = action.to && action.facing ? { to: action.to, facing: action.facing } : undefined;
@@ -359,51 +432,37 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
     }
     case "ATTACK": {
       if (state.actionsRemaining < 1) return { state: prev, events: [] };
-      // legality (defender in grid) is checked inside resolveAttack; peek first
-      // so an illegal attack is a true no-op (no hook noise, no RNG burn).
+      // Legality (defender in the attacking grid) is checked before anything happens, so an illegal
+      // attack is a true no-op (no hook noise, no RNG burn).
       const attacker = armedAttacker(state, me, action.weapon);
       if (!attacker) return { state: prev, events: [] };
-      const pre = resolveAttack(attacker, state.warriors[foe], state.rng, state.arenaSize, attackRollBonus(state, me, action.weapon));
-      if (!pre.result.legal) return { state: prev, events: [] };
-      const weaponSlot = action.weapon
-        ? state.cards[me].support.find((s) => s.card.id === action.weapon)
-        : undefined;
+      const gridMod = modifierAt(attacker.attackGrid, attacker.position, attacker.facing, state.warriors[foe].position, state.arenaSize);
+      if (gridMod === null) return { state: prev, events: [] };
       if (action.weapon) state.weaponsUsed.push(action.weapon);
 
       Hooks.resolveHooks(state, "beforeAttackRoll", { attacker: me, defender: foe });
-      const r = pre;
-      Hooks.resolveHooks(state, "afterAttackRoll", { attacker: me, defender: foe, result: r.result });
-      state.rng = r.rng;
+      const a = roll2d6(state.rng);
+      const d = roll2d6(a.state);
+      state.rng = d.state;
       state.actionsRemaining -= 1;
-      // Logged as soon as the dice are resolved, so abilities it triggers are logged after it.
-      events.push({
-        type: "attacked",
+      const attack: PendingAttack = {
         attacker: me,
         defender: foe,
-        attackerRoll: r.result.attackerRoll,
-        defenderRoll: r.result.defenderRoll,
-        gridMod: r.result.gridMod,
-        rollBonus: r.result.rollBonus,
-        attackerTotal: r.result.attackerTotal,
-        hit: r.result.hit,
-        crit: r.result.crit,
-        damage: r.result.damage,
-        tiebreak: r.result.tiebreak,
-        weapon: weaponSlot ? { id: weaponSlot.card.id, name: weaponSlot.card.name } : null,
-      });
-
-      const attackKind = action.weapon ? "weapon" : "basic";
-      Hooks.resolveHooks(state, r.result.hit ? "onHit" : "onMiss", { attacker: me, defender: foe, result: r.result, events, attackKind });
-      if (r.result.hit && r.result.crit) {
-        Hooks.resolveHooks(state, "onCriticalHit", { attacker: me, defender: foe, result: r.result });
+        weapon: action.weapon,
+        baseDamage: attacker.damage,
+        gridMod,
+        attackerDice: a.dice,
+        defenderDice: d.dice,
+      };
+      // An optional re-roll ability (e.g. Subedei) is offered once both rolls are seen (p12).
+      const info = { attacker: me, defender: foe, attackKind: action.weapon ? ("weapon" as const) : ("basic" as const) };
+      const rr = usableReroll(state, me, info);
+      if (rr) {
+        state.pending = { kind: "reroll", attack, ...rr };
+        events.push({ type: "attackRolled", attacker: me, defender: foe, attackerDice: a.dice, defenderDice: d.dice, cardName: rr.cardName, ability: rr.ability });
+        return { state, events };
       }
-      Hooks.resolveHooks(state, "afterDefense", { attacker: me, defender: foe, result: r.result });
-
-      if (r.result.hit) {
-        state.warriors[foe].life -= r.result.damage;
-        Hooks.resolveHooks(state, "onDamageDealt", { attacker: me, defender: foe, result: r.result, events, attackKind });
-      }
-      if (endIfDefeated(state, events)) return { state, events };
+      if (finishAttack(state, attack, events)) return { state, events };
       break;
     }
   }

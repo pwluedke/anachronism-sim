@@ -105,15 +105,16 @@ describe("card restrictions", () => {
 
   it("when both players are over a limit, they resolve in initiative order", () => {
     const { state } = untilPending(deck("Canute the Great"), deck("Raibeart Brus"), 3);
-    expect(state.pending!.queue).toEqual(state.turnOrder.filter((p) => violations(state, p).length > 0));
-    expect(state.pending!.queue).toHaveLength(2);
+    const queue = state.pending?.kind === "discard" ? state.pending.queue : [];
+    expect(queue).toEqual(state.turnOrder.filter((p) => violations(state, p).length > 0));
+    expect(queue).toHaveLength(2);
     let s: GameState = state;
     const order: number[] = [];
     while (s.pending) {
       order.push(s.currentPlayer);
       s = applyAction(s, getLegalActions(s)[0]).state;
     }
-    expect(order).toEqual(state.pending!.queue);
+    expect(order).toEqual(queue);
   });
 
   it("the bot resolves its own discards and the game finishes", () => {

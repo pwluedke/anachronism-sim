@@ -14,7 +14,15 @@ export type ConditionDef =
   /** "while you have an <type> in play" */
   | { kind: "hasInPlay"; cardType: SupportType }
   /** "if you lose initiative" (this round) */
-  | { kind: "lostInitiative" };
+  | { kind: "lostInitiative" }
+  /** "while you have lower life than the attacking warrior" */
+  | { kind: "lowerLifeThanAttacker" }
+  /** "if you have a face-up shield card" (an in-play card with the Shield trait) */
+  | { kind: "haveShield" }
+  /** "if the defender has no face-up armor card" */
+  | { kind: "defenderNoArmor" }
+  /** "by a basic attack" / "with a weapon" */
+  | { kind: "attackKind"; is: AttackKind };
 
 /** Facts about the attack a condition may need (absent outside attacks). */
 export interface CondQuery {
@@ -23,13 +31,21 @@ export interface CondQuery {
   attackKind?: AttackKind;
 }
 
-export function holds(cond: ConditionDef | undefined, state: GameState, owner: PlayerId, _q: CondQuery = {}): boolean {
+export function holds(cond: ConditionDef | undefined, state: GameState, owner: PlayerId, q: CondQuery = {}): boolean {
   if (!cond) return true;
   switch (cond.kind) {
     case "hasInPlay":
       return inPlay(state, owner).some((s) => s.card.type === cond.cardType);
     case "lostInitiative":
       return state.initiative !== null && state.initiative !== owner;
+    case "lowerLifeThanAttacker":
+      return q.attacker !== undefined && q.attacker !== owner && state.warriors[owner].life < state.warriors[q.attacker].life;
+    case "haveShield":
+      return inPlay(state, owner).some((s) => s.card.traits.some((t) => t.toLowerCase() === "shield"));
+    case "defenderNoArmor":
+      return q.defender !== undefined && !inPlay(state, q.defender).some((s) => s.card.type === "armor");
+    case "attackKind":
+      return q.attackKind === cond.is;
   }
 }
 
@@ -39,6 +55,14 @@ export function describeCondition(cond: ConditionDef): string {
       return `while ${cond.cardType === "inspiration" ? "an" : "a"} ${cond.cardType} is in play`;
     case "lostInitiative":
       return "on losing initiative";
+    case "lowerLifeThanAttacker":
+      return "while behind the attacker on life";
+    case "haveShield":
+      return "with a shield in play";
+    case "defenderNoArmor":
+      return "if the defender has no armor in play";
+    case "attackKind":
+      return cond.is === "basic" ? "by a basic attack" : "by a weapon attack";
   }
 }
 

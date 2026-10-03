@@ -13,7 +13,13 @@ export function getLegalActions(state: GameState): Action[] {
   if (state.phase !== "playing") return [];
   const me = state.currentPlayer;
   // A pending card restriction: the only legal actions are discards of offending cards.
-  if (state.pending) return offendingCards(state, me).map((s) => ({ type: "DISCARD", card: s.card.id }));
+  if (state.pending?.kind === "discard") return offendingCards(state, me).map((s) => ({ type: "DISCARD", card: s.card.id }));
+  // A pending optional re-roll: re-roll either die (one choice if they match), or keep the roll.
+  if (state.pending?.kind === "reroll") {
+    const [d0, d1] = state.pending.attack.attackerDice;
+    const rerolls: Action[] = d0 === d1 ? [{ type: "REROLL", die: 0 }] : [{ type: "REROLL", die: 0 }, { type: "REROLL", die: 1 }];
+    return [...rerolls, { type: "KEEP" }];
+  }
   const w = state.warriors[me];
   const foe = state.warriors[me === 0 ? 1 : 0];
   const acts: Action[] = [];

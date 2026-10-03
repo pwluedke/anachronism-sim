@@ -77,7 +77,7 @@ function tryFire(ctx: FireContext, ability: RuntimeAbility): boolean {
  */
 export function fireTrigger(
   state: GameState,
-  trigger: Exclude<Trigger, "continuous" | "action">,
+  trigger: Exclude<Trigger, "continuous" | "action" | "attackRoll">,
   players: readonly PlayerId[],
   events: GameEvent[],
   info: AttackInfo = {},
@@ -198,6 +198,36 @@ export function useActionAbility(
   return true;
 }
 
+export interface RerollRef {
+  cardId: string;
+  cardName: string;
+  ability: string;
+}
+
+/** An optional re-roll ability attacker p could use on this attack roll right now, if any. */
+export function usableReroll(state: GameState, p: PlayerId, info: AttackInfo): RerollRef | null {
+  for (const src of sources(state, p)) {
+    for (const a of src.abilities) {
+      if (a.trigger !== "attackRoll" || !a.reroll || isUsedUp(state, src.cardId, a)) continue;
+      if (a.canFire && !a.canFire(context(state, p, src, a, [], info))) continue;
+      return { cardId: src.cardId, cardName: src.cardName, ability: a.name };
+    }
+  }
+  return null;
+}
+
+/** Use the re-roll: records its use and, if the new die equals the old, runs its follow-up. */
+export function resolveReroll(state: GameState, p: PlayerId, ref: RerollRef, same: boolean, events: GameEvent[], info: AttackInfo): void {
+  const src = sources(state, p).find((s) => s.cardId === ref.cardId);
+  const a = src?.abilities.find((x) => x.name === ref.ability && x.reroll);
+  if (!src || !a) return;
+  if (a.oncePerRound) state.abilityUses.push(useKey(ref.cardId, a));
+  if (same && a.reroll!.onSame) {
+    const effect = a.reroll!.onSame(context(state, p, src, a, events, info));
+    events.push({ type: "abilityFired", player: p, cardId: src.cardId, cardName: src.cardName, ability: a.name, effect });
+  }
+}
+
 // ---- Display helpers (read-only) -----------------------------------------------------------------
 
 export interface AbilityStatus {
@@ -213,6 +243,7 @@ export interface AbilityStatus {
 
 const WHEN: Record<Exclude<Trigger, "continuous">, string> = {
   gameStart: "at the start of the game",
+  attackRoll: "optional, when making an attack roll",
   hit: "after being hit",
   missed: "after being missed",
   reveal: "when revealed",

@@ -13,6 +13,7 @@ export type Trigger =
   | "damageDealt" // the attacker, after their attack dealt damage
   | "hit" // the defender, after they were hit and took damage
   | "missed" // the defender, after an attack against them missed
+  | "attackRoll" // the attacker, once both attack dice are rolled (optional re-rolls)
   | "action";
 
 /** What kind of attack an attack-related trigger is about. */
@@ -81,6 +82,9 @@ export interface RuntimeAbility {
   fire?(ctx: FireContext, params?: AbilityParams): string;
   /** Action abilities that need a choice (e.g. a move): every legal choice right now. */
   options?(ctx: FireContext): AbilityParams[];
+  /** attackRoll abilities: an OPTIONAL re-roll of one attack die; `onSame` runs when the new die
+   *  equals the old one. Offered to the attacker as a choice, never applied automatically. */
+  reroll?: { onSame?(ctx: FireContext): string };
   /** Continuous abilities: this ability's current contribution to a modifier. */
   modify?(kind: ModKind, q: ModQuery): number;
   /** Continuous abilities: is the ability currently in effect, and what it's doing (for display)? */

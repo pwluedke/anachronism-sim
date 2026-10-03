@@ -96,7 +96,7 @@ export interface GameState {
    * A card restriction to resolve before the round's first turn (rulebook p14): each queued player,
    * in initiative order, discards offending in-play cards until legal. currentPlayer is queue[0].
    */
-  pending: { kind: "discard"; queue: PlayerId[] } | null;
+  pending: PendingDiscard | PendingReroll | null;
 
   // ---- Card abilities --------------------------------------------------------------------------
   /** Timed effects abilities created (e.g. "+1 to attack rolls this round"). */
@@ -107,8 +107,34 @@ export interface GameState {
   revealedThisRound: [string | null, string | null];
 }
 
+/** An attack whose dice are rolled but not yet judged (an optional re-roll is being decided). */
+export interface PendingAttack {
+  attacker: PlayerId;
+  defender: PlayerId;
+  /** The weapon used, or undefined for a basic attack. */
+  weapon?: string;
+  /** Base damage of the attack (the weapon's, or the warrior's for a basic attack). */
+  baseDamage: number;
+  gridMod: number;
+  attackerDice: [number, number];
+  defenderDice: [number, number];
+}
+export interface PendingDiscard {
+  kind: "discard";
+  queue: PlayerId[];
+}
+/** The attacker may use an optional re-roll ability on this attack roll (rulebook p12: decided
+ *  after both rolls are seen). currentPlayer is the attacker. */
+export interface PendingReroll {
+  kind: "reroll";
+  attack: PendingAttack;
+  cardId: string;
+  cardName: string;
+  ability: string;
+}
+
 // ---- Actions -------------------------------------------------------------
-export type ActionType = "MOVE" | "ROTATE" | "ATTACK" | "PASS" | "DISCARD" | "ABILITY";
+export type ActionType = Action["type"];
 
 export interface MoveAction {
   type: "MOVE";
@@ -142,7 +168,24 @@ export interface AbilityAction {
   to?: Position;
   facing?: Facing;
 }
-export type Action = MoveAction | RotateAction | AttackAction | PassAction | DiscardAction | AbilityAction;
+/** While a re-roll is pending: re-roll one die of the attack roll (0 or 1)… */
+export interface RerollAction {
+  type: "REROLL";
+  die: 0 | 1;
+}
+/** …or keep the roll as it is (the ability is optional). */
+export interface KeepAction {
+  type: "KEEP";
+}
+export type Action =
+  | MoveAction
+  | RotateAction
+  | AttackAction
+  | PassAction
+  | DiscardAction
+  | AbilityAction
+  | RerollAction
+  | KeepAction;
 
 // ---- Events (for UI / replay / bots) ------------------------------------
 export interface MovedEvent {
@@ -241,6 +284,26 @@ export interface AbilityFiredEvent {
   /** What happened, e.g. "gains 1 life", "+1 to attack rolls this round". */
   effect: string;
 }
+/** Both attack dice are rolled and an optional re-roll is on offer to the attacker. */
+export interface AttackRolledEvent {
+  type: "attackRolled";
+  attacker: PlayerId;
+  defender: PlayerId;
+  attackerDice: [number, number];
+  defenderDice: [number, number];
+  /** The ability offering the re-roll. */
+  cardName: string;
+  ability: string;
+}
+export interface RerolledEvent {
+  type: "rerolled";
+  player: PlayerId;
+  die: 0 | 1;
+  from: number;
+  to: number;
+  cardName: string;
+  ability: string;
+}
 export interface PassedEvent {
   type: "passed";
   player: PlayerId;
@@ -254,6 +317,8 @@ export type GameEvent =
   | PassedEvent
   | RevealedEvent
   | AbilityFiredEvent
+  | AttackRolledEvent
+  | RerolledEvent
   | DiscardRequiredEvent
   | DiscardedEvent
   | TurnStartedEvent

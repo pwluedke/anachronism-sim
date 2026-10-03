@@ -53,14 +53,18 @@ function sampleRngs(seed: number, n: number): number[] {
   return out;
 }
 
-const ORDER: Record<Action["type"], number> = { DISCARD: 0, ATTACK: 0, MOVE: 1, ABILITY: 2, ROTATE: 2, PASS: 3 };
+const ORDER: Record<Action["type"], number> = { DISCARD: 0, REROLL: 0, KEEP: 0, ATTACK: 0, MOVE: 1, ABILITY: 2, ROTATE: 2, PASS: 3 };
 
-/** Distinct ATTACK outcomes and their sampled probabilities. */
+/** Actions whose result depends on dice the search must not peek at. */
+const isChance = (a: Action) => a.type === "ATTACK" || a.type === "REROLL";
+
+/** Distinct outcomes of a dice action (attack / re-roll) and their sampled probabilities. */
 function attackOutcomes(state: GameState, attack: Action, ctx: Ctx): { state: GameState; p: number }[] {
   const groups = new Map<string, { state: GameState; n: number }>();
   for (const rng of ctx.sampleRngs) {
     const next = applyAction({ ...state, rng }, attack).state;
-    const key = `${next.warriors[0].life}|${next.warriors[1].life}`;
+    // Outcomes differ by life totals and, mid-attack, by the rolled dice awaiting a re-roll choice.
+    const key = `${next.warriors[0].life}|${next.warriors[1].life}|${next.phase}|${JSON.stringify(next.pending)}`;
     const g = groups.get(key);
     if (g) g.n += 1;
     else groups.set(key, { state: next, n: 1 });
@@ -77,7 +81,7 @@ function actionValue(
   beta: number,
   ctx: Ctx,
 ): number {
-  if (action.type === "ATTACK") {
+  if (isChance(action)) {
     let v = 0;
     for (const o of attackOutcomes(state, action, ctx)) v += o.p * value(o.state, depth - 1, -INF, INF, ctx);
     return v;

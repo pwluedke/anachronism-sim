@@ -77,6 +77,20 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
       },
     };
   }
+  const reroll = a.effects.find((e) => e.kind === "reroll");
+  if (reroll || a.trigger === "attackRoll") {
+    if (!reroll || a.trigger !== "attackRoll" || a.effects.length !== 1 || reroll.kind !== "reroll") {
+      throw new Error(`${a.name}: a re-roll is the single effect of an attackRoll ability`);
+    }
+    const onSame = reroll.ifSame;
+    return {
+      name: a.name,
+      trigger: "attackRoll",
+      oncePerRound: a.usageLimit === "oncePerRound",
+      canFire: (ctx) => holds(a.condition, ctx.state, ctx.owner, { attacker: ctx.attacker, defender: ctx.defender, attackKind: ctx.attackKind }),
+      reroll: { onSame: onSame?.length ? (ctx) => onSame.map((e) => applyEffect(ctx, e, undefined)).join(", ") : undefined },
+    };
+  }
   for (const e of a.effects) {
     if (e.kind === "weaponDamage") throw new Error(`${a.name}: weaponDamage is only a continuous modifier`);
     if (e.kind === "move" && a.trigger !== "action") throw new Error(`${a.name}: a move is an Action ability`);
