@@ -200,10 +200,29 @@
   font-size: var(--fs-sm);
 }
 
-/* ---- controls ---- */
-.menu {
-  align-self: center;
-  max-width: 760px;
+/* ---- action bar ---- */
+.action-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.action-prompt {
+  font-style: italic;
+  color: var(--ink-700);
+  text-align: center;
+  min-height: 1.4em;
+}
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn-attack:not(:disabled) {
+  color: var(--hit-ink);
+  border-color: var(--hit-ink);
 }
 
 /* ---- event log ---- */
@@ -237,21 +256,6 @@
 .logline.gameEnded {
   color: var(--hit-ink);
   font-weight: 600;
-}
-
-/* ---- action menu ---- */
-.menu-head {
-  font-size: var(--fs-sm);
-  margin-bottom: 6px;
-}
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.btn.attack {
-  color: var(--hit-ink);
-  border-color: var(--hit-ink);
 }
 
 /* ---- map arena ---- */
@@ -443,4 +447,114 @@
 }
 .pp-helm {
   fill: var(--ink-700);
+}
+
+/* ---- board interaction ---- */
+.map-grid {
+  position: relative;
+}
+.map-cell.reachable {
+  cursor: pointer;
+  background-image: linear-gradient(var(--reach-wash), var(--reach-wash));
+  box-shadow: inset 0 0 0 2px var(--gold-500);
+}
+.map-cell.reachable:hover {
+  background-image: linear-gradient(var(--reach-wash), var(--reach-wash)), linear-gradient(var(--reach-wash), var(--reach-wash));
+}
+.map-cell.in-preview {
+  background-color: var(--preview-wash);
+  box-shadow: inset 0 0 0 1.5px var(--p1-ink);
+}
+.map-cell.destination {
+  box-shadow: inset 0 0 0 3px var(--gold-600);
+}
+.map-path {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.map-path-line {
+  stroke: var(--ink-900);
+  stroke-width: 2.5;
+  stroke-dasharray: 6 5;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.map-path-dot {
+  fill: var(--ink-900);
+}
+
+button.token {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+button.token.targetable .token-portrait {
+  outline: 2px dashed var(--hit-ink);
+  outline-offset: 9px;
+}
+button.token:focus-visible {
+  outline: 2px solid var(--gold-500);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+.carets {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.caret {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.caret-N {
+  top: -2px;
+  left: calc(50% - 15px);
+}
+.caret-S {
+  bottom: -2px;
+  left: calc(50% - 15px);
+  transform: rotate(180deg);
+}
+.caret-E {
+  right: -2px;
+  top: calc(50% - 15px);
+  transform: rotate(90deg);
+}
+.caret-W {
+  left: -2px;
+  top: calc(50% - 15px);
+  transform: rotate(270deg);
+}
+.caret-tip {
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 13px solid var(--ink-500);
+  opacity: 0.75;
+}
+.caret:hover .caret-tip,
+.caret:focus-visible .caret-tip {
+  border-bottom-color: var(--ink-900);
+  opacity: 1;
+}
+.caret.chosen .caret-tip {
+  border-bottom-color: var(--gold-600);
+  opacity: 1;
+}
+.caret:focus-visible {
+  outline: none;
 }

@@ -1,23 +1,6 @@
 // Presentation-only helpers (labels). No game logic — these never decide
 // legality or outcomes, they only turn engine data into readable strings.
-import type { Action, GameState, GameEvent, Winner } from "@engine";
-
-const DIR: Record<string, string> = { N: "North", E: "East", S: "South", W: "West" };
-
-export function actionLabel(a: Action, state: GameState): string {
-  switch (a.type) {
-    case "MOVE":
-      return a.facing ? `Move ${DIR[a.dir]}, face ${DIR[a.facing]}` : `Move ${DIR[a.dir]}`;
-    case "ROTATE":
-      return `Rotate ${DIR[a.facing]}`;
-    case "ATTACK": {
-      const foe = state.warriors[state.currentPlayer === 0 ? 1 : 0];
-      return `Attack ${foe.name}`;
-    }
-    case "PASS":
-      return "Pass";
-  }
-}
+import type { GameEvent, Winner } from "@engine";
 
 const REASON: Record<string, string> = {
   kill: "by defeat",
