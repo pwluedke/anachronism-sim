@@ -52,7 +52,7 @@ export function ActionBar({ prompt, notice, thinking, enabled, onAttack, onAttac
         <kbd>←</kbd>
         <kbd>↑</kbd>
         <kbd>↓</kbd>
-        <kbd>→</kbd> choose a step, then a facing · <kbd>R</kbd> turn in place
+        <kbd>→</kbd> step (or face, if blocked), then a facing · <kbd>R</kbd> turn in place
       </div>
     </section>
   );

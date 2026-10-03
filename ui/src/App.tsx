@@ -100,19 +100,21 @@ export function App() {
       let handled = true;
       if (k in ARROW) {
         const f = ARROW[k];
+        setHover(null);
         if (sel.kind === "none") {
           const dest = [...model.reach.entries()].find(([, dir]) => dir === f);
           if (dest) {
             const offered = model.moveFacings(f);
-            setHover(null);
             setSel({ kind: "move", dir: f, facing: offered.includes(active.facing) ? active.facing : null });
+          } else if (model.rotateFacings.length) {
+            // Can't step that way: open turn-in-place instead, previewing that facing
+            // (the current facing previews the current pattern; nothing happens until Confirm).
+            setSel({ kind: "rotate", facing: model.rotateFacings.includes(f) ? f : null });
           }
         } else {
           const offered = sel.kind === "move" ? model.moveFacings(sel.dir) : model.rotateFacings;
-          if (offered.includes(f)) {
-            setHover(null);
-            setSel({ ...sel, facing: f });
-          }
+          if (offered.includes(f)) setSel({ ...sel, facing: f });
+          else if (sel.kind === "rotate" && f === active.facing) setSel({ ...sel, facing: null });
         }
       } else if (k === "Enter") {
         if (confirm) dispatch(confirm);
@@ -153,7 +155,9 @@ export function App() {
       ? `${name} marches to ${where}, facing ${FACING_NAME[sel.facing]}. Confirm, or pick another facing.`
       : `Choose ${name}'s facing at ${where}.`;
   } else if (playing && sel.kind === "rotate") {
-    prompt = sel.facing ? `${name} turns ${FACING_NAME[sel.facing]}. Confirm, or pick another facing.` : `Choose a new facing for ${name}.`;
+    prompt = sel.facing
+      ? `${name} turns ${FACING_NAME[sel.facing]}. Confirm, or pick another facing.`
+      : `${name} faces ${FACING_NAME[active.facing]} (current). Pick a new facing, or Esc.`;
   } else if (playing) {
     prompt = `${name}: pick a destination, click ${name} to turn in place${model?.attack ? ", or attack" : ""}.`;
   }
