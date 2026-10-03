@@ -43,10 +43,23 @@ export function App() {
   const model = useMemo(() => (humanTurn ? buildModel(state) : null), [state, humanTurn]);
   const [sel, setSel] = useState<Selection>(NO_SELECTION);
   const [hover, setHover] = useState<Facing | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
   useEffect(() => {
     setSel(NO_SELECTION);
     setHover(null);
+    setNotice(null);
   }, [state]);
+  useEffect(() => {
+    if (!notice) return;
+    const t = setTimeout(() => setNotice(null), 2500);
+    return () => clearTimeout(t);
+  }, [notice]);
+
+  // In range <=> the engine offers an ATTACK. Never computed here.
+  const tryAttack = () => {
+    if (model?.attack) dispatch(model.attack);
+    else if (model) setNotice("No enemy in range — they must stand in a marked cell of your attack grid.");
+  };
 
   const active = state.warriors[state.currentPlayer];
   const target = model ? selectionCell(model, sel) : null;
@@ -102,7 +115,7 @@ export function App() {
         setSel(NO_SELECTION);
         setHover(null);
       } else if (k === "a" || k === "A") {
-        if (model.attack) dispatch(model.attack);
+        tryAttack();
       } else if (k === "e" || k === "E") {
         if (model.pass) dispatch(model.pass);
       } else if (k === "r" || k === "R") {
@@ -115,7 +128,7 @@ export function App() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [model, sel, confirm, active, dispatch]);
+  }, [model, sel, confirm, active, dispatch, tryAttack]);
 
   const onOwnTokenClick = () => {
     if (!model || model.rotateFacings.length === 0) return;
@@ -125,7 +138,9 @@ export function App() {
 
   const name = CARDS[state.currentPlayer].name;
   let prompt = "The battle is over.";
-  if (botTurn && mode.kind === "ai") {
+  if (notice) {
+    prompt = notice;
+  } else if (botTurn && mode.kind === "ai") {
     prompt = `${name} (computer, ${mode.difficulty}) is considering…`;
   } else if (playing && target && sel.kind === "move") {
     const where = `${COLS[target.col]}${ROWS[target.row]}`;
@@ -193,9 +208,11 @@ export function App() {
           />
           <ActionBar
             prompt={prompt}
+            notice={!!notice}
             thinking={botTurn}
             enabled={humanTurn}
-            attack={model?.attack}
+            onAttack={tryAttack}
+            inRange={!!model?.attack}
             pass={model?.pass}
             confirm={confirm}
             canCancel={sel.kind !== "none"}

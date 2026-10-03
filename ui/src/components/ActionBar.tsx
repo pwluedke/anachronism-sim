@@ -4,9 +4,13 @@ import type { Action } from "@engine";
 
 export interface ActionBarProps {
   prompt: string;
+  notice?: boolean;
   thinking?: boolean;
   enabled: boolean;
-  attack?: Action;
+  /** Attacks if the engine offers ATTACK; otherwise the parent explains why not. */
+  onAttack: () => void;
+  /** Whether the engine currently offers ATTACK (styling only). */
+  inRange: boolean;
   pass?: Action;
   confirm?: Action;
   canCancel: boolean;
@@ -14,14 +18,14 @@ export interface ActionBarProps {
   onCancel: () => void;
 }
 
-export function ActionBar({ prompt, thinking, enabled, attack, pass, confirm, canCancel, onAct, onCancel }: ActionBarProps) {
+export function ActionBar({ prompt, notice, thinking, enabled, onAttack, inRange, pass, confirm, canCancel, onAct, onCancel }: ActionBarProps) {
   return (
     <section className="action-bar" aria-label="actions">
-      <div className={`action-prompt${thinking ? " thinking" : ""}`} aria-live="polite">
+      <div className={`action-prompt${thinking ? " thinking" : ""}${notice ? " notice" : ""}`} aria-live="polite">
         {prompt}
       </div>
       <div className="action-buttons">
-        <button className="btn btn-attack" disabled={!enabled || !attack} onClick={() => attack && onAct(attack)}>
+        <button className={`btn btn-attack${inRange ? " in-range" : ""}`} disabled={!enabled} onClick={onAttack}>
           Attack <kbd>A</kbd>
         </button>
         <button className="btn" disabled={!enabled || !canCancel} onClick={onCancel}>

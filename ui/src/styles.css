@@ -288,7 +288,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.btn-attack:not(:disabled) {
+.btn-attack.in-range:not(:disabled) {
   color: var(--hit-ink);
   border-color: var(--hit-ink);
 }
@@ -811,4 +811,10 @@ button.token:focus-visible {
 .map-cell.occupied-in-grid .token-portrait {
   outline: 2px solid var(--hit-ink);
   outline-offset: 3px;
+}
+
+.action-prompt.notice {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--hit-ink);
 }
