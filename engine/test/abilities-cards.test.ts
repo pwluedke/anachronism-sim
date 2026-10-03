@@ -161,3 +161,14 @@ describe("first-batch card abilities", () => {
     expect(t.effects.filter((e) => e.kind === "speed").reduce((n, e) => n + e.amount, 0)).toBe(2);
   });
 });
+
+describe("ability status for display", () => {
+  it("a Reveal ability reports that it fired, this round and afterwards", async () => {
+    const { abilityStatus } = await import("../src/abilities/runtime");
+    const MARC = deck("Marcus Claudius Marcellus");
+    const s1 = init(MARC, ALEX, 1).state;
+    expect(abilityStatus(s1, 0)).toContainEqual(expect.objectContaining({ cardName: "Apollo", status: "used", detail: "fired on reveal this round" }));
+    const s2 = passRound(s1).state;
+    expect(abilityStatus(s2, 0)).toContainEqual(expect.objectContaining({ cardName: "Apollo", status: "used", detail: "fired when revealed" }));
+  });
+});

@@ -176,6 +176,10 @@ export function abilityStatus(state: GameState, p: PlayerId): AbilityStatus[] {
         out.push({ ...base, status: on ? "active" : "dormant", detail: on ? `${v >= 0 ? "+" : ""}${v} to attack rolls` : "condition not met" });
       } else if (isUsedUp(state, src.cardId, a)) {
         out.push({ ...base, status: "used", detail: "used this round" });
+      } else if (a.trigger === "reveal") {
+        // A Reveal ability fires once, when its card is turned face up.
+        const now = state.revealedThisRound[p] === src.cardId;
+        out.push({ ...base, status: "used", detail: now ? "fired on reveal this round" : "fired when revealed" });
       } else {
         out.push({ ...base, status: "ready", detail: WHEN[a.trigger] + (a.oncePerRound ? " (once per round)" : "") });
       }

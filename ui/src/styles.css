@@ -96,6 +96,7 @@
 .stat-panel {
   flex: 1 1 360px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 18px;
   padding: 10px 16px;
@@ -1023,4 +1024,72 @@ button.card-face.discardable:focus-visible {
 .btn-ability:not(:disabled) {
   color: var(--gold-600);
   border-color: var(--gold-500);
+}
+
+/* ---- ability list (stat panel) ---- */
+.ability-list {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--ink-300);
+}
+.ability-row {
+  padding-left: 8px;
+  border-left: 3px solid var(--ink-300);
+}
+.ability-row.ability-active {
+  border-left-color: var(--gold-500);
+}
+.ability-row.ability-off,
+.ability-row.ability-dormant {
+  opacity: 0.7;
+}
+.ability-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.ability-name {
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.03em;
+}
+.ability-kind {
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  color: var(--hit-ink);
+}
+.ability-card {
+  font-size: var(--fs-xs);
+  color: var(--ink-500);
+}
+.ability-status {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  padding: 0 7px;
+  border-radius: 9px;
+  border: 1px solid var(--ink-300);
+  color: var(--ink-500);
+}
+.status-active {
+  border-color: var(--gold-500);
+  color: var(--gold-600);
+}
+.status-ready {
+  border-color: var(--ink-500);
+  color: var(--ink-900);
+}
+.ability-text {
+  font-size: var(--fs-sm);
+  line-height: 1.35;
+  color: var(--ink-900);
+}
+.ability-detail {
+  font-size: var(--fs-xs);
+  font-style: italic;
+  color: var(--ink-500);
 }

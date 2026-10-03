@@ -28,7 +28,6 @@ function StatPanel({
         </span>
         <h2>{card.name}</h2>
         {thinking && <span className="thinking-note">considering…</span>}
-        <AbilityChips state={state} pid={pid} texts={abilityTexts(state, pid, card)} />
       </div>
       <figure className="stat-pattern">
         <GridDiagram grid={card.grid} name={card.name} />
@@ -55,16 +54,9 @@ function StatPanel({
           <dd>{w.damage}</dd>
         </div>
       </dl>
+      <AbilityChips state={state} pid={pid} warrior={card} />
     </div>
   );
-}
-
-/** Printed ability text by "cardId#ability", for tooltips. */
-function abilityTexts(state: GameState, pid: PlayerId, card: CardData): Record<string, string> {
-  const out: Record<string, string> = {};
-  for (const a of card.abilities ?? []) out[`${card.id}#${a.name}`] = a.text;
-  for (const s of state.cards[pid].support) for (const a of s.card.abilities) out[`${s.card.id}#${a.name}`] = a.text;
-  return out;
 }
 
 function SupportSlots({
