@@ -9,7 +9,14 @@
 
 import type { GameEvent, GameState, PlayerId } from "../types";
 import { REGISTRY } from "./registry";
-import type { FireContext, RuntimeAbility, Trigger } from "./types";
+import type { AttackKind, FireContext, RuntimeAbility, Trigger } from "./types";
+
+/** Facts about the attack an attack trigger fires for. */
+export interface AttackInfo {
+  attacker?: PlayerId;
+  defender?: PlayerId;
+  attackKind?: AttackKind;
+}
 
 export interface AbilitySource {
   cardId: string;
@@ -42,9 +49,9 @@ function context(
   src: AbilitySource,
   ability: RuntimeAbility,
   events: GameEvent[],
-  attacker?: PlayerId,
+  info: AttackInfo = {},
 ): FireContext {
-  return { state, owner, cardId: src.cardId, cardName: src.cardName, ability: ability.name, events, attacker };
+  return { state, owner, cardId: src.cardId, cardName: src.cardName, ability: ability.name, events, ...info };
 }
 
 /** Fire one ability if it can; records its use and logs it. Returns whether it fired. */
@@ -73,13 +80,13 @@ export function fireTrigger(
   trigger: Exclude<Trigger, "continuous" | "action">,
   players: readonly PlayerId[],
   events: GameEvent[],
-  attacker?: PlayerId,
+  info: AttackInfo = {},
 ): void {
   for (const p of players) {
     for (const src of sources(state, p)) {
       if (trigger === "reveal" && state.revealedThisRound[p] !== src.cardId) continue;
       for (const ability of src.abilities) {
-        if (ability.trigger === trigger) tryFire(context(state, p, src, ability, events, attacker), ability);
+        if (ability.trigger === trigger) tryFire(context(state, p, src, ability, events, info), ability);
       }
     }
   }
@@ -158,6 +165,9 @@ export interface AbilityStatus {
 }
 
 const WHEN: Record<Exclude<Trigger, "continuous">, string> = {
+  gameStart: "at the start of the game",
+  hit: "after being hit",
+  missed: "after being missed",
   reveal: "when revealed",
   roundStart: "at the start of each round",
   damageDealt: "after dealing damage",

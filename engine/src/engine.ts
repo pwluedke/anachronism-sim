@@ -158,6 +158,7 @@ function beginFirstTurn(state: GameState, events: GameEvent[]): void {
   state.weaponsUsed = [];
   Hooks.resolveHooks(state, "onReveal", { round: state.round, events });
   Hooks.resolveHooks(state, "onRoundStart", { round: state.round, events });
+  if (endIfDefeated(state, events)) return;
   state.actionsRemaining = currentWarrior(state).speed + beginTurnEffects(state, state.currentPlayer);
   events.push({
     type: "turnStarted",
@@ -181,6 +182,23 @@ function applyDiscard(prev: GameState, action: Action): ApplyResult {
   if (state.pending!.queue.length) requestDiscard(state, events);
   else beginFirstTurn(state, events);
   return { state, events };
+}
+
+/** End the game if a warrior is at 0 life or below — after an attack, or after ability damage
+ *  (abilities can deal damage outside attacks, e.g. at the start of the game). Returns true if ended. */
+function endIfDefeated(state: GameState, events: GameEvent[]): boolean {
+  if (state.phase !== "playing") return true;
+  const fallen = ([0, 1] as PlayerId[]).filter((p) => state.warriors[p].life <= 0);
+  if (!fallen.length) return false;
+  for (const p of fallen) {
+    Hooks.resolveHooks(state, "onWarriorDefeated", { player: p });
+    events.push({ type: "warriorDefeated", player: p });
+  }
+  const winner: PlayerId | "draw" = fallen.length === 2 ? "draw" : opponentId(fallen[0]);
+  state.winner = winner;
+  state.phase = "ended";
+  events.push({ type: "gameEnded", winner, reason: winner === "draw" ? "draw" : "kill" });
+  return true;
 }
 
 /** Compute and record the end-of-game result (life / experience / draw). */
@@ -284,7 +302,8 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
   };
 
   const events: GameEvent[] = [{ type: "setup", firstPlacer }];
-  Hooks.resolveHooks(state, "onSetup", {});
+  Hooks.resolveHooks(state, "onSetup", { events });
+  if (endIfDefeated(state, events)) return { state, events };
   startRound(state, events);
   return { state, events };
 }
@@ -306,6 +325,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
       if (state.actionsRemaining < 1) return { state: prev, events: [] };
       if (!useActionAbility(state, me, action.card, action.ability, events)) return { state: prev, events: [] };
       state.actionsRemaining -= 1;
+      if (endIfDefeated(state, events)) return { state, events };
       break;
     }
     case "PASS": {
@@ -371,7 +391,8 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
         weapon: weaponSlot ? { id: weaponSlot.card.id, name: weaponSlot.card.name } : null,
       });
 
-      Hooks.resolveHooks(state, r.result.hit ? "onHit" : "onMiss", { attacker: me, defender: foe, result: r.result });
+      const attackKind = action.weapon ? "weapon" : "basic";
+      Hooks.resolveHooks(state, r.result.hit ? "onHit" : "onMiss", { attacker: me, defender: foe, result: r.result, events, attackKind });
       if (r.result.hit && r.result.crit) {
         Hooks.resolveHooks(state, "onCriticalHit", { attacker: me, defender: foe, result: r.result });
       }
@@ -379,16 +400,9 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
 
       if (r.result.hit) {
         state.warriors[foe].life -= r.result.damage;
-        Hooks.resolveHooks(state, "onDamageDealt", { attacker: me, defender: foe, result: r.result, events });
+        Hooks.resolveHooks(state, "onDamageDealt", { attacker: me, defender: foe, result: r.result, events, attackKind });
       }
-      if (state.warriors[foe].life <= 0) {
-        Hooks.resolveHooks(state, "onWarriorDefeated", { player: foe });
-        events.push({ type: "warriorDefeated", player: foe });
-        state.winner = me;
-        state.phase = "ended";
-        events.push({ type: "gameEnded", winner: me, reason: "kill" });
-        return { state, events };
-      }
+      if (endIfDefeated(state, events)) return { state, events };
       break;
     }
   }

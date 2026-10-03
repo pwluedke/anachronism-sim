@@ -5,7 +5,18 @@ import type { GameEvent, GameState, PlayerId } from "../types";
 
 /** When an ability acts. "continuous" abilities are always on (while their card is in play) and are
  *  read when a value is needed (e.g. an attack roll); the others fire at a moment. */
-export type Trigger = "continuous" | "reveal" | "roundStart" | "damageDealt" | "action";
+export type Trigger =
+  | "continuous"
+  | "gameStart" // once, at setup, after warriors are placed (before round 1)
+  | "reveal"
+  | "roundStart"
+  | "damageDealt" // the attacker, after their attack dealt damage
+  | "hit" // the defender, after they were hit and took damage
+  | "missed" // the defender, after an attack against them missed
+  | "action";
+
+/** What kind of attack an attack-related trigger is about. */
+export type AttackKind = "basic" | "weapon";
 
 /** A timed effect an ability left behind. It outlives its card (rulebook p17: an effect with a listed
  *  duration continues even if the card that created it leaves play). */
@@ -31,8 +42,10 @@ export interface FireContext {
   cardName: string;
   ability: string;
   events: GameEvent[];
-  /** Hook-specific facts, e.g. the attacker for damageDealt. */
+  /** Hook-specific facts for attack triggers. */
   attacker?: PlayerId;
+  defender?: PlayerId;
+  attackKind?: AttackKind;
 }
 
 export interface RuntimeAbility {

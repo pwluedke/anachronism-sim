@@ -22,6 +22,7 @@
 import type { GameEvent, GameState, PlayerId } from "./types";
 import type { AttackResult } from "./combat";
 import { endRoundEffects, endTurnEffects, fireTrigger } from "./abilities/runtime";
+import type { AttackKind } from "./abilities/types";
 
 export const HOOKS = [
   "onSetup",
@@ -51,6 +52,8 @@ export interface HookContext {
   round?: number;
   /** The event log of the action in progress; abilities that fire append to it. */
   events?: GameEvent[];
+  /** For attack hooks: a basic attack or one made with a weapon. */
+  attackKind?: AttackKind;
 }
 
 /**
@@ -60,7 +63,14 @@ export interface HookContext {
  */
 export function resolveHooks(state: GameState, hook: HookName, context: HookContext = {}): GameState {
   const events = context.events ?? [];
+  const attack = { attacker: context.attacker, defender: context.defender, attackKind: context.attackKind };
   switch (hook) {
+    case "onSetup":
+      fireTrigger(state, "gameStart", [0, 1], events);
+      break;
+    case "onMiss":
+      if (context.defender !== undefined) fireTrigger(state, "missed", [context.defender], events, attack);
+      break;
     case "onReveal":
       fireTrigger(state, "reveal", state.turnOrder, events);
       break;
@@ -68,7 +78,9 @@ export function resolveHooks(state: GameState, hook: HookName, context: HookCont
       fireTrigger(state, "roundStart", state.turnOrder, events);
       break;
     case "onDamageDealt":
-      if (context.attacker !== undefined) fireTrigger(state, "damageDealt", [context.attacker], events, context.attacker);
+      // the attacker's "after you deal damage", then the defender's "after you are hit"
+      if (context.attacker !== undefined) fireTrigger(state, "damageDealt", [context.attacker], events, attack);
+      if (context.defender !== undefined) fireTrigger(state, "hit", [context.defender], events, attack);
       break;
     case "onTurnEnd":
       if (context.player !== undefined) endTurnEffects(state, context.player);
