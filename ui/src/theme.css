@@ -1,0 +1,198 @@
+/* =============================================================================
+   Cartography theme — design tokens (Milestone 7, #32)
+
+   Every colour, font, edge and texture in the UI comes from these custom
+   properties. Components never hardcode colours: change a token here and the
+   whole board follows. Light / parchment theme only.
+
+   Groups
+   - Parchment   --parchment-*   paper surfaces, lightest (50) to darkest (300); --parchment-edge is the
+                                 scorched rim colour.
+   - Ink         --ink-*         text and linework, darkest (900, body text) to faintest (300, hints).
+   - Gold        --gold-*        muted gilt accent. Use sparingly: the active turn, the confirm action,
+                                 headings' rule lines. Never large fills.
+   - Players     --p0-ink / --p1-ink   each side's ink colour (slate blue / oxblood), muted like old
+                                 map inks. --*-wash are translucent fills of the same hue.
+   - Signals     --hit-ink, --miss-ink, --reach-wash, --threat-wash, --preview-wash   board overlays
+                                 and battle-log outcomes.
+   - Type        --font-display (classical serif, small caps) for headings, numerals and labels;
+                 --font-body (readable book serif) for everything else; --fs-* scale.
+   - Edges       --radius-worn (irregular corners), --border-ink, --edge-burn (inset vignette that reads
+                 as a scorched/worn margin), --shadow-paper (lift off the table).
+   - Textures    --texture-grain (paper fibre noise), --texture-stains (foxing), --texture-mapgrid
+                 (faint survey grid). Layer them with --surface-parchment.
+   - Images      --filter-portrait: History-Channel sepia / black-and-white photo treatment. Apply via
+                 the .portrait class.
+   ============================================================================= */
+
+:root {
+  color-scheme: light;
+
+  /* Parchment */
+  --parchment-50: #f7f0dd;
+  --parchment-100: #efe3c3;
+  --parchment-200: #e3d1a5;
+  --parchment-300: #cdb582;
+  --parchment-edge: #8f6b3a;
+
+  /* Ink */
+  --ink-900: #2a2016;
+  --ink-700: #463626;
+  --ink-500: #6d5a42;
+  --ink-300: #9c8869;
+
+  /* Gold (sparingly) */
+  --gold-600: #8c6a22;
+  --gold-500: #a88430;
+  --gold-300: #cfb26a;
+
+  /* Players */
+  --p0-ink: #2e4a63;
+  --p0-wash: rgba(46, 74, 99, 0.16);
+  --p1-ink: #7a2e1f;
+  --p1-wash: rgba(122, 46, 31, 0.16);
+
+  /* Signals */
+  --hit-ink: #7a2418;
+  --miss-ink: var(--ink-300);
+  --reach-wash: rgba(140, 106, 34, 0.22);
+  --threat-wash: rgba(70, 54, 38, 0.1);
+  --preview-wash: rgba(122, 46, 31, 0.2);
+
+  /* Type */
+  --font-display: "IM Fell English SC", "Cormorant SC", "Trajan Pro", Garamond, "Times New Roman", serif;
+  --font-body: "EB Garamond", Garamond, "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.9rem;
+  --fs-md: 1.05rem;
+  --fs-lg: 1.35rem;
+  --fs-xl: 1.9rem;
+
+  /* Edges */
+  --radius-worn: 4px 7px 5px 8px / 7px 4px 8px 5px;
+  --border-ink: 1px solid var(--ink-300);
+  --border-ink-strong: 1.5px solid var(--ink-500);
+  --edge-burn: inset 0 0 18px rgba(110, 72, 28, 0.35), inset 0 0 3px rgba(80, 50, 20, 0.5);
+  --shadow-paper: 0 1px 2px rgba(60, 40, 15, 0.25), 0 6px 18px rgba(60, 40, 15, 0.18);
+
+  /* Textures */
+  --texture-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.36 0 0 0 0 0.25 0 0 0 0 0.11 0 0 0 0.11 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --texture-stains:
+    radial-gradient(ellipse at 12% 18%, rgba(140, 95, 40, 0.14), transparent 38%),
+    radial-gradient(ellipse at 88% 76%, rgba(120, 80, 30, 0.12), transparent 42%),
+    radial-gradient(ellipse at 64% 8%, rgba(150, 110, 50, 0.08), transparent 30%);
+  --texture-mapgrid:
+    repeating-linear-gradient(0deg, rgba(70, 54, 38, 0.07) 0 1px, transparent 1px 44px),
+    repeating-linear-gradient(90deg, rgba(70, 54, 38, 0.07) 0 1px, transparent 1px 44px);
+  --surface-parchment: var(--texture-grain), var(--texture-stains), var(--parchment-100);
+
+  /* Images */
+  --filter-portrait: sepia(0.8) grayscale(0.35) contrast(1.08) brightness(0.96);
+}
+
+/* ---- Global application ---------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  background: var(--texture-grain), var(--texture-mapgrid), var(--texture-stains), var(--parchment-200);
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  line-height: 1.4;
+  color: var(--ink-900);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--ink-900);
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+kbd {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  padding: 0 0.35em;
+  border: var(--border-ink);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  color: var(--ink-500);
+  background: var(--parchment-50);
+}
+
+/* ---- Reusable treatments ------------------------------------------------------ */
+
+/* A sheet of parchment with a worn, scorched margin. */
+.parchment {
+  background: var(--surface-parchment);
+  border: var(--border-ink);
+  border-radius: var(--radius-worn);
+  box-shadow: var(--edge-burn), var(--shadow-paper);
+}
+
+/* Sepia / black-and-white photo treatment for warrior portraits (img or svg). */
+.portrait {
+  filter: var(--filter-portrait);
+}
+
+/* Small-caps label in the display face. */
+.label {
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  color: var(--ink-500);
+  text-transform: lowercase;
+}
+
+.muted {
+  color: var(--ink-500);
+}
+
+/* Ink-stamped button. Variants: .btn-gold (the one primary action on screen). */
+.btn {
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
+  color: var(--ink-900);
+  background: var(--parchment-50);
+  border: var(--border-ink-strong);
+  border-radius: var(--radius-worn);
+  padding: 0.3em 0.9em;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 2px rgba(60, 40, 15, 0.25);
+}
+.btn:hover:not(:disabled) {
+  background: var(--parchment-100);
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.btn-gold {
+  border-color: var(--gold-600);
+  color: var(--gold-600);
+  background: linear-gradient(var(--parchment-50), var(--parchment-100));
+}
+.btn:focus-visible {
+  outline: 2px solid var(--gold-500);
+  outline-offset: 2px;
+}

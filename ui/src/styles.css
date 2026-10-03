@@ -1,35 +1,14 @@
-:root {
-  color-scheme: dark;
-  --bg: #14161a;
-  --panel: #1d2127;
-  --line: #2c323b;
-  --ink: #e6e9ef;
-  --muted: #8b94a3;
-  --p0: #4ea1ff;
-  --p1: #ff7a59;
-  --hit: #2b6cb0;
-  font-family: system-ui, sans-serif;
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-}
+/* Component styles. Colours, type, edges and textures come only from theme.css tokens. */
 
 .app {
-  max-width: 880px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 20px 16px;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: var(--fs-xl);
   margin: 0 0 12px;
-}
-
-.muted {
-  color: var(--muted);
 }
 
 .topbar {
@@ -39,13 +18,15 @@ h1 {
   gap: 16px;
 }
 .banner {
-  background: #2a3a2a;
-  border: 1px solid #3d5a3d;
-  color: #d6f5d6;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--gold-600);
   padding: 10px 14px;
-  border-radius: 6px;
-  font-weight: 700;
   margin: 6px 0 12px;
+  background: var(--surface-parchment);
+  border: 1px solid var(--gold-500);
+  border-radius: var(--radius-worn);
+  box-shadow: var(--edge-burn);
 }
 .layout {
   display: flex;
@@ -60,54 +41,52 @@ h1 {
   flex: 1;
 }
 .log-head {
-  font-size: 13px;
   margin-bottom: 6px;
 }
 .log-body {
   height: 360px;
   overflow-y: auto;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 8px 10px;
-  font-size: 13px;
-  font-family: ui-monospace, monospace;
+  padding: 8px 12px;
+  font-size: var(--fs-sm);
   line-height: 1.5;
+  background: var(--surface-parchment);
+  border: var(--border-ink);
+  border-radius: var(--radius-worn);
+  box-shadow: var(--edge-burn);
 }
 .logline.roundStarted {
-  color: #ffe066;
+  font-family: var(--font-display);
+  color: var(--gold-600);
   margin-top: 4px;
 }
 .logline.attacked {
-  color: #cfe3ff;
+  color: var(--ink-700);
 }
-.logline.warriorDefeated {
-  color: var(--p1);
-  font-weight: 700;
-}
+.logline.warriorDefeated,
 .logline.gameEnded {
-  color: #d6f5d6;
-  font-weight: 700;
+  color: var(--hit-ink);
+  font-weight: 600;
 }
 
 /* ---- status panel ---- */
 .status {
   min-width: 240px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 6px;
   padding: 12px 14px;
+  background: var(--surface-parchment);
+  border: var(--border-ink);
+  border-radius: var(--radius-worn);
+  box-shadow: var(--edge-burn);
 }
 .status-head {
   display: flex;
   gap: 18px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--border-ink);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 .big {
-  font-size: 18px;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
 }
 .wcards {
   display: flex;
@@ -115,15 +94,15 @@ h1 {
   gap: 10px;
 }
 .wcard {
-  border: 1px solid var(--line);
-  border-radius: 6px;
+  border: var(--border-ink);
+  border-radius: var(--radius-worn);
   padding: 8px 10px;
 }
 .wcard.turn {
-  border-color: #ffe066;
+  border-color: var(--gold-500);
 }
 .wname {
-  font-weight: 600;
+  font-family: var(--font-display);
   margin-bottom: 4px;
 }
 .dot {
@@ -134,16 +113,16 @@ h1 {
   margin-right: 6px;
 }
 .dot.p0 {
-  background: var(--p0);
+  background: var(--p0-ink);
 }
 .dot.p1 {
-  background: var(--p1);
+  background: var(--p1-ink);
 }
 .stats {
   display: flex;
   gap: 12px;
-  color: var(--muted);
-  font-size: 13px;
+  color: var(--ink-500);
+  font-size: var(--fs-sm);
 }
 
 /* ---- action menu ---- */
@@ -152,7 +131,7 @@ h1 {
   max-width: 296px;
 }
 .menu-head {
-  font-size: 13px;
+  font-size: var(--fs-sm);
   margin-bottom: 6px;
 }
 .buttons {
@@ -160,36 +139,18 @@ h1 {
   flex-wrap: wrap;
   gap: 8px;
 }
-.btn {
-  background: #2a3038;
-  color: var(--ink);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 7px 11px;
-  font-size: 14px;
-  cursor: pointer;
-}
-.btn:hover {
-  border-color: #4a525e;
-  background: #323a44;
-}
 .btn.attack {
-  background: #5a2330;
-  border-color: #7a3140;
-}
-.btn.attack:hover {
-  background: #6e2a3a;
-}
-.btn.pass {
-  background: #23292f;
+  color: var(--hit-ink);
+  border-color: var(--hit-ink);
 }
 
 /* ---- board ---- */
 .board {
   display: inline-block;
-  border: 2px solid var(--line);
-  background: var(--panel);
-  border-radius: 6px;
+  background: var(--texture-grain), var(--texture-mapgrid), var(--parchment-50);
+  border: var(--border-ink-strong);
+  border-radius: var(--radius-worn);
+  box-shadow: var(--edge-burn);
   overflow: hidden;
 }
 .row {
@@ -199,48 +160,48 @@ h1 {
   position: relative;
   width: 72px;
   height: 72px;
-  border: 1px solid var(--line);
+  border: var(--border-ink);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .cell.hl {
-  background: rgba(43, 108, 176, 0.35);
-  box-shadow: inset 0 0 0 2px var(--hit);
+  background: var(--threat-wash);
+  box-shadow: inset 0 0 0 2px var(--ink-500);
 }
 .cell .mod {
   position: absolute;
   top: 3px;
   left: 4px;
-  font-size: 12px;
-  color: #cfe3ff;
+  font-size: var(--fs-xs);
+  color: var(--ink-700);
 }
 .warrior {
   width: 52px;
   height: 52px;
-  border-radius: 8px;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  color: #0c0e12;
+  font-family: var(--font-display);
+  color: var(--parchment-50);
 }
 .warrior.p0 {
-  background: var(--p0);
+  background: var(--p0-ink);
 }
 .warrior.p1 {
-  background: var(--p1);
+  background: var(--p1-ink);
 }
 .warrior.active {
-  outline: 3px solid #ffe066;
-  outline-offset: 2px;
+  outline: 2px solid var(--gold-500);
+  outline-offset: 3px;
 }
 .warrior .tag {
-  font-size: 13px;
+  font-size: var(--fs-xs);
   line-height: 1;
 }
 .warrior .arrow {
-  font-size: 20px;
+  font-size: var(--fs-lg);
   line-height: 1;
 }
