@@ -16,7 +16,9 @@ export interface AttackResult {
   attackerRoll: number; // raw 2d6 sum
   defenderRoll: number; // raw 2d6 sum
   gridMod: number;
-  attackerTotal: number; // attackerRoll + gridMod
+  /** Bonus to the attack roll from card abilities (e.g. "Your attack rolls gain +2"). */
+  rollBonus: number;
+  attackerTotal: number; // attackerRoll + gridMod + rollBonus
   hit: boolean;
   crit: boolean; // attacker rolled doubles
   damage: number; // 0 on miss
@@ -25,6 +27,7 @@ export interface AttackResult {
 
 const ILLEGAL: AttackResult = {
   legal: false,
+  rollBonus: 0,
   attackerRoll: 0,
   defenderRoll: 0,
   gridMod: 0,
@@ -68,10 +71,11 @@ export function judge(
   attacker: Warrior,
   defender: Warrior,
   rng: number,
+  rollBonus = 0,
 ): { result: AttackResult; rng: number } {
   const attackerRoll = attackerDice[0] + attackerDice[1];
   const defenderRoll = defenderDice[0] + defenderDice[1];
-  const attackerTotal = attackerRoll + gridMod;
+  const attackerTotal = attackerRoll + gridMod + rollBonus;
   const crit = attackerDice[0] === attackerDice[1];
 
   let hit: boolean;
@@ -90,7 +94,7 @@ export function judge(
 
   const damage = hit ? attacker.damage * (crit ? 2 : 1) : 0;
   return {
-    result: { legal: true, attackerRoll, defenderRoll, gridMod, attackerTotal, hit, crit, damage, tiebreak },
+    result: { legal: true, attackerRoll, defenderRoll, gridMod, rollBonus, attackerTotal, hit, crit, damage, tiebreak },
     rng: s,
   };
 }
@@ -105,6 +109,8 @@ export function resolveAttack(
   defender: Warrior,
   rng: number,
   size: number,
+  /** Bonus to the attack roll from card abilities. */
+  rollBonus = 0,
 ): { result: AttackResult; rng: number } {
   const gridMod = modifierAt(
     attacker.attackGrid,
@@ -117,5 +123,5 @@ export function resolveAttack(
 
   const a = roll2d6(rng);
   const d = roll2d6(a.state);
-  return judge(a.dice, d.dice, gridMod, attacker, defender, d.state);
+  return judge(a.dice, d.dice, gridMod, attacker, defender, d.state, rollBonus);
 }

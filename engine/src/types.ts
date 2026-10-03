@@ -106,7 +106,7 @@ export interface GameState {
 }
 
 // ---- Actions -------------------------------------------------------------
-export type ActionType = "MOVE" | "ROTATE" | "ATTACK" | "PASS" | "DISCARD";
+export type ActionType = "MOVE" | "ROTATE" | "ATTACK" | "PASS" | "DISCARD" | "ABILITY";
 
 export interface MoveAction {
   type: "MOVE";
@@ -131,7 +131,13 @@ export interface DiscardAction {
   type: "DISCARD";
   card: string;
 }
-export type Action = MoveAction | RotateAction | AttackAction | PassAction | DiscardAction;
+/** Use an Action ability of one of your cards (costs one action). */
+export interface AbilityAction {
+  type: "ABILITY";
+  card: string;
+  ability: string;
+}
+export type Action = MoveAction | RotateAction | AttackAction | PassAction | DiscardAction | AbilityAction;
 
 // ---- Events (for UI / replay / bots) ------------------------------------
 export interface MovedEvent {
@@ -153,7 +159,8 @@ export interface AttackedEvent {
   attackerRoll: number; // raw 2d6 sum
   defenderRoll: number;
   gridMod: number; // modifier from the defender's cell in the attacker's grid
-  attackerTotal: number; // attackerRoll + gridMod
+  rollBonus: number; // bonus from card abilities
+  attackerTotal: number; // attackerRoll + gridMod + rollBonus
   hit: boolean;
   crit: boolean;
   damage: number; // damage dealt (0 on miss)

@@ -21,7 +21,7 @@ import { canMove, applyMove, applyRotate } from "./arena";
 import { resolveAttack } from "./combat";
 import * as Hooks from "./hooks";
 import { armedAttacker, offendingCards, violations } from "./cards";
-import { beginTurnEffects } from "./abilities/runtime";
+import { attackRollBonus, beginTurnEffects, useActionAbility } from "./abilities/runtime";
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
@@ -301,6 +301,12 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
   switch (action.type) {
     case "DISCARD":
       return { state: prev, events: [] }; // only meaningful while a restriction is pending
+    case "ABILITY": {
+      if (state.actionsRemaining < 1) return { state: prev, events: [] };
+      if (!useActionAbility(state, me, action.card, action.ability, events)) return { state: prev, events: [] };
+      state.actionsRemaining -= 1;
+      break;
+    }
     case "PASS": {
       events.push({ type: "passed", player: me });
       endTurn(state, events);
@@ -335,7 +341,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
       // so an illegal attack is a true no-op (no hook noise, no RNG burn).
       const attacker = armedAttacker(state, me, action.weapon);
       if (!attacker) return { state: prev, events: [] };
-      const pre = resolveAttack(attacker, state.warriors[foe], state.rng, state.arenaSize);
+      const pre = resolveAttack(attacker, state.warriors[foe], state.rng, state.arenaSize, attackRollBonus(state, me));
       if (!pre.result.legal) return { state: prev, events: [] };
       const weaponSlot = action.weapon
         ? state.cards[me].support.find((s) => s.card.id === action.weapon)
@@ -355,6 +361,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
         attackerRoll: r.result.attackerRoll,
         defenderRoll: r.result.defenderRoll,
         gridMod: r.result.gridMod,
+        rollBonus: r.result.rollBonus,
         attackerTotal: r.result.attackerTotal,
         hit: r.result.hit,
         crit: r.result.crit,

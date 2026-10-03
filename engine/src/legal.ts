@@ -7,6 +7,7 @@ import type { Action, GameState } from "./types";
 import { FACINGS, canMove } from "./arena";
 import { modifierAt } from "./projection";
 import { armedAttacker, offendingCards, weaponsInPlay } from "./cards";
+import { usableActionAbilities } from "./abilities/runtime";
 
 export function getLegalActions(state: GameState): Action[] {
   if (state.phase !== "playing") return [];
@@ -39,6 +40,8 @@ export function getLegalActions(state: GameState): Action[] {
         acts.push({ type: "ATTACK", weapon: slot.card.id });
       }
     }
+    // Action abilities of the warrior and in-play cards (each costs one action)
+    for (const a of usableActionAbilities(state, me)) acts.push({ type: "ABILITY", card: a.cardId, ability: a.ability });
   }
   acts.push({ type: "PASS" }); // always available while playing
   return acts;

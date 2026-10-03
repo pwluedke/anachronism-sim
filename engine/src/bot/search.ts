@@ -53,7 +53,7 @@ function sampleRngs(seed: number, n: number): number[] {
   return out;
 }
 
-const ORDER: Record<Action["type"], number> = { DISCARD: 0, ATTACK: 0, MOVE: 1, ROTATE: 2, PASS: 3 };
+const ORDER: Record<Action["type"], number> = { DISCARD: 0, ATTACK: 0, MOVE: 1, ABILITY: 2, ROTATE: 2, PASS: 3 };
 
 /** Distinct ATTACK outcomes and their sampled probabilities. */
 function attackOutcomes(state: GameState, attack: Action, ctx: Ctx): { state: GameState; p: number }[] {
