@@ -18,7 +18,7 @@ describe("hook definitions", () => {
     ]);
   });
 
-  it("resolveHooks is the identity stub (returns state unchanged)", () => {
+  it("with no implemented abilities in play, resolveHooks leaves the state unchanged", () => {
     const { state } = init(ACHILLES, AJAX, 1);
     for (const h of Hooks.HOOKS) {
       expect(Hooks.resolveHooks(state, h)).toBe(state);

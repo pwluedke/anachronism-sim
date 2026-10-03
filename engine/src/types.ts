@@ -1,5 +1,6 @@
 // Core types for the headless 1v1 Anachronism engine.
 import type { SupportCard } from "./decks";
+import type { TimedEffect } from "./abilities/types";
 // GameState is fully serializable: plain objects / arrays / primitives only.
 
 export type PlayerId = 0 | 1;
@@ -94,6 +95,14 @@ export interface GameState {
    * in initiative order, discards offending in-play cards until legal. currentPlayer is queue[0].
    */
   pending: { kind: "discard"; queue: PlayerId[] } | null;
+
+  // ---- Card abilities --------------------------------------------------------------------------
+  /** Timed effects abilities created (e.g. "+1 to attack rolls this round"). */
+  effects: TimedEffect[];
+  /** "cardId#ability" keys of once-per-round abilities used this round. */
+  abilityUses: string[];
+  /** Card id each player revealed this round (null: none) — only these fire Reveal abilities. */
+  revealedThisRound: [string | null, string | null];
 }
 
 // ---- Actions -------------------------------------------------------------
@@ -211,6 +220,15 @@ export interface DiscardedEvent {
   cardId: string;
   name: string;
 }
+export interface AbilityFiredEvent {
+  type: "abilityFired";
+  player: PlayerId;
+  cardId: string;
+  cardName: string;
+  ability: string;
+  /** What happened, e.g. "gains 1 life", "+1 to attack rolls this round". */
+  effect: string;
+}
 export interface PassedEvent {
   type: "passed";
   player: PlayerId;
@@ -223,6 +241,7 @@ export type GameEvent =
   | AttackedEvent
   | PassedEvent
   | RevealedEvent
+  | AbilityFiredEvent
   | DiscardRequiredEvent
   | DiscardedEvent
   | TurnStartedEvent

@@ -21,6 +21,7 @@ import { canMove, applyMove, applyRotate } from "./arena";
 import { resolveAttack } from "./combat";
 import * as Hooks from "./hooks";
 import { armedAttacker, offendingCards, violations } from "./cards";
+import { beginTurnEffects } from "./abilities/runtime";
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
@@ -84,12 +85,14 @@ export function determineInitiative(
  *  Returns what each player revealed this round (null when nothing was left, e.g. round 5). */
 function revealRound(state: GameState, events: GameEvent[]): [SupportSlot | null, SupportSlot | null] {
   const revealed: [SupportSlot | null, SupportSlot | null] = [null, null];
+  state.revealedThisRound = [null, null];
   for (const p of [0, 1] as PlayerId[]) {
     const pc = state.cards[p];
     if (pc.nextReveal >= pc.support.length) continue;
     const slot = pc.support[pc.nextReveal];
     slot.status = "in-play";
     revealed[p] = slot;
+    state.revealedThisRound[p] = slot.card.id;
     events.push({
       type: "revealed",
       player: p,
@@ -151,10 +154,10 @@ function beginFirstTurn(state: GameState, events: GameEvent[]): void {
   state.pending = null;
   state.turnIndex = 0;
   state.currentPlayer = state.turnOrder[0];
-  state.actionsRemaining = currentWarrior(state).speed;
   state.weaponsUsed = [];
-  Hooks.resolveHooks(state, "onReveal", { round: state.round });
-  Hooks.resolveHooks(state, "onRoundStart", { round: state.round });
+  Hooks.resolveHooks(state, "onReveal", { round: state.round, events });
+  Hooks.resolveHooks(state, "onRoundStart", { round: state.round, events });
+  state.actionsRemaining = currentWarrior(state).speed + beginTurnEffects(state, state.currentPlayer);
   events.push({
     type: "turnStarted",
     player: state.currentPlayer,
@@ -202,11 +205,11 @@ function endGame(state: GameState, events: GameEvent[]): void {
 /** End the current turn and advance: next player, or next round, or game end. */
 function endTurn(state: GameState, events: GameEvent[]): void {
   events.push({ type: "turnEnded", player: state.currentPlayer });
-  Hooks.resolveHooks(state, "onTurnEnd", { player: state.currentPlayer });
+  Hooks.resolveHooks(state, "onTurnEnd", { player: state.currentPlayer, events });
   if (state.turnIndex === 0) {
     state.turnIndex = 1;
     state.currentPlayer = state.turnOrder[1];
-    state.actionsRemaining = currentWarrior(state).speed;
+    state.actionsRemaining = currentWarrior(state).speed + beginTurnEffects(state, state.currentPlayer);
     state.weaponsUsed = [];
     events.push({
       type: "turnStarted",
@@ -218,7 +221,7 @@ function endTurn(state: GameState, events: GameEvent[]): void {
   }
   // both players have acted -> end of round
   events.push({ type: "roundEnded", round: state.round });
-  Hooks.resolveHooks(state, "onRoundEnd", { round: state.round });
+  Hooks.resolveHooks(state, "onRoundEnd", { round: state.round, events });
   if (state.round < state.maxRounds) {
     state.round += 1;
     startRound(state, events);
@@ -274,6 +277,9 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
     cards: [playerCards(decks[0]), playerCards(decks[1])],
     weaponsUsed: [],
     pending: null,
+    effects: [],
+    abilityUses: [],
+    revealedThisRound: [null, null],
   };
 
   const events: GameEvent[] = [{ type: "setup", firstPlacer }];
@@ -341,17 +347,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
       Hooks.resolveHooks(state, "afterAttackRoll", { attacker: me, defender: foe, result: r.result });
       state.rng = r.rng;
       state.actionsRemaining -= 1;
-
-      Hooks.resolveHooks(state, r.result.hit ? "onHit" : "onMiss", { attacker: me, defender: foe, result: r.result });
-      if (r.result.hit && r.result.crit) {
-        Hooks.resolveHooks(state, "onCriticalHit", { attacker: me, defender: foe, result: r.result });
-      }
-      Hooks.resolveHooks(state, "afterDefense", { attacker: me, defender: foe, result: r.result });
-
-      if (r.result.hit) {
-        state.warriors[foe].life -= r.result.damage;
-        Hooks.resolveHooks(state, "onDamageDealt", { attacker: me, defender: foe, result: r.result });
-      }
+      // Logged as soon as the dice are resolved, so abilities it triggers are logged after it.
       events.push({
         type: "attacked",
         attacker: me,
@@ -366,6 +362,17 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
         tiebreak: r.result.tiebreak,
         weapon: weaponSlot ? { id: weaponSlot.card.id, name: weaponSlot.card.name } : null,
       });
+
+      Hooks.resolveHooks(state, r.result.hit ? "onHit" : "onMiss", { attacker: me, defender: foe, result: r.result });
+      if (r.result.hit && r.result.crit) {
+        Hooks.resolveHooks(state, "onCriticalHit", { attacker: me, defender: foe, result: r.result });
+      }
+      Hooks.resolveHooks(state, "afterDefense", { attacker: me, defender: foe, result: r.result });
+
+      if (r.result.hit) {
+        state.warriors[foe].life -= r.result.damage;
+        Hooks.resolveHooks(state, "onDamageDealt", { attacker: me, defender: foe, result: r.result, events });
+      }
       if (state.warriors[foe].life <= 0) {
         Hooks.resolveHooks(state, "onWarriorDefeated", { player: foe });
         events.push({ type: "warriorDefeated", player: foe });

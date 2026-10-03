@@ -360,6 +360,11 @@
 .entry-turn.p1 {
   color: var(--p1-ink);
 }
+.entry-ability {
+  color: var(--gold-600);
+  font-weight: 600;
+  padding-left: 10px;
+}
 .entry-reveal {
   font-style: italic;
   color: var(--gold-600);

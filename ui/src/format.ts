@@ -22,7 +22,7 @@ export function winnerText(winner: Winner, reason: string, names: [string, strin
 }
 
 export interface LogEntry {
-  kind: "round" | "reveal" | "turn" | "move" | "hit" | "crit" | "miss" | "defeat" | "end" | "note";
+  kind: "round" | "reveal" | "ability" | "turn" | "move" | "hit" | "crit" | "miss" | "defeat" | "end" | "note";
   text: string;
   detail?: string;
   player?: 0 | 1;
@@ -58,6 +58,8 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       return { kind: "move", text: `${names[e.player]} turns to face ${FACING_NAME[e.facing]}.`, player: e.player };
     case "passed":
       return { kind: "note", text: `${names[e.player]} holds.`, player: e.player };
+    case "abilityFired":
+      return { kind: "ability", text: `${e.cardName} — ${e.ability}: ${names[e.player]} ${e.effect}.`, player: e.player };
     case "discardRequired":
       return { kind: "note", text: `${names[e.player]} must discard: ${e.reasons.join("; ")}.`, player: e.player };
     case "discarded":

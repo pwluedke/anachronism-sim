@@ -1,10 +1,6 @@
-// Ability hook-points. Warrior abilities are INERT in the spine, but the engine
-// already fires a hook at every point an ability could need to act, so adding
-// ability logic later means implementing resolveHooks — not re-plumbing the loop.
-//
-// resolveHooks(state, hook, context) -> state. In the spine it is the identity
-// function (returns state unchanged), so the engine behaves exactly as if hooks
-// did not exist. It is PURE and must never mutate `state`.
+// Ability hook-points. The engine fires a hook at every point an ability could need to act;
+// resolveHooks dispatches the ones that matter to the card-ability runtime (abilities/). Cards
+// without implemented abilities are inert, so with none in play the hooks change nothing.
 //
 // Firing points (see engine.ts):
 //   onSetup           - once, after warriors are placed, before round 1.
@@ -23,8 +19,9 @@
 //   onTurnEnd         - a player's turn ends (PASS or budget spent).
 //   onRoundEnd        - both players have taken their turn.
 
-import type { GameState, PlayerId } from "./types";
+import type { GameEvent, GameState, PlayerId } from "./types";
 import type { AttackResult } from "./combat";
+import { endRoundEffects, endTurnEffects, fireTrigger } from "./abilities/runtime";
 
 export const HOOKS = [
   "onSetup",
@@ -52,16 +49,35 @@ export interface HookContext {
   defender?: PlayerId;
   result?: AttackResult;
   round?: number;
+  /** The event log of the action in progress; abilities that fire append to it. */
+  events?: GameEvent[];
 }
 
 /**
- * Resolve all abilities registered for `hook`. Spine stub: identity. Future
- * ability logic returns a (possibly new) GameState; callers must use the return.
+ * Resolve the card abilities that act at `hook` (see abilities/runtime.ts). Called by the engine on
+ * applyAction's working copy of the state — never on a caller's state — so it updates that copy in
+ * place and returns it. Hook points with no implemented abilities change nothing.
  */
-export function resolveHooks(
-  state: GameState,
-  _hook: HookName,
-  _context?: HookContext,
-): GameState {
+export function resolveHooks(state: GameState, hook: HookName, context: HookContext = {}): GameState {
+  const events = context.events ?? [];
+  switch (hook) {
+    case "onReveal":
+      fireTrigger(state, "reveal", state.turnOrder, events);
+      break;
+    case "onRoundStart":
+      fireTrigger(state, "roundStart", state.turnOrder, events);
+      break;
+    case "onDamageDealt":
+      if (context.attacker !== undefined) fireTrigger(state, "damageDealt", [context.attacker], events, context.attacker);
+      break;
+    case "onTurnEnd":
+      if (context.player !== undefined) endTurnEffects(state, context.player);
+      break;
+    case "onRoundEnd":
+      endRoundEffects(state);
+      break;
+    default:
+      break;
+  }
   return state;
 }

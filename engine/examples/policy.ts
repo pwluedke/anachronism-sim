@@ -67,6 +67,8 @@ export function formatEvent(e: GameEvent): string {
       return `    P${e.player} rotate  -> ${e.facing}`;
     case "passed":
       return `    P${e.player} pass`;
+    case "abilityFired":
+      return `  P${e.player} ${e.cardName} — ${e.ability}: ${e.effect}`;
     case "discardRequired":
       return `  P${e.player} must discard (${e.reasons.join("; ")})`;
     case "discarded":
