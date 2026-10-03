@@ -118,7 +118,7 @@ export function AbilityChips({
             <li key={`fx-${i}`} className={`chip chip-effect${e.active ? " chip-active-effect" : ""}`} title={`${e.sourceName} — ${e.ability}`}>
               <span className="chip-name">
                 {e.amount >= 0 ? "+" : ""}
-                {e.amount} {e.kind === "attackRoll" ? "attack" : "speed"}
+                {e.amount} {e.kind === "attackRoll" ? "attack" : e.kind === "defenseRoll" ? "defense" : "speed"}
               </span>
               <span className="chip-detail">
                 {e.duration === "thisRound" ? "this round" : e.active ? "this turn" : "next turn"} · {e.sourceName}

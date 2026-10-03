@@ -1130,3 +1130,13 @@ button.card-face.discardable:focus-visible {
 .status-facedown {
   border-style: dashed;
 }
+
+/* ---- decisions (optional abilities) ---- */
+.action-prompt.decision {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--gold-600);
+}
+.btn-choice {
+  border-color: var(--gold-500);
+}

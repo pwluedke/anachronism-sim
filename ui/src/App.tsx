@@ -24,6 +24,8 @@ import {
   selectedAction,
   selectionCell,
   weaponGridAt,
+  abilityMoveTargets,
+  abilityMoveFacings,
   type Selection,
 } from "./boardModel";
 
@@ -114,6 +116,13 @@ export function App() {
   };
 
   const onCellClick = (p: { row: number; col: number }) => {
+    if (model && sel.kind === "abilityMove") {
+      const offered = abilityMoveFacings(model, sel.card, sel.ability, p);
+      if (!offered.length) return;
+      setHover(null);
+      setSel({ ...sel, to: p, facing: offered.includes(active.facing) ? active.facing : null });
+      return;
+    }
     const dir = model?.reach.get(cellKey(p));
     if (!model || !dir) return;
     const offered = model.moveFacings(dir);
@@ -180,6 +189,11 @@ export function App() {
     prompt = notice;
   } else if (botTurn && mode.kind === "ai") {
     prompt = `${name} (computer, ${mode.difficulty}) is ${pending ? "choosing a card to discard" : "considering"}…`;
+  } else if (playing && state.pending?.kind === "reroll") {
+    const pa = state.pending.attack;
+    prompt = `${state.pending.cardName} — ${state.pending.ability}: ${name} rolled ${pa.attackerDice.join(" + ")} against ${pa.defenderDice.join(
+      " + ",
+    )}. Re-roll one die, or keep the roll?`;
   } else if (playing && pending) {
     prompt = `${name} is over a card limit (${violations(state, state.currentPlayer)
       .map((v) => v.detail)
@@ -189,6 +203,10 @@ export function App() {
     prompt = sel.facing
       ? `${name} marches to ${where}, facing ${FACING_NAME[sel.facing]}. Confirm, or pick another facing.`
       : `Choose ${name}'s facing at ${where}.`;
+  } else if (playing && sel.kind === "abilityMove") {
+    prompt = sel.to
+      ? `${sel.ability}: ${name} moves to ${COLS[sel.to.col]}${ROWS[sel.to.row]}${sel.facing ? `, facing ${FACING_NAME[sel.facing]}` : ""}. Confirm, or pick another facing.`
+      : `${sel.ability}: pick where ${name} moves (two spaces), or Esc.`;
   } else if (playing && sel.kind === "rotate") {
     prompt = sel.facing
       ? `${name} turns ${FACING_NAME[sel.facing]}. Confirm, or pick another facing.`
@@ -209,6 +227,8 @@ export function App() {
       },
     };
   };
+
+  const rerollDice = state.pending?.kind === "reroll" ? state.pending.attack.attackerDice : null;
 
   /** Tooltip for an action-ability button: whose card it is and its printed text. */
   const abilityTitle = (cardId: string, ability: string) => {
@@ -264,13 +284,24 @@ export function App() {
             cards={[CARDS[0], CARDS[1]]}
             grid={grid}
             gridIsPreview={!!attackPreview || !!(target && shownFacing)}
-            reach={model && sel.kind !== "rotate" ? new Set(model.reach.keys()) : undefined}
-            path={model && sel.kind === "move" && target ? { from: model.origin, to: target } : null}
+            reach={
+              !model || sel.kind === "rotate"
+                ? undefined
+                : sel.kind === "abilityMove"
+                  ? abilityMoveTargets(model, sel.card, sel.ability)
+                  : new Set(model.reach.keys())
+            }
+            path={model && (sel.kind === "move" || sel.kind === "abilityMove") && target ? { from: model.origin, to: target } : null}
             carets={
               model && target && sel.kind !== "none"
                 ? {
                     cell: target,
-                    offered: sel.kind === "move" ? model.moveFacings(sel.dir) : model.rotateFacings,
+                    offered:
+                      sel.kind === "move"
+                        ? model.moveFacings(sel.dir)
+                        : sel.kind === "abilityMove"
+                          ? abilityMoveFacings(model, sel.card, sel.ability, target)
+                          : model.rotateFacings,
                     chosen: sel.facing,
                     onHover: setHover,
                     onPick: (f) => setSel({ ...sel, facing: f }),
@@ -291,11 +322,34 @@ export function App() {
             onAttackHover={setAttackHover}
             basicInRange={!!model?.basicAttack}
             weapons={myWeapons.map((w) => ({ id: w.card.id, name: w.card.name, inRange: !!model?.weaponAttacks.has(w.card.id) }))}
-            abilities={(model?.abilityActions ?? []).flatMap((a) =>
-              a.type === "ABILITY"
-                ? [{ key: `${a.card}#${a.ability}`, label: a.ability, title: abilityTitle(a.card, a.ability), action: a }]
-                : [],
-            )}
+            abilities={[
+              ...(model?.plainAbilities ?? []).flatMap((a) =>
+                a.type === "ABILITY"
+                  ? [{ key: `${a.card}#${a.ability}`, label: a.ability, title: abilityTitle(a.card, a.ability), onClick: () => dispatch(a) }]
+                  : [],
+              ),
+              ...[...(model?.abilityMoves.values() ?? [])].map((g) => ({
+                key: `${g.card}#${g.ability}`,
+                label: g.ability,
+                title: abilityTitle(g.card, g.ability),
+                onClick: () => {
+                  setHover(null);
+                  setSel({ kind: "abilityMove", card: g.card, ability: g.ability, to: null, facing: null });
+                },
+              })),
+            ]}
+            choices={
+              model && state.pending?.kind === "reroll"
+                ? [
+                    ...model.rerolls.flatMap((a) =>
+                      a.type === "REROLL"
+                        ? [{ key: `r${a.die}`, label: `Re-roll the ${rerollDice?.[a.die]}`, action: a }]
+                        : [],
+                    ),
+                    ...(model.keep ? [{ key: "keep", label: "Keep the roll", action: model.keep }] : []),
+                  ]
+                : undefined
+            }
             pass={model?.pass}
             confirm={confirm}
             canCancel={sel.kind !== "none"}

@@ -9,7 +9,16 @@ export const cellKey = (p: Position) => `${p.row},${p.col}`;
 export type Selection =
   | { kind: "none" }
   | { kind: "move"; dir: Facing; facing: Facing | null }
-  | { kind: "rotate"; facing: Facing | null };
+  | { kind: "rotate"; facing: Facing | null }
+  /** An Action ability that moves (e.g. Salah ad-Din): pick a destination, then a facing. */
+  | { kind: "abilityMove"; card: string; ability: string; to: Position | null; facing: Facing | null };
+
+/** An Action ability whose legal choices are destinations + facings (one action per choice). */
+export interface AbilityMoveGroup {
+  card: string;
+  ability: string;
+  options: Extract<Action, { type: "ABILITY" }>[];
+}
 
 export const NO_SELECTION: Selection = { kind: "none" };
 
@@ -31,8 +40,13 @@ export interface BoardModel {
   pass: Action | undefined;
   /** Legal discards while a card restriction is pending, keyed by card id. */
   discards: Map<string, Action>;
-  /** Usable Action abilities (each costs one action). */
-  abilityActions: Action[];
+  /** Usable Action abilities that need no choice (each costs one action). */
+  plainAbilities: Action[];
+  /** Usable Action abilities that move, keyed "card#ability", with every legal destination + facing. */
+  abilityMoves: Map<string, AbilityMoveGroup>;
+  /** While an optional re-roll is pending: the legal REROLL choices and KEEP. */
+  rerolls: Action[];
+  keep: Action | undefined;
 }
 
 export function buildModel(state: GameState): BoardModel {
@@ -54,8 +68,34 @@ export function buildModel(state: GameState): BoardModel {
     attacks: legal.filter((a) => a.type === "ATTACK"),
     pass: legal.find((a) => a.type === "PASS"),
     discards: new Map(legal.flatMap((a) => (a.type === "DISCARD" ? [[a.card, a] as const] : []))),
-    abilityActions: legal.filter((a) => a.type === "ABILITY"),
+    plainAbilities: legal.filter((a) => a.type === "ABILITY" && !a.to),
+    abilityMoves: groupAbilityMoves(legal),
+    rerolls: legal.filter((a) => a.type === "REROLL"),
+    keep: legal.find((a) => a.type === "KEEP"),
   };
+}
+
+function groupAbilityMoves(legal: Action[]): Map<string, AbilityMoveGroup> {
+  const out = new Map<string, AbilityMoveGroup>();
+  for (const a of legal) {
+    if (a.type !== "ABILITY" || !a.to) continue;
+    const key = `${a.card}#${a.ability}`;
+    if (!out.has(key)) out.set(key, { card: a.card, ability: a.ability, options: [] });
+    out.get(key)!.options.push(a);
+  }
+  return out;
+}
+
+/** For an ability move: the destination cells it can reach. */
+export function abilityMoveTargets(model: BoardModel, card: string, ability: string): Set<string> {
+  return new Set((model.abilityMoves.get(`${card}#${ability}`)?.options ?? []).map((a) => cellKey(a.to!)));
+}
+
+/** For an ability move: the facings offered at destination `to`. */
+export function abilityMoveFacings(model: BoardModel, card: string, ability: string, to: Position): Facing[] {
+  return (model.abilityMoves.get(`${card}#${ability}`)?.options ?? [])
+    .filter((a) => a.to!.row === to.row && a.to!.col === to.col)
+    .map((a) => a.facing!);
 }
 
 /** The legal action a completed selection stands for, or undefined. Always a member of model.legal. */
@@ -66,6 +106,12 @@ export function selectedAction(model: BoardModel, sel: Selection): Action | unde
   if (sel.kind === "rotate" && sel.facing) {
     return model.legal.find((a) => a.type === "ROTATE" && a.facing === sel.facing);
   }
+  if (sel.kind === "abilityMove" && sel.to && sel.facing) {
+    const to = sel.to;
+    return model.abilityMoves
+      .get(`${sel.card}#${sel.ability}`)
+      ?.options.find((a) => a.to!.row === to.row && a.to!.col === to.col && a.facing === sel.facing);
+  }
   return undefined;
 }
 
@@ -73,6 +119,7 @@ export function selectedAction(model: BoardModel, sel: Selection): Action | unde
 export function selectionCell(model: BoardModel, sel: Selection): Position | null {
   if (sel.kind === "move") return stepPos(model.origin, sel.dir);
   if (sel.kind === "rotate") return model.origin;
+  if (sel.kind === "abilityMove") return sel.to;
   return null;
 }
 

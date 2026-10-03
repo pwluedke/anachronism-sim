@@ -14,6 +14,13 @@ export interface AbilityOption {
   key: string;
   label: string;
   title: string;
+  onClick: () => void;
+}
+
+/** A decision the engine is waiting on (e.g. an optional re-roll): its choices replace the bar. */
+export interface ChoiceOption {
+  key: string;
+  label: string;
   action: Action;
 }
 
@@ -33,6 +40,8 @@ export interface ActionBarProps {
   weapons: WeaponOption[];
   /** Usable Action abilities (from getLegalActions). */
   abilities: AbilityOption[];
+  /** When set, the bar shows only these choices (all from getLegalActions). */
+  choices?: ChoiceOption[];
   pass?: Action;
   confirm?: Action;
   canCancel: boolean;
@@ -41,8 +50,24 @@ export interface ActionBarProps {
 }
 
 export function ActionBar(props: ActionBarProps) {
-  const { prompt, notice, thinking, enabled, onAttack, onAttackHover, basicInRange, weapons, abilities, pass, confirm, canCancel, onAct, onCancel } =
+  const { prompt, notice, thinking, enabled, onAttack, onAttackHover, basicInRange, weapons, abilities, choices, pass, confirm, canCancel, onAct, onCancel } =
     props;
+  if (choices?.length) {
+    return (
+      <section className="action-bar" aria-label="decision">
+        <div className="action-prompt decision" aria-live="polite">
+          {prompt}
+        </div>
+        <div className="action-buttons">
+          {choices.map((c) => (
+            <button key={c.key} className="btn btn-choice" onClick={() => onAct(c.action)}>
+              {c.label}
+            </button>
+          ))}
+        </div>
+      </section>
+    );
+  }
   const hoverProps = (source: AttackSource) => ({
     onMouseEnter: () => onAttackHover(source),
     onMouseLeave: () => onAttackHover(null),
@@ -76,7 +101,7 @@ export function ActionBar(props: ActionBarProps) {
           </button>
         ))}
         {abilities.map((a) => (
-          <button key={a.key} className="btn btn-ability" disabled={!enabled} onClick={() => onAct(a.action)} title={a.title}>
+          <button key={a.key} className="btn btn-ability" disabled={!enabled} onClick={a.onClick} title={a.title}>
             {a.label}
           </button>
         ))}
