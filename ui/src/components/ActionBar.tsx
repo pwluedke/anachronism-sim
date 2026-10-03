@@ -22,17 +22,23 @@ export function ActionBar({ prompt, thinking, enabled, attack, pass, confirm, ca
       </div>
       <div className="action-buttons">
         <button className="btn btn-attack" disabled={!enabled || !attack} onClick={() => attack && onAct(attack)}>
-          Attack
+          Attack <kbd>A</kbd>
         </button>
         <button className="btn" disabled={!enabled || !canCancel} onClick={onCancel}>
-          Cancel
+          Cancel <kbd>Esc</kbd>
         </button>
         <button className="btn btn-gold" disabled={!enabled || !confirm} onClick={() => confirm && onAct(confirm)}>
-          Confirm
+          Confirm <kbd>Enter</kbd>
         </button>
         <button className="btn" disabled={!enabled || !pass} onClick={() => pass && onAct(pass)}>
-          End turn
+          End turn <kbd>E</kbd>
         </button>
+      </div>
+      <div className="key-legend muted">
+        <kbd>←</kbd>
+        <kbd>↑</kbd>
+        <kbd>↓</kbd>
+        <kbd>→</kbd> choose a step, then a facing · <kbd>R</kbd> turn in place
       </div>
     </section>
   );

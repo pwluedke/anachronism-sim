@@ -723,3 +723,20 @@ button.token:focus-visible {
     animation: none;
   }
 }
+
+/* ---- keyboard hints ---- */
+.action-buttons kbd {
+  margin-left: 4px;
+  opacity: 0.7;
+}
+.btn:disabled kbd {
+  opacity: 0.5;
+}
+.key-legend {
+  font-size: var(--fs-xs);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

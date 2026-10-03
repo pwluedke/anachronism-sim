@@ -72,6 +72,51 @@ export function App() {
     setHover(null);
     setSel({ kind: "move", dir, facing: offered.includes(active.facing) ? active.facing : null });
   };
+  // Keyboard: same handlers and same engine-legal actions as the mouse path.
+  useEffect(() => {
+    const ARROW: Record<string, Facing> = { ArrowUp: "N", ArrowRight: "E", ArrowDown: "S", ArrowLeft: "W" };
+    const onKey = (e: KeyboardEvent) => {
+      if (!model || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.target instanceof HTMLSelectElement || e.target instanceof HTMLInputElement) return;
+      const k = e.key;
+      let handled = true;
+      if (k in ARROW) {
+        const f = ARROW[k];
+        if (sel.kind === "none") {
+          const dest = [...model.reach.entries()].find(([, dir]) => dir === f);
+          if (dest) {
+            const offered = model.moveFacings(f);
+            setHover(null);
+            setSel({ kind: "move", dir: f, facing: offered.includes(active.facing) ? active.facing : null });
+          }
+        } else {
+          const offered = sel.kind === "move" ? model.moveFacings(sel.dir) : model.rotateFacings;
+          if (offered.includes(f)) {
+            setHover(null);
+            setSel({ ...sel, facing: f });
+          }
+        }
+      } else if (k === "Enter") {
+        if (confirm) dispatch(confirm);
+      } else if (k === "Escape") {
+        setSel(NO_SELECTION);
+        setHover(null);
+      } else if (k === "a" || k === "A") {
+        if (model.attack) dispatch(model.attack);
+      } else if (k === "e" || k === "E") {
+        if (model.pass) dispatch(model.pass);
+      } else if (k === "r" || k === "R") {
+        if (model.rotateFacings.length) {
+          setHover(null);
+          setSel(sel.kind === "rotate" ? NO_SELECTION : { kind: "rotate", facing: null });
+        }
+      } else handled = false;
+      if (handled) e.preventDefault();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [model, sel, confirm, active, dispatch]);
+
   const onOwnTokenClick = () => {
     if (!model || model.rotateFacings.length === 0) return;
     setHover(null);
