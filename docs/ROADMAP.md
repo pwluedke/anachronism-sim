@@ -171,13 +171,32 @@ Screenshots: [`docs/screenshots/`](screenshots/) (`m9-*`).
 - **Optional abilities** — the rulebook makes limited abilities optional; the six batch abilities only
   ever help their owner, so they apply automatically. Abilities with a downside will need a choice.
 
-## Milestone 10 (CURRENT): Card abilities batch 2 — defense, damage, re-roll, move, reactions
+## Milestone 10 (DONE): Card abilities batch 2 — defense, damage, re-roll, move, reactions
 
-Epic #60. Extends the ability engine with defense-roll and weapon-damage modifiers, ability damage,
-optional re-rolls, ability movement, and when-hit / when-missed / start-of-game triggers, proven on
-seven cards (Linen Cuirass, Byrnies, Gladius, Khutulun, Subedei, Salah ad-Din, Vlad Tepes).
+Epic #60. The ability engine gained: start-of-game, when-hit and when-missed triggers; modifiers
+evaluated against the specific attack (attack roll, **defense roll**, a weapon's own damage) with
+per-effect conditions that add up (p17); ability damage to self / opponent / defender / attacker
+(not a hit; can defeat a warrior outside an attack); Action moves of N spaces; and **optional**
+abilities — an attack-roll re-roll pauses the attack after both rolls are seen and the attacker
+chooses REROLL a die or KEEP. Combat now applies defense-roll modifiers (they were unwired: no card
+used them before) and ability damage bonuses after a crit doubles base damage. Seven cards: Linen
+Cuirass, Byrnies, Gladius, Khutulun, Subedei, Salah ad-Din, Vlad Tepes (13 implemented in all).
 
-## Milestone 11: 4-player + variant rules
+**DONE =** 217 engine tests green (triggers, effects, conditions, optional re-roll, combat
+modifiers, per-card tests, bot); 40 self-play games with batch-1 and batch-2 decks terminal with zero
+illegal actions (every event-triggered batch card fired; 37 re-roll decisions; 10 attacks with a
+defense bonus); full games vs the bot in the browser with both batches live. Screenshots
+[`docs/screenshots/`](screenshots/) (`m10-*`).
+
+### M10 follow-ups
+
+- **Byrnies and Gladius** are in no preset deck: tests use test-only decks; not selectable in the UI.
+- **Shinmen Takezo's sword clause** (M9) can now be written with these primitives plus a
+  weapon-trait condition.
+- **More optional abilities** — the re-roll is the first; other "you may" abilities reuse the same
+  pending-decision pattern.
+
+## Milestone 11 (CURRENT): 4-player + variant rules
 
 Variant rules sourced from BGG variants.
 

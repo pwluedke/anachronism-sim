@@ -1,7 +1,7 @@
 # Anachronism Engine — Headless 1v1
 
 A pure-function, fully-serializable TypeScript engine for 1v1 *Anachronism*: warriors plus their
-4 support cards (Milestone 8) and card abilities (Milestone 9) — live for a first batch of six cards;
+4 support cards (Milestone 8) and card abilities (Milestones 9–10) — live for thirteen cards so far;
 every other card's ability text is carried but inert. No UI, no I/O, no `Math.random`.
 
 ```ts
@@ -84,12 +84,22 @@ the abilities of each player's warrior and **in-play** support cards; face-down 
 do nothing. Only cards registered in `cards.ts` have working abilities — **every other card's
 ability text is inert**.
 
-Timing follows the rulebook: Reveal abilities fire after the round's reveal, initiative and card
-restrictions (only for the card revealed that round), then "start of round" abilities, both in
-initiative order; damage abilities fire for the attacker after the blow is logged; Action abilities
-are an `ABILITY` action costing one of the warrior's actions. Timed effects ("this round", "your next
-turn") outlive their card; "once per round" uses reset each round. Abilities that only ever help
-their owner apply automatically (the rulebook makes limited abilities optional).
+Timing follows the rulebook: start-of-game abilities fire once at setup; Reveal abilities fire after
+the round's reveal, initiative and card restrictions (only for the card revealed that round), then
+"start of round" abilities, both in initiative order; after an attack is logged, the attacker's
+damage abilities and the defender's when-hit / when-missed abilities fire; Action abilities are an
+`ABILITY` action costing one of the warrior's actions (a move ability's `ABILITY` carries its
+destination + facing). Timed effects ("this round", "your next turn") outlive their card; "once per
+round" uses reset each round. Ability damage isn't a hit and can defeat a warrior outside an attack.
+
+**Modifiers** (continuous abilities) are evaluated against the specific attack: attack-roll bonus,
+defense-roll bonus (added to the defender's roll), and a weapon's own damage bonus (added after a
+critical hit doubles the base damage, p13). Gated effects on one ability add up (p17).
+
+**Optional abilities** (e.g. Subedei's "you may re-roll one die") are never applied automatically:
+once both attack rolls are seen the attack pauses (`pending: reroll`) and the attacker chooses
+`REROLL` a die or `KEEP`; the bot decides through its search. Abilities that only ever help their
+owner (life gain, bonuses) apply automatically.
 
 An ability is authored one of two ways (`format.ts`):
 
@@ -108,10 +118,12 @@ defineCard("s9-999", { coded: {
 }});
 ```
 
-Data fields: `trigger` (`continuous` | `reveal` | `roundStart` | `damageDealt` | `action`),
-`condition?` (`hasInPlay` a card type | `lostInitiative`), `effects` (`attackRoll` | `gainLife` |
-`speed`, with an amount), `usageLimit?` (`oncePerRound`), `duration?` (`permanent` | `thisRound` |
-`nextTurn`).
+Data fields: `trigger` (`continuous` | `gameStart` | `reveal` | `roundStart` | `damageDealt` | `hit` |
+`missed` | `attackRoll` | `action`), `condition?` (`hasInPlay` a card type | `lostInitiative` |
+`lowerLifeThanAttacker` | `haveShield` | `defenderNoArmor` | `attackKind`), `effects` (`attackRoll` |
+`defenseRoll` | `weaponDamage` | `gainLife` | `speed` | `dealDamage` to a target | `move` N spaces |
+`reroll` with an `ifSame` follow-up; any effect may carry its own `when` condition), `usageLimit?`
+(`oncePerRound`), `duration?` (`permanent` | `thisRound` | `nextTurn`).
 
 ## Round / turn / combat rules
 
@@ -135,6 +147,8 @@ Data fields: `trigger` (`continuous` | `reveal` | `roundStart` | `damageDealt` |
 | `ATTACK` | `{ type:"ATTACK", weapon? }` | 1 action | Basic attack (warrior grid + damage), or with an in-play `weapon` (its grid + damage; once per weapon per turn). Foe must be in the projected grid. |
 | `PASS` | `{ type:"PASS" }` | — | End the turn immediately. |
 | `DISCARD` | `{ type:"DISCARD", card }` | — | Only while a card restriction is pending: discard an offending in-play card. |
+| `ABILITY` | `{ type:"ABILITY", card, ability, to?, facing? }` | 1 action | Use an Action ability (a move ability names where to and which way to face). |
+| `REROLL` / `KEEP` | `{ type:"REROLL", die }` / `{ type:"KEEP" }` | — | Only while an optional re-roll is pending: re-roll one attack die, or keep the roll. |
 
 `getLegalActions(state)` offers every legal step with each of the four facings (the free rotate), so
 up to 16 `MOVE`s per position, the basic attack and each usable weapon attack — or, while a restriction
