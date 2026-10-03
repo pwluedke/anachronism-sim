@@ -31,6 +31,8 @@ export interface BoardModel {
   pass: Action | undefined;
   /** Legal discards while a card restriction is pending, keyed by card id. */
   discards: Map<string, Action>;
+  /** Usable Action abilities (each costs one action). */
+  abilityActions: Action[];
 }
 
 export function buildModel(state: GameState): BoardModel {
@@ -52,6 +54,7 @@ export function buildModel(state: GameState): BoardModel {
     attacks: legal.filter((a) => a.type === "ATTACK"),
     pass: legal.find((a) => a.type === "PASS"),
     discards: new Map(legal.flatMap((a) => (a.type === "DISCARD" ? [[a.card, a] as const] : []))),
+    abilityActions: legal.filter((a) => a.type === "ABILITY"),
   };
 }
 

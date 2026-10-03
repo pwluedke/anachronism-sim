@@ -970,3 +970,57 @@ button.card-face.discardable:focus-visible {
 .deck-picker select {
   max-width: 220px;
 }
+
+/* ---- abilities ---- */
+.ability-chips {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 340px;
+}
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-size: var(--fs-xs);
+  border: 1px solid var(--ink-300);
+  background: var(--parchment-50);
+  color: var(--ink-700);
+}
+.chip-name {
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+}
+.chip-detail {
+  font-style: italic;
+  color: var(--ink-500);
+}
+.chip-active,
+.chip-active-effect {
+  border-color: var(--gold-500);
+  background: linear-gradient(var(--parchment-50), var(--parchment-100));
+}
+.chip-active .chip-detail,
+.chip-active-effect .chip-detail {
+  color: var(--gold-600);
+}
+.chip-dormant,
+.chip-used {
+  opacity: 0.6;
+}
+.chip-effect {
+  border-style: dashed;
+}
+.sc-active {
+  font-style: italic;
+  color: var(--gold-600);
+}
+.btn-ability:not(:disabled) {
+  color: var(--gold-600);
+  border-color: var(--gold-500);
+}

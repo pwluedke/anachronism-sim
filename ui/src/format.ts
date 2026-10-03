@@ -59,7 +59,11 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
     case "passed":
       return { kind: "note", text: `${names[e.player]} holds.`, player: e.player };
     case "abilityFired":
-      return { kind: "ability", text: `${e.cardName} — ${e.ability}: ${names[e.player]} ${e.effect}.`, player: e.player };
+      return {
+        kind: "ability",
+        text: `${e.cardName} — ${e.ability}: ${names[e.player]} ${/^[+-]/.test(e.effect) ? `gets ${e.effect}` : e.effect}.`,
+        player: e.player,
+      };
     case "discardRequired":
       return { kind: "note", text: `${names[e.player]} must discard: ${e.reasons.join("; ")}.`, player: e.player };
     case "discarded":

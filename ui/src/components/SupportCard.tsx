@@ -1,6 +1,7 @@
 // One support-card slot: face-down (card back), or face-up once revealed — in play, or discarded.
 // Shows only the stats with effect this milestone (initiative, type, hands, a weapon's grid +
-// damage); ability text is shown but marked inactive.
+// damage). Abilities implemented in the engine are marked "on"; the rest are still inactive.
+import { IMPLEMENTED } from "@engine";
 import type { SupportSlot } from "@engine";
 import { GridDiagram } from "./GridDiagram";
 
@@ -27,11 +28,13 @@ export function SupportCard({
   }
   const c = slot.card;
   const abilityText = c.abilities.map((a) => `${a.name}${a.type !== "unknown" ? ` (${a.type})` : ""}: ${a.text}`).join("\n");
+  const impl = IMPLEMENTED[c.id];
   const title = [
     `${c.name} — ${TYPE_LABEL[c.type]}`,
     `Initiative ${c.initiative ?? "—"}${c.hands ? ` · ${c.hands} hand${c.hands > 1 ? "s" : ""}` : ""}${c.damage !== null ? ` · damage ${c.damage}` : ""}`,
     c.traits.length ? c.traits.join(", ") : "",
-    abilityText ? `Abilities (inactive this milestone):\n${abilityText}` : "",
+    abilityText ? `Abilities (${impl ? "in effect" : "not yet implemented"}):\n${abilityText}` : "",
+    impl?.partial ?? "",
     slot.status === "discarded" ? "DISCARDED" : "",
   ]
     .filter(Boolean)
@@ -53,7 +56,8 @@ export function SupportCard({
       )}
       <span className="sc-foot">
         {c.hands > 0 && <span className="sc-hands">{c.hands} hand{c.hands > 1 ? "s" : ""}</span>}
-        {c.abilities.length > 0 && <span className="sc-inactive">ability off</span>}
+        {c.abilities.length > 0 &&
+          (impl ? <span className="sc-active">ability on</span> : <span className="sc-inactive">ability off</span>)}
       </span>
       {slot.status === "discarded" && <span className="sc-stamp">discarded</span>}
     </>

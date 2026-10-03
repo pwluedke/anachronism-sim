@@ -10,6 +10,13 @@ export interface WeaponOption {
   inRange: boolean;
 }
 
+export interface AbilityOption {
+  key: string;
+  label: string;
+  title: string;
+  action: Action;
+}
+
 /** "basic" or a weapon card id. */
 export type AttackSource = "basic" | string;
 
@@ -24,6 +31,8 @@ export interface ActionBarProps {
   onAttackHover: (source: AttackSource | null) => void;
   basicInRange: boolean;
   weapons: WeaponOption[];
+  /** Usable Action abilities (from getLegalActions). */
+  abilities: AbilityOption[];
   pass?: Action;
   confirm?: Action;
   canCancel: boolean;
@@ -32,7 +41,7 @@ export interface ActionBarProps {
 }
 
 export function ActionBar(props: ActionBarProps) {
-  const { prompt, notice, thinking, enabled, onAttack, onAttackHover, basicInRange, weapons, pass, confirm, canCancel, onAct, onCancel } =
+  const { prompt, notice, thinking, enabled, onAttack, onAttackHover, basicInRange, weapons, abilities, pass, confirm, canCancel, onAct, onCancel } =
     props;
   const hoverProps = (source: AttackSource) => ({
     onMouseEnter: () => onAttackHover(source),
@@ -64,6 +73,11 @@ export function ActionBar(props: ActionBarProps) {
             {...hoverProps(w.id)}
           >
             {w.name} {i === 0 && <kbd>W</kbd>}
+          </button>
+        ))}
+        {abilities.map((a) => (
+          <button key={a.key} className="btn btn-ability" disabled={!enabled} onClick={() => onAct(a.action)} title={a.title}>
+            {a.label}
           </button>
         ))}
         <button className="btn" disabled={!enabled || !canCancel} onClick={onCancel}>

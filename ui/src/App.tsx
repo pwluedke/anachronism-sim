@@ -204,6 +204,17 @@ export function App() {
     };
   };
 
+  /** Tooltip for an action-ability button: whose card it is and its printed text. */
+  const abilityTitle = (cardId: string, ability: string) => {
+    const p = state.currentPlayer;
+    const card =
+      sides[p].warrior.id === cardId
+        ? { name: sides[p].warrior.name, abilities: sides[p].warrior.abilities ?? [] }
+        : state.cards[p].support.find((s) => s.card.id === cardId)?.card;
+    const text = card?.abilities.find((x) => x.name === ability)?.text ?? "";
+    return `${card?.name ?? ""} — ${ability} (Action, costs 1 action): ${text}`;
+  };
+
   const ended =
     state.phase === "ended"
       ? ([...log].reverse().find((e) => e.type === "gameEnded") as GameEndedEvent | undefined)
@@ -272,6 +283,11 @@ export function App() {
             onAttackHover={setAttackHover}
             basicInRange={!!model?.basicAttack}
             weapons={myWeapons.map((w) => ({ id: w.card.id, name: w.card.name, inRange: !!model?.weaponAttacks.has(w.card.id) }))}
+            abilities={(model?.abilityActions ?? []).flatMap((a) =>
+              a.type === "ABILITY"
+                ? [{ key: `${a.card}#${a.ability}`, label: a.ability, title: abilityTitle(a.card, a.ability), action: a }]
+                : [],
+            )}
             pass={model?.pass}
             confirm={confirm}
             canCancel={sel.kind !== "none"}

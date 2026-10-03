@@ -6,7 +6,9 @@ const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 export function PhaseTracker({ state, cards }: { state: GameState; cards: [CardData, CardData] }) {
   const playing = state.phase === "playing";
   const p = state.currentPlayer;
-  const speed = state.warriors[p].speed;
+  // Pips for the turn's whole budget: base speed plus speed effects active this turn (abilities).
+  const bonus = state.effects.filter((e) => e.owner === p && e.kind === "speed" && e.active).reduce((n, e) => n + e.amount, 0);
+  const speed = state.warriors[p].speed + bonus;
   return (
     <section className="phase-tracker parchment" aria-label="phase and turn">
       <div className="tracker-row">
