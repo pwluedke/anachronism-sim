@@ -1,7 +1,7 @@
 # Anachronism Engine — Headless 1v1
 
 A pure-function, fully-serializable TypeScript engine for 1v1 *Anachronism*: warriors plus their
-4 support cards (Milestone 8) and card abilities (Milestones 9–10) — live for thirteen cards so far;
+4 support cards (Milestone 8) and card abilities (Milestones 9–11) — live for 24 cards so far;
 every other card's ability text is carried but inert. No UI, no I/O, no `Math.random`.
 
 ```ts
@@ -81,8 +81,9 @@ per turn (`weaponsUsed`, reset each turn); basic attacks stay uncapped.
 
 Abilities live in `src/abilities/`. The engine's hook points feed a runtime (`runtime.ts`) that runs
 the abilities of each player's warrior and **in-play** support cards; face-down and discarded cards
-do nothing. Only cards registered in `cards.ts` have working abilities — **every other card's
-ability text is inert**.
+do nothing. Only cards registered in `cards.ts` (plus the generated batch-3 set in
+`cards-batch3.ts`, from `scraper/build_ability_batch3.py`) have working abilities — **every other
+card's ability text is inert**; why each one is skipped is in `data/abilities_skipped.json`.
 
 Timing follows the rulebook: start-of-game abilities fire once at setup; Reveal abilities fire after
 the round's reveal, initiative and card restrictions (only for the card revealed that round), then

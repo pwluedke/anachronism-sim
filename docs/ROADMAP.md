@@ -196,12 +196,30 @@ defense bonus); full games vs the bot in the browser with both batches live. Scr
 - **More optional abilities** — the re-roll is the first; other "you may" abilities reuse the same
   pending-decision pattern.
 
-## Milestone 11 (CURRENT): Card abilities batch 3 — rule-defined bulk pass
+## Milestone 11 (DONE): Card abilities batch 3 — rule-defined bulk pass
 
 Epic #69. Implement every unimplemented card whose whole printed text fits the existing effects and
 triggers plus a short whitelist of new conditions (element, culture, adjacency, life comparison,
 face-up support count, won initiative, opponent lacks a card type). Cards needing anything else are
 skipped and logged to `data/abilities_skipped.json` with a reason — the scoping input for batch 4.
+
+Delivered: the whitelist conditions (warriors now carry element and cultures);
+`scraper/build_ability_batch3.py` applies the inclusion rule to all 748 unimplemented cards — skip
+list on the whole text, then strict per-sentence templates — and generates
+`engine/src/abilities/cards-batch3.ts`. 11 cards qualified (24 implemented in all): Hoplon, Uma,
+Leiter, Shield of Hephaestus, Ocrea, Charlemagne, Čhehúpahu Čhaŋksá, Kamea-e Helal-e Irani,
+Moctezuma II, Mercurino Gattinara, Klironomimena Opla. 737 skipped; top reasons: unsupported clause
+117, discard 83, extra attacks 74, "this game" 67, initiative 65, experience 64. The bot now values
+"this round" speed before its owner's turn; 20 self-play games over decks carrying every batch-3
+card ran clean.
+
+### Follow-ups (from Milestone 11)
+
+- **Batch 4 scoping** — the skip log's biggest buckets are mechanics, not phrasing: discard,
+  extra attacks, initiative / experience modification, "this game" effects, dice-value branching.
+- **Template reach** — "unsupported clause" (117) includes near-misses that a new effect would
+  unlock: "your attacks deal +N damage" (all attacks, not one weapon), "your next attack deals +N",
+  "attack rolls gain +N against <element> warriors", "move one space diagonally".
 
 ## Milestone 13: Raspberry Pi 4 kiosk build
 
