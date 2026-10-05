@@ -64,9 +64,13 @@ export function evaluate(state: GameState, perspective: PlayerId): number {
     Math.abs(me.position.row - foe.position.row) + Math.abs(me.position.col - foe.position.col);
   const approach = -W.approach * Math.max(0, -margin) * distance;
 
-  // Speed banked for a coming turn (e.g. Sun Tzu's action) is worth future actions.
+  // Speed banked for a coming turn (e.g. Sun Tzu's action) is worth future actions — as is "this
+  // round" speed (e.g. Moctezuma II) while that player's turn this round is still to come.
+  const turnAhead = (q: PlayerId) => state.turnOrder.indexOf(q) > state.turnIndex;
   const banked = (q: PlayerId) =>
-    state.effects.filter((e) => e.owner === q && e.kind === "speed" && !e.active).reduce((n, e) => n + e.amount, 0);
+    state.effects
+      .filter((e) => e.owner === q && e.kind === "speed" && (e.duration === "nextTurn" ? !e.active : turnAhead(q)))
+      .reduce((n, e) => n + e.amount, 0);
   const speed = W.pendingSpeed * (banked(perspective) - banked(perspective === 0 ? 1 : 0));
 
   return life + lead + (mine - theirs) + approach + speed + expDiff * W.experience;
