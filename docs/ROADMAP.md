@@ -203,10 +203,6 @@ triggers plus a short whitelist of new conditions (element, culture, adjacency, 
 face-up support count, won initiative, opponent lacks a card type). Cards needing anything else are
 skipped and logged to `data/abilities_skipped.json` with a reason — the scoping input for batch 4.
 
-## Milestone 12: Online multiplayer
-
-Authoritative server.
-
 ## Milestone 13: Raspberry Pi 4 kiosk build
 
 ## Milestone 14: Custom card creator
@@ -218,3 +214,4 @@ In-app schema-validated JSON append.
 Hard maybes, no milestone number until picked up again.
 
 - **4-player + variant rules** — Variant rules sourced from BGG variants.
+- **Online multiplayer** — Authoritative server.
