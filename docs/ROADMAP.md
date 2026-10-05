@@ -196,9 +196,12 @@ defense bonus); full games vs the bot in the browser with both batches live. Scr
 - **More optional abilities** — the re-roll is the first; other "you may" abilities reuse the same
   pending-decision pattern.
 
-## Milestone 11 (CURRENT): 4-player + variant rules
+## Milestone 11 (CURRENT): Card abilities batch 3 — rule-defined bulk pass
 
-Variant rules sourced from BGG variants.
+Epic #69. Implement every unimplemented card whose whole printed text fits the existing effects and
+triggers plus a short whitelist of new conditions (element, culture, adjacency, life comparison,
+face-up support count, won initiative, opponent lacks a card type). Cards needing anything else are
+skipped and logged to `data/abilities_skipped.json` with a reason — the scoping input for batch 4.
 
 ## Milestone 12: Online multiplayer
 
@@ -209,3 +212,9 @@ Authoritative server.
 ## Milestone 14: Custom card creator
 
 In-app schema-validated JSON append.
+
+## Parked / Later
+
+Hard maybes, no milestone number until picked up again.
+
+- **4-player + variant rules** — Variant rules sourced from BGG variants.
