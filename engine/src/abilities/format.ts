@@ -48,7 +48,7 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
     const mods = a.effects.filter(isModifier);
     const modify = (kind: ModKind, q: ModQuery): number => {
       if (kind === "weaponDamage" && q.weaponId !== q.sourceCardId) return 0; // only attacks with this weapon
-      const cq = { attacker: q.attacker, defender: q.defender };
+      const cq = { attacker: q.attacker, defender: q.defender, attackKind: q.weaponId ? ("weapon" as const) : ("basic" as const) };
       if (!holds(a.condition, q.state, q.owner, cq)) return 0;
       return mods.filter((e) => e.kind === kind && holds(e.when, q.state, q.owner, cq)).reduce((n, e) => n + e.amount, 0);
     };

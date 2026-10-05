@@ -125,13 +125,18 @@ export function weaponDamageBonus(state: GameState, p: PlayerId, weaponId: strin
   return modifierTotal(state, p, "weaponDamage", p, oppOf(p), weaponId);
 }
 
-/** At the start of p's turn: activate p's pending "next turn" effects; returns the speed bonus. */
+/** At the start of p's turn: activate p's pending "next turn" effects; returns the speed bonus —
+ *  from those, plus any "this round" speed effects (e.g. gained at the start of the round). */
 export function beginTurnEffects(state: GameState, p: PlayerId): number {
   let speed = 0;
   for (const e of state.effects) {
-    if (e.owner !== p || e.duration !== "nextTurn" || e.active) continue;
-    e.active = true;
-    if (e.kind === "speed") speed += e.amount;
+    if (e.owner !== p) continue;
+    if (e.duration === "nextTurn" && !e.active) {
+      e.active = true;
+      if (e.kind === "speed") speed += e.amount;
+    } else if (e.duration === "thisRound" && e.kind === "speed") {
+      speed += e.amount;
+    }
   }
   return speed;
 }

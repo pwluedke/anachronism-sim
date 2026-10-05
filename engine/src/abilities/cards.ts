@@ -4,6 +4,7 @@
 // printed one.
 
 import { defineCard } from "./format";
+import { IMPLEMENTED_BATCH3 } from "./cards-batch3"; // generated: scraper/build_ability_batch3.py
 
 /** Implemented cards, and any part of their printed text that is NOT implemented yet. */
 export const IMPLEMENTED: Record<string, { name: string; partial?: string }> = {
@@ -21,6 +22,8 @@ export const IMPLEMENTED: Record<string, { name: string; partial?: string }> = {
   "s2-096": { name: "Subedei" },
   "s5-066": { name: "Salah ad-Din" },
   "s6-071": { name: "Vlad Tepes" },
+  // batch 3 (rule-defined bulk pass) — generated
+  ...IMPLEMENTED_BATCH3,
 };
 
 // Shinmen Takezo — Kyougou: "Your attack rolls gain +2. Your attacks with swords deal +1 damage."

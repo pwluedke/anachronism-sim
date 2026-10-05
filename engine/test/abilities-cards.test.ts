@@ -44,9 +44,9 @@ function passRound(s: GameState) {
 }
 
 describe("first-batch card abilities", () => {
-  it("exactly the implemented cards (batches 1 + 2) have abilities; everything else is inert", () => {
+  it("exactly the implemented cards (batches 1-3) have abilities; everything else is inert", () => {
     expect(Object.keys(REGISTRY).sort()).toEqual(Object.keys(IMPLEMENTED).sort());
-    expect(Object.keys(REGISTRY)).toHaveLength(13);
+    expect(Object.keys(REGISTRY)).toHaveLength(24);
     const { decks } = loadAllDecks(recs, cards);
     const batch = new Set(Object.keys(IMPLEMENTED));
     for (const d of decks.filter((x) => ![x.warrior.id, ...x.support.map((c) => c.id)].some((id) => batch.has(id))).slice(0, 25)) {
@@ -128,11 +128,12 @@ describe("first-batch card abilities", () => {
     const r1 = init(CARLOS, opp, 1);
     expect(r1.state.initiative).toBe(1);
     expect(r1.state.warriors[0].life).toBe(CARLOS.warrior.life + 1);
-    expect(abilityEvents(r1.events)).toEqual([expect.objectContaining({ cardName: "Carlos V", effect: "gains 1 life" })]);
+    const carlos = (ev: GameEvent[]) => abilityEvents(ev).filter((e) => e.type === "abilityFired" && e.cardName === "Carlos V");
+    expect(carlos(r1.events)).toEqual([expect.objectContaining({ cardName: "Carlos V", effect: "gains 1 life" })]);
     const r2 = passRound(r1.state);
     expect(r2.state.initiative).toBe(0); // he wins round 2
     expect(r2.state.warriors[0].life).toBe(CARLOS.warrior.life + 1); // no gain
-    expect(abilityEvents(r2.events)).toEqual([]);
+    expect(carlos(r2.events)).toEqual([]);
   });
 
   it("Sun Tzu: Action — +1 speed on his next turn only (one action to use; stacks)", () => {
