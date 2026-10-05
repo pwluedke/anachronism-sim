@@ -111,6 +111,7 @@ export function warriorData(r: CardRecord): CardData {
     abilities: r.abilities ?? [],
     element: r.element,
     cultures: r.cultures ?? [],
+    traits: [...(r.traits ?? [])],
   };
 }
 

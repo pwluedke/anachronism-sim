@@ -37,6 +37,8 @@ export interface CardData {
   element?: string;
   /** Culture(s), e.g. ["Greek"]; pirate-set warriors can have two. */
   cultures?: string[];
+  /** Printed traits, e.g. ["Male", "Cavalry"]. */
+  traits?: string[];
 }
 
 export interface Warrior {
@@ -52,6 +54,7 @@ export interface Warrior {
   attackGrid: AttackGrid; // canonical (marker at 3B), rotated on projection
   element?: string;
   cultures?: string[];
+  traits?: string[];
 }
 
 export type Phase = "setup" | "playing" | "ended";
@@ -111,6 +114,8 @@ export interface GameState {
   abilityUses: string[];
   /** Card id each player revealed this round (null: none) — only these fire Reveal abilities. */
   revealedThisRound: [string | null, string | null];
+  /** The current player's warrior has changed spaces this turn (a move action or an ability move). */
+  movedThisTurn: boolean;
 }
 
 /** An attack whose dice are rolled but not yet judged (an optional re-roll is being decided). */

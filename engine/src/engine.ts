@@ -31,7 +31,8 @@ import {
   resolveReroll,
   usableReroll,
   useActionAbility,
-  weaponDamageBonus,
+  damageBonus,
+  continuousSpeed,
 } from "./abilities/runtime";
 import "./abilities/cards"; // registers the implemented card abilities
 
@@ -59,6 +60,7 @@ function buildWarrior(card: CardData, playerId: PlayerId): Warrior {
     attackGrid: { ...card.grid },
     element: card.element,
     cultures: card.cultures ? [...card.cultures] : [],
+    traits: card.traits ? [...card.traits] : [],
   };
 }
 
@@ -165,6 +167,12 @@ function requestDiscard(state: GameState, events: GameEvent[]): void {
   });
 }
 
+/** A warrior's speed for a turn starting now: printed speed + continuous speed abilities
+ *  (timed speed effects are added by beginTurnEffects). */
+function turnSpeed(state: GameState, p: PlayerId): number {
+  return state.warriors[p].speed + continuousSpeed(state, p);
+}
+
 /** Finish round start once cards are legal: Reveal abilities, start-of-round effects, first turn. */
 function beginFirstTurn(state: GameState, events: GameEvent[]): void {
   state.pending = null;
@@ -174,7 +182,8 @@ function beginFirstTurn(state: GameState, events: GameEvent[]): void {
   Hooks.resolveHooks(state, "onReveal", { round: state.round, events });
   Hooks.resolveHooks(state, "onRoundStart", { round: state.round, events });
   if (endIfDefeated(state, events)) return;
-  state.actionsRemaining = currentWarrior(state).speed + beginTurnEffects(state, state.currentPlayer);
+  state.movedThisTurn = false;
+  state.actionsRemaining = turnSpeed(state, state.currentPlayer) + beginTurnEffects(state, state.currentPlayer);
   events.push({
     type: "turnStarted",
     player: state.currentPlayer,
@@ -243,7 +252,8 @@ function endTurn(state: GameState, events: GameEvent[]): void {
   if (state.turnIndex === 0) {
     state.turnIndex = 1;
     state.currentPlayer = state.turnOrder[1];
-    state.actionsRemaining = currentWarrior(state).speed + beginTurnEffects(state, state.currentPlayer);
+    state.movedThisTurn = false;
+    state.actionsRemaining = turnSpeed(state, state.currentPlayer) + beginTurnEffects(state, state.currentPlayer);
     state.weaponsUsed = [];
     events.push({
       type: "turnStarted",
@@ -314,6 +324,7 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
     effects: [],
     abilityUses: [],
     revealedThisRound: [null, null],
+    movedThisTurn: false,
   };
 
   const events: GameEvent[] = [{ type: "setup", firstPlacer }];
@@ -338,7 +349,7 @@ function finishAttack(state: GameState, pa: PendingAttack, events: GameEvent[]):
     state.rng,
     attackRollBonus(state, me, pa.weapon),
     defenseRollBonus(state, foe, pa.weapon),
-    pa.weapon ? weaponDamageBonus(state, me, pa.weapon) : 0,
+    damageBonus(state, me, pa.weapon),
   );
   state.rng = r.rng;
   Hooks.resolveHooks(state, "afterAttackRoll", { attacker: me, defender: foe, result: r.result });
@@ -436,6 +447,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
       if (!chk.ok) return { state: prev, events: [] };
       const from = { ...state.warriors[me].position };
       state.warriors[me] = applyMove(state.warriors[me], action.dir, action.facing);
+      state.movedThisTurn = true;
       state.actionsRemaining -= 1;
       events.push({
         type: "moved",

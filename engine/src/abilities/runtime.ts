@@ -94,18 +94,24 @@ export function fireTrigger(
 
 const oppOf = (p: PlayerId): PlayerId => (p === 0 ? 1 : 0);
 
-/** Sum of a modifier for `owner`: continuous abilities of their in-effect cards + active timed effects. */
-function modifierTotal(state: GameState, owner: PlayerId, kind: ModKind, attacker: PlayerId, defender: PlayerId, weaponId?: string): number {
+/** Sum of a modifier for warrior `subject`: continuous abilities of their own in-effect cards, plus
+ *  other players' cards whose abilities reach other warriors ("all warriors' attack rolls gain +1"),
+ *  plus the subject's active timed effects. */
+function modifierTotal(state: GameState, subject: PlayerId, kind: ModKind, attacker: PlayerId, defender: PlayerId, weaponId?: string): number {
   let total = 0;
-  for (const src of sources(state, owner)) {
-    for (const a of src.abilities) {
-      if (a.trigger === "continuous" && a.modify) {
-        total += a.modify(kind, { state, owner, attacker, defender, weaponId, sourceCardId: src.cardId });
+  for (const owner of state.warriors.map((w) => w.playerId)) {
+    for (const src of sources(state, owner)) {
+      for (const a of src.abilities) {
+        if (a.trigger !== "continuous" || !a.modify || (owner !== subject && !a.affectsOthers)) continue;
+        total += a.modify(kind, { state, owner, subject, attacker, defender, weaponId, sourceCardId: src.cardId });
       }
     }
   }
-  if (kind !== "weaponDamage") {
-    for (const e of state.effects) if (e.owner === owner && e.active && e.kind === kind) total += e.amount;
+  const timed = kind === "attackDamage" ? "damage" : kind;
+  for (const e of state.effects) {
+    if (e.owner !== subject || !e.active || e.kind !== timed) continue;
+    if (e.kind === "damage" && e.weapon !== undefined && e.weapon !== weaponId) continue;
+    total += e.amount;
   }
   return total;
 }
@@ -120,9 +126,40 @@ export function defenseRollBonus(state: GameState, p: PlayerId, weaponId?: strin
   return modifierTotal(state, p, "defenseRoll", oppOf(p), p, weaponId);
 }
 
-/** Extra damage attacker p's attack with `weaponId` deals (weapon abilities, e.g. Gladius). */
+/** Extra damage from the weapon's own abilities (e.g. Gladius) for attacker p's attack with it. */
 export function weaponDamageBonus(state: GameState, p: PlayerId, weaponId: string): number {
   return modifierTotal(state, p, "weaponDamage", p, oppOf(p), weaponId);
+}
+
+/** All extra damage attacker p's attack deals — with `weaponId`, or a basic attack: the weapon's own
+ *  abilities, "your attacks deal +N damage" abilities, and timed damage effects. Added after a
+ *  critical hit doubles the base damage (p13). */
+export function damageBonus(state: GameState, p: PlayerId, weaponId?: string): number {
+  return (weaponId ? weaponDamageBonus(state, p, weaponId) : 0) + modifierTotal(state, p, "attackDamage", p, oppOf(p), weaponId);
+}
+
+/** Speed p gains every turn from continuous abilities ("You gain +1 speed", "All other warriors gain
+ *  +1 speed"), read when a turn starts. */
+export function continuousSpeed(state: GameState, p: PlayerId): number {
+  let total = 0;
+  for (const owner of state.warriors.map((w) => w.playerId)) {
+    for (const src of sources(state, owner)) {
+      for (const a of src.abilities) {
+        if (a.trigger !== "continuous" || !a.modify || (owner !== p && !a.affectsOthers)) continue;
+        total += a.modify("speed", { state, owner, subject: p, attacker: p, defender: oppOf(p), sourceCardId: src.cardId });
+      }
+    }
+  }
+  return total;
+}
+
+/** p's total actions for a turn under the current state: printed speed + continuous speed + speed
+ *  effects active for p's turn (display / evaluation helper). */
+export function speedNow(state: GameState, p: PlayerId): number {
+  const timed = state.effects
+    .filter((e) => e.owner === p && e.kind === "speed" && (e.duration === "thisRound" || e.active))
+    .reduce((n, e) => n + e.amount, 0);
+  return state.warriors[p].speed + continuousSpeed(state, p) + timed;
 }
 
 /** At the start of p's turn: activate p's pending "next turn" effects; returns the speed bonus —

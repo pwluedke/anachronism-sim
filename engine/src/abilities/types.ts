@@ -27,8 +27,10 @@ export interface TimedEffect {
   source: string;
   sourceName: string;
   ability: string;
-  kind: "attackRoll" | "defenseRoll" | "speed";
+  kind: "attackRoll" | "defenseRoll" | "speed" | "damage";
   amount: number;
+  /** damage only: limited to attacks with this weapon (card id); absent = all the owner's attacks. */
+  weapon?: string;
   /** thisRound: until the round ends. nextTurn: the owner's next turn only. */
   duration: "thisRound" | "nextTurn";
   /** nextTurn effects are created pending and become active when the owner's next turn starts. */
@@ -49,14 +51,18 @@ export interface FireContext {
   attackKind?: AttackKind;
 }
 
-/** The values continuous abilities can modify. */
-export type ModKind = "attackRoll" | "defenseRoll" | "weaponDamage";
+/** The values continuous abilities can modify. weaponDamage: attacks with the ability's own weapon;
+ *  attackDamage: all the owner's attacks; speed: actions per turn. */
+export type ModKind = "attackRoll" | "defenseRoll" | "weaponDamage" | "attackDamage" | "speed";
 
-/** The attack a modifier is being asked about. `owner` is the ability's owner (the attacker for
- *  attack-roll and weapon-damage modifiers, the defender for defense-roll modifiers). */
+/** The attack a modifier is being asked about. `owner` is the ability's owner; `subject` is the
+ *  warrior whose value is asked for (the attacker for attack-roll and damage modifiers, the defender
+ *  for defense-roll modifiers). They differ only for "all warriors" / "all other warriors" effects. */
 export interface ModQuery {
   state: GameState;
   owner: PlayerId;
+  /** Defaults to `owner`. */
+  subject?: PlayerId;
   attacker: PlayerId;
   defender: PlayerId;
   /** The weapon the attack is made with (undefined: a basic attack). */
@@ -87,6 +93,8 @@ export interface RuntimeAbility {
   reroll?: { onSame?(ctx: FireContext): string };
   /** Continuous abilities: this ability's current contribution to a modifier. */
   modify?(kind: ModKind, q: ModQuery): number;
+  /** Continuous abilities that can modify other warriors' values ("all warriors' attack rolls"). */
+  affectsOthers?: boolean;
   /** Continuous abilities: is the ability currently in effect, and what it's doing (for display)? */
   inEffect?(state: GameState, owner: PlayerId): boolean;
   describeNow?(state: GameState, owner: PlayerId, sourceCardId: string): string;

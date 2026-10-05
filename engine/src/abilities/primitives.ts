@@ -39,7 +39,17 @@ export type ConditionDef =
   /** "if you win initiative" (this round) */
   | { kind: "wonInitiative" }
   /** "if the defender / attacker has no face-up <type> card" */
-  | { kind: "lacksType"; who: "defender" | "attacker"; cardType: SupportType };
+  | { kind: "lacksType"; who: "defender" | "attacker"; cardType: SupportType }
+  // ---- batch 4 ----
+  /** "if you have moved this turn" — your warrior changed spaces during your current turn */
+  | { kind: "movedThisTurn" }
+  /** "if <who> has (no) face-up <type / trait> card", e.g. "the defending warrior has a face-up
+   *  shield card", "an opponent without a cavalry card". Matches in-play support cards by type
+   *  and / or trait; a trait also matches the warrior card itself (a Cavalry warrior is a cavalry card). */
+  | { kind: "faceUpCard"; who: CardHolder; cardType?: SupportType; trait?: string; has: boolean };
+
+/** Whose cards a faceUpCard condition looks at. */
+export type CardHolder = "self" | "defender" | "attacker" | "opponent";
 
 /** Facts about the attack a condition may need (absent outside attacks). */
 export interface CondQuery {
@@ -91,7 +101,24 @@ export function holds(cond: ConditionDef | undefined, state: GameState, owner: P
       const who = cond.who === "defender" ? q.defender : q.attacker;
       return who !== undefined && !inPlay(state, who).some((s) => s.card.type === cond.cardType);
     }
+    case "movedThisTurn":
+      return state.phase === "playing" && state.currentPlayer === owner && state.movedThisTurn;
+    case "faceUpCard": {
+      const who = cond.who === "self" ? owner : cond.who === "opponent" ? opp(owner) : cond.who === "defender" ? q.defender : q.attacker;
+      if (who === undefined) return false;
+      const trait = cond.trait?.toLowerCase();
+      const hasTrait = (traits: string[]) => trait === undefined || traits.some((t) => t.toLowerCase() === trait);
+      const found =
+        inPlay(state, who).some((s) => (cond.cardType === undefined || s.card.type === cond.cardType) && hasTrait(s.card.traits)) ||
+        (cond.cardType === undefined && trait !== undefined && hasTrait(warriorTraits(state, who)));
+      return cond.has ? found : !found;
+    }
   }
+}
+
+/** A warrior card's printed traits (e.g. Cavalry), from its card data. */
+function warriorTraits(state: GameState, p: PlayerId): string[] {
+  return state.warriors[p].traits ?? [];
 }
 
 export function describeCondition(cond: ConditionDef): string {
@@ -124,25 +151,38 @@ export function describeCondition(cond: ConditionDef): string {
       return "on winning initiative";
     case "lacksType":
       return `if the ${cond.who} has no face-up ${cond.cardType}`;
+    case "movedThisTurn":
+      return "if you have moved this turn";
+    case "faceUpCard": {
+      const whose = cond.who === "self" ? "you have" : `the ${cond.who} has`;
+      const what = [cond.trait, cond.cardType].filter(Boolean).join(" ");
+      return `if ${whose} ${cond.has ? "a" : "no"} face-up ${what} card`;
+    }
   }
 }
 
 // ---- Effects -------------------------------------------------------------------------------------
 
-/** Who ability damage goes to. allOpponents is the opponent in 1v1. */
-export type DamageTarget = "self" | "opponent" | "allOpponents" | "defender" | "attacker";
+/** Who ability damage goes to. allOpponents / allOthers are the opponent in 1v1; all is both warriors. */
+export type DamageTarget = "self" | "opponent" | "allOpponents" | "defender" | "attacker" | "all" | "allOthers";
+
+/** Whose attack rolls / speed an effect changes: your own (default), every warrior's, or every
+ *  other warrior's ("All warriors' attack rolls gain +1", "All other warriors gain +1 speed"). */
+export type EffectTarget = "self" | "all" | "allOthers";
 
 export type EffectDef = (
-  /** "Your attack rolls gain +N" */
-  | { kind: "attackRoll"; amount: number }
+  /** "Your attack rolls gain +N" (target: "All warriors' attack rolls …") */
+  | { kind: "attackRoll"; amount: number; target?: EffectTarget }
   /** "Your defense rolls gain +N" */
   | { kind: "defenseRoll"; amount: number }
   /** "Attacks with this weapon deal +N damage" (only on the weapon card itself) */
   | { kind: "weaponDamage"; amount: number }
+  /** "Your attacks deal +N damage" — every attack you make, basic or weapon */
+  | { kind: "attackDamage"; amount: number }
   /** "gain N life" */
   | { kind: "gainLife"; amount: number }
-  /** "gain +N speed" */
-  | { kind: "speed"; amount: number }
+  /** "gain +N speed" (target: "All warriors gain …") */
+  | { kind: "speed"; amount: number; target?: EffectTarget }
   /** "deal N damage to <target>" — ability damage, not a hit (rulebook glossary) */
   | { kind: "dealDamage"; amount: number; target: DamageTarget }
   /** "move N spaces" (an Action ability's choice of where to and which way to face) */
@@ -160,13 +200,26 @@ export type DurationDef = "permanent" | "thisRound" | "nextTurn";
 const signed = (n: number) => (n >= 0 ? `+${n}` : `${n}`);
 const opp = (p: PlayerId): PlayerId => (p === 0 ? 1 : 0);
 
+/** Does an effect with `target`, on a card `owner` controls, apply to warrior `subject`? */
+export function targets(target: EffectTarget | undefined, owner: PlayerId, subject: PlayerId): boolean {
+  return target === "all" || (target === "allOthers" ? subject !== owner : subject === owner);
+}
+
+/** The warriors an effect with `target` applies to. */
+function targetPlayers(state: GameState, target: EffectTarget | undefined, owner: PlayerId): PlayerId[] {
+  return state.warriors.map((w) => w.playerId).filter((p) => targets(target, owner, p));
+}
+
 function damageTargets(ctx: FireContext, target: DamageTarget): PlayerId[] {
   switch (target) {
     case "self":
       return [ctx.owner];
     case "opponent":
     case "allOpponents":
+    case "allOthers":
       return [opp(ctx.owner)];
+    case "all":
+      return [ctx.owner, opp(ctx.owner)];
     case "defender":
       return ctx.defender !== undefined ? [ctx.defender] : [];
     case "attacker":
@@ -215,30 +268,47 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
       const w = state.warriors[owner];
       const from = { ...w.position };
       state.warriors[owner] = { ...w, position: { ...params.to }, facing: params.facing };
+      if (state.currentPlayer === owner) state.movedThisTurn = true;
       ctx.events.push({ type: "moved", player: owner, from, to: { ...params.to }, facing: params.facing });
       return `moves ${effect.spaces} spaces`;
     }
     case "attackRoll":
     case "defenseRoll":
-    case "speed": {
+    case "speed":
+    case "weaponDamage":
+    case "attackDamage": {
       if (duration !== "thisRound" && duration !== "nextTurn") {
         throw new Error(`${ctx.cardName} ${ctx.ability}: a fired ${effect.kind} effect needs duration thisRound or nextTurn`);
       }
-      state.effects.push({
-        owner,
-        source: ctx.cardId,
-        sourceName: ctx.cardName,
-        ability: ctx.ability,
-        kind: effect.kind,
-        amount: effect.amount,
-        duration,
-        active: duration === "thisRound",
-      });
-      const what = effect.kind === "attackRoll" ? "to attack rolls" : effect.kind === "defenseRoll" ? "to defense rolls" : "speed";
-      return `${signed(effect.amount)} ${what} ${duration === "thisRound" ? "this round" : "on the next turn"}`;
+      const target = effect.kind === "attackRoll" || effect.kind === "speed" ? effect.target : undefined;
+      const kind = effect.kind === "weaponDamage" || effect.kind === "attackDamage" ? "damage" : effect.kind;
+      const who = targetPlayers(state, target, owner);
+      for (const p of who) {
+        state.effects.push({
+          owner: p,
+          source: ctx.cardId,
+          sourceName: ctx.cardName,
+          ability: ctx.ability,
+          kind,
+          amount: effect.amount,
+          ...(effect.kind === "weaponDamage" ? { weapon: ctx.cardId } : {}),
+          duration,
+          active: duration === "thisRound",
+        });
+      }
+      const what =
+        effect.kind === "attackRoll"
+          ? "to attack rolls"
+          : effect.kind === "defenseRoll"
+            ? "to defense rolls"
+            : effect.kind === "speed"
+              ? "speed"
+              : effect.kind === "weaponDamage"
+                ? "damage with this weapon"
+                : "damage";
+      const whose = target === "all" ? " for all warriors" : target === "allOthers" ? " for all other warriors" : "";
+      return `${signed(effect.amount)} ${what}${whose} ${duration === "thisRound" ? "this round" : "on the next turn"}`;
     }
-    case "weaponDamage":
-      throw new Error(`${ctx.cardName} ${ctx.ability}: weaponDamage is a continuous modifier, not a fired effect`);
     case "reroll":
       throw new Error(`${ctx.cardName} ${ctx.ability}: a re-roll is resolved during the attack roll, not fired`);
   }

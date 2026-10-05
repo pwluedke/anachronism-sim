@@ -15,7 +15,7 @@
 import type { FireContext, ModKind, ModQuery, RuntimeAbility, Trigger } from "./types";
 import type { PlayerId } from "../types";
 import { REGISTRY } from "./registry";
-import { applyEffect, describeCondition, holds, moveOptions, type ConditionDef, type DurationDef, type EffectDef } from "./primitives";
+import { applyEffect, describeCondition, holds, moveOptions, targets, type ConditionDef, type DurationDef, type EffectDef } from "./primitives";
 
 const opp = (p: PlayerId): PlayerId => (p === 0 ? 1 : 0);
 
@@ -34,9 +34,18 @@ export interface AbilityData {
 
 export type AbilityDef = { data: AbilityData } | { coded: RuntimeAbility };
 
-const MODIFIERS = ["attackRoll", "defenseRoll", "weaponDamage"] as const;
+const MODIFIERS = ["attackRoll", "defenseRoll", "weaponDamage", "attackDamage", "speed"] as const;
 const isModifier = (e: EffectDef): e is EffectDef & { kind: ModKind; amount: number } =>
   (MODIFIERS as readonly string[]).includes(e.kind);
+const targetOf = (e: EffectDef) => (e.kind === "attackRoll" || e.kind === "speed" ? e.target : undefined);
+
+const MOD_TEXT: Record<ModKind, string> = {
+  attackRoll: "attack rolls",
+  defenseRoll: "defense rolls",
+  weaponDamage: "damage with this weapon",
+  attackDamage: "damage",
+  speed: "speed",
+};
 
 /** Compile a data ability into the runtime's form. Throws on combinations the runtime can't do. */
 export function compileAbility(a: AbilityData): RuntimeAbility {
@@ -48,30 +57,40 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
     const mods = a.effects.filter(isModifier);
     const modify = (kind: ModKind, q: ModQuery): number => {
       if (kind === "weaponDamage" && q.weaponId !== q.sourceCardId) return 0; // only attacks with this weapon
+      const subject = q.subject ?? q.owner;
       const cq = { attacker: q.attacker, defender: q.defender, attackKind: q.weaponId ? ("weapon" as const) : ("basic" as const) };
       if (!holds(a.condition, q.state, q.owner, cq)) return 0;
-      return mods.filter((e) => e.kind === kind && holds(e.when, q.state, q.owner, cq)).reduce((n, e) => n + e.amount, 0);
+      return mods
+        .filter((e) => e.kind === kind && targets(targetOf(e), q.owner, subject) && holds(e.when, q.state, q.owner, cq))
+        .reduce((n, e) => n + e.amount, 0);
     };
     return {
       name: a.name,
       trigger: "continuous",
       modify,
+      affectsOthers: mods.some((e) => targetOf(e) === "all" || targetOf(e) === "allOthers"),
       inEffect: (state, owner) => holds(a.condition, state, owner, { attacker: opp(owner), defender: opp(owner) }),
       describeNow: (state, owner, sourceCardId) => {
-        // Ask as if this player were attacking (attack / weapon) or attacked (defense) right now.
-        const parts = MODIFIERS.flatMap((kind) => {
-          if (!mods.some((e) => e.kind === kind)) return [];
-          const asDefender = kind === "defenseRoll";
-          const v = modify(kind, {
+        // Ask as if the affected warrior were attacking (attack / damage) or attacked (defense) now.
+        // One line per (value, whose) pair, with the total of the effects that apply right now.
+        const groups = [...new Map(mods.map((e) => [`${e.kind}|${targetOf(e) ?? "self"}`, e])).values()];
+        const parts = groups.flatMap((e) => {
+          const target = targetOf(e);
+          const subject = target === "allOthers" ? opp(owner) : owner;
+          const asDefender = e.kind === "defenseRoll";
+          const v = modify(e.kind, {
             state,
             owner,
-            attacker: asDefender ? opp(owner) : owner,
-            defender: asDefender ? owner : opp(owner),
-            weaponId: kind === "weaponDamage" ? sourceCardId : undefined,
+            subject,
+            attacker: asDefender ? opp(subject) : subject,
+            defender: asDefender ? subject : opp(subject),
+            weaponId: e.kind === "weaponDamage" ? sourceCardId : undefined,
             sourceCardId,
           });
-          const what = kind === "attackRoll" ? "to attack rolls" : kind === "defenseRoll" ? "to defense rolls" : "damage with this weapon";
-          return v ? [`${v >= 0 ? "+" : ""}${v} ${what}`] : [];
+          if (!v) return [];
+          const whose = target === "all" ? " for all warriors" : target === "allOthers" ? " for all other warriors" : "";
+          const what = e.kind === "speed" || e.kind.endsWith("Damage") ? MOD_TEXT[e.kind] : `to ${MOD_TEXT[e.kind]}`;
+          return [`${v >= 0 ? "+" : ""}${v} ${what}${whose}`];
         });
         return parts.length ? parts.join(", ") : "condition not met";
       },
@@ -92,9 +111,8 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
     };
   }
   for (const e of a.effects) {
-    if (e.kind === "weaponDamage") throw new Error(`${a.name}: weaponDamage is only a continuous modifier`);
     if (e.kind === "move" && a.trigger !== "action") throw new Error(`${a.name}: a move is an Action ability`);
-    if ((e.kind === "attackRoll" || e.kind === "defenseRoll" || e.kind === "speed") && a.duration !== "thisRound" && a.duration !== "nextTurn") {
+    if (isModifier(e) && a.duration !== "thisRound" && a.duration !== "nextTurn") {
       throw new Error(`${a.name}: a ${a.trigger} ${e.kind} effect needs duration thisRound or nextTurn`);
     }
   }
