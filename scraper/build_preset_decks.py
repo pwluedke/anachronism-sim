@@ -35,7 +35,7 @@ OUT = os.path.join(B.ROOT, "data", "preset_decks.json")
 # the browser UI doesn't have to bundle the full 2 MB card database.
 CARDS_OUT = os.path.join(B.ROOT, "data", "preset_deck_cards.json")
 ENGINE_FIELDS = ["id", "name", "card_type", "collector", "set", "life", "speed", "experience", "damage",
-                 "initiative", "hands", "traits", "grid", "abilities"]
+                 "initiative", "hands", "traits", "grid", "abilities", "element", "cultures"]
 DECK_SIZE = 4
 
 

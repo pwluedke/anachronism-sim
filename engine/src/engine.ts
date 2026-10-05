@@ -57,6 +57,8 @@ function buildWarrior(card: CardData, playerId: PlayerId): Warrior {
     experience: card.experience,
     damage: card.damage,
     attackGrid: { ...card.grid },
+    element: card.element,
+    cultures: card.cultures ? [...card.cultures] : [],
   };
 }
 

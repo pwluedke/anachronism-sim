@@ -54,6 +54,8 @@ export interface CardRecord {
   traits: string[];
   grid: AttackGrid | null;
   abilities?: CardAbility[];
+  element?: string;
+  cultures?: string[];
 }
 
 export interface CardRef {
@@ -107,6 +109,8 @@ export function warriorData(r: CardRecord): CardData {
     damage: r.damage ?? 0,
     grid: r.grid,
     abilities: r.abilities ?? [],
+    element: r.element,
+    cultures: r.cultures ?? [],
   };
 }
 

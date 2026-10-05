@@ -22,7 +22,24 @@ export type ConditionDef =
   /** "if the defender has no face-up armor card" */
   | { kind: "defenderNoArmor" }
   /** "by a basic attack" / "with a weapon" */
-  | { kind: "attackKind"; is: AttackKind };
+  | { kind: "attackKind"; is: AttackKind }
+  // ---- batch 3 whitelist ----
+  /** "while you are a <Element> warrior" — the owner's warrior element */
+  | { kind: "elementIs"; element: string }
+  /** "while you are a <Culture> warrior" — one of the owner's warrior cultures */
+  | { kind: "cultureIs"; culture: string }
+  /** "while you are adjacent to an opposing warrior" (shares a side or corner, glossary) */
+  | { kind: "adjacentToOpponent" }
+  /** "while you have less / more life than <warrior name>" (false when no such warrior is in play) */
+  | { kind: "lifeVsNamed"; cmp: "less" | "more"; name: string }
+  /** "while you have the least / most life" — strictly less / more than every other warrior */
+  | { kind: "lifeExtreme"; which: "least" | "most" }
+  /** "while you have at least N face-up support cards" */
+  | { kind: "faceUpSupportAtLeast"; n: number }
+  /** "if you win initiative" (this round) */
+  | { kind: "wonInitiative" }
+  /** "if the defender / attacker has no face-up <type> card" */
+  | { kind: "lacksType"; who: "defender" | "attacker"; cardType: SupportType };
 
 /** Facts about the attack a condition may need (absent outside attacks). */
 export interface CondQuery {
@@ -46,6 +63,34 @@ export function holds(cond: ConditionDef | undefined, state: GameState, owner: P
       return q.defender !== undefined && !inPlay(state, q.defender).some((s) => s.card.type === "armor");
     case "attackKind":
       return q.attackKind === cond.is;
+    case "elementIs":
+      return (state.warriors[owner].element ?? "").toLowerCase() === cond.element.toLowerCase();
+    case "cultureIs":
+      return (state.warriors[owner].cultures ?? []).some((c) => c.toLowerCase() === cond.culture.toLowerCase());
+    case "adjacentToOpponent": {
+      const a = state.warriors[owner].position;
+      const b = state.warriors[owner === 0 ? 1 : 0].position;
+      return Math.max(Math.abs(a.row - b.row), Math.abs(a.col - b.col)) === 1;
+    }
+    case "lifeVsNamed": {
+      const other = state.warriors.find((w) => w.playerId !== owner && w.name.toLowerCase() === cond.name.toLowerCase());
+      if (!other) return false;
+      const mine = state.warriors[owner].life;
+      return cond.cmp === "less" ? mine < other.life : mine > other.life;
+    }
+    case "lifeExtreme": {
+      const mine = state.warriors[owner].life;
+      const others = state.warriors.filter((w) => w.playerId !== owner);
+      return cond.which === "least" ? others.every((w) => mine < w.life) : others.every((w) => mine > w.life);
+    }
+    case "faceUpSupportAtLeast":
+      return inPlay(state, owner).length >= cond.n;
+    case "wonInitiative":
+      return state.initiative === owner;
+    case "lacksType": {
+      const who = cond.who === "defender" ? q.defender : q.attacker;
+      return who !== undefined && !inPlay(state, who).some((s) => s.card.type === cond.cardType);
+    }
   }
 }
 
@@ -63,6 +108,22 @@ export function describeCondition(cond: ConditionDef): string {
       return "if the defender has no armor in play";
     case "attackKind":
       return cond.is === "basic" ? "by a basic attack" : "by a weapon attack";
+    case "elementIs":
+      return `while you are a ${cond.element} warrior`;
+    case "cultureIs":
+      return `while you are a ${cond.culture} warrior`;
+    case "adjacentToOpponent":
+      return "while adjacent to an opposing warrior";
+    case "lifeVsNamed":
+      return `while you have ${cond.cmp} life than ${cond.name}`;
+    case "lifeExtreme":
+      return `while you have the ${cond.which} life`;
+    case "faceUpSupportAtLeast":
+      return `while you have at least ${cond.n} face-up support cards`;
+    case "wonInitiative":
+      return "on winning initiative";
+    case "lacksType":
+      return `if the ${cond.who} has no face-up ${cond.cardType}`;
   }
 }
 

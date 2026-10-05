@@ -33,6 +33,10 @@ export interface CardData {
   grid: AttackGrid;
   /** Printed ability text (display only; mechanics live in abilities/). */
   abilities?: { name: string; type: string; text: string }[];
+  /** Element (Fire, Water, Earth, Wind, Wood, Metal, Aether), if known. */
+  element?: string;
+  /** Culture(s), e.g. ["Greek"]; pirate-set warriors can have two. */
+  cultures?: string[];
 }
 
 export interface Warrior {
@@ -46,6 +50,8 @@ export interface Warrior {
   experience: number;
   damage: number; // base attack damage
   attackGrid: AttackGrid; // canonical (marker at 3B), rotated on projection
+  element?: string;
+  cultures?: string[];
 }
 
 export type Phase = "setup" | "playing" | "ended";
