@@ -281,7 +281,7 @@ describe("batch 4 cards", () => {
 
   it("Mercury — Nuntius (Reveal): every warrior gets +2 speed this round only", () => {
     const r = init(first(ALEX, "s1-077"), LEO, 1);
-    expect(fired(r.events, "Mercury")).toEqual([expect.objectContaining({ effect: "+2 speed for all warriors this round" })]);
+    expect(fired(r.events, "Mercury")).toEqual([expect.objectContaining({ effect: "all warriors get +2 speed this round" })]);
     expect(turnActions(r.state)).toEqual({ 0: ALEX.warrior.speed + 2, 1: LEO.warrior.speed + 2 });
     const s2 = nextRound(r.state);
     expect(turnActions(s2)).toEqual({ 0: ALEX.warrior.speed, 1: LEO.warrior.speed });

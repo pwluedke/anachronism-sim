@@ -70,7 +70,8 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
     case "abilityFired":
       return {
         kind: "ability",
-        text: `${e.cardName} — ${e.ability}: ${names[e.player]} ${/^[+-]/.test(e.effect) ? `gets ${e.effect}` : e.effect}.`,
+        // An effect on several warriors names them itself ("all warriors get …").
+        text: `${e.cardName} — ${e.ability}: ${/^all /.test(e.effect) ? e.effect : `${names[e.player]} ${/^[+-]/.test(e.effect) ? `gets ${e.effect}` : e.effect}`}.`,
         player: e.player,
       };
     case "discardRequired":

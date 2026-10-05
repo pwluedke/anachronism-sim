@@ -1,4 +1,5 @@
 // Round / turn / actions-remaining, read straight from GameState.
+import { speedNow } from "@engine";
 import type { CardData, GameState } from "@engine";
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
@@ -6,9 +7,9 @@ const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
 export function PhaseTracker({ state, cards }: { state: GameState; cards: [CardData, CardData] }) {
   const playing = state.phase === "playing";
   const p = state.currentPlayer;
-  // Pips for the turn's whole budget: base speed plus speed effects active this turn (abilities).
-  const bonus = state.effects.filter((e) => e.owner === p && e.kind === "speed" && e.active).reduce((n, e) => n + e.amount, 0);
-  const speed = state.warriors[p].speed + bonus;
+  // Pips for the turn's whole budget: the engine's speed for this player now (printed speed plus
+  // speed abilities and effects).
+  const speed = Math.max(speedNow(state, p), state.actionsRemaining);
   return (
     <section className="phase-tracker parchment" aria-label="phase and turn">
       <div className="tracker-row">

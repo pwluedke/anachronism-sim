@@ -81,6 +81,14 @@ const STATUS_LABEL: Record<Row["status"], string> = {
   facedown: "face down",
 };
 
+/** Short labels for timed effects (a weapon's own damage effect names its card in the detail). */
+const EFFECT_LABEL: Record<GameState["effects"][number]["kind"], string> = {
+  attackRoll: "attack",
+  defenseRoll: "defense",
+  speed: "speed",
+  damage: "damage",
+};
+
 export function AbilityChips({
   state,
   pid,
@@ -118,7 +126,7 @@ export function AbilityChips({
             <li key={`fx-${i}`} className={`chip chip-effect${e.active ? " chip-active-effect" : ""}`} title={`${e.sourceName} — ${e.ability}`}>
               <span className="chip-name">
                 {e.amount >= 0 ? "+" : ""}
-                {e.amount} {e.kind === "attackRoll" ? "attack" : e.kind === "defenseRoll" ? "defense" : "speed"}
+                {e.amount} {EFFECT_LABEL[e.kind]}
               </span>
               <span className="chip-detail">
                 {e.duration === "thisRound" ? "this round" : e.active ? "this turn" : "next turn"} · {e.sourceName}

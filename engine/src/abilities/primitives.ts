@@ -306,8 +306,9 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
               : effect.kind === "weaponDamage"
                 ? "damage with this weapon"
                 : "damage";
-      const whose = target === "all" ? " for all warriors" : target === "allOthers" ? " for all other warriors" : "";
-      return `${signed(effect.amount)} ${what}${whose} ${duration === "thisRound" ? "this round" : "on the next turn"}`;
+      const when = duration === "thisRound" ? "this round" : "on the next turn";
+      const whose = target === "all" ? "all warriors" : target === "allOthers" ? "all other warriors" : "";
+      return whose ? `${whose} get ${signed(effect.amount)} ${what} ${when}` : `${signed(effect.amount)} ${what} ${when}`;
     }
     case "reroll":
       throw new Error(`${ctx.cardName} ${ctx.ability}: a re-roll is resolved during the attack roll, not fired`);
