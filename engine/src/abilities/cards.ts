@@ -1,5 +1,6 @@
 // The cards whose abilities are implemented (Milestone 9 batch 1: one per trigger type;
-// Milestone 10 batch 2: defense, damage, re-roll, move, reactions).
+// Milestone 10 batch 2: defense, damage, re-roll, move, reactions; Milestone 12 batch 4: cards
+// recovered from the batch-3 skip log, authored by hand). Batch 3 is generated (cards-batch3.ts).
 // Every other card is inert. Card text is quoted from the card data; the ability name is the
 // printed one.
 
@@ -24,6 +25,25 @@ export const IMPLEMENTED: Record<string, { name: string; partial?: string }> = {
   "s6-071": { name: "Vlad Tepes" },
   // batch 3 (rule-defined bulk pass) — generated
   ...IMPLEMENTED_BATCH3,
+  // batch 4 (recovered from the batch-3 skip log)
+  "s1-023": { name: "Yumi" },
+  "s2-018": { name: "Greatsword" },
+  "s4-056": { name: "Cyrus The Great" },
+  "s5-034": { name: "Akaitoodoshi-Yoroi" },
+  "s7-098": { name: "Spathi Tis Trias" },
+  "s2-005": { name: "Targe" },
+  "s1-050": { name: "Crown of England" },
+  "s1-039": { name: "Miyamoto Musashi" },
+  "s1-098": { name: "Sica" },
+  "s3-083": { name: "Claidheamh Leathann" },
+  "s1-013": { name: "Kopis" },
+  "s1-016": { name: "Milo of Croton" },
+  "s2-081": { name: "Gengis Khan" },
+  "s2-083": { name: "Alman Sukh" },
+  "s2-072": { name: "Khnum" },
+  "s1-034": { name: "Bishamon-ten" },
+  "s1-077": { name: "Mercury" },
+  "s7-P060": { name: "Yggdrassil" },
 };
 
 // Shinmen Takezo — Kyougou: "Your attack rolls gain +2. Your attacks with swords deal +1 damage."
@@ -121,5 +141,153 @@ defineCard("s5-066", {
 defineCard("s6-071", {
   data: { name: "Tragere în Þeapã", trigger: "gameStart", effects: [{ kind: "dealDamage", amount: 1, target: "allOpponents" }] },
 });
+
+// ---- Batch 4 -------------------------------------------------------------------------------------
+// Recovered from the batch-3 skip log. "Your next attack …" uses the turn-scoped timing the
+// project adopted in batch 3: the bonus covers that turn's attacks (thisRound for an ability used
+// during your own turn, nextTurn for one gained before it).
+
+// Yumi (weapon) — Zanshin (Reveal): "Attacks with this weapon deal +1 damage this round."
+defineCard("s1-023", {
+  data: { name: "Zanshin", trigger: "reveal", effects: [{ kind: "weaponDamage", amount: 1 }], duration: "thisRound" },
+});
+// Greatsword (weapon) — Ridon dem Dune: "This weapon deals +1 damage while you have a face up cavalry card."
+defineCard("s2-018", {
+  data: {
+    name: "Ridon dem Dune",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "self", trait: "Cavalry", has: true },
+    effects: [{ kind: "weaponDamage", amount: 1 }],
+  },
+});
+// Cyrus The Great — Savarkar-e Chabok: "While you have a cavalry card you gain +1 speed."
+defineCard("s4-056", {
+  data: {
+    name: "Savarkar-e Chabok",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "self", trait: "Cavalry", has: true },
+    effects: [{ kind: "speed", amount: 1 }],
+  },
+});
+// Akaitoodoshi-Yoroi (armor) — Saikaku na Soubi: "If you have a sword in play, your attack and
+// defense rolls gain +1."
+defineCard("s5-034", {
+  data: {
+    name: "Saikaku na Soubi",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "self", trait: "Sword", has: true },
+    effects: [
+      { kind: "attackRoll", amount: 1 },
+      { kind: "defenseRoll", amount: 1 },
+    ],
+  },
+});
+// Spathi Tis Trias (weapon) — Epitaxinete: "You gain +1 speed."
+defineCard("s7-098", {
+  data: { name: "Epitaxinete", trigger: "continuous", effects: [{ kind: "speed", amount: 1 }] },
+});
+// Targe (special) — Agaenes-feohte: "When you are attacked and missed, your next attack roll gains +2."
+defineCard("s2-005", {
+  data: { name: "Agaenes-feohte", trigger: "missed", effects: [{ kind: "attackRoll", amount: 2 }], duration: "nextTurn" },
+});
+// Crown of England (special) — Konge: "Your attack rolls gain +1 if you are a metal warrior. Your
+// defense rolls get -1 and your attacks deal +1 damage if you are a fire warrior."
+defineCard("s1-050", {
+  data: {
+    name: "Konge",
+    trigger: "continuous",
+    effects: [
+      { kind: "attackRoll", amount: 1, when: { kind: "elementIs", element: "Metal" } },
+      { kind: "defenseRoll", amount: -1, when: { kind: "elementIs", element: "Fire" } },
+      { kind: "attackDamage", amount: 1, when: { kind: "elementIs", element: "Fire" } },
+    ],
+  },
+});
+// Miyamoto Musashi — Niten Ichi Ryu (Action): "Your next attack this turn deals +1 damage."
+defineCard("s1-039", {
+  data: { name: "Niten Ichi Ryu", trigger: "action", effects: [{ kind: "attackDamage", amount: 1 }], duration: "thisRound" },
+});
+// Sica (weapon) — Lamina Incurvata: "Attacks with this weapon deal +1 damage if the defending warrior
+// has a face-up shield card."
+defineCard("s1-098", {
+  data: {
+    name: "Lamina Incurvata",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "defender", trait: "Shield", has: true },
+    effects: [{ kind: "weaponDamage", amount: 1 }],
+  },
+});
+// Claidheamh Leathann (weapon) — Marbhaiche Each: "While the defender has a cavalry card, this weapon
+// deals +1 damage."
+defineCard("s3-083", {
+  data: {
+    name: "Marbhaiche Each",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "defender", trait: "Cavalry", has: true },
+    effects: [{ kind: "weaponDamage", amount: 1 }],
+  },
+});
+// Kopis (weapon) — Epithesi!: "Attacks with this weapon deal +1 damage if you have moved this turn."
+defineCard("s1-013", {
+  data: { name: "Epithesi!", trigger: "continuous", condition: { kind: "movedThisTurn" }, effects: [{ kind: "weaponDamage", amount: 1 }] },
+});
+// Milo of Croton — Xoris Fragmo: "Your base attacks deal +1 damage while you have no face-up weapon cards."
+defineCard("s1-016", {
+  data: {
+    name: "Xoris Fragmo",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "self", cardType: "weapon", has: false },
+    effects: [{ kind: "attackDamage", amount: 1, when: { kind: "attackKind", is: "basic" } }],
+  },
+});
+// Gengis Khan — Erkesiyeku ary-a: "Your attack rolls are +1 while attacking an opponent without a
+// cavalry card."
+defineCard("s2-081", {
+  data: {
+    name: "Erkesiyeku ary-a",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "defender", trait: "Cavalry", has: false },
+    effects: [{ kind: "attackRoll", amount: 1 }],
+  },
+});
+// Alman Sukh (weapon) — Cabciqu: "Attacks with this weapon deal +1 damage when attacking an opponent
+// without a face-up cavalry card."
+defineCard("s2-083", {
+  data: {
+    name: "Cabciqu",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "defender", trait: "Cavalry", has: false },
+    effects: [{ kind: "weaponDamage", amount: 1 }],
+  },
+});
+// Khnum (inspiration) — M' 'n (Reveal): "Your next attack deals +1 damage."
+//                      ' r hnn: "Your attack rolls gain +2 against warriors without a face-up inspiration."
+defineCard(
+  "s2-072",
+  { data: { name: "M' 'n", trigger: "reveal", effects: [{ kind: "attackDamage", amount: 1 }], duration: "nextTurn" } },
+  {
+    data: {
+      name: "' r hnn",
+      trigger: "continuous",
+      condition: { kind: "faceUpCard", who: "defender", cardType: "inspiration", has: false },
+      effects: [{ kind: "attackRoll", amount: 2 }],
+    },
+  },
+);
+// Bishamon-ten (inspiration) — Hogosha: "All warriors' attack rolls gain +1."
+defineCard("s1-034", {
+  data: { name: "Hogosha", trigger: "continuous", effects: [{ kind: "attackRoll", amount: 1, target: "all" }] },
+});
+// Mercury (inspiration) — Nuntius (Reveal): "All warriors gain +2 speed this round."
+defineCard("s1-077", {
+  data: { name: "Nuntius", trigger: "reveal", effects: [{ kind: "speed", amount: 2, target: "all" }], duration: "thisRound" },
+});
+// Yggdrassil (inspiration) — Asgard: "All your attacks deal +1 damage."
+//                            Hvergelmir: "All other warriors gain +1 speed."
+defineCard(
+  "s7-P060",
+  { data: { name: "Asgard", trigger: "continuous", effects: [{ kind: "attackDamage", amount: 1 }] } },
+  { data: { name: "Hvergelmir", trigger: "continuous", effects: [{ kind: "speed", amount: 1, target: "allOthers" }] } },
+);
 
 export const isImplemented = (cardId: string) => cardId in IMPLEMENTED;

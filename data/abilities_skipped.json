@@ -54,12 +54,6 @@
     "reason": "discard"
   },
   {
-    "id": "s1-013",
-    "name": "Kopis",
-    "text": "Attacks with this weapon deal +1 damage if you have moved this turn.",
-    "reason": "unsupported clause: Attacks with this weapon deal +1 damage if you have moved this turn"
-  },
-  {
     "id": "s1-014",
     "name": "Greaves",
     "text": "Once per round, you may re-roll one die of one of your defense rolls.",
@@ -72,16 +66,10 @@
     "reason": "experience modification"
   },
   {
-    "id": "s1-016",
-    "name": "Milo of Croton",
-    "text": "Your base attacks deal +1 damage while you have no face-up weapon cards.",
-    "reason": "unsupported clause: Your base attacks deal +1 damage while you have no face-up weapon cards"
-  },
-  {
     "id": "s1-017",
     "name": "Pythagoras",
     "text": "Move one space diagonally.",
-    "reason": "unsupported clause: Move one space diagonally"
+    "reason": "batch 4: diagonal movement — the move effect steps along rows and columns only; moving diagonally is a separate rule (rulebook p11: \"unless specified by a Card Ability\")"
   },
   {
     "id": "s1-018",
@@ -112,12 +100,6 @@
     "name": "Izanagi",
     "text": "Roll two dice. If that total is less than your experience, gain 2 life.",
     "reason": "experience modification"
-  },
-  {
-    "id": "s1-023",
-    "name": "Yumi",
-    "text": "Attacks with this weapon deal +1 damage this round.",
-    "reason": "unsupported clause: Attacks with this weapon deal +1 damage this round"
   },
   {
     "id": "s1-024",
@@ -180,12 +162,6 @@
     "reason": "cannot / may not / restriction"
   },
   {
-    "id": "s1-034",
-    "name": "Bishamon-ten",
-    "text": "All warriors' attack rolls gain +1.",
-    "reason": "unsupported clause: All warriors' attack rolls gain +1"
-  },
-  {
     "id": "s1-035",
     "name": "Katana",
     "text": "When you hit with this weapon, the attacker and defender each roll one die and add his or her warrior's experience. If your total is higher, you deal +1 damage this attack.",
@@ -202,12 +178,6 @@
     "name": "Haidate",
     "text": "When you are attacked, your defense roll gains +1 if you have more experience than the attacker.",
     "reason": "experience modification"
-  },
-  {
-    "id": "s1-039",
-    "name": "Miyamoto Musashi",
-    "text": "Your next attack this turn deals +1 damage.",
-    "reason": "unsupported clause: Your next attack this turn deals +1 damage"
   },
   {
     "id": "s1-040",
@@ -268,12 +238,6 @@
     "name": "Healsbeorgs",
     "text": "After you are hit by a critical hit, reduce all damage from that attack to 0 and discard this card.",
     "reason": "discard"
-  },
-  {
-    "id": "s1-050",
-    "name": "Crown of England",
-    "text": "Your attack rolls gain +1 if you are a metal warrior. Your defense rolls get -1 and your attacks deal +1 damage if you are a fire warrior.",
-    "reason": "unsupported clause: Your defense rolls get -1 and your attacks deal +1 damage if you are a fire warrior"
   },
   {
     "id": "s1-051",
@@ -414,16 +378,10 @@
     "reason": "bonus cap (to a maximum of)"
   },
   {
-    "id": "s1-077",
-    "name": "Mercury",
-    "text": "All warriors gain +2 speed this round.",
-    "reason": "unsupported clause: All warriors gain +2 speed this round"
-  },
-  {
     "id": "s1-078",
     "name": "Pugio",
     "text": "Attack with this weapon.",
-    "reason": "unsupported clause: Attack with this weapon"
+    "reason": "batch 4: additional weapon attack — using this Action ability is an action separate from the weapon's once-per-turn attack (rulebook p10-11), so it is an extra attack made by an ability; no attack-from-ability effect exists"
   },
   {
     "id": "s1-079",
@@ -489,7 +447,7 @@
     "id": "s1-091",
     "name": "Achilles",
     "text": "Move one space diagonally.",
-    "reason": "unsupported clause: Move one space diagonally"
+    "reason": "batch 4: diagonal movement — the move effect steps along rows and columns only; moving diagonally is a separate rule (rulebook p11: \"unless specified by a Card Ability\")"
   },
   {
     "id": "s1-092",
@@ -520,12 +478,6 @@
     "name": "Blossius of Cumae",
     "text": "If you are a metal warrior, resolve initiative from lowest to highest this challenge.",
     "reason": "initiative modification"
-  },
-  {
-    "id": "s1-098",
-    "name": "Sica",
-    "text": "Attacks with this weapon deal +1 damage if the defending warrior has a face-up shield card.",
-    "reason": "unsupported clause: Attacks with this weapon deal +1 damage if the defending warrior has a face-up shield card"
   },
   {
     "id": "s1-100",
@@ -612,12 +564,6 @@
     "reason": "unsupported clause: Your defense rolls gain +2 against bludgeon and basic attacks"
   },
   {
-    "id": "s2-005",
-    "name": "Targe",
-    "text": "When you are attacked and missed, your next attack roll gains +2.",
-    "reason": "unsupported clause: When you are attacked and missed, your next attack roll gains +2"
-  },
-  {
     "id": "s2-006",
     "name": "Boudicca",
     "text": "While you have a face up cavalry card, your attack rolls gain +1 and your support cards gain +2 initiative.",
@@ -681,19 +627,13 @@
     "id": "s2-016",
     "name": "Richard the Lionheart",
     "text": "After you miss an attack, your next attack roll gains +2.",
-    "reason": "unsupported clause: After you miss an attack, your next attack roll gains +2"
+    "reason": "batch 4: attacker-side miss trigger — \"after you miss an attack\" fires for the attacker; the existing missed trigger fires for the defender only"
   },
   {
     "id": "s2-017",
     "name": "Bernegnaria",
     "text": "At the end of this round, gain an amount of life equal to the number of times you hit another warrior this round.",
     "reason": "dynamic value (for each / equal to)"
-  },
-  {
-    "id": "s2-018",
-    "name": "Greatsword",
-    "text": "This weapon deals +1 damage while you have a face up cavalry card.",
-    "reason": "unsupported clause: This weapon deals +1 damage while you have a face up cavalry card"
   },
   {
     "id": "s2-019",
@@ -1008,12 +948,6 @@
     "reason": "other roll types (all your rolls)"
   },
   {
-    "id": "s2-072",
-    "name": "Khnum",
-    "text": "Your next attack deals +1 damage. Your attack rolls gain +2 against warriors without a face-up inspiration.",
-    "reason": "unsupported clause: Your next attack deals +1 damage"
-  },
-  {
     "id": "s2-073",
     "name": "Nsywt",
     "text": "When you are hit by a non-adjacent opponent, deal 1 damage to the attacker. You may use another weapon.",
@@ -1062,22 +996,10 @@
     "reason": "this game / rest of the game / first round"
   },
   {
-    "id": "s2-081",
-    "name": "Gengis Khan",
-    "text": "Your attack rolls are +1 while attacking an opponent without a cavalry card.",
-    "reason": "unsupported clause: Your attack rolls are +1 while attacking an opponent without a cavalry card"
-  },
-  {
     "id": "s2-082",
     "name": "Koekki Moengke Tengri",
     "text": "After you make an attack roll, you may discard this card to set the attack roll equal to your experience.",
     "reason": "experience modification"
-  },
-  {
-    "id": "s2-083",
-    "name": "Alman Sukh",
-    "text": "Attacks with this weapon deal +1 damage when attacking an opponent without a face-up cavalry card.",
-    "reason": "unsupported clause: Attacks with this weapon deal +1 damage when attacking an opponent without a face-up cavalry card"
   },
   {
     "id": "s2-084",
@@ -1650,12 +1572,6 @@
     "reason": "cannot / may not / restriction"
   },
   {
-    "id": "s3-083",
-    "name": "Claidheamh Leathann",
-    "text": "While the defender has a cavalry card, this weapon deals +1 damage.",
-    "reason": "unsupported clause: While the defender has a cavalry card, this weapon deals +1 damage"
-  },
-  {
     "id": "s3-084",
     "name": "Targaid Gháidhealach",
     "text": "Your defense rolls gain +2 against two-handed weapon attacks.",
@@ -1677,7 +1593,7 @@
     "id": "s3-087",
     "name": "Damhan-Allaidh Leantalach",
     "text": "If you are a Metal, Wind, or Wood warrior, your first attack roll of each round gains +2.",
-    "reason": "unsupported clause: If you are a Metal, Wind, or Wood warrior, your first attack roll of each round gains +2"
+    "reason": "batch 4: per-round attack tracking — \"your first attack roll of each round\" needs a count of attacks made this round"
   },
   {
     "id": "s3-088",
@@ -1833,7 +1749,7 @@
     "id": "s4-003",
     "name": "Slea Bladhmadh",
     "text": "Attacks with this weapon deal +1 damage while you have a fire inspiration in play.",
-    "reason": "unsupported clause: Attacks with this weapon deal +1 damage while you have a fire inspiration in play"
+    "reason": "batch 4: support-card element condition — \"a fire inspiration\" checks an in-play card's element; the face-up card condition matches type and trait only"
   },
   {
     "id": "s4-004",
@@ -2146,12 +2062,6 @@
     "name": "Jang O Goriz",
     "text": "Choose an opponent. At the start of your turn and the end of the chosen opponent's turn, make a basic or weapon attack against each opposing warrior at the largest bonus in that attack's grid. These attacks cannot gain damage bonuses. You can take no other actions this round.",
     "reason": "extra / additional attacks or attacking again"
-  },
-  {
-    "id": "s4-056",
-    "name": "Cyrus The Great",
-    "text": "While you have a cavalry card you gain +1 speed.",
-    "reason": "unsupported clause: While you have a cavalry card you gain +1 speed"
   },
   {
     "id": "s4-057",
@@ -2662,12 +2572,6 @@
     "name": "Usumidori",
     "text": "When you hit with this weapon, the attack and defender both roll one die and add his or her warrior's experience. If your total is higher, gain +1 speed on your next turn.",
     "reason": "experience modification"
-  },
-  {
-    "id": "s5-034",
-    "name": "Akaitoodoshi-Yoroi",
-    "text": "If you have a sword in play, your attack and defense rolls gain +1.",
-    "reason": "unsupported clause: If you have a sword in play, your attack and defense rolls gain +1"
   },
   {
     "id": "s5-035",
@@ -4344,12 +4248,6 @@
     "reason": "other roll types (all your rolls)"
   },
   {
-    "id": "s7-098",
-    "name": "Spathi Tis Trias",
-    "text": "You gain +1 speed.",
-    "reason": "unsupported clause: You gain +1 speed"
-  },
-  {
     "id": "s7-099",
     "name": "Tihi Tis Trias",
     "text": "Place this card in any unoccupied space in the arena. While you are in this card's row or column, set each of your defense rolls that are less than 8 to 8.",
@@ -4414,11 +4312,5 @@
     "name": "Vlad II Dracul",
     "text": "After a warrior gains life, your next attack deals +1 damage. After you gain life, your next attack roll gets -1.",
     "reason": "reaction to opponent actions"
-  },
-  {
-    "id": "s7-P060",
-    "name": "Yggdrassil",
-    "text": "All your attacks deal +1 damage. All other warriors gain +1 speed.",
-    "reason": "unsupported clause: All your attacks deal +1 damage"
   }
 ]
