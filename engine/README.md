@@ -1,7 +1,7 @@
 # Anachronism Engine — Headless 1v1
 
 A pure-function, fully-serializable TypeScript engine for 1v1 *Anachronism*: warriors plus their
-4 support cards (Milestone 8) and card abilities (Milestones 9–12) — live for 42 cards so far;
+4 support cards (Milestone 8) and card abilities (Milestones 9–12) — live for 45 cards so far;
 every other card's ability text is carried but inert. No UI, no I/O, no `Math.random`.
 
 ```ts

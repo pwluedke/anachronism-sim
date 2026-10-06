@@ -233,18 +233,22 @@ and speed effects gained the forms these cards use: continuous speed, "your atta
 18 implemented (42 in all): Yumi, Greatsword, Cyrus The Great, Akaitoodoshi-Yoroi, Spathi Tis
 Trias, Targe, Crown of England, Miyamoto Musashi, Sica, Claidheamh Leathann, Kopis, Milo of
 Croton, Gengis Khan, Alman Sukh, Khnum, Bishamon-ten, Mercury, Yggdrassil. Skip log 737 → 719.
+
+**Fix (epic #83):** "your next attack" is a duration that ends after one attack (rulebook p17):
+new nextAttack / nextAttackThisTurn durations, spent by the owner's next attack (Targe, Miyamoto,
+Khnum). Diagonal ability moves (p11) and an attacker-side "after you miss an attack" trigger added
+three more cards: Achilles, Pythagoras, Richard the Lionheart — 45 implemented, skip log 716.
 The bot's threat now counts every damage bonus and continuous speed; 32 self-play games over
 decks carrying all 18 ran clean.
 
 ### Follow-ups (from Milestone 12)
 
-- **Six of the 24 need one more mechanic each** (in the skip log with a "batch 4:" reason):
-  Pugio (an Action ability that makes an extra weapon attack), Achilles and Pythagoras (diagonal
-  movement), Richard the Lionheart (an attacker-side "after you miss" trigger),
+- **Three of the 24 still need one more mechanic each** (in the skip log with a "batch 4:" reason):
+  Pugio (an Action ability that makes an extra weapon attack — rulebook p16 "created" attacks),
   Damhan-Allaidh Leantalach ("first attack roll of each round"), Slea Bladhmadh (a support card's
   element: "a fire inspiration").
-- **"Your next attack …"** (Targe, Miyamoto, Khnum) uses the turn-scoped timing adopted in batch 3:
-  the bonus covers that turn's attacks, not only the next one. A one-attack effect would be exact.
+- **Bot threat and one-attack bonuses** — evaluate counts a "next attack" bonus like a standing
+  one (on every attack the mover has actions for); fine for now, sharper if it ever matters.
 
 ## Milestone 13: Raspberry Pi 4 kiosk build
 
