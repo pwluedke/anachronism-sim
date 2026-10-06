@@ -83,6 +83,29 @@ describe("batch 4: the implemented set", () => {
   });
 });
 
+/** Player p attacks the other twice with basic attacks (facing turned until one is legal); returns
+ *  the two attack events. */
+function attackTwice(s0: GameState, p: PlayerId): Extract<GameEvent, { type: "attacked" }>[] {
+  let s = structuredClone(s0);
+  const q: PlayerId = p === 0 ? 1 : 0;
+  Object.assign(s, { phase: "playing", currentPlayer: p, turnOrder: [p, q], turnIndex: 0, actionsRemaining: 3, pending: null });
+  s.warriors[p].position = { row: 1, col: 1 };
+  s.warriors[q].position = { row: 2, col: 1 };
+  s.warriors[q].life = 99;
+  for (const f of ["S", "E", "W", "N"] as const) {
+    s.warriors[p].facing = f;
+    if (getLegalActions(s).some((a) => a.type === "ATTACK" && !a.weapon)) break;
+  }
+  const out: Extract<GameEvent, { type: "attacked" }>[] = [];
+  for (let i = 0; i < 2; i++) {
+    const r = applyAction(s, { type: "ATTACK" });
+    for (const e of r.events) if (e.type === "attacked") out.push(e);
+    s = r.state;
+  }
+  expect(out).toHaveLength(2);
+  return out;
+}
+
 describe("batch 4 cards", () => {
   it("Yumi — Zanshin (Reveal): +1 damage with Yumi, the round it's revealed only", () => {
     const r = init(first(ALEX, "s1-023"), LEO, 1);
@@ -132,31 +155,28 @@ describe("batch 4 cards", () => {
     expect(continuousSpeed(s, 0)).toBe(0);
   });
 
-  it("Targe — Agaenes-feohte: missed -> +2 attack rolls on your next turn only", () => {
+  it("Targe — Agaenes-feohte: missed -> +2 on your next attack roll only, whenever it comes (p17)", () => {
     // Player 1 (Targe up) is attacked by player 0 and the attack misses.
     let miss: GameState | null = null;
     for (let rng = 1; rng < 500 && !miss; rng++) {
-      const s = withCard("s2-005", 1);
-      myTurn(s);
-      s.warriors[0].position = { row: 1, col: 1 };
+      const s = myTurn(withCard("s2-005", 1));
       s.warriors[0].facing = "S";
       s.warriors[1].position = { row: 2, col: 1 };
       s.rng = rng;
-      const atk = getLegalActions(s).find((a) => a.type === "ATTACK" && !a.weapon)!;
-      const r = applyAction(s, atk);
+      const r = applyAction(s, getLegalActions(s).find((a) => a.type === "ATTACK" && !a.weapon)!);
       const res = r.events.find((e) => e.type === "attacked");
       if (res && res.type === "attacked" && !res.hit && r.state.pending === null) {
-        expect(fired(r.events, "Targe")).toEqual([expect.objectContaining({ effect: "+2 to attack rolls on the next turn" })]);
+        expect(fired(r.events, "Targe")).toEqual([expect.objectContaining({ effect: "+2 to attack rolls on the next attack" })]);
         miss = r.state;
       }
     }
     expect(miss).not.toBeNull();
-    expect(attackRollBonus(miss!, 1)).toBe(0); // pending until player 1's turn
-    let s = applyAction(miss!, { type: "PASS" }).state; // player 1's turn
-    expect(s.currentPlayer).toBe(1);
-    expect(attackRollBonus(s, 1)).toBe(2);
-    s = applyAction(s, { type: "PASS" }).state; // their turn ends
-    expect(attackRollBonus(s, 1)).toBe(0);
+    expect(attackRollBonus(miss!, 1)).toBe(2); // waiting for player 1's next attack
+    // Unused, it outlasts the round: the duration is the attack, not the turn or round.
+    expect(attackRollBonus(nextRound(miss!), 1)).toBe(2);
+    // Two attacks: the first gets +2, the second doesn't.
+    const [a1, a2] = attackTwice(miss!, 1);
+    expect([a1.rollBonus, a2.rollBonus]).toEqual([2, 0]);
   });
 
   it("Targe doesn't fire on a hit", () => {
@@ -185,19 +205,23 @@ describe("batch 4 cards", () => {
     expect([attackRollBonus(s, 0), defenseRollBonus(s, 0), damageBonus(s, 0)]).toEqual([0, 0, 0]);
   });
 
-  it("Miyamoto Musashi — Niten Ichi Ryu (Action): +1 damage to his attacks this turn; no usage limit", () => {
+  it("Miyamoto Musashi — Niten Ichi Ryu (Action): +1 damage on his next attack this turn only; no usage limit", () => {
     const MIYA = led(ALEX, "s1-039");
     const s = myTurn(structuredClone(init(MIYA, LEO, 1).state));
     const use = getLegalActions(s).find((a) => a.type === "ABILITY" && a.card === "s1-039")!;
     expect(use).toBeDefined();
     const r1 = applyAction(s, use);
+    expect(fired(r1.events, "Miyamoto Musashi")).toEqual([expect.objectContaining({ effect: "+1 damage on the next attack this turn" })]);
     expect(r1.state.actionsRemaining).toBe(2);
-    expect(damageBonus(r1.state, 0)).toBe(1);
-    expect(damageBonus(r1.state, 0, LAKONIAN)).toBe(1);
-    expect(damageBonus(r1.state, 1)).toBe(0);
-    const r2 = applyAction(r1.state, use); // used again: the bonuses add up
+    expect([damageBonus(r1.state, 0), damageBonus(r1.state, 0, LAKONIAN), damageBonus(r1.state, 1)]).toEqual([1, 1, 0]);
+    // Two attacks: the first gets +1, the second doesn't.
+    const [a1, a2] = attackTwice(r1.state, 0);
+    expect([a1.damageBonus, a2.damageBonus]).toEqual([1, 0]);
+    // Used twice before attacking, both bonuses land on that next attack.
+    const r2 = applyAction(r1.state, use);
     expect(damageBonus(r2.state, 0)).toBe(2);
-    expect(damageBonus(nextRound(r2.state), 0)).toBe(0);
+    // "This turn": unused, it ends with his turn.
+    expect(damageBonus(applyAction(r2.state, { type: "PASS" }).state, 0)).toBe(0);
   });
 
   it("Sica — Lamina Incurvata: +1 damage with it if the defender has a face-up shield", () => {
@@ -252,18 +276,13 @@ describe("batch 4 cards", () => {
     expect(damageBonus(withCard("s2-083", 0, [ALEX, RICHARD]), 0, "s2-083")).toBe(0);
   });
 
-  it("Khnum — M' 'n (Reveal): +1 damage on your next turn; ' r hnn: +2 attack vs no face-up inspiration", () => {
+  it("Khnum — M' 'n (Reveal): +1 damage on your next attack only; ' r hnn: +2 attack vs no face-up inspiration", () => {
     const r = init(first(ALEX, "s2-072"), LEO, 1);
-    expect(fired(r.events, "Khnum")).toEqual([expect.objectContaining({ ability: "M' 'n", effect: "+1 damage on the next turn" })]);
-    let s = r.state;
-    if (s.currentPlayer !== 0) {
-      expect(damageBonus(s, 0)).toBe(0); // pending until his turn
-      s = applyAction(s, { type: "PASS" }).state;
-    }
-    expect(s.currentPlayer).toBe(0);
-    expect(damageBonus(s, 0)).toBe(1);
-    s = applyAction(s, { type: "PASS" }).state;
-    expect(damageBonus(s, 0)).toBe(0); // spent with that turn
+    expect(fired(r.events, "Khnum")).toEqual([expect.objectContaining({ ability: "M' 'n", effect: "+1 damage on the next attack" })]);
+    expect(damageBonus(r.state, 0)).toBe(1);
+    expect(damageBonus(nextRound(r.state), 0)).toBe(1); // unused: still waiting for that attack
+    const [a1, a2] = attackTwice(r.state, 0);
+    expect([a1.damageBonus, a2.damageBonus]).toEqual([1, 0]);
     // ' r hnn: Leonidas has Nemesis (inspiration) up in round 1.
     const t = structuredClone(r.state);
     expect(attackRollBonus(t, 0)).toBe(0);

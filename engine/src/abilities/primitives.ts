@@ -194,8 +194,20 @@ export type EffectDef = (
   when?: ConditionDef;
 };
 
-/** permanent: while the card is in play (continuous). thisRound / nextTurn: a timed effect. */
-export type DurationDef = "permanent" | "thisRound" | "nextTurn";
+/** permanent: while the card is in play (continuous). thisRound / nextTurn / nextAttack /
+ *  nextAttackThisTurn: a timed effect (see TimedEffect). */
+export type DurationDef = "permanent" | "thisRound" | "nextTurn" | "nextAttack" | "nextAttackThisTurn";
+
+/** The durations a fired effect can have. */
+export const TIMED = ["thisRound", "nextTurn", "nextAttack", "nextAttackThisTurn"] as const;
+export const isTimed = (d: DurationDef | undefined): d is (typeof TIMED)[number] => (TIMED as readonly string[]).includes(d ?? "");
+
+const DURATION_TEXT: Record<(typeof TIMED)[number], string> = {
+  thisRound: "this round",
+  nextTurn: "on the next turn",
+  nextAttack: "on the next attack",
+  nextAttackThisTurn: "on the next attack this turn",
+};
 
 const signed = (n: number) => (n >= 0 ? `+${n}` : `${n}`);
 const opp = (p: PlayerId): PlayerId => (p === 0 ? 1 : 0);
@@ -277,8 +289,8 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
     case "speed":
     case "weaponDamage":
     case "attackDamage": {
-      if (duration !== "thisRound" && duration !== "nextTurn") {
-        throw new Error(`${ctx.cardName} ${ctx.ability}: a fired ${effect.kind} effect needs duration thisRound or nextTurn`);
+      if (!isTimed(duration)) {
+        throw new Error(`${ctx.cardName} ${ctx.ability}: a fired ${effect.kind} effect needs a timed duration (${TIMED.join(" / ")})`);
       }
       const target = effect.kind === "attackRoll" || effect.kind === "speed" ? effect.target : undefined;
       const kind = effect.kind === "weaponDamage" || effect.kind === "attackDamage" ? "damage" : effect.kind;
@@ -293,7 +305,7 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
           amount: effect.amount,
           ...(effect.kind === "weaponDamage" ? { weapon: ctx.cardId } : {}),
           duration,
-          active: duration === "thisRound",
+          active: duration !== "nextTurn",
         });
       }
       const what =
@@ -306,7 +318,7 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
               : effect.kind === "weaponDamage"
                 ? "damage with this weapon"
                 : "damage";
-      const when = duration === "thisRound" ? "this round" : "on the next turn";
+      const when = DURATION_TEXT[duration];
       const whose = target === "all" ? "all warriors" : target === "allOthers" ? "all other warriors" : "";
       return whose ? `${whose} get ${signed(effect.amount)} ${what} ${when}` : `${signed(effect.amount)} ${what} ${when}`;
     }

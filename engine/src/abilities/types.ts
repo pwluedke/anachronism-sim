@@ -31,8 +31,10 @@ export interface TimedEffect {
   amount: number;
   /** damage only: limited to attacks with this weapon (card id); absent = all the owner's attacks. */
   weapon?: string;
-  /** thisRound: until the round ends. nextTurn: the owner's next turn only. */
-  duration: "thisRound" | "nextTurn";
+  /** thisRound: until the round ends. nextTurn: the owner's next turn only. nextAttack: the owner's
+   *  next attack only, whenever it comes (rulebook p17, "your next attack" is a duration);
+   *  nextAttackThisTurn: the same, but also ends with the current turn ("your next attack this turn"). */
+  duration: "thisRound" | "nextTurn" | "nextAttack" | "nextAttackThisTurn";
   /** nextTurn effects are created pending and become active when the owner's next turn starts. */
   active: boolean;
 }

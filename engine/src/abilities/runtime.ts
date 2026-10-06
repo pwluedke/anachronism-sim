@@ -178,9 +178,18 @@ export function beginTurnEffects(state: GameState, p: PlayerId): number {
   return speed;
 }
 
-/** At the end of p's turn: p's "next turn" effects that were active this turn expire. */
+/** At the end of p's turn: p's "next turn" effects that were active this turn expire, as do unused
+ *  "your next attack this turn" effects. */
 export function endTurnEffects(state: GameState, p: PlayerId): void {
-  state.effects = state.effects.filter((e) => !(e.owner === p && e.duration === "nextTurn" && e.active));
+  state.effects = state.effects.filter(
+    (e) => !(e.owner === p && ((e.duration === "nextTurn" && e.active) || e.duration === "nextAttackThisTurn")),
+  );
+}
+
+/** After attacker p makes an attack (hit or miss): p's "your next attack" effects are spent. Called
+ *  once the attack is judged, before the abilities it triggers fire (which may create new ones). */
+export function spendNextAttackEffects(state: GameState, p: PlayerId): void {
+  state.effects = state.effects.filter((e) => !(e.owner === p && (e.duration === "nextAttack" || e.duration === "nextAttackThisTurn")));
 }
 
 /** At the end of the round: "this round" effects expire and once-per-round uses reset. */

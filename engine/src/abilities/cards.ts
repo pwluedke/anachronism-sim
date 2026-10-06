@@ -143,9 +143,8 @@ defineCard("s6-071", {
 });
 
 // ---- Batch 4 -------------------------------------------------------------------------------------
-// Recovered from the batch-3 skip log. "Your next attack …" uses the turn-scoped timing the
-// project adopted in batch 3: the bonus covers that turn's attacks (thisRound for an ability used
-// during your own turn, nextTurn for one gained before it).
+// Recovered from the batch-3 skip log. "Your next attack …" is a duration that ends after one
+// attack (rulebook p17): nextAttack, or nextAttackThisTurn when the text says "this turn".
 
 // Yumi (weapon) — Zanshin (Reveal): "Attacks with this weapon deal +1 damage this round."
 defineCard("s1-023", {
@@ -188,7 +187,7 @@ defineCard("s7-098", {
 });
 // Targe (special) — Agaenes-feohte: "When you are attacked and missed, your next attack roll gains +2."
 defineCard("s2-005", {
-  data: { name: "Agaenes-feohte", trigger: "missed", effects: [{ kind: "attackRoll", amount: 2 }], duration: "nextTurn" },
+  data: { name: "Agaenes-feohte", trigger: "missed", effects: [{ kind: "attackRoll", amount: 2 }], duration: "nextAttack" },
 });
 // Crown of England (special) — Konge: "Your attack rolls gain +1 if you are a metal warrior. Your
 // defense rolls get -1 and your attacks deal +1 damage if you are a fire warrior."
@@ -205,7 +204,7 @@ defineCard("s1-050", {
 });
 // Miyamoto Musashi — Niten Ichi Ryu (Action): "Your next attack this turn deals +1 damage."
 defineCard("s1-039", {
-  data: { name: "Niten Ichi Ryu", trigger: "action", effects: [{ kind: "attackDamage", amount: 1 }], duration: "thisRound" },
+  data: { name: "Niten Ichi Ryu", trigger: "action", effects: [{ kind: "attackDamage", amount: 1 }], duration: "nextAttackThisTurn" },
 });
 // Sica (weapon) — Lamina Incurvata: "Attacks with this weapon deal +1 damage if the defending warrior
 // has a face-up shield card."
@@ -264,7 +263,7 @@ defineCard("s2-083", {
 //                      ' r hnn: "Your attack rolls gain +2 against warriors without a face-up inspiration."
 defineCard(
   "s2-072",
-  { data: { name: "M' 'n", trigger: "reveal", effects: [{ kind: "attackDamage", amount: 1 }], duration: "nextTurn" } },
+  { data: { name: "M' 'n", trigger: "reveal", effects: [{ kind: "attackDamage", amount: 1 }], duration: "nextAttack" } },
   {
     data: {
       name: "' r hnn",

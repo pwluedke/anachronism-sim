@@ -15,7 +15,7 @@
 import type { FireContext, ModKind, ModQuery, RuntimeAbility, Trigger } from "./types";
 import type { PlayerId } from "../types";
 import { REGISTRY } from "./registry";
-import { applyEffect, describeCondition, holds, moveOptions, targets, type ConditionDef, type DurationDef, type EffectDef } from "./primitives";
+import { applyEffect, describeCondition, holds, isTimed, moveOptions, targets, TIMED, type ConditionDef, type DurationDef, type EffectDef } from "./primitives";
 
 const opp = (p: PlayerId): PlayerId => (p === 0 ? 1 : 0);
 
@@ -112,8 +112,8 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
   }
   for (const e of a.effects) {
     if (e.kind === "move" && a.trigger !== "action") throw new Error(`${a.name}: a move is an Action ability`);
-    if (isModifier(e) && a.duration !== "thisRound" && a.duration !== "nextTurn") {
-      throw new Error(`${a.name}: a ${a.trigger} ${e.kind} effect needs duration thisRound or nextTurn`);
+    if (isModifier(e) && !isTimed(a.duration)) {
+      throw new Error(`${a.name}: a ${a.trigger} ${e.kind} effect needs a timed duration (${TIMED.join(" / ")})`);
     }
   }
   const move = a.effects.find((e) => e.kind === "move");

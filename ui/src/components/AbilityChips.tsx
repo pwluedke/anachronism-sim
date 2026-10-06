@@ -89,6 +89,13 @@ const EFFECT_LABEL: Record<GameState["effects"][number]["kind"], string> = {
   damage: "damage",
 };
 
+/** Timed-effect durations, as shown on a chip (nextTurn reads "next turn", then "this turn"). */
+const DURATION_LABEL: Partial<Record<GameState["effects"][number]["duration"], string>> = {
+  thisRound: "this round",
+  nextAttack: "next attack",
+  nextAttackThisTurn: "next attack this turn",
+};
+
 export function AbilityChips({
   state,
   pid,
@@ -129,7 +136,7 @@ export function AbilityChips({
                 {e.amount} {EFFECT_LABEL[e.kind]}
               </span>
               <span className="chip-detail">
-                {e.duration === "thisRound" ? "this round" : e.active ? "this turn" : "next turn"} · {e.sourceName}
+                {DURATION_LABEL[e.duration] ?? (e.active ? "this turn" : "next turn")} · {e.sourceName}
               </span>
             </li>
           ))}

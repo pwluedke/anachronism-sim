@@ -31,6 +31,7 @@ import {
   resolveReroll,
   usableReroll,
   useActionAbility,
+  spendNextAttackEffects,
   damageBonus,
   continuousSpeed,
 } from "./abilities/runtime";
@@ -352,6 +353,7 @@ function finishAttack(state: GameState, pa: PendingAttack, events: GameEvent[]):
     damageBonus(state, me, pa.weapon),
   );
   state.rng = r.rng;
+  spendNextAttackEffects(state, me); // "your next attack" bonuses applied to this one (p17)
   Hooks.resolveHooks(state, "afterAttackRoll", { attacker: me, defender: foe, result: r.result });
   const weaponSlot = pa.weapon ? state.cards[me].support.find((s) => s.card.id === pa.weapon) : undefined;
   // Logged as soon as the dice are resolved, so abilities it triggers are logged after it.
