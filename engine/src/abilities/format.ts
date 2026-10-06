@@ -122,8 +122,9 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
     name: a.name,
     trigger: a.trigger,
     oncePerRound: a.usageLimit === "oncePerRound",
-    canFire: (ctx) => holds(a.condition, ctx.state, ctx.owner, cq(ctx)) && (!move || moveOptions(ctx.state, ctx.owner, move.spaces).length > 0),
-    options: move && move.kind === "move" ? (ctx) => moveOptions(ctx.state, ctx.owner, move.spaces) : undefined,
+    canFire: (ctx) =>
+      holds(a.condition, ctx.state, ctx.owner, cq(ctx)) && (!move || move.kind !== "move" || moveOptions(ctx.state, ctx.owner, move.spaces, move.diagonal).length > 0),
+    options: move && move.kind === "move" ? (ctx) => moveOptions(ctx.state, ctx.owner, move.spaces, move.diagonal) : undefined,
     fire: (ctx, params) =>
       a.effects
         .filter((e) => holds(e.when, ctx.state, ctx.owner, cq(ctx)))

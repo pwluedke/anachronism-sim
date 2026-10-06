@@ -66,12 +66,6 @@
     "reason": "experience modification"
   },
   {
-    "id": "s1-017",
-    "name": "Pythagoras",
-    "text": "Move one space diagonally.",
-    "reason": "batch 4: diagonal movement — the move effect steps along rows and columns only; moving diagonally is a separate rule (rulebook p11: \"unless specified by a Card Ability\")"
-  },
-  {
     "id": "s1-018",
     "name": "Ropalo",
     "text": "Turn your warrior to face any direction. You may immediately make an attack with this weapon against each warrior in this weapon's attack grid.",
@@ -444,12 +438,6 @@
     "reason": "experience modification"
   },
   {
-    "id": "s1-091",
-    "name": "Achilles",
-    "text": "Move one space diagonally.",
-    "reason": "batch 4: diagonal movement — the move effect steps along rows and columns only; moving diagonally is a separate rule (rulebook p11: \"unless specified by a Card Ability\")"
-  },
-  {
     "id": "s1-092",
     "name": "Thetis",
     "text": "Once per game, re-roll any one die or make an opponent re-roll any one die.",
@@ -622,12 +610,6 @@
     "name": "Merlin the Wise",
     "text": "Before rolling, discard this card and another face up, non-weapon support cards. If you do, that roll gains +3.",
     "reason": "discard"
-  },
-  {
-    "id": "s2-016",
-    "name": "Richard the Lionheart",
-    "text": "After you miss an attack, your next attack roll gains +2.",
-    "reason": "batch 4: attacker-side miss trigger — \"after you miss an attack\" fires for the attacker; the existing missed trigger fires for the defender only"
   },
   {
     "id": "s2-017",

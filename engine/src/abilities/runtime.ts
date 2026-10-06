@@ -297,6 +297,7 @@ const WHEN: Record<Exclude<Trigger, "continuous">, string> = {
   attackRoll: "optional, when making an attack roll",
   hit: "after being hit",
   missed: "after being missed",
+  attackMissed: "after missing an attack",
   reveal: "when revealed",
   roundStart: "at the start of each round",
   damageDealt: "after dealing damage",

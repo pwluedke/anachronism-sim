@@ -185,8 +185,9 @@ export type EffectDef = (
   | { kind: "speed"; amount: number; target?: EffectTarget }
   /** "deal N damage to <target>" — ability damage, not a hit (rulebook glossary) */
   | { kind: "dealDamage"; amount: number; target: DamageTarget }
-  /** "move N spaces" (an Action ability's choice of where to and which way to face) */
-  | { kind: "move"; spaces: number }
+  /** "move N spaces" (an Action ability's choice of where to and which way to face); `diagonal`:
+   *  "move one space diagonally" — steps go corner to corner instead of along rows and columns */
+  | { kind: "move"; spaces: number; diagonal?: boolean }
   /** "you may re-roll one die of the attack roll" — then `ifSame` if the new die equals the old */
   | { kind: "reroll"; roll: "attack"; ifSame?: EffectDef[] }
 ) & {
@@ -239,9 +240,19 @@ function damageTargets(ctx: FireContext, target: DamageTarget): PlayerId[] {
   }
 }
 
-/** Where an ability move of exactly `spaces` steps can end: orthogonal steps through empty
- *  in-arena cells (no passing through a warrior), never back at the start; any facing after. */
-export function moveOptions(state: GameState, owner: PlayerId, spaces: number): AbilityParams[] {
+const DIAGONALS = [
+  [-1, -1],
+  [-1, 1],
+  [1, -1],
+  [1, 1],
+] as const;
+
+/** Where an ability move of exactly `spaces` steps can end: steps through empty in-arena cells (no
+ *  passing through a warrior), never back at the start; any facing after (rulebook p11: a warrior
+ *  moved by a card ability may rotate for free, and only faces along rows and columns). Steps go
+ *  along rows and columns, or — `diagonal` — corner to corner ("unless specified by a Card
+ *  Ability", p11). */
+export function moveOptions(state: GameState, owner: PlayerId, spaces: number, diagonal = false): AbilityParams[] {
   const start = state.warriors[owner].position;
   const foe = state.warriors[opp(owner)].position;
   const key = (p: Position) => `${p.row},${p.col}`;
@@ -249,8 +260,8 @@ export function moveOptions(state: GameState, owner: PlayerId, spaces: number): 
   for (let i = 0; i < spaces; i++) {
     const next = new Map<string, Position>();
     for (const p of frontier) {
-      for (const d of FACINGS) {
-        const q = stepPos(p, d);
+      const steps = diagonal ? DIAGONALS.map(([dr, dc]) => ({ row: p.row + dr, col: p.col + dc })) : FACINGS.map((d) => stepPos(p, d));
+      for (const q of steps) {
         if (inBounds(q, state.arenaSize) && key(q) !== key(foe)) next.set(key(q), q);
       }
     }
@@ -282,7 +293,7 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
       state.warriors[owner] = { ...w, position: { ...params.to }, facing: params.facing };
       if (state.currentPlayer === owner) state.movedThisTurn = true;
       ctx.events.push({ type: "moved", player: owner, from, to: { ...params.to }, facing: params.facing });
-      return `moves ${effect.spaces} spaces`;
+      return `moves ${effect.spaces} space${effect.spaces === 1 ? "" : "s"}${effect.diagonal ? " diagonally" : ""}`;
     }
     case "attackRoll":
     case "defenseRoll":

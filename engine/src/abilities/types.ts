@@ -13,6 +13,7 @@ export type Trigger =
   | "damageDealt" // the attacker, after their attack dealt damage
   | "hit" // the defender, after they were hit and took damage
   | "missed" // the defender, after an attack against them missed
+  | "attackMissed" // the attacker, after their attack missed
   | "attackRoll" // the attacker, once both attack dice are rolled (optional re-rolls)
   | "action";
 

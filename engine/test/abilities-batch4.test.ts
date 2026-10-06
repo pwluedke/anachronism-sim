@@ -62,21 +62,20 @@ function turnActions(s: GameState): Record<number, number> {
 }
 
 describe("batch 4: the implemented set", () => {
-  it("18 recovered cards are implemented (42 in all) and gone from the skip log", () => {
+  it("18 recovered cards are implemented and gone from the skip log", () => {
     const ids = ["s1-023", "s2-018", "s4-056", "s5-034", "s7-098", "s2-005", "s1-050", "s1-039", "s1-098", "s3-083", "s1-013", "s1-016", "s2-081", "s2-083", "s2-072", "s1-034", "s1-077", "s7-P060"];
     for (const id of ids) {
       expect(IMPLEMENTED[id]).toBeDefined();
       expect(REGISTRY[id]?.length).toBeGreaterThan(0);
     }
-    expect(Object.keys(IMPLEMENTED)).toHaveLength(42);
+    expect(Object.keys(IMPLEMENTED)).toHaveLength(45);
     const log = new Set((skipped as { id: string }[]).map((e) => e.id));
     for (const id of ids) expect(log.has(id)).toBe(false);
-    expect(skipped).toHaveLength(719);
+    expect(skipped).toHaveLength(716);
   });
 
-  it("the six needing other mechanics stay inert and logged with a batch-4 reason", () => {
-    const six = ["s1-078", "s1-091", "s1-017", "s2-016", "s3-087", "s4-003"];
-    for (const id of six) {
+  it("the three still needing other mechanics stay inert and logged with a batch-4 reason", () => {
+    for (const id of ["s1-078", "s3-087", "s4-003"]) {
       expect(REGISTRY[id]).toBeUndefined();
       expect((skipped as { id: string; reason: string }[]).find((e) => e.id === id)?.reason).toMatch(/^batch 4: /);
     }

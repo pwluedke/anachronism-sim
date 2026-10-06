@@ -44,6 +44,10 @@ export const IMPLEMENTED: Record<string, { name: string; partial?: string }> = {
   "s1-034": { name: "Bishamon-ten" },
   "s1-077": { name: "Mercury" },
   "s7-P060": { name: "Yggdrassil" },
+  // Milestone 12 fix: diagonal move, attacker-miss trigger
+  "s1-091": { name: "Achilles" },
+  "s1-017": { name: "Pythagoras" },
+  "s2-016": { name: "Richard the Lionheart" },
 };
 
 // Shinmen Takezo — Kyougou: "Your attack rolls gain +2. Your attacks with swords deal +1 damage."
@@ -288,5 +292,18 @@ defineCard(
   { data: { name: "Asgard", trigger: "continuous", effects: [{ kind: "attackDamage", amount: 1 }] } },
   { data: { name: "Hvergelmir", trigger: "continuous", effects: [{ kind: "speed", amount: 1, target: "allOthers" }] } },
 );
+
+// Achilles — Iroiki Taxitita (Action): "Move one space diagonally."
+defineCard("s1-091", {
+  data: { name: "Iroiki Taxitita", trigger: "action", effects: [{ kind: "move", spaces: 1, diagonal: true }] },
+});
+// Pythagoras (inspiration) — Sintomotera Odos (Action): "Move one space diagonally."
+defineCard("s1-017", {
+  data: { name: "Sintomotera Odos", trigger: "action", effects: [{ kind: "move", spaces: 1, diagonal: true }] },
+});
+// Richard the Lionheart — Fixe Strican: "After you miss an attack, your next attack roll gains +2."
+defineCard("s2-016", {
+  data: { name: "Fixe Strican", trigger: "attackMissed", effects: [{ kind: "attackRoll", amount: 2 }], duration: "nextAttack" },
+});
 
 export const isImplemented = (cardId: string) => cardId in IMPLEMENTED;

@@ -69,6 +69,9 @@ export function resolveHooks(state: GameState, hook: HookName, context: HookCont
       fireTrigger(state, "gameStart", [0, 1], events);
       break;
     case "onMiss":
+      // the attacker's "after you miss an attack" (active player first, p13), then the defender's
+      // "after you are missed"
+      if (context.attacker !== undefined) fireTrigger(state, "attackMissed", [context.attacker], events, attack);
       if (context.defender !== undefined) fireTrigger(state, "missed", [context.defender], events, attack);
       break;
     case "onReveal":

@@ -81,4 +81,24 @@ describe("bot with batch-4 abilities", () => {
     expect(seen.size).toBeGreaterThan(0);
     console.log(`batch-4 self-play: ${games} games; fired: ${[...seen].join(", ")}`);
   }, 600_000);
+
+  it("self-play after the Milestone 12 fix (one-attack durations, diagonal moves, Richard): clean", () => {
+    const sides: Deck[] = [
+      deck("Achilles"), deck("Milo of Croton"), deck("Richard the Lionheart"), deck("Alfred the Great"),
+      deck("Srqt. The Scorpion King"), { ...structuredClone(ALEX), warrior: warriorData(cards["s1-039"]) },
+    ];
+    const FIX = ["s1-091", "s1-017", "s2-016", "s2-005", "s2-072", "s1-039"];
+    const carried = new Set(sides.flatMap((d) => [d.warrior.id, ...d.support.map((c) => c.id)]));
+    for (const id of FIX) expect(carried.has(id)).toBe(true);
+    const seen = new Set<string>();
+    let games = 0;
+    for (let g = 0; g < sides.length * 2; g++) {
+      const r = selfPlaySides(sides[g % sides.length], sides[(g + 1 + (g >> 1)) % sides.length], g % 2 ? "medium" : "easy", "medium", 1400 + g);
+      expect(r.events[r.events.length - 1].type).toBe("gameEnded");
+      games++;
+      for (const e of r.events) if (e.type === "abilityFired" && FIX.includes(e.cardId)) seen.add(e.cardName);
+    }
+    expect(games).toBe(12);
+    console.log(`fix self-play: ${games} games; fired: ${[...seen].join(", ")}`);
+  }, 600_000);
 });

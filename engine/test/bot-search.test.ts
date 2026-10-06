@@ -33,11 +33,14 @@ describe("search (expectiminimax)", () => {
     for (const depth of [1, 2, 3]) expect(search(s, depth).action).toEqual({ type: "ATTACK" });
   });
 
-  it("finds rotate-then-attack when facing away from an adjacent, nearly dead foe", () => {
-    // Achilles at (1,1) facing N; Ajax directly south at (2,1). Must turn S, then attack.
+  it("sets up the attack when facing away from an adjacent, nearly dead foe", () => {
+    // Achilles at (1,1) facing N; Ajax directly south at (2,1). He must first turn S — or, with his
+    // diagonal move (Iroiki Taxitita), step to a corner facing Ajax — then attack.
     const s = setup({ p0: [1, 1, "N"], p1: [2, 1, "E"], actions: 2, foeLife: 1 });
     expect(getLegalActions(s)).not.toContainEqual({ type: "ATTACK" });
-    expect(search(s, 2).action).toEqual({ type: "ROTATE", facing: "S" });
+    const first = search(s, 2).action;
+    expect(["ROTATE", "ABILITY"]).toContain(first.type);
+    expect(getLegalActions(applyAction(s, first).state)).toContainEqual({ type: "ATTACK" });
   });
 
   it("alpha-beta pruning returns the same action and score as plain expectiminimax", () => {

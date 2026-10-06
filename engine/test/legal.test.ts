@@ -31,6 +31,8 @@ describe("getLegalActions", () => {
       [
         ...["S", "E", "W"].flatMap((d) => ["N", "E", "S", "W"].map((f) => `MOVE:${d}:${f}`)),
         "ROTATE:N", "ROTATE:E", "ROTATE:W", "PASS",
+        // Achilles's Iroiki Taxitita: one space diagonally, to (1,0) or (1,2), any facing
+        ...Array(8).fill("ABILITY"),
       ].sort(),
     );
     expect(keys).not.toContain("ATTACK");
