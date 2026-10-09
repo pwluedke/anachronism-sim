@@ -87,6 +87,7 @@ const EFFECT_LABEL: Record<GameState["effects"][number]["kind"], string> = {
   defenseRoll: "defense",
   speed: "speed",
   damage: "damage",
+  experience: "experience",
 };
 
 /** Timed-effect durations, as shown on a chip (nextTurn reads "next turn", then "this turn"). */

@@ -5,6 +5,7 @@ import { modifierAt } from "../projection";
 import { armedAttacker, weaponsInPlay } from "../cards";
 import { attackRollBonus, continuousSpeed, damageBonus, defenseRollBonus } from "../abilities/runtime";
 import { EVAL_WEIGHTS as W } from "./config";
+import { experienceOf } from "../abilities/experience";
 
 /** Per-attack threat from one attack source: 0 if out of its grid, else (base + modifier bonus) x
  *  damage. Ability roll bonuses count like grid modifiers (the defender's defense bonus counts
@@ -46,7 +47,7 @@ export function evaluate(state: GameState, perspective: PlayerId): number {
   const foe = state.warriors[perspective === 0 ? 1 : 0];
 
   const lifeDiff = me.life - foe.life;
-  const expDiff = me.experience - foe.experience;
+  const expDiff = experienceOf(state, perspective) - experienceOf(state, perspective === 0 ? 1 : 0);
 
   const progress = state.maxRounds > 1 ? (state.round - 1) / (state.maxRounds - 1) : 1;
   const life = lifeDiff * W.life * (1 + W.tempo * progress);

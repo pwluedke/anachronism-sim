@@ -34,7 +34,7 @@ export interface AbilityData {
 
 export type AbilityDef = { data: AbilityData } | { coded: RuntimeAbility };
 
-const MODIFIERS = ["attackRoll", "defenseRoll", "weaponDamage", "attackDamage", "speed"] as const;
+const MODIFIERS = ["attackRoll", "defenseRoll", "weaponDamage", "attackDamage", "speed", "experience"] as const;
 const isModifier = (e: EffectDef): e is EffectDef & { kind: ModKind; amount: number } =>
   (MODIFIERS as readonly string[]).includes(e.kind);
 const targetOf = (e: EffectDef) => (e.kind === "attackRoll" || e.kind === "speed" ? e.target : undefined);
@@ -45,6 +45,7 @@ const MOD_TEXT: Record<ModKind, string> = {
   weaponDamage: "damage with this weapon",
   attackDamage: "damage",
   speed: "speed",
+  experience: "experience",
 };
 
 /** Compile a data ability into the runtime's form. Throws on combinations the runtime can't do. */
@@ -52,7 +53,7 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
   if (a.trigger === "continuous") {
     if (a.duration && a.duration !== "permanent") throw new Error(`${a.name}: continuous abilities are permanent`);
     if (a.usageLimit) throw new Error(`${a.name}: continuous abilities have no usage limit`);
-    const bad = a.effects.find((e) => !isModifier(e));
+    const bad = a.effects.find((e) => !isModifier(e) || (e.kind === "experience" && (e.who ?? "self") !== "self"));
     if (bad) throw new Error(`${a.name}: continuous ${bad.kind} is not supported (continuous effects are modifiers)`);
     const mods = a.effects.filter(isModifier);
     const modify = (kind: ModKind, q: ModQuery): number => {
@@ -89,7 +90,7 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
           });
           if (!v) return [];
           const whose = target === "all" ? " for all warriors" : target === "allOthers" ? " for all other warriors" : "";
-          const what = e.kind === "speed" || e.kind.endsWith("Damage") ? MOD_TEXT[e.kind] : `to ${MOD_TEXT[e.kind]}`;
+          const what = e.kind === "speed" || e.kind === "experience" || e.kind.endsWith("Damage") ? MOD_TEXT[e.kind] : `to ${MOD_TEXT[e.kind]}`;
           return [`${v >= 0 ? "+" : ""}${v} ${what}${whose}`];
         });
         return parts.length ? parts.join(", ") : "condition not met";
@@ -112,7 +113,7 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
   }
   for (const e of a.effects) {
     if (e.kind === "move" && a.trigger !== "action") throw new Error(`${a.name}: a move is an Action ability`);
-    if (isModifier(e) && !isTimed(a.duration)) {
+    if (isModifier(e) && e.kind !== "experience" && !isTimed(a.duration)) {
       throw new Error(`${a.name}: a ${a.trigger} ${e.kind} effect needs a timed duration (${TIMED.join(" / ")})`);
     }
   }

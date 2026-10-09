@@ -5,6 +5,7 @@ export type { AbilityData, AbilityDef } from "./format";
 export type { ConditionDef, EffectDef, DurationDef, DamageTarget, EffectTarget, CardHolder } from "./primitives";
 export { moveOptions } from "./primitives";
 export { IMPLEMENTED, isImplemented } from "./cards";
+export { experienceOf } from "./experience";
 export {
   attackRollBonus,
   defenseRollBonus,

@@ -28,7 +28,7 @@ export interface TimedEffect {
   source: string;
   sourceName: string;
   ability: string;
-  kind: "attackRoll" | "defenseRoll" | "speed" | "damage";
+  kind: "attackRoll" | "defenseRoll" | "speed" | "damage" | "experience";
   amount: number;
   /** damage only: limited to attacks with this weapon (card id); absent = all the owner's attacks. */
   weapon?: string;
@@ -56,7 +56,7 @@ export interface FireContext {
 
 /** The values continuous abilities can modify. weaponDamage: attacks with the ability's own weapon;
  *  attackDamage: all the owner's attacks; speed: actions per turn. */
-export type ModKind = "attackRoll" | "defenseRoll" | "weaponDamage" | "attackDamage" | "speed";
+export type ModKind = "attackRoll" | "defenseRoll" | "weaponDamage" | "attackDamage" | "speed" | "experience";
 
 /** The attack a modifier is being asked about. `owner` is the ability's owner; `subject` is the
  *  warrior whose value is asked for (the attacker for attack-roll and damage modifiers, the defender

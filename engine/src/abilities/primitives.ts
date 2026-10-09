@@ -5,6 +5,7 @@
 import type { GameState, PlayerId, Position } from "../types";
 import type { SupportType } from "../decks";
 import { inPlay } from "../cards";
+import { experienceOf } from "./experience";
 import { inBounds, stepPos, FACINGS } from "../arena";
 import type { AbilityParams, AttackKind, FireContext } from "./types";
 
@@ -46,7 +47,10 @@ export type ConditionDef =
   /** "if <who> has (no) face-up <type / trait> card", e.g. "the defending warrior has a face-up
    *  shield card", "an opponent without a cavalry card". Matches in-play support cards by type
    *  and / or trait; a trait also matches the warrior card itself (a Cavalry warrior is a cavalry card). */
-  | { kind: "faceUpCard"; who: CardHolder; cardType?: SupportType; trait?: string; has: boolean };
+  | { kind: "faceUpCard"; who: CardHolder; cardType?: SupportType; trait?: string; has: boolean }
+  // ---- batch 5 ----
+  /** "if you have more / less experience than the attacker / defender" */
+  | { kind: "experienceVs"; cmp: "more" | "less"; than: "attacker" | "defender" };
 
 /** Whose cards a faceUpCard condition looks at. */
 export type CardHolder = "self" | "defender" | "attacker" | "opponent";
@@ -103,6 +107,13 @@ export function holds(cond: ConditionDef | undefined, state: GameState, owner: P
     }
     case "movedThisTurn":
       return state.phase === "playing" && state.currentPlayer === owner && state.movedThisTurn;
+    case "experienceVs": {
+      const other = cond.than === "attacker" ? q.attacker : q.defender;
+      if (other === undefined || other === owner) return false;
+      const mine = experienceOf(state, owner);
+      const theirs = experienceOf(state, other);
+      return cond.cmp === "more" ? mine > theirs : mine < theirs;
+    }
     case "faceUpCard": {
       const who = cond.who === "self" ? owner : cond.who === "opponent" ? opp(owner) : cond.who === "defender" ? q.defender : q.attacker;
       if (who === undefined) return false;
@@ -153,6 +164,8 @@ export function describeCondition(cond: ConditionDef): string {
       return `if the ${cond.who} has no face-up ${cond.cardType}`;
     case "movedThisTurn":
       return "if you have moved this turn";
+    case "experienceVs":
+      return `if you have ${cond.cmp} experience than the ${cond.than}`;
     case "faceUpCard": {
       const whose = cond.who === "self" ? "you have" : `the ${cond.who} has`;
       const what = [cond.trait, cond.cardType].filter(Boolean).join(" ");
@@ -183,6 +196,10 @@ export type EffectDef = (
   | { kind: "gainLife"; amount: number }
   /** "gain +N speed" (target: "All warriors gain …") */
   | { kind: "speed"; amount: number; target?: EffectTarget }
+  /** "gain / get +N / -N experience". Fired: permanent unless the ability has a duration (rulebook
+   *  p17); `who` picks whose (default your own). Continuous ("You gain +4 experience"): while the
+   *  card is in play. */
+  | { kind: "experience"; amount: number; who?: "self" | "opponent" | "attacker" | "defender" }
   /** "deal N damage to <target>" — ability damage, not a hit (rulebook glossary) */
   | { kind: "dealDamage"; amount: number; target: DamageTarget }
   /** "move N spaces" (an Action ability's choice of where to and which way to face); `diagonal`:
@@ -294,6 +311,18 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
       if (state.currentPlayer === owner) state.movedThisTurn = true;
       ctx.events.push({ type: "moved", player: owner, from, to: { ...params.to }, facing: params.facing });
       return `moves ${effect.spaces} space${effect.spaces === 1 ? "" : "s"}${effect.diagonal ? " diagonally" : ""}`;
+    }
+    case "experience": {
+      const who = effect.who ?? "self";
+      const t = who === "self" ? owner : who === "opponent" ? opp(owner) : who === "attacker" ? ctx.attacker : ctx.defender;
+      if (t === undefined) return "no effect";
+      const name = t === owner ? "" : ` to ${state.warriors[t].name}`;
+      if (isTimed(duration)) {
+        state.effects.push({ owner: t, source: ctx.cardId, sourceName: ctx.cardName, ability: ctx.ability, kind: "experience", amount: effect.amount, duration, active: duration !== "nextTurn" });
+        return `${signed(effect.amount)} experience${name} ${DURATION_TEXT[duration]}`;
+      }
+      state.warriors[t].experience += effect.amount; // permanent (p17)
+      return `${signed(effect.amount)} experience${name}`;
     }
     case "attackRoll":
     case "defenseRoll":

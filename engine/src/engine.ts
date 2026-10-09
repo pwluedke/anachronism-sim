@@ -36,6 +36,7 @@ import {
   continuousSpeed,
 } from "./abilities/runtime";
 import "./abilities/cards"; // registers the implemented card abilities
+import { experienceOf } from "./abilities/experience";
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
@@ -128,7 +129,8 @@ function revealRound(state: GameState, events: GameEvent[]): [SupportSlot | null
  *  restrictions, Reveal abilities, then "start of round" effects. */
 function startRound(state: GameState, events: GameEvent[]): void {
   const revealed = revealRound(state, events);
-  const init = determineInitiative(state.warriors, state.rng, [
+  const effective = state.warriors.map((w) => ({ ...w, experience: experienceOf(state, w.playerId) })) as [Warrior, Warrior];
+  const init = determineInitiative(effective, state.rng, [
     revealed[0]?.card.initiative ?? null,
     revealed[1]?.card.initiative ?? null,
   ]);
@@ -228,7 +230,7 @@ function endIfDefeated(state: GameState, events: GameEvent[]): boolean {
 
 /** Compute and record the end-of-game result (life / experience / draw). */
 function endGame(state: GameState, events: GameEvent[]): void {
-  const [a, b] = state.warriors;
+  const [a, b] = state.warriors.map((w) => ({ ...w, experience: experienceOf(state, w.playerId) }));
   let winner: PlayerId | "draw";
   let reason: "life" | "experience" | "draw";
   if (a.life !== b.life) {
@@ -340,13 +342,13 @@ export function init(side0: Side, side1: Side, seed: number): ApplyResult {
 function finishAttack(state: GameState, pa: PendingAttack, events: GameEvent[]): boolean {
   const me = pa.attacker;
   const foe = pa.defender;
-  const attacker = { ...state.warriors[me], damage: pa.baseDamage };
+  const attacker = { ...state.warriors[me], damage: pa.baseDamage, experience: experienceOf(state, me) };
   const r = judge(
     pa.attackerDice,
     pa.defenderDice,
     pa.gridMod,
     attacker,
-    state.warriors[foe],
+    { ...state.warriors[foe], experience: experienceOf(state, foe) },
     state.rng,
     attackRollBonus(state, me, pa.weapon),
     defenseRollBonus(state, foe, pa.weapon),
