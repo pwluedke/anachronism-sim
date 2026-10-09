@@ -2,7 +2,7 @@
 // helpers (stepPos, projectGrid). It never decides legality: a selection only resolves to an
 // action by finding that exact action object in the engine's legal list.
 import { getLegalActions, projectGrid, stepPos, weaponsInPlay } from "@engine";
-import type { Action, Facing, GameState, Position } from "@engine";
+import type { Action, Facing, GameState, PlayerId, Position } from "@engine";
 
 export const cellKey = (p: Position) => `${p.row},${p.col}`;
 
@@ -11,7 +11,9 @@ export type Selection =
   | { kind: "move"; dir: Facing; facing: Facing | null }
   | { kind: "rotate"; facing: Facing | null }
   /** An Action ability that moves (e.g. Salah ad-Din): pick a destination, then a facing. */
-  | { kind: "abilityMove"; card: string; ability: string; to: Position | null; facing: Facing | null };
+  | { kind: "abilityMove"; card: string; ability: string; to: Position | null; facing: Facing | null }
+  /** A pending ability choice (e.g. Mempo, Scutum, Kimono): pick where the warrior moves. */
+  | { kind: "choice"; to: Position | null; facing: Facing | null };
 
 /** An Action ability whose legal choices are destinations + facings (one action per choice). */
 export interface AbilityMoveGroup {
@@ -47,6 +49,9 @@ export interface BoardModel {
   /** While an optional re-roll is pending: the legal REROLL choices and KEEP. */
   rerolls: Action[];
   keep: Action | undefined;
+  /** While an ability choice is pending: the warrior that moves, its legal CHOOSE actions, and
+   *  DECLINE if the ability is optional. */
+  choice: { mover: PlayerId; options: Extract<Action, { type: "CHOOSE" }>[]; decline: Action | undefined } | null;
 }
 
 export function buildModel(state: GameState): BoardModel {
@@ -72,7 +77,25 @@ export function buildModel(state: GameState): BoardModel {
     abilityMoves: groupAbilityMoves(legal),
     rerolls: legal.filter((a) => a.type === "REROLL"),
     keep: legal.find((a) => a.type === "KEEP"),
+    choice:
+      state.pending?.kind === "choice"
+        ? {
+            mover: state.pending.queue[0].mover,
+            options: legal.filter((a): a is Extract<Action, { type: "CHOOSE" }> => a.type === "CHOOSE"),
+            decline: legal.find((a) => a.type === "DECLINE"),
+          }
+        : null,
   };
+}
+
+/** For a pending ability choice: the destination cells offered. */
+export function choiceTargets(model: BoardModel): Set<string> {
+  return new Set((model.choice?.options ?? []).map((a) => cellKey(a.to)));
+}
+
+/** For a pending ability choice: the facings offered at destination `to`. */
+export function choiceFacings(model: BoardModel, to: Position): Facing[] {
+  return (model.choice?.options ?? []).filter((a) => a.to.row === to.row && a.to.col === to.col).map((a) => a.facing);
 }
 
 function groupAbilityMoves(legal: Action[]): Map<string, AbilityMoveGroup> {
@@ -106,6 +129,10 @@ export function selectedAction(model: BoardModel, sel: Selection): Action | unde
   if (sel.kind === "rotate" && sel.facing) {
     return model.legal.find((a) => a.type === "ROTATE" && a.facing === sel.facing);
   }
+  if (sel.kind === "choice" && sel.to && sel.facing) {
+    const to = sel.to;
+    return model.choice?.options.find((a) => a.to.row === to.row && a.to.col === to.col && a.facing === sel.facing);
+  }
   if (sel.kind === "abilityMove" && sel.to && sel.facing) {
     const to = sel.to;
     return model.abilityMoves
@@ -119,7 +146,7 @@ export function selectedAction(model: BoardModel, sel: Selection): Action | unde
 export function selectionCell(model: BoardModel, sel: Selection): Position | null {
   if (sel.kind === "move") return stepPos(model.origin, sel.dir);
   if (sel.kind === "rotate") return model.origin;
-  if (sel.kind === "abilityMove") return sel.to;
+  if (sel.kind === "abilityMove" || sel.kind === "choice") return sel.to;
   return null;
 }
 

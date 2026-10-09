@@ -178,8 +178,8 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
           targetName: r.targetName,
           success: r.success,
         });
-        if (!r.success) return `rolls ${r.total}: no effect`;
-        parts.push(`rolls ${r.total}`);
+        // The roll itself is logged (abilityRolled); the summary says only what came of it.
+        if (!r.success) return "no effect";
       }
       for (const e of a.effects) {
         if (!holds(e.when, ctx.state, ctx.owner, cq(ctx))) continue;
@@ -197,7 +197,7 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
         }
         parts.push(applyEffect(ctx, e, a.duration, params));
       }
-      return parts.join(", ");
+      return parts.join(", ") || "no effect";
     },
   };
 }

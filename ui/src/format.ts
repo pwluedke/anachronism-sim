@@ -78,6 +78,8 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       };
     }
     case "abilityFired":
+      // A failed ability roll already said so ("… — no effect").
+      if (e.effect === "no effect") return null;
       return {
         kind: "ability",
         // An effect on several warriors names them itself ("all warriors get …").

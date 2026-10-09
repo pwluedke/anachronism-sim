@@ -26,6 +26,8 @@ import {
   weaponGridAt,
   abilityMoveTargets,
   abilityMoveFacings,
+  choiceTargets,
+  choiceFacings,
   type Selection,
 } from "./boardModel";
 
@@ -95,6 +97,11 @@ export function App() {
 
   const active = state.warriors[state.currentPlayer];
   const target = model ? selectionCell(model, sel) : null;
+  // A pending ability choice may move the other warrior (e.g. Mempo): its path starts there, and the
+  // grid preview (the active warrior's own grid) is off.
+  const choice = model?.choice ?? null;
+  const moverPos = choice ? state.warriors[choice.mover].position : model?.origin;
+  const previewTarget = choice && choice.mover !== state.currentPlayer ? null : target;
   // While carets are showing, always preview where the grid would be: the hovered or chosen facing,
   // else the current facing (turning in place to it isn't an action, so it has no caret of its own).
   const shownFacing = sel.kind === "none" ? null : (hover ?? sel.facing ?? active.facing);
@@ -104,9 +111,9 @@ export function App() {
   const grid = useMemo(() => {
     if (!playing) return new Map<string, number>();
     if (attackPreview && attackPreview !== "basic") return weaponGridAt(state, attackPreview);
-    if (!attackPreview && target && shownFacing) return gridAt(state, target, shownFacing);
+    if (!attackPreview && previewTarget && shownFacing) return gridAt(state, previewTarget, shownFacing);
     return gridAt(state, active.position, active.facing);
-  }, [state, playing, attackPreview, target, shownFacing, active]);
+  }, [state, playing, attackPreview, previewTarget, shownFacing, active]);
 
   const confirm = model ? selectedAction(model, sel) : undefined;
   const act = (a: Action) => dispatch(a);
@@ -116,6 +123,14 @@ export function App() {
   };
 
   const onCellClick = (p: { row: number; col: number }) => {
+    if (model && choice) {
+      const offered = choiceFacings(model, p);
+      if (!offered.length) return;
+      const moverFacing = state.warriors[choice.mover].facing;
+      setHover(null);
+      setSel({ kind: "choice", to: p, facing: offered.length === 1 ? offered[0] : offered.includes(moverFacing) ? moverFacing : null });
+      return;
+    }
     if (model && sel.kind === "abilityMove") {
       const offered = abilityMoveFacings(model, sel.card, sel.ability, p);
       if (!offered.length) return;
@@ -188,12 +203,20 @@ export function App() {
   if (notice) {
     prompt = notice;
   } else if (botTurn && mode.kind === "ai") {
-    prompt = `${name} (computer, ${mode.difficulty}) is ${pending ? "choosing a card to discard" : "considering"}…`;
+    prompt = `${name} (computer, ${mode.difficulty}) is ${
+      state.pending?.kind === "discard" ? "choosing a card to discard" : state.pending?.kind === "choice" ? `deciding ${state.pending.queue[0].ability}` : "considering"
+    }…`;
   } else if (playing && state.pending?.kind === "reroll") {
     const pa = state.pending.attack;
     prompt = `${state.pending.cardName} — ${state.pending.ability}: ${name} rolled ${pa.attackerDice.join(" + ")} against ${pa.defenderDice.join(
       " + ",
     )}. Re-roll one die, or keep the roll?`;
+  } else if (playing && state.pending?.kind === "choice") {
+    const c = state.pending.queue[0];
+    const who = c.mover === state.currentPlayer ? name : NAMES[c.mover];
+    prompt = sel.kind === "choice" && sel.to
+      ? `${c.cardName} — ${c.ability}: ${who} to ${COLS[sel.to.col]}${ROWS[sel.to.row]}${sel.facing ? `, facing ${FACING_NAME[sel.facing]}` : " — pick a facing"}.`
+      : `${c.cardName} — ${c.ability}: ${name}, pick where ${who} moves${c.optional ? ", or decline" : ""}.`;
   } else if (playing && pending) {
     prompt = `${name} is over a card limit (${violations(state, state.currentPlayer)
       .map((v) => v.detail)
@@ -283,15 +306,17 @@ export function App() {
             state={state}
             cards={[CARDS[0], CARDS[1]]}
             grid={grid}
-            gridIsPreview={!!attackPreview || !!(target && shownFacing)}
+            gridIsPreview={!!attackPreview || !!(previewTarget && shownFacing)}
             reach={
               !model || sel.kind === "rotate"
                 ? undefined
-                : sel.kind === "abilityMove"
+                : choice
+                  ? choiceTargets(model)
+                  : sel.kind === "abilityMove"
                   ? abilityMoveTargets(model, sel.card, sel.ability)
                   : new Set(model.reach.keys())
             }
-            path={model && (sel.kind === "move" || sel.kind === "abilityMove") && target ? { from: model.origin, to: target } : null}
+            path={model && (sel.kind === "move" || sel.kind === "abilityMove" || sel.kind === "choice") && target && moverPos ? { from: moverPos, to: target } : null}
             carets={
               model && target && sel.kind !== "none"
                 ? {
@@ -299,7 +324,9 @@ export function App() {
                     offered:
                       sel.kind === "move"
                         ? model.moveFacings(sel.dir)
-                        : sel.kind === "abilityMove"
+                        : sel.kind === "choice"
+                          ? choiceFacings(model, target)
+                          : sel.kind === "abilityMove"
                           ? abilityMoveFacings(model, sel.card, sel.ability, target)
                           : model.rotateFacings,
                     chosen: sel.facing,
@@ -339,7 +366,14 @@ export function App() {
               })),
             ]}
             choices={
-              model && state.pending?.kind === "reroll"
+              model && choice
+                ? [
+                    ...(confirm && confirm.type === "CHOOSE"
+                      ? [{ key: "choose", label: `Move ${NAMES[choice.mover]} here`, action: confirm }]
+                      : []),
+                    ...(choice.decline ? [{ key: "decline", label: "Decline", action: choice.decline }] : []),
+                  ]
+                : model && state.pending?.kind === "reroll"
                 ? [
                     ...model.rerolls.flatMap((a) =>
                       a.type === "REROLL"

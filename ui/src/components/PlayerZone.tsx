@@ -1,5 +1,6 @@
 // One player's side of the table: warrior stat panel + the 4 support cards (face-down until
 // revealed, left to right, one per round).
+import { experienceOf } from "@engine";
 import type { CardData, GameState, PlayerId } from "@engine";
 import { GridDiagram } from "./GridDiagram";
 import { SupportCard } from "./SupportCard";
@@ -22,6 +23,8 @@ function StatPanel({
 }) {
   const w = state.warriors[pid];
   const isTurn = state.phase === "playing" && state.currentPlayer === pid;
+  // Experience as the rules read it (engine): printed, plus permanent and in-play changes.
+  const exp = experienceOf(state, pid);
   return (
     <div className={`stat-panel parchment p${pid}${isTurn ? " is-turn" : ""}`}>
       <div className="stat-name">
@@ -49,7 +52,10 @@ function StatPanel({
         </div>
         <div className="stat">
           <dt className="label">exp</dt>
-          <dd>{w.experience}</dd>
+          <dd title={exp !== card.experience ? `printed ${card.experience}; changed by card abilities` : undefined}>
+            {exp}
+            {exp !== card.experience && <span className="muted">/{card.experience}</span>}
+          </dd>
         </div>
         <div className="stat">
           <dt className="label">damage</dt>
