@@ -44,9 +44,9 @@ function passRound(s: GameState) {
 }
 
 describe("first-batch card abilities", () => {
-  it("exactly the implemented cards (batches 1-4) have abilities; everything else is inert", () => {
+  it("exactly the implemented cards have abilities; everything else is inert", () => {
     expect(Object.keys(REGISTRY).sort()).toEqual(Object.keys(IMPLEMENTED).sort());
-    expect(Object.keys(REGISTRY)).toHaveLength(45);
+    expect(Object.keys(REGISTRY)).toHaveLength(58);
     const { decks } = loadAllDecks(recs, cards);
     const batch = new Set(Object.keys(IMPLEMENTED));
     for (const d of decks.filter((x) => ![x.warrior.id, ...x.support.map((c) => c.id)].some((id) => batch.has(id))).slice(0, 25)) {

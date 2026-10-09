@@ -57,13 +57,7 @@
     "id": "s1-014",
     "name": "Greaves",
     "text": "Once per round, you may re-roll one die of one of your defense rolls.",
-    "reason": "dice-value branching / dice rolling"
-  },
-  {
-    "id": "s1-015",
-    "name": "Belt of Hippolyte",
-    "text": "You gain +4 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"re-roll one die of one of your defense rolls\" — the re-roll effect is for attack rolls only"
   },
   {
     "id": "s1-018",
@@ -81,25 +75,19 @@
     "id": "s1-020",
     "name": "Kotynos",
     "text": "Once per round, you may re-roll your attack roll.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"re-roll your attack roll\" — re-rolling the whole roll (the re-roll effect is one attack die)"
   },
   {
     "id": "s1-021",
     "name": "Oda Nobunaga",
     "text": "You win ties with warriors that do not have the Roukou ability, regardless of experience.",
-    "reason": "experience modification"
-  },
-  {
-    "id": "s1-022",
-    "name": "Izanagi",
-    "text": "Roll two dice. If that total is less than your experience, gain 2 life.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"You win ties with warriors that do not have the Roukou ability\" — tie-resolution change (out of scope)"
   },
   {
     "id": "s1-024",
     "name": "Do",
     "text": "Once per turn, you may re-roll your defense roll.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"re-roll your defense roll\" — defense re-roll"
   },
   {
     "id": "s1-025",
@@ -138,12 +126,6 @@
     "reason": "initiative modification"
   },
   {
-    "id": "s1-031",
-    "name": "Mempo",
-    "text": "Once per turn, choose an opposing warrior and roll two dice. If that total is greater than or equal to their experience, you may move that warrior up to 2 spaces and change their facing.",
-    "reason": "experience modification"
-  },
-  {
     "id": "s1-032",
     "name": "Kemuri-Kona",
     "text": "You may move to any space in your starting row.",
@@ -159,19 +141,7 @@
     "id": "s1-035",
     "name": "Katana",
     "text": "When you hit with this weapon, the attacker and defender each roll one die and add his or her warrior's experience. If your total is higher, you deal +1 damage this attack.",
-    "reason": "experience modification"
-  },
-  {
-    "id": "s1-036",
-    "name": "Kimono",
-    "text": "Once per turn, after an opponent attacks you and misses, roll two dice. If that total is less than your experience, you may move one space.",
-    "reason": "experience modification"
-  },
-  {
-    "id": "s1-037",
-    "name": "Haidate",
-    "text": "When you are attacked, your defense roll gains +1 if you have more experience than the attacker.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"the attacker and defender each roll one die and add … experience. If your total is higher\" — an opposed roll (the threshold is a number, your experience / life, or a warrior's experience)"
   },
   {
     "id": "s1-040",
@@ -189,7 +159,7 @@
     "id": "s1-042",
     "name": "Izanami",
     "text": "Roll 2 dice. If the total is greater than 7 (or greater than 5 if you are a wind warrior), then you may move to any empty space in the arena.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"you may move to any empty space in the arena\" — a move to any space (the move effect is N steps)"
   },
   {
     "id": "s1-043",
@@ -261,13 +231,7 @@
     "id": "s1-056",
     "name": "Hjelm",
     "text": "When you roll two dice for anything other than attack or defense, you may choose to add or subtract 2 from the roll.",
-    "reason": "dice-value branching / dice rolling"
-  },
-  {
-    "id": "s1-057",
-    "name": "Mjollnir",
-    "text": "After you are hit by a basic attack, roll two dice. If that total is greater than the attacker's experience, deal 1 damage to that warrior.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"you may choose to add or subtract 2 from the roll\" — modifying a non-attack roll"
   },
   {
     "id": "s1-058",
@@ -285,7 +249,7 @@
     "id": "s1-060",
     "name": "Grendel",
     "text": "Choose an opposing warrior and roll two dice. If the total is greater than that warrior's experience, that warrior must spend an additional action to attack this round.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"that warrior must spend an additional action to attack this round\" — action-cost change"
   },
   {
     "id": "s1-061",
@@ -426,22 +390,10 @@
     "reason": "unsupported clause: After you hit a warrior with this weapon, your basic attacks against that warrior deal +1 damage this round"
   },
   {
-    "id": "s1-089",
-    "name": "Cassis",
-    "text": "Your defense rolls gain +1 if you are a metal or water warrior. You gain +1 experience if you are an earth or fire warrior.",
-    "reason": "experience modification"
-  },
-  {
-    "id": "s1-090",
-    "name": "Scutum",
-    "text": "Once per round, after you make a successful attack, roll two dice. If that total is less than or equal to your experience, move the defending warrior one space.",
-    "reason": "experience modification"
-  },
-  {
     "id": "s1-092",
     "name": "Thetis",
     "text": "Once per game, re-roll any one die or make an opponent re-roll any one die.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"Once per game, re-roll any one die or make an opponent re-roll\" — once per game / any-roll re-roll"
   },
   {
     "id": "s1-093",
@@ -630,12 +582,6 @@
     "reason": "targeting / search / choose a card"
   },
   {
-    "id": "s2-021",
-    "name": "Robin Hood",
-    "text": "You gain +3 experience and your attack rolls gain +1 if you have a ranged weapon.",
-    "reason": "experience modification"
-  },
-  {
     "id": "s2-022",
     "name": "Maid Marion",
     "text": "Place this card in any space in the arena. Move to this card's space.",
@@ -675,7 +621,7 @@
     "id": "s2-028",
     "name": "Qing Long Yan Yue Dao",
     "text": "After you hit with this weapon, roll two dice. If that total is greater than the defender's experience, discard one of the defender's cavalry or armor support cards.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"discard one of the defender's cavalry or armor support cards\" — discard"
   },
   {
     "id": "s2-029",
@@ -693,7 +639,7 @@
     "id": "s2-031",
     "name": "Hua Mulan",
     "text": "While you have a polearm, your attack rolls gain +1. At the start of the game, if there is an opposing Mongol warrior, gain 2 life and +6 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if there is an opposing Mongol warrior\" — an opponent's culture (the culture condition is your own)"
   },
   {
     "id": "s2-032",
@@ -717,7 +663,7 @@
     "id": "s2-035",
     "name": "Sheng Kai De Mu Lan Hua",
     "text": "Before a tied roll is broken by experience, you may discard this card. If you do, your roll gains +1 and you gain 2 life.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"Before a tied roll is broken by experience, you may discard this card\" — tie handling / discard"
   },
   {
     "id": "s2-036",
@@ -753,7 +699,7 @@
     "id": "s2-042",
     "name": "Yu Huang Shang Di",
     "text": "At the start of the round, if you did not make any attacks last round, your attack rolls gain +2 and you gain +4 experience for this round.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if you did not make any attacks last round\" — tracking last round's attacks"
   },
   {
     "id": "s2-043",
@@ -843,7 +789,7 @@
     "id": "s2-057",
     "name": "Horus",
     "text": "Once per roll, after the dice are rolled, you may deal one damage to your warrior. If you do, force any one die to be re-rolled (limit once per roll).",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"force any one die to be re-rolled\" — re-rolling any roll's die"
   },
   {
     "id": "s2-058",
@@ -981,7 +927,7 @@
     "id": "s2-082",
     "name": "Koekki Moengke Tengri",
     "text": "After you make an attack roll, you may discard this card to set the attack roll equal to your experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"discard this card to set the attack roll equal to your experience\" — discard / setting a roll"
   },
   {
     "id": "s2-084",
@@ -1047,13 +993,7 @@
     "id": "s2-095",
     "name": "Num Tom",
     "text": "You and a non-adjacent warrior each roll two dice. If your total is greater than thier experience, deal 1 damage to their warrior. If their total is less than your experience, deal 1 damage to their warrior.",
-    "reason": "experience modification"
-  },
-  {
-    "id": "s2-097",
-    "name": "Yeke Mongghol Ulus",
-    "text": "If you you have a face-up ranged weapon and you won initiative this round, move an opposing warrior one space.",
-    "reason": "unsupported clause: If you you have a face-up ranged weapon and you won initiative this round, move an opposing warrior one space"
+    "reason": "batch 5: \"a non-adjacent warrior\" — a not-adjacent condition, and the opponent's own roll"
   },
   {
     "id": "s2-098",
@@ -1065,7 +1005,7 @@
     "id": "s2-099",
     "name": "Khatangu",
     "text": "Your defense rolls gain +1 if your experience is odd. When you take damage from something other than an attack, you may discard this card to prevent the damage.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if your experience is odd\" — odd / even test; \"discard this card to prevent the damage\" — discard, damage prevention"
   },
   {
     "id": "s2-100",
@@ -1077,7 +1017,7 @@
     "id": "s3-002",
     "name": "Pape Hadrien Ier",
     "text": "When you make a basic attack against a warrior with less experience, the attack roll gains +1. If the attack is a critical hit, it deals +1 damage.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"If the attack is a critical hit, it deals +1 damage\" — critical-hit effect"
   },
   {
     "id": "s3-003",
@@ -1125,7 +1065,7 @@
     "id": "s3-010",
     "name": "Marteau de Cavalerie",
     "text": "At the start of each round, roll two dice. If the total is less than an adjacent opponent's experience, deal 1 damage to that warrior and their defense rolls get -1 this round.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"their defense rolls get -1 this round\" — a timed roll penalty on another warrior (roll targets are attack rolls and speed)"
   },
   {
     "id": "s3-011",
@@ -1269,7 +1209,7 @@
     "id": "s3-034",
     "name": "Rüstung der Römisches Hilfstruppen",
     "text": "Your defense rolls gain +1. If you are missed by an attack and your defense roll is less than the attacker's experience, gain +1 speed on your next turn.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"your defense roll is less than the attacker's experience\" — branching on a combat roll's value"
   },
   {
     "id": "s3-035",
@@ -1311,13 +1251,13 @@
     "id": "s3-041",
     "name": "Siegfried",
     "text": "Your defense rolls that are less than 8 are increased to 8.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"defense rolls that are less than 8 are increased to 8\" — setting a roll's value"
   },
   {
     "id": "s3-042",
     "name": "Krimhild",
     "text": "At the start of any round, you may give all of your attack rolls for that round -1. If you do, gain +2 experience and your defense rolls for that round gain +1.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"you may give all of your attack rolls for that round -1. If you do\" — an optional cost with no roll"
   },
   {
     "id": "s3-043",
@@ -1509,7 +1449,7 @@
     "id": "s3-075",
     "name": "Wóphiye Wakĥáŋ",
     "text": "Roll one die and place it on this card. Once each turn, you may swap one of the dice in one of your rolls with the die on this card. At the end of the round, increase the die on this card by 1 if possible.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"Roll one die and place it on this card … swap\" — a die kept on a card (out of scope)"
   },
   {
     "id": "s3-076",
@@ -1527,7 +1467,7 @@
     "id": "s3-078",
     "name": "Claidheamh-Catha dà-Làimhe",
     "text": "After you hit with this weapon, roll two dice. If the total is less than your experience, move the defender to any space in this weapon's attack grid.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"move the defender to any space in this weapon's attack grid\" — a grid-position move; \"After you hit with this weapon\" — a trigger for one weapon"
   },
   {
     "id": "s3-079",
@@ -1563,7 +1503,7 @@
     "id": "s3-085",
     "name": "Bonaid Trì-Iteagan",
     "text": "Whenever you would roll two dice this round, roll three dice instead and choose which two to use.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"roll three dice instead and choose which two to use\" — three-dice replacement (out of scope)"
   },
   {
     "id": "s3-086",
@@ -1605,7 +1545,7 @@
     "id": "s3-092",
     "name": "Iombhas Forasna",
     "text": "Once per round, after an attack or defense roll, you may increase one of the dice you rolled by 1 and decrease one of the dice your opponent rolled by 1.",
-    "reason": "unsupported clause: Once per round, after an attack or defense roll, you may increase one of the dice you rolled by 1 and decrease one of the dice your opponent rolled by 1"
+    "reason": "batch 5: \"increase one of the dice you rolled by 1 and decrease one of the dice your opponent rolled\" — die modification"
   },
   {
     "id": "s3-093",
@@ -1653,7 +1593,7 @@
     "id": "s3-100",
     "name": "Sporan",
     "text": "After you roll a 1 on any of your dice, you may re-roll that die.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"After you roll a 1 on any of your dice, you may re-roll that die\" — die-value trigger / any-roll re-roll"
   },
   {
     "id": "s3-P011",
@@ -1701,7 +1641,7 @@
     "id": "s3-P018",
     "name": "Stone of Destiny",
     "text": "Before you make a roll, if you do not have a Fire card, pick a number no greater than your experience. You permanently lose that much experience and add that amount to this roll.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"pick a number … permanently lose that much experience and add that amount to this roll\" — a chosen amount (dynamic value)"
   },
   {
     "id": "s3-P019",
@@ -1797,13 +1737,13 @@
     "id": "s4-014",
     "name": "Duban",
     "text": "If you lost initiative this round, you may re-roll one die of one of your attack rolls and one die of one of your defense rolls this round.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"re-roll one die of one of your attack rolls and one die of one of your defense rolls\" — defense re-roll"
   },
   {
     "id": "s4-015",
     "name": "Bas Sheasamhach",
     "text": "If you lost the previous game, gain 2 life and +3 experience. Otherwise gain 1 life and +1 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"If you lost the previous game\" — match history"
   },
   {
     "id": "s4-016",
@@ -1827,7 +1767,7 @@
     "id": "s4-019",
     "name": "Torc Orga",
     "text": "You gain +1 speed during the fourth and fifth rounds. Opposing cards cannot reduce your attack rolls, defense rolls, speed or experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"during the fourth and fifth rounds\" — a round-number condition; \"Opposing cards cannot reduce …\" — restriction"
   },
   {
     "id": "s4-020",
@@ -1875,7 +1815,7 @@
     "id": "s4-027",
     "name": "Treaty of Waitangi",
     "text": "Choose another warrior. Exchange the experience values of your warrior and the chosen warrior.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"Exchange the experience values of your warrior and the chosen warrior\" — experience swap (out of scope)"
   },
   {
     "id": "s4-028",
@@ -1899,13 +1839,13 @@
     "id": "s4-031",
     "name": "Hatupatu",
     "text": "The first time you make a critical hit that hit deals normal damage and you gain 4 life and 6 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"The first time you make a critical hit\" — critical-hit effect / first-time tracking"
   },
   {
     "id": "s4-032",
     "name": "Tane Mahuta",
     "text": "Once each round, after you and an opponent each roll two dice, if you are a Water, Wind, or Wood warrior, you may deal 1 damage to your warrior. If you do, swap your highest die with the opponent's highest die.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"swap your highest die with the opponent's highest die\" — die swap"
   },
   {
     "id": "s4-033",
@@ -2121,13 +2061,13 @@
     "id": "s4-070",
     "name": "Mitray-i",
     "text": "After you take damage, roll two dice. If the total is less than your experience, the next attack against you deals -1 damage to a minimum of 0.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"the next attack against you deals -1 damage\" — damage reduction"
   },
   {
     "id": "s4-071",
     "name": "Shapur I",
     "text": "At the start of each round roll two dice. If the roll is greater than your life you may immediately move your warrior one space or use an action ability on one of your support cards.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"or use an action ability on one of your support cards\" — a free action-ability use"
   },
   {
     "id": "s4-072",
@@ -2145,7 +2085,7 @@
     "id": "s4-074",
     "name": "Kolah Khod-e Sasani",
     "text": "Once each turn, if you have a cavalry card, and one die of your rolls matches your experience, you may give the roll +2.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"one die of your rolls matches your experience\" — branching on a die's value"
   },
   {
     "id": "s4-075",
@@ -2163,7 +2103,7 @@
     "id": "s4-077",
     "name": "Voltaire",
     "text": "After you lose a tie, gain +1 speed on your next turn, and gain +3 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"After you lose a tie\" — a tie trigger"
   },
   {
     "id": "s4-078",
@@ -2187,7 +2127,7 @@
     "id": "s4-081",
     "name": "Ivan The Terrible",
     "text": "After any player rolls dice, if you have more than 2 experience, you may give your warrior -3 experience. If you do, you may increase or decrease one of the dice by 1. If you are at 1 life, your next roll is a 12.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"you may increase or decrease one of the dice by 1\" — die modification; \"your next roll is a 12\" — setting a roll"
   },
   {
     "id": "s4-082",
@@ -2223,7 +2163,7 @@
     "id": "s4-087",
     "name": "Vozeshenniye Posolstovo",
     "text": "Once each game, at the start of any round, if this card is in play or in the discard pile, you may gain +3 experience and move your warrior up to one space. If this card was in your discard pile, this ability cannot be used again this match.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"Once each game … if this card is in play or in the discard pile\" — once per game / discard pile"
   },
   {
     "id": "s4-088",
@@ -2241,7 +2181,7 @@
     "id": "s4-090",
     "name": "Rindi",
     "text": "At the start of each round, choose an opposing warrior and roll two dice. If this total is less than the chosen warrior's experience, that warrior's attacks cannot deal more than base damage this round. Otherwise, your attack rolls against them gain +1 this round.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"that warrior's attacks cannot deal more than base damage\" — damage cap / restriction"
   },
   {
     "id": "s4-091",
@@ -2253,7 +2193,7 @@
     "id": "s4-092",
     "name": "Samozvantez Dmitry",
     "text": "After you roll dice, if you have more than 2 experience, you may give your warrior -3 experience. If you do, you may increase one die of the roll by 1.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"you may increase one die of the roll by 1\" — die modification"
   },
   {
     "id": "s4-093",
@@ -2331,7 +2271,7 @@
     "id": "s4-P025",
     "name": "Donar-Eiche",
     "text": "At the start of each round, if you won initiative, your first attack roll that round gains +2 if the defender has more experience than your warrior. If you lost initiative, you may move one space.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"your first attack roll that round\" — first-attack-of-the-round tracking"
   },
   {
     "id": "s4-P026",
@@ -2415,19 +2355,13 @@
     "id": "s5-009",
     "name": "Ocelocolohtic",
     "text": "You gain +2 experience. After your are dealt damage, if you have been dealt more than 3 damage from any one opponent in that round, your next succesful attack is a critical hit.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if you have been dealt more than 3 damage from any one opponent in that round\" — damage tracking; \"your next succesful attack is a critical hit\" — critical-hit effect"
   },
   {
     "id": "s5-010",
     "name": "Ocelomeh",
     "text": "Once each turn, your next basic attack deals +2 damage. If you are an Aztec warrior, your first attack roll each round gains +1.",
     "reason": "unsupported clause: Once each turn, your next basic attack deals +2 damage"
-  },
-  {
-    "id": "s5-011",
-    "name": "Itzcoatl",
-    "text": "After you hit with a basic attack, gain 2 experience.",
-    "reason": "experience modification"
   },
   {
     "id": "s5-012",
@@ -2445,7 +2379,7 @@
     "id": "s5-014",
     "name": "Cuauhcuachimalli",
     "text": "You gain +2 Experience. If you are dealt more than 2 damage from any one opponent in a round, you may attack twice with one of your weapons on your next turn.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"you may attack twice with one of your weapons\" — extra attacks"
   },
   {
     "id": "s5-015",
@@ -2457,7 +2391,7 @@
     "id": "s5-017",
     "name": "Quetzalcoatl",
     "text": "Ties are won by the warrior with less life instead of by the warrior with higher experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"Ties are won by the warrior with less life\" — tie-resolution change (out of scope)"
   },
   {
     "id": "s5-018",
@@ -2469,13 +2403,13 @@
     "id": "s5-019",
     "name": "Copilli",
     "text": "Twice each turn, if you have previously been hit this turn, you may re-roll your defense roll.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"re-roll your defense roll\" — defense re-roll; \"Twice each turn\" — usage limit"
   },
   {
     "id": "s5-020",
     "name": "Tlimatli",
     "text": "Once each turn, after one or more of your dice are re-rolled, the roll gains +2.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"after one or more of your dice are re-rolled, the roll gains +2\" — a re-roll trigger on any roll"
   },
   {
     "id": "s5-021",
@@ -2553,7 +2487,7 @@
     "id": "s5-033",
     "name": "Usumidori",
     "text": "When you hit with this weapon, the attack and defender both roll one die and add his or her warrior's experience. If your total is higher, gain +1 speed on your next turn.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"the attack and defender both roll one die and add … experience\" — an opposed roll"
   },
   {
     "id": "s5-035",
@@ -2583,7 +2517,7 @@
     "id": "s5-039",
     "name": "Akazonae",
     "text": "At the start of each round, roll one die. If the number is odd, your defense rolls gain +1 this round. Otherwise, your attack rolls gain +1 this round. If you have a Japanese inspiration and the roll is greater than 3, you gain +1 speed this round.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"If the number is odd\" — odd / even test"
   },
   {
     "id": "s5-040",
@@ -2637,7 +2571,7 @@
     "id": "s5-048",
     "name": "Azukinagamitsu",
     "text": "When you attack with this weapon, if the attack roll is greater than the higher of the defender's experience or the defense roll without bonuses, deal 1 damage to the defender.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if the attack roll is greater than the higher of the defender's experience or the defense roll\" — branching on a combat roll's value"
   },
   {
     "id": "s5-049",
@@ -2787,7 +2721,7 @@
     "id": "s5-074",
     "name": "Khauza",
     "text": "When you would take damage from an opponent’s card ability, if you have that amount or more experience, you may lose that much experience. If you do, reduce the damage to 0.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"you may lose that much experience. If you do, reduce the damage to 0\" — damage prevention"
   },
   {
     "id": "s5-075",
@@ -2835,7 +2769,7 @@
     "id": "s5-084",
     "name": "Cota Corta",
     "text": "When you are attacked with a weapon, if you have less experience than the attacker, your defense roll gains +1. While you are in an opponent’s basic attack grid and he or she is not in your basic attack grid, your defense rolls gain +2.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"While you are in an opponent's basic attack grid and he or she is not in your basic attack grid\" — grid-position condition"
   },
   {
     "id": "s5-085",
@@ -2859,7 +2793,7 @@
     "id": "s5-088",
     "name": "Pica de Infante",
     "text": "Once each round, after an opponent uses an action to move into a space in this weapon’s attack grid, roll two dice. If the total is less than the opponent’s experience, they must discard one of their non–weapon support cards.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"after an opponent uses an action to move into a space in this weapon's attack grid\" — reaction to an opponent's move / grid position; \"must discard\" — discard"
   },
   {
     "id": "s5-089",
@@ -2883,7 +2817,7 @@
     "id": "s5-092",
     "name": "La Malinche",
     "text": "Once each round, when you make a roll, if no opponent has a card that matches your warrior’s culture, you may re–roll one die of any player’s attack or defense roll. If you are an Earth or Metal warrior, you may give the re–roll +1 or –1.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"you may re-roll one die of any player's attack or defense roll\" — re-rolling another player's dice"
   },
   {
     "id": "s5-093",
@@ -2937,7 +2871,7 @@
     "id": "s5-P031",
     "name": "Si An Bhru",
     "text": "After any other card is discarded, you may discard this card. If you do, your next attack roll is considered doubles. Once each match, at the start of a game, if this card is in your discard pile, your warrior gains +2 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"After any other card is discarded\" — discard trigger; \"Once each match\" — match history"
   },
   {
     "id": "s5-P032",
@@ -2967,7 +2901,7 @@
     "id": "s5-P036",
     "name": "Sagaris",
     "text": "When you attack with this weapon, if you have less experience than the defender, the attack roll gains +2 and the attack deals +1 damage.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"the attack roll gains +2\" when attacking \"with this weapon\" — an attack-roll bonus for one weapon (attack-roll bonuses apply to every attack)"
   },
   {
     "id": "s5-P037",
@@ -3003,7 +2937,7 @@
     "id": "s6-002",
     "name": "Wei Guo",
     "text": "If your warrior in the previous game this match was Chinese, gain 1 life and +3 experience. Once each game, before a player makes a roll, if this card is in play or in your discard pile, that roll can not be re–rolled or modified.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"If your warrior in the previous game this match was Chinese\" — match history"
   },
   {
     "id": "s6-003",
@@ -3069,13 +3003,13 @@
     "id": "s6-013",
     "name": "Shan Dian Mao",
     "text": "When you attack a rival with this weapon, you may re-roll the attack roll, and that attack deals +1 damage.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"When you attack a rival\" — rivals; \"re-roll the attack roll\" — whole-roll re-roll"
   },
   {
     "id": "s6-014",
     "name": "Yin Tou Hui",
     "text": "When an opponent rolls a 6 on an attack roll, they become your rival until the end of the next round. When you are attacked, if your defense roll is less than the attacker's experience, the attack deals -1 damage, to a minimum of 1.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"they become your rival\" — rivals; \"the attack deals -1 damage\" — damage reduction"
   },
   {
     "id": "s6-015",
@@ -3105,7 +3039,7 @@
     "id": "s6-019",
     "name": "Tie Xia Bi Hu Jia",
     "text": "Opponents can not re-roll your dice or modify your experience. After you are hit by a rival’s weapon attack, deal 2 damage to the attacker. You take no damage from your rival’s critical hits.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"Opponents can not re-roll your dice or modify your experience\" — restriction; rivals"
   },
   {
     "id": "s6-020",
@@ -3123,7 +3057,7 @@
     "id": "s6-022",
     "name": "Huang Lao Jun",
     "text": "After you make a roll, if the difference between any two of the dice was greater than 3, your next successful attacks deals +1 damage.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"if the difference between any two of the dice was greater than 3\" — branching on dice values"
   },
   {
     "id": "s6-023",
@@ -3153,7 +3087,7 @@
     "id": "s6-027",
     "name": "Calico Jack Rackham",
     "text": "When you hit, if any die of the attack roll was less than the defenders life and the defender has less than 2 experience, deal 1 damage to them. Otherwise, the defender gets -2 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if any die of the attack roll was less than the defenders life\" — branching on a combat die's value"
   },
   {
     "id": "s6-028",
@@ -3201,7 +3135,7 @@
     "id": "s6-035",
     "name": "A Straight Ship",
     "text": "Choose an opponent. They may choose to set their experience to 0. If they do not, they are your rival. You may move your warrior up to two spaces.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"They may choose to set their experience to 0. If they do not, they are your rival\" — opponent's choice / rivals"
   },
   {
     "id": "s6-036",
@@ -3213,7 +3147,7 @@
     "id": "s6-037",
     "name": "Blackbeard's Jolly Roger",
     "text": "Set the experience of all opponents with a Fire card to 0. At the end of each round, if you are a Water warrior, gain 1 life. You can not gain life from other card abilities",
-    "reason": "experience modification"
+    "reason": "batch 5: \"Set the experience of all opponents with a Fire card to 0\" — setting experience (an aura on others' experience); \"You can not gain life\" — restriction"
   },
   {
     "id": "s6-038",
@@ -3225,7 +3159,7 @@
     "id": "s6-039",
     "name": "Fearsome Reputation",
     "text": "At the start of each round, each of your opponents rolls 2 dice. If the result is less than their life or if they are your rival, their rolls this round get -2.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"each of your opponents rolls 2 dice\" — an opponent's roll; \"their rolls this round get -2\" — all-roll penalty; rivals"
   },
   {
     "id": "s6-040",
@@ -3249,7 +3183,7 @@
     "id": "s6-043",
     "name": "Boarding Axe",
     "text": "Attacks with this weapon deal +1 damage against warriors with a wood card. When you are attacked with a weapon, if you are a metal warrior, you may re-roll your defense roll.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"you may re-roll your defense roll\" — defense re-roll; \"against warriors with a wood card\" — a card-element condition"
   },
   {
     "id": "s6-044",
@@ -3261,7 +3195,7 @@
     "id": "s6-045",
     "name": "Pirate Stronghold",
     "text": "After an opponent re-rolls one or more dice of one of their rolls, that roll gets -2. Gain 2 life. If this card leaves play, deal 3 damage to your warrior.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"After an opponent re-rolls\" — reaction to an opponent's re-roll; \"If this card leaves play\" — leaves-play trigger"
   },
   {
     "id": "s6-046",
@@ -3273,13 +3207,13 @@
     "id": "s6-047",
     "name": "Good Queen Bess",
     "text": "All of your rolls this round gain +1. If you have less than 4 life, all of your non-defense rolls gain +2.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"All of your rolls this round gain +1\" — non-attack / non-defense rolls"
   },
   {
     "id": "s6-048",
     "name": "Swept-Hilt Rapier",
     "text": "When you are attacked, if you have another weapon and your defense roll is greater than the attacker's experience, the attack can not deal more than base damage.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if your defense roll is greater than the attacker's experience\" — branching on a combat roll's value; \"cannot deal more than base damage\" — damage cap"
   },
   {
     "id": "s6-049",
@@ -3297,7 +3231,7 @@
     "id": "s6-051",
     "name": "Burebista",
     "text": "At the start of the game, you may move to any space in the arena. After you take damage from an opponent, if you have less than 3 life, move to any space in the arena.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"you may move to any space in the arena\" — a move to any space"
   },
   {
     "id": "s6-052",
@@ -3315,7 +3249,7 @@
     "id": "s6-054",
     "name": "Cascã Dacicã",
     "text": "Roll one die and place it on this card. Once each turn, you may swap one of the dice in an attack roll against you with the die on this card. At the end of each round, decrease the value of the die on this card by 1 if possible.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"Roll one die and place it on this card\" — a die kept on a card (out of scope)"
   },
   {
     "id": "s6-055",
@@ -3327,7 +3261,7 @@
     "id": "s6-056",
     "name": "Micheal the Brave",
     "text": "When you reveal this warrior, choose a card type. Abilities on cards of the chosen type played by warriors with more experience than your warrior have no effect.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"choose a card type. Abilities on cards of the chosen type … have no effect\" — ability suppression"
   },
   {
     "id": "s6-057",
@@ -3345,7 +3279,7 @@
     "id": "s6-059",
     "name": "Buzunare La Armurã",
     "text": "Your defense rolls gain +1. When you are attacked by a rival, you may decrease the value of one die in the attack roll by 1. Your next attack roll against that rival gains +1.",
-    "reason": "unsupported clause: When you are attacked by a rival, you may decrease the value of one die in the attack roll by 1"
+    "reason": "batch 5: \"When you are attacked by a rival, you may decrease the value of one die\" — rivals / die modification"
   },
   {
     "id": "s6-060",
@@ -3441,7 +3375,7 @@
     "id": "s6-076",
     "name": "Beyazid I, The Thunderbolt",
     "text": "Your opponent's attack rolls gain +1. If you have less than 5 life, your attack rolls gain +3.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"Your opponent's attack rolls gain +1\" — an attack-roll bonus for the opponent only; \"If you have less than 5 life\" — a life-vs-number condition"
   },
   {
     "id": "s6-077",
@@ -3495,7 +3429,7 @@
     "id": "s6-085",
     "name": "Mektup In Komutan",
     "text": "Move your warrior to any unoccupied space adjacent to another warrior. Choose an opponent and roll two dice. If the result is less than the chosen warrior's experience, that warrior is your rival until the start of your next turn.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"Move your warrior to any unoccupied space adjacent to another warrior\" — a move to any adjacent space; rivals"
   },
   {
     "id": "s6-086",
@@ -3597,7 +3531,7 @@
     "id": "s6-P041",
     "name": "Liu Bei",
     "text": "At the start of each roound you may get -2 experience to choose another player's card ability that gives an attack roll, damage, or speed bonus. That ability has no effect for that round.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"choose another player's card ability … That ability has no effect\" — ability suppression"
   },
   {
     "id": "s6-P042",
@@ -3741,7 +3675,7 @@
     "id": "s7-015",
     "name": "Wanderlust",
     "text": "After each time you spend an action to move, you may re-roll one die of your next roll.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"you may re-roll one die of your next roll\" — any-roll re-roll after a move"
   },
   {
     "id": "s7-016",
@@ -3807,7 +3741,7 @@
     "id": "s7-026",
     "name": "Agamemnon",
     "text": "While you have a rival, gain +1 speed and +5 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"While you have a rival\" — rivals"
   },
   {
     "id": "s7-027",
@@ -3837,7 +3771,7 @@
     "id": "s7-031",
     "name": "Menelaos",
     "text": "Once each round, if you have a rival, set one die of one of your non-defense rolls to a 6.",
-    "reason": "unsupported clause: Once each round, if you have a rival, set one die of one of your non-defense rolls to a 6"
+    "reason": "batch 5: \"if you have a rival, set one die … to a 6\" — rivals / setting a die"
   },
   {
     "id": "s7-032",
@@ -3855,7 +3789,7 @@
     "id": "s7-034",
     "name": "Spartiatiko Polemiko Kranos",
     "text": "Once each round, after you are hit by an attack that does more than its base damage, the attacker gets -1 speed on their next turn. Gain +2 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"after you are hit by an attack that does more than its base damage, the attacker gets -1 speed\" — damage-size trigger / speed penalty on another warrior"
   },
   {
     "id": "s7-035",
@@ -3933,7 +3867,7 @@
     "id": "s7-047",
     "name": "Asterionas",
     "text": "After you are hit or you miss an attack, place a counter on this card. Twice each turn, you may remove a counter from this card to re-roll one of your rolls.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"place a counter on this card\" — counters; \"re-roll one of your rolls\" — any-roll re-roll"
   },
   {
     "id": "s7-049",
@@ -3981,19 +3915,13 @@
     "id": "s7-056",
     "name": "David",
     "text": "Once each turn, after you damage an opponent with an attack, if their life is both greater than 4 and greater than your life, set the defender's life to 4.",
-    "reason": "dice-value branching / dice rolling"
-  },
-  {
-    "id": "s7-057",
-    "name": "Golyath",
-    "text": "At the start of each round, roll two dice. If the total is less than 9, your next attack roll gains +2 and the attack deals +1 damage.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"set the defender's life to 4\" — setting life; \"if their life is … greater than 4\" — life-vs-number condition"
   },
   {
     "id": "s7-058",
     "name": "Qela'",
     "text": "When you attack with this weapon, if the defender has more experience than your warrior, the attack roll is considered doubles.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"the attack roll is considered doubles\" — doubles effect"
   },
   {
     "id": "s7-059",
@@ -4104,12 +4032,6 @@
     "reason": "unsupported clause: Once each round, if you are adjacent to an opposing warrior, move one space"
   },
   {
-    "id": "s7-077",
-    "name": "Afroditi",
-    "text": "If you are a male warrior, get +1 speed and -3 experience.",
-    "reason": "experience modification"
-  },
-  {
     "id": "s7-078",
     "name": "Dorata Me Mproutzini Ehmi",
     "text": "Once each round, after you hit an opponent with this weapon, name an ability on one of the defender's cards. That ability has no effect until the start of your next turn.",
@@ -4209,13 +4131,13 @@
     "id": "s7-094",
     "name": "Xtipimeno Mproutzino Thorakio",
     "text": "At the start of each round, roll one die. If the roll is even, your defense rolls for the round gain +3.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"If the roll is even\" — odd / even test"
   },
   {
     "id": "s7-095",
     "name": "Krisi Tou Pari",
     "text": "After you roll two dice, if the roll is less than 6, you may re-roll the roll. If the next card you reveal is an inspiration, you may attack with a weapon twice on your turn that round.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"if the roll is less than 6, you may re-roll the roll\" — any-roll re-roll; \"you may attack with a weapon twice\" — extra attacks"
   },
   {
     "id": "s7-096",
@@ -4233,7 +4155,7 @@
     "id": "s7-099",
     "name": "Tihi Tis Trias",
     "text": "Place this card in any unoccupied space in the arena. While you are in this card's row or column, set each of your defense rolls that are less than 8 to 8.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"Place this card in any unoccupied space in the arena\" — placing a card; \"set each of your defense rolls that are less than 8 to 8\" — setting a roll"
   },
   {
     "id": "s7-100",
@@ -4245,7 +4167,7 @@
     "id": "s7-P051",
     "name": "Confucius",
     "text": "This card is considered to be all elements. You may use another inspiration card. While this card is in play, all warriors have 0 experience.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"all warriors have 0 experience\" — an aura on all warriors' experience (out of scope); \"You may use another inspiration card\" — play-limit change"
   },
   {
     "id": "s7-P052",
@@ -4257,7 +4179,7 @@
     "id": "s7-P053",
     "name": "Unicornio Cuerno",
     "text": "At the beginning of each round, you may roll two dice. If the roll is greater than your life, you may move one space or use an \"action\" ability.",
-    "reason": "dice-value branching / dice rolling"
+    "reason": "batch 5: \"you may move one space or use an \\\"action\\\" ability\" — a free action-ability use"
   },
   {
     "id": "s7-P054",
@@ -4287,7 +4209,7 @@
     "id": "s7-P058",
     "name": "Ordin de Balaur",
     "text": "After you hit an opponent, your next attack or defense roll gains +1. Once per round, if your opponent's experience has been modified by a card abilty, gain +3 instead.",
-    "reason": "experience modification"
+    "reason": "batch 5: \"if your opponent's experience has been modified by a card abilty\" — tracking experience changes"
   },
   {
     "id": "s7-P059",

@@ -48,6 +48,20 @@ export const IMPLEMENTED: Record<string, { name: string; partial?: string }> = {
   "s1-091": { name: "Achilles" },
   "s1-017": { name: "Pythagoras" },
   "s2-016": { name: "Richard the Lionheart" },
+  // batch 5: experience and dice-roll abilities
+  "s1-015": { name: "Belt of Hippolyte" },
+  "s1-089": { name: "Cassis" },
+  "s1-037": { name: "Haidate" },
+  "s2-021": { name: "Robin Hood" },
+  "s5-011": { name: "Itzcoatl" },
+  "s7-077": { name: "Afroditi" },
+  "s1-022": { name: "Izanagi" },
+  "s7-057": { name: "Golyath" },
+  "s1-057": { name: "Mjollnir" },
+  "s1-036": { name: "Kimono" },
+  "s1-090": { name: "Scutum" },
+  "s1-031": { name: "Mempo" },
+  "s2-097": { name: "Yeke Mongghol Ulus" },
 };
 
 // Shinmen Takezo — Kyougou: "Your attack rolls gain +2. Your attacks with swords deal +1 damage."
@@ -304,6 +318,155 @@ defineCard("s1-017", {
 // Richard the Lionheart — Fixe Strican: "After you miss an attack, your next attack roll gains +2."
 defineCard("s2-016", {
   data: { name: "Fixe Strican", trigger: "attackMissed", effects: [{ kind: "attackRoll", amount: 2 }], duration: "nextAttack" },
+});
+
+// ---- Batch 5: experience and dice-roll abilities -------------------------------------------------
+// "Once per turn" is once per round here: in a two-player game each warrior has one turn a round.
+
+// Belt of Hippolyte (special) — Zoni Dexiotexnias: "You gain +4 experience."
+defineCard("s1-015", {
+  data: { name: "Zoni Dexiotexnias", trigger: "continuous", effects: [{ kind: "experience", amount: 4 }] },
+});
+// Cassis (armor) — Galeatus: "Your defense rolls gain +1 if you are a metal or water warrior. You gain
+// +1 experience if you are an earth or fire warrior."
+defineCard("s1-089", {
+  data: {
+    name: "Galeatus",
+    trigger: "continuous",
+    effects: [
+      { kind: "defenseRoll", amount: 1, when: { kind: "elementIs", element: "Metal" } },
+      { kind: "defenseRoll", amount: 1, when: { kind: "elementIs", element: "Water" } },
+      { kind: "experience", amount: 1, when: { kind: "elementIs", element: "Earth" } },
+      { kind: "experience", amount: 1, when: { kind: "elementIs", element: "Fire" } },
+    ],
+  },
+});
+// Haidate (armor) — Shinogeru: "When you are attacked, your defense roll gains +1 if you have more
+// experience than the attacker."
+defineCard("s1-037", {
+  data: {
+    name: "Shinogeru",
+    trigger: "continuous",
+    condition: { kind: "experienceVs", cmp: "more", than: "attacker" },
+    effects: [{ kind: "defenseRoll", amount: 1 }],
+  },
+});
+// Robin Hood — Treowe Ame: "You gain +3 experience and your attack rolls gain +1 if you have a ranged
+// weapon." (The condition covers both halves.)
+defineCard("s2-021", {
+  data: {
+    name: "Treowe Ame",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "self", cardType: "weapon", trait: "Ranged", has: true },
+    effects: [
+      { kind: "experience", amount: 3 },
+      { kind: "attackRoll", amount: 1 },
+    ],
+  },
+});
+// Itzcoatl — Ixhuacayotlani: "After you hit with a basic attack, gain 2 experience."
+defineCard("s5-011", {
+  data: {
+    name: "Ixhuacayotlani",
+    trigger: "damageDealt",
+    condition: { kind: "attackKind", is: "basic" },
+    effects: [{ kind: "experience", amount: 2 }],
+  },
+});
+// Afroditi (inspiration) — Teleia Omorfia: "If you are a male warrior, get +1 speed and -3 experience."
+defineCard("s7-077", {
+  data: {
+    name: "Teleia Omorfia",
+    trigger: "continuous",
+    condition: { kind: "faceUpCard", who: "self", trait: "Male", has: true },
+    effects: [
+      { kind: "speed", amount: 1 },
+      { kind: "experience", amount: -3 },
+    ],
+  },
+});
+// Izanagi (inspiration) — Zonrei (Reveal): "Roll two dice. If that total is less than your
+// experience, gain 2 life."
+defineCard("s1-022", {
+  data: { name: "Zonrei", trigger: "reveal", roll: { dice: 2, cmp: "<", vs: "ownExperience" }, effects: [{ kind: "gainLife", amount: 2 }] },
+});
+// Golyath (inspiration) — Heref: "At the start of each round, roll two dice. If the total is less
+// than 9, your next attack roll gains +2 and the attack deals +1 damage."
+defineCard("s7-057", {
+  data: {
+    name: "Heref",
+    trigger: "roundStart",
+    roll: { dice: 2, cmp: "<", vs: 9 },
+    effects: [
+      { kind: "attackRoll", amount: 2 },
+      { kind: "attackDamage", amount: 1 },
+    ],
+    duration: "nextAttack",
+  },
+});
+// Mjollnir (special) — Slegge: "After you are hit by a basic attack, roll two dice. If that total is
+// greater than the attacker's experience, deal 1 damage to that warrior."
+defineCard("s1-057", {
+  data: {
+    name: "Slegge",
+    trigger: "hit",
+    condition: { kind: "attackKind", is: "basic" },
+    roll: { dice: 2, cmp: ">", vs: { experienceOf: "attacker" } },
+    effects: [{ kind: "dealDamage", amount: 1, target: "attacker" }],
+  },
+});
+// Kimono (armor) — Unrestricted: "Once per turn, after an opponent attacks you and misses, roll two
+// dice. If that total is less than your experience, you may move one space."
+defineCard("s1-036", {
+  data: {
+    name: "Unrestricted",
+    trigger: "missed",
+    usageLimit: "oncePerRound",
+    roll: { dice: 2, cmp: "<", vs: "ownExperience" },
+    optional: true,
+    effects: [{ kind: "move", spaces: 1 }],
+  },
+});
+// Scutum (special) — Scutatus: "Once per round, after you make a successful attack, roll two dice. If
+// that total is less than or equal to your experience, move the defending warrior one space."
+defineCard("s1-090", {
+  data: {
+    name: "Scutatus",
+    trigger: "damageDealt",
+    usageLimit: "oncePerRound",
+    roll: { dice: 2, cmp: "<=", vs: "ownExperience" },
+    effects: [{ kind: "move", spaces: 1, who: "defender" }],
+  },
+});
+// Mempo (armor) — Ojikedzuku (Action): "Once per turn, choose an opposing warrior and roll two dice. If
+// that total is greater than or equal to their experience, you may move that warrior up to 2 spaces
+// and change their facing."
+defineCard("s1-031", {
+  data: {
+    name: "Ojikedzuku",
+    trigger: "action",
+    usageLimit: "oncePerRound",
+    roll: { dice: 2, cmp: ">=", vs: { experienceOf: "opponent" } },
+    optional: true,
+    effects: [{ kind: "move", spaces: 2, upTo: true, who: "opponent", rotate: true }],
+  },
+});
+// Yeke Mongghol Ulus (inspiration) — Kucurkeg turimekei ulus (Action): "If you you have a face-up
+// ranged weapon and you won initiative this round, move an opposing warrior one space."
+defineCard("s2-097", {
+  data: {
+    name: "Kucurkeg turimekei ulus",
+    trigger: "action",
+    condition: { kind: "wonInitiative" },
+    effects: [
+      {
+        kind: "move",
+        spaces: 1,
+        who: "opponent",
+        when: { kind: "faceUpCard", who: "self", cardType: "weapon", trait: "Ranged", has: true },
+      },
+    ],
+  },
 });
 
 export const isImplemented = (cardId: string) => cardId in IMPLEMENTED;
