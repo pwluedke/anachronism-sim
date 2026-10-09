@@ -250,9 +250,7 @@ decks carrying all 18 ran clean.
 - **Bot threat and one-attack bonuses** — evaluate counts a "next attack" bonus like a standing
   one (on every attack the mover has actions for); fine for now, sharper if it ever matters.
 
-## Milestone 13: Raspberry Pi 4 kiosk build
-
-## Milestone 14: Custom card creator
+## Milestone 13: Custom card creator
 
 In-app schema-validated JSON append.
 

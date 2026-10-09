@@ -56,7 +56,7 @@ See [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ## Tech (intended, TENTATIVE — not committed)
 
-TypeScript engine; renderer TBD (Phaser or canvas); browser-first, then Raspberry Pi 4 kiosk, then online multiplayer.
+TypeScript engine; renderer TBD (Phaser or canvas); browser-first, then online multiplayer.
 
 ## Agents
 
