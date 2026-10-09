@@ -20,6 +20,12 @@ export function getLegalActions(state: GameState): Action[] {
     const rerolls: Action[] = d0 === d1 ? [{ type: "REROLL", die: 0 }] : [{ type: "REROLL", die: 0 }, { type: "REROLL", die: 1 }];
     return [...rerolls, { type: "KEEP" }];
   }
+  // A pending ability decision: each listed destination, and DECLINE if the ability says "you may".
+  if (state.pending?.kind === "choice") {
+    const c = state.pending.queue[0];
+    const picks: Action[] = c.options.map((o) => ({ type: "CHOOSE", to: { ...o.to }, facing: o.facing }));
+    return c.optional ? [...picks, { type: "DECLINE" }] : picks;
+  }
   const w = state.warriors[me];
   const foe = state.warriors[me === 0 ? 1 : 0];
   const acts: Action[] = [];

@@ -2,7 +2,8 @@
 // small pure function over the engine's working state. Add new primitives here as card batches
 // need them.
 
-import type { GameState, PlayerId, Position } from "../types";
+import type { Facing, GameState, PlayerId, Position } from "../types";
+import { rollDie } from "../rng";
 import type { SupportType } from "../decks";
 import { inPlay } from "../cards";
 import { experienceOf } from "./experience";
@@ -202,15 +203,68 @@ export type EffectDef = (
   | { kind: "experience"; amount: number; who?: "self" | "opponent" | "attacker" | "defender" }
   /** "deal N damage to <target>" — ability damage, not a hit (rulebook glossary) */
   | { kind: "dealDamage"; amount: number; target: DamageTarget }
-  /** "move N spaces" (an Action ability's choice of where to and which way to face); `diagonal`:
-   *  "move one space diagonally" — steps go corner to corner instead of along rows and columns */
-  | { kind: "move"; spaces: number; diagonal?: boolean }
+  /** "move N spaces" (where to — and which way to face — is the owner's choice); `diagonal`:
+   *  "move one space diagonally" (corner to corner); `upTo`: "up to N spaces"; `who`: whose warrior
+   *  moves (default your own). A warrior moved by another's ability keeps its facing unless the card
+   *  says it may be turned (`rotate`, rulebook p11); your own warrior may always turn. */
+  | {
+      kind: "move";
+      spaces: number;
+      diagonal?: boolean;
+      upTo?: boolean;
+      who?: "self" | "opponent" | "defender" | "attacker";
+      rotate?: boolean;
+    }
   /** "you may re-roll one die of the attack roll" — then `ifSame` if the new die equals the old */
   | { kind: "reroll"; roll: "attack"; ifSame?: EffectDef[] }
 ) & {
   /** An effect that only applies when this also holds (two gated effects add up, rulebook p17). */
   when?: ConditionDef;
 };
+
+/** "Roll N dice. If the total is <cmp> X, …" — X a number, your experience, your life, or another
+ *  warrior's experience. Rolled from the game's seeded RNG, apart from attack / defense rolls. */
+export interface RollDef {
+  dice: 1 | 2;
+  cmp: ">" | "<" | ">=" | "<=";
+  vs: number | "ownExperience" | "ownLife" | { experienceOf: "opponent" | "attacker" | "defender" };
+}
+
+/** Roll an ability's dice and judge them (advances state.rng). */
+export function abilityRoll(ctx: FireContext, roll: RollDef): { dice: number[]; total: number; target: number; targetName: string; success: boolean } {
+  const { state, owner } = ctx;
+  const dice: number[] = [];
+  for (let i = 0; i < roll.dice; i++) {
+    const r = rollDie(state.rng);
+    state.rng = r.state;
+    dice.push(r.die);
+  }
+  const total = dice.reduce((a, b) => a + b, 0);
+  let target: number;
+  let targetName: string;
+  if (typeof roll.vs === "number") {
+    target = roll.vs;
+    targetName = String(roll.vs);
+  } else if (roll.vs === "ownExperience") {
+    target = experienceOf(state, owner);
+    targetName = "your experience";
+  } else if (roll.vs === "ownLife") {
+    target = state.warriors[owner].life;
+    targetName = "your life";
+  } else {
+    const who = roll.vs.experienceOf;
+    const t = who === "opponent" ? opp(owner) : who === "attacker" ? ctx.attacker : ctx.defender;
+    target = t === undefined ? 0 : experienceOf(state, t);
+    targetName = t === undefined ? "—" : `${state.warriors[t].name}'s experience`;
+  }
+  const success = roll.cmp === ">" ? total > target : roll.cmp === "<" ? total < target : roll.cmp === ">=" ? total >= target : total <= target;
+  return { dice, total, target, targetName, success };
+}
+
+/** The warrior a move effect moves. */
+export function moverOf(ctx: { owner: PlayerId; attacker?: PlayerId; defender?: PlayerId }, who: "self" | "opponent" | "defender" | "attacker" | undefined): PlayerId | undefined {
+  return !who || who === "self" ? ctx.owner : who === "opponent" ? opp(ctx.owner) : who === "defender" ? ctx.defender : ctx.attacker;
+}
 
 /** permanent: while the card is in play (continuous). thisRound / nextTurn / nextAttack /
  *  nextAttackThisTurn: a timed effect (see TimedEffect). */
@@ -264,15 +318,28 @@ const DIAGONALS = [
   [1, 1],
 ] as const;
 
-/** Where an ability move of exactly `spaces` steps can end: steps through empty in-arena cells (no
- *  passing through a warrior), never back at the start; any facing after (rulebook p11: a warrior
- *  moved by a card ability may rotate for free, and only faces along rows and columns). Steps go
- *  along rows and columns, or — `diagonal` — corner to corner ("unless specified by a Card
- *  Ability", p11). */
-export function moveOptions(state: GameState, owner: PlayerId, spaces: number, diagonal = false): AbilityParams[] {
-  const start = state.warriors[owner].position;
-  const foe = state.warriors[opp(owner)].position;
+export interface MoveOpts {
+  /** Steps go corner to corner ("move one space diagonally"). */
+  diagonal?: boolean;
+  /** "Up to N spaces": 1..N steps instead of exactly N. */
+  upTo?: boolean;
+  /** The moved warrior keeps its facing (another warrior moved by your ability, p11). */
+  keepFacing?: boolean;
+}
+
+/** Where warrior `mover` can end an ability move of `spaces` steps: steps through empty in-arena
+ *  cells (no passing through another warrior), never back at the start. Steps go along rows and
+ *  columns, or — `diagonal` — corner to corner ("unless specified by a Card Ability", p11). Any
+ *  facing after (a warrior moved by a card ability may rotate for free and faces only along rows
+ *  and columns, p11), or its current facing with `keepFacing`. The 4th argument may be `true`
+ *  (diagonal), for older callers. */
+export function moveOptions(state: GameState, mover: PlayerId, spaces: number, opts: MoveOpts | boolean = {}): AbilityParams[] {
+  const o: MoveOpts = typeof opts === "boolean" ? { diagonal: opts } : opts;
+  const diagonal = !!o.diagonal;
+  const start = state.warriors[mover].position;
+  const foe = state.warriors[opp(mover)].position;
   const key = (p: Position) => `${p.row},${p.col}`;
+  const reached = new Map<string, Position>();
   let frontier: Position[] = [start];
   for (let i = 0; i < spaces; i++) {
     const next = new Map<string, Position>();
@@ -283,11 +350,37 @@ export function moveOptions(state: GameState, owner: PlayerId, spaces: number, d
       }
     }
     frontier = [...next.values()];
+    if (o.upTo || i === spaces - 1) for (const p of frontier) reached.set(key(p), p);
   }
-  return frontier
+  const facings: readonly Facing[] = o.keepFacing ? [state.warriors[mover].facing] : FACINGS;
+  return [...reached.values()]
     .filter((p) => key(p) !== key(start))
     .sort((a, b) => a.row - b.row || a.col - b.col)
-    .flatMap((to) => FACINGS.map((facing) => ({ to, facing })));
+    .flatMap((to) => facings.map((facing) => ({ to, facing })));
+}
+
+/** Queue an ability decision. The first one in a queue takes control (currentPlayer) until resolved;
+ *  `resume` remembers whose turn it is. */
+export function requestChoice(state: GameState, choice: import("../types").AbilityChoice): void {
+  if (state.pending?.kind === "choice") {
+    state.pending.queue.push(choice);
+    return;
+  }
+  if (state.pending) throw new Error(`${choice.cardName} ${choice.ability}: a choice can't start while a ${state.pending.kind} is pending`);
+  state.pending = { kind: "choice", queue: [choice], resume: state.currentPlayer };
+  state.currentPlayer = choice.player;
+}
+
+/** Move a warrior to a chosen destination (an ability move). Returns a description for the log. */
+export function moveWarrior(state: GameState, events: import("../types").GameEvent[], mover: PlayerId, params: AbilityParams, owner: PlayerId): string {
+  const w = state.warriors[mover];
+  const from = { ...w.position };
+  state.warriors[mover] = { ...w, position: { ...params.to }, facing: params.facing };
+  const turnPlayer = state.pending?.kind === "choice" ? state.pending.resume : state.currentPlayer;
+  if (turnPlayer === mover) state.movedThisTurn = true;
+  events.push({ type: "moved", player: mover, from, to: { ...params.to }, facing: params.facing });
+  const where = `${"ABCD"[params.to.col]}-${["I", "II", "III", "IV"][params.to.row]}`;
+  return mover === owner ? `moves to ${where}` : `moves ${w.name} to ${where}`;
 }
 
 /** Apply a one-off effect when an ability fires. Returns a description for the log. */
@@ -305,12 +398,9 @@ export function applyEffect(ctx: FireContext, effect: EffectDef, duration: Durat
     }
     case "move": {
       if (!params) throw new Error(`${ctx.cardName} ${ctx.ability}: a move needs a destination`);
-      const w = state.warriors[owner];
-      const from = { ...w.position };
-      state.warriors[owner] = { ...w, position: { ...params.to }, facing: params.facing };
-      if (state.currentPlayer === owner) state.movedThisTurn = true;
-      ctx.events.push({ type: "moved", player: owner, from, to: { ...params.to }, facing: params.facing });
-      return `moves ${effect.spaces} space${effect.spaces === 1 ? "" : "s"}${effect.diagonal ? " diagonally" : ""}`;
+      const mover = moverOf(ctx, effect.who) ?? owner;
+      const did = moveWarrior(state, ctx.events, mover, params, owner);
+      return mover === owner ? `moves ${effect.spaces} space${effect.spaces === 1 ? "" : "s"}${effect.diagonal ? " diagonally" : ""}` : did;
     }
     case "experience": {
       const who = effect.who ?? "self";

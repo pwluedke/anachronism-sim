@@ -105,7 +105,7 @@ export interface GameState {
    * A card restriction to resolve before the round's first turn (rulebook p14): each queued player,
    * in initiative order, discards offending in-play cards until legal. currentPlayer is queue[0].
    */
-  pending: PendingDiscard | PendingReroll | null;
+  pending: PendingDiscard | PendingReroll | PendingChoice | null;
 
   // ---- Card abilities --------------------------------------------------------------------------
   /** Timed effects abilities created (e.g. "+1 to attack rolls this round"). */
@@ -142,6 +142,29 @@ export interface PendingReroll {
   cardId: string;
   cardName: string;
   ability: string;
+}
+
+/** One ability decision waiting on a player: where a warrior moves (a move chosen after an ability
+ *  roll, or one the card leaves to you), and — if the card says "you may" — whether to at all. */
+export interface AbilityChoice {
+  /** Who decides (the ability's owner). */
+  player: PlayerId;
+  cardId: string;
+  cardName: string;
+  ability: string;
+  /** The warrior that moves. */
+  mover: PlayerId;
+  /** Legal destinations + facings (a displaced opponent keeps its facing, rulebook p11). */
+  options: { to: Position; facing: Facing }[];
+  /** "You may": DECLINE is legal. */
+  optional: boolean;
+}
+/** Ability decisions to make before play goes on, in order. currentPlayer is the first one's
+ *  decider; `resume` is whose turn it is, restored once the queue is empty. */
+export interface PendingChoice {
+  kind: "choice";
+  queue: AbilityChoice[];
+  resume: PlayerId;
 }
 
 // ---- Actions -------------------------------------------------------------
@@ -188,7 +211,19 @@ export interface RerollAction {
 export interface KeepAction {
   type: "KEEP";
 }
+/** While an ability choice is pending: move the warrior there, facing that way… */
+export interface ChooseAction {
+  type: "CHOOSE";
+  to: Position;
+  facing: Facing;
+}
+/** …or, if the ability says "you may", don't. */
+export interface DeclineAction {
+  type: "DECLINE";
+}
 export type Action =
+  | ChooseAction
+  | DeclineAction
   | MoveAction
   | RotateAction
   | AttackAction
@@ -289,6 +324,22 @@ export interface DiscardedEvent {
   cardId: string;
   name: string;
 }
+/** An ability rolled dice against a threshold ("roll two dice; if the total is less than your
+ *  experience, …"). Logged before what it leads to. */
+export interface AbilityRolledEvent {
+  type: "abilityRolled";
+  player: PlayerId;
+  cardId: string;
+  cardName: string;
+  ability: string;
+  dice: number[];
+  total: number;
+  cmp: ">" | "<" | ">=" | "<=";
+  target: number;
+  /** What the target is, for display (e.g. "your experience"). */
+  targetName: string;
+  success: boolean;
+}
 export interface AbilityFiredEvent {
   type: "abilityFired";
   player: PlayerId;
@@ -331,6 +382,7 @@ export type GameEvent =
   | PassedEvent
   | RevealedEvent
   | AbilityFiredEvent
+  | AbilityRolledEvent
   | AttackRolledEvent
   | RerolledEvent
   | DiscardRequiredEvent

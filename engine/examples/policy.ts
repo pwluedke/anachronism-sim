@@ -73,6 +73,8 @@ export function formatEvent(e: GameEvent): string {
       return `    P${e.player} re-rolls a ${e.from} -> ${e.to} (${e.cardName})`;
     case "abilityFired":
       return `  P${e.player} ${e.cardName} — ${e.ability}: ${e.effect}`;
+    case "abilityRolled":
+      return `  P${e.player} ${e.cardName} — ${e.ability}: rolls ${e.dice.join("+")}=${e.total} ${e.cmp} ${e.target}? ${e.success ? "yes" : "no"}`;
     case "discardRequired":
       return `  P${e.player} must discard (${e.reasons.join("; ")})`;
     case "discarded":

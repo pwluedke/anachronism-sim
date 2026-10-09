@@ -15,7 +15,22 @@
 import type { FireContext, ModKind, ModQuery, RuntimeAbility, Trigger } from "./types";
 import type { PlayerId } from "../types";
 import { REGISTRY } from "./registry";
-import { applyEffect, describeCondition, holds, isTimed, moveOptions, targets, TIMED, type ConditionDef, type DurationDef, type EffectDef } from "./primitives";
+import {
+  abilityRoll,
+  applyEffect,
+  describeCondition,
+  holds,
+  isTimed,
+  moveOptions,
+  moverOf,
+  requestChoice,
+  targets,
+  TIMED,
+  type ConditionDef,
+  type DurationDef,
+  type EffectDef,
+  type RollDef,
+} from "./primitives";
 
 const opp = (p: PlayerId): PlayerId => (p === 0 ? 1 : 0);
 
@@ -30,7 +45,15 @@ export interface AbilityData {
   /** For continuous abilities "permanent" (the default); for fired ones how long a roll / speed
    *  effect lasts. Life gain, damage and moves are instant and need none. */
   duration?: DurationDef;
+  /** "Roll N dice. If the total is <cmp> X, …": the effects happen only if the roll succeeds. */
+  roll?: RollDef;
+  /** "You may …": the effect is the owner's choice (offered as CHOOSE / DECLINE). */
+  optional?: boolean;
 }
+
+/** Triggers whose abilities may leave a decision pending (a move chosen after the fact): those that
+ *  fire during your action or during an attack, when play can wait for the choice. */
+const CHOICE_TRIGGERS: readonly Trigger[] = ["action", "hit", "missed", "damageDealt", "attackMissed"];
 
 export type AbilityDef = { data: AbilityData } | { coded: RuntimeAbility };
 
@@ -111,26 +134,71 @@ export function compileAbility(a: AbilityData): RuntimeAbility {
       reroll: { onSame: onSame?.length ? (ctx) => onSame.map((e) => applyEffect(ctx, e, undefined)).join(", ") : undefined },
     };
   }
+  const move = a.effects.find((e): e is Extract<EffectDef, { kind: "move" }> => e.kind === "move");
+  // An Action's move without a roll is chosen with the action (ABILITY carries the destination);
+  // any other move — after a roll, or in a reaction — is chosen when the ability resolves.
+  const atAction = !!move && a.trigger === "action" && !a.roll;
   for (const e of a.effects) {
-    if (e.kind === "move" && a.trigger !== "action") throw new Error(`${a.name}: a move is an Action ability`);
     if (isModifier(e) && e.kind !== "experience" && !isTimed(a.duration)) {
       throw new Error(`${a.name}: a ${a.trigger} ${e.kind} effect needs a timed duration (${TIMED.join(" / ")})`);
     }
   }
-  const move = a.effects.find((e) => e.kind === "move");
+  if (move && !atAction && !CHOICE_TRIGGERS.includes(a.trigger)) throw new Error(`${a.name}: a ${a.trigger} ability can't move (moves are Action abilities, or chosen during an action or an attack)`);
+  if (a.optional && !move) throw new Error(`${a.name}: "you may" is supported for moves`);
   const cq = (ctx: FireContext) => ({ attacker: ctx.attacker, defender: ctx.defender, attackKind: ctx.attackKind });
+  const moveOpts = (ctx: FireContext, m: Extract<EffectDef, { kind: "move" }>) => {
+    const mover = moverOf(ctx, m.who);
+    if (mover === undefined) return [];
+    return moveOptions(ctx.state, mover, m.spaces, { diagonal: m.diagonal, upTo: m.upTo, keepFacing: mover !== ctx.owner && !m.rotate });
+  };
   return {
     name: a.name,
     trigger: a.trigger,
     oncePerRound: a.usageLimit === "oncePerRound",
     canFire: (ctx) =>
-      holds(a.condition, ctx.state, ctx.owner, cq(ctx)) && (!move || move.kind !== "move" || moveOptions(ctx.state, ctx.owner, move.spaces, move.diagonal).length > 0),
-    options: move && move.kind === "move" ? (ctx) => moveOptions(ctx.state, ctx.owner, move.spaces, move.diagonal) : undefined,
-    fire: (ctx, params) =>
-      a.effects
-        .filter((e) => holds(e.when, ctx.state, ctx.owner, cq(ctx)))
-        .map((e) => applyEffect(ctx, e, a.duration, params))
-        .join(", "),
+      holds(a.condition, ctx.state, ctx.owner, cq(ctx)) &&
+      // an Action is offered only if one of its effects would apply
+      (a.trigger !== "action" || a.effects.some((e) => holds(e.when, ctx.state, ctx.owner, cq(ctx)))) &&
+      (!atAction || moveOpts(ctx, move!).length > 0),
+    options: atAction ? (ctx) => moveOpts(ctx, move!) : undefined,
+    fire: (ctx, params) => {
+      const parts: string[] = [];
+      if (a.roll) {
+        const r = abilityRoll(ctx, a.roll);
+        ctx.events.push({
+          type: "abilityRolled",
+          player: ctx.owner,
+          cardId: ctx.cardId,
+          cardName: ctx.cardName,
+          ability: ctx.ability,
+          dice: r.dice,
+          total: r.total,
+          cmp: a.roll.cmp,
+          target: r.target,
+          targetName: r.targetName,
+          success: r.success,
+        });
+        if (!r.success) return `rolls ${r.total}: no effect`;
+        parts.push(`rolls ${r.total}`);
+      }
+      for (const e of a.effects) {
+        if (!holds(e.when, ctx.state, ctx.owner, cq(ctx))) continue;
+        if (e.kind === "move" && !atAction) {
+          const options = moveOpts(ctx, e);
+          const mover = moverOf(ctx, e.who);
+          if (!options.length || mover === undefined) {
+            parts.push("no space to move");
+            continue;
+          }
+          requestChoice(ctx.state, { player: ctx.owner, cardId: ctx.cardId, cardName: ctx.cardName, ability: ctx.ability, mover, options, optional: !!a.optional });
+          const whom = mover === ctx.owner ? "" : ` ${ctx.state.warriors[mover].name}`;
+          parts.push(a.optional ? `may move${whom}` : `moves${whom} (choosing where)`);
+          continue;
+        }
+        parts.push(applyEffect(ctx, e, a.duration, params));
+      }
+      return parts.join(", ");
+    },
   };
 }
 

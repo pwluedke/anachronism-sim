@@ -12,6 +12,7 @@ import type {
   GameState,
   PendingAttack,
   PendingReroll,
+  PendingChoice,
   PlayerCards,
   PlayerId,
   SupportSlot,
@@ -37,6 +38,7 @@ import {
 } from "./abilities/runtime";
 import "./abilities/cards"; // registers the implemented card abilities
 import { experienceOf } from "./abilities/experience";
+import { moveWarrior } from "./abilities/primitives";
 
 const ARENA = 4;
 const MAX_ROUNDS = 5;
@@ -224,6 +226,11 @@ function endIfDefeated(state: GameState, events: GameEvent[]): boolean {
   const winner: PlayerId | "draw" = fallen.length === 2 ? "draw" : opponentId(fallen[0]);
   state.winner = winner;
   state.phase = "ended";
+  if (state.pending?.kind === "choice") {
+    // the game is over: an ability decision still waiting is moot
+    state.currentPlayer = state.pending.resume;
+    state.pending = null;
+  }
   events.push({ type: "gameEnded", winner, reason: winner === "draw" ? "draw" : "kill" });
   return true;
 }
@@ -412,6 +419,38 @@ function applyReroll(prev: GameState, action: Action): ApplyResult {
     if (endIfDefeated(state, events)) return { state, events };
   }
   if (finishAttack(state, pa, events)) return { state, events };
+  if (choicePending(state)) return { state, events }; // an ability decision first
+  if (state.actionsRemaining <= 0) endTurn(state, events);
+  return { state, events };
+}
+
+/** An ability decision is waiting (read through a function: TypeScript would narrow `pending` from
+ *  an earlier assignment, but abilities can set it). */
+const choicePending = (state: GameState) => state.pending?.kind === "choice";
+
+/** While an ability decision is pending: CHOOSE a listed destination, or DECLINE if optional. Then
+ *  the next queued decision, or back to the turn's player (whose turn may now end). */
+function applyChoice(prev: GameState, action: Action): ApplyResult {
+  const pend = prev.pending;
+  if (pend?.kind !== "choice") return { state: prev, events: [] };
+  const c = pend.queue[0];
+  const picked =
+    action.type === "CHOOSE"
+      ? c.options.find((o) => o.to.row === action.to.row && o.to.col === action.to.col && o.facing === action.facing)
+      : undefined;
+  if (!(picked || (action.type === "DECLINE" && c.optional))) return { state: prev, events: [] };
+  const state: GameState = structuredClone(prev);
+  const events: GameEvent[] = [];
+  const p = state.pending as PendingChoice;
+  const effect = picked ? moveWarrior(state, events, c.mover, picked, c.player) : "declines to move";
+  events.push({ type: "abilityFired", player: c.player, cardId: c.cardId, cardName: c.cardName, ability: c.ability, effect });
+  p.queue.shift();
+  if (p.queue.length) {
+    state.currentPlayer = p.queue[0].player;
+    return { state, events };
+  }
+  state.currentPlayer = p.resume;
+  state.pending = null;
   if (state.actionsRemaining <= 0) endTurn(state, events);
   return { state, events };
 }
@@ -422,6 +461,7 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
   if (prev.phase !== "playing") return { state: prev, events: [] };
   if (prev.pending?.kind === "discard") return applyDiscard(prev, action);
   if (prev.pending?.kind === "reroll") return applyReroll(prev, action);
+  if (prev.pending?.kind === "choice") return applyChoice(prev, action);
   const state: GameState = structuredClone(prev);
   const events: GameEvent[] = [];
   const me = state.currentPlayer;
@@ -506,6 +546,8 @@ export function applyAction(prev: GameState, action: Action): ApplyResult {
     }
   }
 
+  // An ability decision (e.g. where a warrior moves) comes first; the turn waits for it.
+  if (choicePending(state)) return { state, events };
   // Turn auto-ends when the action budget is spent.
   if (state.actionsRemaining <= 0) endTurn(state, events);
   return { state, events };

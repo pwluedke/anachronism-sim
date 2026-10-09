@@ -67,6 +67,16 @@ export function logEntry(e: GameEvent, names: [string, string]): LogEntry | null
       };
     case "rerolled":
       return { kind: "ability", text: `${e.cardName} — ${e.ability}: ${names[e.player]} re-rolls a ${e.from} into a ${e.to}.`, player: e.player };
+    case "abilityRolled": {
+      const need = { ">": "more than", "<": "less than", ">=": "at least", "<=": "at most" }[e.cmp];
+      const whose = e.targetName.startsWith("your ") ? `${names[e.player]}'s ${e.targetName.slice(5)}` : e.targetName;
+      const shown = /^\d+$/.test(e.targetName) ? e.targetName : `${whose}, ${e.target}`;
+      return {
+        kind: "ability",
+        text: `${e.cardName} — ${e.ability}: ${names[e.player]} rolls ${e.dice.join(" + ")}${e.dice.length > 1 ? ` = ${e.total}` : ""}, needing ${need} ${shown} — ${e.success ? "success" : "no effect"}.`,
+        player: e.player,
+      };
+    }
     case "abilityFired":
       return {
         kind: "ability",
