@@ -254,6 +254,36 @@ decks carrying all 18 ran clean.
 
 In-app schema-validated JSON append.
 
+## Milestone 14 (DONE): Card abilities batch 5 — experience + dice-roll abilities
+
+Epic #87. Two printed mechanics, plus moving another warrior:
+
+- **Experience as a modifiable stat:** gain / lose (permanent unless a duration is given,
+  rulebook p17; a static "You gain +N experience" lasts while its card is in play), and a
+  more / less experience than the attacker / defender condition. Effective experience
+  (`experienceOf`) decides every experience tie-break: combat, initiative, end of game.
+- **Ability dice roll with a threshold:** one or two dice from the seeded RNG against a number,
+  your experience, your life, or a warrior's experience. A move it leads to — or any "you may" —
+  is a pending choice (CHOOSE / DECLINE) for whoever decides, including the defender during the
+  attacker's turn.
+- **Move another warrior** N or up to N spaces; they keep their facing unless the card says
+  otherwise (p11).
+
+13 cards authored by hand (58 implemented): Belt of Hippolyte, Cassis, Haidate, Robin Hood,
+Itzcoatl, Afroditi, Izanagi, Golyath, Mjollnir, Kimono, Scutum, Mempo, Yeke Mongghol Ulus. Skip
+log 716 → 703; the 90 entries whose reason was experience or dice now name the clause still
+blocking them. The bot's search treats any action that draws on the RNG as a chance node (ability
+rolls; this also closed the initiative dice-off leak). 22 self-play games over decks carrying all
+13 cards ran clean.
+
+### Follow-ups (from Milestone 14)
+
+- **The next big skip-log buckets** — re-rolls of defense / whole rolls and die modification
+  (set, raise, lower a die), opposed rolls ("each roll one die and add experience"), odd / even
+  and die-value tests, rivals, and discards.
+- **Choice prompt in other phases** — choices can wait during an action or an attack; an ability
+  that needs one at round start or on reveal is rejected at authoring time for now.
+
 ## Parked / Later
 
 Hard maybes, no milestone number until picked up again.
